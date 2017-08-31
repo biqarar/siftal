@@ -3744,6 +3744,23 @@ img.mini {
   font-size: 1.6em;
   text-align: center; }
 
+.live .vcard {
+  opacity: 0.5; }
+
+.live .vcard[data-live="hidden"] {
+  opacity: 0.1;
+  display: none; }
+
+.live .vcard[data-live="deactive"] {
+  opacity: 0.3;
+  cursor: not-allowed; }
+
+.live .vcard[data-live="off"] {
+  opacity: 0.6; }
+
+.live .vcard[data-live="on"] {
+  opacity: 1; }
+
 /* Modals - v2*/
 .modal {
   position: fixed;
