@@ -14,8 +14,18 @@ $(document).ready(function()
 
     /* Blur inputs with ESC key */
   $(document).keydown(function(e) {
-    if(e.keyCode === 27) {
+    if(e.keyCode === 27)
+    {
       $('input').blur();
+    }
+    // if we are on code fields, dont allow to press enter
+    if(e.keyCode === 13)
+    {
+      $focused = $(':focus');
+      if($focused.hasClass('barcode'))
+      {
+        e.preventDefault();
+      }
     }
   });
 

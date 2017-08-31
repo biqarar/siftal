@@ -1,7 +1,9 @@
 // Barcode khan
 
-(function(root, $) {
-  root.barcodeOptions = {
+(function(root, $)
+{
+  root.barcodeOptions =
+  {
     min: 5,
     max: 35,
     timeout: 5
@@ -11,17 +13,20 @@
       keys = '';
 
   var timeout = 0;
-  $(document.body).keydown(function(e) {
+  $(document.body).keydown(function(e)
+  {
     if(timeout) clearTimeout(timeout);
     else time = Date.now();
 
-    timeout = setTimeout(function() {
+    timeout = setTimeout(function()
+    {
       var elapsed = Date.now() - time;
       var len = keys.length - 5;
       if(len/elapsed < barcodeOptions.timeout &&
          len > barcodeOptions.min &&
          len < barcodeOptions.max &&
-         keys.slice(-5) === 'Enter') {
+         keys.slice(-5) === 'Enter')
+      {
 
         e.preventDefault();
         $focused = $(':focus');
