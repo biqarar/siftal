@@ -55,6 +55,7 @@ module.exports = function (grunt) {
 							'js/src/libs/utils.js',
 							'js/src/libs/underscore.js',
 
+							'js/src/tools/barcode-reader.js',
 							'js/src/tools/router.js',
 							'js/src/tools/navigate.js',
 							'js/src/tools/notification.js',
@@ -187,6 +188,7 @@ module.exports = function (grunt) {
 						'js/src/libs/underscore.js',
 						'js/src/libs/utils.js',
 
+						'js/src/tools/barcode-reader.js',
 						'js/src/tools/router.js',
 						'js/src/tools/navigate.js',
 						'js/src/tools/notification.js',
