@@ -22,7 +22,7 @@ module.exports = function (grunt) {
 						minify: false
 					},
 					files: {
-						'js/common-pretty.js': 'js/common/index.js'
+						'js/siftal-pretty.js': 'js/siftal/index.js'
 					}
 				}
 			},
@@ -41,11 +41,11 @@ module.exports = function (grunt) {
 						]
 					}
 				},
-				common:
+				siftal:
 				{
 					files:
 					{
-						'js/common.js':
+						'js/siftal.js':
 						[
 							'js/src/libs/jquery.js',
 							'js/src/libs/jquery-fn.js',
@@ -143,17 +143,18 @@ module.exports = function (grunt) {
 				all: {
 					files: [
 						{
-							expand: true, flatten: true, src: ['js/common.js'],
-							dest: '../../../../ermile/public_html/static/js/'
-						},
-						{
-							expand: true, flatten: true, src: ['js/common.js'],
-							dest: '../../../../saloos-project/public_html/static/js/'
-						},
-						{
-							expand: true, flatten: true, src: ['js/common.js'],
-							dest: '../../../../archiver/public_html/static/js/'
+							expand: true, flatten: true, src: ['js/siftal.js'],
+							dest: '../../js/'
 						}
+						// ,
+						// {
+						// 	expand: true, flatten: true, src: ['js/siftal.js'],
+						// 	dest: '../../../../saloos-project/public_html/static/js/'
+						// },
+						// {
+						// 	expand: true, flatten: true, src: ['js/siftal.js'],
+						// 	dest: '../../../../archiver/public_html/static/js/'
+						// }
 					]
 				}
 			},
@@ -174,7 +175,7 @@ module.exports = function (grunt) {
 					files: ['js/src/saloos/*.js'],
 					tasks: ['uglify:saloos']
 				},
-				common:
+				siftal:
 				{
 					files:
 					[
@@ -193,7 +194,7 @@ module.exports = function (grunt) {
 
 						'js/src/main.js'
 					],
-					tasks: ['uglify:common']
+					tasks: ['uglify:siftal']
 				},
 				// datepicker: {
 				//   files: [
@@ -237,7 +238,7 @@ module.exports = function (grunt) {
 		var projects = ['ermile'];
 		for (var i = 0; i < projects.length; i++) {
 			// var file_name = '../../../../'+projects[i]+'/public_html/static/js/cp/cp.js';
-			var file_name = '../../../../ermile/public_html/static/js/cp/cp.js';
+			var file_name = '../../js/cp/cp.js';
 			if (fs.existsSync(file_name)) {
 				file = fs.readFileSync(file_name).toString();
 				saloos = fs.readFileSync('js/src/saloos/saloos.min').toString();
