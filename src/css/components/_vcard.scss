@@ -255,6 +255,9 @@ img.mini{
 	max-width: 200px;
 	text-align: center;
 }
+.normal .vcard img{
+	max-height:200px;
+}
 
 //  large
 .large .vcard {
@@ -263,6 +266,9 @@ img.mini{
 	max-width: 220px;
 	text-align: center;
 	font-size: 1.1em;
+}
+.large .vcard img{
+	max-height:220px;
 }
 
 //  big
@@ -273,6 +279,9 @@ img.mini{
 	font-size: 1.3em;
 	text-align: center;
 }
+.big .vcard img{
+	max-height:250px;
+}
 
 //  big
 .huge .vcard {
@@ -281,6 +290,9 @@ img.mini{
 	max-width: 300px;
 	font-size: 1.4em;
 	text-align: center;
+}
+.huge .vcard img{
+	max-height:300px;
 }
 
 //  big
@@ -291,7 +303,9 @@ img.mini{
 	font-size: 1.6em;
 	text-align: center;
 }
-
+.massive .vcard img{
+	max-height:400px;
+}
 
 
 
