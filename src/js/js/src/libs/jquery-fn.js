@@ -10,24 +10,64 @@ jQuery.fn.isAbsoluteURL = function() {
   return prop.indexOf(base) !== 0 && (prop === attr || prop === attr + '/')
 }
 
-jQuery.fn.copyData = function(el, dont) {
+
+// copy data of one item to another one
+// for example from link of open modal to modal
+jQuery.fn.copyData = function(el, dont)
+{
   var $target = $(el),
       $this = $(this);
 
-  $.each($target.data(), function(key, val) {
-    if(dont && dont.indexOf(key) > -1) return;
 
-    $this.attr('data-' + key, typeof val === 'object' ? JSON.stringify(val) : val);
-  });
+  if($target.attr('data-softcopy') !== undefined)
+  {
+    // if need to overwrite old value before copy remove all data of new element
+    if($target.attr('data-overwrite') !== undefined)
+    {
+      // $.each($this.data(), function(key, val)
+      // {
+      //   $this.removeAttr("data-" + key);
+      // });
+      $this.removeData();
+    }
+    // copy data to data
+    $this.data( $target.data() );
+  }
+  else
+  {
+    // if need to overwrite old value before copy remove all data of new element
+    if($target.attr('data-overwrite') !== undefined)
+    {
+      $.each($this.data(), function(key, val)
+      {
+        $this.attr("data-" + key, null);
+      });
+      // remove all data from
+      $this.removeData();
+    }
+
+    // copy value of source to target
+    $this.data( $target.data() );
+    $.each($target.data(), function(key, val)
+    {
+      if(dont && dont.indexOf(key) > -1) return;
+
+      $this.attr('data-' + key, typeof val === 'object' ? JSON.stringify(val) : val);
+    });
+  }
 
   return this;
 }
 
-jQuery.fn.hasAttr = function(attr) {
+
+
+jQuery.fn.hasAttr = function(attr)
+{
   return this.attr(attr) !== undefined;
 }
 
-jQuery.fn.fadeOutAndRemove = function(speed) {
+jQuery.fn.fadeOutAndRemove = function(speed)
+{
   $(this).stop().fadeOut({
     duration: speed,
     complete: function() {
