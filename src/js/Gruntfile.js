@@ -54,6 +54,7 @@ module.exports = function (grunt) {
 							'js/src/libs/modal.js',
 							'js/src/libs/utils.js',
 							'js/src/libs/underscore.js',
+							'js/src/libs/jquery-clockpicker.js',
 
 							'js/src/tools/barcode-reader.js',
 							'js/src/tools/router.js',
@@ -187,6 +188,7 @@ module.exports = function (grunt) {
 						'js/src/libs/modal.js',
 						'js/src/libs/underscore.js',
 						'js/src/libs/utils.js',
+						'js/src/libs/jquery-clockpicker.js',
 
 						'js/src/tools/barcode-reader.js',
 						'js/src/tools/router.js',
