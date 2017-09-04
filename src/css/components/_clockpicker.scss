@@ -99,6 +99,11 @@
   border-top-color: #fff;
   border-bottom-width: 0;
 }
+.rtl .popover.top > .arrow:after
+{
+  margin-left: 0;
+  margin-right: -10px;
+}
 .popover.right > .arrow {
   top: 50%;
   left: -11px;
@@ -128,6 +133,10 @@
   content: " ";
   border-top-width: 0;
   border-bottom-color: #fff;
+}
+.rtl .popover.bottom > .arrow:after {
+  margin-left: 0;
+  margin-right: -10px;
 }
 .popover.left > .arrow {
   top: 50%;
@@ -184,6 +193,9 @@
  * Licensed under MIT (https://github.com/weareoutman/clockpicker/blob/gh-pages/LICENSE)
  */
 
+.clockpicker{
+  position: relative;
+}
 .clockpicker .input-group-addon {
 	cursor: pointer;
 }

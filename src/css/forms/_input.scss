@@ -10,7 +10,6 @@ $inputBorder: 1px solid rgba(0,0,0,0.1);
 	color: rgba(0,0,0,0.9);
 	display: flex;
 	width: 100%;
-	overflow: hidden;
 	border-radius: 0.25rem;
 }
 span.input{
@@ -85,50 +84,50 @@ span.input{
 }
 
 // for radius
-.ltr .input :first-child{
+.ltr .input > :first-child{
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
 }
-.ltr .input :last-child{
+.ltr .input > :not(.popover):last-child{
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
 }
-.rtl .input :first-child{
+.rtl .input > :first-child{
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
 }
-.rtl .input :last-child{
+.rtl .input > :not(.popover):last-child{
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
 }
 
 // for border
-.ltr .input .addon:first-child{
+.ltr .input > .addon:first-child{
 	border-right-width: 0;
 }
-.ltr .input .addon:last-child{
+.ltr .input > .addon:last-child{
 	border-left-width: 0;
 }
-.ltr .input .addon:not(:fist-child):not(:last-child){
+.ltr .input > .addon:not(:fist-child):not(:last-child){
 	border-left-width: 0;
 }
 // rtl
-.rtl .input .addon:first-child{
+.rtl .input > .addon:first-child{
 	border-left-width: 0;
 }
-.rtl .input .addon:last-child{
+.rtl .input > .addon:last-child{
 	border-right-width: 0;
 }
-.rtl .input .addon:not(:fist-child):not(:last-child){
+.rtl .input > .addon:not(:fist-child):not(:last-child){
 	border-right-width: 0;
 }
 
 // for all inputs
-.ltr .input :not(:first-child):not(:last-child){
+.ltr .input > :not(:first-child):not(:last-child){
 	border-radius: 0;
 	border-right-width:0;
 }
-.rtl .input :not(:first-child):not(:last-child){
+.rtl .input > :not(:first-child):not(:last-child){
 	border-radius: 0;
 	border-left-width:0;
 }
@@ -140,7 +139,7 @@ input.input{
 	display: inline-flex;
 	color: rgba(0,0,0,0.9);
 	position: relative;
-	line-height: 1.25;
+	line-height: 1;
 	padding: 0.6em 1em;
 	background-color: #fff;
 	border: $inputBorder;

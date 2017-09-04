@@ -3960,6 +3960,10 @@ img.mini {
   border-top-color: #fff;
   border-bottom-width: 0; }
 
+.rtl .popover.top > .arrow:after {
+  margin-left: 0;
+  margin-right: -10px; }
+
 .popover.right > .arrow {
   top: 50%;
   left: -11px;
@@ -3989,6 +3993,10 @@ img.mini {
   content: " ";
   border-top-width: 0;
   border-bottom-color: #fff; }
+
+.rtl .popover.bottom > .arrow:after {
+  margin-left: 0;
+  margin-right: -10px; }
 
 .popover.left > .arrow {
   top: 50%;
@@ -4041,6 +4049,9 @@ img.mini {
  * Copyright 2014 Wang Shenwei.
  * Licensed under MIT (https://github.com/weareoutman/clockpicker/blob/gh-pages/LICENSE)
  */
+.clockpicker {
+  position: relative; }
+
 .clockpicker .input-group-addon {
   cursor: pointer; }
 
@@ -4220,7 +4231,6 @@ img.mini {
   color: rgba(0, 0, 0, 0.9);
   display: flex;
   width: 100%;
-  overflow: hidden;
   border-radius: 0.25rem; }
 
 span.input {
@@ -4287,45 +4297,45 @@ span.input {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1); }
 
-.ltr .input :first-child {
+.ltr .input > :first-child {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.ltr .input :last-child {
+.ltr .input > :not(.popover):last-child {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
 
-.rtl .input :first-child {
+.rtl .input > :first-child {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
 
-.rtl .input :last-child {
+.rtl .input > :not(.popover):last-child {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.ltr .input .addon:first-child {
+.ltr .input > .addon:first-child {
   border-right-width: 0; }
 
-.ltr .input .addon:last-child {
+.ltr .input > .addon:last-child {
   border-left-width: 0; }
 
-.ltr .input .addon:not(:fist-child):not(:last-child) {
+.ltr .input > .addon:not(:fist-child):not(:last-child) {
   border-left-width: 0; }
 
-.rtl .input .addon:first-child {
+.rtl .input > .addon:first-child {
   border-left-width: 0; }
 
-.rtl .input .addon:last-child {
+.rtl .input > .addon:last-child {
   border-right-width: 0; }
 
-.rtl .input .addon:not(:fist-child):not(:last-child) {
+.rtl .input > .addon:not(:fist-child):not(:last-child) {
   border-right-width: 0; }
 
-.ltr .input :not(:first-child):not(:last-child) {
+.ltr .input > :not(:first-child):not(:last-child) {
   border-radius: 0;
   border-right-width: 0; }
 
-.rtl .input :not(:first-child):not(:last-child) {
+.rtl .input > :not(:first-child):not(:last-child) {
   border-radius: 0;
   border-left-width: 0; }
 
@@ -4334,7 +4344,7 @@ input.input {
   display: inline-flex;
   color: rgba(0, 0, 0, 0.9);
   position: relative;
-  line-height: 1.25;
+  line-height: 1;
   padding: 0.6em 1em;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -8530,7 +8540,6 @@ body .w200 {
   border: 3px solid #f6f6f6;
   margin: 1em;
   padding: 1em 1.5em;
-  overflow: hidden;
   transition: 0.3s; }
 
 .example:hover {
