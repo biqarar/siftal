@@ -88,7 +88,7 @@ span.input{
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
 }
-.ltr .input > :not(.popover):last-child{
+.ltr .input > :not(div):last-child{
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
 }
@@ -96,7 +96,7 @@ span.input{
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
 }
-.rtl .input > :not(.popover):last-child{
+.rtl .input > :not(div):last-child{
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
 }
@@ -108,7 +108,7 @@ span.input{
 .ltr .input > .addon:last-child{
 	border-left-width: 0;
 }
-.ltr .input > .addon:not(:fist-child):not(:last-child){
+.ltr .input > .addon:not(:first-child):not(:last-child){
 	border-left-width: 0;
 }
 // rtl
@@ -118,7 +118,7 @@ span.input{
 .rtl .input > .addon:last-child{
 	border-right-width: 0;
 }
-.rtl .input > .addon:not(:fist-child):not(:last-child){
+.rtl .input > .addon:not(:first-child):not(:last-child){
 	border-right-width: 0;
 }
 

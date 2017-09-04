@@ -277,6 +277,9 @@ route('*', function()
   {
     findPushStateScroll();
   }
+
+  // run clockpickers
+  $('.clockpicker').clockpicker();
 });
 
 

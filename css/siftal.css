@@ -3437,7 +3437,7 @@ progress.xl, meter.xl {
   border-radius: 0.4rem;
   overflow: hidden;
   line-height: 1.25;
-  transition: 0.7s;
+  transition: 0.3s;
   box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
   background-color: rgba(255, 255, 255, 0.7); }
 
@@ -4301,7 +4301,7 @@ span.input {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.ltr .input > :not(.popover):last-child {
+.ltr .input > :not(div):last-child {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
 
@@ -4309,7 +4309,7 @@ span.input {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
 
-.rtl .input > :not(.popover):last-child {
+.rtl .input > :not(div):last-child {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
@@ -4319,7 +4319,7 @@ span.input {
 .ltr .input > .addon:last-child {
   border-left-width: 0; }
 
-.ltr .input > .addon:not(:fist-child):not(:last-child) {
+.ltr .input > .addon:not(:first-child):not(:last-child) {
   border-left-width: 0; }
 
 .rtl .input > .addon:first-child {
@@ -4328,7 +4328,7 @@ span.input {
 .rtl .input > .addon:last-child {
   border-right-width: 0; }
 
-.rtl .input > .addon:not(:fist-child):not(:last-child) {
+.rtl .input > .addon:not(:first-child):not(:last-child) {
   border-right-width: 0; }
 
 .ltr .input > :not(:first-child):not(:last-child) {
@@ -6515,7 +6515,9 @@ body.siftal.loading-page #sidebar .avatar:before {
 .siftal footer {
   height: 30px;
   flex-shrink: 0;
-  background-color: #eaeaea; }
+  background-color: #eaeaea;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1; }
 
 .siftal footer #copyright {
   padding: 0 1em; }
