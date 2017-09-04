@@ -567,8 +567,13 @@
 		}
 		this.hours = + value[0] || 0;
 		this.minutes = + value[1] || 0;
-		this.spanHours.html(leadingZero(this.hours));
-		this.spanMinutes.html(leadingZero(this.minutes));
+
+		// this.spanHours.html(leadingZero(this.hours));
+		// this.spanMinutes.html(leadingZero(this.minutes));
+
+		this.spanHours.html(fitNumber(leadingZero(this.hours), false) );
+		this.spanMinutes.html(fitNumber(leadingZero(this.minutes), false) );
+
 
 		// Toggle to hours view
 		this.toggleView('hours');
@@ -756,7 +761,7 @@
 		}
 
 		this[this.currentView] = value;
-		this[isHours ? 'spanHours' : 'spanMinutes'].html(leadingZero(value));
+		this[isHours ? 'spanHours' : 'spanMinutes'].html(fitNumber(leadingZero(value), false) );
 
 		// If svg is not supported, just add an active class to the tick
 		if (! svgSupported)
