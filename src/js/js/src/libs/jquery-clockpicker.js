@@ -227,7 +227,8 @@
 					left: dialRadius + Math.sin(radian) * radius - tickRadius,
 					top: dialRadius - Math.cos(radian) * radius - tickRadius
 				});
-				tick.html(i === 0 ? '00' : i);
+				// tick.html(i === 0 ? '00' : i);
+				tick.html(i === 0 ? fitNumber('00', false) : fitNumber(i));
 				hoursView.append(tick);
 				tick.on(mousedownEvent, mousedown);
 			}
@@ -236,10 +237,10 @@
 		{
 			for (i = 0; i < 24; i += 1)
 			{
-				tick = tickTpl.clone();
-				radian = i / 6 * Math.PI;
+				tick      = tickTpl.clone();
+				radian    = i / 6 * Math.PI;
 				var inner = i > 0 && i < 13;
-				radius = inner ? innerRadius : outerRadius;
+				radius    = inner ? innerRadius : outerRadius;
 				tick.css({
 					left: dialRadius + Math.sin(radian) * radius - tickRadius,
 					top: dialRadius - Math.cos(radian) * radius - tickRadius
@@ -248,7 +249,8 @@
 				{
 					tick.css('font-size', '120%');
 				}
-				tick.html(i === 0 ? '00' : i);
+				// tick.html(i === 0 ? '00' : i);
+				tick.html(i === 0 ? fitNumber('00', false) : fitNumber(i));
 				hoursView.append(tick);
 				tick.on(mousedownEvent, mousedown);
 			}
@@ -264,7 +266,8 @@
 				top: dialRadius - Math.cos(radian) * outerRadius - tickRadius
 			});
 			tick.css('font-size', '120%');
-			tick.html(leadingZero(i));
+			// tick.html(leadingZero(i));
+			tick.html(fitNumber(leadingZero(i), false));
 			minutesView.append(tick);
 			tick.on(mousedownEvent, mousedown);
 		}
