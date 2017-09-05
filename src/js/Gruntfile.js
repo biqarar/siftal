@@ -57,6 +57,7 @@ module.exports = function (grunt) {
 							'js/src/libs/jquery-clockpicker.js',
 							'js/src/libs/persian-date.js',
 							'js/src/libs/persian-datepicker.js',
+							'js/src/libs/cropper.js',
 
 							'js/src/tools/barcode-reader.js',
 							'js/src/tools/router.js',
@@ -193,6 +194,7 @@ module.exports = function (grunt) {
 						'js/src/libs/jquery-clockpicker.js',
 						'js/src/libs/persian-date.js',
 						'js/src/libs/persian-datepicker.js',
+						'js/src/libs/cropper.js',
 
 						'js/src/tools/barcode-reader.js',
 						'js/src/tools/router.js',

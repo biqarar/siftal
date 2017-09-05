@@ -33,9 +33,11 @@ Version       1.0.0
 @import 'components/box';
 @import 'components/vcard';
 @import 'components/modal';
-// add extra component
-@import 'components/clockpicker';
-@import 'components/datepicker';
+
+// add extra library styles
+@import 'lib/clockpicker';
+@import 'lib/datepicker';
+@import 'lib/cropper';
 
 // form elements
 @import 'forms/general';
