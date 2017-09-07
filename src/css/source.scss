@@ -13,7 +13,6 @@ Version       1.0.0
 
 // add fonts
 @import 'base/fonts';
-@import 'dash/font';
 @import 'reset/reset';
 
 // add base styles
@@ -35,6 +34,7 @@ Version       1.0.0
 @import 'components/modal';
 
 // add extra library styles
+@import 'lib/icon';
 @import 'lib/clockpicker';
 @import 'lib/datepicker';
 @import 'lib/cropper';
