@@ -215,7 +215,9 @@ embed {
 
 img {
   border-style: none;
-  max-width: 100%; }
+  max-width: 100%;
+  height: auto;
+  margin: 0; }
 
 /*
    Note: keeping IMG here will cause problems if you're using foreground images as sprites.
@@ -534,11 +536,6 @@ template {
   content: " ";
   display: block;
   clear: both; }
-
-img {
-  max-width: 100%;
-  height: auto;
-  margin: 0; }
 
 .unselectable {
   cursor: default;
@@ -4614,7 +4611,8 @@ img.mini {
   top: 0; }
 
 .cropperPreview {
-  overflow: hidden; }
+  overflow: hidden;
+  direction: ltr; }
 
 .cropperPreview img {
   width: 100%;
