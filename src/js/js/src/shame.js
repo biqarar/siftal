@@ -63,8 +63,13 @@ function setLanguageURL()
       myUrl += urlHash;
     }
     myUrl = urlBase + '/' + myUrl;
-    console.log(myUrl);
-    $(index).attr('href', myUrl.trim('/'));
+    // remove last slash if exist
+    if (myUrl.charAt(myUrl.length - 1) == '/')
+    {
+      myUrl = myUrl.substr(0, myUrl.length - 1);
+    }
+
+    $(index).attr('href', myUrl);
   })
 }
 
