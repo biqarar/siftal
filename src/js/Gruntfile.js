@@ -67,7 +67,8 @@ module.exports = function (grunt) {
 							'js/src/tools/notification.js',
 							'js/src/tools/forms.js',
 
-							'js/src/main.js'
+							'js/src/main.js',
+							'js/src/shame.js'
 						]
 					}
 				}
@@ -205,7 +206,8 @@ module.exports = function (grunt) {
 						'js/src/tools/notification.js',
 						'js/src/tools/forms.js',
 
-						'js/src/main.js'
+						'js/src/main.js',
+						'js/src/shame.js'
 					],
 					tasks: ['uglify:siftal']
 				},
