@@ -569,16 +569,17 @@ function getTransforms(data) {
   };
 }
 
-function getRotatedSizes(data, reversed) {
-  var deg = Math.abs(data.degree) % 180;
-  var arc = (deg > 90 ? 180 - deg : deg) * Math.PI / 180;
-  var sinArc = Math.sin(arc);
-  var cosArc = Math.cos(arc);
-  var width = data.width;
-  var height = data.height;
+function getRotatedSizes(data, reversed)
+{
+  var deg         = Math.abs(data.degree) % 180;
+  var arc         = (deg > 90 ? 180 - deg : deg) * Math.PI / 180;
+  var sinArc      = Math.sin(arc);
+  var cosArc      = Math.cos(arc);
+  var width       = data.width;
+  var height      = data.height;
   var aspectRatio = data.aspectRatio;
-  var newWidth = void 0;
-  var newHeight = void 0;
+  var newWidth    = void 0;
+  var newHeight   = void 0;
 
   if (!reversed) {
     newWidth = width * cosArc + height * sinArc;
@@ -595,23 +596,23 @@ function getRotatedSizes(data, reversed) {
 }
 
 function getSourceCanvas(image, data, options) {
-  var canvas = createElement('canvas');
-  var context = canvas.getContext('2d');
-  var dstX = 0;
-  var dstY = 0;
-  var dstWidth = data.naturalWidth;
-  var dstHeight = data.naturalHeight;
-  var rotate = data.rotate;
-  var scaleX = data.scaleX;
-  var scaleY = data.scaleY;
-  var scalable = isNumber(scaleX) && isNumber(scaleY) && (scaleX !== 1 || scaleY !== 1);
-  var rotatable = isNumber(rotate) && rotate !== 0;
-  var advanced = rotatable || scalable;
-  var canvasWidth = dstWidth * Math.abs(scaleX || 1);
+  var canvas       = createElement('canvas');
+  var context      = canvas.getContext('2d');
+  var dstX         = 0;
+  var dstY         = 0;
+  var dstWidth     = data.naturalWidth;
+  var dstHeight    = data.naturalHeight;
+  var rotate       = data.rotate;
+  var scaleX       = data.scaleX;
+  var scaleY       = data.scaleY;
+  var scalable     = isNumber(scaleX) && isNumber(scaleY) && (scaleX !== 1 || scaleY !== 1);
+  var rotatable    = isNumber(rotate) && rotate !== 0;
+  var advanced     = rotatable || scalable;
+  var canvasWidth  = dstWidth * Math.abs(scaleX || 1);
   var canvasHeight = dstHeight * Math.abs(scaleY || 1);
-  var translateX = void 0;
-  var translateY = void 0;
-  var rotated = void 0;
+  var translateX   = void 0;
+  var translateY   = void 0;
+  var rotated      = void 0;
 
   if (scalable) {
     translateX = canvasWidth / 2;

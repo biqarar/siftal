@@ -167,3 +167,21 @@ input.input.warning{
 input.input.ok{
 	border-color:rgba(39,128,39,0.5);
 }
+
+
+
+
+/* handle all type of files*/
+// hide default file selctor
+.input.preview input[type='file']{padding:0;margin:0;position:absolute;z-index:-1;width:0;height:0;opacity:0}
+.input.preview input:focus+label:after{color:rgba(128, 192, 208, 0.9)}
+// add some style on label
+.input.preview label{position:relative;display:block;height:110px;width:110px;text-align:center;margin:0 auto;padding:0;-webkit-transition:.3s;transition:.3s;border-radius:3px;background-color:rgba(0,0,0,.05)}
+.input.preview label:after{font-family:"siftal";content:"3";color:#bbb;display:inline-block;text-align:center;line-height:110px;font-size:50px;vertical-align:middle;}
+.input.preview label[for^='avatar']:after{content:""}
+.input.preview label[for^='logo']:after{content:"$"}
+.input.preview label:hover{background-color:rgba(0,0,0,.07)}
+.input.preview label span{display:inline-block;width:auto;}
+.input.preview label img{position:absolute;top:0;bottom:0;right:0;left:0;margin:0 auto;max-width:110px;max-height:110px;width:auto;height:auto; padding:0;background-color:#eee;opacity:0;transition:0.3s}
+.input.preview label img[src]{opacity:1;}
+
