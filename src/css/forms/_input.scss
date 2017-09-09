@@ -56,6 +56,16 @@ span.input{
 .input.ok input{
 	border-color:rgba(39,128,39,0.5);
 }
+.input.preview.error label{
+	border-color:rgba(255,0,0,0.5);
+}
+.input.preview.warning label{
+	border-color:rgba(255,145,0,0.5);
+}
+.input.preview.ok label{
+	border-color:rgba(39,128,39,0.5);
+}
+
 
 
 
@@ -176,7 +186,7 @@ input.input.ok{
 .input.preview input[type='file']{padding:0;margin:0;position:absolute;z-index:-1;width:0;height:0;opacity:0}
 .input.preview input:focus+label:after{color:rgba(128, 192, 208, 0.9)}
 // add some style on label
-.input.preview label{position:relative;display:block;height:110px;width:110px;text-align:center;margin:0 auto;padding:0;-webkit-transition:.3s;transition:.3s;border-radius:3px;background-color:rgba(0,0,0,.05)}
+.input.preview label{position:relative;display:block;height:110px;width:110px;text-align:center;margin:0 auto;padding:0;-webkit-transition:.3s;transition:.3s;border-radius:3px;background-color:rgba(0,0,0,.05);border:1px solid transparent;}
 .input.preview label:after{font-family:"siftal";content:"3";color:#bbb;display:inline-block;text-align:center;line-height:110px;font-size:50px;vertical-align:middle;}
 .input.preview label[for^='avatar']:after{content:""}
 .input.preview label[for^='logo']:after{content:"$"}
