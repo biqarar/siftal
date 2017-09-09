@@ -29,7 +29,7 @@ var myModuleFiles =
 	'js/src/tools/forms.js',
 
 	// use some utitlity
-	'js/src/utility/files.js',
+	'js/src/utility/input-files.js',
 	'js/src/utility/language.js',
 	'js/src/utility/responsive.js',
 
@@ -43,13 +43,13 @@ var myModuleFiles =
 module.exports = function (grunt) {
 	grunt.initConfig(
 		{
-			coffee: {
-				compile: {
-					files: {
-						'js/src/saloos/saloos.js': 'js/src/saloos/*.coffee'
-					}
-				}
-			},
+			// coffee: {
+			// 	compile: {
+			// 		files: {
+			// 			'js/src/saloos/saloos.js': 'js/src/saloos/*.coffee'
+			// 		}
+			// 	}
+			// },
 			bundle: {
 				client: {
 					options: {
@@ -71,16 +71,16 @@ module.exports = function (grunt) {
 					sourceMap: false,
 					mangle: false
 				},
-				saloos: {
-					options: {
-						// mangle: true
-					},
-					files: {
-						'js/src/saloos/saloos.min': [
-							'js/src/saloos/*.js'
-						]
-					}
-				},
+				// saloos: {
+				// 	options: {
+				// 		// mangle: true
+				// 	},
+				// 	files: {
+				// 		'js/src/saloos/saloos.min': [
+				// 			'js/src/saloos/*.js'
+				// 		]
+				// 	}
+				// },
 				siftal:
 				{
 					files:
@@ -187,18 +187,18 @@ module.exports = function (grunt) {
 				//   files: ['views/*'],
 				//   tasks: ['react', 'uglify:filemanager']
 				// },
-				coffee: {
-					files: ['js/src/saloos/*.coffee'],
-					tasks: ['coffee:compile']
-				},
-				saloos: {
-					files: ['js/src/saloos/saloos.min'],
-					tasks: ['ermile_cp']
-				},
-				ermile_cp: {
-					files: ['js/src/saloos/*.js'],
-					tasks: ['uglify:saloos']
-				},
+				// coffee: {
+				// 	files: ['js/src/saloos/*.coffee'],
+				// 	tasks: ['coffee:compile']
+				// },
+				// saloos: {
+				// 	files: ['js/src/saloos/saloos.min'],
+				// 	tasks: ['ermile_cp']
+				// },
+				// ermile_cp: {
+				// 	files: ['js/src/saloos/*.js'],
+				// 	tasks: ['uglify:saloos']
+				// },
 				siftal:
 				{
 					files: myModuleFiles,
@@ -241,23 +241,23 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-open');
 	// grunt.loadNpmTasks('grunt-react');
-	grunt.loadNpmTasks('grunt-contrib-coffee');
-	grunt.task.registerTask('ermile_cp', 'A sample task that logs stuff.', function (arg1, arg2) {
-		var projects = ['ermile'];
-		for (var i = 0; i < projects.length; i++) {
-			// var file_name = '../../../../'+projects[i]+'/public_html/static/js/cp/cp.js';
-			var file_name = '../../js/cp/cp.js';
-			if (fs.existsSync(file_name)) {
-				file = fs.readFileSync(file_name).toString();
-				saloos = fs.readFileSync('js/src/saloos/saloos.min').toString();
-				file = file.replace(/\/\*\*\*cpjs\*\*\*\/([.\r\n\s\S]+)\/\*\*\*cpjs\*\*\*\//gmi, '/***cpjs***/' + saloos + '/***cpjs***/');
-				fs.writeFileSync(file_name, file);
-				console.log("ermile saved true on cp's");
-			}
-		}
-		args = ['notify-send', '-c', 'Grunt', '-t', '5000', "'End Grunt'", "'saloos'"];
-		exec(args.join(' '));
-	});
+	// grunt.loadNpmTasks('grunt-contrib-coffee');
+	// grunt.task.registerTask('ermile_cp', 'A sample task that logs stuff.', function (arg1, arg2) {
+	// 	var projects = ['ermile'];
+	// 	for (var i = 0; i < projects.length; i++) {
+	// 		// var file_name = '../../../../'+projects[i]+'/public_html/static/js/cp/cp.js';
+	// 		var file_name = '../../js/cp/cp.js';
+	// 		if (fs.existsSync(file_name)) {
+	// 			file = fs.readFileSync(file_name).toString();
+	// 			saloos = fs.readFileSync('js/src/saloos/saloos.min').toString();
+	// 			file = file.replace(/\/\*\*\*cpjs\*\*\*\/([.\r\n\s\S]+)\/\*\*\*cpjs\*\*\*\//gmi, '/***cpjs***/' + saloos + '/***cpjs***/');
+	// 			fs.writeFileSync(file_name, file);
+	// 			console.log("ermile saved true on cp's");
+	// 		}
+	// 	}
+	// 	args = ['notify-send', '-c', 'Grunt', '-t', '5000', "'End Grunt'", "'saloos'"];
+	// 	exec(args.join(' '));
+	// });
 
 
 	var compiler = require('./scripts/compiler');
@@ -273,5 +273,6 @@ module.exports = function (grunt) {
 	// grunt.registerTask('test', ['uglify:tests']);
 	// grunt.registerTask('default', ['react', 'uglify', 'less', 'autoprefixer', 'copy', 'coffee', 'ermile_cp', 'watch']);
 	// grunt.registerTask('default', ['uglify', 'copy', 'coffee', 'ermile_cp', 'watch']);
-	grunt.registerTask('default', ['bundle', 'uglify', 'copy', 'ermile_cp', 'watch']);
+	// grunt.registerTask('default', ['bundle', 'uglify', 'copy', 'ermile_cp', 'watch']);
+	grunt.registerTask('default', ['bundle', 'uglify', 'copy', 'watch']);
 };

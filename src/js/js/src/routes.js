@@ -10,6 +10,7 @@ route('*', function ()
   runInputFileFunc();
   responsiveSidebar();
   setLanguageURL();
+  runCropper();
 
 });
 
