@@ -4639,8 +4639,7 @@ img.mini {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
-  max-height: 400px; }
+  user-select: none; }
 
 .cropper-container img {
   /* Avoid margin top issue (Occur only when margin-top <= -height) */

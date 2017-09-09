@@ -1,5 +1,45 @@
 var fs = require('fs');
 exec = require('child_process').exec;
+
+var myModuleFiles =
+[
+	// include jquery
+	'js/src/libs/jquery/jquery.js',
+	'js/src/libs/jquery/jquery-fn.js',
+
+	'js/src/libs/localstorage.js',
+	// 'js/src/libs/jquery.autoComplete.js',
+	'js/src/libs/modal.js',
+	'js/src/libs/utils.js',
+	'js/src/libs/underscore.js',
+
+	// new lib used in siftal
+	'js/src/libs/clockpicker/jquery-clockpicker.js',
+	'js/src/libs/date/persian-date.js',
+	'js/src/libs/date/persian-datepicker.js',
+	'js/src/libs/cropper/cropper.js',
+	'js/src/libs/cropper/cropperRunner.js',
+	'js/src/libs/dataResponse/dataResponse.js',
+
+	// tools
+	'js/src/tools/barcode-reader.js',
+	'js/src/tools/router.js',
+	'js/src/tools/navigate.js',
+	'js/src/tools/notification.js',
+	'js/src/tools/forms.js',
+
+	// use some utitlity
+	'js/src/utility/files.js',
+	'js/src/utility/language.js',
+	'js/src/utility/responsive.js',
+
+	'js/src/main.js',
+	'js/src/shame.js',
+	'js/src/routes.js',
+];
+
+
+
 module.exports = function (grunt) {
 	grunt.initConfig(
 		{
@@ -45,31 +85,7 @@ module.exports = function (grunt) {
 				{
 					files:
 					{
-						'js/siftal.js':
-						[
-							'js/src/libs/jquery.js',
-							'js/src/libs/jquery-fn.js',
-							'js/src/libs/localstorage.js',
-							// 'js/src/libs/jquery.autoComplete.js',
-							'js/src/libs/modal.js',
-							'js/src/libs/utils.js',
-							'js/src/libs/underscore.js',
-							'js/src/libs/jquery-clockpicker.js',
-							'js/src/libs/persian-date.js',
-							'js/src/libs/persian-datepicker.js',
-							'js/src/libs/cropper.js',
-							'js/src/libs/dataResponse.js',
-
-
-							'js/src/tools/barcode-reader.js',
-							'js/src/tools/router.js',
-							'js/src/tools/navigate.js',
-							'js/src/tools/notification.js',
-							'js/src/tools/forms.js',
-
-							'js/src/main.js',
-							'js/src/shame.js'
-						]
+						'js/siftal.js': myModuleFiles,
 					}
 				}
 				// datepicker: {
@@ -185,30 +201,7 @@ module.exports = function (grunt) {
 				},
 				siftal:
 				{
-					files:
-					[
-						'js/src/libs/jquery.js',
-						'js/src/libs/jquery-fn.js',
-						'js/src/libs/localstorage.js',
-						// 'js/src/libs/jquery.autoComplete.js',
-						'js/src/libs/modal.js',
-						'js/src/libs/underscore.js',
-						'js/src/libs/utils.js',
-						'js/src/libs/jquery-clockpicker.js',
-						'js/src/libs/persian-date.js',
-						'js/src/libs/persian-datepicker.js',
-						'js/src/libs/cropper.js',
-						'js/src/libs/dataResponse.js',
-
-						'js/src/tools/barcode-reader.js',
-						'js/src/tools/router.js',
-						'js/src/tools/navigate.js',
-						'js/src/tools/notification.js',
-						'js/src/tools/forms.js',
-
-						'js/src/main.js',
-						'js/src/shame.js'
-					],
+					files: myModuleFiles,
 					tasks: ['uglify:siftal']
 				},
 				// datepicker: {
