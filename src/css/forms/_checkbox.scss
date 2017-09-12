@@ -1,3 +1,16 @@
-
+/* checkbox type 1*/
+.check1{margin:10px 0;}
+.check1 input[type='checkbox']{padding:0;margin:0;position:absolute;z-index:-1;width:0;height:0;opacity:0}
+.check1 input[type='checkbox']+label{position:relative;cursor:pointer;padding:0}
+.check1 input[type='checkbox']+label:before{content:'';margin-right:10px;display:inline-block;vertical-align:middle;width:20px;height:20px;background:rgba(0,0,0,0.1);transition:0.3s;border-radius:3px;}
+.check1 input[type='checkbox']:hover+label:before{background-color:#4090d0}
+.check1 input[type='checkbox']:checked+label:before{background-color:#4090d0}
+.check1 input[type='checkbox']:focus+label:before{box-shadow:0 0 0 3px rgba(0,0,0,0.2)}
+.check1 input[type='checkbox']:disabled+label{color:#bbb;cursor:auto}
+.check1 input[type='checkbox']:disabled+label:before{box-shadow:none;background-color:#ddd}
+.check1 input[type='checkbox']+label:after{content:'';position:absolute;left:5px;top:9px;background-color:#fff;width:2px;height:2px;box-shadow:2px 0 0 white,4px 0 0 white,4px -2px 0 white,4px -4px 0 white,4px -6px 0 white,4px -8px 0 #fff;-webkit-transform:rotate(45deg);transform:rotate(45deg);opacity:0;transition:0.1s}
+.check1 input[type='checkbox']:checked+label:after{opacity:1}
+.rtl .check1 input[type='checkbox']+label:before{margin-right:0;margin-left:10px;}
+.rtl .check1 input[type='checkbox']+label:after{left:0;right:13px;}
 
 
