@@ -186,7 +186,7 @@ function checkInputPreview(_direct, _file, _size, _input, _inputBox)
 
 	// get image path and ext
 	var imgPath = _input[0].value;
-	_input.val(null);
+	// _input.val(null);
 	var imgExt  = imgPath.substring(imgPath.lastIndexOf('.') + 1).toLowerCase();
 	// if selected valid extention for preview
 	if (imgExt == "gif" || imgExt == "png" || imgExt == "jpg" || imgExt == "jpeg")
