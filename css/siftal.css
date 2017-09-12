@@ -5130,6 +5130,14 @@ input.input.ok {
 .input.preview label img[src] {
   opacity: 1; }
 
+label {
+  font-weight: bold;
+  padding: 5px 0;
+  display: inline-block; }
+
+label + .input {
+  margin-bottom: 10px; }
+
 .txt {
   display: block;
   margin: 0;
