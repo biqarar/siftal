@@ -5150,9 +5150,10 @@ label + .input {
 
 /* checkbox type 1*/
 .check1 {
-  margin: 10px 0; }
+  margin: 10px 0;
+  overflow: hidden; }
 
-.check1 input[type='checkbox'] {
+.check1 input {
   padding: 0;
   margin: 0;
   position: absolute;
@@ -5161,12 +5162,13 @@ label + .input {
   height: 0;
   opacity: 0; }
 
-.check1 input[type='checkbox'] + label {
+.check1 label {
   position: relative;
   cursor: pointer;
-  padding: 0; }
+  padding: 0;
+  display: inline-block; }
 
-.check1 input[type='checkbox'] + label:before {
+.check1 label::before {
   content: '';
   margin-right: 10px;
   display: inline-block;
@@ -5175,26 +5177,10 @@ label + .input {
   height: 20px;
   background: rgba(0, 0, 0, 0.1);
   transition: 0.3s;
-  border-radius: 3px; }
+  border-radius: 3px;
+  border: 1px solid transparent; }
 
-.check1 input[type='checkbox']:hover + label:before {
-  background-color: #4090d0; }
-
-.check1 input[type='checkbox']:checked + label:before {
-  background-color: #4090d0; }
-
-.check1 input[type='checkbox']:focus + label:before {
-  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2); }
-
-.check1 input[type='checkbox']:disabled + label {
-  color: #bbb;
-  cursor: auto; }
-
-.check1 input[type='checkbox']:disabled + label:before {
-  box-shadow: none;
-  background-color: #ddd; }
-
-.check1 input[type='checkbox'] + label:after {
+.check1 label::after {
   content: '';
   position: absolute;
   left: 5px;
@@ -5208,16 +5194,151 @@ label + .input {
   opacity: 0;
   transition: 0.1s; }
 
-.check1 input[type='checkbox']:checked + label:after {
+.check1 label:hover::before {
+  border-color: rgba(0, 0, 0, 0.2); }
+
+.check1 input:checked + label::after {
   opacity: 1; }
 
-.rtl .check1 input[type='checkbox'] + label:before {
+.check1 input:checked + label::before {
+  background-color: #4090d0; }
+
+.check1 input:focus + label::before {
+  border-color: rgba(128, 192, 208, 0.9); }
+
+.check1 input:checked:focus + label::before {
+  background-color: #105090; }
+
+.check1 input:disabled + label {
+  color: #bbb;
+  cursor: auto; }
+
+.check1 input:disabled + label::before {
+  background-color: #ddd; }
+
+.rtl .check1 label::before {
   margin-right: 0;
   margin-left: 10px; }
 
-.rtl .check1 input[type='checkbox'] + label:after {
+.rtl .check1 label::after {
   left: 0;
   right: 13px; }
+
+.switch1 {
+  overflow: hidden;
+  margin: 10px 0; }
+
+.switch1 input {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  opacity: 0; }
+
+.switch1 label {
+  position: relative;
+  cursor: pointer;
+  height: 30px;
+  float: left; }
+
+.switch1 label:before {
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 65px;
+  height: 30px;
+  background: #eee;
+  border-radius: 15px;
+  transition: background-color .2s; }
+
+.switch1 label:after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  transition: all .2s;
+  border-radius: 50%;
+  background: #7F8C9A;
+  top: 5px;
+  left: calc(100% + 5px); }
+
+.switch1 label > span:before {
+  position: absolute;
+  border-radius: 15px;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 22px;
+  transition: all .2s;
+  top: 4px; }
+
+.switch1 label > span:after {
+  position: absolute;
+  border-radius: 15px;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 22px;
+  transition: all .2s;
+  top: 4px; }
+
+/* on checked */
+.switch1 input:checked + label:before {
+  background: #33414e;
+  background: #34A7C1; }
+
+.switch1 input:checked + label:after {
+  background: #fff;
+  top: 5px;
+  left: calc(100% + 40px); }
+
+.switch1 input:checked + label > span:after {
+  left: calc(100% + 10px);
+  content: "ON";
+  color: #fff; }
+
+.switch1 input:not(:checked) + label > span:before {
+  left: calc(100% + 32px);
+  content: "OFF";
+  color: #999; }
+
+.rtl .switch1 label {
+  float: right; }
+
+.rtl .switch1 label:before {
+  right: 100%; }
+
+.rtl .switch1 label:after {
+  right: calc(100% + 5px); }
+
+.rtl .switch1 input:checked + label:after {
+  right: calc(100% + 40px); }
+
+.rtl .switch1 label > span:before {
+  top: 2px; }
+
+.rtl .switch1 label > span:after {
+  top: 2px; }
+
+.rtl .switch1 input:checked + label > span:after {
+  right: calc(100% + 10px);
+  left: inherit;
+  line-height: 26px; }
+
+.rtl .switch1 input:not(:checked) + label > span:before {
+  right: calc(100% + 32px);
+  left: inherit;
+  line-height: 26px; }
+
+html[lang=fa] .rtl .switch1 input:checked + label > span:after {
+  right: calc(100% + 12px);
+  content: "فعال"; }
+
+html[lang=fa] .rtl .switch1 input:not(:checked) + label > span:before {
+  right: calc(100% + 29px);
+  content: "غیرفعال";
+  font-size: 0.8em; }
 
 .txt {
   display: block;
