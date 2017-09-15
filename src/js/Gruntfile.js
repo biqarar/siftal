@@ -22,6 +22,9 @@ var myModuleFiles =
 	'js/src/libs/dataResponse/dataResponse.js',
 	'js/src/libs/sortable/Sortable.js',
 	'js/src/libs/sortable/SortableRunner.js',
+	'js/src/libs/awesomplete/awesomplete.js',
+	'js/src/libs/awesomplete/awesompleteRunner.js',
+
 
 	// tools
 	'js/src/tools/barcode-reader.js',
