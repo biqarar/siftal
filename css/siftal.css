@@ -1574,7 +1574,7 @@ a:active {
 
 .breadcrumb a {
   font-size: 1em;
-  line-height: 20px;
+  line-height: 1.5em;
   color: #99a0aa;
   float: left;
   font-weight: 700;
@@ -9464,7 +9464,27 @@ body .w200 {
     padding-top: 0.25em !important;
     padding-bottom: 0.25em !important;
     border: none !important;
-    background-color: transparent !important; } }
+    background-color: transparent !important; }
+
+  .breadcrumb {
+    padding: 5px 5px;
+    height: auto; }
+
+  .breadcrumb a {
+    width: 100%; }
+
+  .breadcrumb2 {
+    padding: 5px 5px;
+    height: auto; }
+
+  .breadcrumb2 a {
+    width: 100%; }
+
+  .pagination a.next, .pagination a.prev {
+    display: none; }
+
+  .pagination a:not([href]):not(.active) {
+    display: none; } }
 @media all and (max-width: 280px) {
   html:before {
     font-size: 100vw;
