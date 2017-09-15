@@ -11,6 +11,7 @@ route('*', function ()
   responsiveSidebar();
   setLanguageURL();
   runCropper();
+  runSortable()
 
 });
 

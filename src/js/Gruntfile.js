@@ -20,6 +20,8 @@ var myModuleFiles =
 	'js/src/libs/cropper/cropper.js',
 	'js/src/libs/cropper/cropperRunner.js',
 	'js/src/libs/dataResponse/dataResponse.js',
+	'js/src/libs/sortable/Sortable.js',
+	'js/src/libs/sortable/SortableRunner.js',
 
 	// tools
 	'js/src/tools/barcode-reader.js',

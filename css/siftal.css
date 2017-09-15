@@ -4894,6 +4894,45 @@ img.mini {
 .cropper-disabled .cropper-point {
   cursor: not-allowed; }
 
+/* sortable list styles*/
+.sortable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.sortable > li.disabled {
+  opacity: .5; }
+
+.sortable > li.highlight {
+  background: #FEE25F; }
+
+.sortable > li.sortable-placeholder {
+  border-color: #CCC; }
+
+.sortable > li .handle {
+  cursor: move; }
+
+.sortable > li .title {
+  cursor: move;
+  cursor: -webkit-grabbing; }
+
+li.sortable-placeholder {
+  border: 1px dashed #CCC; }
+
+.input-group.sortable.drag-big li.sortable-placeholder {
+  height: 75px; }
+
+.sortable > li {
+  margin-bottom: 1em; }
+
+/*.sortable>li .element{margin:0}*/
+.sortable .isChoosen {
+  opacity: 0.7; }
+
+.sortable .handle {
+  cursor: move !important; }
+
 .transparent {
   border-color: transparent !important;
   background-color: transparent !important;
