@@ -7510,7 +7510,7 @@ body.siftal.loading-page #sidebar .avatar:before {
 
 /* footer */
 .siftal footer {
-  height: 30px;
+  height: 25px;
   flex-shrink: 0;
   background-color: #eaeaea;
   box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2);
@@ -7527,13 +7527,13 @@ body.siftal.loading-page #sidebar .avatar:before {
 
 .siftal footer #copyright span {
   display: inline-block;
-  line-height: 30px;
-  height: 30px; }
+  line-height: 25px;
+  height: 25px; }
 
 .siftal footer #copyright abbr {
   display: inline-block;
-  line-height: 30px;
-  height: 30px; }
+  line-height: 25px;
+  height: 25px; }
 
 .siftal .card.chart2 [id*='chartdiv'] {
   width: 100%;
