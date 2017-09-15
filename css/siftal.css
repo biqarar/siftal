@@ -5139,7 +5139,8 @@ input.input.ok {
 label {
   font-weight: bold;
   padding: 5px 0;
-  display: inline-block; }
+  display: inline-block;
+  vertical-align: middle; }
 
 label + .input {
   margin-bottom: 10px; }
@@ -5226,7 +5227,8 @@ label + .input {
 
 .switch1 {
   overflow: hidden;
-  margin: 10px 0; }
+  margin: 10px 0;
+  vertical-align: middle; }
 
 .switch1 input {
   padding: 0;
@@ -5238,6 +5240,10 @@ label + .input {
   opacity: 0; }
 
 .switch1 label {
+  padding: 5px 10px;
+  cursor: pointer; }
+
+.switch1 label:first-of-type {
   position: relative;
   cursor: pointer;
   height: 35px;
@@ -5250,15 +5256,15 @@ label + .input {
   padding: 0;
   font-size: 0;
   line-height: 0;
-  display: block; }
+  display: inline-block; }
 
-.switch1 label:hover {
+.switch1 label:first-of-type:hover {
   border-color: rgba(0, 0, 0, 0.2); }
 
-.switch1 input:focus + label {
+.switch1 input:focus + label:first-of-type {
   border-color: rgba(128, 192, 208, 0.9); }
 
-.switch1 label:before {
+.switch1 label:first-of-type:before {
   content: "OFF";
   position: absolute;
   max-width: 25px;
@@ -5272,7 +5278,7 @@ label + .input {
   transition: 0.3s;
   overflow: hidden; }
 
-.switch1 label:after {
+.switch1 label:first-of-type:after {
   content: '';
   position: absolute;
   width: 27px;
@@ -5283,37 +5289,37 @@ label + .input {
   top: 3px;
   left: 3px; }
 
-.switch1 input:checked + label {
+.switch1 input:checked + label:first-of-type {
   background: #33414e;
   background: #34A7C1;
   background-color: #4090d0; }
 
-.switch1 input:focus:checked + label {
+.switch1 input:focus:checked + label:first-of-type {
   background-color: #105090; }
 
-.switch1 input:checked + label:before {
+.switch1 input:checked + label:first-of-type:before {
   content: "ON";
   left: 10px;
   right: inherit;
   color: #fff; }
 
-.switch1 input:checked + label:after {
+.switch1 input:checked + label:first-of-type:after {
   background: #fff;
   top: 3px;
   left: 38px; }
 
-html[lang=fa] .switch1 label:before {
+html[lang=fa] .switch1 label:first-of-type:before {
   content: "غیرفعال";
   font-size: 8px; }
 
-html[lang=fa] .switch1 input:checked + label:before {
+html[lang=fa] .switch1 input:checked + label:first-of-type:before {
   content: "فعال";
   font-size: 10px; }
 
-.switch1 label[data-off]:before {
+.switch1 label:first-of-type[data-off]:before {
   content: attr(data-off); }
 
-.switch1 input:checked + label[data-on]:before {
+.switch1 input:checked + label:first-of-type[data-on]:before {
   content: attr(data-on); }
 
 .txt {
