@@ -88,9 +88,11 @@ html[lang=fa] .switch1 input:checked + label:first-of-type:before {
 }
 
 .switch1 label:first-of-type[data-off]:before{
-  content: attr(data-off);
+  content: attr(data-off)!important;
+  font-size: 10px;
 }
 .switch1 input:checked + label:first-of-type[data-on]:before{
-  content: attr(data-on);
+  content: attr(data-on)!important;
+  font-size: 10px;
 }
 
