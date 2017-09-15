@@ -10,7 +10,11 @@
   border-radius: 15px;
   transition: .2s;
   border:1px solid transparent;
-  // overflow: hidden;
+  overflow: hidden;
+  padding: 0;
+  font-size:0;
+  line-height:0;
+  display: block;
 }
 .switch1 label:hover{
   border-color:rgba(0, 0, 0, 0.2);
@@ -32,6 +36,7 @@
   right: 10px;
   color: #999;
   transition:0.3s;
+  overflow:hidden;
 }
 .switch1 label:after{
   content: '';
@@ -77,5 +82,10 @@ html[lang=fa] .switch1 input:checked + label:before {
   font-size: 10px;
 }
 
-
+.switch1 label[data-off]:before{
+  content: attr(data-off);
+}
+.switch1 input:checked + label[data-on]:before{
+  content: attr(data-on);
+}
 

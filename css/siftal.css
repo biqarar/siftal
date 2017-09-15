@@ -5245,7 +5245,12 @@ label + .input {
   background: #eee;
   border-radius: 15px;
   transition: .2s;
-  border: 1px solid transparent; }
+  border: 1px solid transparent;
+  overflow: hidden;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  display: block; }
 
 .switch1 label:hover {
   border-color: rgba(0, 0, 0, 0.2); }
@@ -5264,7 +5269,8 @@ label + .input {
   top: 3px;
   right: 10px;
   color: #999;
-  transition: 0.3s; }
+  transition: 0.3s;
+  overflow: hidden; }
 
 .switch1 label:after {
   content: '';
@@ -5303,6 +5309,12 @@ html[lang=fa] .switch1 label:before {
 html[lang=fa] .switch1 input:checked + label:before {
   content: "فعال";
   font-size: 10px; }
+
+.switch1 label[data-off]:before {
+  content: attr(data-off); }
+
+.switch1 input:checked + label[data-on]:before {
+  content: attr(data-on); }
 
 .txt {
   display: block;
@@ -7447,12 +7459,10 @@ body.siftal.loading-page #sidebar .avatar:before {
   max-width: 300px;
   margin: 0 auto;
   transition: 0.3s;
-  border: 1em solid transparent;
-  border-top-width: 0.1em;
-  border-bottom-width: 0.1em; }
+  border: 1px solid transparent; }
 
 .siftal #sidebar h2 a:focus {
-  border-color: #fff; }
+  background-color: #111; }
 
 /* sidenav menu */
 .siftal #sidebar ul.sidenav {

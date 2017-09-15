@@ -25,8 +25,8 @@ body.siftal.loading-page #sidebar .avatar:before{animation-duration:1s;-webkit-a
 /* header */
 .siftal #sidebar h2{margin:0;text-align:center;color:#fff;background-color:#201f1f;height:60px;line-height:60px;margin-bottom:1em;transition:0.3s}
 .siftal #sidebar h2:hover{background-color:#000}
-.siftal #sidebar h2 a{display:block;max-width:300px;margin:0 auto;transition:0.3s;border:1em solid transparent;border-top-width:0.1em;border-bottom-width:0.1em;}
-.siftal #sidebar h2 a:focus{border-color:#fff;}
+.siftal #sidebar h2 a{display:block;max-width:300px;margin:0 auto;transition:0.3s;border:1px solid transparent;}
+.siftal #sidebar h2 a:focus{background-color:#111}
 /* sidenav menu */
 .siftal #sidebar ul.sidenav{font-size:1.4em}
 .siftal #sidebar ul > li{color:#d5d5d5;}
