@@ -11,7 +11,9 @@ route('*', function ()
   responsiveSidebar();
   setLanguageURL();
   runCropper();
-  runSortable()
+  runSortable();
+  // run counter up on each page we have counter
+  runCounterUp();
 
 });
 

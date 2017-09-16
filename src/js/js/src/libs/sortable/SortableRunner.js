@@ -4,7 +4,7 @@ function runSortable()
 {
 	var el         = $('.sortable');
 	var mySortable = null;
-	console.log(el);
+	// console.log(el);
 
 	if(el.length > 0)
 	{

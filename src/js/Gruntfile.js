@@ -24,6 +24,9 @@ var myModuleFiles =
 	'js/src/libs/sortable/SortableRunner.js',
 	'js/src/libs/awesomplete/awesomplete.js',
 	'js/src/libs/awesomplete/awesompleteRunner.js',
+	'js/src/libs/counter/jquery.counterup.js',
+	'js/src/libs/counter/counterRunner.js',
+
 
 
 	// tools
