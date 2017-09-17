@@ -268,18 +268,7 @@
 	border-color:#2080d0;
 	color: #2080d0;
 }
-.primary2:hover{
-	background-color: #1678c2;
-	color: #fff;
-}
-.primary2:focus{
-	background-color: #0d71bb;
-	color: #fff;
-}
-.primary2:active, .primary2.active{
-	background-color: #0060b0;
-	color: #fff;
-}
+
 
 
 // secondary btn
@@ -292,18 +281,7 @@
 	border-color:#111111;
 	color: #111111;
 }
-.secondary2:hover{
-	background-color: #333333;
-	color: #fff;
-}
-.secondary2:focus{
-	background-color: #444444;
-	color: #fff;
-}
-.secondary2:active, .secondary2.active{
-	background-color: #555555;
-	color: #fff;
-}
+
 
 
 // success btn
@@ -316,18 +294,7 @@
 	border-color:#20b040;
 	color: #20b040;
 }
-.success2:hover{
-	background-color: #10a030;
-	color: #fff;
-}
-.success2:focus{
-	background-color: #009020;
-	color: #fff;
-}
-.success2:active, .success2.active{
-	background-color: #008010;
-	color: #fff;
-}
+
 
 
 // danger btn
@@ -340,18 +307,7 @@
 	border-color:#e02020;
 	color: #e02020;
 }
-.danger2:hover{
-	background-color: #d02020;
-	color: #fff;
-}
-.danger2:focus{
-	background-color: #c02020;
-	color: #fff;
-}
-.danger2:active, .danger2.active{
-	background-color: #b02020;
-	color: #fff;
-}
+
 
 
 // warn btn
@@ -364,18 +320,7 @@
 	border-color:#ffc000;
 	color: #ffc000;
 }
-.warn2:hover{
-	background-color: #ffb000;
-	color: #111;
-}
-.warn2:focus{
-	background-color: #eeb000;
-	color: #111;
-}
-.warn2:active, .warn2.active{
-	background-color: #ddb000;
-	color: #111;
-}
+
 
 
 // info btn
@@ -388,18 +333,7 @@
 	border-color:#00b0aa;
 	color: #00b0aa;
 }
-.info2:hover{
-	background-color: #00a0a0;
-	color: #fff;
-}
-.info2:focus{
-	background-color: #009090;
-	color: #fff;
-}
-.info2:active, .info2.active{
-	background-color: #008080;
-	color: #fff;
-}
+
 
 
 // light btn
@@ -412,18 +346,7 @@
 	border-color:#f6f8fa;
 	color: #f6f8fa;
 }
-.light2:hover{
-	background-color: #e2e6ea;
-	color: #111;
-}
-.light2:focus{
-	background-color: #d0d6e0;
-	color: #111;
-}
-.light2:active, .light2.active{
-	background-color: #c0d0e0;
-	color: #111;
-}
+
 
 
 // dark btn
@@ -435,18 +358,6 @@
 	background-color: transparent;
 	border-color:#444444;
 	color: #444444;
-}
-.dark2:hover{
-	background-color: #333333;
-	color: #fff;
-}
-.dark2:focus{
-	background-color: #222222;
-	color: #fff;
-}
-.dark2:active, .dark2.active{
-	background-color: #000000;
-	color: #fff;
 }
 
 
@@ -460,16 +371,4 @@
 	border-color:#007bff;
 	color: #007bff;
 }
-.link:hover{
-	background-color: transparent;
-	color: #0070f0;
-}
-.link:focus{
-	background-color: transparent;
-	color: #0060e0;
-}
-.link:active, .link.active{
-	background-color: transparent;
-	color: #0050d0;
-	text-decoration: underline;
-}
+
