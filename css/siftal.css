@@ -8866,6 +8866,9 @@ body .w200 {
   padding-bottom: 1em; }
 
 @media all and (min-width: 1400px) {
+  html {
+    font-size: 70%; }
+
   .cn {
     max-width: 1400px;
     min-width: 1024px; }
@@ -9184,6 +9187,9 @@ body .w200 {
     -ms-flex-line-pack: stretch !important;
     align-content: stretch !important; } }
 @media all and (min-width: 768px) and (max-width: 959px) {
+  html {
+    font-size: 60%; }
+
   .cn {
     min-width: 710px;
     max-width: 940px; }
@@ -9526,6 +9532,9 @@ body .w200 {
   .siftal #sidebar h2 {
     display: none; } }
 @media (max-width: 767px) {
+  html {
+    font-size: 50%; }
+
   .cn {
     min-width: 290px;
     max-width: 750px; }
