@@ -7136,6 +7136,18 @@ body .we500 {
 .txtc {
   text-align: center; }
 
+.txtra {
+  text-align: right; }
+
+.rtl .txtra {
+  text-align: left; }
+
+.txtla {
+  text-align: left; }
+
+.rtl .txtla {
+  text-align: right; }
+
 .fadeIn {
   display: none; }
 
