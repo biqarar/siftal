@@ -2611,6 +2611,17 @@ img.mini {
   background-color: #000;
   color: #fff; }
 
+.line {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  display: block;
+  z-index: 3;
+  text-align: center;
+  padding: 1em; }
+
 [class^="sf-"] {
   display: inline-block;
   margin: 0 0.2em;
