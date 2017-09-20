@@ -2622,6 +2622,10 @@ img.mini {
   text-align: center;
   padding: 1em; }
 
+.line.top {
+  bottom: inherit;
+  top: 0; }
+
 [class^="sf-"] {
   display: inline-block;
   margin: 0 0.2em;
