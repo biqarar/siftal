@@ -5407,6 +5407,15 @@ span.input {
 .input.ok input {
   border-color: rgba(39, 128, 39, 0.5); }
 
+.input input.error {
+  border-color: rgba(255, 0, 0, 0.5); }
+
+.input input.warning {
+  border-color: rgba(255, 145, 0, 0.5); }
+
+.input input.ok {
+  border-color: rgba(39, 128, 39, 0.5); }
+
 .input.preview.error label {
   border-color: rgba(255, 0, 0, 0.5); }
 
