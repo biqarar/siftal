@@ -14,7 +14,8 @@ route('*', function ()
   runSortable();
   // run counter up on each page we have counter
   runCounterUp();
-
+  // run notif from html
+  runHtmlNotif();
 });
 
 
