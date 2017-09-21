@@ -6,7 +6,7 @@
  * @param  {[type]} _title [description]
  * @return {[type]}        [description]
  */
-function notif(_type, _msg, _title)
+function notif(_type, _msg, _title, _delay)
 {
   var notifOpt = {};
 
@@ -41,9 +41,16 @@ function notif(_type, _msg, _title)
   {
     notifOpt.title = _title;
   }
+  // add delay if exit
+  console.log(_delay);
+  if(Number.isInteger(_delay) || _delay==false || _delay==='false' )
+  {
+    notifOpt.timeout = _delay;
+  }
 
   // change some default options
   notifOpt.layout = 2;
+  // notifOpt.transitionIn = 'fadeInLeft';
   // notifOpt.rtl    = true;
 
   // run if exist
@@ -54,6 +61,8 @@ function notif(_type, _msg, _title)
   else
   {
     console.log('where is notif!?');
+    return false;
   }
+  return true;
 }
 

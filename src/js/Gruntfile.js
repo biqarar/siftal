@@ -35,7 +35,6 @@ var myModuleFiles =
 	'js/src/tools/barcode-reader.js',
 	'js/src/tools/router.js',
 	'js/src/tools/navigate.js',
-	'js/src/tools/notification.js',
 	'js/src/tools/forms.js',
 
 	// use some utitlity

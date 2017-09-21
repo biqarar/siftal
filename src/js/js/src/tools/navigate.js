@@ -222,57 +222,34 @@
       var jsonExpected = res[0] === '{';
       try
       {
-        var n = res.indexOf('\n');
-        n = n === -1 ? undefined : n;
-        json = JSON.parse(res.slice(0, n));
-        var debug = json.debug;
-
-        var $div = $('<div></div>');
-
+        var n        = res.indexOf('\n');
+        n            = n === -1 ? undefined : n;
+        json         = JSON.parse(res.slice(0, n));
+        var debug    = json.debug;
         var hasError = false;
 
-        for(var i in debug.messages)
+        for(var type in debug.messages)
         {
-          var grp = debug.messages[i];
+          var grp = debug.messages[type];
 
-          var type;
-
-          switch(i)
+          if(type == 'error')
           {
-            case 'true':
-              type = 'success';
-              break;
-
-            case 'warn':
-              type = 'warning';
-              break;
-
-            case 'error':
-              type = 'error';
               hasError = true;
-              break;
-
-            default:
-              type = 'info';
-              break;
           }
-
-          // Generate Notification HTML
-          var $ul = $('<ul class="' + i + ' unselectable"></ul>');
 
 
           for(var j = 0, len = grp.length; j < len; j++)
           {
             var msg = grp[j];
-            // generate message text
-            var msgText = '<li class="notify-' + msg.group + ' ' + msg.redirect + '">';
+            // get title
+            var title;
             if(debug.title)
             {
-              msgText += "<b>" + debug.title + "</b><br />";
+              title = debug.title;
             }
-            msgText += msg.title + '</li>';
+            // create notif from result
+            notif(type, msg.title, data.title);
 
-            var $msg = $ul.append(msgText);
 
             if(msg.element)
             {
@@ -283,14 +260,7 @@
               } catch(e) {}
             }
           }
-          $div.append($ul);
         }
-        notify(
-        {
-          html: $div,
-          delay: 7000,
-          sticky: debug.msg && debug.msg.redirect
-        });
 
 
 
@@ -314,12 +284,7 @@
       catch(e) {
         if (jsonExpected)
         {
-          notify(
-          {
-            html: '<ul class="error unselectable">'
-                 +'<li class="notify-json">There was an error in parsing JSON</li>'
-                 +'</ul>'
-          });
+          notif('error', 'There was an error in parsing JSON!');
         }
         deferred.reject();
         return location.replace(props.url);

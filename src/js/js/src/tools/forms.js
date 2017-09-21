@@ -181,43 +181,22 @@
     send.call(_super, $form.first());
   };
 
-  // Used to show notification
   $.fn.ajaxify.showResults = function(data, $form, _super)
   {
     $form.trigger('ajaxify:render:start', data, $form, _super);
 
     $form.find('input').removeClass('error warn');
 
-    var $div = $('<div></div>');
-
     var hasError = false;
 
-    for(var i in data.messages)
+    for(var type in data.messages)
     {
-      var grp = data.messages[i];
+      var grp = data.messages[type];
 
-      var type;
-
-      switch(i)
+      if(type == 'error')
       {
-        case 'true':
-          type = 'success';
-          break;
-
-        case 'warn':
-          type = 'warning';
-          break;
-
-        case 'error':
-          type = 'error';
           hasError = true;
-          break;
-
-        default:
-          type = 'info';
-          break;
       }
-
 
       $form.find('input').removeClass('error');
 
@@ -230,8 +209,8 @@
         {
           title = data.title;
         }
-        // create notify from result
-        notif(type, msg.title, data.title);
+        // create notif from result
+        notif(type, msg.title, data.title, $form.attr('data-delay'));
         // console.log(data);
         // console.log(msg);
 
@@ -279,14 +258,7 @@
 
     $form.trigger('ajaxify:render:focus', data, $form, _super);
 
-    notify(
-    {
-      html: $div,
-      delay: parseInt($form.attr('data-delay'), 10),
-      sticky: data.msg && data.msg.redirect
-    });
-
-    $form.trigger('ajaxify:notify', data, $form, _super);
+    // $form.trigger('ajaxify:notify', data, $form, _super);
   };
 })(jQuery);
 
