@@ -220,7 +220,7 @@
       // Generate Notification HTML
       var $ul = $('<ul class="' + i + ' unselectable"></ul>');
 
-      $form.find('input').removeClass('invalid');
+      $form.find('input').removeClass('error');
 
       for(var j = 0, len = grp.length; j < len; j++)
       {
@@ -247,7 +247,7 @@
           (_.isArray(msg.element) ? msg.element : [msg.element]).forEach(function(e)
           {
             var $el = $form.find('input[name="' + e + '"]');
-            $el.addClass('invalid');
+            $el.addClass('error');
           });
         }
       }
