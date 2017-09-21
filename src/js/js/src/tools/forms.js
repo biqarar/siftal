@@ -198,7 +198,8 @@
 
       var type;
 
-      switch(i) {
+      switch(i)
+      {
         case 'true':
           type = 'success';
           break;
@@ -217,24 +218,22 @@
           break;
       }
 
-      // Generate Notification HTML
-      var $ul = $('<ul class="' + i + ' unselectable"></ul>');
 
       $form.find('input').removeClass('error');
 
       for(var j = 0, len = grp.length; j < len; j++)
       {
         var msg = grp[j];
-
-        // generate message text
-        var msgText = '<li class="notify-' + msg.group + ' ' + msg.redirect + '">';
+        // get title
+        var title;
         if(data.title)
         {
-          msgText += "<b>" + data.title + "</b><br />";
+          title = data.title;
         }
-        msgText += msg.title + '</li>';
-
-        var $msg = $ul.append(msgText);
+        // create notify from result
+        notif(type, msg.title, data.title);
+        // console.log(data);
+        // console.log(msg);
 
         if(msg.element)
         {
@@ -251,7 +250,6 @@
           });
         }
       }
-      $div.append($ul);
     }
 
     $form.trigger('ajaxify:render:done', data, $form, _super);

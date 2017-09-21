@@ -26,6 +26,8 @@ var myModuleFiles =
 	'js/src/libs/awesomplete/awesompleteRunner.js',
 	'js/src/libs/counter/jquery.counterup.js',
 	'js/src/libs/counter/counterRunner.js',
+	'js/src/libs/notif/iziToast.js',
+	'js/src/libs/notif/notif.js',
 
 
 
