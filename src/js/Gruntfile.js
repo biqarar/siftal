@@ -92,7 +92,7 @@ module.exports = function (grunt)
 			},
 			scripts:
 			{
-				files: ['js/*.js'],
+				files: ['*.js'],
 				tasks: ['copy:all']
 			}
 		}
