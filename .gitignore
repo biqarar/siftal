@@ -1,7 +1,17 @@
-*.DS_Store
-desktop.ini
 
+node_modules
+js/main.js
+js/main.js.map
+js/src/saloos/*.js
+js/src/saloos/*.min
+tests/libs.js
+tests/libs.js.map
+*.sublime-project
+*.sublime-workspace
+*.DS_Store
 *Thumbs.db
+desktop.ini
 
 *.me.*
 .sass-cache
+
