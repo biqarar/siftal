@@ -159,6 +159,7 @@ input{
   margin: 0;
   vertical-align: middle;
   overflow: visible;
+  outline: none;
 }
 
 input[type="file"]{
@@ -206,6 +207,7 @@ select{
   font-size: 100%;
   line-height: 1.15;
   text-transform: none;
+  outline: none;
 }
 
 optgroup{
@@ -227,6 +229,7 @@ button{
   cursor: pointer;
   text-transform: none;
   -webkit-appearance: button;
+  outline: none;
 }
 
 textarea{
@@ -237,6 +240,7 @@ textarea{
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
+  outline: none;
 }
 
 /**
