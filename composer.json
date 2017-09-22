@@ -1,0 +1,19 @@
+{
+    "name": "ermile/siftal",
+    "description": "siftal css framework",
+    "license": "MIT",
+    "keywords": [
+        "css",
+        "js",
+        "framework"
+        "cssframework"
+    ],
+    "authors": [
+        {
+            "name": "ermile",
+            "email": "info@ermile.com"
+
+        }
+    ],
+    "homepage": "https://github.com/ermile/siftal",
+}
