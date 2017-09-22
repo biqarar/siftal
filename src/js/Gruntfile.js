@@ -29,7 +29,6 @@ var myModuleFiles =
 	'src/libs/notif/notif.js',
 
 
-
 	// tools
 	'src/tools/barcode-reader.js',
 	'src/tools/router.js',
@@ -52,49 +51,56 @@ var myModuleFiles =
 module.exports = function (grunt)
 {
 	grunt.initConfig(
+	{
+		uglify:
 		{
-			uglify: {
-				options: {
-					sourceMap: false,
-					mangle: false
-				},
-
-				siftal:
-				{
-					files:
-					{
-						'siftal.js': myModuleFiles,
-					}
-				}
+			options:
+			{
+				sourceMap: false,
+				mangle: false
 			},
-			copy: {
-
-				all: {
-					files: [
-						{
-							expand: true, flatten: true, src: ['siftal.js'],
-							dest: '../../js/'
-						}
-					]
-				}
-			},
-			watch: {
-				siftal:
+			siftal:
+			{
+				files:
 				{
-					files: myModuleFiles,
-					tasks: ['uglify:siftal']
-				},
-				scripts: {
-					files: ['js/*.js', 'src/libs/*.js', 'src/subs/*.js'],
-					tasks: ['copy:all']
+					'siftal.js': myModuleFiles,
 				}
 			}
-		});
+		},
+		copy:
+		{
+			all:
+			{
+				files:
+				[
+					{
+						expand: true,
+						flatten: true,
+						src: ['siftal.js'],
+						dest: '../../js/'
+					}
+				]
+			}
+		},
+		watch:
+		{
+			siftal:
+			{
+				files: myModuleFiles,
+				tasks: ['uglify:siftal']
+			},
+			scripts:
+			{
+				files: ['js/*.js'],
+				tasks: ['copy:all']
+			}
+		}
+	});
 
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-copy');
-	grunt.loadNpmTasks('grunt-open');
+	// grunt.loadNpmTasks('grunt-open');
 
 	grunt.registerTask('default', ['uglify', 'copy', 'watch']);
 };
