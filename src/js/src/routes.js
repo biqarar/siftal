@@ -16,6 +16,11 @@ route('*', function ()
   runCounterUp();
   // run notif from html
   runHtmlNotif();
+
+  if($('body').hasClass('enter'))
+  {
+    handleEnterEvents();
+  }
 });
 
 

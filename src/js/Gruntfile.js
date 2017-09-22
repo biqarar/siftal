@@ -40,6 +40,7 @@ var myModuleFiles =
 	'src/utility/language.js',
 	'src/utility/responsive.js',
 	'src/utility/life.js',
+	'src/utility/enter.js',
 
 	'src/main.js',
 	'src/shame.js',
