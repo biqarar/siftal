@@ -203,7 +203,6 @@ var Options = function () {
     /**
      * @param {object} options config passed when initialize
      * @return {object}
-     * @todo remove jquery
      */
     function Options(options) {
         _classCallCheck(this, Options);
@@ -455,7 +454,6 @@ var API = function () {
     }, {
         key: 'destroy',
         value: function destroy() {
-            // TODO: destroy every thing
             this.model.view.destroy();
             this.model.options.onDestroy(this.model);
             return this.model;
@@ -1540,7 +1538,6 @@ var Input = function () {
             }
 
             /////////////////   Manipulate by alt changes
-            // TODO
             // self.model.options.altField.bind("change", function () {
             //     //if (!self._flagSelfManipulate) {
             //         let newDate = new Date($(this).val());
@@ -1579,7 +1576,6 @@ var Input = function () {
         /**
          * @desc get <input/> element position
          * @return {{top: Number, left: Number}}
-         * @todo remove jquery
          */
 
     }, {
@@ -1591,7 +1587,6 @@ var Input = function () {
         /**
          * @desc get <input/> element size
          * @return {{width: Number, height: Number}}
-         * @todo remove jquery
          */
 
     }, {
@@ -1606,7 +1601,6 @@ var Input = function () {
         /**
          * @desc update <input/> element value
          * @param {Number} unix
-         * @todo remove jquery
          * @private
          */
 
@@ -1620,7 +1614,6 @@ var Input = function () {
         /**
          * @desc update <input/> element value
          * @param {Number} unix
-         * @todo remove jquery
          * @private
          */
 
@@ -1736,7 +1729,6 @@ var Navigator = function () {
     /**
      * @desc attach events that needed attach after every render
      * @public
-     * @todo attach as a live way
      */
 
 
@@ -1831,7 +1823,6 @@ var Navigator = function () {
 
         /**
          * @desc attach dom events
-         * @todo remove jquery
          * @private
          */
 
@@ -2050,7 +2041,6 @@ var State = function () {
          * @desc view mode string day, month, year
          * @type {String}
          * @default day
-         * @todo add time to view modes
          */
         this.viewMode = this.viewModeList.indexOf(model.options.viewMode) > 0 ? model.options.viewMode : this.viewModeList[0];
 
@@ -2859,7 +2849,6 @@ var View = function () {
                                 selected: DateUtil.isSameDay(calcedDate, this.model.state.selected.dateObject),
                                 today: DateUtil.isSameDay(calcedDate, new persianDate()),
                                 otherMonth: otherMonth,
-                                // TODO: make configurable
                                 enabled: this.checkDayAccess(calcedDate.valueOf())
                             });
                         }

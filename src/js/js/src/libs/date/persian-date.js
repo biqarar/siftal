@@ -1,11 +1,11 @@
 /*!
- * 
+ *
  * persian-date -  0.2.3
  * Reza Babakhani <babakhani.reza@gmail.com>
  * http://babakhani.github.io/PersianWebToolkit/docs/persian-date/
- * Under WTFPL license 
- * 
- * 
+ * Under WTFPL license
+ *
+ *
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
@@ -1367,7 +1367,6 @@ var PersianDateClass = function () {
                 this._updatePDate();
                 return this;
             } else {
-                // TODO: remove this
                 return parseInt(this.pDate.minutes);
             }
         }

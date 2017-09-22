@@ -50,25 +50,10 @@ var myModuleFiles =
 
 
 
-module.exports = function (grunt) {
+module.exports = function (grunt)
+{
 	grunt.initConfig(
 		{
-			bundle: {
-				client: {
-					options: {
-						constants: {
-							isNodeModule: false,
-							isServer: false,
-							isClient: true,
-							isDev: true
-						},
-						minify: false
-					},
-					files: {
-						'js/siftal-pretty.js': 'js/siftal/index.js'
-					}
-				}
-			},
 			uglify: {
 				options: {
 					sourceMap: false,
@@ -79,7 +64,7 @@ module.exports = function (grunt) {
 				{
 					files:
 					{
-						'js/siftal.js': myModuleFiles,
+						'siftal.js': myModuleFiles,
 					}
 				}
 			},
@@ -88,7 +73,7 @@ module.exports = function (grunt) {
 				all: {
 					files: [
 						{
-							expand: true, flatten: true, src: ['js/siftal.js'],
+							expand: true, flatten: true, src: ['siftal.js'],
 							dest: '../../js/'
 						}
 					]
@@ -112,15 +97,6 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-open');
 
-	var compiler = require('./scripts/compiler');
-	grunt.registerMultiTask('bundle', 'Bundle', function () {
-		var options = this.data.options;
-		this.files.forEach(function (files) {
-			var result = compiler.bundle(options, files.src[0]);
-			grunt.file.write(files.dest, result);
-		});
-	});
-
-	grunt.registerTask('default', ['bundle', 'uglify', 'copy', 'watch']);
+	grunt.registerTask('default', ['uglify', 'copy', 'watch']);
 };
 
