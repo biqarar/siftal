@@ -8,7 +8,6 @@ var myModuleFiles =
 	'js/src/libs/jquery/jquery-fn.js',
 
 	'js/src/libs/localstorage.js',
-	// 'js/src/libs/jquery.autoComplete.js',
 	'js/src/libs/modal.js',
 	'js/src/libs/utils.js',
 	'js/src/libs/underscore.js',
