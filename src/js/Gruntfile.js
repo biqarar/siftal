@@ -4,47 +4,47 @@ exec = require('child_process').exec;
 var myModuleFiles =
 [
 	// include jquery
-	'js/src/libs/jquery/jquery.js',
-	'js/src/libs/jquery/jquery-fn.js',
+	'src/libs/jquery/jquery.js',
+	'src/libs/jquery/jquery-fn.js',
 
-	'js/src/libs/localstorage.js',
-	'js/src/libs/modal.js',
-	'js/src/libs/utils.js',
-	'js/src/libs/underscore.js',
+	'src/libs/localstorage.js',
+	'src/libs/modal.js',
+	'src/libs/utils.js',
+	'src/libs/underscore.js',
 
 	// new lib used in siftal
-	'js/src/libs/clockpicker/jquery-clockpicker.js',
-	'js/src/libs/date/persian-date.js',
-	'js/src/libs/date/persian-datepicker.js',
-	'js/src/libs/cropper/cropper.js',
-	'js/src/libs/cropper/cropperRunner.js',
-	'js/src/libs/dataResponse/dataResponse.js',
-	'js/src/libs/sortable/Sortable.js',
-	'js/src/libs/sortable/SortableRunner.js',
-	'js/src/libs/awesomplete/awesomplete.js',
-	'js/src/libs/awesomplete/awesompleteRunner.js',
-	'js/src/libs/counter/jquery.counterup.js',
-	'js/src/libs/counter/counterRunner.js',
-	'js/src/libs/notif/iziToast.js',
-	'js/src/libs/notif/notif.js',
+	'src/libs/clockpicker/jquery-clockpicker.js',
+	'src/libs/date/persian-date.js',
+	'src/libs/date/persian-datepicker.js',
+	'src/libs/cropper/cropper.js',
+	'src/libs/cropper/cropperRunner.js',
+	'src/libs/dataResponse/dataResponse.js',
+	'src/libs/sortable/Sortable.js',
+	'src/libs/sortable/SortableRunner.js',
+	'src/libs/awesomplete/awesomplete.js',
+	'src/libs/awesomplete/awesompleteRunner.js',
+	'src/libs/counter/jquery.counterup.js',
+	'src/libs/counter/counterRunner.js',
+	'src/libs/notif/iziToast.js',
+	'src/libs/notif/notif.js',
 
 
 
 	// tools
-	'js/src/tools/barcode-reader.js',
-	'js/src/tools/router.js',
-	'js/src/tools/navigate.js',
-	'js/src/tools/forms.js',
+	'src/tools/barcode-reader.js',
+	'src/tools/router.js',
+	'src/tools/navigate.js',
+	'src/tools/forms.js',
 
 	// use some utitlity
-	'js/src/utility/input-files.js',
-	'js/src/utility/language.js',
-	'js/src/utility/responsive.js',
-	'js/src/utility/life.js',
+	'src/utility/input-files.js',
+	'src/utility/language.js',
+	'src/utility/responsive.js',
+	'src/utility/life.js',
 
-	'js/src/main.js',
-	'js/src/shame.js',
-	'js/src/routes.js',
+	'src/main.js',
+	'src/shame.js',
+	'src/routes.js',
 ];
 
 
@@ -85,7 +85,7 @@ module.exports = function (grunt)
 					tasks: ['uglify:siftal']
 				},
 				scripts: {
-					files: ['js/*.js', 'js/src/libs/*.js', 'js/src/subs/*.js'],
+					files: ['js/*.js', 'src/libs/*.js', 'src/subs/*.js'],
 					tasks: ['copy:all']
 				}
 			}
