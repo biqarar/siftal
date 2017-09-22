@@ -12,4 +12,5 @@ desktop.ini
 
 *.me.*
 .sass-cache
+.htaccess
 
