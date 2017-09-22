@@ -41,6 +41,7 @@ var myModuleFiles =
 	'js/src/utility/input-files.js',
 	'js/src/utility/language.js',
 	'js/src/utility/responsive.js',
+	'js/src/utility/life.js',
 
 	'js/src/main.js',
 	'js/src/shame.js',
