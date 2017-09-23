@@ -16,6 +16,8 @@ route('*', function ()
   runCounterUp();
   // run notif from html
   runHtmlNotif();
+  // run datepicker
+  runDatePicker();
 
   if($('body').hasClass('enter'))
   {
