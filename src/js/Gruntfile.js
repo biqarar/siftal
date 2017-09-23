@@ -27,7 +27,7 @@ var myModuleFiles =
 	'src/libs/counter/counterRunner.js',
 	'src/libs/notif/iziToast.js',
 	'src/libs/notif/notif.js',
-	'src/libs/barcode/barcodeReader.js',
+	'src/libs/codeReader/codeReader.js',
 
 
 	// tools
@@ -64,7 +64,7 @@ module.exports = function (grunt)
 			{
 				files:
 				{
-					'siftal.js': myModuleFiles,
+					'siftal.min.js': myModuleFiles,
 				}
 			}
 		},
@@ -77,8 +77,8 @@ module.exports = function (grunt)
 					{
 						expand: true,
 						flatten: true,
-						src: ['siftal.js'],
-						dest: '../../js/'
+						src: ['siftal.min.js'],
+						dest: '../../dist/js/'
 					}
 				]
 			}
@@ -101,7 +101,6 @@ module.exports = function (grunt)
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-copy');
-	// grunt.loadNpmTasks('grunt-open');
 
 	grunt.registerTask('default', ['uglify', 'copy', 'watch']);
 };

@@ -1,5 +1,1 @@
-sass --watch source.scss:../../css/siftal.css --sourcemap
-
-#sass --watch source.scss:../siftal.css --style compressed --sourcemap
-
-
+sass --watch source.scss:../../dist/css/siftal.css --sourcemap
