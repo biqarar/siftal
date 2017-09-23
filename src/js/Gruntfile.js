@@ -38,6 +38,7 @@ var myModuleFiles =
 	'src/tools/forms.js',
 
 	// use some utitlity
+	'src/utility/clock.js',
 	'src/utility/input-files.js',
 	'src/utility/language.js',
 	'src/utility/responsive.js',

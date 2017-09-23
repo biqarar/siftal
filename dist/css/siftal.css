@@ -2630,6 +2630,19 @@ img.mini {
   bottom: inherit;
   top: 0; }
 
+.clock .time {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 500;
+  text-shadow: 0 0 1px #000;
+  direction: ltr; }
+
+.clock .time span {
+  display: inline-block; }
+
+.clock .date {
+  text-align: center; }
+
 [class^="sf-"] {
   display: inline-block;
   margin: 0 0.2em;
