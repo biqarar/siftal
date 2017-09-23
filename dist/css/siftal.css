@@ -4833,6 +4833,64 @@ img.mini {
   display: block;
   overflow: hidden; }
 
+.header-row-cell {
+  color: #fc5f2a !important; }
+
+div#plotId {
+  min-width: 280px;
+  max-width: 100vw;
+  min-height: 20em; }
+
+.header-row {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 7px; }
+
+.datepicker-plot-area .datepicker-day-view .table-days td span.selected:hover, .datepicker-plot-area .datepicker-day-view .table-days td span:hover, .datepicker-plot-area .datepicker-year-view .year-item:hover, .datepicker-plot-area .datepicker-month-view .month-item:hover {
+  background-color: #fee3da;
+  color: #d63803; }
+
+.datepicker-plot-area .datepicker-day-view .table-days td span.selected:hover, .datepicker-plot-area .datepicker-year-view .year-item.selected:hover, .datepicker-plot-area .datepicker-month-view .month-item.selected:hover {
+  text-shadow: none;
+  background: #fc5f2a !important;
+  color: white !important;
+  border-radius: 50%; }
+
+.datepicker-plot-area .datepicker-day-view .table-days td span.selected, .datepicker-plot-area .datepicker-year-view .year-item.selected, .datepicker-plot-area .datepicker-month-view .month-item.selected {
+  text-shadow: none;
+  background: #fc5f2a !important;
+  color: white !important;
+  border-radius: 50%; }
+
+table.table-days {
+  font-size: 16px; }
+
+.datepicker-plot-area .datepicker-time-view input {
+  min-width: 10px !important; }
+
+.datepicker-plot-area .datepicker-day-view .table-days td span {
+  width: 35px;
+  height: 35px;
+  line-height: 37px;
+  margin: 0 auto; }
+
+.datepicker-plot-area .datepicker-day-view .month-grid-box {
+  margin-top: -7px; }
+
+.month-item, .year-item {
+  width: 67px !important;
+  height: 67px !important;
+  line-height: 67px !important;
+  margin: auto !important; }
+
+.month-grid-box {
+  height: auto !important; }
+
+.datepicker-plot-area .toolbox .btn-today {
+  width: auto;
+  height: auto;
+  padding: 1em;
+  transition: 0.3s; }
+
 .cropper-container {
   direction: ltr;
   font-size: 0;
