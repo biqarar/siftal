@@ -27,10 +27,10 @@ var myModuleFiles =
 	'src/libs/counter/counterRunner.js',
 	'src/libs/notif/iziToast.js',
 	'src/libs/notif/notif.js',
+	'src/libs/barcode/barcodeReader.js',
 
 
 	// tools
-	'src/tools/barcode-reader.js',
 	'src/tools/router.js',
 	'src/tools/navigate.js',
 	'src/tools/forms.js',
