@@ -62,18 +62,24 @@
           var detectedCode = keys.toEnglish().toString();
           // prevent default
           e.preventDefault();
-          // get focused element
+          $barcodeDefaultInput = $('.barcode[data-default]');
+
+          // get focused element and if we are in barcode fill it
           if($focused.is('.barcode'))
           {
             // replace val in barcode field
             $focused.val(detectedCode);
             console.log(typeSpeed);
           }
+          else if($barcodeDefaultInput.length)
+          {
+            $barcodeDefaultInput.val(detectedCode);
+          }
           else
           {
             console.log('barcode: ' + detectedCode);
           }
-          console.log(detectedCode);
+
           $("body").trigger("barcode:detect", detectedCode);
         }
       }
