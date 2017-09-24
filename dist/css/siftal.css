@@ -1101,7 +1101,7 @@ a:active {
   flex: 0 0 auto;
   width: auto; }
 
-.f > .c0 {
+.c0 {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 0;
   -ms-flex: 0 0 0;
@@ -11204,7 +11204,7 @@ body.enter.bg15 {
     flex: 0 0 auto;
     width: auto; }
 
-  .f > .x0 {
+  .x0 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 0;
     -ms-flex: 0 0 0;
@@ -11527,7 +11527,7 @@ body.enter.bg15 {
     max-width: initial;
     display: flex !important; }
 
-  .f > .m0 {
+  .m0 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 0;
     -ms-flex: 0 0 0;
@@ -11872,7 +11872,7 @@ body.enter.bg15 {
     max-width: initial;
     display: flex !important; }
 
-  .f > .s0 {
+  .s0 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 0;
     -ms-flex: 0 0 0;
