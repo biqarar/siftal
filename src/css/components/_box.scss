@@ -44,6 +44,11 @@
 	margin: 0.5em 0.5em 1.5em;
 	background-color: #fff;
 	padding: 1em 1.5em;
+	opacity: 0.8;
+	transition: 0.3s
+}
+.dcard:hover{
+	opacity: 1;
 }
 .dcard h1,.dcard h2,.dcard h3,.dcard h4,.dcard h5{
 	margin:0;

@@ -2087,7 +2087,12 @@ progress.xl, meter.xl {
   font-size: 1.4em;
   margin: 0.5em 0.5em 1.5em;
   background-color: #fff;
-  padding: 1em 1.5em; }
+  padding: 1em 1.5em;
+  opacity: 0.8;
+  transition: 0.3s; }
+
+.dcard:hover {
+  opacity: 1; }
 
 .dcard h1, .dcard h2, .dcard h3, .dcard h4, .dcard h5 {
   margin: 0; }
@@ -3017,14 +3022,14 @@ img.mini {
   flex-wrap: nowrap; }
 
 .statistic {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin: 1em 0;
+  margin: 1em auto;
   max-width: auto; }
 
 .ltr .statistic + .statistic {
@@ -3102,7 +3107,8 @@ img.mini {
   opacity: 1;
   width: auto;
   margin: 0;
-  font-size: 0.8em; }
+  font-size: 0.8em;
+  vertical-align: top; }
 
 .statistic > .text.value, .statistics .statistic > .text.value {
   line-height: 1em;
