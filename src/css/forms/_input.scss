@@ -25,7 +25,7 @@ span.input{
 	color: rgba(0,0,0,0.9);
 	position: relative;
 	line-height: 1;
-	padding: 0.6em 1em;
+	padding: 5px 1em;
 	background-color: #fff;
 	border: $inputBorder;
 	transition: 0.3s;
@@ -83,7 +83,7 @@ span.input{
 
 
 .input .addon{
-	padding: 0.6em 1em;
+	padding: 5px 1em;
 	text-align: center;
 	border-radius: 0.25rem;
 	white-space: nowrap;
@@ -164,7 +164,7 @@ input.input{
 	color: rgba(0,0,0,0.9);
 	position: relative;
 	line-height: 1;
-	padding: 0.6em 1em;
+	padding: 5px 1em;
 	background-color: #fff;
 	border: $inputBorder;
 	transition: 0.3s;
