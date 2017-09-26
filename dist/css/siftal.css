@@ -2518,6 +2518,79 @@ img.mini {
     box-shadow: 0 0 0 0.5em rgba(204, 169, 44, 0); }
   100% {
     box-shadow: 0 0 0 0 rgba(204, 169, 44, 0); } }
+.icard {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  -o-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 2px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08); }
+
+.icard:hover {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25), 0 0px 0px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25), 0 0px 0px rgba(0, 0, 0, 0.22); }
+
+.icard > *:not(.icard-avatar) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  -moz-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  -moz-box-align: center;
+  align-items: center; }
+
+.icard .icard-avatar {
+  max-width: 50px;
+  padding: 2px; }
+
+.icard .icard-avatar img {
+  display: block; }
+
+.icard .icard-owner {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  -moz-box-align: start;
+  align-items: flex-start; }
+
+.icard .icard-owner a {
+  color: inherit; }
+
+.icard .icard-owner span {
+  font-size: .8em;
+  display: block;
+  margin-top: 5px;
+  color: #888; }
+
 /* Modals - v2*/
 .modal {
   position: fixed;
@@ -7544,7 +7617,7 @@ input.input.ok {
   vertical-align: middle; }
 
 .input.preview label[for^='avatar']:after {
-  content: ""; }
+  content: "εÇÅ"; }
 
 .input.preview label[for^='logo']:after {
   content: "$"; }
@@ -7748,11 +7821,11 @@ label + .input {
   left: calc(100% - 30px); }
 
 html[lang=fa] .switch1 label:first-of-type:before {
-  content: "غیرفعال";
+  content: "╪║█î╪▒┘ü╪╣╪º┘ä";
   font-size: 8px; }
 
 html[lang=fa] .switch1 input:checked + label:first-of-type:before {
-  content: "فعال";
+  content: "┘ü╪╣╪º┘ä";
   font-size: 10px; }
 
 .switch1 label:first-of-type[data-off]:before {
@@ -7793,11 +7866,11 @@ html[lang=fa] .switch1 input:checked + label:first-of-type:before {
   background-color: #901041; }
 
 html[lang=fa] .switch1.gender label:first-of-type:before {
-  content: "مرد";
+  content: "┘à╪▒╪»";
   font-size: 12px; }
 
 html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
-  content: "زن";
+  content: "╪▓┘å";
   font-size: 12px; }
 
 .radio1 {
@@ -10625,7 +10698,7 @@ body.siftal.loading-page #sidebar .avatar:before {
   line-height: 110px;
   font-size: 7rem;
   width: 100%;
-  content: ""; }
+  content: "εÇÅ"; }
 
 .df input[type='file']#logo + label {
   width: 110px;
