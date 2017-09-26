@@ -7617,7 +7617,7 @@ input.input.ok {
   vertical-align: middle; }
 
 .input.preview label[for^='avatar']:after {
-  content: "εÇÅ"; }
+  content: ""; }
 
 .input.preview label[for^='logo']:after {
   content: "$"; }
@@ -7821,11 +7821,11 @@ label + .input {
   left: calc(100% - 30px); }
 
 html[lang=fa] .switch1 label:first-of-type:before {
-  content: "╪║█î╪▒┘ü╪╣╪º┘ä";
+  content: "غیرفعال";
   font-size: 8px; }
 
 html[lang=fa] .switch1 input:checked + label:first-of-type:before {
-  content: "┘ü╪╣╪º┘ä";
+  content: "فعال";
   font-size: 10px; }
 
 .switch1 label:first-of-type[data-off]:before {
@@ -7866,11 +7866,11 @@ html[lang=fa] .switch1 input:checked + label:first-of-type:before {
   background-color: #901041; }
 
 html[lang=fa] .switch1.gender label:first-of-type:before {
-  content: "┘à╪▒╪»";
+  content: "مرد";
   font-size: 12px; }
 
 html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
-  content: "╪▓┘å";
+  content: "زن";
   font-size: 12px; }
 
 .radio1 {
@@ -10698,7 +10698,7 @@ body.siftal.loading-page #sidebar .avatar:before {
   line-height: 110px;
   font-size: 7rem;
   width: 100%;
-  content: "εÇÅ"; }
+  content: ""; }
 
 .df input[type='file']#logo + label {
   width: 110px;
