@@ -125,7 +125,7 @@ html[lang=fa] .switch1 input:checked + label:first-of-type:before {
 .switch1.gender input:checked + label:first-of-type{
   background-color: #d0408b;
 }
-.switch1 input:focus:checked + label:first-of-type{
+.switch1.gender input:focus:checked + label:first-of-type{
  background-color: #901041;
 }
 
