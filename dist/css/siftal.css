@@ -2122,7 +2122,8 @@ progress.xl, meter.xl {
   line-height: 1.25;
   transition: 0.3s;
   box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
-  background-color: rgba(255, 255, 255, 0.7); }
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 0 auto; }
 
 .vcard.shadow:hover, .vcard.active {
   box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5, 0 5px 20px rgba(0, 0, 0, 0.19), 0 5px 7px rgba(0, 0, 0, 0.23); }
@@ -7682,7 +7683,7 @@ label + .input {
   position: relative;
   cursor: pointer;
   height: 35px;
-  width: 70px;
+  width: 80px;
   background: #eee;
   border-radius: 15px;
   transition: .2s;
@@ -7702,7 +7703,6 @@ label + .input {
 .switch1 label:first-of-type:before {
   content: "OFF";
   position: absolute;
-  max-width: 25px;
   line-height: 27px;
   font-size: 12px;
   font-weight: bold;
@@ -7741,7 +7741,7 @@ label + .input {
 .switch1 input:checked + label:first-of-type:after {
   background: #fff;
   top: 3px;
-  left: 38px; }
+  left: calc(100% - 30px); }
 
 html[lang=fa] .switch1 label:first-of-type:before {
   content: "غیرفعال";
@@ -7752,12 +7752,49 @@ html[lang=fa] .switch1 input:checked + label:first-of-type:before {
   font-size: 10px; }
 
 .switch1 label:first-of-type[data-off]:before {
-  content: attr(data-off) !important;
-  font-size: 9px !important; }
+  content: attr(data-off) !important; }
 
 .switch1 input:checked + label:first-of-type[data-on]:before {
-  content: attr(data-on) !important;
-  font-size: 9px !important; }
+  content: attr(data-on) !important; }
+
+.switch1.gender label:first-of-type:before {
+  content: "Male"; }
+
+.switch1.gender input:checked + label:first-of-type:before {
+  content: "Female";
+  font-size: 10px; }
+
+.switch1.gender label:first-of-type:after {
+  content: "\e08e";
+  font-family: "siftal" !important;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 100;
+  padding: 5px; }
+
+.switch1.gender input:checked + label:first-of-type:after {
+  content: "\e08d";
+  font-family: "siftal" !important;
+  color: #333;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 100;
+  padding: 5px; }
+
+.switch1.gender input:checked + label:first-of-type {
+  background-color: #d0408b; }
+
+.switch1 input:focus:checked + label:first-of-type {
+  background-color: #901041; }
+
+html[lang=fa] .switch1.gender label:first-of-type:before {
+  content: "مرد";
+  font-size: 12px; }
+
+html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
+  content: "زن";
+  font-size: 12px; }
 
 .radio1 {
   margin: 10px 0;
