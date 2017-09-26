@@ -26,7 +26,6 @@
   display: -ms-flexbox;
   display: -moz-box;
   display: flex;
-  flex-direction: column;
 
   padding: 0 5px;
 
@@ -35,12 +34,7 @@
   -webkit-flex: 1;
   -moz-box-flex: 1;
   flex: 1;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  -moz-box-orient: vertical;
-  -moz-box-direction: normal;
+
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -63,6 +57,14 @@
 }
 
 .icard .icard-owner {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+  -webkit-flex-direction: column !important;
+  -ms-flex-direction: column !important;
+  -moz-box-orient: vertical !important;
+  -moz-box-direction: normal !important;
+  flex-direction: column !important;
+
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
