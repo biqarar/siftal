@@ -2053,7 +2053,7 @@ progress.xl, meter.xl {
 
 .tbox {
   margin: 0.5em 0 1.5em;
-  font-size: 1.6em;
+  font-size: 1.2em;
   position: relative;
   padding: 1em 1.5em;
   border: 1px solid transparent;
@@ -2061,7 +2061,7 @@ progress.xl, meter.xl {
   line-height: 1.25;
   opacity: 0.7;
   background-color: #f7f7f7;
-  color: #333;
+  color: #444;
   transition: 0.3s; }
 
 .tbox p {
@@ -2070,6 +2070,10 @@ progress.xl, meter.xl {
 
 .tbox:hover {
   opacity: 0.9; }
+
+.tbox h2 {
+  font-weight: 700;
+  font-size: 1.5em; }
 
 .cbox {
   font-size: 1.4em;
