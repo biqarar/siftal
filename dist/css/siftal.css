@@ -9965,7 +9965,7 @@ body.siftal .full .middle {
 
 .siftal header i:before {
   font-size: 1.5em;
-  vertical-align: -webkit-baseline-middle; }
+  vertical-align: -webkit-baseline-middle !important; }
 
 .siftal header .hm a, .siftal header .hm div {
   transition: 0.3s;
