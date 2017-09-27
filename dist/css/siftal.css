@@ -3443,7 +3443,12 @@ img.mini {
   speak: none;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: middle; }
+
+.rtl [class^="sf-"]:before,
+.rtl [class*=" sf-"]:before {
+  vertical-align: top; }
 
 .sf-angle-down:before {
   content: "\61"; }
@@ -11972,7 +11977,13 @@ body.enter.bg15 {
   .x-align-content-stretch {
     -webkit-align-content: stretch !important;
     -ms-flex-line-pack: stretch !important;
-    align-content: stretch !important; } }
+    align-content: stretch !important; }
+
+  .xp0 {
+    padding: 0; }
+
+  .xm0 {
+    padding: 0; } }
 @media all and (min-width: 768px) and (max-width: 959px) {
   html {
     font-size: 60%; }
@@ -12317,7 +12328,13 @@ body.enter.bg15 {
     padding: 1.2em 2em; }
 
   .siftal #sidebar h2 {
-    display: none; } }
+    display: none; }
+
+  .mp0 {
+    padding: 0; }
+
+  .mm0 {
+    padding: 0; } }
 @media (max-width: 767px) {
   html {
     font-size: 50%; }
@@ -12730,7 +12747,13 @@ body.enter.bg15 {
     display: none; }
 
   .pagination a:not([href]):not(.active) {
-    display: none; } }
+    display: none; }
+
+  .sp0 {
+    padding: 0; }
+
+  .sm0 {
+    padding: 0; } }
 @media all and (max-width: 280px) {
   html:before {
     font-size: 100vw;

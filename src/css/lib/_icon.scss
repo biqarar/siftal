@@ -30,7 +30,14 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  vertical-align: middle;
 }
+.rtl [class^="sf-"]:before,
+.rtl [class*=" sf-"]:before{
+  vertical-align: top;
+
+}
+
 
 .sf-angle-down:before {
   content: "\61";
