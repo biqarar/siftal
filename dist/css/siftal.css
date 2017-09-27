@@ -2566,7 +2566,13 @@ img.mini {
   padding: 2px; }
 
 .icard .icard-avatar img {
-  display: block; }
+  display: block;
+  width: 4.5rem;
+  min-width: 4.5rem;
+  max-width: 100%;
+  height: 4.5rem;
+  min-height: 4.5rem;
+  max-height: 100%; }
 
 .icard .icard-owner {
   -webkit-box-orient: vertical !important;
