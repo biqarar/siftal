@@ -7661,6 +7661,9 @@ label + .input {
   width: 100%;
   margin-top: 10px; }
 
+input[type="tel"], input[type="email"], input[type="date"], input[type="number"] {
+  direction: ltr; }
+
 /* checkbox type 1*/
 .check1 {
   margin: 10px 0;
