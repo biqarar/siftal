@@ -69,20 +69,20 @@
 
 
   // tables
-  // .tbl{
+  // .tbl.responsive{
   //   display: block;
   //   overflow-x: hidden;
   //   -ms-overflow-style:-ms-autohiding-scrollbar;
   // }
 
-  .tbl tr{
+  .tbl.responsive tr{
     width: auto!important;
     display: block!important;
     border-top: 1px solid rgba(30,30,30,.1);
     padding-top: 0.8em;
     padding-bottom: 0.8em;
   }
-  .tbl th, .tbl td{
+  .tbl.responsive th, .tbl.responsive td{
     width: auto!important;
     display: block!important;
     padding-top:0.25em!important;

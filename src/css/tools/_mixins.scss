@@ -96,6 +96,20 @@
   .rtl .pRa#{$val} {padding-left: #{$val}px;}
   .ltr .pLa#{$val} {padding-left: #{$val}px;}
   .rtl .pLa#{$val} {padding-right: #{$val}px;}
+
+  // force
+  .pA#{$val}-f {padding: #{$val}px #{$val}px!important;}
+  .pT#{$val}-f {padding-top: #{$val}px!important;}
+  .pB#{$val}-f {padding-bottom: #{$val}px!important;}
+  .pR#{$val}-f {padding-right: #{$val}px!important;}
+  .pL#{$val}-f {padding-left: #{$val}px!important;}
+  .pTB#{$val}-f {padding-top: #{$val}px; padding-bottom: #{$val}px!important;}
+  .pLR#{$val}-f {padding-left: #{$val}px; padding-right: #{$val}px!important;}
+
+  .ltr .pRa#{$val}-f {padding-right: #{$val}px!important;}
+  .rtl .pRa#{$val}-f {padding-left: #{$val}px!important;}
+  .ltr .pLa#{$val}-f {padding-left: #{$val}px!important;}
+  .rtl .pLa#{$val}-f {padding-right: #{$val}px!important;}
 }
 
 @mixin marginAll($val) {
@@ -111,6 +125,20 @@
   .rtl .mRa#{$val} {margin-left: #{$val}px;}
   .ltr .mLa#{$val} {margin-left: #{$val}px;}
   .rtl .mLa#{$val} {margin-right: #{$val}px;}
+
+  // force
+  .mA#{$val}-f {margin: #{$val}px #{$val}px!important;}
+  .mT#{$val}-f {margin-top: #{$val}px!important;}
+  .mB#{$val}-f {margin-bottom: #{$val}px!important;}
+  .mR#{$val}-f {margin-right: #{$val}px!important;}
+  .mL#{$val}-f {margin-left: #{$val}px!important;}
+  .mTB#{$val}-f {margin-top: #{$val}px; margin-bottom: #{$val}px!important;}
+  .mLR#{$val}-f {margin-left: #{$val}px; margin-right: #{$val}px!important;}
+
+  .ltr .mRa#{$val}-f {margin-right: #{$val}px!important;}
+  .rtl .mRa#{$val}-f {margin-left: #{$val}px!important;}
+  .ltr .mLa#{$val}-f {margin-left: #{$val}px!important;}
+  .rtl .mLa#{$val}-f {margin-right: #{$val}px!important;}
 }
 
 @mixin margin($val) {

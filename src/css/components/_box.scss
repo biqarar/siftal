@@ -10,6 +10,7 @@
 	background-color: #f7f7f7;
 	color: #444;
 	transition:0.3s;
+	display: block;
 }
 
 .tbox p{
@@ -30,22 +31,34 @@
 .cbox{
 	font-size: 1.4em;
 	margin-bottom: 1.5em;
-	background-color: #fff;
 	padding: 1em 1.5em;
+	display: block;
+	border-radius: 0.25rem;
+	background-color: #fff;
+	color: #555;
+
 }
 
-.cbox > p{
-	color: #333;
-}
 .cbox .example{
 	padding: 1em;
 }
+
+
+.ibox{
+	background-color: #eee;
+	border-radius: 0.25rem;
+	display: block;
+	padding: 1em 1.5em;
+	margin:1em;
+}
+
 
 
 // data box
 .dcard{
 	font-size: 1.4em;
 	margin: 0.5em 0.5em 1.5em;
+	border-radius: 0.25rem;
 	background-color: #fff;
 	padding: 1em 1.5em;
 	opacity: 0.8;
