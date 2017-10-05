@@ -34,7 +34,7 @@ progress.xl, meter.xl{
 
 
 /************************************************************** progress */
-.progress{position:relative;display:block;max-width:100%;border:none;margin:1em 0 2.5em;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;background:rgba(0,0,0,0.1);padding:0;-webkit-border-radius:.28571429rem;-moz-border-radius:.28571429rem;border-radius:.28571429rem;font-size:1rem}
+.progress{position:relative;display:block;max-width:100%;border:none;margin:1em 0 1.5em;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;background:rgba(0,0,0,0.1);padding:0;-webkit-border-radius:.28571429rem;-moz-border-radius:.28571429rem;border-radius:.28571429rem;font-size:1rem}
 .progress::before{content:attr(data-percent);white-space:nowrap;position:absolute;width:auto;font-size:1em;top:2px;right:.5em;left:auto;bottom:auto;color:rgba(255,255,255,0.7);text-shadow:none;font-weight:700;text-align:left;display: none}
 .progress>.bar{display:block;line-height:1;height:1.75em;position:relative;width:0;min-width:2em;background:#888;-webkit-border-radius:.28571429rem;-moz-border-radius:.28571429rem;border-radius:.28571429rem;-webkit-transition:width .1s ease,background-color .1s ease;-o-transition:width .1s ease,background-color .1s ease;-moz-transition:width .1s ease,background-color .1s ease;transition:width .1s ease,background-color .1s ease}
 .progress>.bar::after{content:'';opacity:0;position:absolute;top:0;left:0;right:0;bottom:0;background:#fff;-webkit-border-radius:.28571429rem;-moz-border-radius:.28571429rem;border-radius:.28571429rem;-webkit-animation:progress-active 2s ease infinite;-moz-animation:progress-active 2s ease infinite;-o-animation:progress-active 2s ease infinite;animation:progress-active 2s ease infinite}
