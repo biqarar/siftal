@@ -2103,7 +2103,7 @@ progress.xl, meter.xl {
   padding: 1em 1.5em;
   opacity: 0.8;
   transition: 0.3s;
-  display: flex; }
+  display: block; }
 
 .dcard:hover {
   opacity: 1; }
@@ -10038,6 +10038,24 @@ body .we400 {
 body .we500 {
   min-width: 500px;
   width: 500px; }
+
+.max-w50 {
+  max-width: 50px !important; }
+
+.max-w100 {
+  max-width: 100px !important; }
+
+.max-w150 {
+  max-width: 150px !important; }
+
+.max-w200 {
+  max-width: 200px !important; }
+
+.max-w250 {
+  max-width: 250px !important; }
+
+.max-w300 {
+  max-width: 300px !important; }
 
 .block {
   display: block;
