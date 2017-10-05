@@ -1760,7 +1760,8 @@ progress.xl, meter.xl {
   color: rgba(255, 255, 255, 0.7);
   text-shadow: none;
   font-weight: 700;
-  text-align: left; }
+  text-align: left;
+  display: none; }
 
 .progress > .bar {
   display: block;
@@ -2097,9 +2098,10 @@ progress.xl, meter.xl {
 
 .dcard {
   font-size: 1.4em;
-  margin: 0.5em 0.5em 1.5em;
+  margin: 0.5em 0.5em;
   border-radius: 0.25rem;
   background-color: #fff;
+  color: #555;
   padding: 1em 1.5em;
   opacity: 0.8;
   transition: 0.3s;
