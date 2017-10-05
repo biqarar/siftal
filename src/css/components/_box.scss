@@ -57,7 +57,7 @@
 // data box
 .dcard{
 	font-size: 1.2em;
-	margin: 5px 5px;
+	margin: 0 5px 10px;
 	border-radius: 0.25rem;
 	background-color: rgba(255,255,255,0.8);
 	color: #555;
@@ -86,5 +86,17 @@
 	vertical-align: baseline;
 }
 
+
+.dcard.x2{
+	min-height: 190px;
+}
+
+.dcard.x3{
+	min-height: 290px;
+}
+
+.dcard.x4{
+	min-height: 390px;
+}
 
 

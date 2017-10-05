@@ -2098,7 +2098,7 @@ progress.xl, meter.xl {
 
 .dcard {
   font-size: 1.2em;
-  margin: 5px 5px;
+  margin: 0 5px 10px;
   border-radius: 0.25rem;
   background-color: rgba(255, 255, 255, 0.8);
   color: #555;
@@ -2141,6 +2141,15 @@ progress.xl, meter.xl {
 
 .dcard [class^="sf-"]:before, .dcard [class*=" sf-"]:before {
   vertical-align: baseline; }
+
+.dcard.x2 {
+  min-height: 190px; }
+
+.dcard.x3 {
+  min-height: 290px; }
+
+.dcard.x4 {
+  min-height: 390px; }
 
 .vcard {
   position: relative;
@@ -9992,6 +10001,12 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
 .op100 {
   opacity: 1;
   filter: alpha(opacity=100); }
+
+.ovh {
+  overflow: hidden; }
+
+.ova {
+  overflow: auto; }
 
 .code1 {
   padding: 0.2em 0.5em;

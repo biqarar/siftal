@@ -133,6 +133,10 @@
 .op95{@include opacity(0.95)}
 .op100{@include opacity(1)}
 
+// overflow
+.ovh{overflow:hidden}
+.ova{overflow:auto}
+
 
 // ways
 .code1{padding:0.2em 0.5em; color:#c04040;background-color:#f8f8f8;border-radius:0.25rem;font-size:90%;}
