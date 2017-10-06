@@ -1,6 +1,13 @@
+// on start
+route('*', function ()
+{
+
+}).once(function()
+{
+  amChartRunner();
+});
 
 
-amChartRunner();
 
 function amChartRunner()
 {
