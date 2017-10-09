@@ -2,6 +2,7 @@
 // include all paddings
 @include paddingAll(0);
 @include paddingAll(1);
+@include paddingAll(2p5);
 @include paddingAll(3);
 @include paddingAll(5);
 @include paddingAll(10);
@@ -17,6 +18,7 @@
 // include all margin
 @include marginAll(0);
 @include marginAll(1);
+@include marginAll(2p5);
 @include marginAll(3);
 @include marginAll(5);
 @include marginAll(10);
@@ -168,6 +170,35 @@ body .we500{min-width:500px;width:500px}
 .max-w250{max-width:250px!important;}
 .max-w300{max-width:300px!important;}
 
+
+.size-we40{max-width:40px!important; min-width: 40px!important;width: 40px!important}
+.size-we50{max-width:50px!important; min-width: 50px!important;width: 50px!important}
+.size-we60{max-width:60px!important; min-width: 60px!important;width: 60px!important}
+.size-we70{max-width:70px!important; min-width: 70px!important;width: 70px!important}
+.size-we80{max-width:80px!important; min-width: 80px!important;width: 80px!important}
+.size-we90{max-width:90px!important; min-width: 90px!important;width: 90px!important}
+.size-we100{max-width:100px!important; min-width: 100px!important;width: 100px!important}
+.size-we150{max-width:150px!important; min-width: 150px!important;width: 150px!important}
+.size-we200{max-width:200px!important; min-width: 200px!important;width: 200px!important}
+.size-we250{max-width:250px!important; min-width: 250px!important;width: 250px!important}
+.size-we300{max-width:300px!important; min-width: 300px!important;width: 300px!important}
+.size-we400{max-width:300px!important; min-width: 300px!important;width: 300px!important}
+.size-we500{max-width:300px!important; min-width: 300px!important;width: 300px!important}
+
+
+.size-he40{max-height:40px!important; min-height: 40px!important;height: 40px!important}
+.size-he50{max-height:50px!important; min-height: 50px!important;height: 50px!important}
+.size-he60{max-height:60px!important; min-height: 60px!important;height: 60px!important}
+.size-he70{max-height:70px!important; min-height: 70px!important;height: 70px!important}
+.size-he80{max-height:80px!important; min-height: 80px!important;height: 80px!important}
+.size-he90{max-height:90px!important; min-height: 90px!important;height: 90px!important}
+.size-he100{max-height:100px!important; min-height: 100px!important;height: 100px!important}
+.size-he150{max-height:150px!important; min-height: 150px!important;height: 150px!important}
+.size-he200{max-height:200px!important; min-height: 200px!important;height: 200px!important}
+.size-he250{max-height:250px!important; min-height: 250px!important;height: 250px!important}
+.size-he300{max-height:300px!important; min-height: 300px!important;height: 300px!important}
+.size-he400{max-height:300px!important; min-height: 300px!important;height: 300px!important}
+.size-he500{max-height:300px!important; min-height: 300px!important;height: 300px!important}
 
 
 
