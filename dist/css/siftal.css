@@ -2632,6 +2632,14 @@ img.mini {
   margin-top: 5px;
   color: #888; }
 
+.ltr .icard .vdivider {
+  border-right: 1px solid #eee;
+  margin: 5px 0; }
+
+.rtl .icard .vdivider {
+  border-left: 1px solid #eee;
+  margin: 5px 0; }
+
 /* Modals - v2*/
 .modal {
   position: fixed;
