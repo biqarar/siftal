@@ -2164,6 +2164,9 @@ progress.xl, meter.xl {
 .dcard.x4 .chart {
   height: 390px; }
 
+.dcard .progress {
+  margin: 0; }
+
 .vcard {
   position: relative;
   max-width: 100%;
@@ -2580,6 +2583,7 @@ img.mini {
   100% {
     box-shadow: 0 0 0 0 rgba(204, 169, 44, 0); } }
 .icard {
+  background-color: #fff;
   color: #777;
   border: 1px solid #eee;
   display: -webkit-box;
@@ -2623,9 +2627,6 @@ img.mini {
   -ms-flex: 1;
   flex: 1;
   padding: 0 5px; }
-
-.icard a {
-  color: inherit; }
 
 .icard small {
   display: block;

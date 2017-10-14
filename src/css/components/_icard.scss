@@ -1,4 +1,5 @@
 .icard {
+  background-color: #fff;
   color: #777;
   border: 1px solid #eee;
   @include flexbox();
@@ -25,9 +26,6 @@
   padding: 0 5px;
 }
 
-.icard a {
-  color: inherit;
-}
 
 .icard small {
   display: block;
