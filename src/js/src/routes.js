@@ -18,6 +18,8 @@ route('*', function ()
   runHtmlNotif();
   // run datepicker
   runDatePicker();
+  // check here links
+  weAreHereChecker();
 
   if($('body').hasClass('enter'))
   {
