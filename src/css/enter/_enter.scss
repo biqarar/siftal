@@ -68,7 +68,7 @@ body.enter.bg15{background-image:url(../images/bg/15.jpg)}
 .enter form .flex input:focus{background-color:rgba(0,0,0,0.25);}
 .enter form .flex input::-webkit-outer-spin-button,.enter form .flex input::-webkit-inner-spin-button{-webkit-appearance:none;}
 .enter form .flex ::-webkit-input-placeholder{color:#ccc;}
-.enter form label{padding:1em 0;display:block;font-size:0.8em;}
+.enter label{padding:1em 0;display:block;font-size:0.8em;}
 .enter form textarea{min-height:3em;padding:1em;line-height:2em;background-color:rgba(0,0,0,0.1);color:#eee;font-size:0.8em}
 /* custom style for some inputs*/
 .enter form #emobile label{padding:10px 0}

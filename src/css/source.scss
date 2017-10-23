@@ -51,6 +51,10 @@ Version       1.0.0
 @import 'lib/chart';
 
 
+// enter
+@import 'enter/enter';
+
+
 // form elements
 @import 'forms/general';
 @import 'forms/input';
@@ -77,9 +81,6 @@ Version       1.0.0
 @import 'dash/element';
 @import 'dash/form';
 @import 'dash/table';
-
-// enter
-@import 'enter/enter';
 
 
 // add responsive styles
