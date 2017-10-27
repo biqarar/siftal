@@ -645,25 +645,6 @@ ul.list li a {
 .center {
   text-align: center; }
 
-[data-develop-del]:after {
-  content: "Dev";
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.5;
-  transition: 0.3s;
-  color: #333;
-  padding: 20px;
-  font-size: 100px;
-  font-family: sans-serif;
-  border-bottom: 5px solid #b5c015;
-  text-align: right; }
-
-[data-develop-del]:hover:after {
-  opacity: 0;
-  z-index: -1; }
-
 /*! Hint.css - v1.3.3 - 2014-07-06 * http://kushagragour.in/lab/hint/ * Copyright (c) 2014 Kushagra Gour; Licensed MIT */
 /* add rtl support - Javad Evazzadeh  v1.3*/
 .hint, [data-hint] {
