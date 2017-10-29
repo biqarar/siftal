@@ -645,7 +645,7 @@ ul.list li a {
 .center {
   text-align: center; }
 
-/*! Hint.css - v1.3.3 - 2014-07-06 * http://kushagragour.in/lab/hint/ * Copyright (c) 2014 Kushagra Gour; Licensed MIT */
+/* Hint.css - v1.3.3 - 2014-07-06 * http://kushagragour.in/lab/hint/ * Copyright (c) 2014 Kushagra Gour; Licensed MIT */
 /* add rtl support - Javad Evazzadeh  v1.3*/
 .hint, [data-hint] {
   position: relative;
