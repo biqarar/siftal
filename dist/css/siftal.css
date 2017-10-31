@@ -3443,6 +3443,118 @@ img.mini {
 .floated.statistic:last-child {
   margin-bottom: 0; }
 
+.share1 a {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  margin: 5px;
+  width: 35px;
+  height: 35px;
+  font-size: 0;
+  line-height: 0;
+  border-radius: 1px;
+  background-color: #333; }
+
+.share1 a::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  z-index: 1;
+  -webkit-transition: box-shadow .3s;
+  transition: box-shadow .2s; }
+
+.share1 a::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  z-index: 2;
+  font-family: "siftal" !important;
+  color: #eee;
+  font-size: 20px;
+  line-height: 1;
+  padding: 7px; }
+
+.share1 .facebook::before {
+  box-shadow: inset 0 0 0 48px #3b5998; }
+
+.share1 .facebook:hover::before {
+  box-shadow: inset 0 0 0 4px #3b5998; }
+
+.share1 .facebook::after {
+  content: "\e18f"; }
+
+.share1 .twitter::before {
+  box-shadow: inset 0 0 0 48px #4099ff; }
+
+.share1 .twitter:hover::before {
+  box-shadow: inset 0 0 0 4px #4099ff; }
+
+.share1 .twitter::after {
+  content: "\e054"; }
+
+.share1 .googleplus::before {
+  box-shadow: inset 0 0 0 48px #d34836; }
+
+.share1 .googleplus:hover::before {
+  box-shadow: inset 0 0 0 4px #d34836; }
+
+.share1 .googleplus::after {
+  content: "\e0e5"; }
+
+.share1 .github::before {
+  box-shadow: inset 0 0 0 48px #333; }
+
+.share1 .github:hover::before {
+  box-shadow: inset 0 0 0 4px #333; }
+
+.share1 .github::after {
+  content: "\5f"; }
+
+.share1 .rss::before {
+  box-shadow: inset 0 0 0 48px #ee802f; }
+
+.share1 .rss:hover::before {
+  box-shadow: inset 0 0 0 4px #ee802f; }
+
+.share1 .rss::after {
+  content: "\e009"; }
+
+.share1 .telegram::before {
+  box-shadow: inset 0 0 0 48px #34a3dd; }
+
+.share1 .telegram:hover::before {
+  box-shadow: inset 0 0 0 4px #34a3dd; }
+
+.share1 .telegram::after {
+  content: "\e10d"; }
+
+.share1 .linkedin::before {
+  box-shadow: inset 0 0 0 48px #1283ad; }
+
+.share1 .linkedin:hover::before {
+  box-shadow: inset 0 0 0 4px #1283ad; }
+
+.share1 .linkedin::after {
+  content: "\e052"; }
+
+.share1 .instagram::before {
+  box-shadow: inset 0 0 0 48px #f22579; }
+
+.share1 .instagram:hover::before {
+  box-shadow: inset 0 0 0 4px #f22579; }
+
+.share1 .instagram::after {
+  content: "\e045"; }
+
 [class^="sf-"] {
   display: inline-block;
   margin: 0 0.2em;
