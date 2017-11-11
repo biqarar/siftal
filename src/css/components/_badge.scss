@@ -21,6 +21,12 @@
   &:empty {
     display: none;
   }
+  &:hover {
+    color: #fff;
+  }
+  &:focus {
+    color: #fff;
+  }
 }
 
 // Quick fix for badges in buttons
