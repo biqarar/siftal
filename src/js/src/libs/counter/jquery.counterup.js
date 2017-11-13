@@ -35,6 +35,11 @@
             {
                 num = $this.attr('data-counter');
             }
+            else
+            {
+                // try to convert to en numbers
+                num = num.toEnglish();
+            }
             var isComma       = /[0-9]+,[0-9]+/.test(num);
             num               = num.replace(/,/g, '');
             var isInt         = /^[0-9]+$/.test(num);
