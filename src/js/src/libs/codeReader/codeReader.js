@@ -23,24 +23,53 @@
       time = Date.now();
     }
     $focused = $(':focus');
-    // if we are in barcode dont write something
-    if($focused.is('.barcode2') && $focused.attr('data-lock') !== undefined)
+    // if is not lock
+    if($focused.attr('data-lock') !== undefined)
     {
-      switch(_e.key)
+      // if we are in barcode dont write something
+      if($focused.is('.barCode'))
       {
-        case 'Backspace':
-        case 'Delete':
-          _e.preventDefault();
-          $focused.val('');
-          break;
+        switch(_e.key)
+        {
+          case 'Backspace':
+          case 'Delete':
+            _e.preventDefault();
+            $focused.val('');
+            break;
 
-        case 'Tab':
-          // do nothing! be normal
-          break;
+          case 'Tab':
+            // do nothing! be normal
+            break;
 
-        default:
+          case 'Enter':
+            if($focused.attr('data-allowEnter') !== undefined)
+            {
+              // do nothing, allow to enter
+            }
+            else
+            {
+              // else in normal condition prevent press enter
+              _e.preventDefault();
+            }
+            break;
+
+          default:
+            _e.preventDefault();
+            break;
+        }
+      }
+    }
+    else
+    {
+      // if is not locked!
+
+      if(_e.key === 'Enter')
+      {
+        if($focused.attr('data-allowEnter') === undefined)
+        {
+          // if unlocked but dont allow to press enter and enter is pressed, blocked enter
           _e.preventDefault();
-          break;
+        }
       }
     }
 
@@ -62,10 +91,10 @@
           var detectedCode = keys.toEnglish().toString();
           // prevent default
           _e.preventDefault();
-          $barcodeDefaultInput = $('.barcode2[data-default]');
+          $barcodeDefaultInput = $('.barCode[data-default]');
 
           // get focused element and if we are in barcode fill it
-          if($focused.is('.barcode2'))
+          if($focused.is('.barCode'))
           {
             // replace val in barcode field
             $focused.val(detectedCode);
@@ -73,7 +102,7 @@
             // try to press enter, fail!
             // e = jQuery.Event("keypress")
             // e.which = 13 //choose the one you want
-            // $(".barcode2#q").keypress(function(){  }).trigger(e);
+            // $(".barCode#q").keypress(function(){  }).trigger(e);
           }
           else if($barcodeDefaultInput.length)
           {
