@@ -12,7 +12,7 @@
   var keys = '';
 
   var timeout = 0;
-  $(document.body).keydown(function(e)
+  $(document.body).keydown(function(_e)
   {
     if(timeout)
     {
@@ -24,13 +24,13 @@
     }
     $focused = $(':focus');
     // if we are in barcode dont write something
-    if($focused.is('.barcode'))
+    if($focused.is('.barcode2') && $focused.attr('data-lock') !== undefined)
     {
-      switch(e.key)
+      switch(_e.key)
       {
         case 'Backspace':
         case 'Delete':
-          e.preventDefault();
+          _e.preventDefault();
           $focused.val('');
           break;
 
@@ -39,7 +39,7 @@
           break;
 
         default:
-          e.preventDefault();
+          _e.preventDefault();
           break;
       }
     }
@@ -61,19 +61,32 @@
           // change to english and after that to string
           var detectedCode = keys.toEnglish().toString();
           // prevent default
-          e.preventDefault();
-          $barcodeDefaultInput = $('.barcode[data-default]');
+          _e.preventDefault();
+          $barcodeDefaultInput = $('.barcode2[data-default]');
 
           // get focused element and if we are in barcode fill it
-          if($focused.is('.barcode'))
+          if($focused.is('.barcode2'))
           {
             // replace val in barcode field
             $focused.val(detectedCode);
             console.log(typeSpeed);
+            // try to press enter, fail!
+            // e = jQuery.Event("keypress")
+            // e.which = 13 //choose the one you want
+            // $(".barcode2#q").keypress(function(){  }).trigger(e);
           }
           else if($barcodeDefaultInput.length)
           {
             $barcodeDefaultInput.val(detectedCode);
+            // you allow to press enter at the end of barcode, submit form if exist
+            if($barcodeDefaultInput.attr('data-allowEnter') !== undefined)
+            {
+              $pForm = $barcodeDefaultInput.parents('form')
+              if($pForm.length)
+              {
+                $pForm.submit();
+              }
+            }
           }
           else
           {
@@ -87,6 +100,6 @@
       timeout = 0;
       keys    = '';
     }, 50);
-    keys += e.key;
+    keys += _e.key;
   });
 })(window, jQuery);
