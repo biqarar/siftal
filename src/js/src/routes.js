@@ -20,6 +20,8 @@ route('*', function ()
   runDatePicker();
   // check here links
   weAreHereChecker();
+  // run autoList
+  fillAuto();
 
   if($('body').hasClass('enter'))
   {

@@ -26,8 +26,17 @@ function fillAuto()
 			}
 		}
 	});
+	// on foucs to autoList input
+	$(document).on('focus', '.autoList', function(_e)
+	{
+		if($(this).val().length === 0)
+		{
+			$(this).data('Awesomplete').open();
+		}
+	});
+
 	// on change input of each list call fill datalist func
-	$(document).on('input', '.autoList', function(e)
+	$(document).on('input', '.autoList[data-find]', function(e)
 	{
 		var $this          = $(this);
 		var search_timeout = $this.attr('data-search-timeout');
@@ -52,7 +61,7 @@ function fillAuto()
 	});
 
 	// on each autoList after select add as tag
-	$(document).on('awesomplete-selectcomplete', ".autoList", function()
+	$(document).on('awesomplete-selectcomplete', ".autoList[data-parent]", function()
 	{
 		// if this field is parent of another, enable and transfer focus to it
 		var myChild = $('.autoList[data-parent="#' + this.id + '"]')
@@ -66,15 +75,6 @@ function fillAuto()
 			callFunction(myFunc, this);
 		}
 	});
-	// bind after add new opt
-	$(document).on("addNewOpt", function(_obj, _el, _value)
-	{
-		var newEl = $(_el).find('input.autoList')[0];
-		if(newEl)
-		{
-			bindAwesomplete.call(newEl);
-		}
-	});
 }
 
 
@@ -86,13 +86,13 @@ function bindAwesomplete()
 {
 	var $this = $(this);
 	var maxItems = $this.attr('data-maxItems');
-	if(maxItems <= 3 || maxItems >= 20)
+	if(maxItems <= 3 || maxItems >= 20 || maxItems === undefined)
 	{
 		maxItems = 10;
 	}
 	var tmpObj = new Awesomplete(this,
 	{
-		minChars: 1,
+		minChars: 0,
 		maxItems: maxItems,
 		autoFirst: true,
 		sort: false,
@@ -112,11 +112,15 @@ function bindAwesomplete()
 		replace: function(text)
 		{
 			myText = text.label;
-			myText = myText.substr(0, myText.indexOf('<var>'))
-			myText = $(myText).text();
+			if(myText.indexOf('<var>') > 0)
+			{
+				myText = myText.substr(0, myText.indexOf('<var>'))
+				myText = $(myText).text();
+				this.input.value = myText;
+				// save value to data-val if it's different
+				$this.attr('data-val', text.value);
+			}
 			this.input.value = myText;
-			// save value to data-val if it's different
-			$this.attr('data-val', text.value);
 		}
 	});
 	// bind to data to connect later
@@ -157,49 +161,51 @@ function fillDataList(_this)
 		var myAutoList = $(_this).data('Awesomplete');
 		myAutoList.list = convertJson(data);
 	});
-}
 
 
-/**
- * [convertJson description]
- * @param  {[type]} _data [description]
- * @return {[type]}       [description]
- */
-function convertJson(_data)
-{
-	var list = clearJson(_data);
-	if(!list)
+	/**
+	 * [convertJson description]
+	 * @param  {[type]} _data [description]
+	 * @return {[type]}       [description]
+	 */
+	function convertJson(_data)
 	{
-		list = [];
+		var list = clearJson(_data);
+		if(!list)
+		{
+			list = [];
+		}
+
+		list = list.map(function(_i)
+		{
+			// define inner object
+			var opt = {};
+			opt.label = '<b>' + _i.title + '</b>';
+			if(!_i.count)
+			{
+				_i.count = '';
+			}
+			opt.label += '<var>' + _i.count + '</var>';
+			if(_i.desc)
+			{
+				opt.label += '<span>' + _i.desc + '</span>';
+			}
+			if(_i.translate)
+			{
+				opt.label += '<abbr>' + _i.translate + '</abbr>';
+			}
+			// set value
+			opt.value = _i.title;
+			if(_i.value)
+			{
+				opt.value = _i.value;
+			}
+			return opt;
+		});
+
+		return list;
 	}
-
-	list = list.map(function(_i)
-	{
-		// define inner object
-		var opt = {};
-		opt.label = '<b>' + _i.title + '</b>';
-		if(!_i.count)
-		{
-			_i.count = '';
-		}
-		opt.label += '<var>' + _i.count + '</var>';
-		if(_i.desc)
-		{
-			opt.label += '<span>' + _i.desc + '</span>';
-		}
-		if(_i.translate)
-		{
-			opt.label += '<abbr>' + _i.translate + '</abbr>';
-		}
-		// set value
-		opt.value = _i.title;
-		if(_i.value)
-		{
-			opt.value = _i.value;
-		}
-		return opt;
-	});
-
-	return list;
 }
+
+
 
