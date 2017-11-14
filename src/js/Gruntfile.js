@@ -29,7 +29,7 @@ var myModuleFiles =
 	'src/libs/counter/counterRunner.js',
 	'src/libs/notif/iziToast.js',
 	'src/libs/notif/notif.js',
-	// 'src/libs/codeReader/codeReader.js',
+	'src/libs/codeReader/codeReader.js',
 
 
 	// tools
