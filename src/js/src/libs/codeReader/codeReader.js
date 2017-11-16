@@ -14,6 +14,11 @@
   var timeout = 0;
   $(document.body).keydown(function(_e)
   {
+    if($('.barCode').length < 1)
+    {
+      return;
+    }
+
     if(timeout)
     {
       clearTimeout(timeout);
