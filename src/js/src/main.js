@@ -332,7 +332,7 @@ function fitNumber(_num, _seperator)
     }
     else
     {
-      _num = parseInt(_num);
+      _num = parseFloat(_num);
     }
     _num = _num.toLocaleString();
   }
