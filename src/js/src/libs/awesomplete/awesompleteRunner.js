@@ -136,10 +136,12 @@ function fillDataList(_this)
 {
 	// get vals for search
 	var listName    = $(_this).attr('data-find');
+	var findAddr    = $(_this).attr('data-find-addr');
 	var parentCode  = $(_this).attr('data-parent');
 	var searchTerm  = $(_this).val().trim();
 	// prepare sended data
 	var sendData    = {};
+	sendData.json   = true;
 	sendData.list   = listName;
 	sendData.q      = searchTerm;
 	// if parent set as class or id give it value
@@ -155,11 +157,15 @@ function fillDataList(_this)
 	// try to abort old request
 	try { xhr.abort(); } catch(e){}
 	// try to get new list from server
-	var myAddr = $(location).attr('href');
-	var xhr    = $.getJSON(myAddr, sendData, function(data)
+	if(!findAddr)
+	{
+		findAddr = $(location).attr('href');
+	}
+
+	var xhr = $.get(findAddr, sendData, function(_data)
 	{
 		var myAutoList = $(_this).data('Awesomplete');
-		myAutoList.list = convertJson(data);
+		myAutoList.list = convertJson(_data);
 	});
 
 
@@ -205,6 +211,32 @@ function fillDataList(_this)
 
 		return list;
 	}
+
+	/**
+	 * [clearJson description]
+	 * @param  {[type]} _data [description]
+	 * @return {[type]}       [description]
+	 */
+	function clearJson(_data)
+	{
+		var list = null;
+		if(_data && _data.msg && _data.msg.list)
+		{
+			list = _data.msg.list;
+			list = JSON.parse(list);
+			if(list)
+			{
+				// do nothing
+			}
+			else
+			{
+				list = [];
+			}
+		}
+		return list;
+	}
+
+
 }
 
 
