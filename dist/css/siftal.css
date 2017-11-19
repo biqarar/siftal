@@ -548,52 +548,6 @@ template {
   -webkit-touch-callout: none;
   -khtml-user-select: none; }
 
-/* Form Error Box  || error_0:failed | error_1:successful | error_2:warning;*/
-#formError {
-  position: fixed;
-  bottom: 1em;
-  right: 0;
-  left: 0;
-  margin: 0 auto;
-  min-width: 200px;
-  max-width: 95%;
-  width: 90%;
-  color: #fff;
-  font-size: 1.3em;
-  z-index: 100; }
-
-.rtl #formError {
-  left: 0;
-  right: inherit; }
-
-#formError .error_false {
-  background-color: #d9edf7;
-  color: #3a87ad; }
-
-#formError .error li {
-  background-color: #cc1030; }
-
-#formError .true li {
-  background-color: #37aaa7; }
-
-#formError .warn li {
-  background-color: #e5a428; }
-
-#formError ul {
-  display: inline-block;
-  margin: 0;
-  padding: 0 2%; }
-
-#formError ul li {
-  margin-top: 10px;
-  padding: .5em 2em;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  cursor: pointer;
-  display: inline-block;
-  display: block; }
-
 /* list */
 ul {
   list-style: none inside none; }
@@ -8223,6 +8177,11 @@ span.input {
   align-items: center;
   width: auto; }
 
+.input .addon.small {
+  font-size: 70%;
+  padding-right: 0.5em;
+  padding-left: 0.5em; }
+
 .input .addon:not(.btn) {
   color: #444;
   background-color: rgba(0, 0, 0, 0.05); }
@@ -11085,6 +11044,9 @@ body .we500 {
 
 .rtl .txtLa {
   text-align: right; }
+
+.txtbold {
+  font-weight: 700; }
 
 .fadeIn {
   display: none; }

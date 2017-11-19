@@ -101,6 +101,11 @@ span.input{
 	align-items:center;
 	width: auto;
 }
+.input .addon.small{
+	font-size:70%;
+	padding-right:0.5em;
+	padding-left:0.5em;
+}
 .input .addon:not(.btn)
 {
 	color: #444;
