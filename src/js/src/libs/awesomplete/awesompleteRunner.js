@@ -196,9 +196,9 @@ function fillDataList(_this)
 			{
 				opt.label += '<span>' + _i.desc + '</span>';
 			}
-			if(_i.translate)
+			if(_i.desc2)
 			{
-				opt.label += '<abbr>' + _i.translate + '</abbr>';
+				opt.label += '<abbr>' + _i.desc2 + '</abbr>';
 			}
 			// set value
 			opt.value = _i.title;
