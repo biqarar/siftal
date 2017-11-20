@@ -14,11 +14,12 @@
   var timeout = 0;
   $(document.body).keydown(function(_e)
   {
+    // if we are not have barcode in this page, return
     if($('.barCode').length < 1)
     {
       return;
     }
-
+    // if we have timeout clear it, else save time
     if(timeout)
     {
       clearTimeout(timeout);
@@ -29,7 +30,19 @@
     }
     $focused = $(':focus');
     // if is not lock
-    if($focused.attr('data-lock') !== undefined)
+    if($focused.attr('data-lock') === undefined)
+    {
+      // if is not locked!
+      if(_e.key === 'Enter')
+      {
+        if($focused.attr('data-allowEnter') === undefined)
+        {
+          // if unlocked but dont allow to press enter and enter is pressed, blocked enter
+          _e.preventDefault();
+        }
+      }
+    }
+    else
     {
       // if we are in barcode dont write something
       if($focused.is('.barCode'))
@@ -64,19 +77,6 @@
         }
       }
     }
-    else
-    {
-      // if is not locked!
-
-      if(_e.key === 'Enter')
-      {
-        if($focused.attr('data-allowEnter') === undefined)
-        {
-          // if unlocked but dont allow to press enter and enter is pressed, blocked enter
-          _e.preventDefault();
-        }
-      }
-    }
 
     timeout = setTimeout(function()
     {
@@ -96,7 +96,7 @@
           var detectedCode = keys.toEnglish().toString();
           // prevent default
           _e.preventDefault();
-          $barcodeDefaultInput = $('.barCode[data-default]');
+          var barcodeDefaultInput = $('.barCode[data-default]');
 
           // get focused element and if we are in barcode fill it
           if($focused.is('.barCode'))
@@ -109,13 +109,13 @@
             // e.which = 13 //choose the one you want
             // $(".barCode#q").keypress(function(){  }).trigger(e);
           }
-          else if($barcodeDefaultInput.length)
+          else if(barcodeDefaultInput.length)
           {
-            $barcodeDefaultInput.val(detectedCode);
+            barcodeDefaultInput.val(detectedCode);
             // you allow to press enter at the end of barcode, submit form if exist
-            if($barcodeDefaultInput.attr('data-allowEnter') !== undefined)
+            if(barcodeDefaultInput.attr('data-allowEnter') !== undefined)
             {
-              $pForm = $barcodeDefaultInput.parents('form')
+              $pForm = barcodeDefaultInput.parents('form')
               if($pForm.length)
               {
                 $pForm.submit();
