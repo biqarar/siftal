@@ -29,7 +29,7 @@ function fillAuto()
 	// on foucs to autoList input
 	$(document).on('focus', '.autoList', function(_e)
 	{
-		if($(this).val().length === 0)
+		if($(this).val().length === 0 && $(this).data('Awesomplete'))
 		{
 			$(this).data('Awesomplete').open();
 		}
