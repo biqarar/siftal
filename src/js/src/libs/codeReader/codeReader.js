@@ -78,6 +78,15 @@
       }
     }
 
+    // if we have default and key pressed as fast as posible, prevent next keys
+    if($('.barCode[data-default]').length)
+    {
+      if((Date.now() - time) > 1)
+      {
+        _e.preventDefault();
+      }
+    }
+
     timeout = setTimeout(function()
     {
       if(keys.slice(-5) === 'Enter')
@@ -105,7 +114,7 @@
           {
             // replace val in barcode field
             $focused.val(detectedCode);
-            console.log(typeSpeed);
+            // console.log(typeSpeed);
             // try to press enter, fail!
             // e = jQuery.Event("keypress")
             // e.which = 13 //choose the one you want
@@ -123,6 +132,15 @@
                 $pForm.submit();
               }
             }
+            // if used as default barcode, remove last chart if we are in another input
+            if($focused.is('input') || $focused.is('textarea'))
+            {
+              var tmpPos = $focused[0].selectionStart;
+              var newVal = $focused.val();
+              newVal = newVal.substring(0, tmpPos - 1) + newVal.substring(tmpPos, newVal.length);
+              // set new val
+              $focused.val(newVal);
+            }
           }
           else
           {
@@ -135,7 +153,7 @@
       time    = 0;
       timeout = 0;
       keys    = '';
-    }, 50);
+    }, 20);
     keys += _e.key;
   });
 })(window, jQuery);
