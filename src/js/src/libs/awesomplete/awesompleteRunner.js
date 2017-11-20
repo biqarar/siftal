@@ -112,14 +112,16 @@ function bindAwesomplete()
 		replace: function(text)
 		{
 			myText = text.label;
-			if(myText.indexOf('<var>') > 0)
+			tmpPosStart = myText.indexOf('<b>');
+			tmpPosEnd = myText.indexOf('</b>');
+			// if have tag b use text in this tag as label
+			if( tmpPosStart >= 0 && tmpPosEnd > 0)
 			{
-				myText = myText.substr(0, myText.indexOf('<var>'))
-				myText = $(myText).text();
-				this.input.value = myText;
+				myText = myText.substring(tmpPosStart + 3, tmpPosEnd)
 				// save value to data-val if it's different
 				$this.attr('data-val', text.value);
 			}
+
 			this.input.value = myText;
 		}
 	});
