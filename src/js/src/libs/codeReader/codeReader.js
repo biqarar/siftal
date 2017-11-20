@@ -29,23 +29,24 @@
       time = Date.now();
     }
     $focused = $(':focus');
-    // if is not lock
-    if($focused.attr('data-lock') === undefined)
+
+    // if we are in barcode dont write something
+    if($focused.is('.barCode'))
     {
-      // if is not locked!
-      if(_e.key === 'Enter')
+      // if is not lock
+      if($focused.attr('data-lock') === undefined)
       {
-        if($focused.attr('data-allowEnter') === undefined)
+        // if is not locked!
+        if(_e.key === 'Enter')
         {
-          // if unlocked but dont allow to press enter and enter is pressed, blocked enter
-          _e.preventDefault();
+          if($focused.attr('data-allowEnter') === undefined)
+          {
+            // if unlocked but dont allow to press enter and enter is pressed, blocked enter
+            _e.preventDefault();
+          }
         }
       }
-    }
-    else
-    {
-      // if we are in barcode dont write something
-      if($focused.is('.barCode'))
+      else
       {
         switch(_e.key)
         {
@@ -60,14 +61,14 @@
             break;
 
           case 'Enter':
-            if($focused.attr('data-allowEnter') !== undefined)
+            if($focused.attr('data-allowEnter') === undefined)
             {
-              // do nothing, allow to enter
+              // in normal condition prevent press enter
+              _e.preventDefault();
             }
             else
             {
-              // else in normal condition prevent press enter
-              _e.preventDefault();
+              // else do nothing, allow to enter
             }
             break;
 
@@ -77,6 +78,7 @@
         }
       }
     }
+
 
     // if we have default and key pressed as fast as posible, prevent next keys
     if($('.barCode[data-default]').length)
@@ -106,7 +108,7 @@
           // bugfix for iranbarcode and change some persian char to en
           detectedCode     = detectedCode.replace('چ', ']').replace('ژ', 'C');
           // prevent default
-          _e.preventDefault();
+          // _e.preventDefault();
           var barcodeDefaultInput = $('.barCode[data-default]');
 
           // get focused element and if we are in barcode fill it
