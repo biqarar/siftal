@@ -10,7 +10,6 @@ $tblPadCell: 0.7em 0.7em;
 	text-align: left;
 	color: #777;
 	transition:0.3s;
-	overflow:hidden
 }
 .rtl .tbl{
 	text-align:right;
@@ -19,7 +18,6 @@ $tblPadCell: 0.7em 0.7em;
 .tbl td, .tbl th{
 	padding:$tblPadCell;
 	max-width:600px;
-	overflow:hidden;
 	text-overflow: ellipsis;
 }
 
@@ -38,7 +36,7 @@ $tblPadCell: 0.7em 0.7em;
 	padding-top: 1em;
 	padding-bottom: 1em;
 	font-weight: 700;
-
+	overflow:hidden;
 }
 .tbl tfoot th{
 	vertical-align: bottom;
