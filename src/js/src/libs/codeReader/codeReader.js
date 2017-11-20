@@ -94,6 +94,8 @@
         {
           // change to english and after that to string
           var detectedCode = keys.toEnglish().toString();
+          // bugfix for iranbarcode and change some persian char to en
+          detectedCode     = detectedCode.replace('چ', ']').replace('ژ', 'C');
           // prevent default
           _e.preventDefault();
           var barcodeDefaultInput = $('.barCode[data-default]');
