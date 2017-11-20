@@ -187,11 +187,10 @@ function fillDataList(_this)
 			// define inner object
 			var opt = {};
 			opt.label = '<b>' + _i.title + '</b>';
-			if(!_i.count)
+			if(_i.count)
 			{
-				_i.count = '';
+				opt.label += '<var>' + _i.count + '</var>';
 			}
-			opt.label += '<var>' + _i.count + '</var>';
 			if(_i.desc)
 			{
 				opt.label += '<span>' + _i.desc + '</span>';
