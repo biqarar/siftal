@@ -11,7 +11,7 @@
 }
  /* Pointer */
 .awesomplete>ul:before{content:"";position:absolute;top:-.43em;left:1em;width:0;height:0;padding:.4em;background:#fff;border:inherit;border-right:0;border-bottom:0;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg)}
-.awesomplete>ul>li{position:relative;padding:10px 15px;cursor:pointer;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;}
+.awesomplete>ul>li{position:relative;padding:0.8em 1.1em;cursor:pointer;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;}
 .awesomplete>ul>li var{float:right;padding:0 1em;}
 .awesomplete>ul>li:hover{background:hsl(200,40%,80%);color:#000}
 .awesomplete>ul>li[aria-selected="true"]{background:hsl(205,40%,40%);color:#fff}
@@ -26,3 +26,5 @@
 .awesomplete>ul>li>abbr.rtl{text-align:right;}
 .rtl .awesomplete>ul>li>var{float:left;padding:0 1em}
 .profile-module .awesomplete>ul{min-width:400px;}
+
+.small .awesomplete> ul{font-size:0.8em;}
