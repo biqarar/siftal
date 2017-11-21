@@ -45,6 +45,7 @@ var myModuleFiles =
 	'src/utility/life.js',
 	'src/utility/enter.js',
 	'src/utility/weAreHere.js',
+	'src/utility/json.js',
 
 	'src/main.js',
 	'src/shame.js',
