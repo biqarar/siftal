@@ -46,7 +46,7 @@ function fillAuto()
 		}
 		var timeout = setTimeout(function()
 		{
-			if($this.val().trim().length > 1)
+			if($this.val().trim().length > 0)
 			{
 				fillDataList($this);
 			}
@@ -166,25 +166,25 @@ function fillDataList(_this)
 
 	var xhr = $.get(findAddr, sendData, function(_data)
 	{
-		var myAutoList = $(_this).data('Awesomplete');
-		myAutoList.list = convertJson(_data);
+		// clear result given from server
+		var datalist    = clearJson(_data);
+		// save for next use
+		$(_this).data('datalist', datalist);
+		// get awesomplete obj
+		var myAutoList  = $(_this).data('Awesomplete');
+		// updat datalist
+		myAutoList.list = prepareDatalistArray(datalist);
 	});
 
 
 	/**
-	 * [convertJson description]
+	 * [prepareDatalistArray description]
 	 * @param  {[type]} _data [description]
 	 * @return {[type]}       [description]
 	 */
-	function convertJson(_data)
+	function prepareDatalistArray(_datalist)
 	{
-		var list = clearJson(_data);
-		if(!list)
-		{
-			list = [];
-		}
-
-		list = list.map(function(_i)
+		var list = _datalist.map(function(_i)
 		{
 			// define inner object
 			var opt = {};
@@ -218,7 +218,7 @@ function fillDataList(_this)
 	 * @param  {[type]} _data [description]
 	 * @return {[type]}       [description]
 	 */
-	function clearJson(_data)
+	function clearJson(_data, _forceArray)
 	{
 		var list = null;
 		if(_data && _data.msg && _data.msg.list)
@@ -233,6 +233,10 @@ function fillDataList(_this)
 			{
 				list = [];
 			}
+		}
+		if(!list && _forceArray)
+		{
+			list = [];
 		}
 		return list;
 	}
