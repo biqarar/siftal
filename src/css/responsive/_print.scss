@@ -1,6 +1,12 @@
 /* Design for print */
 @media print {
 
+  // for siftl panel
+  .siftal > #sidebar{display:none;}
+  .siftal > #main > header{display:none;}
+  .siftal > #main > footer{display:none;}
+  .siftal .scr::-webkit-scrollbar{display:none;}
+
 
 }
 

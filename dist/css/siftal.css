@@ -13910,7 +13910,7 @@ body .w200 {
 
   .sm0 {
     padding: 0; } }
-@media all and (max-width: 280px) {
+@media screen and (max-width: 280px) {
   html:before {
     font-size: 100vw;
     position: absolute;
@@ -13923,6 +13923,18 @@ body .w200 {
   html body {
     display: none !important; } }
 /* Design for print */
+@media print {
+  .siftal > #sidebar {
+    display: none; }
+
+  .siftal > #main > header {
+    display: none; }
+
+  .siftal > #main > footer {
+    display: none; }
+
+  .siftal .scr::-webkit-scrollbar {
+    display: none; } }
 svg.barcodePrev {
   height: 70px; }
 
