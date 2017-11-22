@@ -77,7 +77,17 @@
             // Updates the number until we're done
             var f = function()
             {
-                $this.text(fitNumber($this.data('counterup-nums').shift(), false));
+                // try to fix bug if el is not exist
+                var counterUpNums = $this.data('counterup-nums');
+                if(!counterUpNums)
+                {
+                    return null;
+                }
+
+                counterUpNums = fitNumber(counterUpNums.shift(), false);
+                $this.text(counterUpNums);
+
+
                 if ($this.data('counterup-nums').length)
                 {
                     setTimeout($this.data('counterup-func'), $settings.delay);
