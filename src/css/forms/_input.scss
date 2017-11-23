@@ -166,6 +166,18 @@ span.input{
 }
 
 
+// error coloring for addons
+.input.error .addon{
+	color:rgba(255,0,0,1);
+}
+.input.warning .addon{
+	color:rgba(255,145,0,1);
+}
+.input.ok .addon{
+	color:rgba(39,128,39,1);
+}
+
+
 // only on input elements
 input.input{
 	font-weight: 400;

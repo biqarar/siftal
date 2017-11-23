@@ -8235,6 +8235,15 @@ span.input {
   border-radius: 0;
   border-left-width: 0; }
 
+.input.error .addon {
+  color: red; }
+
+.input.warning .addon {
+  color: #ff9100; }
+
+.input.ok .addon {
+  color: #278027; }
+
 input.input {
   font-weight: 400;
   display: inline-flex;
