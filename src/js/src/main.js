@@ -81,8 +81,7 @@ $(document).ready(function()
             start = this.value.length;
             end   = this.value.length;
           }
-          // val       = this.value.slice(0, start) + key.toEnglish() + this.value.slice(end);
-          val       = this.value.slice(0, start) + key.toEnglish() + this.value.slice(end);
+          val = this.value.slice(0, start) + key.toEnglish() + this.value.slice(end);
         }
         catch(e)
         {
@@ -97,6 +96,15 @@ $(document).ready(function()
       else if(e.which >= 48 && e.which <= 57)
       {
         // do nothing, only accept numbers
+      }
+      else if(e.which == 46)
+      {
+        if(this.value.indexOf('.') >= 0 )
+        {
+          disallowInput = true;
+        }
+        // do nothing, only accept decimal seperator
+        // check if we have one decimal dont accept another one!
       }
       else if (e.which === 0 || e.which === 8 || e.which === 13)
       {
@@ -120,10 +128,10 @@ $(document).ready(function()
 
         // show invalid class
         $this = $(this);
-        $this.addClass('invalid');
+        $this.addClass('error');
         setTimeout(function()
         {
-          $this.removeClass('invalid');
+          $this.removeClass('error');
         }, 500);
         return false;
       }
