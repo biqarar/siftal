@@ -148,7 +148,7 @@
           {
             console.log('barcode: ' + detectedCode);
           }
-
+          console.log('barcode: ' + detectedCode);
           $("body").trigger("barcode:detect", detectedCode);
         }
       }
