@@ -557,7 +557,7 @@ ul.list {
   margin: 0 2em; }
 
 ul.list li {
-  padding: 0.5em 0; }
+  padding: 0.5em 1em; }
 
 ul.list li a {
   padding: 0.3em 0.5em; }
@@ -13917,7 +13917,11 @@ body .w200 {
     padding: 0; }
 
   .sm0 {
-    padding: 0; } }
+    padding: 0; }
+
+  ul.list li {
+    padding-right: 0.1em;
+    padding-left: 0.1em; } }
 @media screen and (max-width: 280px) {
   html:before {
     font-size: 100vw;
