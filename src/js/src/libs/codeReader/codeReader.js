@@ -52,7 +52,6 @@
         {
           case 'Backspace':
           case 'Delete':
-            _e.preventDefault();
             $focused.val('');
             break;
 
@@ -85,14 +84,7 @@
     {
       if((Date.now() - time) > 1)
       {
-        if(_e.key === 'Enter' && $focused.attr('data-allowEnter'))
-        {
-          // do nothing
-        }
-        else
-        {
-          _e.preventDefault();
-        }
+        _e.preventDefault();
       }
     }
 
@@ -114,8 +106,6 @@
           var detectedCode = keys.toEnglish().toString();
           // bugfix for iranbarcode and change some persian char to en
           detectedCode     = detectedCode.replace('چ', ']').replace('ژ', 'C');
-          // prevent default
-          // _e.preventDefault();
           var barcodeDefaultInput = $('.barCode[data-default]');
 
           // get focused element and if we are in barcode fill it
@@ -123,7 +113,6 @@
           {
             // replace val in barcode field
             $focused.val(detectedCode);
-            // console.log(typeSpeed);
             // try to press enter, fail!
             // e = jQuery.Event("keypress")
             // e.which = 13 //choose the one you want
@@ -153,7 +142,7 @@
           }
           else
           {
-            console.log('barcode: ' + detectedCode);
+            console.log('barcode place not found! ' + detectedCode);
           }
           console.log('barcode: ' + detectedCode);
           $("body").trigger("barcode:detect", detectedCode);
