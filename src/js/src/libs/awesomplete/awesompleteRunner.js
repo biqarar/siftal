@@ -184,6 +184,10 @@ function fillDataList(_this)
 	 */
 	function prepareDatalistArray(_datalist)
 	{
+		if(!_datalist)
+		{
+			return null;
+		}
 		var list = _datalist.map(function(_i)
 		{
 			// define inner object
