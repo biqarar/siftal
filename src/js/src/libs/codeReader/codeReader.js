@@ -85,7 +85,14 @@
     {
       if((Date.now() - time) > 1)
       {
-        _e.preventDefault();
+        if(_e.key === 'Enter' && $focused.attr('data-allowEnter'))
+        {
+          // do nothing
+        }
+        else
+        {
+          _e.preventDefault();
+        }
       }
     }
 
