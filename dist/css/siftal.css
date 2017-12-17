@@ -3627,7 +3627,8 @@ img.mini {
 
 .rtl [class^="sf-"]:before,
 .rtl [class*=" sf-"]:before {
-  vertical-align: top; }
+  vertical-align: top;
+  vertical-align: text-top; }
 
 .sf-angle-down:before {
   content: "\61"; }
@@ -8191,6 +8192,7 @@ span.input {
   color: rgba(0, 0, 0, 0.9);
   position: relative;
   line-height: 1;
+  height: 36px;
   padding: 5px 1em;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -8325,6 +8327,7 @@ input.input {
   display: inline-flex;
   color: rgba(0, 0, 0, 0.9);
   position: relative;
+  height: 36px;
   line-height: 1;
   padding: 5px 1em;
   background-color: #fff;
