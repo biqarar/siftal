@@ -48,7 +48,6 @@
         type: _super.link ? $this.attr('data-method') || 'get' : $this.prop('method') || $this.attr('data-method'),
         url: (_super.link ? $this.prop('href') : $this.prop('action')  || $this.attr('data-action')) || location.href
       };
-
       var ajax = _.extend(_super.ajax, elementOptions);
 
       var ajaxOptions;
@@ -63,7 +62,6 @@
         {
           var fd = new FormData();
         }
-
         $this.find('[contenteditable]').each(function()
         {
           fd.append(this.getAttribute('name'), this.innerHTML);
@@ -76,6 +74,21 @@
         {
           data: fd
         });
+
+
+
+      if(ajaxOptions.type === "get")
+      {
+        if($this.serialize())
+        {
+          Navigate(
+          {
+            url: ajaxOptions.url + '?' + $this.serialize()
+          });
+          return;
+        }
+      }
+
         if(_super.lockForm)
         {
           $this.find('input, [contenteditable]').attr('disabled', '');

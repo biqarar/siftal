@@ -117,6 +117,13 @@
             // e = jQuery.Event("keypress")
             // e.which = 13 //choose the one you want
             // $(".barCode#q").keypress(function(){  }).trigger(e);
+
+            // you allow to press enter at the end of barcode, submit form if exist
+            $pForm = $focused.parents('form')
+            if($pForm.length)
+            {
+              $pForm.submit();
+            }
           }
           else if(barcodeDefaultInput.length)
           {
