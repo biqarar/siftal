@@ -14,11 +14,81 @@
   var timeout = 0;
   $(document.body).keydown(function(_e)
   {
+    // ----------------------------------------- cancel monitoring
     // if we are not have barcode in this page, return
     if($('.barCode').length < 1)
     {
       return;
     }
+
+    // ----------------------------------------- detect target input
+    var $focused         = $(':focus');
+    var $barcodeTargetEl = null;
+
+    // if current el is barcode this is target
+    if($focused.hasClass('barCode'))
+    {
+      $barcodeTargetEl = $focused;
+
+      // handle lock status of current element, if is lock dont type anychar
+      // if we are in barcode dont write something
+      var elLock = $focused.attr('data-lock') !== undefined;
+      if(elLock)
+      {
+        switch(_e.key)
+        {
+          case 'Backspace':
+          case 'Delete':
+            // remove barcode from element
+            var oldVal = $focused.val();
+            $focused.val('');
+            $("body").trigger("barcode:remove", oldVal , $focused);
+            break;
+
+          case 'Tab':
+            // do nothing! be normal
+            break;
+
+          default:
+            _e.preventDefault();
+            break;
+        }
+      }
+      else
+      {
+        switch(_e.key)
+        {
+          case 'Enter':
+            _e.preventDefault();
+            break;
+
+          default:
+            // do nothing
+            break;
+        }
+      }
+    }
+    else if($('.barCode[data-default]').length > 0)
+    {
+      $barcodeTargetEl = $('.barCode[data-default]');
+      // show message if more than one default exist
+      if($('.barCode[data-default]').length > 1)
+      {
+        console.log('more than one default detected!')
+      }
+
+      // if we have default and key pressed as fast as posible, prevent next keys
+      if((Date.now() - time) > 1)
+      {
+        _e.preventDefault();
+      }
+    }
+    else
+    {
+      // we have barcode but its not have focus or set as default
+      return;
+    }
+
     // if we have timeout clear it, else save time
     if(timeout)
     {
@@ -28,77 +98,18 @@
     {
       time = Date.now();
     }
-    $focused = $(':focus');
 
-    // if we are in barcode dont write something
-    if($focused.is('.barCode'))
-    {
-      // if is not lock
-      if($focused.attr('data-lock') === undefined)
-      {
-        // if is not locked!
-        if(_e.key === 'Enter')
-        {
-          if($focused.attr('data-allowEnter') === undefined)
-          {
-            // if unlocked but dont allow to press enter and enter is pressed, blocked enter
-            _e.preventDefault();
-          }
-        }
-      }
-      else
-      {
-        switch(_e.key)
-        {
-          case 'Backspace':
-          case 'Delete':
-            $focused.val('');
-            break;
-
-          case 'Tab':
-            // do nothing! be normal
-            break;
-
-          case 'Enter':
-            if($focused.attr('data-allowEnter') === undefined)
-            {
-              // in normal condition prevent press enter
-              _e.preventDefault();
-            }
-            else
-            {
-              // else do nothing, allow to enter
-            }
-            break;
-
-          default:
-            _e.preventDefault();
-            break;
-        }
-      }
-    }
-
-
-    // if we have default and key pressed as fast as posible, prevent next keys
-    if($('.barCode[data-default]').length)
-    {
-      if((Date.now() - time) > 1)
-      {
-        _e.preventDefault();
-      }
-    }
-
+    // on timeout
     timeout = setTimeout(function()
     {
       if(keys.slice(-5) === 'Enter')
       {
         // remove enter from calc
-        keys = keys.slice(0, -5);
+        keys          = keys.slice(0, -5);
         // get len of typed
         var len       = keys.length;
         // calc type speed in micor second
         var typeSpeed = (len / (Date.now() - time)) * 1000;
-
         // if barcode detected ended with enter
         if(typeSpeed > barcodeOptions.speed && len > barcodeOptions.min)
         {
@@ -106,37 +117,43 @@
           var detectedCode = keys.toEnglish().toString();
           // bugfix for iranbarcode and change some persian char to en
           detectedCode     = detectedCode.replace('چ', ']').replace('ژ', 'C');
-          var barcodeDefaultInput = $('.barCode[data-default]');
 
-          // get focused element and if we are in barcode fill it
-          if($focused.is('.barCode'))
+          // replace detected barcode in target el
+          $barcodeTargetEl.val(detectedCode);
+          // you can set some func after pass all conditions
+          switch($barcodeTargetEl.attr('data-pass'))
           {
-            // replace val in barcode field
-            $focused.val(detectedCode);
-            // try to press enter, fail!
-            // e = jQuery.Event("keypress")
-            // e.which = 13 //choose the one you want
-            // $(".barCode#q").keypress(function(){  }).trigger(e);
-
-            // you allow to press enter at the end of barcode, submit form if exist
-            $pForm = $focused.parents('form')
-            if($pForm.length)
-            {
-              $pForm.submit();
-            }
-          }
-          else if(barcodeDefaultInput.length)
-          {
-            barcodeDefaultInput.val(detectedCode);
-            // you allow to press enter at the end of barcode, submit form if exist
-            if(barcodeDefaultInput.attr('data-allowEnter') !== undefined)
-            {
-              $pForm = barcodeDefaultInput.parents('form')
+            case 'submit':
+              //submit form if exist
+              $pForm = $barcodeTargetEl.parents('form')
               if($pForm.length)
               {
+                console.log('submit parent form');
                 $pForm.submit();
               }
-            }
+              break;
+
+            case 'tab':
+              if($barcodeTargetEl.is($focused))
+              {
+                var inputs = $focused.parents('form').find(':input');
+                inputs.eq( inputs.index($focused)+ 1 ).focus();
+              }
+              break;
+
+            default:
+              if(!$barcodeTargetEl.is($focused))
+              {
+                $barcodeTargetEl.focus();
+              }
+              // check call funtions
+              // ...
+              break;
+          }
+
+          // if target is not current input
+          if(!$barcodeTargetEl.is($focused))
+          {
             // if used as default barcode, remove last chart if we are in another input
             if($focused.is('input') || $focused.is('textarea'))
             {
@@ -147,18 +164,35 @@
               $focused.val(newVal);
             }
           }
-          else
-          {
-            console.log('barcode place not found! ' + detectedCode);
-          }
+
           console.log('barcode: ' + detectedCode);
           $("body").trigger("barcode:detect", detectedCode);
         }
       }
+      // on press enter empty used variables
       time    = 0;
       timeout = 0;
       keys    = '';
     }, 20);
-    keys += _e.key;
+
+
+    // check pressed key and do something on special conditon else add to pressed keys
+    switch (_e.key)
+    {
+      // case 'Enter':
+      case 'Control':
+      case 'Shift':
+      case 'CapsLock':
+      case 'Tab':
+      case 'Delete':
+      case 'Backspace':
+        // do nothing
+        break;
+
+      default:
+        keys += _e.key;
+        break;
+    }
+
   });
 })(window, jQuery);
