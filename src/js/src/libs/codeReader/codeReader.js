@@ -43,6 +43,8 @@
             var oldVal = $focused.val();
             $focused.val('');
             $("body").trigger("barcode:remove", oldVal , $focused);
+            $barcodeTargetEl.attr('data-barcode', null);
+
             break;
 
           case 'Tab':
@@ -62,7 +64,11 @@
             _e.preventDefault();
             break;
 
+          case 'Tab':
+            break;
+
           default:
+            $barcodeTargetEl.attr('data-barcode', null);
             // do nothing
             break;
         }
@@ -86,7 +92,23 @@
     else
     {
       // we have barcode but its not have focus or set as default
-      return;
+      if(keys.length > 1)
+      {
+        switch(_e.key)
+        {
+          case 'Enter':
+            _e.preventDefault();
+            break;
+
+          case 'Tab':
+            break;
+
+          default:
+            // do nothing
+            break;
+        }
+      }
+      // return;
     }
 
     // if we have timeout clear it, else save time
@@ -118,52 +140,68 @@
           // bugfix for iranbarcode and change some persian char to en
           detectedCode     = detectedCode.replace('چ', ']').replace('ژ', 'C');
 
-          // replace detected barcode in target el
-          $barcodeTargetEl.val(detectedCode);
-          // you can set some func after pass all conditions
-          switch($barcodeTargetEl.attr('data-pass'))
+          if($barcodeTargetEl)
           {
-            case 'submit':
-              //submit form if exist
-              $pForm = $barcodeTargetEl.parents('form')
-              if($pForm.length)
-              {
-                console.log('submit parent form');
-                $pForm.submit();
-              }
-              break;
+            // replace detected barcode in target el
+            $barcodeTargetEl.val(detectedCode);
+            $barcodeTargetEl.attr('data-barcode', detectedCode);
 
-            case 'tab':
-              if($barcodeTargetEl.is($focused))
-              {
-                var inputs = $focused.parents('form').find(':input');
-                inputs.eq( inputs.index($focused)+ 1 ).focus();
-              }
-              break;
-
-            default:
-              if(!$barcodeTargetEl.is($focused))
-              {
-                $barcodeTargetEl.focus();
-              }
-              // check call funtions
-              // ...
-              break;
-          }
-
-          // if target is not current input
-          if(!$barcodeTargetEl.is($focused))
-          {
-            // if used as default barcode, remove last chart if we are in another input
-            if($focused.is('input') || $focused.is('textarea'))
+            // you can set some func after pass all conditions
+            switch($barcodeTargetEl.attr('data-pass'))
             {
-              var tmpPos = $focused[0].selectionStart;
-              var newVal = $focused.val();
-              newVal = newVal.substring(0, tmpPos - 1) + newVal.substring(tmpPos, newVal.length);
-              // set new val
-              $focused.val(newVal);
+              case 'submit':
+                //submit form if exist
+                $pForm = $barcodeTargetEl.parents('form')
+                if($pForm.length)
+                {
+                  console.log('submit parent form');
+                  $pForm.submit();
+                }
+                break;
+
+              case 'tab':
+                if($barcodeTargetEl.is($focused))
+                {
+                  var inputs = $focused.parents('form').find(':input');
+                  inputs.eq( inputs.index($focused)+ 1 ).focus();
+                }
+                break;
+
+              default:
+                if(!$barcodeTargetEl.is($focused))
+                {
+                  $barcodeTargetEl.focus();
+                }
+                // check call funtions
+                // ...
+                break;
+            }
+
+            // if target is not current input
+            if(!$barcodeTargetEl.is($focused))
+            {
+              // if used as default barcode, remove last chart if we are in another input
+              if($focused.is('input') || $focused.is('textarea'))
+              {
+                var tmpPos = $focused[0].selectionStart;
+                var newVal = $focused.val();
+                newVal = newVal.substring(0, tmpPos - 1) + newVal.substring(tmpPos, newVal.length);
+                // set new val
+                $focused.val(newVal);
+              }
             }
           }
+          else
+          {
+            // if we are in another element not barcode and default is not exist
+            var tmpPos = $focused[0].selectionStart;
+            var newVal = $focused.val();
+            newVal = newVal.substring(0, tmpPos - detectedCode.length) + newVal.substring(tmpPos, newVal.length);
+            // set new val
+            $focused.val(newVal);
+          }
+
+
 
           console.log('barcode: ' + detectedCode);
           $("body").trigger("barcode:detect", detectedCode);
