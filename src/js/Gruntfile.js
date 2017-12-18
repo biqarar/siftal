@@ -30,6 +30,7 @@ var myModuleFiles =
 	'src/libs/notif/iziToast.js',
 	'src/libs/notif/notif.js',
 	'src/libs/codeReader/codeReader.js',
+	'src/libs/cursor/cursor.js',
 
 
 	// tools

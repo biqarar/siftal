@@ -188,6 +188,7 @@
                 newVal = newVal.substring(0, tmpPos - 1) + newVal.substring(tmpPos, newVal.length);
                 // set new val
                 $focused.val(newVal);
+                setCaretToPos($focused[0], tmpPos - 1);
               }
             }
           }
@@ -199,6 +200,8 @@
             newVal = newVal.substring(0, tmpPos - detectedCode.length) + newVal.substring(tmpPos, newVal.length);
             // set new val
             $focused.val(newVal);
+            // set cursor to old location
+            setCaretToPos($focused[0], tmpPos - detectedCode.length);
           }
 
 
