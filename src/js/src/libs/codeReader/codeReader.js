@@ -61,7 +61,10 @@
         switch(_e.key)
         {
           case 'Enter':
-            _e.preventDefault();
+            if(keys.length > 1)
+            {
+              _e.preventDefault();
+            }
             break;
 
           case 'Tab':
