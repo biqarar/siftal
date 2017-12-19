@@ -89,7 +89,10 @@
       // if we have default and key pressed as fast as posible, prevent next keys
       if((Date.now() - time) > 1)
       {
-        _e.preventDefault();
+        if(keys.length > 1)
+        {
+          _e.preventDefault();
+        }
       }
     }
     else
@@ -145,6 +148,21 @@
 
           if($barcodeTargetEl)
           {
+            // if target is not current input
+            if(!$barcodeTargetEl.is($focused))
+            {
+              // if used as default barcode, remove last chart if we are in another input
+              if($focused.is('input') || $focused.is('textarea'))
+              {
+                var tmpPos = $focused[0].selectionStart;
+                var newVal = $focused.val();
+                newVal = newVal.substring(0, tmpPos - 2) + newVal.substring(tmpPos, newVal.length);
+                // set new val
+                $focused.val(newVal);
+                setCaretToPos($focused[0], tmpPos - 2);
+              }
+            }
+
             // replace detected barcode in target el
             $barcodeTargetEl.val(detectedCode);
             $barcodeTargetEl.attr('data-barcode', detectedCode);
@@ -178,21 +196,6 @@
                 // check call funtions
                 // ...
                 break;
-            }
-
-            // if target is not current input
-            if(!$barcodeTargetEl.is($focused))
-            {
-              // if used as default barcode, remove last chart if we are in another input
-              if($focused.is('input') || $focused.is('textarea'))
-              {
-                var tmpPos = $focused[0].selectionStart;
-                var newVal = $focused.val();
-                newVal = newVal.substring(0, tmpPos - 1) + newVal.substring(tmpPos, newVal.length);
-                // set new val
-                $focused.val(newVal);
-                setCaretToPos($focused[0], tmpPos - 1);
-              }
             }
           }
           else
