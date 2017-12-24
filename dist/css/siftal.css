@@ -11913,7 +11913,8 @@ body.siftal.loading-page #sidebar .avatar:before {
   padding: 0.8em 3em; }
 
 .siftal #sidebar ul > li > a.weAreHere {
-  background-color: rgba(0, 0, 0, 0.8); }
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff; }
 
 /* footer */
 .siftal footer {
