@@ -11900,7 +11900,7 @@ body.siftal.loading-page #sidebar .avatar:before {
 
 .siftal #sidebar ul > li > a {
   display: block;
-  padding: 1.5em 2em;
+  padding: 1.2em 2em;
   color: #d5d5d5;
   transition: 0.3s;
   cursor: pointer;
@@ -11920,10 +11920,11 @@ body.siftal.loading-page #sidebar .avatar:before {
   background-color: rgba(0, 0, 0, 0.7); }
 
 .siftal #sidebar ul > li > ul {
-  background-color: #252525; }
+  background-color: #252525;
+  font-size: 0.9em; }
 
 .siftal #sidebar ul > li > ul > li > a {
-  padding: 0.8em 3em; }
+  padding: 0.7em 3em; }
 
 .siftal #sidebar ul > li > a.weAreHere {
   background-color: rgba(0, 0, 0, 0.8);
