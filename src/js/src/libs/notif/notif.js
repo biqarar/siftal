@@ -78,6 +78,11 @@ function notif(_type, _msg, _title, _timeout, _opt)
     {
       notifOpt.image = _opt.image;
     }
+    // add image
+    if(_opt.theme)
+    {
+      notifOpt.theme = _opt.theme;
+    }
   }
 
   // change some default options
