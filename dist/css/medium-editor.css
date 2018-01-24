@@ -70,6 +70,8 @@
 .medium-editor-toolbar-anchor-preview{background:#242424;border-radius:5px;color:#fff}
 .medium-editor-placeholder:after{color:#b3b3b1}
 
+/*added for siftal*/
 .medium-editor-element blockquote{background:#f9f9f9;border-left:1em solid #ccc;margin:1.5em 1em;padding:0.5em 1em;}
 .medium-editor-element ul{list-style:square inside;}
+.medium-editor-element.txt{line-height:1.5;min-height:300px;}
 
