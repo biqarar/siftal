@@ -12476,7 +12476,8 @@ body.siftal .full .middle {
 .siftal header #sidenavHandler {
   width: 50px;
   text-align: center;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  cursor: pointer !important; }
 
 .siftal header #sidenavHandler i {
   width: 100%;
@@ -13987,7 +13988,10 @@ body .w200 {
     padding: 0; }
 
   .xm0 {
-    padding: 0; } }
+    padding: 0; }
+
+  .siftal #sidebar {
+    width: 300px; } }
 @media all and (min-width: 768px) and (max-width: 959px) {
   html {
     font-size: 60%; }
