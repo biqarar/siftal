@@ -1606,9 +1606,10 @@ a:active {
 /* breadcrumb */
 .breadcrumb {
   padding: 5px 1em;
-  display: inline-block;
+  display: inline;
   line-height: 30px;
-  height: 30px; }
+  height: 30px;
+  outline: none; }
 
 .breadcrumb a {
   font-size: 1em;
@@ -9744,7 +9745,8 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
   max-width: 100%;
   min-height: 36px;
   max-height: 30em;
-  overflow: hidden; }
+  overflow: hidden;
+  overflow-y: auto; }
 
 .txt:hover {
   border-color: rgba(0, 0, 0, 0.2); }
