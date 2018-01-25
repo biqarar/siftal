@@ -9757,7 +9757,7 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
 .txt[rows] {
   resize: none; }
 
-.txt[rows] {
+.txt[rows="1"] {
   line-height: 1; }
 
 .select {
