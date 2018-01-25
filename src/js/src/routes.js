@@ -22,6 +22,7 @@ route('*', function ()
   weAreHereChecker();
   // run autoList
   fillAuto();
+  runTippy();
 
   if($('body').hasClass('enter'))
   {

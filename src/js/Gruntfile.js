@@ -32,6 +32,8 @@ var myModuleFiles =
 	'src/libs/codeReader/codeReader.js',
 	'src/libs/cursor/cursor.js',
 	'src/libs/tagDetector/tagDetector.js',
+	'src/libs/tippy/tippy.min.js',
+	'src/libs/tippy/tippyRunner.js',
 
 
 	// tools
