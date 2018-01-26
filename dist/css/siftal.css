@@ -183,9 +183,10 @@ main, article, aside, figure, figcaption, footer, header, nav, section, details,
 
 /* Handle box-sizing while better addressing child elements:
    http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+/* force a vertical scrollbar to prevent a jumpy page */
 html {
   box-sizing: border-box;
-  overflow-y: auto;
+  overflow-y: scroll;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
@@ -195,12 +196,10 @@ html {
 
 body.rtl {
   direction: rtl;
-  overflow-x: hidden;
   font-family: IRANSans, "Segoe UI", Helvetica, sans-serif; }
 
 body.ltr {
   direction: ltr;
-  overflow-x: hidden;
   font-family: LatoLatinWeb, IRANSans, "Segoe UI", Helvetica, sans-serif; }
 
 *,
