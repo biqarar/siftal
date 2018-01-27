@@ -12340,8 +12340,7 @@ body .we500 {
 
 /* main styles */
 html {
-  height: 100%;
-  overflow-y: hidden; }
+  height: 100%; }
 
 body.siftal {
   display: -webkit-box;
