@@ -1,5 +1,5 @@
 /**
- * v2.1
+ * v3.0
  */
 
 runTagDetector();
@@ -65,6 +65,27 @@ function runTagDetector()
 
 
 /**
+ * [initTagDetector description]
+ * @return {[type]} [description]
+ */
+function initTagDetector()
+{
+	var myDetector     = $('.tagDetector');
+	myDetector.each(function(_el)
+	{
+		var myTags = getTagLists(myDetector);
+		var $Detector = $(this);
+		// add each tag exist as html element
+		// for each elemetn add as new element
+		$.each(myTags, function( _key, _val )
+		{
+			addNewTagsEl($Detector, _val);
+		});
+	});
+}
+
+
+/**
  * [addNewTags description]
  * @param {[type]} _elChilds [description]
  */
@@ -84,7 +105,6 @@ function addNewTags(_elChilds)
 	// get bind vals
 	var attrBindInput     = myDetector.attr('data-bind-input');
 	var attrBindBox       = myDetector.attr('data-bind-box');
-	var attrBindBoxFormat = myDetector.attr('data-box-format');
 	var attrRestrict      = myDetector.attr('data-restrict');
 	var attrLimit         = parseInt(myDetector.attr('data-limit'));
 	var attrData          = getTagLists(myDetector);
@@ -106,10 +126,8 @@ function addNewTags(_elChilds)
 	}
 	// get value of tag input
 	var inputText = elInput.val();
-	var inputVal  = elInput.attr('data-val');
 	// empty value of tag
 	elInput.val('');
-	elInput.attr('data-val', null);
 	// if isnot set return false
 	if(inputText)
 	{
@@ -119,29 +137,13 @@ function addNewTags(_elChilds)
 	{
 		return false;
 	}
-	if(inputVal)
-	{
-		inputVal = inputVal.trim();
-	}
-	// if box format isnt setm use default format
-	if(!attrBindBoxFormat)
-	{
-		attrBindBoxFormat = "<span>:tag</span>";
-	}
 	var myNewTag = inputText;
 	// if restrict to list, then return and show disallow
 	if(attrRestrict === 'list')
 	{
-		if(inputVal)
-		{
-			myNewTag = inputVal;
-		}
-		else
-		{
-			elInput.addClass("isDisallow");
-			setTimeout(function () { elInput.removeClass("isDisallow") }, 500);
-			return;
-		}
+		elInput.addClass("isDisallow");
+		setTimeout(function () { elInput.removeClass("isDisallow") }, 500);
+		return;
 	}
 	// if exist in old list
 	if(attrData.indexOf(myNewTag) >= 0)
@@ -153,19 +155,39 @@ function addNewTags(_elChilds)
 	}
 	else
 	{
-		// replace :tag with real value
-		var elNewTag = attrBindBoxFormat.replace(':tag', inputText);
-		// add data-val for detecting for add on duplicate
-		elNewTag     = $(elNewTag).attr('data-val', inputVal);
-		elNewTag     = $(elNewTag).attr('title', inputText);
-		// append to boxes
-		elBox.append(elNewTag);
 		// append to array of tags
 		attrData.push(myNewTag);
 		// set tagList
 		setTagList(myDetector, attrData);
+		// add as html element
+		addNewTagsEl(myDetector, inputText);
 	}
 }
+
+
+/**
+ * [addNewTagsEl description]
+ * @param {[type]} _detector [description]
+ * @param {[type]} _tag      [description]
+ */
+function addNewTagsEl(_detector, _tag)
+{
+	console.log(_detector);
+	var elBox             = _detector.find('.tagBox');
+	var attrBindBoxFormat = _detector.attr('data-box-format');
+	// if box format isnt setm use default format
+	if(!attrBindBoxFormat)
+	{
+		attrBindBoxFormat = "<span>:tag</span>";
+	}
+	// replace :tag with real value
+	var elNewTag = attrBindBoxFormat.replace(':tag', _tag);
+	// add data-val for detecting for add on duplicate
+	elNewTag     = $(elNewTag).attr('data-val', _tag);
+	// append to boxes
+	elBox.append(elNewTag);
+}
+
 
 /**
  * [getTagLists description]
@@ -174,11 +196,10 @@ function addNewTags(_elChilds)
  */
 function getTagLists(_detector)
 {
-	var attrData = _detector.attr('data-val');
-	// set data until now
-	if(attrData)
+	var attrData = _detector.find('.tagVals').val();
+	if(attrData != undefined && attrData.trim() != '')
 	{
-		attrData = JSON.parse(attrData);
+		attrData = attrData.split(',');
 	}
 	else
 	{
@@ -205,6 +226,4 @@ function setTagList(_detector, _data)
 	}
 	// add to textarea of elements
 	elVals.val(_data.join());
-	// add vals to detector as json
-	_detector.attr('data-val', JSON.stringify(_data));
 }

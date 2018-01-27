@@ -23,6 +23,7 @@ route('*', function ()
   // run autoList
   fillAuto();
   runTippy();
+  initTagDetector();
 
   if($('body').hasClass('enter'))
   {
