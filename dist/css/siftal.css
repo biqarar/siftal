@@ -12339,6 +12339,10 @@ body .we500 {
   color: #007bff; }
 
 /* main styles */
+html {
+  height: 100%;
+  overflow-y: hidden; }
+
 body.siftal {
   display: -webkit-box;
   display: -webkit-flex;
