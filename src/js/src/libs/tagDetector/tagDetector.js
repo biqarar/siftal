@@ -1,5 +1,5 @@
 /**
- * v3.0
+ * v3.1
  */
 
 runTagDetector();
@@ -172,7 +172,6 @@ function addNewTags(_elChilds)
  */
 function addNewTagsEl(_detector, _tag)
 {
-	console.log(_detector);
 	var elBox             = _detector.find('.tagBox');
 	var attrBindBoxFormat = _detector.attr('data-box-format');
 	// if box format isnt setm use default format
