@@ -1,20 +1,20 @@
 function bindUploader()
 {
   $('#gallery').uploader({
-    url: '/cp/posts/edit?id=b',
+    url: window.location.href,
     dataType: 'json',
 
     // Note: The GET is for test as POST request is not allowed on Github Pages.
-    method: /github/.test(window.location.host) ? 'GET' : 'POST',
+    method: 'POST',
     dropzone: '.dropzone',
 
     done: function (e, data)
     {
-      console.log(e.type); // 'done'
-      console.log(e.namespace); // 'uploader'
-      console.log(data); // Response data
+      // console.log(e.type); // 'done'
+      // console.log(e.namespace); // 'uploader'
+      // console.log(data); // Response data
       // $logs.append(p('* File ' + (e.index + 1) + ' result done: ' + data.result));
-    }
+    },
 
 
     // upload: function (e) {
@@ -37,9 +37,10 @@ function bindUploader()
     //   $logs.append(p('* File ' + (e.index + 1) + ' completed'));
     // },
 
-    // uploaded: function (e) {
-    //   $logs.append(p('All files uploaded'));
-    // }
+    uploaded: function (e) {
+      console.log('All files uploaded');
+      Navigate({url: window.location.href});
+    }
   });
 }
 
