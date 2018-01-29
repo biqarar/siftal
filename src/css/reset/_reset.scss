@@ -16,6 +16,7 @@ main, article, aside, figure, figcaption, footer, header, nav, section, details,
 html {
   box-sizing: border-box;
   overflow-y: scroll;
+  overflow-x: hidden;
   -ms-text-size-adjust:100%;
   -webkit-text-size-adjust:100%;
   text-rendering:optimizeLegibility;
