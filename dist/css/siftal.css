@@ -8441,6 +8441,12 @@ body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-anima
   .tippy-popper {
     max-width: 96%;
     max-width: calc(100% - 20px); } }
+.dropzone {
+  padding: 5em 1em;
+  border: 1px dashed #eee;
+  background-color: #fcfcfc;
+  text-align: center; }
+
 body.enter {
   min-height: 100%; }
 

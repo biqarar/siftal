@@ -24,6 +24,7 @@ route('*', function ()
   fillAuto();
   runTippy();
   initTagDetector();
+  bindUploader();
 
   if($('body').hasClass('enter'))
   {

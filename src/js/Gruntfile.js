@@ -34,6 +34,8 @@ var myModuleFiles =
 	'src/libs/tagDetector/tagDetector.js',
 	'src/libs/tippy/tippy.min.js',
 	'src/libs/tippy/tippyRunner.js',
+	'src/libs/uploader/uploader.min.js',
+	'src/libs/uploader/uploaderRunner.js',
 
 
 	// tools
