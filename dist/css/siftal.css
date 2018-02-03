@@ -338,6 +338,7 @@ pre {
   word-wrap: break-word;
   /* IE */
   display: block;
+  direction: ltr;
   font-family: monospace, monospace, sans-serif;
   font-size: 1em; }
 
