@@ -27,13 +27,13 @@ function fillAuto()
 		}
 	});
 	// on foucs to autoList input
-	$(document).on('focus', '.autoList', function(_e)
-	{
-		if($(this).val().length === 0 && $(this).data('Awesomplete'))
-		{
-			$(this).data('Awesomplete').open();
-		}
-	});
+	// $(document).on('focus', '.autoList', function(_e)
+	// {
+	// 	if($(this).val().length === 0 && $(this).data('Awesomplete'))
+	// 	{
+	// 		$(this).data('Awesomplete').open();
+	// 	}
+	// });
 
 	// on change input of each list call fill datalist func
 	$(document).on('input', '.autoList[data-find]', function(e)
