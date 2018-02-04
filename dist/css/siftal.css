@@ -2125,7 +2125,9 @@ progress.xl, meter.xl {
   display: block;
   border-radius: 0.25rem;
   background-color: #fff;
-  color: #555; }
+  color: #555;
+  position: relative;
+  transition: 0.3s; }
 
 .cbox .example {
   padding: 1em; }
