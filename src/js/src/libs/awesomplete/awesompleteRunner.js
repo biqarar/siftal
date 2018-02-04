@@ -50,6 +50,12 @@ function fillAuto()
 			{
 				fillDataList($this);
 			}
+			else
+			{
+				var myAutoList  = $this.data('Awesomplete');
+				// updat datalist
+				myAutoList.list = null;
+			}
 			// disable child on change
 			var myChild = $('.autoList[data-parent="#' + $this.attr('id') + '"]')
 			myChild.attr('disabled', '');
@@ -92,7 +98,7 @@ function bindAwesomplete()
 	}
 	var tmpObj = new Awesomplete(this,
 	{
-		minChars: 0,
+		minChars: 1,
 		maxItems: maxItems,
 		autoFirst: true,
 		sort: false,
