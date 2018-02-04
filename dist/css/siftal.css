@@ -186,7 +186,7 @@ main, article, aside, figure, figcaption, footer, header, nav, section, details,
 /* force a vertical scrollbar to prevent a jumpy page */
 html {
   box-sizing: border-box;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
