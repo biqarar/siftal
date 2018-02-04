@@ -323,7 +323,7 @@ sub {
 
 /* standardize any monospaced elements */
 code, kbd, samp {
-  font-family: monospace, monospace, sans-serif;
+  font-family: monospace, sans-serif;
   font-size: 1em;
   display: inline-block;
   direction: ltr; }
@@ -339,8 +339,17 @@ pre {
   /* IE */
   display: block;
   direction: ltr;
-  font-family: monospace, monospace, sans-serif;
+  font-family: monospace, sans-serif;
   font-size: 1em; }
+
+kbd {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 3px 6px;
+  transition: 0.3s;
+  border-radius: 0.25rem; }
+
+kbd:hover {
+  background-color: rgba(0, 0, 0, 0.2); }
 
 audio,
 video {

@@ -125,7 +125,7 @@ sup {top: -0.5em;}
 sub {bottom: -0.25em;}
 
 /* standardize any monospaced elements */
-code, kbd, samp {font-family: monospace, monospace, sans-serif;font-size: 1em;display:inline-block;direction:ltr;}
+code, kbd, samp {font-family: monospace, sans-serif;font-size: 1em;display:inline-block;direction:ltr;}
 pre {
   white-space: pre; /* CSS2 */
   white-space: pre-wrap; /* CSS 2.1 */
@@ -133,10 +133,11 @@ pre {
   word-wrap: break-word; /* IE */
   display:block;
   direction: ltr;
-  font-family: monospace, monospace, sans-serif;
+  font-family: monospace, sans-serif;
   font-size: 1em;
 }
-
+kbd{background-color:rgba(0,0,0,0.1);padding:3px 6px;transition:0.3s;border-radius:0.25rem;}
+kbd:hover{background-color:rgba(0,0,0,0.2);}
 
 
 audio,
