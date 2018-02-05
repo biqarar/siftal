@@ -63,9 +63,13 @@
           var fd = new FormData();
         }
 
-        $this.find('button').each(function()
+        $this.find('button[name][data-clicked]').each(function()
         {
-          fd.append(this.getAttribute('name'), this.value);
+          if(this.getAttribute('name'))
+          {
+            fd.append(this.getAttribute('name'), this.value);
+          }
+          $(this).removeAttr('data-clicked');
         });
 
         // $this.find('[contenteditable]').each(function()

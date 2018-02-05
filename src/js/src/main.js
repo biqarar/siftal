@@ -57,6 +57,12 @@ $(document).ready(function()
     $(this).ajaxify({link: true});
   });
 
+  $(document).on('click', 'button[name]', function(e)
+  {
+      // $("input[type=submit]", $(this).parents("form")).removeAttr("clicked");
+      $(this).attr("data-clicked", '');
+  });
+
 
   // $(document).on('change', '#langlist', function() {
   //   var regex = /(?:\?|&)?lang=\w*/g;
