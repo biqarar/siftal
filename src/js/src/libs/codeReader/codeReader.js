@@ -83,7 +83,7 @@
       // show message if more than one default exist
       if($('.barCode[data-default]').length > 1)
       {
-        console.log('more than one default detected!')
+        logy('more than one default detected!')
       }
 
       // if we have default and key pressed as fast as posible, prevent next keys
@@ -175,7 +175,7 @@
                 $pForm = $barcodeTargetEl.parents('form')
                 if($pForm.length)
                 {
-                  console.log('submit parent form');
+                  logy('submit parent form');
                   $pForm.submit();
                 }
                 break;
@@ -212,7 +212,7 @@
 
 
 
-          console.log('barcode: ' + detectedCode);
+          logy('barcode: ' + detectedCode);
           $("body").trigger("barcode:detect", detectedCode);
         }
       }

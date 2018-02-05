@@ -3,6 +3,9 @@ exec = require('child_process').exec;
 
 var myModuleFiles =
 [
+	// nojquery, init
+	'src/libs/logy/logy.js',
+
 	// include jquery
 	'src/libs/jquery/jquery.js',
 	'src/libs/jquery/jquery-fn.js',
@@ -36,7 +39,6 @@ var myModuleFiles =
 	'src/libs/tippy/tippyRunner.js',
 	'src/libs/uploader/uploader.min.js',
 	'src/libs/uploader/uploaderRunner.js',
-	'src/libs/logy/logy.js',
 
 
 	// tools

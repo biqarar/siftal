@@ -185,7 +185,7 @@
         callFunc('loading_form', false);
       });
 
-      // console.log(ajaxOptions.abort);
+      // logy(ajaxOptions.abort);
       if(ajaxOptions.abort)
       {
         requests.push(myXhr);
@@ -230,8 +230,8 @@
         }
         // create notif from result
         notif(type, msg.title, data.title, $form.attr('data-delay'));
-        // console.log(data);
-        // console.log(msg);
+        // logy(data);
+        // logy(msg);
 
         if(msg.element)
         {

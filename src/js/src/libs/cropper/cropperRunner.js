@@ -79,7 +79,7 @@ function runCropper(_args)
 						// replace cropper
 						cropperObj.replace(imageUrl);
 						// this.value = imageUrl;
-						// console.log(imageUrl);
+						// logy(imageUrl);
 
 						// another way is change src, destroy and create again
 						// myImgTarget.src = imageUrl;
@@ -93,7 +93,7 @@ function runCropper(_args)
 					{
 						$(this).parent('.input').removeClass('ok');
 						$(this).parent('.input').addClass('error');
-						// console.log('Please choose an image file!');
+						// logy('Please choose an image file!');
 					}
 				}
 			})

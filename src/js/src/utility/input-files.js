@@ -47,7 +47,7 @@ function runInputFileFunc()
 				canvasImg = cropObj.getCroppedCanvas();
 				if(!canvasImg)
 				{
-					console.log('has error! not found!');
+					logy('has error! not found!');
 					return false;
 				}
 
@@ -56,25 +56,25 @@ function runInputFileFunc()
 					// create url for new blob
 					myUrl = URL.createObjectURL(_blob);
 					// $croppedInputEl.val(myUrl);
-					console.log(myUrl);
+					logy(myUrl);
 					checkInputPreview(true, myUrl, fileSize, $this, $fileBox);
-					console.log('replaced image');
+					logy('replaced image');
 				});
 			});
 
 			// // clear all history!
 			// $cropperBox.find('.modal').on('close', function(_e, _b, _c)
 			// {
-			// 	console.log('cancel operation..');
-			// 	console.log(_e);
-			// 	console.log(_b);
-			// 	console.log(_c);
+			// 	logy('cancel operation..');
+			// 	logy(_e);
+			// 	logy(_b);
+			// 	logy(_c);
 			// });
 
 			$cropperBox.find('[data-cancel]').off('click');
 			$cropperBox.find('[data-cancel]').on('click', function()
 			{
-				console.log('cancel...');
+				logy('cancel...');
 				checkInputPreview(true, null, fileSize, $this, $fileBox);
 			});
 
@@ -220,7 +220,7 @@ function checkInputPreview(_direct, _file, _size, _input, _inputBox)
 			}
 			else
 			{
-				console.log('file reader is undefined!');
+				logy('file reader is undefined!');
 				var blobURL = window.URL.createObjectURL(_file);
 				myImgPrev.attr('src', blobURL);
 				_inputBox.addClass('warning');
@@ -229,7 +229,7 @@ function checkInputPreview(_direct, _file, _size, _input, _inputBox)
 	}
 	else
 	{
-		console.log('we cant preview this type of file');
+		logy('we cant preview this type of file');
 		myImgPrev.attr('src', null);
 		_inputBox.addClass('warning');
 	}

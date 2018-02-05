@@ -101,7 +101,7 @@ function notif(_type, _msg, _title, _timeout, _opt)
   }
   else
   {
-    console.log('where is notif!?');
+    logy('where is notif!?');
     return false;
   }
   return true;

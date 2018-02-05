@@ -165,28 +165,28 @@
     if(!pageContentChanged)
     {
       // if page content is not changed, do nothing...
-      // console.log(10);
+      // logy(10);
     }
     // if we have input with autofocus, set focus to first of it
     else if($('input[autofocus]').length)
     {
-      // console.log(20);
+      // logy(20);
       if(focusBeforeChange.is($('input[autofocus]')[0]))
       {
         // if this and old input is equal skip
         // check later
-        // console.log(21);
+        // logy(21);
       }
       else
       {
         $('input[autofocus]')[0].focus();
-        // console.log(24);
+        // logy(24);
       }
     }
     else
     {
       // we dont have autofocus input, skip it
-      // console.log(30);
+      // logy(30);
     }
   }
 
@@ -308,7 +308,7 @@
 
   function Navigate(obj)
   {
-    // console.log(obj);
+    // logy(obj);
     var deferred = new jQuery.Deferred();
     var props    = $.extend(true, {}, defaults, obj);
 

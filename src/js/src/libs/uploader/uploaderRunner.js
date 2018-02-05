@@ -10,9 +10,9 @@ function bindUploader()
 
     done: function (e, data)
     {
-      // console.log(e.type); // 'done'
-      // console.log(e.namespace); // 'uploader'
-      // console.log(data); // Response data
+      // logy(e.type); // 'done'
+      // logy(e.namespace); // 'uploader'
+      // logy(data); // Response data
       // $logs.append(p('* File ' + (e.index + 1) + ' result done: ' + data.result));
     },
 
@@ -38,7 +38,7 @@ function bindUploader()
     // },
 
     uploaded: function (e) {
-      console.log('All files uploaded');
+      logy('All files uploaded');
       Navigate({url: window.location.href});
     }
   });

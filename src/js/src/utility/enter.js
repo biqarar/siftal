@@ -1,7 +1,7 @@
 
 function handleEnterEvents()
 {
-	console.log('welcome to enter;)');
+	logy('welcome to enter;)');
 	// on successfull load check mobile
 	// run for each input
 	$('input').on('input', function()
@@ -37,7 +37,7 @@ function runDataRequire(_firstTime)
 		}
 
 
-		// console.log(checkResult);
+		// logy(checkResult);
 		// if its true and okay show it
 		if(checkResult)
 		{
@@ -125,7 +125,7 @@ function startTimer(duration, display)
 				}).fadeIn();
 			}
 
-			console.log('finish');
+			logy('finish');
 			clearInterval(myInterval);
 			// timer = duration;
 		}
@@ -145,7 +145,7 @@ function validateUsercode(_user)
 	// define variables
 	var numLen = _user.length;
 	var result = null;
-	// console.log(numLen);
+	// logy(numLen);
 	// if len is true then check another filters
 	if(numLen >= 5 && numLen <= 30)
 	{

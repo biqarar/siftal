@@ -452,7 +452,7 @@
 		self             = this;
 
 		popover.show();
-		console.log(placement + ' == ' + align);
+		// console.log(placement + ' == ' + align);
 
 		// Place the popover
 		switch (placement)

@@ -59,7 +59,7 @@ function runDatePicker()
       }
     }
 
-    // console.log(mydateOpt);
+    // logy(mydateOpt);
     $mydatePicker.persianDatepicker(mydateOpt);
   });
 }

@@ -34,7 +34,7 @@ function responsiveSidebar()
   // {
   //   var menuTitle = $(this);
   //   var submenu   = $(this).parent().children('ul');
-  //   console.log(submenu);
+  //   logy(submenu);
   //   if (submenu)
   //   {
   //     submenu.stop().slideToggle(300);
