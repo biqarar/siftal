@@ -62,10 +62,16 @@
         {
           var fd = new FormData();
         }
-        $this.find('[contenteditable]').each(function()
+
+        $this.find('button').each(function()
         {
-          fd.append(this.getAttribute('name'), this.innerHTML);
+          fd.append(this.getAttribute('name'), this.value);
         });
+
+        // $this.find('[contenteditable]').each(function()
+        // {
+        //   fd.append(this.getAttribute('name'), this.innerHTML);
+        // });
         for(var formName in ajax.data)
         {
           fd.append(formName, ajax.data[formName]);

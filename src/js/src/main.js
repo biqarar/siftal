@@ -19,6 +19,15 @@ $(document).ready(function()
     {
       $('input').blur();
     }
+    else if(e.keyCode === 13)
+    {
+      // if we have enter on form elements, disallow to submit
+      if($(":focus").parents('form').attr('disallowEnter') !== undefined)
+      {
+        console.log('You are not allow to submit form via keyboard enter');
+        e.preventDefault();
+      }
+    }
   });
 
   // Ajaxify links and forms
