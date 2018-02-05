@@ -10,8 +10,38 @@ function runDatePicker()
   {
     var $mydatePicker      = $(this);
     var mydateOpt          = {};
+
+    // set max length
+    $mydatePicker.attr('maxlength', 10);
+
+    // disable switch design of calendar
+    mydateOpt.toolbox =
+    {
+      "calendarSwitch":
+      {
+        "enabled": false,
+      },
+    },
+
+    mydateOpt.calendarType = $mydatePicker.attr('data-type');
+    if(!mydateOpt.calendarType)
+    {
+      if($('html').attr('lang') === 'fa')
+      {
+        mydateOpt.calendarType = 'persian';
+      }
+      else
+      {
+        mydateOpt.calendarType = 'gregorian';
+      }
+    }
+
     // default format for current selector
     mydateOpt.format       = $mydatePicker.attr('data-format');
+    if(!mydateOpt.format)
+    {
+      mydateOpt.format = 'YYYY/MM/DD';
+    }
     // connect to another field
     if($mydatePicker.attr('data-alt'))
     {
@@ -33,31 +63,49 @@ function runDatePicker()
     // auto close after chose date
     mydateOpt.autoClose    = $mydatePicker.attr('data-open') !== undefined? false: true;
     // use persian digit
-    mydateOpt.persianDigit = $mydatePicker.attr('data-en') !== undefined? false: true;
-    mydateOpt.initialValue = $mydatePicker.attr('data-initialValue') !== undefined? false: true;
+    if($mydatePicker.attr('data-en') !== undefined)
+    {
+      mydateOpt.calendar =
+      {
+        "persian":
+        {
+          "locale": "en"
+        }
+      };
+    }
+
+
+    if($mydatePicker.val())
+    {
+      mydateOpt.initialValue = true;
+    }
+    else
+    {
+      mydateOpt.initialValue = false;
+    }
 
     if(mydateOpt.inline)
     {
       mydateOpt.autoClose = false;
     }
 
-    // check min value
-    if($mydatePicker.attr('data-min') !== undefined)
-    {
-      if($mydatePicker.attr('data-min') === 'now')
-      {
-        mydateOpt.minDate = new persianDate().unix();
-      }
-    }
+    // // check min value
+    // if($mydatePicker.attr('data-min') !== undefined)
+    // {
+    //   if($mydatePicker.attr('data-min') === 'now')
+    //   {
+    //     mydateOpt.minDate = new persianDate().unix();
+    //   }
+    // }
 
-    // check max value
-    if($mydatePicker.attr('data-max') !== undefined)
-    {
-      if($mydatePicker.attr('data-max') === 'now')
-      {
-        mydateOpt.maxDate = new persianDate().unix();
-      }
-    }
+    // // check max value
+    // if($mydatePicker.attr('data-max') !== undefined)
+    // {
+    //   if($mydatePicker.attr('data-max') === 'now')
+    //   {
+    //     mydateOpt.maxDate = new persianDate().unix();
+    //   }
+    // }
 
     // logy(mydateOpt);
     $mydatePicker.persianDatepicker(mydateOpt);
