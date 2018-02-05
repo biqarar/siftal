@@ -15,19 +15,30 @@ $(document).ready(function()
     /* Blur inputs with ESC key */
   $(document).keydown(function(e)
   {
-    if(e.keyCode === 27)
-    {
-      $('input').blur();
-    }
-    else if(e.keyCode === 13)
-    {
-      // if we have enter on form elements, disallow to submit
-      if($(":focus").parents('form').attr('disallowEnter') !== undefined)
+      switch (e.keyCode)
       {
-        console.log('You are not allow to submit form via keyboard enter');
-        e.preventDefault();
+        case 13:
+          // if we have enter on form elements, disallow to submit
+          if($(":focus").parents('form').attr('disallowEnter') !== undefined)
+          {
+            console.log('You are not allow to submit form via keyboard enter');
+            e.preventDefault();
+          }
+          break;
+
+
+        case 27:
+          $('input').blur();
+          break;
+
+
+        case 112:
+          if(e.ctrlKey)
+          {
+            toggleLogy();
+          }
+          break;
       }
-    }
   });
 
   // Ajaxify links and forms
