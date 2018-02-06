@@ -1,4 +1,4 @@
-body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+span, object, iframe, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, time, mark, audio, video{
   margin: 0;
   padding: 0;
   border: 0;
@@ -8,7 +8,16 @@ body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre
   background: transparent;
 }
 
-main, article, aside, figure, figcaption, footer, header, nav, section, details, menu, summary {display: block;}
+main, article, aside, figure, figcaption, footer, header, nav, section, details, menu, summary {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
 
 /* Handle box-sizing while better addressing child elements:
    http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
@@ -31,6 +40,18 @@ html {
   -webkit-font-smoothing:antialiased;
   font-size:62.5%;
   line-height: 1.15;
+
+  height:100%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 body.rtl{direction:rtl;font-family:$fontNameFa;}
@@ -133,7 +154,7 @@ sup {top: -0.5em;}
 sub {bottom: -0.25em;}
 
 /* standardize any monospaced elements */
-code, kbd, samp {font-family: monospace, sans-serif;font-size: 1em;display:inline-block;direction:ltr;}
+code, samp {font-family: monospace, sans-serif;font-size: 1em;display:inline-block;direction:ltr;}
 pre {
   white-space: pre; /* CSS2 */
   white-space: pre-wrap; /* CSS 2.1 */
@@ -144,7 +165,21 @@ pre {
   font-family: monospace, sans-serif;
   font-size: 1em;
 }
-kbd{background-color:rgba(0,0,0,0.1);padding:3px 6px;transition:0.3s;border-radius:0.25rem;}
+kbd{
+  margin: 0;
+  border: 0;
+  font-weight: normal;
+  vertical-align: baseline;
+
+  font-family: monospace, sans-serif;
+  font-size: 1em;
+  display:inline-block;
+  direction:ltr;
+  background-color:rgba(0,0,0,0.1);
+  padding:3px 6px;
+  transition:0.3s;
+  border-radius:0.25rem;
+}
 kbd:hover{background-color:rgba(0,0,0,0.2);}
 
 

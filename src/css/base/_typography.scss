@@ -1,4 +1,18 @@
-h1,h2,h3,h4,h5,h6{font-weight:500;line-height:1.3;margin-bottom:0.3em;color:inherit}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+
+  font-weight:500;
+  line-height:1.3;
+  margin-bottom:0.3em;
+  color:inherit;
+
+}
 h1{font-size:2.2em;}
 h2{font-size:2em;}
 h3{font-size:1.8em;}
@@ -21,9 +35,9 @@ a{
 	background:transparent;
 }
 a:hover {
-    color: #3077c0;
-    text-decoration: none;
-    outline: 0;
+  color: #3077c0;
+  text-decoration: none;
+  outline: 0;
 }
 a:focus{
 	color: #2070c0;
@@ -35,18 +49,18 @@ a:active{
 
 
 ::-webkit-selection {
-    background-color: #cce0ff;
-    color: rgba(0,0,0,.87)
+  background-color: #cce0ff;
+  color: rgba(0,0,0,.87)
 }
 
 ::-moz-selection {
-    background-color: #cce0ff;
-    color: rgba(0,0,0,.87)
+  background-color: #cce0ff;
+  color: rgba(0,0,0,.87)
 }
 
 ::selection {
-    background-color: #cce0ff;
-    color: rgba(0,0,0,.87)
+  background-color: #cce0ff;
+  color: rgba(0,0,0,.87)
 }
 
 
