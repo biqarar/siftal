@@ -39,6 +39,17 @@
 
 }
 
+// manaual icons
+.sf-cash:before {
+  content: "\e104";
+}
+.sf-pos:before {
+  content: "\e078";
+}
+.sf-cheque:before {
+  content: "\e0ac";
+}
+
 
 .sf-angle-down:before {
   content: "\61";
@@ -1546,3 +1557,6 @@
 .sf-arrow-horizontal:before {
   content: "\e197";
 }
+
+
+

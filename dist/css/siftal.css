@@ -3653,6 +3653,15 @@ img.mini {
   vertical-align: top;
   vertical-align: text-top; }
 
+.sf-cash:before {
+  content: "\e104"; }
+
+.sf-pos:before {
+  content: "\e078"; }
+
+.sf-cheque:before {
+  content: "\e0ac"; }
+
 .sf-angle-down:before {
   content: "\61"; }
 
@@ -7704,7 +7713,8 @@ li.sortable-placeholder {
   background: url("../images/spay/spay256.png") no-repeat;
   display: inline-block;
   width: 256px;
-  height: 256px; }
+  height: 256px;
+  background-position: 256px 256px; }
 
 .spay-256-saderat {
   background-position: 0 0; }
@@ -7809,7 +7819,8 @@ li.sortable-placeholder {
   background: url("../images/spay/spay128.png") no-repeat;
   display: inline-block;
   width: 128px;
-  height: 128px; }
+  height: 128px;
+  background-position: 128px 128px; }
 
 .spay-128-saderat {
   background-position: 0 0; }
@@ -7914,7 +7925,8 @@ li.sortable-placeholder {
   background: url("../images/spay/spay64.png") no-repeat;
   display: inline-block;
   width: 64px;
-  height: 64px; }
+  height: 64px;
+  background-position: 64px 64px; }
 
 .spay-64-saderat {
   background-position: 0 0; }
@@ -9793,7 +9805,7 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
   cursor: pointer;
   border: 2px solid #efefef;
   transition: 0.3s;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
   width: 68px;
   height: 68px;
   border-radius: 0.25rem; }
