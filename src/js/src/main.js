@@ -4,13 +4,13 @@
 
 $(document).ready(function()
 {
-  var regex = /(?:\?|&)?lang=\w*/g;
-  if(regex.test(location.search)) {
-    Navigate({
-      url: location.pathname + location.search.replace(regex, '') + location.hash,
-      replace: true
-    });
-  }
+  // var regex = /(?:\?|&)?lang=\w*/g;
+  // if(regex.test(location.search)) {
+  //   Navigate({
+  //     url: location.pathname + location.search.replace(regex, '') + location.hash,
+  //     replace: true
+  //   });
+  // }
 
     /* Blur inputs with ESC key */
   $(document).keydown(function(e)
