@@ -12894,7 +12894,6 @@ body.siftal.loading-page #sidebar .avatar:before {
 
 /* footer */
 .siftal footer {
-  height: 25px;
   flex-shrink: 0;
   background-color: #eaeaea;
   box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2);

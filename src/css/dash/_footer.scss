@@ -1,6 +1,6 @@
 
 /* footer */
-.siftal footer{height:25px;flex-shrink:0;background-color:#eaeaea;box-shadow: 0 -1px 5px rgba(0,0,0,0.2);z-index:1;}
+.siftal footer{flex-shrink:0;background-color:#eaeaea;box-shadow: 0 -1px 5px rgba(0,0,0,0.2);z-index:1;}
 .siftal footer #copyright{padding:0 1em;}
 .siftal.ltr footer #copyright{margin-left:auto;}
 .siftal.rtl footer #copyright{margin-right:auto;}
