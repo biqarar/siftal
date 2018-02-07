@@ -379,7 +379,7 @@ kbd {
   display: inline-block;
   direction: ltr;
   background-color: rgba(0, 0, 0, 0.1);
-  padding: 3px 6px;
+  padding: 2px 6px;
   transition: 0.3s;
   border-radius: 0.25rem; }
 
@@ -2186,6 +2186,8 @@ progress.xl, meter.xl {
   transition: 0.3s;
   overflow: hidden;
   min-height: 90px;
+  border: 1px solid transparent;
+  position: relative;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -2247,6 +2249,33 @@ progress.xl, meter.xl {
 
 .dcard .progress {
   margin: 0; }
+
+.dcard.active {
+  border-color: #0E6EB8; }
+
+.dcard.active:before {
+  position: absolute;
+  display: block;
+  border-top: 28px solid #0E6EB8;
+  border-left: 28px solid transparent;
+  right: 0;
+  content: "";
+  top: 0;
+  z-index: 1; }
+
+.dcard.active:after {
+  position: absolute;
+  display: block;
+  content: "";
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  height: 5px;
+  width: 10px;
+  right: 2px;
+  top: 4px;
+  z-index: 2;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
 
 .vcard {
   position: relative;
