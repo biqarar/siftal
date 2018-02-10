@@ -12891,7 +12891,7 @@ body.siftal.loading-page #sidebar .avatar:before {
 
 .siftal #sidebar ul > li > a {
   display: block;
-  padding: 1.2em 2em;
+  padding: 1.2em 1.5em;
   color: #d5d5d5;
   transition: 0.3s;
   cursor: pointer;
@@ -12915,7 +12915,13 @@ body.siftal.loading-page #sidebar .avatar:before {
   font-size: 0.9em; }
 
 .siftal #sidebar ul > li > ul > li > a {
-  padding: 0.8em 3em; }
+  padding: 0.7em 2.5em; }
+
+.ltr.siftal #sidebar ul > li > ul > li > a {
+  padding-right: 0; }
+
+.rtl.siftal #sidebar ul > li > ul > li > a {
+  padding-left: 0; }
 
 .siftal #sidebar ul > li > a.weAreHere {
   background-color: rgba(0, 0, 0, 0.8);
