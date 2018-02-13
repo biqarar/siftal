@@ -6397,6 +6397,13 @@ li.sortable-placeholder {
     -o-transform-origin: 1.43em -.43em;
     transform-origin: 1.43em -.43em; }
 
+  .rtl .awesomplete > ul {
+    -webkit-transform-origin: top right;
+    -moz-transform-origin: top right;
+    -ms-transform-origin: top right;
+    -o-transform-origin: top right;
+    transform-origin: top right; }
+
   .awesomplete > ul[hidden], .awesomplete > ul:empty {
     opacity: 0;
     -webkit-transform: scale(0);
@@ -6426,7 +6433,12 @@ li.sortable-placeholder {
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
-  transform: rotate(45deg); }
+  transform: rotate(45deg);
+  margin: 0 auto; }
+
+.rtl .awesomplete > ul:before {
+  left: initial;
+  right: 1em; }
 
 .awesomplete > ul > li {
   position: relative;
