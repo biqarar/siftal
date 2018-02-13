@@ -6502,6 +6502,12 @@ li.sortable-placeholder {
 .small .awesomplete > ul {
   font-size: 0.8em; }
 
+[data-relative-f] {
+  position: relative; }
+
+[data-relative-f] > * {
+  position: initial !important; }
+
 /*
 * iziToast | v1.1.5
 * http://izitoast.marcelodolce.com
