@@ -6,11 +6,14 @@
  */
 function weAreHereChecker()
 {
-  var pathLoc       = document.location.pathname;
-  var fullLoc       = document.location.protocol +"//"+ document.location.hostname + pathLoc;
+  var pathLoc     = document.location.pathname;
+  var fullLoc     = document.location.href;
+  var ListHere    = $('body [href="' + fullLoc + '"]');
 
-  var ListHere = $('body [href="' + pathLoc + '"], body [href="' + fullLoc + '"]');
-  var ListHere;
+  var fullLocDir  = document.location.protocol +"//"+ document.location.hostname + pathLoc;
+  var ListHereDir = $('body [href="' + pathLoc + '"], body [href="' + fullLocDir + '"]');
+
+  // var ListHere;
 
   // // remove last slash
   // var to = pathLoc.lastIndexOf('/');
@@ -23,9 +26,13 @@ function weAreHereChecker()
   // }
 
 
+
   // fix class of here
   $('.weAreHere').removeClass('weAreHere');
   ListHere.addClass('weAreHere');
+
+  $('.weAreHereDir').removeClass('weAreHereDir');
+  ListHereDir.addClass('weAreHereDir');
 
   // fix class of parents
 
