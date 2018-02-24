@@ -1573,7 +1573,7 @@ var Input = function () {
             }
 
             /////////////////   Manipulate by alt changes
-            // TODO
+            // TO DO
             // self.model.options.altField.bind("change", function () {
             //     //if (!self._flagSelfManipulate) {
             //         let newDate = new Date($(this).val());
@@ -1617,7 +1617,7 @@ var Input = function () {
         /**
          * @desc get <input/> element position
          * @return {{top: Number, left: Number}}
-         * @todo remove jquery
+         * @when? remove jquery
          */
 
     }, {
@@ -1629,7 +1629,7 @@ var Input = function () {
         /**
          * @desc get <input/> element size
          * @return {{width: Number, height: Number}}
-         * @todo remove jquery
+         * @when? remove jquery
          */
 
     }, {
@@ -1644,7 +1644,7 @@ var Input = function () {
         /**
          * @desc update <input/> element value
          * @param {Number} unix
-         * @todo remove jquery
+         * @when? remove jquery
          * @private
          */
 
@@ -1658,7 +1658,7 @@ var Input = function () {
         /**
          * @desc update <input/> element value
          * @param {Number} unix
-         * @todo remove jquery
+         * @when? remove jquery
          * @private
          */
 
@@ -1782,7 +1782,7 @@ var Navigator = function () {
     /**
      * @desc attach events that needed attach after every render
      * @public
-     * @todo attach as a live way
+     * @when? attach as a live way
      */
 
 
@@ -1897,7 +1897,7 @@ var Navigator = function () {
 
         /**
          * @desc attach dom events
-         * @todo remove jquery
+         * @when? remove jquery
          * @private
          */
 
@@ -2061,7 +2061,7 @@ var Options = function () {
     /**
      * @param {object} options config passed when initialize
      * @return {object}
-     * @todo remove jquery
+     * @when? remove jquery
      */
     function Options(options, model) {
         _classCallCheck(this, Options);
@@ -2272,7 +2272,7 @@ var State = function () {
          * @desc view mode string day, month, year
          * @type {String}
          * @default day
-         * @todo add time to view modes
+         * @when? add time to view modes
          */
         this.viewMode = this.viewModeList.indexOf(model.options.viewMode) > 0 ? model.options.viewMode : this.viewModeList[0];
 
@@ -2676,7 +2676,7 @@ var Toolbox = function () {
                 that.model.view.reRender();
                 /**
                  * @deprecated
-                 * @todo remove this
+                 * @when? remove this
                  */
                 that.model.options.toolbox.onToday(that.model);
                 that.model.options.toolbox.todayButton.onToday(that.model);
@@ -3165,7 +3165,7 @@ var View = function () {
                                 dataDate: [calcedDate.year(), calcedDate.month(), calcedDate.date()].join(','),
                                 dataUnix: calcedDate.valueOf(),
                                 otherMonth: otherMonth,
-                                // TODO: make configurable
+                                // TO DO: make configurable
                                 enabled: this.checkDayAccess(calcedDate.valueOf())
                             });
                         }

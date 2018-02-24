@@ -1805,12 +1805,12 @@ var Algorithms = function () {
          interpreted.  Making these variables pseudo-globals permits us
          to avoid overhead constructing and disposing of them in each
          call on the function in which whey are used.  */
-        // TODO this block didnt used in main agorithm
+        // TO DO this block didnt used in main agorithm
         this.J0000 = 1721424.5; // Julian date of Gregorian epoch: 0000-01-01
         this.J1970 = 2440587.5; // Julian date at Unix epoch: 1970-01-01
         this.JMJD = 2400000.5; // Epoch of Modified Julian Date system
         this.NormLeap = [false /*"Normal year"*/, true /*"Leap year"*/];
-        // TODO END
+        // TO DO END
         this.GREGORIAN_EPOCH = 1721425.5;
         this.PERSIAN_EPOCH = 1948320.5;
     }
