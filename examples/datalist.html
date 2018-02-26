@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>Siftal</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Siftal, a simple CSS framework with usefull tools for Ermile projects">
+  <link rel="stylesheet" href="http://siftal.ir/dist/css/siftal.css">
+  <style type="text/css">
+    body{background-color:#eee;}
+  </style>
+</head>
+<body class="ltr">
+  <div class="cn">
+
+
+    <div class="tbox">
+      <h2>Datalist</h2>
+      <p>Datalist element of HTML5 forms is pretty cool!</p>
+    </div>
+
+
+    <div class="cbox">
+      <h3>Simple Examples</h3>
+
+      <div class="example">
+       <h4>Normal</h4>
+
+       <input type="text" list="states" placeholder="Find Iran State" class="input">
+
+       <h4>Full width</h4>
+       <div class="input">
+        <input type="text" list="states" placeholder="Find Iran State 2">
+      </div>
+
+      <datalist id="states">
+        <option value="Qom">
+        </option><option value="Tehran">
+          <!-- All the other states -->
+        </option></datalist>
+      </div>
+    </div>
+
+
+    <div class="cbox">
+      <h3>Awesomplete</h3>
+      <div class="example">
+       <h4>No JS</h4>
+       <div class="awesomplete"><input class="awesomplete input" data-list="Ada, Java, JavaScript, Brainfuck, LOLCODE, Node.js, Ruby on Rails" autocomplete="off" aria-owns="awesomplete_list_1" role="combobox"><ul hidden="" role="listbox" id="awesomplete_list_1"></ul><span class="visually-hidden" role="status" aria-live="assertive" aria-atomic="true">Type 2 or more characters for results.</span></div>
+
+       <h4>No JS and min char 1 and autoselect first item</h4>
+       <div class="awesomplete"><input class="awesomplete input" data-list="Ada, Java, JavaScript, Brainfuck, LOLCODE, Node.js, Ruby on Rails" data-minchars="1" data-autofirst="" autocomplete="off" aria-owns="awesomplete_list_2" role="combobox"><ul hidden="" role="listbox" id="awesomplete_list_2"></ul><span class="visually-hidden" role="status" aria-live="assertive" aria-atomic="true">Type 1 or more characters for results.</span></div>
+
+       <h4>With datalist</h4>
+       <div class="input">
+        <div class="awesomplete"><input type="text" placeholder="Find Iran State 2" class="awesomplete" autocomplete="off" aria-owns="awesomplete_list_3" role="combobox"><ul hidden="" role="listbox" id="awesomplete_list_3"></ul><span class="visually-hidden" role="status" aria-live="assertive" aria-atomic="true">Type 2 or more characters for results.</span></div>
+      </div>
+
+      <h4>Full Sample</h4>
+      <div class="input">
+        <div class="awesomplete"><input class="awesomplete" data-list="Ada, Java, JavaScript, Brainfuck, LOLCODE, Node.js, Ruby on Rails" data-minchars="1" data-autofirst="" autocomplete="off" aria-owns="awesomplete_list_4" role="combobox"><ul hidden="" role="listbox" id="awesomplete_list_4"></ul><span class="visually-hidden" role="status" aria-live="assertive" aria-atomic="true">Type 1 or more characters for results.</span></div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+  </div>
+  <script type="text/javascript" src="http://siftal.ir/dist/js/siftal.min.js"></script>
+</body>
+</html>
