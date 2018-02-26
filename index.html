@@ -1,1 +1,302 @@
-complete as soon as posible
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>Siftal</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Siftal, a simple CSS framework with usefull tools for Ermile projects">
+  <link rel="stylesheet" href="http://siftal.ir/dist/css/siftal.css">
+  <style type="text/css">
+    body{background-color:#eee;}
+  </style>
+</head>
+<body class="ltr">
+  <div class="cn">
+
+    <div class="tbox txtC">
+      <span class="sf-male-rounded-1 fs50"></span>
+      <h3>Unbelievable Styles!</h3>
+      <p>Definitions aren't limited to just buttons on a page. Siftal's components allow several distinct types of definitions: elements, collections, views, modules and behaviors which cover the gamut of interface design.</p>
+      <p>For improved cross-browser rendering, we use <a href="example/reset">special reset</a> to correct inconsistencies across browsers and devices while providing slightly more opinionated resets to common HTML elements.</p>
+    </div>
+
+    <div class="cbox">
+      <div class="f">
+        <div class="c12">
+          <div class="pA15">
+            <nav class="breadcrumb">
+              <a href="example/breadcrumb" tabindex="-1"><span class="fa fa-home"></span>  Home</a>
+              <a href="example/breadcrumb" tabindex="-1">Control Panel</a>
+              <a href="example/breadcrumb" tabindex="-1">Sample</a>
+              <a href="example/breadcrumb">Breadcrumb</a>
+            </nav>
+          </div>
+        </div>
+        <div class="c4 s12">
+          <div class="pA10">
+            <h3><a href="example/button">Button</a></h3>
+            <button class="mA3 btn secondary">Primary</button>
+            <button class="mA3 btn sm warn">Warn</button>
+            <button class="mA3 btn xs info">Info</button>
+            <a href="example/button" class="btn primary block mA5">Check buttons collection</a>
+          </div>
+
+          <div class="pA10">
+            <h3><a href="example/msg">Messages</a></h3>
+            <div class="msg warn2">This site uses cookies</div>
+            <div class="msg success2 f">
+              <div class="cauto">
+                <span class="sf-load-c spiny fs10 pRa25 vlmiddle"></span>
+              </div>
+              <div class="c">Hello dear!</div>
+            </div>
+            <div class="msg danger2">
+              <div class="title">Looking for help?</div>
+              <ul class="list">
+                <li>Use our help center</li>
+                <li>Check our FAQ</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="pA10">
+            <h3><a href="example/input">Input</a></h3>
+            <input type="text" placeholder="Type..." class="input">
+            <div class="input pTB10">
+              <label class="addon" for="sAddon1">@</label>
+              <input type="text" placeholder="Type..." id="sAddon1">
+            </div>
+            <div class="input pTB10">
+              <label class="addon" for="sAddon4">$</label>
+              <input type="text" placeholder="Type..." id="sAddon4">
+              <label class="addon" for="sAddon4">.00</label>
+            </div>
+            <div class="input pTB10 lg">
+              <span class="addon btn danger" data-val="-5" data-connect="plus">+</span>
+              <input type="number" placeholder="Time.." class="txtc" name="plus" step="5" min="0" max="1440">
+              <span class="addon btn success" data-val="10" data-connect="plus">-</span>
+            </div>
+          </div>
+
+          <div class="pA10">
+            <h3><a href="example/datalist">Datalist</a></h3>
+            <div class="input">
+              <input type="text" list="states" placeholder="Find Iran State">
+            </div>
+
+            <datalist id="states">
+              <option value="Qom">
+              </option><option value="Tehran">
+              </option></datalist>
+            </div>
+
+            <div class="pA10">
+              <h3><a href="example/progress">Progress</a></h3>
+              <div class="pA15">
+                <progress value="76" max="100"></progress>
+              </div>
+              <div class="pA15">
+                <meter value="34" min="0" max="100"></meter>
+              </div>
+            </div>
+
+            <div class="pA10">
+              <h3><a href="example/badge">Badge</a></h3>
+              <h4 class="fs14">Posts <span class="badge primary">Add New</span></h4>
+              <button class="mA5 btn">Notification <span class="badge">7</span></button>
+              <span class="badge rounded">125</span>
+              <span class="badge rounded success">64</span>
+              <span class="badge rounded warn">7</span>
+            </div>
+
+
+          </div>
+
+          <div class="c4 s12">
+            <div class="pA10">
+              <h3><a href="example/icon" data-direct="">Icons</a></h3>
+              <div class="fs20">
+                <span class="compact pA15 sf-car"></span>
+                <span class="compact pA15 sf-trophy"></span>
+                <span class="compact pA15 sf-retweet"></span>
+                <span class="compact pA15 sf-search"></span>
+                <span class="compact pA15 sf-out"></span>
+                <span class="compact pA15 sf-star"></span>
+                <span class="compact pA15 sf-hourglass-end"></span>
+                <span class="compact pA15 sf-bookmark-o"></span>
+                <span class="compact pA15 sf-balance-scale"></span>
+                <span class="compact pA15 sf-bolt"></span>
+                <span class="compact pA15 sf-heart-2"></span>
+                <span class="compact pA15 sf-globe-1"></span>
+                <span class="compact pA15 sf-pin-1"></span>
+                <span class="compact pA15 sf-headphones-1"></span>
+                <span class="compact pA15 sf-basket"></span>
+                <span class="compact pA15 sf-bug-2"></span>
+              </div>
+            </div>
+
+            <div class="pA10">
+              <h3><a href="example/date">Datepicker</a></h3>
+              <div class="input pB5">
+               <input class="datepicker pwt-datepicker-input-element" maxlength="10">
+             </div>
+             <div class="input pB5">
+               <input class="datepicker pwt-datepicker-input-element" data-format="YY/MM/DD" data-view="year" data-alt="#normalAlt" data-altformat="LLLL" maxlength="10">
+             </div>
+             <div class="input pB5">
+               <input id="normalAlt" disabled="">
+             </div>
+
+           </div>
+
+           <div class="pA10">
+            <h3><a href="example/clock">Clockpicker</a></h3>
+            <div class="input clockpicker w300">
+              <input type="text" class="input" value="09:30" placeholder="Choose clock">
+            </div>
+          </div>
+
+          <div class="pA10">
+            <h3><a href="example/txt">Textarea</a></h3>
+            <textarea class="txt mTB10"></textarea>
+            <textarea class="txt mTB10" rows="6"></textarea>
+          </div>
+
+          <div class="pA10">
+            <h3><a href="example/checkbox">Checkbox</a></h3>
+            <div class="check1">
+              <input type="checkbox" id="sChk1">
+              <label for="sChk1">Check1 Sample1</label>
+            </div>
+
+            <h4><a href="example/checkbox#switch">Switch</a></h4>
+            <div class="switch1">
+              <input type="checkbox" name="switch12" id="switch12">
+              <label for="switch12" data-on="YES" data-off="NO!"></label>
+              <label for="switch12">Are you like Siftal?</label>
+            </div>
+
+          </div>
+
+          <div class="pA10">
+            <h3><a href="example/radio">Radio</a></h3>
+            <div class="radio1">
+              <input type="radio" name="colors" id="sRdc1">
+              <label for="sRdc1">Blue (Default)</label>
+            </div>
+            <div class="radio1 red">
+              <input type="radio" name="colors" id="sRdc2" checked="">
+              <label for="sRdc2">Red</label>
+            </div>
+            <div class="radio1 yellow">
+              <input type="radio" name="colors" id="sRdc3">
+              <label for="sRdc3">Yellow</label>
+            </div>
+            <div class="radio1 green">
+              <input type="radio" name="colors" id="sRdc4">
+              <label for="sRdc4">Green</label>
+            </div>
+            <div class="radio1 black">
+              <input type="radio" name="colors" id="sRdc5">
+              <label for="sRdc5">Black</label>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="c4 s12">
+          <div class="pA10">
+            <h3><a href="example/vcard">Vcard</a></h3>
+            <div class="vcard shadow mA10">
+              <img src="http://code.ermile.local/siftal/images/avatar/1.png">
+              <div class="content">
+                <a class="header">Ermile</a>
+                <div class="meta"><span>Joined in 2018</span></div>
+                <div class="desc">Ermile is our company in Qom!</div>
+              </div>
+              <div class="footer"><i class="sf-users"></i> 123 Friends</div>
+            </div>
+            <div class="vcard shadow mA10">
+              <div class="content f">
+                <div class="c">
+                  <a class="header">Ermile</a>
+                  <div class="meta"><span>Joined in 2018</span></div>
+                </div>
+                <div class="cauto">
+                  <img src="http://code.ermile.local/siftal/images/avatar/1.png" class="mini">
+                </div>
+                <div class="desc c12">Ermile requested permission to transfer <b>Tejarak</b> team to you</div>
+              </div>
+              <div class="footer f">
+                <div class="c6 s pA5"><button class="btn success outline block">Approve</button></div>
+                <div class="c6 s pA5"><button class="btn danger outline block">Decline</button></div>
+              </div>
+            </div>
+            <div class="vcard shadow mA10">
+              <div class="content">
+                <a class="header">Javad Evazzadeh</a>
+                <div class="meta"><span>3 days ago</span> <a href="#">Ermile</a></div>
+                <img src="http://code.ermile.local/siftal/images/tools/paragraph.png" class="mT15 op50">
+              </div>
+              <div class="footer pAn"><button class="btn block primary">Check more!</button></div>
+            </div>
+            <div class="small mA10 txtc">
+              <a href="#" class="vcard shadow">
+               <img src="http://code.ermile.local/siftal/images/avatar/1.png">
+               <div class="content">
+                 <div class="header">Javad Evazzdeh</div>
+                 <div class="meta"><span>CEO and Founder</span></div>
+               </div>
+             </a>
+             <a href="#" class="vcard shadow">
+               <img src="http://code.ermile.local/siftal/images/avatar/2.png">
+               <div class="content">
+                 <button class="btn block danger">Remove</button>
+               </div>
+             </a>
+           </div>
+         </div>
+
+
+       </div>
+       <div class="c12">
+        <div class="pA10">
+          <h3><a href="example/table">Table</a></h3>
+          <table class="tbl zebra">
+            <thead class="primary">
+              <tr><th>#</th><th>First Name</th><th>Last Name</th><th>Username</th></tr>
+            </thead>
+            <tbody>
+              <tr><th>1</th><td>Javad</td><td>Evazzadeh</td><td class="collapsing">@evazzadeh</td></tr>
+              <tr><th>2</th><td>Reza</td><td>Mohiti</td><td>@biqarar</td></tr>
+              <tr><th>3</th><td>Hasan</td><td>Salehi</td><td>@baravak</td></tr>
+            </tbody>
+            <tfoot>
+              <tr><th>-</th><th colspan="3">Footer</th></tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <div class="pA10">
+          <h3><a href="example/pagination">Pagination</a></h3>
+          <nav class="pagination info">
+            <a href="example/pagination" class="prev disabled">Previous</a>
+            <a>...</a>
+            <a href="example/pagination">6</a>
+            <a class="active">7</a>
+            <a href="example/pagination">8</a>
+            <a>...</a>
+            <a href="example/pagination" class="next">Next</a>
+          </nav>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  </div>
+  <script type="text/javascript" src="http://siftal.ir/dist/js/siftal.min.js"></script>
+</body>
+</html>
