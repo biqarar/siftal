@@ -1,6 +1,6 @@
 /*global style*/
 body{background-color:#eee;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:#333;min-height:100%}
-body::after{content:"";background:url(https://ermile.com/static/images/logo.png);background-size:cover;height:20rem;width:20rem;position:absolute;bottom:3rem;right:3rem;opacity:.3}
+body::after{content:"";background:url(https://ermile.com/static/images/logo.png);background-size:cover;height:20rem;width:20rem;position:fixed;bottom:3rem;right:3rem;opacity:.3}
 a{text-decoration:none;color:#044f9e}
 h1{display:none}
 /*table style*/

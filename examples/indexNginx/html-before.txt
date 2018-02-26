@@ -11,5 +11,3 @@
 </head>
 
 <body>
-	<div class="cn">
-		<h2>Ermile Code | <a href="https://ermile.com">Homepage</a></h2>
