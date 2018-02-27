@@ -9,6 +9,7 @@ tests/libs.js.map
 *.sublime-project
 *.sublime-workspace
 desktop.ini
+package-lock.json
 
 *.me.*
 .sass-cache
