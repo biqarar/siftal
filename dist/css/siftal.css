@@ -2345,6 +2345,15 @@ progress.xl, meter.xl {
   display: block;
   line-height: 1.5; }
 
+.vcard .content.title {
+  background-color: #eee;
+  color: #333;
+  padding: 7em 0;
+  text-align: center; }
+
+.vcard .content .header {
+  font-size: 2em; }
+
 .vcard .meta {
   clear: both;
   color: rgba(0, 0, 0, 0.4);

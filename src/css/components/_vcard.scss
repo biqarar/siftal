@@ -48,7 +48,6 @@
 	-ms-flex-positive:1;
 	flex-grow:1;
 }
-
 .vcard .content .header{
 	display: block;
 	color:#222;
@@ -64,6 +63,16 @@
 	margin-top: 0.5em;
 	display: block;
 	line-height: 1.5;
+}
+// content title
+.vcard .content.title{
+	background-color: #eee;
+	color: #333;
+	padding:7em 0;
+	text-align: center;
+}
+.vcard .content .header{
+	font-size: 2em;
 }
 
 // meta
