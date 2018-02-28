@@ -2351,7 +2351,7 @@ progress.xl, meter.xl {
   padding: 7em 0;
   text-align: center; }
 
-.vcard .content .header {
+.vcard .content.title .header {
   font-size: 2em; }
 
 .vcard .meta {
