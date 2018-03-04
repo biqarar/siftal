@@ -12953,6 +12953,15 @@ body.siftal.loading-page #sidebar .avatar:before {
 .rtl.siftal #sidebar ul > li > ul > li > a {
   padding-left: 0; }
 
+.siftal #sidebar ul > li > ul > li > ul > li > a {
+  padding: 0.7em 4em; }
+
+.ltr.siftal #sidebar ul > li > ul > li > ul > li > a {
+  padding-right: 0; }
+
+.rtl.siftal #sidebar ul > li > ul > li > ul > li > a {
+  padding-left: 0; }
+
 .siftal #sidebar ul > li > a.weAreHere {
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff; }

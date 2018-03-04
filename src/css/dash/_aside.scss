@@ -34,9 +34,15 @@ body.siftal.loading-page #sidebar .avatar:before{animation-duration:1s;-webkit-a
 .siftal #sidebar ul > li > a:active{background-color:rgba(0,0,0,0.7)}
 .siftal #sidebar ul > li > ul{background-color: #252525;font-size:0.9em}
 .siftal #sidebar ul > li > ul > li{}
+// 2nd level
 .siftal #sidebar ul > li > ul > li > a{padding:0.7em 2.5em;}
 .ltr.siftal #sidebar ul > li > ul > li > a{padding-right:0;}
 .rtl.siftal #sidebar ul > li > ul > li > a{padding-left:0;}
+// 3rd level
+.siftal #sidebar ul > li > ul > li > ul > li > a{padding:0.7em 4em;}
+.ltr.siftal #sidebar ul > li > ul > li > ul > li > a{padding-right:0;}
+.rtl.siftal #sidebar ul > li > ul > li > ul > li > a{padding-left:0;}
+
 
 .siftal #sidebar ul > li > a.weAreHere{background-color:rgba(0,0,0,0.8);color:#fff}
 
