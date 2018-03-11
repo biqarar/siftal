@@ -388,13 +388,15 @@ kbd:hover {
 
 audio,
 video {
-  display: inline-block; }
+  display: inline-block;
+  max-width: 100%; }
 
 audio:not([controls]) {
   display: none;
   height: 0; }
 
 svg:not(:root) {
+  max-width: 100%;
   overflow: hidden; }
 
 /* Forms

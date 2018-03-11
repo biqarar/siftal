@@ -195,6 +195,7 @@ kbd:hover{background-color:rgba(0,0,0,0.2);}
 audio,
 video {
   display: inline-block;
+  max-width: 100%;
 }
 audio:not([controls]) {
   display: none;
@@ -202,6 +203,7 @@ audio:not([controls]) {
 }
 
 svg:not(:root) {
+  max-width:100%;
   overflow: hidden;
 }
 
