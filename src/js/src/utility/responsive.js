@@ -28,7 +28,21 @@ function responsiveSidebar()
       {
         $("body").attr('data-sidebar', null);
       }, 500);
-  })
+  });
+
+  $('.toggleClean').off('click');
+  $('.toggleClean').on('click', function()
+  {
+    if($('body').attr('data-clean') === undefined)
+    {
+      $("body").attr('data-clean', '');
+    }
+    else
+    {
+      $("body").attr('data-clean', null);
+      $("body").attr('data-sidebar', null);
+    }
+  });
 
   // $('#sidebar ul.sidenav > li > a').click(function()
   // {

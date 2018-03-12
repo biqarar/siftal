@@ -54,5 +54,7 @@
   .xm0{padding:0}
 
   .siftal #sidebar{width:300px;}
+  .siftal[data-clean] #sidebar {left:-300px;}
+  .siftal[data-clean].rtl #sidebar{right:-300px;left:initial;}
 }
 
