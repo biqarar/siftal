@@ -12901,9 +12901,6 @@ body.siftal.rtl[data-sidebar] #sidebar {
 .siftal[data-clean] #sidebar figure {
   margin: 2em 0; }
 
-.siftal[data-clean] #sidebar ul > li > a {
-  padding: 1.2em 2em; }
-
 .siftal[data-clean] #sidebar h2 {
   display: none; }
 
@@ -14597,9 +14594,6 @@ body .w200 {
 
   .siftal #sidebar figure {
     margin: 2em 0; }
-
-  .siftal #sidebar ul > li > a {
-    padding: 1.2em 2em; }
 
   .siftal #sidebar h2 {
     display: none; }
