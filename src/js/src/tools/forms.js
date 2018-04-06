@@ -212,45 +212,42 @@
 
     var hasError = false;
 
-    for(var type in data.messages)
+    for(var recordId in data.msg)
     {
-      var grp = data.messages[type];
+      // get each record data
+      var recordData     = data.msg[recordId];
+      var recordDataMeta = recordData.meta;
+      var recordTitle    = null;
+      // get title if exist
+      if(recordDataMeta && recordDataMeta.title)
+      {
+        recordTitle = recordDataMeta.title;
+      }
 
-      if(type == 'error')
+      // generate new notif
+      notif(recordData.type, recordData.text, recordTitle, $form.attr('data-delay'));
+
+      // set flag of error
+      if(recordData.type == 'error')
       {
           hasError = true;
       }
-
+      // remove error sign of each element if exist
       $form.find('input').removeClass('error');
 
-      for(var j = 0, len = grp.length; j < len; j++)
+      // if want to do something with element, get it from result
+      if(recordDataMeta && recordDataMeta.element)
       {
-        var msg = grp[j];
-        // get title
-        var title;
-        if(data.title)
-        {
-          title = data.title;
-        }
-        // create notif from result
-        notif(type, msg.title, data.title, $form.attr('data-delay'));
-        // logy(data);
-        // logy(msg);
-
-        if(msg.element)
-        {
           try
           {
-            var parsed = JSON.parse(msg.element);
-            msg.element = parsed;
+            recordDataMeta.element = JSON.parse(recordDataMeta.element);
           } catch(e) {}
 
-          (_.isArray(msg.element) ? msg.element : [msg.element]).forEach(function(e)
+          (_.isArray(recordDataMeta.element) ? recordDataMeta.element : [recordDataMeta.element]).forEach(function(_e)
           {
-            var $el = $form.find('input[name="' + e + '"]');
+            var $el = $form.find('input[name="' + _e + '"]');
             $el.addClass('error');
           });
-        }
       }
     }
 
