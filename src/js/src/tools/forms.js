@@ -145,17 +145,17 @@
 
         $.fn.ajaxify.showResults(data, $this, _super);
 
-        if(data.msg && data.msg.redirect)
+        if(data && data.redirect)
         {
-          var a = $('<a href="' + data.msg.redirect + '"></a>');
-          if(a.isAbsoluteURL() || data.msg.direct)
+          var a = $('<a href="' + data.redirect + '"></a>');
+          if(a.isAbsoluteURL() || data.direct)
           {
-            location.replace(data.msg.redirect);
+            location.replace(data.redirect);
           }
           else
           {
             Navigate({
-              url: data.msg.redirect
+              url: data.redirect
             });
           }
           return;
