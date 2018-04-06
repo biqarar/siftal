@@ -7,9 +7,9 @@
 function clearJson(_data, _forceArray)
 {
   var list = null;
-  if(_data && _data.msg && _data.msg.list)
+  if(_data && _data.result && _data.result.list)
   {
-    list = _data.msg.list;
+    list = _data.result.list;
     list = JSON.parse(list);
     if(list)
     {
