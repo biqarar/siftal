@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>Siftal</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Siftal, a simple CSS framework with usefull tools for Ermile projects">
+  <link rel="shortcut icon" href="../dist/images/siftal/siftal.ico">
+  <link rel="icon" href="../dist/images/siftal/siftal.png" type="image/png">
+  <link rel="stylesheet" href="../dist/css/siftal.css">
+
+  <style>
+    body{background-color:#eee;}
+  </style>
+</head>
+<body class="ltr">
+  <div class="cn">
+
+
+<div class="tbox">
+  <h2>Crop Images</h2>
+  <p>A simple and full feature crop for avatar or something else!</p>
+</div>
+
+
+<div class="cbox">
+  <h3>Example</h3>
+  <p>Check more on cropprer documentation!<a target='_blank' href="https://github.com/fengyuanchen/cropperjs">Github</a> | <a target='_blank' href="https://fengyuanchen.github.io/cropperjs/">Example</a></p>
+
+  <div class="example cropper">
+    <p>Only run cropper without anything!</p>
+    <div>
+        <img src="../dist/images/bg/bg-ermile.jpg">
+
+    </div>
+  </div>
+
+  <div class="example cropper" data-aspectRatio='1.5' data-minCropBoxWidth='100' data-minCropBoxHeight='100'>
+    <p>Only run cropper with aspect ratio and min width and height on cropbox</p>
+    <div>
+        <img src="../dist/images/bg/bg-ermile.jpg">
+
+    </div>
+  </div>
+
+  <div class="example cropper" data-aspectRatio='1' data-minCropBoxWidth='100' data-minCropBoxHeight='100' data-preview='.prev1' data-img='img'>
+    <p>Complete example with full function</p>
+    <div class="f">
+      <div class="c9 s12">
+       <div>
+           <img src="../dist/images/bg/bg-ermile.jpg">
+
+       </div>
+
+       <div class="f pTB10">
+        <div class="cauto pA10">
+         <div class="btn sf-arrows" data-func='setDragMode_move'></div>
+         <div class="btn sf-crop" data-func='setDragMode_crop'></div>
+        </div>
+        <div class="cauto pA10">
+         <div class="btn sf-search-plus" data-func='zoom_0.1'></div>
+         <div class="btn sf-search-minus" data-func='zoom_-0.1'></div>
+        </div>
+        <div class="cauto pA10">
+         <div class="btn sf-arrow-left" data-func='move_-10,0'></div>
+         <div class="btn sf-arrow-right" data-func='move_10,0'></div>
+         <div class="btn sf-arrow-up" data-func='move_0,-10'></div>
+         <div class="btn sf-arrow-down" data-func='move_0,10'></div>
+        </div>
+       </div>
+       <div class="f pTB10">
+        <div class="cauto pA10">
+         <div class="btn sf-undo" data-func='rotate_-90'></div>
+         <div class="btn sf-repeat" data-func='rotate_90'></div>
+        </div>
+        <div class="cauto pA10">
+         <div class="btn sf-arrow-vertical" data-func='scaleY_-1' data-toggle></div>
+         <div class="btn sf-arrow-horizontal" data-func='scaleX_-1' data-toggle></div>
+        </div>
+        <div class="cauto pA10">
+         <div class="input"><input type="file" accept=".jpg,.jpeg,.png,.gif,.bmp" name="file"></div>
+        </div>
+       </div>
+
+       <div class="f pTB10">
+        <div class="cauto pA10">
+         <div class="btn sf-check" data-func='crop'></div>
+         <div class="btn sf-times" data-func='clear'></div>
+        </div>
+        <div class="cauto pA10">
+         <div class="btn sf-unlock" data-func='enable'></div>
+         <div class="btn sf-lock" data-func='disable'></div>
+        </div>
+        <div class="cauto pA10">
+         <div class="btn sf-refresh" data-func='reset'></div>
+         <div class="btn sf-power-off" data-func='destroy'></div>
+        </div>
+       </div>
+
+      </div>
+      <div class="c3 s12">
+       <div class="c3 pA5"><div class="prev1 cropperPreview wA200"><img></div></div>
+       <div class="c3 pA5"><div class="prev1 cropperPreview wA200 rounded"><img></div></div>
+       <div class="c3 pA5"><div class="prev1 cropperPreview wA100"><img></div></div>
+       <div class="c3 pA5"><div class="prev1 cropperPreview wA50"><img></div></div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+  <div class="example cropper" data-aspectRatio='1' data-minCropBoxWidth='100' data-minCropBoxHeight='100' data-preview='.prev2' data-img='.modal-body img'>
+    <p>run cropper with aspect ratio and min width and height in modal</p>
+    <div class="f">
+      <div class="cauto">
+       <div class="btn primary" data-modal='cropperModal'>Crop image in modal</div>
+      </div>
+      <div class="cauto os">
+       <div class="prev2 cropperPreview wA100"><img></div>
+      </div>
+    </div>
+
+    <div class='modal' id='cropperModal'>
+     <div class='modal-dialog'>
+      <h3 class='modal-title'>Crop your avatar</h3>
+      <div class='modal-body'>
+       <p>Please choose and crop your image</p>
+           <img src="../dist/images/bg/bg-ermile.jpg">
+
+      </div>
+      <div class="modal-footer">
+       <div class="input"><input type="file" accept=".jpg,.jpeg,.png,.gif,.bmp" name="file"></div>
+      </div>
+     </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="example cropper" data-img='.modal img'>
+    <p>complete example of crop in modal and show preview after that</p>
+    <div class="f">
+      <div class="input preview pTB10">
+        <input type="file" accept="image/gif, image/jpeg, image/png" id="anyfile1" data-crop='cropperModal2'>
+        <label for="anyfile1" title="Simple Title"></label>
+      </div>
+    </div>
+
+    <div class='modal' id='cropperModal2'>
+     <div class='modal-dialog'>
+      <h3 class='modal-title'>Crop your avatar</h3>
+      <div class='modal-body'>
+       <img>
+      </div>
+      <div class="modal-footer f">
+        <div class="c">
+         <div class="btn sf-trash secondary" data-cancel>Cancel</div>
+         <div class="btn sf-check primary" data-ok>Crop</div>
+        </div>
+        <div class="os">
+          <div class="btn sf-undo" data-func='rotate_-90'></div>
+          <div class="btn sf-repeat" data-func='rotate_90'></div>
+        </div>
+      </div>
+     </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="example cropper" data-img='.modal img'>
+    <p>complete example of crop in modal and show preview after that with default image</p>
+    <div class="f">
+      <div class="input preview pTB10">
+        <input type="file" accept="image/gif, image/jpeg, image/png" id="anyfile2" data-crop='cropperModal3'>
+        <label for="anyfile2" title="Simple Title">
+              <img src="../dist/images/bg/bg-ermile.jpg">
+
+        </label>
+      </div>
+    </div>
+
+    <div class='modal' id='cropperModal3'>
+     <div class='modal-dialog'>
+      <h3 class='modal-title'>Crop your avatar</h3>
+      <div class='modal-body'>
+           <img src="../dist/images/bg/bg-ermile.jpg">
+
+      </div>
+      <div class="modal-footer f">
+        <div class="c">
+         <div class="btn sf-trash secondary" data-cancel>Cancel</div>
+         <div class="btn sf-check primary" data-ok>Crop</div>
+        </div>
+        <div class="os">
+          <div class="btn sf-undo" data-func='rotate_-90'></div>
+          <div class="btn sf-repeat" data-func='rotate_90'></div>
+        </div>
+      </div>
+     </div>
+    </div>
+
+  </div>
+
+
+
+
+  </div>
+
+  </div>
+  <script src="../dist/js/siftal.min.js"></script>
+</body>
+</html>
