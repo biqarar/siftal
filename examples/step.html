@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>Siftal</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Siftal, a simple CSS framework with usefull tools for Ermile projects">
+  <link rel="shortcut icon" href="../dist/images/siftal/siftal.ico">
+  <link rel="icon" href="../dist/images/siftal/siftal.png" type="image/png">
+  <link rel="stylesheet" href="../dist/css/siftal.css">
+
+  <style>
+  body{background-color:#eee;}
+</style>
+</head>
+<body class="ltr">
+  <div class="cn">
+
+
+    <div class="tbox">
+      <h2>Step</h2>
+      <p>A step shows the completion status of an activity in a series of activities</p>
+    </div>
+
+
+    <div class="cbox">
+      <h3>Example</h3>
+
+      <div class="example">
+
+        <div class="steps">
+          <div class="step">
+            <i class="sf-info"></i>
+            <div class="content">
+              <div class="title">Shipping</div>
+              <div class="description">Choose your shipping options</div>
+            </div>
+          </div>
+          <div class="active step">
+            <i class="sf-info"></i>
+            <div class="content">
+              <div class="title">Billing</div>
+              <div class="description">Enter billing information</div>
+            </div>
+          </div>
+          <div class="disabled step">
+            <i class="sf-info"></i>
+            <div class="content">
+              <div class="title">Confirm Order</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="example">
+        <div class="ordered steps">
+          <div class="completed step">
+            <div class="content">
+              <div class="title">Shipping</div>
+              <div class="description">Choose your shipping options</div>
+            </div>
+          </div>
+          <div class="completed step">
+            <div class="content">
+              <div class="title">Billing</div>
+              <div class="description">Enter billing information</div>
+            </div>
+          </div>
+          <div class="active step">
+            <div class="content">
+              <div class="title">Confirm Order</div>
+              <div class="description">Verify order details</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="example">
+        <div class="w300">
+          <div class="vertical steps">
+            <div class="completed step">
+              <i class="sf-info"></i>
+              <div class="content">
+                <div class="title">Shipping</div>
+                <div class="description">Choose your shipping options</div>
+              </div>
+            </div>
+            <div class="completed step">
+              <i class="sf-card"></i>
+              <div class="content">
+                <div class="title">Billing</div>
+                <div class="description">Enter billing information</div>
+              </div>
+            </div>
+            <div class="active step">
+              <i class="sf-info"></i>
+              <div class="content">
+                <div class="title">Confirm Order</div>
+                <div class="description">Verify order details</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+  </div>
+  <script src="../dist/js/siftal.min.js"></script>
+</body>
+</html>
