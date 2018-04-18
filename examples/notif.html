@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>Siftal</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Siftal, a simple CSS framework with usefull tools for Ermile projects">
+  <link rel="shortcut icon" href="../dist/images/siftal/siftal.ico">
+  <link rel="icon" href="../dist/images/siftal/siftal.png" type="image/png">
+  <link rel="stylesheet" href="../dist/css/siftal.css">
+
+  <style>
+  body{background-color:#eee;}
+</style>
+</head>
+<body class="ltr">
+  <div class="cn">
+
+
+    <div class="tbox">
+      <h2>Notif</h2>
+      <p>Show simple and powerful notificaion via js and html attr</p>
+    </div>
+
+
+    <div class="cbox">
+      <h3>Example</h3>
+
+      <div class="example">
+        <h4>Complete Example with autorun</h4>
+        <button class="btn primary" data-notif="Hello World!" data-notif-title="Hi" data-notif-type="warning" data-notif-icon="person" data-notif-autorun="">On page route run this</button>
+      </div>
+
+      <div class="example">
+        <h4>Simple</h4>
+        <button class="btn" data-notif="Hi">Simple Notification</button>
+        <button class="btn" data-notif="How are you?" data-notif-title="Ok">With title</button>
+        <button class="btn secondary" data-notif="Sticky Notif" data-notif-timeout="false">Sticky Notif</button>
+      </div>
+
+      <div class="example">
+        <h4>Colored</h4>
+        <button class="btn success" data-notif="How are you?" data-notif-type="success">Success</button>
+        <button class="btn warn" data-notif="How are you?" data-notif-type="warning">Warning</button>
+        <button class="btn danger" data-notif="How are you?" data-notif-type="error">Error</button>
+        <button class="btn info" data-notif="How are you?" data-notif-type="info">Info</button>
+      </div>
+
+      <div class="example">
+        <h4>Notif in special target</h4>
+        <button class="btn" data-notif="How are you?" data-notif-target=".notifBox">Simple</button>
+        <button class="btn" data-notif="How are you?" data-notif-type="error" data-notif-timeout="false" data-notif-target=".notifBox">Sticky</button>
+        <div class="notifBox">
+        </div>
+      </div>
+
+      <div class="example txtc">
+        <h4>Notif in all position</h4>
+        <div class="f pA10">
+          <div class="c4 s12">
+            <button class="btn" data-notif="Hi" data-notif-pos="topLeft">Top Left</button>
+          </div>
+          <div class="c4 s12">
+            <button class="btn" data-notif="Hi" data-notif-pos="topCenter">Top Center</button>
+          </div>
+          <div class="c4 s12">
+            <button class="btn" data-notif="Hi" data-notif-pos="topRight">Top Right</button>
+          </div>
+        </div>
+        <div class="f pA10">
+          <div class="c4 s12">-</div>
+          <div class="c4 s12">
+            <button class="btn" data-notif="Hi" data-notif-pos="center">Center</button>
+          </div>
+          <div class="c4 s12">-</div>
+        </div>
+        <div class="f pA10">
+          <div class="c4 s12">
+            <button class="btn" data-notif="Hi" data-notif-pos="bottomLeft">Bottom Left</button>
+          </div>
+          <div class="c4 s12">
+            <button class="btn" data-notif="Hi" data-notif-pos="bottomCenter">Bottom Center</button>
+          </div>
+          <div class="c4 s12">
+            <button class="btn" data-notif="Hi" data-notif-pos="bottomRight">Bottom Right</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <script src="../dist/js/siftal.min.js"></script>
+</body>
+</html>
