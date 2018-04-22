@@ -12646,7 +12646,7 @@ body.siftal.loading-page #sidebar .avatar:before {
   display: block;
   padding: 1.2em 1.5em;
   color: #d5d5d5;
-  transition: 0.3s;
+  transition: background-color 0.3s;
   cursor: pointer;
   max-width: 300px;
   margin: 0 auto; }
