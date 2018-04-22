@@ -1864,7 +1864,7 @@ progress.xl, meter.xl {
   color: #555;
   padding: 1em 1.5em;
   opacity: 0.8;
-  transition: 0.3s;
+  transition: background-color 0.3s;
   overflow: hidden;
   min-height: 90px;
   border: 1px solid transparent;
