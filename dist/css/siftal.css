@@ -12364,7 +12364,8 @@ body.siftal .full .middle {
   margin: 0;
   padding: 0 1em;
   color: #888;
-  transition: 0.3s;
+  transition-duration: 0.3s;
+  transition-property: color, background-color;
   display: inline-block;
   height: 100%;
   line-height: 50px;
@@ -12391,7 +12392,8 @@ body.siftal .full .middle {
 .siftal header i {
   padding: 0 1.5em;
   cursor: pointer;
-  transition: 0.3s;
+  transition-duration: 0.3s;
+  transition-property: color, background-color;
   display: block;
   height: 100%;
   width: 50px;
@@ -12403,7 +12405,8 @@ body.siftal .full .middle {
   vertical-align: -webkit-baseline-middle !important; }
 
 .siftal header .hm a, .siftal header .hm div {
-  transition: 0.3s;
+  transition-duration: 0.3s;
+  transition-property: color, background-color;
   color: #888; }
 
 .siftal header .hm a:hover, .siftal header .hm div:hover {
@@ -12423,14 +12426,14 @@ body.siftal .full .middle {
   top: 50px;
   opacity: 0;
   background-color: #ccc;
-  transition: 0.3s;
+  transition: opacity 0.3s;
   visibility: hidden;
   z-index: 1; }
 
 .siftal header .vm nav > a {
   display: block;
   padding: 1em 1em;
-  transition: 0.3s;
+  transition: background-color 0.3s;
   margin: 0.5em;
   background-color: #eee; }
 
