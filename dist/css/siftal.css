@@ -12474,7 +12474,8 @@ body.siftal .full .middle {
   width: 250px;
   position: relative;
   background-color: #302b2b;
-  transition: 0.3s; }
+  transition-duration: 0.3s;
+  transition-property: right, left; }
 
 .siftal #sidebar figure {
   margin: 4em 0;
