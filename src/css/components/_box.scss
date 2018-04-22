@@ -9,7 +9,7 @@
 	opacity: 0.7;
 	background-color: #f7f7f7;
 	color: #444;
-	transition:0.3s;
+	transition: opacity 0.3s;
 	display: block;
 }
 
@@ -41,7 +41,7 @@
 	background-color: #fff;
 	color: #555;
 	position:relative;
-	transition:0.3s;
+	transition: opacity 0.3s;
 }
 
 .cbox .example{
