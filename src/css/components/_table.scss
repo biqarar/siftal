@@ -9,7 +9,6 @@ $tblPadCell: 0.7em 0.7em;
 	border-radius:0.25rem;
 	text-align: left;
 	color: #777;
-	transition:0.3s;
 }
 .rtl .tbl{
 	text-align:right;
@@ -113,7 +112,7 @@ $tblPadCell: 0.7em 0.7em;
 
 // hoverable feature
 .tbl tbody tr{
-	transition:0.3s;
+	transition: background-color 0.3s;
 }
 .tbl:not(.dead) tbody tr:hover{
 	background-color: rgba(0,0,0,.07);
@@ -159,7 +158,7 @@ $tblPadCell: 0.7em 0.7em;
 
 // links in selectable table
 .tbl tbody .selectable{
-	transition: 0.3s;
+	transition: background-color 0.3s;
 }
 .tbl tbody .selectable a{
 	display:block;
@@ -173,7 +172,7 @@ $tblPadCell: 0.7em 0.7em;
 
 
 .tbl thead th[data-sort]{
-	transition:0.3s;
+	transition: background-color 0.3s;
 	cursor:pointer;
 	padding: 0;
 	position: relative;
