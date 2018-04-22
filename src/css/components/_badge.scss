@@ -15,7 +15,7 @@
   border-radius:0.25rem;
   background-color:rgba(0,0,0,0.5);
   color: #fff;
-  transition:0.3s;
+  transition: background-color 0.3s;
 
   // Empty badges collapse automatically
   &:empty {
