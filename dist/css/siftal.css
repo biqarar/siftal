@@ -1102,7 +1102,7 @@ a:active {
   display: block;
   opacity: 0.5;
   transition: all .2s ease-in;
-  font-size: 1.2;
+  font-size: 1.2em;
   line-height: 130%;
   float: right;
   right: -21px; }
