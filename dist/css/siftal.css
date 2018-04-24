@@ -5311,7 +5311,7 @@ img.mini {
   text-shadow: none; }
 
 .datepicker-plot-area .datepicker-day-view .table-days td span.other-month {
-  background-color: none;
+  background-color: transparent;
   color: #ccc;
   border: none;
   text-shadow: none; }
