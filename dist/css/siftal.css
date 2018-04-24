@@ -5311,7 +5311,7 @@ img.mini {
   text-shadow: none; }
 
 .datepicker-plot-area .datepicker-day-view .table-days td span.other-month {
-  background-color: "";
+  background-color: none;
   color: #ccc;
   border: none;
   text-shadow: none; }
@@ -9875,75 +9875,75 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
 .rtl .pLa1-f {
   padding-right: 1px !important; }
 
-.pA2p5 {
-  padding: 2p5px 2p5px; }
+.pA2 {
+  padding: 2px 2px; }
 
-.pT2p5 {
-  padding-top: 2p5px; }
+.pT2 {
+  padding-top: 2px; }
 
-.pB2p5 {
-  padding-bottom: 2p5px; }
+.pB2 {
+  padding-bottom: 2px; }
 
-.pR2p5 {
-  padding-right: 2p5px; }
+.pR2 {
+  padding-right: 2px; }
 
-.pL2p5 {
-  padding-left: 2p5px; }
+.pL2 {
+  padding-left: 2px; }
 
-.pTB2p5 {
-  padding-top: 2p5px;
-  padding-bottom: 2p5px; }
+.pTB2 {
+  padding-top: 2px;
+  padding-bottom: 2px; }
 
-.pLR2p5 {
-  padding-left: 2p5px;
-  padding-right: 2p5px; }
+.pLR2 {
+  padding-left: 2px;
+  padding-right: 2px; }
 
-.ltr .pRa2p5 {
-  padding-right: 2p5px; }
+.ltr .pRa2 {
+  padding-right: 2px; }
 
-.rtl .pRa2p5 {
-  padding-left: 2p5px; }
+.rtl .pRa2 {
+  padding-left: 2px; }
 
-.ltr .pLa2p5 {
-  padding-left: 2p5px; }
+.ltr .pLa2 {
+  padding-left: 2px; }
 
-.rtl .pLa2p5 {
-  padding-right: 2p5px; }
+.rtl .pLa2 {
+  padding-right: 2px; }
 
-.pA2p5-f {
-  padding: 2p5px 2p5px !important; }
+.pA2-f {
+  padding: 2px 2px !important; }
 
-.pT2p5-f {
-  padding-top: 2p5px !important; }
+.pT2-f {
+  padding-top: 2px !important; }
 
-.pB2p5-f {
-  padding-bottom: 2p5px !important; }
+.pB2-f {
+  padding-bottom: 2px !important; }
 
-.pR2p5-f {
-  padding-right: 2p5px !important; }
+.pR2-f {
+  padding-right: 2px !important; }
 
-.pL2p5-f {
-  padding-left: 2p5px !important; }
+.pL2-f {
+  padding-left: 2px !important; }
 
-.pTB2p5-f {
-  padding-top: 2p5px;
-  padding-bottom: 2p5px !important; }
+.pTB2-f {
+  padding-top: 2px;
+  padding-bottom: 2px !important; }
 
-.pLR2p5-f {
-  padding-left: 2p5px;
-  padding-right: 2p5px !important; }
+.pLR2-f {
+  padding-left: 2px;
+  padding-right: 2px !important; }
 
-.ltr .pRa2p5-f {
-  padding-right: 2p5px !important; }
+.ltr .pRa2-f {
+  padding-right: 2px !important; }
 
-.rtl .pRa2p5-f {
-  padding-left: 2p5px !important; }
+.rtl .pRa2-f {
+  padding-left: 2px !important; }
 
-.ltr .pLa2p5-f {
-  padding-left: 2p5px !important; }
+.ltr .pLa2-f {
+  padding-left: 2px !important; }
 
-.rtl .pLa2p5-f {
-  padding-right: 2p5px !important; }
+.rtl .pLa2-f {
+  padding-right: 2px !important; }
 
 .pA3 {
   padding: 3px 3px; }
@@ -10648,75 +10648,75 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
 .rtl .mLa1-f {
   margin-right: 1px !important; }
 
-.mA2p5 {
-  margin: 2p5px 2p5px; }
+.mA2 {
+  margin: 2px 2px; }
 
-.mT2p5 {
-  margin-top: 2p5px; }
+.mT2 {
+  margin-top: 2px; }
 
-.mB2p5 {
-  margin-bottom: 2p5px; }
+.mB2 {
+  margin-bottom: 2px; }
 
-.mR2p5 {
-  margin-right: 2p5px; }
+.mR2 {
+  margin-right: 2px; }
 
-.mL2p5 {
-  margin-left: 2p5px; }
+.mL2 {
+  margin-left: 2px; }
 
-.mTB2p5 {
-  margin-top: 2p5px;
-  margin-bottom: 2p5px; }
+.mTB2 {
+  margin-top: 2px;
+  margin-bottom: 2px; }
 
-.mLR2p5 {
-  margin-left: 2p5px;
-  margin-right: 2p5px; }
+.mLR2 {
+  margin-left: 2px;
+  margin-right: 2px; }
 
-.ltr .mRa2p5 {
-  margin-right: 2p5px; }
+.ltr .mRa2 {
+  margin-right: 2px; }
 
-.rtl .mRa2p5 {
-  margin-left: 2p5px; }
+.rtl .mRa2 {
+  margin-left: 2px; }
 
-.ltr .mLa2p5 {
-  margin-left: 2p5px; }
+.ltr .mLa2 {
+  margin-left: 2px; }
 
-.rtl .mLa2p5 {
-  margin-right: 2p5px; }
+.rtl .mLa2 {
+  margin-right: 2px; }
 
-.mA2p5-f {
-  margin: 2p5px 2p5px !important; }
+.mA2-f {
+  margin: 2px 2px !important; }
 
-.mT2p5-f {
-  margin-top: 2p5px !important; }
+.mT2-f {
+  margin-top: 2px !important; }
 
-.mB2p5-f {
-  margin-bottom: 2p5px !important; }
+.mB2-f {
+  margin-bottom: 2px !important; }
 
-.mR2p5-f {
-  margin-right: 2p5px !important; }
+.mR2-f {
+  margin-right: 2px !important; }
 
-.mL2p5-f {
-  margin-left: 2p5px !important; }
+.mL2-f {
+  margin-left: 2px !important; }
 
-.mTB2p5-f {
-  margin-top: 2p5px;
-  margin-bottom: 2p5px !important; }
+.mTB2-f {
+  margin-top: 2px;
+  margin-bottom: 2px !important; }
 
-.mLR2p5-f {
-  margin-left: 2p5px;
-  margin-right: 2p5px !important; }
+.mLR2-f {
+  margin-left: 2px;
+  margin-right: 2px !important; }
 
-.ltr .mRa2p5-f {
-  margin-right: 2p5px !important; }
+.ltr .mRa2-f {
+  margin-right: 2px !important; }
 
-.rtl .mRa2p5-f {
-  margin-left: 2p5px !important; }
+.rtl .mRa2-f {
+  margin-left: 2px !important; }
 
-.ltr .mLa2p5-f {
-  margin-left: 2p5px !important; }
+.ltr .mLa2-f {
+  margin-left: 2px !important; }
 
-.rtl .mLa2p5-f {
-  margin-right: 2p5px !important; }
+.rtl .mLa2-f {
+  margin-right: 2px !important; }
 
 .mA3 {
   margin: 3px 3px; }
