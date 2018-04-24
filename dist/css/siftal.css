@@ -1706,10 +1706,10 @@ progress.xl, meter.xl {
 .tbl:not(.dead) tbody tr:nth-child(2n) {
   background-color: rgba(0, 0, 30, 0.03); }
 
-.tbl.dark:not(.dead):not(.dead) tbody tr:nth-child(2n) {
+.tbl.dark:not(.dead) tbody tr:nth-child(2n) {
   background-color: rgba(255, 255, 255, 0.03); }
 
-.tbl.secondary:not(.dead:not(.dead)) tbody tr:nth-child(2n) {
+.tbl.secondary:not(.dead) tbody tr:nth-child(2n) {
   background-color: rgba(255, 255, 255, 0.03); }
 
 .tbl.bordered td, .tbl.bordered th {
