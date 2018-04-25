@@ -39,6 +39,7 @@ var myModuleFiles =
 	'src/libs/tippy/tippyRunner.js',
 	'src/libs/uploader/uploader.min.js',
 	'src/libs/uploader/uploaderRunner.js',
+	'src/libs/shortkey/shortkey.js',
 
 
 	// tools
