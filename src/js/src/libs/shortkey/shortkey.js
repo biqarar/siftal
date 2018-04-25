@@ -4,15 +4,15 @@
  */
 
 // bind shortkeys
-bindShortkey();
+bindHtmlShortkey();
 
 /**
- * [bindShortkey description]
+ * [bindHtmlShortkey description]
  * @return {[type]} [description]
  */
-function bindShortkey()
+function bindHtmlShortkey()
 {
-  $(document).keydown(function(_e) { event_corridor.call(this, _e)});
+  $(document).keydown(function(_e) { shortkey_corridor.call(this, _e)});
 }
 
 
@@ -23,7 +23,7 @@ function bindShortkey()
  * @param  {[type]} _key  the key pressed or click or another events
  * @return {[type]}       void func not returning value! only doing job
  */
-function event_corridor(_e, _self, _key)
+function shortkey_corridor(_e, _self, _key)
 {
   if(!_key)
   {
