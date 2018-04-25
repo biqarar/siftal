@@ -1,12 +1,18 @@
-
+var myTippy;
 
 function runTippy()
 {
-	tippy('[title]',
+	if(myTippy)
+	{
+		myTippy.destroyAll();
+	}
+
+	myTippy = tippy('[title]',
 	{
 		arrow: true,
 		animation: 'scale',
 		dynamicTitle: true,
 	});
+
 }
 
