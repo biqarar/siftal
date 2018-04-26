@@ -1308,6 +1308,9 @@ a:active {
   padding-right: 1em;
   padding-left: 1em; }
 
+a.badge.danger {
+  color: #fff !important; }
+
 [class^="sf-"].vlmiddle:before {
   vertical-align: middle; }
 
@@ -1864,7 +1867,6 @@ progress.xl, meter.xl {
   padding: 1em 1.5em;
   opacity: 0.8;
   transition: background-color 0.3s;
-  overflow: hidden;
   min-height: 90px;
   border: 1px solid transparent;
   position: relative;
@@ -1904,16 +1906,20 @@ progress.xl, meter.xl {
   vertical-align: baseline; }
 
 .dcard.x1 {
-  height: 90px; }
+  height: 90px;
+  overflow: hidden; }
 
 .dcard.x2 {
-  min-height: 190px; }
+  min-height: 190px;
+  overflow: hidden; }
 
 .dcard.x3 {
-  min-height: 290px; }
+  min-height: 290px;
+  overflow: hidden; }
 
 .dcard.x4 {
-  min-height: 390px; }
+  min-height: 390px;
+  overflow: hidden; }
 
 .dcard .chart {
   height: 90px; }
@@ -11842,7 +11848,7 @@ body .we500 {
 .rtl .txtLa {
   text-align: right; }
 
-.txtbold {
+.txtB {
   font-weight: 700; }
 
 .fadeIn {

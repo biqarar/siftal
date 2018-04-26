@@ -8,7 +8,6 @@
 	padding: 1em 1.5em;
 	opacity: 0.8;
 	transition: background-color 0.3s;
-	overflow: hidden;
 	min-height: 90px;
 	border:1px solid transparent;
 	position:relative;
@@ -32,22 +31,10 @@
 	vertical-align: baseline;
 }
 
-.dcard.x1{
-	height: 90px;
-}
-
-
-.dcard.x2{
-	min-height: 190px;
-}
-
-.dcard.x3{
-	min-height: 290px;
-}
-
-.dcard.x4{
-	min-height: 390px;
-}
+.dcard.x1{height: 90px;overflow: hidden;}
+.dcard.x2{min-height: 190px;overflow: hidden;}
+.dcard.x3{min-height: 290px;overflow: hidden;}
+.dcard.x4{min-height: 390px;overflow: hidden;}
 
 
 .dcard .chart{height:90px;}
