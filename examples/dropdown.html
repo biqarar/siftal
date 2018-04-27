@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>Siftal</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Siftal, a simple CSS framework with usefull tools for Ermile projects">
+  <link rel="shortcut icon" href="../dist/images/siftal/siftal.ico">
+  <link rel="icon" href="../dist/images/siftal/siftal.png" type="image/png">
+  <link rel="stylesheet" href="../dist/css/siftal.css">
+  <link rel="stylesheet" href="../dist/css/dropdown.min.css">
+  <style>
+    body{background-color:#eee;}
+  </style>
+</head>
+<body class="ltr">
+  <div class="cn">
+
+
+    <div class="tbox">
+      <h2>Dropdown</h2>
+      <p>Use SemanticUI dropdown</p>
+    </div>
+
+
+  <div class="cbox fs14">
+
+    <div class="example">
+      <div class="ui selection dropdown">
+        <input type="hidden" name="gender">
+        <i class="dropdown icon"></i>
+        <div class="default text">Gender</div>
+        <div class="menu">
+          <div class="item" data-value="1">Male</div>
+          <div class="item" data-value="0">Female</div>
+        </div>
+      </div>
+    </div>
+
+<form>
+
+    <div class="example">
+      <select class="ui dropdown">
+        <option value="">Gender</option>
+        <option value="1">Male</option>
+        <option value="0">Female</option>
+      </select>
+    </div>
+
+    <button>abc</button>
+</form>
+
+
+  </div>
+
+
+
+
+  </div>
+  <script src="../dist/js/siftal.min.js"></script>
+  <script src="../dist/js/dropdown.min.js"></script>
+
+  <script>
+  $('.ui.dropdown').dropdown();
+  </script>
+
+</body>
+</html>
