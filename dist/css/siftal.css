@@ -9635,6 +9635,9 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
 .txt[rows="1"] {
   line-height: 1; }
 
+.txt.error {
+  border-color: rgba(255, 0, 0, 0.5); }
+
 .select {
   display: block;
   font-weight: 400;
