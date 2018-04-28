@@ -246,6 +246,15 @@
           (_.isArray(recordDataMeta.element) ? recordDataMeta.element : [recordDataMeta.element]).forEach(function(_e)
           {
             var $el = $form.find('input[name="' + _e + '"]');
+            if($el.length === 0)
+            {
+              $el = $form.find('select[name="' + _e + '"]');
+            }
+            if($el.length === 0)
+            {
+              $el = $form.find('textarea[name="' + _e + '"]');
+            }
+
             $el.addClass('error');
           });
       }
