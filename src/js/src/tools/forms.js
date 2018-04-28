@@ -234,16 +234,30 @@
       }
       // remove error sign of each element if exist
       $form.find('input').removeClass('error');
+      $form.find('select').removeClass('error');
+      $form.find('textarea').removeClass('error');
+
 
       // if want to do something with element, get it from result
-      if(recordDataMeta && recordDataMeta.element)
+      if(recordDataMeta)
       {
+        var myElementHighlight = recordDataMeta.element;
+        if(myElementHighlight)
+        {
           try
           {
-            recordDataMeta.element = JSON.parse(recordDataMeta.element);
+            myElementHighlight = JSON.parse(myElementHighlight);
           } catch(e) {}
 
-          (_.isArray(recordDataMeta.element) ? recordDataMeta.element : [recordDataMeta.element]).forEach(function(_e)
+        }
+        else if(!_.isArray(recordDataMeta))
+        {
+          myElementHighlight = recordDataMeta;
+        }
+
+        if(myElementHighlight)
+        {
+          (_.isArray(myElementHighlight) ? myElementHighlight : [myElementHighlight]).forEach(function(_e)
           {
             var $el = $form.find('input[name="' + _e + '"]');
             if($el.length === 0)
@@ -257,6 +271,7 @@
 
             $el.addClass('error');
           });
+        }
       }
     }
 
