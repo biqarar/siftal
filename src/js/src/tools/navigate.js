@@ -61,6 +61,10 @@
     var focusBeforeChange  = $(':focus');
     var pageContentChanged = null;
     $window.trigger('navigate:render:start', obj);
+    if(myTippy)
+    {
+      myTippy.destroyAll();
+    }
 
     var html = obj.html,
         $html = $(html);
