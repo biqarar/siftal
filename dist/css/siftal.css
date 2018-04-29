@@ -10030,11 +10030,11 @@ body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-anima
 .ui.dropdown .menu > .item > .image,
 .ui.dropdown .menu > .item > img {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   width: auto;
   margin-top: -0.5em;
   margin-bottom: -0.5em;
-  max-height: 2em; }
+  max-height: 36px; }
 
 /*******************************
             Coupling
@@ -10085,16 +10085,16 @@ body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-anima
 .ui.selection.dropdown {
   cursor: pointer;
   word-wrap: break-word;
-  line-height: 1em;
+  line-height: 1;
   white-space: normal;
   outline: 0;
   -webkit-transform: rotateZ(0deg);
   transform: rotateZ(0deg);
   min-width: 14em;
-  min-height: 2.71428571em;
+  height: 36px;
   background: #FFFFFF;
   display: inline-block;
-  padding: 0.78571429em 2.1em 0.78571429em 1em;
+  padding: 5px 2.1em 5px 1em;
   color: rgba(0, 0, 0, 0.87);
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -10127,7 +10127,7 @@ select.ui.dropdown {
   right: 1em;
   z-index: 3;
   margin: -0.78571429em;
-  padding: 0.91666667em;
+  padding: 10px 10px;
   opacity: 0.8;
   -webkit-transition: opacity 0.1s ease;
   transition: opacity 0.1s ease; }
@@ -10284,17 +10284,18 @@ select.ui.dropdown {
   cursor: text;
   position: relative;
   left: 1px;
-  z-index: 3; }
+  z-index: 3;
+  line-height: 25px; }
 
 /* Search Selection */
 .ui.search.selection.dropdown > input.search {
-  line-height: 1.21428571em;
-  padding: 0.67857143em 2.1em 0.67857143em 1em; }
+  line-height: 25px;
+  padding: 5px 2.1em 5px 1em; }
 
 /* Used to size multi select input to character width */
 .ui.search.selection.dropdown > span.sizer {
-  line-height: 1.21428571em;
-  padding: 0.67857143em 2.1em 0.67857143em 1em;
+  line-height: 25px;
+  padding: 5px 2.1em 5px 1em;
   display: none;
   white-space: pre; }
 
@@ -10460,7 +10461,7 @@ select.ui.dropdown {
   height: 1em !important; }
 
 .ui.loading.selection.dropdown > i.icon {
-  padding: 1.5em 1.28571429em !important; }
+  padding: 17px 1.28571429em !important; }
 
 .ui.loading.dropdown > i.icon:before {
   position: absolute;
@@ -11141,6 +11142,9 @@ select.ui.dropdown {
 
 .ui.dropdown > .text {
   display: block; }
+
+.rtl .ui.search.selection.dropdown > input.search {
+  padding: 5px 1em 5px 2.1em; }
 
 /*
  * # Semantic UI 2.3.1 - Flag
