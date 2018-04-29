@@ -13287,7 +13287,7 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
   vertical-align: middle;
   user-select: none;
   border: 1px solid transparent;
-  min-height: 36px;
+  height: 36px;
   line-height: 1.25;
   font-weight: 700;
   background-color: #e2e2e2;
@@ -13312,21 +13312,21 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
   color: black; }
 
 .btn.xs {
-  min-height: 20px;
+  height: 20px;
   font-size: 60%;
   padding: 0.5em 1em; }
 
 .btn.sm {
-  min-height: 30px;
+  height: 30px;
   font-size: 75%;
   padding: 0.5em 1em; }
 
 .btn.lg {
-  min-height: 50px;
+  height: 50px;
   font-size: 120%; }
 
 .btn.xl {
-  min-height: 60px;
+  height: 60px;
   font-size: 150%; }
 
 .btn.weAreHere {
