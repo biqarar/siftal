@@ -40,6 +40,7 @@ var myModuleFiles =
 	'src/libs/uploader/uploader.min.js',
 	'src/libs/uploader/uploaderRunner.js',
 	'src/libs/shortkey/shortkey.js',
+	'src/libs/semantic-ui/transition/transition.min.js',
 	'src/libs/semantic-ui/dropdown/dropdown.min.js',
 	'src/libs/semantic-ui/dropdown/dropdownRunner.js',
 
