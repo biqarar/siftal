@@ -25,6 +25,7 @@ route('*', function ()
   runTippy();
   initTagDetector();
   bindUploader();
+  dropdownRunner();
 
   if($('body').hasClass('enter'))
   {
