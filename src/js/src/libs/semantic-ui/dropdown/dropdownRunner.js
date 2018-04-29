@@ -14,9 +14,10 @@ function dropdownRunner()
     // run with remote source
     if($(this).attr('data-source') !== undefined)
     {
+      // $.api.settings.cache = false;
       $(this).dropdown(
       {
-        apiSettings: {url: $(this).attr('data-source')}
+        apiSettings: {url: $(this).attr('data-source'), cache: false}
       });
       return true;
     }
