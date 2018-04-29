@@ -11094,7 +11094,7 @@ select.ui.dropdown {
   width: 100%;
   min-width: 0em; }
 
-.ui.dropdown > .dropdown.icon {
+.rtl .ui.dropdown > .dropdown.icon {
   float: right; }
 
 .rtl .ui.dropdown {
