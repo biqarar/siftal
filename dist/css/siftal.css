@@ -1866,7 +1866,7 @@ progress.xl, meter.xl {
   color: #555;
   padding: 1em 1.5em;
   opacity: 0.8;
-  transition: background-color 0.3s;
+  transition: opacity 0.3s;
   min-height: 90px;
   border: 1px solid transparent;
   position: relative;
@@ -9893,7 +9893,8 @@ body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-anima
   font-weight: normal;
   -webkit-box-shadow: none;
   box-shadow: none;
-  -webkit-touch-callout: none; }
+  -webkit-touch-callout: none;
+  transition: 0.3s background-color; }
 
 .ui.dropdown .menu > .item:first-child {
   border-top-width: 0px; }
@@ -12720,6 +12721,7 @@ input.input.ok {
 label {
   font-weight: bold;
   padding: 5px 0;
+  line-height: 10px;
   display: inline-block;
   vertical-align: middle;
   font-size: 80%; }
@@ -13276,7 +13278,7 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
   cursor: pointer;
   display: inline-block;
   outline: none;
-  padding: 1em 1.2em;
+  padding: 5px 1.2em;
   text-decoration: none;
   text-align: center;
   transition: .2s ease-out;
@@ -13285,7 +13287,7 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
   vertical-align: middle;
   user-select: none;
   border: 1px solid transparent;
-  min-height: 35px;
+  min-height: 36px;
   line-height: 1.25;
   font-weight: 700;
   background-color: #e2e2e2;
