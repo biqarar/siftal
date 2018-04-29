@@ -1549,5 +1549,14 @@ select.ui.dropdown {
   margin-right:1rem;
   margin-left: 0;
 }
+.rtl .ui.dropdown > .text > .description,
+.rtl .ui.dropdown .menu > .item > .description {
+  float: left;
+  margin: 0em 1em 0em 0em;
+}
+.ui.dropdown > .text{
+  display:block;
+}
+
 
 
