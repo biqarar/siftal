@@ -11089,6 +11089,50 @@ select.ui.dropdown {
 /*******************************
         User Overrides
 *******************************/
+.ui.dropdown {
+  display: block;
+  width: 100%;
+  min-width: 0em; }
+
+.ui.dropdown > .dropdown.icon {
+  float: right; }
+
+.rtl .ui.dropdown {
+  text-align: right; }
+
+.rtl .ui.dropdown .menu {
+  text-align: right; }
+
+.rtl .ui.dropdown .menu > .item {
+  text-align: right; }
+
+.rtl .ui.selection.dropdown > .search.icon,
+.rtl .ui.selection.dropdown > .delete.icon,
+.rtl .ui.selection.dropdown > .dropdown.icon {
+  right: initial;
+  left: 1em; }
+
+.rtl .ui.dropdown > .text > .icon,
+.rtl .ui.dropdown > .text > .label,
+.rtl .ui.dropdown > .text > .flag,
+.rtl .ui.dropdown > .text > img,
+.rtl .ui.dropdown > .text > .image,
+.rtl .ui.dropdown .menu > .item > .icon,
+.rtl .ui.dropdown .menu > .item > .label,
+.rtl .ui.dropdown .menu > .item > .flag,
+.rtl .ui.dropdown .menu > .item > .image,
+.rtl .ui.dropdown .menu > .item > img {
+  margin-right: 0em;
+  margin-left: 0.78571429rem; }
+
+.rtl .ui.selection.dropdown {
+  padding-right: 1em;
+  padding-left: 2.1em; }
+
+.rtl .ui.dropdown .menu > .item > .flag {
+  margin-right: 1rem;
+  margin-left: 0; }
+
 /*
  * # Semantic UI 2.3.1 - Flag
  * http://github.com/semantic-org/semantic-ui/
