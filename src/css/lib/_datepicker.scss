@@ -432,6 +432,9 @@
   float: left;
 }
 
+
+
+
 @media only screen and (max-device-width: 480px) {
   .datepicker-container.pwt-mobile-view {
     position: fixed;
@@ -461,12 +464,13 @@
   .datepicker-container.pwt-mobile-view .datepicker-plot-area .table-days td span {
     height: 44px;
     line-height: 44px;
-    font-size: 14px;
+    font-size: 1.3em;
   }
   .datepicker-container.pwt-mobile-view .datepicker-plot-area .datepicker-year-view .year-item,
   .datepicker-container.pwt-mobile-view .datepicker-plot-area .datepicker-month-view .month-item {
     height: 70px;
     line-height: 70px;
+    font-size: 1.3em;
   }
   .datepicker-container.pwt-mobile-view .datepicker-plot-area [class*='pwt-btn'] {
     height: 48px;
@@ -486,12 +490,10 @@
   .datepicker-container.pwt-mobile-view .datepicker-plot-area.datepicker-state-only-time .datepicker-time-view input {
     height: 40px;
     line-height: 40px;
-    font-size: 24px;
     margin: 5px 0;
   }
   .datepicker-container.pwt-mobile-view .datepicker-plot-area.datepicker-state-only-time .datepicker-time-view .divider,
   .datepicker-container.pwt-mobile-view .datepicker-plot-area.datepicker-state-only-time .datepicker-time-view .divider span {
-    font-size: 16px;
     display: block;
     height: 144px;
     line-height: 144px;
@@ -504,7 +506,6 @@
   .datepicker-container.pwt-mobile-view .datepicker-time-view input {
     height: 32px;
     line-height: 34px;
-    font-size: 18px;
   }
   .datepicker-container.pwt-mobile-view .datepicker-time-view .divider,
   .datepicker-container.pwt-mobile-view .datepicker-time-view .divider span {
@@ -514,5 +515,7 @@
   .datepicker-container.pwt-mobile-view .datepicker-time-view .down-btn,
   .datepicker-container.pwt-mobile-view .datepicker-time-view .up-btn {
     height: 40px;
-    line-height: 40px; }
+    line-height: 40px;
   }
+}
+
