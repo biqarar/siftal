@@ -61,10 +61,8 @@
     var focusBeforeChange  = $(':focus');
     var pageContentChanged = null;
     $window.trigger('navigate:render:start', obj);
-    if(myTippy)
-    {
-      myTippy.destroyAll();
-    }
+    // try to remove tippy from view
+    removeTippy();
 
     var html = obj.html,
         $html = $(html);
