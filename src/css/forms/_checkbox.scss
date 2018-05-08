@@ -1,5 +1,5 @@
 /* checkbox type 1*/
-.check1{margin:10px 0;overflow:hidden}
+.check1{margin:10px 0;}
 .check1 input{padding:0;margin:0;position:absolute;z-index:-1;width:0;height:0;opacity:0}
 .check1 label{position:relative;cursor:pointer;padding:0;display:inline-block;}
 .check1 label::before{content:'';margin-right:10px;display:inline-block;vertical-align:middle;width:20px;height:20px;transition:0.3s;border-radius:3px;border:1px solid rgba(0,0,0,0.1);}

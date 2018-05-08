@@ -12745,8 +12745,7 @@ input[type="tel"], input[type="email"], input[type="date"], input[type="number"]
 
 /* checkbox type 1*/
 .check1 {
-  margin: 10px 0;
-  overflow: hidden; }
+  margin: 10px 0; }
 
 .check1 input {
   padding: 0;
@@ -12956,8 +12955,7 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
   font-size: 12px; }
 
 .radio1 {
-  margin: 10px 0;
-  overflow: hidden; }
+  margin: 10px 0; }
 
 .radio1 input {
   padding: 0;
