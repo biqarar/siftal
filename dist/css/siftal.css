@@ -13295,7 +13295,7 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
   user-select: none;
   border: 1px solid transparent;
   height: 36px;
-  line-height: 1.25;
+  line-height: 24px;
   font-weight: 700;
   background-color: #e2e2e2;
   color: rgba(0, 0, 0, 0.5);
