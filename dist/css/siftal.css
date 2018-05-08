@@ -12746,7 +12746,8 @@ input[type="tel"], input[type="email"], input[type="date"], input[type="number"]
 
 /* checkbox type 1*/
 .check1 {
-  margin: 10px 0; }
+  padding: 8px 0;
+  overflow: hidden; }
 
 .check1 input {
   padding: 0;
