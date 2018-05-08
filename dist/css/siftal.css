@@ -12823,7 +12823,8 @@ input[type="tel"], input[type="email"], input[type="date"], input[type="number"]
 .switch1 {
   overflow: hidden;
   margin: 10px 0;
-  vertical-align: middle; }
+  vertical-align: middle;
+  height: 36px; }
 
 .switch1 input {
   padding: 0;
