@@ -12957,7 +12957,8 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
   font-size: 12px; }
 
 .radio1 {
-  margin: 10px 0; }
+  padding: 8px 0;
+  overflow: hidden; }
 
 .radio1 input {
   padding: 0;
