@@ -18,6 +18,7 @@ $tblPadCell: 0.7em 0.7em;
 	padding:$tblPadCell;
 	max-width:600px;
 	text-overflow: ellipsis;
+	vertical-align: middle;
 }
 
 .tbl tbody tr > *{

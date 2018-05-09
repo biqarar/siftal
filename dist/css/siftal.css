@@ -333,7 +333,7 @@ strong {
   font-weight: bolder; }
 
 td, td img {
-  vertical-align: top; }
+  vertical-align: middle; }
 
 /* Make sure sup and sub don't mess with your line-heights http://gist.github.com/413930 */
 sub, sup {
@@ -1655,7 +1655,8 @@ progress.xl, meter.xl {
 .tbl td, .tbl th {
   padding: 0.7em 0.7em;
   max-width: 600px;
-  text-overflow: ellipsis; }
+  text-overflow: ellipsis;
+  vertical-align: middle; }
 
 .tbl tbody tr > * {
   border-top: 1px solid rgba(30, 30, 30, 0.1); }
