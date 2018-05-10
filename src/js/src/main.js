@@ -173,6 +173,13 @@ $(document).ready(function()
   {
     var $this = $(this);
 
+    // check old page has xhr and only if we have xhr try to change page
+    if($('[data-xhr]').length === 0)
+    {
+      // if we dont have xhr on current page use hard change location
+      return;
+    }
+
     if(
         $this.attr('target') === '_blank' ||
         $this.hasAttr('data-ajaxify') ||
