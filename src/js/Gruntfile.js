@@ -50,6 +50,7 @@ var myModuleFiles =
 	'src/tools/router.js',
 	'src/tools/navigate.js',
 	'src/tools/forms.js',
+	'src/tools/pushstate.js',
 
 	// use some utitlity
 	'src/utility/clock.js',

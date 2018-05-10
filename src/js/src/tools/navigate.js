@@ -58,8 +58,10 @@
 
   function render(obj)
   {
-    var focusBeforeChange  = $(':focus');
-    var pageContentChanged = null;
+    var focusBeforeChange         = $(':focus');
+    var pageContentChanged        = null;
+    var needHardRefreshOnEmptyNew = true;
+
     $window.trigger('navigate:render:start', obj);
     // try to remove tippy from view
     removeTippy();
@@ -78,51 +80,40 @@
 
     (filter ? $html.filter(filter).add($html.find(filter)) : $html).each(function()
     {
-      var target = $(this).attr('data-xhr');
-
-      var $target = $('[data-xhr="'+target+'"]');
-
-      var newPage = this;
-
-      // if new content is different from current content replace it
-      // its added by javad, if has bug report this condition
-      if($(this).html() !== $target.html())
+      var myNewXhrName = $(this).attr('data-xhr');
+      // if we find new element with xhr
+      if(myNewXhrName)
       {
-        pageContentChanged = true;
-        // add content after old one - simple replace
-        $target.after(this);
-        // remove old one
-        $target.remove();
+        needHardRefreshOnEmptyNew = false;
+        console.log(myNewXhrName);
+        var $targetOnOldPage = $('[data-xhr="' + myNewXhrName + '"]');
+        if($targetOnOldPage.length > 0)
+        {
+          // if we find new element is existing elements
 
-        // ----------------------------------- all below ways is not good.
-        // // replace with fade effect
-        // $target.fadeOut("slow", function()
-        // {
-        //   $(this).replaceWith(newPage);
-        //   $target.fadeIn("slow").show();
-        // });
 
-        // // replace with slide effect
-        // $target.slideUp("slow", function()
-        // {
-        //   $(this).replaceWith(newPage);
-        //   $target.slideDown("slow");
-        // });
+          // if new content is different from current content replace it
+          // its added by javad, if has bug report this condition
+          if($(this).html() !== $targetOnOldPage.html())
+          {
+            pageContentChanged = true;
+            // add content after old one - simple replace
+            $targetOnOldPage.after(this);
+            // remove old one
+            $targetOnOldPage.remove();
+          }
 
-        // // replace with fade effect
-        // $target.fadeOut(100, function()
-        // {
-        //   $(this).replaceWith(newPage).fadeIn(500);
-        // });
-
-        // $target.fadeTo("normal", 0.4, function()
-        // {
-        //   $(this).replaceWith(newPage);
-        //   $target.fadeIn("slow").show();
-        // });
-
+        }
       }
     });
+
+    if(needHardRefreshOnEmptyNew)
+    {
+      // hard refresh to new location because new is not have xhr element
+      location.replace(obj.url);
+      // need check if new is have something do this, else do nothing
+      // need more time to check conditions!
+    }
 
     $window.trigger('navigate:render:filter:done', filter);
 
@@ -168,6 +159,7 @@
     {
       // if page content is not changed, do nothing...
       // logy(10);
+      console.log('page is not changed, need hard redirect');
     }
     // if we have input with autofocus, set focus to first of it
     else if($('input[autofocus]').length)
