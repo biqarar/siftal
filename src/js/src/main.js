@@ -44,6 +44,13 @@ $(document).ready(function()
   // Ajaxify links and forms
   $(document).on('submit', 'form', function(e)
   {
+    // check old page has xhr and only if we have xhr try to change page
+    if($('[data-xhr]').length === 0)
+    {
+      // if we dont have xhr on current page use hard change location
+      return;
+    }
+
     if($(this).hasAttr('data-action')) return;
 
     e.preventDefault();
