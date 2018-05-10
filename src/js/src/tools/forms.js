@@ -207,84 +207,19 @@
   $.fn.ajaxify.showResults = function(data, $form, _super)
   {
     $form.trigger('ajaxify:render:start', data, $form, _super);
-
-    $form.find('input').removeClass('error warn');
-
-    var hasError = false;
-
-    for(var recordId in data.msg)
-    {
-      // get each record data
-      var recordData     = data.msg[recordId];
-      var recordDataMeta = recordData.meta;
-      var recordTitle    = null;
-      // get title if exist
-      if(recordDataMeta && recordDataMeta.title)
-      {
-        recordTitle = recordDataMeta.title;
-      }
-
-      // generate new notif
-      notif(recordData.type, recordData.text, recordTitle, $form.attr('data-delay'));
-
-      // set flag of error
-      if(recordData.type == 'error')
-      {
-          hasError = true;
-      }
-      // remove error sign of each element if exist
-      $form.find('input').removeClass('error');
-      $form.find('select').removeClass('error');
-      $form.find('textarea').removeClass('error');
-
-
-      // if want to do something with element, get it from result
-      if(recordDataMeta)
-      {
-        var myElementHighlight = recordDataMeta.element;
-        if(myElementHighlight)
-        {
-          try
-          {
-            myElementHighlight = JSON.parse(myElementHighlight);
-          } catch(e) {}
-
-        }
-        else if(!_.isArray(recordDataMeta))
-        {
-          myElementHighlight = recordDataMeta;
-        }
-
-        if(myElementHighlight)
-        {
-          (_.isArray(myElementHighlight) ? myElementHighlight : [myElementHighlight]).forEach(function(_e)
-          {
-            var $el = $form.find('input[name="' + _e + '"]');
-            if($el.length === 0)
-            {
-              $el = $form.find('select[name="' + _e + '"]');
-            }
-            if($el.length === 0)
-            {
-              $el = $form.find('textarea[name="' + _e + '"]');
-            }
-
-            $el.addClass('error');
-          });
-        }
-      }
-    }
+    // try to show notif
+    var notifResult = notifGenerator(data.msg, $form);
 
     $form.trigger('ajaxify:render:done', data, $form, _super);
 
-    if (!hasError && $form.attr('data-clear') !== undefined)
+    if (!notifResult.error && $form.attr('data-clear') !== undefined)
     {
       $form.find('input, select, textarea, [contenteditable]').not('[data-unclear]').val('');
     }
 
     $form.trigger('ajaxify:render:clear', data, $form, _super);
 
-    if(!hasError)
+    if(!notifResult.error)
     {
       setTimeout(function()
       {

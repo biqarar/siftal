@@ -218,8 +218,7 @@
     {
       $window.trigger('navigate:fetch:ajax:start', options);
 
-      var json,
-          html;
+      var json, html;
 
       var jsonExpected = res[0] === '{';
       try
@@ -227,51 +226,11 @@
         var n        = res.indexOf('\n');
         n            = n === -1 ? undefined : n;
         json         = JSON.parse(res.slice(0, n));
-        var debug    = json.debug;
-        var hasError = false;
 
-
-
-        for(var recordId in debug.msg)
+        if(json && json.debug && json.debug.msg)
         {
-          // get each record data
-          var recordData     = debug.msg[recordId];
-          var recordDataMeta = recordData.meta;
-          var recordTitle    = null;
-          // get title if exist
-          if(recordDataMeta && recordDataMeta.title)
-          {
-            recordTitle = recordDataMeta.title;
-          }
-
-          // generate new notif
-          notif(recordData.type, recordData.text, recordTitle, $form.attr('data-delay'));
-
-          // set flag of error
-          if(recordData.type == 'error')
-          {
-              hasError = true;
-          }
-          // remove error sign of each element if exist
-          $form.find('input').removeClass('error');
-
-          // if want to do something with element, get it from result
-          if(recordDataMeta && recordDataMeta.element)
-          {
-              try
-              {
-                recordDataMeta.element = JSON.parse(recordDataMeta.element);
-              } catch(e) {}
-
-              (_.isArray(recordDataMeta.element) ? recordDataMeta.element : [recordDataMeta.element]).forEach(function(_e)
-              {
-                var $el = $form.find('input[name="' + _e + '"]');
-                $el.addClass('error');
-              });
-          }
+          notifGenerator(json.debug.msg, $form);
         }
-
-
 
         // if(json.getFromCache) {
           // json = LS.get(props.md5);
@@ -307,9 +266,14 @@
       callFunc('loading_page', false);
 
 
-    }).error(function(a, b, c)
+    }).error(function(_result, b, c)
     {
-      $window.trigger('navigate:fetch:ajax:error', a, b, c);
+      if(_result && _result.responseJSON && _result.responseJSON.msg)
+      {
+        notifGenerator(_result.responseJSON.msg);
+      }
+
+      $window.trigger('navigate:fetch:ajax:error', _result, b, c);
     });
 
     return deferred.promise();
@@ -372,6 +336,97 @@
     });
 
     return deferred.promise();
+  }
+
+
+  function notifGenerator(_data, $_form)
+  {
+    var result =
+    {
+      error: false,
+    };
+
+    if($_form)
+    {
+      $_form.find('input').removeClass('error warn');
+    }
+
+    for(var recordId in _data)
+    {
+      // get each record data
+      var recordData     = _data[recordId];
+      var recordDataMeta = recordData.meta;
+      var recordTitle    = null;
+      // set delay to show notif
+      var delay          = undefined;
+      if($_form && $_form.attr('data-delay'))
+      {
+        delay = $_form.attr('data-delay');
+      }
+
+      // get title if exist
+      if(recordDataMeta && recordDataMeta.title)
+      {
+        recordTitle = recordDataMeta.title;
+      }
+
+      // generate new notif
+      notif(recordData.type, recordData.text, recordTitle, delay);
+
+      // set flag of error
+      if(recordData.type == 'error')
+      {
+          result.error = true;
+      }
+
+
+      // highlight some field for forms
+      if($_form)
+      {
+        // remove error sign of each element if exist
+        $_form.find('input').removeClass('error');
+        $_form.find('select').removeClass('error');
+        $_form.find('textarea').removeClass('error');
+
+        // if want to do something with element, get it from result
+        if(recordDataMeta)
+        {
+          var myElementHighlight = recordDataMeta.element;
+          if(myElementHighlight)
+          {
+            try
+            {
+              myElementHighlight = JSON.parse(myElementHighlight);
+            } catch(e) {}
+
+          }
+          else if(!_.isArray(recordDataMeta))
+          {
+            myElementHighlight = recordDataMeta;
+          }
+
+          if(myElementHighlight)
+          {
+            (_.isArray(myElementHighlight) ? myElementHighlight : [myElementHighlight]).forEach(function(_e)
+            {
+              var $el = $form.find('input[name="' + _e + '"]');
+              if($el.length === 0)
+              {
+                $el = $form.find('select[name="' + _e + '"]');
+              }
+              if($el.length === 0)
+              {
+                $el = $form.find('textarea[name="' + _e + '"]');
+              }
+
+              $el.addClass('error');
+            });
+          }
+        }
+      }
+
+    }
+    return result;
   }
 
   window.onpopstate = function(e)
