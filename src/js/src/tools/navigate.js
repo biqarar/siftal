@@ -71,13 +71,13 @@
     if(html.indexOf('data-xhr') === false)
     {
       // hard redirect to this address or change all html
-      window.location = obj.url;
+      location.replace(obj.url);
       return;
     }
     if(obj.content && $('body').attr('data-in') !== obj.content)
     {
       // hard redirect to new content
-      window.location = obj.url;
+      location.replace(obj.url);
       return;
     }
 
