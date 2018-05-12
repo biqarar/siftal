@@ -74,6 +74,12 @@
       window.location = obj.url;
       return;
     }
+    if(obj.content && $('body').attr('data-in') !== obj.content)
+    {
+      // hard redirect to new content
+      window.location = obj.url;
+      return;
+    }
 
     var $html = $(html);
 
