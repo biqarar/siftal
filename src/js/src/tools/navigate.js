@@ -66,8 +66,16 @@
     // try to remove tippy from view
     removeTippy();
 
-    var html = obj.html,
-        $html = $(html);
+
+    var html = obj.html.trim();
+    if(html.indexOf('data-xhr') === false)
+    {
+      // hard redirect to this address or change all html
+      window.location = obj.url;
+      return;
+    }
+
+    var $html = $(html);
 
     if(obj.id) $('body').attr('id', obj.id);
     if(obj.id) $('body').attr('data-page', obj.id);
@@ -85,8 +93,7 @@
       if(myNewXhrName)
       {
         needHardRefreshOnEmptyNew = false;
-        console.log(myNewXhrName);
-        var $targetOnOldPage = $('[data-xhr="' + myNewXhrName + '"]');
+        var $targetOnOldPage      = $('[data-xhr="' + myNewXhrName + '"]');
         if($targetOnOldPage.length > 0)
         {
           // if we find new element is existing elements
