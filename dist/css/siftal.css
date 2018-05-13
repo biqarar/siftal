@@ -13303,7 +13303,8 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
   font-weight: 700;
   background-color: #e2e2e2;
   color: rgba(0, 0, 0, 0.5);
-  overflow: hidden; }
+  overflow: hidden;
+  font-size: 0.9em; }
 
 .outline {
   background-color: transparent;
@@ -13325,20 +13326,26 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
 .btn.xs {
   height: 20px;
   font-size: 60%;
-  padding: 0.5em 1em; }
+  padding: 1px 1em;
+  line-height: 18px; }
 
 .btn.sm {
   height: 30px;
   font-size: 75%;
-  padding: 0.5em 1em; }
+  padding: 5px 1em;
+  line-height: 20px; }
 
 .btn.lg {
   height: 50px;
-  font-size: 120%; }
+  font-size: 120%;
+  padding: 10px 1em;
+  line-height: 30px; }
 
 .btn.xl {
   height: 60px;
-  font-size: 150%; }
+  font-size: 150%;
+  padding: 15px 1em;
+  line-height: 30px; }
 
 .btn.weAreHere {
   border-color: #168187; }
