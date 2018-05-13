@@ -1852,6 +1852,44 @@ progress.xl, meter.xl {
   position: relative;
   transition: opacity 0.3s; }
 
+.cbox h1 {
+  font-size: 1.5em; }
+
+.cbox h2 {
+  font-size: 1.4em; }
+
+.cbox h3 {
+  font-size: 1.3em; }
+
+.cbox h4 {
+  font-size: 1.2em; }
+
+.cbox h5 {
+  font-size: 1.1em; }
+
+.cbox h6 {
+  font-size: 1em; }
+
+.cbox h2, .cbox h3, .cbox h4 {
+  border-bottom: 1px solid #ddd;
+  padding: 0.5em 0;
+  font-weight: bold;
+  transition: 0.3s border-color;
+  color: #777; }
+
+.cbox:hover h2, .cbox:hover h3, .cbox:hover h4 {
+  border-bottom-color: #80c0d0; }
+
+.cbox [class^="sf-"]:before, .cbox [class*=" sf-"]:before {
+  vertical-align: middle;
+  transition-duration: 0.3s;
+  transition-property: opacity, background-color, color;
+  color: #ccc;
+  font-size: 1.3em; }
+
+.cbox:hover [class^="sf-"]:before {
+  color: #777; }
+
 .cbox .example {
   padding: 1em; }
 
@@ -3415,8 +3453,7 @@ img.mini {
 
 .rtl [class^="sf-"]:before,
 .rtl [class*=" sf-"]:before {
-  vertical-align: top;
-  vertical-align: text-top; }
+  vertical-align: top; }
 
 .sf-cash:before {
   content: "\e104"; }
