@@ -19,6 +19,8 @@
 	color:rgba(0,0,0,.5);
 	overflow: hidden;
 	font-size:0.9em;
+	max-width:100%;
+	text-overflow:ellipsis;
 }
 .outline{
 	background-color: transparent;
@@ -64,6 +66,7 @@
 	padding: 15px 1em;
 	line-height:30px;
 }
+.btn.hauto{height:auto;white-space:normal;}
 
 .btn.weAreHere{
 	border-color: #168187;
