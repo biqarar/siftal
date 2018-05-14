@@ -17953,4 +17953,44 @@ svg.barcodePrev {
 body [data-response-hide] {
   display: none !important; }
 
+.superAdmin {
+  position: fixed;
+  top: 55px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  transition: 0.3s;
+  border-radius: 50%;
+  overflow: hidden; }
+
+.superAdmin:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ccc;
+  width: 10px;
+  height: 10px;
+  margin: 10px;
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 0 0 rgba(70, 160, 20, 0.4);
+  animation: pulseOff 1s infinite; }
+
+.superAdmin.public:before {
+  background-color: #20b040;
+  box-shadow: 0 0 0 0 rgba(15, 161, 166, 0.7);
+  animation: pulseOn 1s infinite cubic-bezier(0.66, 0, 0, 1); }
+
+@keyframes pulseOn {
+  to {
+    box-shadow: 0 0 0 1em rgba(232, 76, 61, 0); } }
+@keyframes pulseOff {
+  0% {
+    box-shadow: 0 0 0 0 rgba(70, 160, 20, 0.4); }
+  70% {
+    box-shadow: 0 0 0 1em rgba(70, 160, 20, 0); }
+  100% {
+    box-shadow: 0 0 0 0 rgba(70, 160, 20, 0); } }
+
 /*# sourceMappingURL=siftal.css.map */
