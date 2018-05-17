@@ -101,7 +101,7 @@
 
         if(_super.lockForm)
         {
-          $this.find('input, [contenteditable]').attr('disabled', '');
+          $this.find('input, button, textarea, [contenteditable], [data-ajaxify]').attr('disabled', '');
         }
       }
       else
@@ -182,7 +182,7 @@
         // if(_super.noLoading) return;
         if(_super.lockForm)
         {
-          $('input, [contenteditable], [data-ajaxify]').removeAttr('disabled');
+          $('input, button, textarea, [contenteditable], [data-ajaxify]').removeAttr('disabled');
         }
 
         $('body').removeClass('loading-form');
