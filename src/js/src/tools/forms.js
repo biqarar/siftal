@@ -170,23 +170,21 @@
         }
 
         $form.trigger('ajaxify:success', data, status, xhr);
+        unlockForm(_super.lockForm);
       })
       .fail(function(xhr, status, error)
       {
         $form.trigger('ajaxify:fail', xhr, status, error);
+        unlockForm(_super.lockForm);
       })
       .always(function(a1, a2, a3)
       {
         $form.trigger('ajaxify:complete', a1, a2, a3);
 
         // if(_super.noLoading) return;
-        if(_super.lockForm)
-        {
-          $('input, button, textarea, [contenteditable], [data-ajaxify]').removeAttr('disabled');
-        }
-
-        $('body').removeClass('loading-form');
-        callFunc('loading_form', false);
+        // unlockForm(_super.lockForm);
+        // use in fail and success seperately
+        // because sometimes always is not called!
       });
 
       // logy(ajaxOptions.abort);
@@ -203,6 +201,20 @@
 
     send.call(_super, $form.first());
   };
+
+
+  function unlockForm(_locked)
+  {
+    console.log('unlock form');
+    if(_locked)
+    {
+      $('input, button, textarea, [contenteditable], [data-ajaxify]').removeAttr('disabled');
+    }
+
+   $('body').removeClass('loading-form');
+    callFunc('loading_form', false);
+  }
+
 
   $.fn.ajaxify.showResults = function(data, $form, _super)
   {

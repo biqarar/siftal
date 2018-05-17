@@ -216,14 +216,14 @@ function notifGenerator(_data, $_form)
         {
           (_.isArray(myElementHighlight) ? myElementHighlight : [myElementHighlight]).forEach(function(_e)
           {
-            var $el = $form.find('input[name="' + _e + '"]');
+            var $el = $_form.find('input[name="' + _e + '"]');
             if($el.length === 0)
             {
-              $el = $form.find('select[name="' + _e + '"]');
+              $el = $_form.find('select[name="' + _e + '"]');
             }
             if($el.length === 0)
             {
-              $el = $form.find('textarea[name="' + _e + '"]');
+              $el = $_form.find('textarea[name="' + _e + '"]');
             }
 
             $el.addClass('error');
