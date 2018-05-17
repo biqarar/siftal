@@ -152,7 +152,7 @@
             if(!$barcodeTargetEl.is($focused))
             {
               // if used as default barcode, remove last chart if we are in another input
-              if($focused.is('input') || $focused.is('textarea'))
+              if($focused.length > 0 && $focused.is('input') || $focused.is('textarea'))
               {
                 var tmpPos = $focused[0].selectionStart;
                 var newVal = $focused.val();
@@ -198,7 +198,7 @@
                 break;
             }
           }
-          else
+          else if($focused.length > 0)
           {
             // if we are in another element not barcode and default is not exist
             var tmpPos = $focused[0].selectionStart;
