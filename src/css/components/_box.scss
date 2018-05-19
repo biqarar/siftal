@@ -62,21 +62,14 @@
 .cbox:hover h2, .cbox:hover h3, .cbox:hover h4{
 	border-bottom-color:#80c0d0;
 }
-.cbox [class^="sf-"]:before, .cbox [class*=" sf-"]:before{
-	vertical-align:middle;
-	transition-duration:0.3s;
-	transition-property:opacity, background-color, color;
-	color:#ccc;
-	font-size:1.3em;
-}
-.cbox:hover [class^="sf-"]:before{
-	color:#777;
-}
-.cbox .example{
-	padding: 1em;
-}
+.cbox h2 [class^="sf-"]:before, .cbox h2 [class*=" sf-"]:before{vertical-align:middle;transition-duration:0.3s;transition-property:opacity, background-color, color;color:#ccc;font-size:1.3em;}
+.cbox:hover h2 [class^="sf-"]:before{color:#777;}
+.cbox h3 [class^="sf-"]:before, .cbox h3 [class*=" sf-"]:before{vertical-align:middle;transition-duration:0.3s;transition-property:opacity, background-color, color;color:#ccc;font-size:1.3em;}
+.cbox:hover h3 [class^="sf-"]:before{color:#777;}
+.cbox h4 [class^="sf-"]:before, .cbox h4 [class*=" sf-"]:before{vertical-align:middle;transition-duration:0.3s;transition-property:opacity, background-color, color;color:#ccc;font-size:1.3em;}
+.cbox:hover h4 [class^="sf-"]:before{color:#777;}
 
-
+.cbox .example{padding: 1em;}
 
 .ibox{
 	background-color: #eee;
