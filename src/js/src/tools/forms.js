@@ -127,6 +127,7 @@
       }
 
       var refresh = ajaxOptions.refresh || $this.attr('data-refresh') !== undefined;
+      var autoClose = ajaxOptions.autoClose || $this.attr('data-autoClose') !== undefined;
 
       if(!_super.noLoading)
       {
@@ -144,6 +145,21 @@
         _super.results = data;
 
         $.fn.ajaxify.showResults(data, $this, _super);
+
+        // if need to autoClose tab on some special condition, close windows
+        if(autoClose)
+        {
+          var closeAfter = 0;
+          if($this.attr('data-autoClose'))
+          {
+            closeAfter = $this.attr('data-autoClose');
+          }
+          notif('info', 'Auto close');
+          setTimeout (function()
+          {
+            window.close();
+          }, closeAfter);
+        }
 
         if(data && data.redirect)
         {
@@ -168,6 +184,7 @@
             replace: true
           });
         }
+
 
         $form.trigger('ajaxify:success', data, status, xhr);
         unlockForm(_super.lockForm);
@@ -205,7 +222,6 @@
 
   function unlockForm(_locked)
   {
-    console.log('unlock form');
     if(_locked)
     {
       $('input, button, textarea, [contenteditable], [data-ajaxify]').removeAttr('disabled');
