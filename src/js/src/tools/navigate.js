@@ -128,6 +128,16 @@
       // need more time to check conditions!
     }
 
+    // new check if html is not exist, do hard refresh
+    if(html)
+    {
+      // if html contain doctype or head tag, need to hard refresh
+      if(html.indexOf("<!DOCTYPE html>") === 0 || html.indexOf("<head>") > 0)
+      {
+        location.replace(obj.url);
+      }
+    }
+
     $window.trigger('navigate:render:filter:done', filter);
 
     var $title = $html.find('title');
@@ -173,6 +183,7 @@
       // if page content is not changed, do nothing...
       // logy(10);
       console.log('page is not changed, need hard redirect');
+      // location.replace(obj.url);
     }
     // if we have input with autofocus, set focus to first of it
     else if($('input[autofocus]').length)
