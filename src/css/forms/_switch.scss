@@ -1,4 +1,4 @@
-.switch1{overflow: hidden;margin:10px 0;vertical-align:middle;height:36px;}
+.switch1{overflow: hidden;margin:0 auto;vertical-align:middle;height:36px;}
 .switch1 input{padding:0;margin:0;position:absolute;z-index:-1;width:0;height:0;opacity:0}
 
 .switch1 label{
@@ -9,7 +9,7 @@
 .switch1 label:first-of-type{
   position: relative;
   cursor: pointer;
-  height: 35px;
+  height: 36px;
   width: 80px;
   background: #eee;
   border-radius: 15px;
@@ -53,6 +53,18 @@
   top: 3px;
   left: 3px;
 }
+// disabled style
+.switch1 input.disabled + label:first-of-type{
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.switch1 input:disabled + label:first-of-type{
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 
 // checked status
 .switch1 input:checked + label:first-of-type{
@@ -138,4 +150,7 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
   font-size: 12px;
 }
 
+.switch1.flat label:first-of-type{
+  border-radius: 0;
+}
 
