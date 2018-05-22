@@ -60,7 +60,16 @@ $(document).ready(function()
 
   $(document).on('click', '[data-ajaxify]', function(e)
   {
-    e.preventDefault();
+    if($(this).attr('data-continue') === undefined)
+    {
+      e.preventDefault();
+    }
+    // if need to run special function, run it
+    if($(this).attr('data-fn') !== undefined)
+    {
+      callFunc($(this).attr('data-fn'), false);
+    }
+    // send as ajaxify
     $(this).ajaxify({link: true});
   });
 
