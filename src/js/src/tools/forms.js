@@ -243,7 +243,7 @@
 
     if (!notifResult.error && $form.attr('data-clear') !== undefined)
     {
-      $form.find('input, select, textarea, [contenteditable]').not('[data-unclear]').val('');
+      $form.find('input, select, textarea, [contenteditable]').not('[data-unclear]').not('[type=checkbox]').val('');
     }
 
     $form.trigger('ajaxify:render:clear', data, $form, _super);
