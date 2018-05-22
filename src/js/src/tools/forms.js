@@ -160,6 +160,8 @@
             window.close();
           }, closeAfter);
         }
+        // unlock form
+        unlockForm(_super.lockForm);
 
         if(data && data.redirect)
         {
@@ -187,7 +189,6 @@
 
 
         $form.trigger('ajaxify:success', data, status, xhr);
-        unlockForm(_super.lockForm);
       })
       .fail(function(xhr, status, error)
       {
