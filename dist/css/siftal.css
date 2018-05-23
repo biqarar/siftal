@@ -1321,8 +1321,8 @@ a.badge.danger {
 [class^="sf-"].vlbottom:before {
   vertical-align: bottom; }
 
-.tbl [class^="sf-"]:before {
-  vertical-align: text-bottom; }
+[class^="sf-"].vltop:before {
+  vertical-align: top; }
 
 @-webkit-keyframes spiny {
   from {
@@ -1673,10 +1673,10 @@ progress.xl, meter.xl {
   font-weight: 700;
   overflow: hidden; }
 
-th {
+.tbl th {
   text-align: left; }
 
-.rtl th {
+.rtl .tbl th {
   text-align: right; }
 
 .tbl tfoot th {
@@ -3476,10 +3476,6 @@ img.mini {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   vertical-align: middle; }
-
-.rtl [class^="sf-"]:before,
-.rtl [class*=" sf-"]:before {
-  vertical-align: top; }
 
 .sf-cash:before {
   content: "\e104"; }

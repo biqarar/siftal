@@ -32,12 +32,7 @@
   -moz-osx-font-smoothing: grayscale;
   vertical-align: middle;
 }
-.rtl [class^="sf-"]:before,
-.rtl [class*=" sf-"]:before{
-  vertical-align: top;
-  // vertical-align: text-top;
 
-}
 
 // manaual icons
 .sf-cash:before {

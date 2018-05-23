@@ -2,7 +2,8 @@
 // extra style for icons
 [class^="sf-"].vlmiddle:before{vertical-align:middle;}
 [class^="sf-"].vlbottom:before{vertical-align:bottom;}
-.tbl [class^="sf-"]:before{vertical-align: text-bottom;}
+[class^="sf-"].vltop:before{vertical-align:top;}
+
 
 @-webkit-keyframes spiny {
 		from {
