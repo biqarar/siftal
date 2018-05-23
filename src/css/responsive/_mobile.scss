@@ -79,6 +79,7 @@
   //   -ms-overflow-style:-ms-autohiding-scrollbar;
   // }
 
+  .tbl td.collapsing.sauto, .tbl th.collapsing.sauto{white-space:initial;}
   .tbl.responsive tr{
     width: auto!important;
     display: block!important;

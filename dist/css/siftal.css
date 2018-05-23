@@ -3558,7 +3558,7 @@ img.mini {
   backface-visibility: hidden; }
 
 [data-icon]:before {
-  font-family: "siftal", "tahome" !important;
+  font-family: "siftal", "tahoma" !important;
   content: attr(data-icon);
   font-style: normal !important;
   font-weight: normal !important;
@@ -3571,7 +3571,7 @@ img.mini {
 
 [class^="sf-"]:before,
 [class*=" sf-"]:before {
-  font-family: "siftal" !important;
+  font-family: "siftal","tahoma" !important;
   font-style: normal !important;
   font-weight: normal !important;
   font-variant: normal !important;
@@ -17952,6 +17952,9 @@ body.siftal.loading-page #sidebar .avatar:before {
 
   .siftal #sidebar h2 {
     display: none; }
+
+  .tbl td.collapsing.sauto, .tbl th.collapsing.sauto {
+    white-space: initial; }
 
   .tbl.responsive tr {
     width: auto !important;
