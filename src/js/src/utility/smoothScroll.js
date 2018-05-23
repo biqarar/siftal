@@ -150,6 +150,27 @@ function scrollSmoothTo(_target, _hashtag, _timing, _arg)
 }
 
 
+function scrollSmoothDetector()
+{
+  // run only one time after changing url
+  var hashtag     = $(window.location.hash);
+  var hashtagFake = urlParam('hashtag')? $('#'+ urlParam('hashtag')): '';
+  // handle scroll
+  if(hashtag.length)
+  {
+    // after 0.5s of loading page scroll to specefic area if exist
+    scrollSmooth(hashtag, null, 1000);
+  }
+  else if(hashtagFake.length)
+  {
+    scrollSmooth(hashtagFake, null, 1000);
+  }
+  // else
+  // {
+  //   findPushStateScroll();
+  // }
+}
+
 
 
 

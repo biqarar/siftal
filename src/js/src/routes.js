@@ -24,6 +24,8 @@ route('*', function ()
   weAreHereChecker();
   // run autoList
   fillAuto();
+  // detect id and try to scroll to it
+  scrollSmoothDetector();
   runTippy();
   initTagDetector();
   bindUploader();
