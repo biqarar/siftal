@@ -165,16 +165,6 @@
       $window.trigger('navigate:render:scripts:done');
     }
 
-    $html.sroute(null, true);
-
-    // call pushState function if exist
-    callFunc('pushStateSiftal', true);
-    callFunc('pushState', true);
-
-    if(obj.title) document.title = obj.title;
-    $window.trigger('navigate:render:done');
-
-
     // on navigate if in new page we have autofocus field, set focus to it
     if(!pageContentChanged)
     {
@@ -204,6 +194,20 @@
       // we dont have autofocus input, skip it
       // logy(30);
     }
+    // set page new title if exit
+    if(obj.title)
+    {
+      document.title = obj.title;
+    }
+
+
+    $html.sroute(null, true);
+
+    // call pushState function if exist
+    callFunc('pushStateSiftal', true);
+    callFunc('pushState', true);
+
+    $window.trigger('navigate:render:done');
   }
 
 
