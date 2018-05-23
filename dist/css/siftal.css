@@ -18187,6 +18187,9 @@ body [data-response-hide] {
   right: initial;
   float: left; }
 
+svg g[opacity="0.3"][style][filter] {
+  display: none; }
+
 svg g[opacity="0.4"][style][filter] {
   display: none; }
 
