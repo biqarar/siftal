@@ -50,12 +50,6 @@
  });
 
 
-  function exec(src)
-  {
-    var r = src.slice(src.lastIndexOf('/')+1);
-    $(document).sroute(r);
-  }
-
   function render(obj)
   {
     var focusBeforeChange         = $(':focus');
@@ -172,6 +166,8 @@
     }
 
     $html.sroute(null, true);
+    // call pushState function if exist
+    callFunc('pushState', true);
 
     if(obj.title) document.title = obj.title;
     $window.trigger('navigate:render:done');
