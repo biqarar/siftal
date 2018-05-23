@@ -18029,5 +18029,42 @@ body [data-response-hide] {
     box-shadow: 0 0 0 1em rgba(70, 160, 20, 0); }
   100% {
     box-shadow: 0 0 0 0 rgba(70, 160, 20, 0); } }
+/* xaccess*/
+#xaccess {
+  position: fixed;
+  right: 0;
+  bottom: 10%;
+  z-index: 3;
+  font-size: 1.4em;
+  width: 50px; }
+
+#xaccess a {
+  display: block;
+  background-color: #000;
+  opacity: 0.3;
+  transition: 0.3s;
+  margin-bottom: 0.2em;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  float: right; }
+
+#xaccess a:hover {
+  opacity: 0.8;
+  width: 50px; }
+
+#xaccess [class^="sf-"]:before {
+  vertical-align: middle; }
+
+.rtl #xaccess {
+  left: 0;
+  right: initial; }
+
+.rtl #xaccess a {
+  left: 0;
+  right: initial;
+  float: left; }
 
 /*# sourceMappingURL=siftal.css.map */
