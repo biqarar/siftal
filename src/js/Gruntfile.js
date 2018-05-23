@@ -40,19 +40,24 @@ var myModuleFiles =
 	'src/libs/uploader/uploader.min.js',
 	'src/libs/uploader/uploaderRunner.js',
 	'src/libs/shortkey/shortkey.js',
+	// semantic
 	'src/libs/semantic-ui/api/api.min.js',
 	'src/libs/semantic-ui/transition/transition.min.js',
 	'src/libs/semantic-ui/dropdown/dropdown.min.js',
 	'src/libs/semantic-ui/dropdown/dropdownRunner.js',
 
 
+
 	// tools
 	'src/tools/router.js',
 	'src/tools/navigate.js',
 	'src/tools/forms.js',
-	'src/tools/pushstate.js',
 
 	// use some utitlity
+	'src/utility/fnCaller.js',
+	'src/utility/fitNumber.js',
+	'src/utility/urlParam.js',
+
 	'src/utility/clock.js',
 	'src/utility/input-files.js',
 	'src/utility/language.js',
@@ -61,6 +66,8 @@ var myModuleFiles =
 	'src/utility/enter.js',
 	'src/utility/weAreHere.js',
 	'src/utility/json.js',
+	'src/utility/smoothScroll.js',
+
 
 	'src/main.js',
 	'src/shame.js',
