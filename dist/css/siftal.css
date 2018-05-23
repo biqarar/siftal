@@ -308,11 +308,14 @@ table {
 
 th {
   font-weight: bold;
-  vertical-align: bottom; }
+  vertical-align: middle; }
 
 td {
   font-weight: normal;
-  vertical-align: top; }
+  vertical-align: middle; }
+
+td img {
+  vertical-align: middle; }
 
 hr {
   display: block;
@@ -332,9 +335,6 @@ strong {
   font-weight: inherit;
   font-weight: bolder; }
 
-td, td img {
-  vertical-align: middle; }
-
 /* Make sure sup and sub don't mess with your line-heights http://gist.github.com/413930 */
 sub, sup {
   font-size: 75%;
@@ -346,7 +346,7 @@ sup {
   top: -0.5em; }
 
 sub {
-  bottom: -0.25em; }
+  middle: -0.25em; }
 
 /* standardize any monospaced elements */
 code, samp {
@@ -1650,17 +1650,13 @@ progress.xl, meter.xl {
   margin-bottom: 1em;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0.25rem;
-  text-align: left;
-  color: #777; }
-
-.rtl .tbl {
-  text-align: right; }
+  color: #777;
+  line-height: 1.5em; }
 
 .tbl td, .tbl th {
   padding: 0.7em 0.7em;
   max-width: 600px;
-  text-overflow: ellipsis;
-  vertical-align: middle; }
+  text-overflow: ellipsis; }
 
 .tbl tbody tr > * {
   border-top: 1px solid rgba(30, 30, 30, 0.1); }
@@ -1676,6 +1672,12 @@ progress.xl, meter.xl {
   padding-bottom: 1em;
   font-weight: 700;
   overflow: hidden; }
+
+th {
+  text-align: left; }
+
+.rtl th {
+  text-align: right; }
 
 .tbl tfoot th {
   vertical-align: bottom;

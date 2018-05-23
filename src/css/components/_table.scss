@@ -7,18 +7,14 @@ $tblPadCell: 0.7em 0.7em;
 	margin-bottom: 1em;
 	border:1px solid rgba(0,0,0,0.1);
 	border-radius:0.25rem;
-	text-align: left;
 	color: #777;
-}
-.rtl .tbl{
-	text-align:right;
+	line-height:1.5em;
 }
 
 .tbl td, .tbl th{
 	padding:$tblPadCell;
 	max-width:600px;
 	text-overflow: ellipsis;
-	vertical-align: middle;
 }
 
 .tbl tbody tr > *{
@@ -38,6 +34,14 @@ $tblPadCell: 0.7em 0.7em;
 	font-weight: 700;
 	overflow:hidden;
 }
+
+.tbl th{
+	text-align: left;
+}
+.rtl .tbl th{
+	text-align:right;
+}
+
 .tbl tfoot th{
 	vertical-align: bottom;
 	border-top: 2px solid rgba(30,30,30,.1);
