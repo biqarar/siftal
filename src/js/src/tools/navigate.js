@@ -201,8 +201,6 @@
     }
 
 
-    $html.sroute(null, true);
-
     // call pushState function if exist
     callFunc('pushStateSiftal');
     callFunc('pushState');
