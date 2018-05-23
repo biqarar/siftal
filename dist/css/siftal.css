@@ -1822,10 +1822,14 @@ progress.xl, meter.xl {
 .tbl tr .rowAction {
   margin-top: 0.5em;
   opacity: 0;
-  transition: 0.3s opacity; }
+  transition: 0.3s opacity;
+  user-select: none; }
 
 .tbl tr:hover .rowAction {
   opacity: 1; }
+
+.tbl p {
+  margin: 0; }
 
 .tbox {
   margin: 0.5em 0 1.5em;

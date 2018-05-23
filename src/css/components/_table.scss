@@ -216,8 +216,12 @@ $tblPadCell: 0.7em 0.7em;
 	margin-top:0.5em;
 	opacity:0;
 	transition:0.3s opacity;
+	user-select:none;
 }
 .tbl tr:hover .rowAction{
 	opacity:1;
+}
+.tbl p{
+	margin:0;
 }
 
