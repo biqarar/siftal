@@ -223,18 +223,3 @@ $(document).ready(function()
   });
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

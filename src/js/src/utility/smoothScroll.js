@@ -149,7 +149,7 @@ function scrollSmoothTo(_target, _hashtag, _timing, _arg)
 }
 
 
-function scrollSmoothDetector()
+function scrollSmoothDetector(_direct)
 {
   // run only one time after changing url
   var hashtag     = $(window.location.hash);
@@ -164,10 +164,10 @@ function scrollSmoothDetector()
   {
     scrollSmooth(hashtagFake, null, 1000);
   }
-  // else
-  // {
-  //   findPushStateScroll();
-  // }
+  else if(_direct != true)
+  {
+    findPushStateScroll();
+  }
 }
 
 

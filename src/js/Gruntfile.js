@@ -72,8 +72,7 @@ var myModuleFiles =
 
 
 	'src/main.js',
-	'src/shame.js',
-	'src/routes.js',
+	'src/pushState.js',
 ];
 
 

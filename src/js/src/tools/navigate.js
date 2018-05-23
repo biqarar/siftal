@@ -204,8 +204,8 @@
     $html.sroute(null, true);
 
     // call pushState function if exist
-    callFunc('pushStateSiftal', true);
-    callFunc('pushState', true);
+    callFunc('pushStateSiftal');
+    callFunc('pushState');
 
     $window.trigger('navigate:render:done');
   }

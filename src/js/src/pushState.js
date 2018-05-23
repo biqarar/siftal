@@ -1,9 +1,5 @@
 // on start
-route('*', function ()
-{
-
-
-}).once(function()
+function pushStateSiftal(_direct)
 {
   // run modal
   modalOpenClose();
@@ -26,7 +22,7 @@ route('*', function ()
   // run autoList
   fillAuto();
   // detect id and try to scroll to it
-  scrollSmoothDetector();
+  scrollSmoothDetector(_direct);
   // run watchScroll func to watch all elements
   watchScroll();
   runTippy();
@@ -38,6 +34,11 @@ route('*', function ()
   {
     handleEnterEvents();
   }
+}
+
+
+// run for the first time
+$(document).ready(function()
+{
+  pushStateSiftal(true);
 });
-
-
