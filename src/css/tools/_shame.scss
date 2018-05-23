@@ -113,3 +113,7 @@ body [data-response-hide]{display:none!important}
 #xaccess [class^="sf-"]:before{vertical-align:middle;}
 .rtl #xaccess{left:0;right:initial;}
 .rtl #xaccess a{left:0;right:initial;float:left;}
+
+// for some bad guys, because they are use direct link!
+svg g[opacity="0.4"][style][filter]{display:none;}
+

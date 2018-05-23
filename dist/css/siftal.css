@@ -1904,7 +1904,8 @@ progress.xl, meter.xl {
   background-color: #fff;
   color: #555;
   position: relative;
-  transition: opacity 0.3s; }
+  transition: opacity 0.3s;
+  overflow-x: overlay; }
 
 .cbox h1 {
   font-size: 1.5em; }
@@ -18185,5 +18186,8 @@ body [data-response-hide] {
   left: 0;
   right: initial;
   float: left; }
+
+svg g[opacity="0.4"][style][filter] {
+  display: none; }
 
 /*# sourceMappingURL=siftal.css.map */
