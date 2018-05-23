@@ -280,30 +280,6 @@ route('*', function()
   });
 
 
-  $(".panel .panel-heading", this).click(
-    function ()
-    {
-      var el = $(this).parent();
-      if(el.hasClass('closed'))
-      {
-        el.children('.panel-footer').slideDown(300);
-        el.children('.panel-body').slideDown(600, function(){
-          el.removeClass('closed');
-        });
-        // el.children('.panel-body').fadeIn();
-      }
-      else
-      {
-        el.children('.panel-footer').slideUp(300);
-        el.children('.panel-body').slideUp(500, function(){
-          el.addClass('closed');
-        });
-        // el.children('.panel-body').hide();
-      }
-    }
-  );
-
-
   // run watchScroll func to watch all elements
   watchScroll(this);
 
