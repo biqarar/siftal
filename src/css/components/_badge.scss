@@ -28,6 +28,9 @@
     color: #fff;
   }
 }
+.rtl .badge{
+  padding: 0.25em 0.5em 0.15em;
+}
 
 // Quick fix for badges in buttons
 .btn .badge {

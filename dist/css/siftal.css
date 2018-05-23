@@ -1300,6 +1300,9 @@ a:active {
   .badge:focus {
     color: #fff; }
 
+.rtl .badge {
+  padding: 0.25em 0.5em 0.15em; }
+
 .btn .badge {
   position: relative;
   top: -1px; }
