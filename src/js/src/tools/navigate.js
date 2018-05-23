@@ -204,6 +204,7 @@
     // call pushState function if exist
     callFunc('pushStateSiftal');
     callFunc('pushState');
+    callFunc('pushStateFinal');
 
     $window.trigger('navigate:render:done');
   }

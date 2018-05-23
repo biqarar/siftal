@@ -42,4 +42,5 @@ $(document).ready(function()
 {
   pushStateSiftal(true);
   callFunc('pushState', true);
+  callFunc('pushStateFinal', true);
 });
