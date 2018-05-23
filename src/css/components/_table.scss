@@ -212,5 +212,12 @@ $tblPadCell: 0.7em 0.7em;
 .tbl thead th[data-sort='asc']::after{
 	content:"\59";
 }
-
+.tbl tr .rowAction{
+	margin-top:0.5em;
+	opacity:0;
+	transition:0.3s opacity;
+}
+.tbl tr:hover .rowAction{
+	opacity:1;
+}
 

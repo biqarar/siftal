@@ -1819,6 +1819,14 @@ progress.xl, meter.xl {
 .tbl thead th[data-sort='asc']::after {
   content: "\59"; }
 
+.tbl tr .rowAction {
+  margin-top: 0.5em;
+  opacity: 0;
+  transition: 0.3s opacity; }
+
+.tbl tr:hover .rowAction {
+  opacity: 1; }
+
 .tbox {
   margin: 0.5em 0 1.5em;
   font-size: 1.2em;
