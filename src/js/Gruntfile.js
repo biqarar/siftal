@@ -51,7 +51,6 @@ var myModuleFiles =
 
 
 	// tools
-	'src/tools/router.js',
 	'src/tools/navigate.js',
 	'src/tools/forms.js',
 
