@@ -1904,8 +1904,7 @@ progress.xl, meter.xl {
   background-color: #fff;
   color: #555;
   position: relative;
-  transition: opacity 0.3s;
-  overflow-x: overlay; }
+  transition: opacity 0.3s; }
 
 .cbox h1 {
   font-size: 1.5em; }
