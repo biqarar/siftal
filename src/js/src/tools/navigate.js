@@ -166,7 +166,9 @@
     }
 
     $html.sroute(null, true);
+
     // call pushState function if exist
+    callFunc('pushStateSiftal', true);
     callFunc('pushState', true);
 
     if(obj.title) document.title = obj.title;
