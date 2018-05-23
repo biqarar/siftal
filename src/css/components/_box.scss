@@ -10,7 +10,6 @@
 	background-color: #f7f7f7;
 	color: #444;
 	transition: opacity 0.3s;
-	display: block;
 }
 
 .tbox p{
@@ -31,7 +30,23 @@
 .tbox p .badge{
 	line-height: 1.3;
 }
-
+.tbox .pictogram{
+	font-size:5em;
+	transition:color 0.3s;
+	position:absolute;
+	line-height:50px;
+	top:50%;
+	right:10px;
+	margin-top: -30px;
+	color:#aaa;
+}
+.rtl .tbox .pictogram{
+	right:initial;
+	left:10px;
+}
+.tbox:hover .pictogram{
+	color:#398cd4;
+}
 
 
 .cbox{
