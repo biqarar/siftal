@@ -1673,7 +1673,7 @@ progress.xl, meter.xl {
   display: table-header-group; }
 
 .tbl thead th {
-  vertical-align: bottom;
+  vertical-align: center;
   border-bottom: 2px solid rgba(30, 30, 30, 0.1);
   background-color: rgba(10, 10, 40, 0.1);
   padding-top: 1em;
@@ -1681,14 +1681,14 @@ progress.xl, meter.xl {
   font-weight: 700;
   overflow: hidden; }
 
-.tbl th {
+.tbl.fixAlign th {
   text-align: left; }
 
-.rtl .tbl th {
+.rtl.fixAlign .tbl th {
   text-align: right; }
 
 .tbl tfoot th {
-  vertical-align: bottom;
+  vertical-align: center;
   border-top: 2px solid rgba(30, 30, 30, 0.1);
   background-color: rgba(10, 10, 40, 0.1);
   padding-top: 1em;
@@ -1847,7 +1847,7 @@ progress.xl, meter.xl {
   margin: 0.5em 0 1.5em;
   font-size: 1.2em;
   position: relative;
-  padding: 1em 1.5em;
+  padding: 1em 7em 1em 1.5em;
   border: 1px solid transparent;
   border-radius: 0.25rem;
   line-height: 1.25;
@@ -1856,6 +1856,9 @@ progress.xl, meter.xl {
   color: #444;
   transition: opacity 0.3s;
   user-select: none; }
+
+.rtl .tbox {
+  padding: 1em 1.5em 1em 7em; }
 
 .tbox p {
   color: #777;
@@ -3489,6 +3492,63 @@ img.mini {
 
 .share1 .instagram::after {
   content: "\e045"; }
+
+/* print preview style on screen*/
+@media screen {
+  .printArea {
+    background: #fff;
+    box-shadow: 0 0.5mm 2mm rgba(0, 0, 0, 0.3);
+    margin: 1em auto;
+    overflow: visible;
+    position: relative;
+    box-sizing: border-box;
+    page-break-after: always; }
+
+  .printArea[data-size='A3'] {
+    width: 297mm;
+    height: 419mm; }
+
+  .printArea[data-size='A3.landscape'] {
+    width: 420mm;
+    height: 296mm; }
+
+  .printArea[data-size='A4'] {
+    width: 210mm;
+    height: 296mm; }
+
+  .printArea[data-size='A4.landscape'] {
+    width: 297mm;
+    height: 209mm; }
+
+  .printArea[data-size='A5'] {
+    width: 148mm;
+    height: 209mm; }
+
+  .printArea[data-size='A5.landscape'] {
+    width: 210mm;
+    height: 147mm; }
+
+  .printArea[data-size='letter'] {
+    width: 216mm;
+    height: 279mm; }
+
+  .printArea[data-size='letter.landscape'] {
+    width: 280mm;
+    height: 215mm; }
+
+  .printArea[data-size='legal'] {
+    width: 216mm;
+    height: 356mm; }
+
+  .printArea[data-size='legal.landscape'] {
+    width: 357mm;
+    height: 215mm; }
+
+  .printArea[data-size='receipt8'] {
+    width: 84mm;
+    padding: 18mm 4mm 1mm; } }
+.printArea {
+  -webkit-print-color-adjust: exact; }
 
 [class^="sf-"] {
   display: inline-block;
@@ -12848,7 +12908,13 @@ label + .input {
   width: 100%;
   margin-top: 10px; }
 
-input[type="tel"], input[type="email"], input[type="date"], input[type="number"], input[type="url"] {
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+input[type="url"],
+input[name="email"],
+input[name="website"] {
   direction: ltr; }
 
 /* checkbox type 1*/
@@ -17958,6 +18024,12 @@ body.siftal.loading-page #sidebar .avatar:before {
     display: none; }
 
   .siftal .scr::-webkit-scrollbar {
+    display: none; }
+
+  .superAdmin {
+    display: none; }
+
+  .xaccess {
     display: none; } }
 svg.barcodePrev {
   height: 70px; }

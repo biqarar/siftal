@@ -2,7 +2,7 @@
 	margin: 0.5em 0 1.5em;
 	font-size: 1.2em;
 	position: relative;
-	padding: 1em 1.5em;
+	padding: 1em 7em 1em 1.5em;
 	border: 1px solid transparent;
 	border-radius: 0.25rem;
 	line-height: 1.25;
@@ -12,7 +12,9 @@
 	transition: opacity 0.3s;
 	user-select:none;
 }
-
+.rtl .tbox{
+	padding: 1em 1.5em 1em 7em;
+}
 .tbox p{
 	color: #777;
 	margin-bottom:0;

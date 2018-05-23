@@ -30,7 +30,7 @@ $tblPadCell: 0.7em 0.7em;
 	display: table-header-group;
 }
 .tbl thead th{
-	vertical-align: bottom;
+	vertical-align: center;
 	border-bottom: 2px solid rgba(30,30,30,.1);
 	background-color: rgba(10,10,40,0.1);
 	padding-top: 1em;
@@ -39,15 +39,15 @@ $tblPadCell: 0.7em 0.7em;
 	overflow:hidden;
 }
 
-.tbl th{
+.tbl.fixAlign th{
 	text-align: left;
 }
-.rtl .tbl th{
+.rtl.fixAlign .tbl th{
 	text-align:right;
 }
 
 .tbl tfoot th{
-	vertical-align: bottom;
+	vertical-align: center;
 	border-top: 2px solid rgba(30,30,30,.1);
 	background-color: rgba(10,10,40,0.1);
 	padding-top: 1em;
