@@ -41,4 +41,5 @@ function pushStateSiftal(_direct)
 $(document).ready(function()
 {
   pushStateSiftal(true);
+  callFunc('pushState', true);
 });
