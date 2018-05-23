@@ -1655,7 +1655,8 @@ progress.xl, meter.xl {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0.25rem;
   color: #777;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  -fs-table-paginate: paginate; }
 
 .tbl td, .tbl th {
   padding: 0.7em 0.7em;
@@ -1667,6 +1668,9 @@ progress.xl, meter.xl {
 
 .tbl tr:first-child > * {
   border-top: none; }
+
+.tbl thead {
+  display: table-header-group; }
 
 .tbl thead th {
   vertical-align: bottom;
