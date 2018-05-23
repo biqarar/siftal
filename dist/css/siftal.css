@@ -3558,7 +3558,7 @@ img.mini {
   backface-visibility: hidden; }
 
 [data-icon]:before {
-  font-family: "siftal" !important;
+  font-family: "siftal", "tahome" !important;
   content: attr(data-icon);
   font-style: normal !important;
   font-weight: normal !important;

@@ -7,7 +7,7 @@
 }
 
 [data-icon]:before {
-  font-family: "siftal" !important;
+  font-family: "siftal", "tahoma" !important;
   content: attr(data-icon);
   font-style: normal !important;
   font-weight: normal !important;
@@ -21,7 +21,7 @@
 
 [class^="sf-"]:before,
 [class*=" sf-"]:before {
-  font-family: "siftal" !important;
+  font-family: "siftal","tahoma" !important;
   font-style: normal !important;
   font-weight: normal !important;
   font-variant: normal !important;
