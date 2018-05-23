@@ -1426,7 +1426,8 @@ a.badge.danger {
   -ms-flex-pack: center;
   justify-content: center;
   transition: 0.5s;
-  border: 1px solid rgba(0, 0, 0, 0.1); }
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  user-select: none; }
 
 .pagination a {
   position: relative;
@@ -1829,7 +1830,8 @@ progress.xl, meter.xl {
   opacity: 0.7;
   background-color: #f7f7f7;
   color: #444;
-  transition: opacity 0.3s; }
+  transition: opacity 0.3s;
+  user-select: none; }
 
 .tbox p {
   color: #777;
@@ -15924,11 +15926,9 @@ body .we500 {
 /* main styles */
 body.siftal {
   -webkit-touch-callout: none;
-  -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
   cursor: default;
   display: -webkit-box;
   display: -webkit-flex;
@@ -16052,7 +16052,8 @@ body.siftal .full .middle {
   background-color: #fff;
   overflow: hidden;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
-  z-index: 2; }
+  z-index: 2;
+  user-select: none; }
 
 .siftal header:hover {
   overflow: visible; }
@@ -16189,7 +16190,8 @@ body.siftal .full .middle {
   position: relative;
   background-color: #302b2b;
   transition-duration: 0.3s;
-  transition-property: right, left; }
+  transition-property: right, left;
+  user-select: none; }
 
 .siftal #sidebar figure {
   margin: 4em 0;
@@ -16411,7 +16413,8 @@ body.siftal.loading-page #sidebar .avatar:before {
   flex-shrink: 0;
   background-color: #eaeaea;
   box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2);
-  z-index: 1; }
+  z-index: 1;
+  user-select: none; }
 
 .siftal footer #copyright {
   padding: 0 1em; }
