@@ -82,4 +82,53 @@
 })(this);
 
 
+function modalOpenClose()
+{
+  /* MODALS */
+  // Things to do after closing/opening modal
+  $('.modal').on('close', function(_e, _obj)
+  {
+    var scrollTop = parseInt($('html').css('top'));
+    $('html').removeClass('noscroll');
+    $('html,body').scrollTop(-scrollTop);
+
+    var $this = $(this);
+
+    $this.removeClass('visible');
+
+    $.each($this.data(), function(key)
+    {
+      if(key === 'modal') return;
+      $(this).removeAttr(key);
+    });
+  });
+
+
+  $('.modal').on('open', function()
+  {
+    // fix scroll on opening modal
+    if($(document).height() > $(window).height())
+    {
+      var scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop();
+      $('html').addClass('noscroll').css('top',-scrollTop);
+    }
+
+    $(this).addClass('visible');
+
+    var $send = $('[data-ajaxify]', this);
+
+    if (!$send.length) return;
+
+    $.each($send.data(), function(key)
+    {
+      if(key === 'modal') return;
+
+      $send.removeAttr(key);
+    });
+
+    $send.copyData(this, ['modal']);
+  });
+
+}
+
 

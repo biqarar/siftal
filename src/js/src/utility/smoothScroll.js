@@ -1,13 +1,12 @@
 
 /**
  * [watchScroll description]
- * @param  {[type]} _this [description]
  * @return {[type]}       [description]
  */
-function watchScroll(_this)
+function watchScroll()
 {
   // watch simple links
-  $('a[href*="#"]:not([href="#"])', _this).click(function()
+  $('a[href*="#"]:not([href="#"])').click(function()
   {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname)
     {
@@ -22,7 +21,7 @@ function watchScroll(_this)
     }
   });
 
-  $('[data-scroll-to]', _this).click(function()
+  $('[data-scroll-to]').click(function()
   {
     var hashtag = $(this).attr('data-scroll-to');
     var target  = $('#'+ hashtag);

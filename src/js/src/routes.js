@@ -5,7 +5,8 @@ route('*', function ()
 
 }).once(function()
 {
-
+  // run modal
+  modalOpenClose();
   runDataResponse();
   runInputFileFunc();
   responsiveSidebar();
@@ -26,6 +27,8 @@ route('*', function ()
   fillAuto();
   // detect id and try to scroll to it
   scrollSmoothDetector();
+  // run watchScroll func to watch all elements
+  watchScroll();
   runTippy();
   initTagDetector();
   bindUploader();
