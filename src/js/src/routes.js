@@ -12,6 +12,8 @@ route('*', function ()
   setLanguageURL();
   runCropper();
   runSortable();
+  // run clockpickers
+  runClockPicker();
   // run counter up on each page we have counter
   runCounterUp();
   // run notif from html

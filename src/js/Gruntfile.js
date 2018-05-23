@@ -17,6 +17,8 @@ var myModuleFiles =
 
 	// new lib used in siftal
 	'src/libs/clockpicker/jquery-clockpicker.js',
+	'src/libs/clockpicker/clockpickerRunner.js',
+
 	'src/libs/date/persian-date.js',
 	'src/libs/date/persian-datepicker.js',
 	'src/libs/date/runDatepicker.js',
