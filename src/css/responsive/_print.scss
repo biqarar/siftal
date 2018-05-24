@@ -1,13 +1,31 @@
 /* Design for print */
 @media print {
+  body{
+    width:100% !important;
+    margin:0 !important;
+    padding:0 !important;
+    background: none;
+    color: #000;
+  }
+  h1,h2,h3,h4,h5,h6 {page-break-after:avoid;}
+  thead {display: table-header-group;}
+  tr {page-break-inside:avoid;}
 
-  // for siftl panel
+  // for siftal panel
+  body.siftal{background-color:transparent;}
   .siftal > #sidebar{display:none;}
   .siftal > #main > header{display:none;}
   .siftal > #main > footer{display:none;}
   .siftal .scr::-webkit-scrollbar{display:none;}
+  // some default for dash
   .superAdmin{display:none;}
-  .xaccess{display:none;}
+  #xaccess{display:none;}
+  .iziToast-wrapper{display:none;}
+  video{display:none;}
+  audio{display:none;}
+
+  .p0{display:none;}
+  .pBlock{display:block;}
 
 }
 
