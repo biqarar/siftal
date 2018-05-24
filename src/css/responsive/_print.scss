@@ -6,10 +6,14 @@
     padding:0 !important;
     background: none;
     color: #000;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility
   }
-  h1,h2,h3,h4,h5,h6 {page-break-after:avoid;}
+  h1,h2,h3,h4,h5,h6 {page-break-after:avoid;page-break-inside: avoid;}
   thead {display: table-header-group;}
   tr {page-break-inside:avoid;}
+  textarea {overflow:auto;}
 
   // for siftal panel
   body.siftal{background-color:transparent;}
