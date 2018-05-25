@@ -17,6 +17,7 @@ function dropdownRunner()
       // $.api.settings.cache = false;
       $(this).dropdown(
       {
+        forceSelection: false,
         apiSettings: {url: $(this).attr('data-source'), cache: false}
       });
       return true;
