@@ -33,7 +33,8 @@ span.input{
 	padding: 8px 1em;
 	background-color: #fff;
 	border: $inputBorder;
-	transition: 0.3s;
+	transition-duration:0.3s;
+	transition-property:opacity, background-color, color, border;
 	border-radius: 0.25rem;
 	outline:none;
 	-ms-flex:1 1 auto;
