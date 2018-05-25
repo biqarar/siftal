@@ -375,10 +375,13 @@
   z-index: 10;
 }
 select.ui.dropdown {
-  height: 38px;
+  height: 36px;
   padding: 0.5em;
+  padding:5px 1em;
+  color:rgba(191, 191, 191, 0.87);
   border: 1px solid rgba(34, 36, 38, 0.15);
   visibility: visible;
+  -webkit-appearance: none;
 }
 .ui.selection.dropdown > .search.icon,
 .ui.selection.dropdown > .delete.icon,
@@ -577,7 +580,7 @@ select.ui.dropdown {
   position: relative;
   left: 1px;
   z-index: 3;
-  line-height:25px;
+  line-height:24px;
 }
 
 /* Search Selection */
