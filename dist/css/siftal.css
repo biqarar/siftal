@@ -3555,7 +3555,9 @@ img.mini {
   margin: 0 0.2em;
   min-width: 1.2em;
   text-align: center;
-  backface-visibility: hidden; }
+  backface-visibility: hidden;
+  transition-duration: 0.3s;
+  transition-property: opacity, background-color, color; }
 
 [data-icon]:before {
   font-family: "siftal", "tahoma" !important;

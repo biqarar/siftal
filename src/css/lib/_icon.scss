@@ -4,6 +4,8 @@
   min-width:1.2em;
   text-align:center;
   backface-visibility:hidden;
+  transition-duration:0.3s;
+  transition-property:opacity, background-color, color;
 }
 
 [data-icon]:before {
