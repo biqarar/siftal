@@ -12994,6 +12994,9 @@ input[name="website"] {
   left: 0;
   right: 13px; }
 
+.check1.red input:checked + label::before {
+  background-color: #da4041; }
+
 .switch1 {
   overflow: hidden;
   margin: 0 auto;

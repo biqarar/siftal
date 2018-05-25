@@ -14,6 +14,5 @@
 .rtl .check1 label::before{margin-right:0;margin-left:10px;}
 .rtl .check1 label::after{left:0;right:13px;}
 
-
-
+.check1.red input:checked+label::before{background-color:#da4041}
 
