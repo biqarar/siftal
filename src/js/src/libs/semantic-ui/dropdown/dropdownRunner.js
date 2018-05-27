@@ -3,27 +3,37 @@ function dropdownRunner()
 {
   $('.ui.dropdown').each(function ()
   {
+    var $myDropDown = $(this);
     // allow add new value
-    if($(this).hasClass('addition'))
+    if($myDropDown.hasClass('addition'))
     {
-      $(this).dropdown({allowAdditions: true});
-      console.log($(this));
+      $myDropDown.dropdown({allowAdditions: true});
       return true;
     }
 
     // run with remote source
-    if($(this).attr('data-source') !== undefined)
+    if($myDropDown.attr('data-source') !== undefined)
     {
       // $.api.settings.cache = false;
-      $(this).dropdown(
+      $myDropDown.dropdown(
       {
         forceSelection: false,
-        apiSettings: {url: $(this).attr('data-source'), cache: false}
+        apiSettings:
+        {
+          url: $myDropDown.attr('data-source'),
+          cache: false,
+          // onResponse : function(serverResponse)
+          // {
+          //   $myDropDown.prop('lastData', serverResponse);
+          //   return serverResponse;
+          // }
+        }
+
       });
       return true;
     }
     // run normal dropdown
-    $(this).dropdown();
+    $myDropDown.dropdown();
   });
 }
 
