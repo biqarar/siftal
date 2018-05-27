@@ -246,7 +246,7 @@
 
         if(json && json.debug)
         {
-          notifGenerator(json.debug, $form);
+          notifGenerator(json.debug);
         }
 
         // if(json.getFromCache) {
