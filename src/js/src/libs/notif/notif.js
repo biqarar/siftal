@@ -181,7 +181,10 @@ function notifGenerator(_data, $_form)
       }
 
       // generate new notif
-      notif(recordData.type, recordData.text, recordTitle, delay);
+      if(recordData.text || recordTitle)
+      {
+        notif(recordData.type, recordData.text, recordTitle, delay);
+      }
 
       // set flag of error
       if(recordData.type == 'error')
