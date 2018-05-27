@@ -23,8 +23,8 @@ var myModuleFiles =
 	'src/libs/date/persian-datepicker.js',
 	'src/libs/date/runDatepicker.js',
 
-	'src/libs/cropper/cropper.js',
-	'src/libs/cropper/cropperRunner.js',
+	// 'src/libs/cropper/cropper.js',
+	// 'src/libs/cropper/cropperRunner.js',
 	'src/libs/dataResponse/dataResponse.js',
 	'src/libs/sortable/Sortable.js',
 	'src/libs/sortable/SortableRunner.js',
