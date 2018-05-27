@@ -37,7 +37,7 @@ function dropdownRunner()
       $myDropDown.dropdown(
       {
         forceSelection: false,
-        minCharacters: 1,
+        minCharacters: 2,
         action: function(_text, _value)
         {
           // hide dropdown and clear selected value
