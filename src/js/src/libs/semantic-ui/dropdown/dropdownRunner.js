@@ -36,14 +36,38 @@ function dropdownRunner()
       $myDropDown.dropdown(
       {
         forceSelection: false,
+        action: function(_text, _value)
+        {
+          // hide dropdown and clear selected value
+          $myDropDown.dropdown('hide');
+          $myDropDown.dropdown('clear');
+          // get lastData of server response
+          var lastResponse = $myDropDown.prop('lastData');
+          if(lastResponse && lastResponse.result)
+          {
+            lastResponse = lastResponse.result;
+            $.each(lastResponse, function(index, responseVal)
+            {
+              if(responseVal && responseVal.datalist && responseVal.datalist.id)
+              {
+                if(_value === responseVal.datalist.id)
+                {
+                  // logy(responseVal.datalist);
+                  $("body").trigger("dropdown:selected:datalist", responseVal.datalist);
+                }
+              }
+            });
+          }
+          $("body").trigger("dropdown:selected", _value);
+        },
         apiSettings:
         {
           url: $myDropDown.attr('data-search'),
           cache: false,
-          onResponse : function(serverResponse)
+          onResponse : function(_serverResponse)
           {
-            $myDropDown.prop('lastData', serverResponse);
-            return serverResponse;
+            $myDropDown.prop('lastData', _serverResponse);
+            return _serverResponse;
           }
         }
       });
