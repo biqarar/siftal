@@ -21,6 +21,7 @@ function dropdownRunner()
       $myDropDown.dropdown(
       {
         forceSelection: false,
+        minCharacters: 1,
         apiSettings:
         {
           url: $myDropDown.attr('data-source'),
