@@ -194,9 +194,9 @@ function notifGenerator(_data, $_form)
       if($_form)
       {
         // remove error sign of each element if exist
-        $_form.find('input').removeClass('error');
-        $_form.find('select').removeClass('error');
-        $_form.find('textarea').removeClass('error');
+        $_form.find('input').removeClass(recordData.type);
+        $_form.find('select').removeClass(recordData.type);
+        $_form.find('textarea').removeClass(recordData.type);
 
         // if want to do something with element, get it from result
         if(recordDataMeta)
@@ -229,7 +229,7 @@ function notifGenerator(_data, $_form)
                 $el = $_form.find('textarea[name="' + _e + '"]');
               }
 
-              $el.addClass('error');
+              $el.addClass(recordData.type);
             });
           }
         }
