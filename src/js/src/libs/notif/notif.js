@@ -197,9 +197,9 @@ function notifGenerator(_data, $_form)
       if($_form)
       {
         // remove error sign of each element if exist
-        $_form.find('input').removeClass(recordData.type);
-        $_form.find('select').removeClass(recordData.type);
-        $_form.find('textarea').removeClass(recordData.type);
+        $_form.find('input').removeClass('error warn ok');
+        $_form.find('select').removeClass('error warn ok');
+        $_form.find('textarea').removeClass('error warn ok');
 
         // if want to do something with element, get it from result
         if(recordDataMeta)
