@@ -158,81 +158,85 @@ function notifGenerator(_data, $_form)
     $_form.find('input').removeClass('error warn');
   }
 
-  for(var recordId in _data)
+  if(_data && _data.msg)
   {
-    // get each record data
-    var recordData     = _data[recordId];
-    var recordDataMeta = recordData.meta;
-    var recordTitle    = null;
-    // set delay to show notif
-    var delay          = undefined;
-    if($_form && $_form.attr('data-delay'))
+    _data = _data.msg;
+    for(var recordId in _data)
     {
-      delay = $_form.attr('data-delay');
-    }
-
-    // get title if exist
-    if(recordDataMeta && recordDataMeta.title)
-    {
-      recordTitle = recordDataMeta.title;
-    }
-
-    // generate new notif
-    notif(recordData.type, recordData.text, recordTitle, delay);
-
-    // set flag of error
-    if(recordData.type == 'error')
-    {
-        result.error = true;
-    }
-
-
-    // highlight some field for forms
-    if($_form)
-    {
-      // remove error sign of each element if exist
-      $_form.find('input').removeClass('error');
-      $_form.find('select').removeClass('error');
-      $_form.find('textarea').removeClass('error');
-
-      // if want to do something with element, get it from result
-      if(recordDataMeta)
+      // get each record data
+      var recordData     = _data[recordId];
+      var recordDataMeta = recordData.meta;
+      var recordTitle    = null;
+      // set delay to show notif
+      var delay          = undefined;
+      if($_form && $_form.attr('data-delay'))
       {
-        var myElementHighlight = recordDataMeta.element;
-        if(myElementHighlight)
+        delay = $_form.attr('data-delay');
+      }
+
+      // get title if exist
+      if(recordDataMeta && recordDataMeta.title)
+      {
+        recordTitle = recordDataMeta.title;
+      }
+
+      // generate new notif
+      notif(recordData.type, recordData.text, recordTitle, delay);
+
+      // set flag of error
+      if(recordData.type == 'error')
+      {
+          result.error = true;
+      }
+
+
+      // highlight some field for forms
+      if($_form)
+      {
+        // remove error sign of each element if exist
+        $_form.find('input').removeClass('error');
+        $_form.find('select').removeClass('error');
+        $_form.find('textarea').removeClass('error');
+
+        // if want to do something with element, get it from result
+        if(recordDataMeta)
         {
-          try
+          var myElementHighlight = recordDataMeta.element;
+          if(myElementHighlight)
           {
-            myElementHighlight = JSON.parse(myElementHighlight);
-          } catch(e) {}
+            try
+            {
+              myElementHighlight = JSON.parse(myElementHighlight);
+            } catch(e) {}
 
-        }
-        else if(!_.isArray(recordDataMeta))
-        {
-          myElementHighlight = recordDataMeta;
-        }
-
-        if(myElementHighlight)
-        {
-          (_.isArray(myElementHighlight) ? myElementHighlight : [myElementHighlight]).forEach(function(_e)
+          }
+          else if(!_.isArray(recordDataMeta))
           {
-            var $el = $_form.find('input[name="' + _e + '"]');
-            if($el.length === 0)
-            {
-              $el = $_form.find('select[name="' + _e + '"]');
-            }
-            if($el.length === 0)
-            {
-              $el = $_form.find('textarea[name="' + _e + '"]');
-            }
+            myElementHighlight = recordDataMeta;
+          }
 
-            $el.addClass('error');
-          });
+          if(myElementHighlight)
+          {
+            (_.isArray(myElementHighlight) ? myElementHighlight : [myElementHighlight]).forEach(function(_e)
+            {
+              var $el = $_form.find('input[name="' + _e + '"]');
+              if($el.length === 0)
+              {
+                $el = $_form.find('select[name="' + _e + '"]');
+              }
+              if($el.length === 0)
+              {
+                $el = $_form.find('textarea[name="' + _e + '"]');
+              }
+
+              $el.addClass('error');
+            });
+          }
         }
       }
     }
-
   }
+
   return result;
 }
 

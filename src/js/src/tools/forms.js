@@ -237,7 +237,7 @@
   {
     $form.trigger('ajaxify:render:start', data, $form, _super);
     // try to show notif
-    var notifResult = notifGenerator(data.msg, $form);
+    var notifResult = notifGenerator(data, $form);
 
     $form.trigger('ajaxify:render:done', data, $form, _super);
 

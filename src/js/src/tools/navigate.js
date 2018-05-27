@@ -244,9 +244,9 @@
         n            = n === -1 ? undefined : n;
         json         = JSON.parse(res.slice(0, n));
 
-        if(json && json.debug && json.debug.msg)
+        if(json && json.debug)
         {
-          notifGenerator(json.debug.msg, $form);
+          notifGenerator(json.debug, $form);
         }
 
         // if(json.getFromCache) {
@@ -285,9 +285,9 @@
 
     }).error(function(_result, b, c)
     {
-      if(_result && _result.responseJSON && _result.responseJSON.msg)
+      if(_result && _result.responseJSON)
       {
-        notifGenerator(_result.responseJSON.msg);
+        notifGenerator(_result.responseJSON);
       }
 
       $window.trigger('navigate:fetch:ajax:error', _result, b, c);
