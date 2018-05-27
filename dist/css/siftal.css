@@ -1906,6 +1906,9 @@ progress.xl, meter.xl {
   position: relative;
   transition: opacity 0.3s; }
 
+.cbox .simple {
+  border-bottom-color: transparent; }
+
 .cbox h1 {
   font-size: 1.5em; }
 
@@ -1931,7 +1934,7 @@ progress.xl, meter.xl {
   transition: 0.3s border-color;
   color: #777; }
 
-.cbox:hover h2, .cbox:hover h3, .cbox:hover h4 {
+.cbox h2:hover, .cbox h3:hover, .cbox h4:hover {
   border-bottom-color: #80c0d0; }
 
 .cbox h2 [class^="sf-"]:before, .cbox h2 [class*=" sf-"]:before {
