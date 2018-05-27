@@ -197,7 +197,7 @@ function notifGenerator(_data, $_form)
       if($_form)
       {
         // remove error sign of each element if exist
-        $_form.find('input').removeClass('error warn ok');
+        $_form.find('input').removeClass('error warn ok').parent().removeClass('error warn ok');
         $_form.find('select').removeClass('error warn ok');
         $_form.find('textarea').removeClass('error warn ok');
 
@@ -223,6 +223,11 @@ function notifGenerator(_data, $_form)
             (_.isArray(myElementHighlight) ? myElementHighlight : [myElementHighlight]).forEach(function(_e)
             {
               var $el = $_form.find('input[name="' + _e + '"]');
+              // if parent is .input, highlihgt it
+              if($el.parent().is('.input'))
+              {
+                $el = $el.parent();
+              }
               if($el.length === 0)
               {
                 $el = $_form.find('select[name="' + _e + '"]');

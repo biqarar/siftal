@@ -68,6 +68,7 @@ var myModuleFiles =
 	'src/utility/weAreHere.js',
 	'src/utility/json.js',
 	'src/utility/smoothScroll.js',
+	'src/utility/inputChecker.js',
 
 
 	'src/main.js',

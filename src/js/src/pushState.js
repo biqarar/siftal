@@ -43,4 +43,7 @@ $(document).ready(function()
   pushStateSiftal(true);
   callFunc('pushState', true);
   callFunc('pushStateFinal', true);
+
+  // call some static function without need to run with pushState
+  inputChecker();
 });
