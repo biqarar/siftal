@@ -12,7 +12,7 @@ function inputChecker()
     iCheckURL     += '?' + iThis.attr('name') + '=' + $(this).val();
     checkAjaxRequest = jQuery.ajax(
     {
-      type: 'POST',
+      type: 'GET',
       url: iCheckURL,
       beforeSend : function()
       {
