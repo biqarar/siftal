@@ -7670,7 +7670,8 @@ li.sortable-placeholder {
   width: 100%;
   display: block;
   min-height: 90px;
-  max-height: 600px; }
+  max-height: 600px;
+  user-select: none; }
 
 .chart * {
   font-family: IRANSans, Tahoma, sans-serif !important; }
