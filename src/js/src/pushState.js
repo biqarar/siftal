@@ -18,8 +18,6 @@ function pushStateSiftal(_direct)
   runDatePicker();
   // check here links
   weAreHereChecker();
-  // run autoList
-  fillAuto();
   // detect id and try to scroll to it
   scrollSmoothDetector(_direct);
   // run watchScroll func to watch all elements
