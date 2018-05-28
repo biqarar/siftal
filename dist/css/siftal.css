@@ -16103,8 +16103,10 @@ body.siftal.loading-page #sidebar .avatar:before {
 .siftal #sidebar ul > li > a > i {
   font-size: 1.2em;
   display: inline-block;
-  width: 1.5em;
-  vertical-align: text-bottom; }
+  margin: 0 0.5em 0 0; }
+
+.rtl.siftal #sidebar ul > li > a > i {
+  margin: 0 0 0 0.5em; }
 
 .siftal #sidebar ul > li > a:hover {
   background-color: rgba(0, 0, 0, 0.3); }

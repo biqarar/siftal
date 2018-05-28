@@ -38,7 +38,8 @@ body.siftal.loading-page #sidebar .avatar:before{animation-duration:1s;-webkit-a
 .siftal #sidebar ul > li{color:#d5d5d5;}
 .siftal #sidebar ul > li.title{background-color:#333;padding:0.5em 1em;}
 .siftal #sidebar ul > li > a{display:block;padding:1.2em 1.5em;color:#d5d5d5;transition:background-color 0.3s;cursor:pointer;max-width:300px;margin:0 auto;}
-.siftal #sidebar ul > li > a > i{font-size:1.2em;display:inline-block;width:1.5em;vertical-align:text-bottom;}
+.siftal #sidebar ul > li > a > i{font-size:1.2em;display:inline-block;margin:0 0.5em 0 0 ;}
+.rtl.siftal #sidebar ul > li > a > i{margin:0 0 0 0.5em ;}
 .siftal #sidebar ul > li > a:hover{background-color:rgba(0,0,0,0.3)}
 .siftal #sidebar ul > li > a:focus{background-color:rgba(0,0,0,0.7)}
 .siftal #sidebar ul > li > a:active{background-color:rgba(0,0,0,0.7)}
