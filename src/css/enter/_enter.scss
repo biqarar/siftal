@@ -95,15 +95,16 @@ body.enter.bg15{background-image:url(../images/bg/15.jpg)}
 .enter #eMethods a:hover{opacity:0.8}
 .enter #eMethods a:focus{opacity:0.7}
 .enter #eMethods a svg{width:40px;height:40px;min-width:40px;float:left;margin-right:10px;padding:5px;}
-.enter #eMethods a i{width:40px;height:40px;min-width:40px;float:left;margin-right:10px;font-size:2.5em;}
+.enter #eMethods a i{width:40px;height:40px;min-width:40px;float:left;margin:0 10px 0 0;font-size:2.5em;}
 .enter #eMethods a span{display:block;width:100%;height:100%;font-size:1.2em;}
 .enter #eMethods a abbr{display:none}
 .enter #eMethods a.active{background-color:rgba(0,0,0,0.8);display:none;}
 .enter.rtl #eMethods a svg{float:right;margin-left:10px;margin-right:initial;}
-.enter.rtl #eMethods a i{float:right;margin-left:10px;margin-right:initial;}
+.enter.rtl #eMethods a i{float:right;margin:0 0 0 10px;}
 
 .enter #eMethods #ebgoogle{min-width:150px;}
 .enter #eMethods #ebgoogle svg{background-color:#eee;padding:0}
+.enter #eMethods #ebgoogle i{background-color:#DD4B39;}
 .enter #eMethods #ebmobile{min-width:150px;}
 .enter #eMethods #ebmobile svg{margin:0;}
 .enter #eMethods #ebusername{min-width:170px;}

@@ -12500,7 +12500,7 @@ body.enter.bg15 {
   height: 40px;
   min-width: 40px;
   float: left;
-  margin-right: 10px;
+  margin: 0 10px 0 0;
   font-size: 2.5em; }
 
 .enter #eMethods a span {
@@ -12523,8 +12523,7 @@ body.enter.bg15 {
 
 .enter.rtl #eMethods a i {
   float: right;
-  margin-left: 10px;
-  margin-right: initial; }
+  margin: 0 0 0 10px; }
 
 .enter #eMethods #ebgoogle {
   min-width: 150px; }
@@ -12532,6 +12531,9 @@ body.enter.bg15 {
 .enter #eMethods #ebgoogle svg {
   background-color: #eee;
   padding: 0; }
+
+.enter #eMethods #ebgoogle i {
+  background-color: #DD4B39; }
 
 .enter #eMethods #ebmobile {
   min-width: 150px; }
