@@ -1988,11 +1988,12 @@ progress.xl, meter.xl {
   border-radius: 0.25rem;
   background-color: rgba(255, 255, 255, 0.8);
   color: #555;
-  padding: 1em 1.5em;
+  padding: 10px 1.5em;
   opacity: 0.8;
   transition-duration: 0.3s;
   transition-property: opacity, background-color;
   min-height: 100px;
+  max-height: 100px;
   border: 1px solid transparent;
   position: relative;
   display: -webkit-box;
@@ -2033,21 +2034,31 @@ progress.xl, meter.xl {
 .dcard.x1 {
   height: 100px;
   min-height: 100px;
+  max-height: 100px;
   overflow: hidden; }
 
 .dcard.x2 {
   height: 200px;
   min-height: 200px;
+  max-height: 200px;
   overflow: hidden; }
 
 .dcard.x3 {
   height: 300px;
   min-height: 300px;
+  max-height: 300px;
   overflow: hidden; }
 
 .dcard.x4 {
   height: 400px;
   min-height: 400px;
+  max-height: 400px;
+  overflow: hidden; }
+
+.dcard.x5 {
+  height: 500px;
+  min-height: 500px;
+  max-height: 500px;
   overflow: hidden; }
 
 .dcard .chart {
