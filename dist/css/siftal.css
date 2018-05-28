@@ -16171,28 +16171,6 @@ body.siftal.loading-page #sidebar .avatar:before {
   line-height: 25px;
   height: 25px; }
 
-.siftal .card.chart2 [id*='chartdiv'] {
-  width: 100%;
-  direction: ltr; }
-
-.siftal #chartdiv1 {
-  height: 300px; }
-
-.siftal #chartdiv2 {
-  height: 281px; }
-
-.siftal #chartdiv3 {
-  height: 161px; }
-
-.siftal #chartdiv4 {
-  height: 250px; }
-
-.siftal #chartdiv5 {
-  height: 250px; }
-
-.siftal #chartdiv6 {
-  height: 158px; }
-
 .siftal .card {
   margin: 0 1em 2em;
   padding: 1.5em;
@@ -16233,17 +16211,6 @@ body.siftal.loading-page #sidebar .avatar:before {
 .siftal .card h3 {
   margin: 0;
   cursor: default; }
-
-.siftal .card.chart2 h3:before, .card.list h3:before {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  margin: 0 .5em;
-  content: '';
-  vertical-align: middle;
-  background-image: url(images/chart.svg);
-  background-repeat: no-repeat;
-  background-size: contain; }
 
 .siftal .card.list {
   padding: 0; }
