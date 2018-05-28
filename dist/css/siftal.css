@@ -2028,9 +2028,6 @@ progress.xl, meter.xl {
 .dcard .fc-mute {
   font-weight: 100; }
 
-.dcard [class^="sf-"]:before, .dcard [class*=" sf-"]:before {
-  vertical-align: baseline; }
-
 .dcard.x1 {
   height: 100px;
   min-height: 100px;
