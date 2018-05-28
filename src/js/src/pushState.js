@@ -7,7 +7,6 @@ function pushStateSiftal(_direct)
   runInputFileFunc();
   responsiveSidebar();
   setLanguageURL();
-  runCropper();
   runSortable();
   // run clockpickers
   runClockPicker();
@@ -34,6 +33,9 @@ function pushStateSiftal(_direct)
   {
     handleEnterEvents();
   }
+  callFunc('pushState', _direct);
+  callFunc('pushStateFinal', _direct);
+  callFunc('chart4', _direct);
 }
 
 
@@ -41,8 +43,6 @@ function pushStateSiftal(_direct)
 $(document).ready(function()
 {
   pushStateSiftal(true);
-  callFunc('pushState', true);
-  callFunc('pushStateFinal', true);
 
   // call some static function without need to run with pushState
   inputChecker();
