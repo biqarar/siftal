@@ -2062,24 +2062,16 @@ progress.xl, meter.xl {
   overflow: hidden; }
 
 .dcard .chart {
-  height: 100px;
-  display: block;
-  width: 100%; }
+  height: 100px; }
 
 .dcard.x2 .chart {
-  height: 200px;
-  display: block;
-  width: 100%; }
+  height: 200px; }
 
 .dcard.x3 .chart {
-  height: 300px;
-  display: block;
-  width: 100%; }
+  height: 300px; }
 
 .dcard.x4 .chart {
-  height: 400px;
-  display: block;
-  width: 100%; }
+  height: 400px; }
 
 .dcard .progress {
   margin: 0; }
@@ -7675,14 +7667,13 @@ li.sortable-placeholder {
 
 .chart {
   direction: ltr;
-  height: 290px;
-  width: 100%; }
+  width: 100%;
+  display: block;
+  min-height: 90px;
+  max-height: 600px; }
 
 .chart * {
   font-family: IRANSans, Tahoma, sans-serif !important; }
-
-.chart .amcharts-chart-div > a {
-  display: none !important; }
 
 .rtl .chart {
   text-align: right; }

@@ -1,7 +1,7 @@
 
-.chart{direction:ltr;height:290px;width:100%}
+.chart{direction:ltr;width:100%;display:block;min-height:90px;max-height:600px;}
 .chart *{font-family:IRANSans,Tahoma,sans-serif!important}
-.chart .amcharts-chart-div>a{display:none!important;}
+// .chart .amcharts-chart-div>a{display:none!important;}
 
 .rtl .chart{text-align:right}
 
