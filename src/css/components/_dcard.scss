@@ -32,16 +32,16 @@
 	vertical-align: baseline;
 }
 
-.dcard.x1{height: 90px;overflow: hidden;}
-.dcard.x2{min-height: 190px;overflow: hidden;}
-.dcard.x3{min-height: 290px;overflow: hidden;}
-.dcard.x4{min-height: 390px;overflow: hidden;}
+.dcard.x1{height: 100px;min-height: 100px;overflow: hidden;}
+.dcard.x2{height: 200px;min-height: 200px;overflow: hidden;}
+.dcard.x3{height: 300px;min-height: 300px;overflow: hidden;}
+.dcard.x4{height: 400px;min-height: 400px;overflow: hidden;}
 
 
-.dcard .chart{height:90px;}
-.dcard.x2 .chart{height:190px;}
-.dcard.x3 .chart{height:290px;}
-.dcard.x4 .chart{height:390px;}
+.dcard .chart{height:100px;display:block;width:100%;}
+.dcard.x2 .chart{height:200px;display:block;width:100%;}
+.dcard.x3 .chart{height:300px;display:block;width:100%;}
+.dcard.x4 .chart{height:400px;display:block;width:100%;}
 
 
 .dcard .progress{margin: 0}
