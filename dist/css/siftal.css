@@ -1992,7 +1992,7 @@ progress.xl, meter.xl {
   opacity: 0.8;
   transition-duration: 0.3s;
   transition-property: opacity, background-color;
-  min-height: 90px;
+  min-height: 100px;
   border: 1px solid transparent;
   position: relative;
   display: -webkit-box;
