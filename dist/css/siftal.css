@@ -12492,8 +12492,19 @@ body.enter.bg15 {
   height: 40px;
   min-width: 40px;
   float: left;
-  margin-right: 1em;
+  margin-right: 10px;
   padding: 5px; }
+
+.enter #eMethods a i {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  float: left;
+  margin-right: 10px;
+  font-size: 2.5em; }
+
+.enter #eMethods a i:before {
+  vertical-align: baseline; }
 
 .enter #eMethods a span {
   display: block;
@@ -12510,7 +12521,12 @@ body.enter.bg15 {
 
 .enter.rtl #eMethods a svg {
   float: right;
-  margin-left: 1em;
+  margin-left: 10px;
+  margin-right: initial; }
+
+.enter.rtl #eMethods a i {
+  float: right;
+  margin-left: 10px;
   margin-right: initial; }
 
 .enter #eMethods #ebgoogle {
