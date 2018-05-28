@@ -1854,8 +1854,12 @@ progress.xl, meter.xl {
   opacity: 0.7;
   background-color: #f7f7f7;
   color: #444;
-  transition: opacity 0.3s;
+  transition-duration: 0.3s;
+  transition-property: opacity, background-color, box-shadow, border;
   user-select: none; }
+
+.tbox:hover {
+  border-color: #fff; }
 
 .rtl .tbox {
   padding: 1em 1.5em 1em 7em; }
@@ -1904,7 +1908,8 @@ progress.xl, meter.xl {
   background-color: #fff;
   color: #555;
   position: relative;
-  transition: opacity 0.3s; }
+  transition-duration: 0.3s;
+  transition-property: opacity, background-color, box-shadow, border; }
 
 .cbox .simple {
   border-bottom-color: transparent; }
