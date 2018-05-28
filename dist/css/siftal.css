@@ -1996,6 +1996,7 @@ progress.xl, meter.xl {
   max-height: 100px;
   border: 1px solid transparent;
   position: relative;
+  overflow: hidden;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -3589,7 +3590,9 @@ img.mini {
   speak: none;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: opacity, background-color, color; }
 
 [class^="sf-"]:before,
 [class*=" sf-"]:before {
@@ -3602,7 +3605,9 @@ img.mini {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  vertical-align: middle; }
+  vertical-align: middle;
+  transition-duration: 0.3s;
+  transition-property: opacity, background-color, color; }
 
 .sf-cash:before {
   content: "\e104"; }

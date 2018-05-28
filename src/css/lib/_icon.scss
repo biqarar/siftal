@@ -19,6 +19,8 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition-duration:0.3s;
+  transition-property:opacity, background-color, color;
 }
 
 [class^="sf-"]:before,
@@ -33,6 +35,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   vertical-align: middle;
+  transition-duration:0.3s;
+  transition-property:opacity, background-color, color;
 }
 
 
