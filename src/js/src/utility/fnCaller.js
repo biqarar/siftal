@@ -13,7 +13,14 @@ function callFunc(_funcName, _arg, _onlyCheckExist)
     isExist = true;
     if(!_onlyCheckExist)
     {
-      window[_funcName](_arg);
+      try
+      {
+        window[_funcName](_arg);
+      }
+      catch(err)
+      {
+        console.error(err.message);
+      }
     }
   }
   return isExist;
