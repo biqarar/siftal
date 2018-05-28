@@ -3575,7 +3575,7 @@ img.mini {
 
 [class^="sf-"] {
   display: inline-block;
-  margin: 0 0.2em;
+  margin: 0;
   min-width: 1.2em;
   text-align: center;
   backface-visibility: hidden;
