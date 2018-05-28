@@ -17,9 +17,9 @@ function callFunc(_funcName, _arg, _onlyCheckExist)
       {
         window[_funcName](_arg);
       }
-      catch(err)
+      catch(_err)
       {
-        console.error(err.message);
+        // console.error(_err.message);
       }
     }
   }

@@ -4,6 +4,18 @@ function dropdownRunner()
   $('.ui.dropdown').each(function ()
   {
     var $myDropDown = $(this);
+    setTimeout(function()
+    {
+      if($myDropDown.attr('autofocus') !== undefined)
+      {
+        var searchEl = $myDropDown.parents('.ui.dropdown').find('.search');
+        if(searchEl)
+        {
+          searchEl.focus();
+        }
+      }
+    }, 100);
+
     // allow add new value
     if($myDropDown.hasClass('addition'))
     {
