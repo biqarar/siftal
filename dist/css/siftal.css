@@ -12491,14 +12491,6 @@ body.enter.bg15 {
 .enter #eMethods a:focus {
   opacity: 0.7; }
 
-.enter #eMethods a svg {
-  width: 40px;
-  height: 40px;
-  min-width: 40px;
-  float: left;
-  margin-right: 10px;
-  padding: 5px; }
-
 .enter #eMethods a i {
   width: 40px;
   height: 40px;
@@ -12513,20 +12505,12 @@ body.enter.bg15 {
   height: 100%;
   font-size: 1.2em; }
 
-.enter #eMethods a span::before {
-  vertical-align: -webkit-baseline-middle; }
-
 .enter #eMethods a abbr {
   display: none; }
 
 .enter #eMethods a.active {
   background-color: rgba(0, 0, 0, 0.8);
   display: none; }
-
-.enter.rtl #eMethods a svg {
-  float: right;
-  margin-left: 10px;
-  margin-right: initial; }
 
 .enter.rtl #eMethods a i {
   float: right;
@@ -12535,12 +12519,9 @@ body.enter.bg15 {
 .enter #eMethods #ebgoogle {
   min-width: 150px; }
 
-.enter #eMethods #ebgoogle svg {
-  background-color: #eee;
-  padding: 0; }
-
 .enter #eMethods #ebgoogle i {
-  background-color: #DD4B39; }
+  background-color: #DD4B39;
+  padding-top: 3px; }
 
 .enter #eMethods #ebmobile {
   min-width: 150px; }
