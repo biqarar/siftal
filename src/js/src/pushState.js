@@ -35,7 +35,7 @@ function pushStateSiftal(_direct)
   }
   callFunc('pushState', _direct);
   callFunc('pushStateFinal', _direct);
-  callFunc('chart4', _direct);
+  callFunc('chartDrawer', _direct);
 }
 
 
