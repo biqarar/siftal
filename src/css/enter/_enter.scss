@@ -62,6 +62,7 @@ body.enter.bg15{background-image:url(../images/bg/15.jpg)}
 .enter form .flex.hide{display:none!important;}
 .enter form .flex label{padding:0;border:none;direction:ltr;min-width:50px;width:50px;background-color:rgba(0,0,0,0.2);color:#ddd;transition:0.3s;cursor:pointer;text-align:center;font-size:0.8em;line-height:50px;}
 .enter form .flex label:hover{background-color:rgba(0,0,0,0.3);}
+.enter form .flex label i{margin:0;display:block;}
 .enter form .flex input{padding:0 1em;line-height:50px;border:none;direction:ltr;width:100%;background-color:rgba(0,0,0,0.1);color:#eee;transition:0.3s;font-weight:100;}
 .enter form .flex input:disabled{opacity:0.8}
 .enter form .flex input:hover{background-color:rgba(0,0,0,0.15);}
@@ -71,10 +72,20 @@ body.enter.bg15{background-image:url(../images/bg/15.jpg)}
 .enter label{padding:1em 0;display:block;font-size:0.8em;}
 .enter form textarea{min-height:3em;padding:1em;line-height:2em;background-color:rgba(0,0,0,0.1);color:#eee;font-size:0.8em}
 /* custom style for some inputs*/
-.enter form #emobile label{padding:10px 0}
-.enter form #eramz label, .enter form #eramzNew label{font-size:2em;line-height:1.9em}
-.enter form #eramz input[type="text"], .enter form #eramzNew input[type="text"]{font-size:0.5em;}
-.enter form #eusername label{padding:10px 0}
+.enter form #emobile label{
+	font-size:2em;
+	line-height:50px;
+}
+.enter form #eramz label,
+.enter form #eramzNew label,
+.enter form #displaynameBox label,
+.enter form #eramz input[type="text"],
+.enter form #eusername label,
+.enter form #eramzNew input[type="text"]{
+	font-size:1.5em;
+	line-height:50px;
+}
+
 .enter form #email, .enter form #emailNew{font-size:0.8em;}
 
 /* change style of autocomplete*/
@@ -97,6 +108,7 @@ body.enter.bg15{background-image:url(../images/bg/15.jpg)}
 .enter #eMethods a svg{width:40px;height:40px;min-width:40px;float:left;margin-right:10px;padding:5px;}
 .enter #eMethods a i{width:40px;height:40px;min-width:40px;float:left;margin:0 10px 0 0;font-size:2.5em;}
 .enter #eMethods a span{display:block;width:100%;height:100%;font-size:1.2em;}
+.enter #eMethods a span::before{vertical-align:-webkit-baseline-middle}
 .enter #eMethods a abbr{display:none}
 .enter #eMethods a.active{background-color:rgba(0,0,0,0.8);display:none;}
 .enter.rtl #eMethods a svg{float:right;margin-left:10px;margin-right:initial;}

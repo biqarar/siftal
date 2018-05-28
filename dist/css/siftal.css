@@ -12365,6 +12365,10 @@ body.enter.bg15 {
 .enter form .flex label:hover {
   background-color: rgba(0, 0, 0, 0.3); }
 
+.enter form .flex label i {
+  margin: 0;
+  display: block; }
+
 .enter form .flex input {
   padding: 0 1em;
   line-height: 50px;
@@ -12406,17 +12410,17 @@ body.enter.bg15 {
 
 /* custom style for some inputs*/
 .enter form #emobile label {
-  padding: 10px 0; }
-
-.enter form #eramz label, .enter form #eramzNew label {
   font-size: 2em;
-  line-height: 1.9em; }
+  line-height: 50px; }
 
-.enter form #eramz input[type="text"], .enter form #eramzNew input[type="text"] {
-  font-size: 0.5em; }
-
-.enter form #eusername label {
-  padding: 10px 0; }
+.enter form #eramz label,
+.enter form #eramzNew label,
+.enter form #displaynameBox label,
+.enter form #eramz input[type="text"],
+.enter form #eusername label,
+.enter form #eramzNew input[type="text"] {
+  font-size: 1.5em;
+  line-height: 50px; }
 
 .enter form #email, .enter form #emailNew {
   font-size: 0.8em; }
@@ -12508,6 +12512,9 @@ body.enter.bg15 {
   width: 100%;
   height: 100%;
   font-size: 1.2em; }
+
+.enter #eMethods a span::before {
+  vertical-align: -webkit-baseline-middle; }
 
 .enter #eMethods a abbr {
   display: none; }
