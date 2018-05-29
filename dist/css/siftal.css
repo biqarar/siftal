@@ -3572,7 +3572,6 @@ img.mini {
   -webkit-print-color-adjust: exact; }
 
 [class^="sf-"] {
-  display: inline-block;
   margin: 0;
   min-width: 1.2em;
   text-align: center;
@@ -7236,6 +7235,9 @@ li.sortable-placeholder {
 
 .chart * {
   font-family: IRANSans, Tahoma, sans-serif !important; }
+
+.chart .amcharts-chart-div > a {
+  display: none !important; }
 
 .rtl .chart {
   text-align: right; }
