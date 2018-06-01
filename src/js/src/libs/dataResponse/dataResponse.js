@@ -13,6 +13,7 @@ function runDataResponse()
 	$(document).on('change', 'input:not([data-response-realtime]), select', function()
 	{
 		checkInputResponse(this, false);
+		checkCheckboxResponse(this, false)
 	});
 	// add data-response-realtime to run realtime on input type
 	$(document).on('input', 'input[data-response-realtime]', function()
@@ -54,6 +55,27 @@ function getInputValue(_el)
 	}
 
 	return elValue;
+}
+
+
+/**
+ * check requirement of checkboxes
+ * V1.2
+ * @param  {[type]} _this      [description]
+ * @param  {[type]} _firstTime [description]
+ * @return {[type]}            [description]
+ */
+function checkCheckboxResponse(_this, _firstTime)
+{
+	var myRequire = $(_this).attr('data-require');
+	if($(_this).is(":checked") === true && myRequire)
+	{
+		myRequire = myRequire.split('|');
+		$.each(myRequire, function(index, val)
+		{
+			$('#'+ val).prop('checked', true);
+		});
+	}
 }
 
 
