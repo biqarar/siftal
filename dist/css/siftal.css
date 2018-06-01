@@ -12601,6 +12601,9 @@ input[name="website"] {
   vertical-align: middle;
   height: 36px; }
 
+.f > .switch1 {
+  margin: 0 0 5px 0; }
+
 .switch1 input {
   padding: 0;
   margin: 0;
