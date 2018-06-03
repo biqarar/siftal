@@ -9862,7 +9862,8 @@ body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-anima
   -webkit-transition: width 0.1s ease, -webkit-box-shadow 0.1s ease;
   transition: width 0.1s ease, -webkit-box-shadow 0.1s ease;
   transition: box-shadow 0.1s ease, width 0.1s ease;
-  transition: box-shadow 0.1s ease, width 0.1s ease, -webkit-box-shadow 0.1s ease; }
+  transition: box-shadow 0.1s ease, width 0.1s ease, -webkit-box-shadow 0.1s ease;
+  transition: box-shadow 0.1s ease, width 0.1s ease, -webkit-box-shadow 0.1s ease, border 0.3s; }
 
 .ui.selection.dropdown.visible,
 .ui.selection.dropdown.active {
@@ -10047,7 +10048,8 @@ select.ui.dropdown {
   position: relative;
   left: 1px;
   z-index: 3;
-  line-height: 24px; }
+  line-height: 24px;
+  transition: 0.3s color; }
 
 /* Search Selection */
 .ui.search.selection.dropdown > input.search {
@@ -10212,7 +10214,7 @@ select.ui.dropdown {
 ----------------------*/
 /* Menu Item Hover */
 .ui.dropdown .menu > .item:hover {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.1);
   color: rgba(0, 0, 0, 0.95);
   z-index: 13; }
 
