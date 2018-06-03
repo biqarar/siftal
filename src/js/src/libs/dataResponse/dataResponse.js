@@ -218,6 +218,23 @@ function checkInputResponse(_this, _firstTime)
 					where = false;
 				}
 			}
+			else if(whereNot)
+			{
+				// for each sentence in whereNot seperated by |
+				$.each(whereNot.split('|'), function(index, whereNotValue)
+				{
+					// if where is okay
+					if(whereNotValue !== elValue.toString())
+					{
+						where = true;
+					}
+				});
+				// if where is not true set it as false
+				if(where !== true)
+				{
+					where = false;
+				}
+			}
 			else
 			{
 				if(elValue != false)
