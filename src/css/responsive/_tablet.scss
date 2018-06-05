@@ -50,10 +50,9 @@
 
 
   // custom style for another part of siftal
-  .siftal #sidebar {display:block;position:fixed;top:0;bottom:0;overflow-y:auto;z-index:3;left:-250px;}
+  .siftal #sidebar {display:block;position:fixed;top:0;bottom:0;z-index:3;left:-250px;}
   .siftal.rtl #sidebar{right:-250px;left:initial;}
   .siftal #sidebar figure{margin:2em 0;}
-  .siftal #sidebar h2{display:none;}
 
 
   // padding and margin

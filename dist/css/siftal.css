@@ -16040,7 +16040,6 @@ body.siftal.rtl[data-sidebar] #sidebar {
   position: fixed;
   top: 0;
   bottom: 0;
-  overflow-y: auto;
   z-index: 3;
   left: -250px; }
 
@@ -17216,7 +17215,6 @@ body.siftal.loading-page #sidebar .avatar:before {
     position: fixed;
     top: 0;
     bottom: 0;
-    overflow-y: auto;
     z-index: 3;
     left: -250px; }
 
@@ -17226,9 +17224,6 @@ body.siftal.loading-page #sidebar .avatar:before {
 
   .siftal #sidebar figure {
     margin: 2em 0; }
-
-  .siftal #sidebar h2 {
-    display: none; }
 
   .mp0 {
     padding: 0; }
