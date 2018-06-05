@@ -17610,7 +17610,6 @@ body.siftal.loading-page #sidebar .avatar:before {
     position: fixed;
     top: 0;
     bottom: 0;
-    overflow-y: auto;
     z-index: 3;
     left: -250px; }
 
@@ -17623,9 +17622,6 @@ body.siftal.loading-page #sidebar .avatar:before {
 
   .siftal #sidebar ul > li > a {
     padding: 1.2em 2em; }
-
-  .siftal #sidebar h2 {
-    display: none; }
 
   .tbl td.collapsing.sauto, .tbl th.collapsing.sauto {
     white-space: initial; }
