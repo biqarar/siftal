@@ -7609,7 +7609,8 @@ li.sortable-placeholder {
   z-index: 9999;
   outline: 0;
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-  pointer-events: none; }
+  pointer-events: none;
+  line-height: 1.5; }
 
 .tippy-popper[data-html] {
   max-width: 96%;
@@ -16179,7 +16180,8 @@ body.siftal.loading-page #sidebar .avatar:before {
   display: block;
   vertical-align: middle;
   overflow: hidden;
-  transition: 0.3s; }
+  transition: 0.3s;
+  padding: 2px; }
 
 .siftal #ermile img:hover {
   background-color: #fff; }

@@ -1,6 +1,6 @@
 .tippy-touch{cursor:pointer!important}
 .tippy-notransition{transition:none!important}
-.tippy-popper{max-width:350px;-webkit-perspective:700px;perspective:700px;z-index:9999;outline:0;transition-timing-function:cubic-bezier(.165,.84,.44,1);pointer-events:none}
+.tippy-popper{max-width:350px;-webkit-perspective:700px;perspective:700px;z-index:9999;outline:0;transition-timing-function:cubic-bezier(.165,.84,.44,1);pointer-events:none;line-height:1.5}
 .tippy-popper[data-html]{max-width:96%;max-width:calc(100% - 20px)}
 .tippy-popper[x-placement^=top] .tippy-backdrop{border-radius:40% 40% 0 0}
 .tippy-popper[x-placement^=top] .tippy-roundarrow{width:23px;height:23px;fill:#333;bottom:-15px;margin:0 6px}
