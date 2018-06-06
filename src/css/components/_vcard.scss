@@ -121,6 +121,9 @@
 	-ms-flex-positive:0;
 	flex-grow:0;
 }
+.vcard .footer:empty{
+	padding:0;
+}
 .vcard .footer.pAn .btn{
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;

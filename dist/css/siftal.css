@@ -2220,6 +2220,9 @@ progress.xl, meter.xl {
   -ms-flex-positive: 0;
   flex-grow: 0; }
 
+.vcard .footer:empty {
+  padding: 0; }
+
 .vcard .footer.pAn .btn {
   border-top-left-radius: 0;
   border-top-right-radius: 0; }
@@ -17259,7 +17262,7 @@ body.siftal.loading-page #sidebar .avatar:before {
     -moz-box-flex: 0;
     flex: 0 0 auto;
     width: auto;
-    max-width: initial;
+    max-width: 100%;
     display: flex !important; }
 
   .s0 {
