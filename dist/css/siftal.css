@@ -1252,6 +1252,9 @@ a:active {
   background-color: #f7f7f7;
   color: #333; }
 
+.msg:empty {
+  display: none; }
+
 .msg .title {
   font-size: 120%;
   font-weight: bold; }
@@ -17688,6 +17691,10 @@ body.siftal.loading-page #sidebar .avatar:before {
     display: none !important; } }
 /* Design for print */
 @media print {
+  html {
+    height: auto;
+    min-height: initial; }
+
   body {
     width: 100% !important;
     margin: 0 !important;

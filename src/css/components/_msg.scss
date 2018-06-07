@@ -25,6 +25,9 @@
   background-color:#f7f7f7;
   color: #333;
 }
+.msg:empty{
+  display:none
+}
 
 .msg .title{
   font-size:120%;
