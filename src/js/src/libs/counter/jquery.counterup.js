@@ -15,8 +15,8 @@
     // Defaults
     var settings = $.extend(
     {
-        'time': 400,
-        'delay': 10
+        'time': 10000,
+        'delay': 50
     }, options);
 
     return this.each(function()
@@ -29,7 +29,6 @@
         var counterUpper = function()
         {
             var nums          = [];
-            var divisions     = $settings.time / $settings.delay;
             var num           = $this.text();
             if($this.attr('data-counter'))
             {
@@ -45,6 +44,7 @@
             var isInt         = /^[0-9]+$/.test(num);
             var isFloat       = /^[0-9]+\.[0-9]+$/.test(num);
             var decimalPlaces = isFloat ? (num.split('.')[1] || []).length : 0;
+            var divisions     = $settings.time / $settings.delay;
 
             // Generate list of incremental numbers to display
             for (var i = divisions; i >= 1; i--)

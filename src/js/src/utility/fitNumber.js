@@ -28,6 +28,10 @@ function fitNumber(_num, _seperator)
   {
     _num = _num.toFarsi();
   }
+  else if($('html').attr('lang') === 'ar')
+  {
+    _num = _num.toArabic();
+  }
   else
   {
     _num = _num.toEnglish();

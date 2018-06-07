@@ -43,7 +43,14 @@
   String.prototype.toEnglish = function() {
     var result = this.split('').map(function(a) {
       var code = a.charCodeAt(0);
-      if(code > 1785 || code < 1776) return a;
+      if(code > 1785 || code < 1776)
+      {
+        if(code > 1641 || code < 1632)
+        {
+          return a;
+        }
+        return String.fromCharCode(code-1584);
+      }
 
       return String.fromCharCode(code-1728);
     }).join('');
@@ -60,6 +67,15 @@
     return result;
   };
 
+  String.prototype.toArabic = function() {
+    var result = this.split('').map(function(a) {
+      var code = a.charCodeAt(0);
+      if(code > 57 || code < 48) return a;
+
+      return String.fromCharCode(code+1584);
+    }).join('');
+    return result;
+  };
 
   // Find the right method, call on correct element
   function launchFullscreen(element) {
