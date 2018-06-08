@@ -17630,6 +17630,22 @@ body.siftal.loading-page #sidebar .avatar:before {
     margin: 0.5em 0;
     padding: 0; }
 
+  .siftal #sidebar figure .avatar {
+    display: inline-block;
+    vertical-align: middle;
+    width: 75px;
+    height: 75px;
+    margin: 1em; }
+
+  .siftal #sidebar figure figcaption {
+    display: inline-block;
+    max-width: 140px;
+    line-height: 1.5;
+    vertical-align: middle; }
+
+  .siftal #sidebar figure .avatar:after {
+    line-height: 70px; }
+
   .siftal #sidebar ul > li > a {
     padding: 1.2em 2em; }
 
