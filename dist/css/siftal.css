@@ -15810,7 +15810,6 @@ body.siftal .full .middle {
   background-color: #fff;
   overflow: hidden;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
-  z-index: 2;
   user-select: none; }
 
 .siftal header:hover {
@@ -17237,6 +17236,9 @@ body.siftal.loading-page #sidebar .avatar:before {
   .siftal #sidebar figure {
     margin: 2em 0; }
 
+  .siftal .toggleClean {
+    display: none; }
+
   .mp0 {
     padding: 0; }
 
@@ -17629,6 +17631,9 @@ body.siftal.loading-page #sidebar .avatar:before {
 
   .siftal #sidebar ul > li > a {
     padding: 1.2em 2em; }
+
+  .siftal .toggleClean {
+    display: none; }
 
   .tbl td.collapsing.sauto, .tbl th.collapsing.sauto {
     white-space: initial; }
