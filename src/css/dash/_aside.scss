@@ -1,7 +1,7 @@
 
 /* sidebar */
 .siftal #sidebar{overflow:hidden;width:250px;height:100%;position:relative;background-color:#302b2b;transition-duration:0.3s;transition-property:right, left;user-select:none;padding-bottom:80px}
-.siftal #sidebar .scr{overflow:hidden;overflow-y:auto;height:calc(100vh - 70px);}
+.siftal #sidebar .scr{overflow:hidden;overflow-y:auto;height:80%;height:calc(100vh - 70px);}
 .siftal #sidebar figure{padding:4em 0;text-align:center;color:#ddd}
 .siftal #sidebar figure .avatar{position:relative;width:100px;margin:1em auto;display:block;height:100px;}
 .siftal #sidebar figure .avatar:before{position:absolute;top:0;right:0;bottom:0;left:0;content:'';transition:.3s;border:2px solid transparent;border-color:transparent #888;border-radius:50%}
