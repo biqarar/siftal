@@ -17627,7 +17627,8 @@ body.siftal.loading-page #sidebar .avatar:before {
     left: initial; }
 
   .siftal #sidebar figure {
-    margin: 2em 0; }
+    margin: 0.5em 0;
+    padding: 0; }
 
   .siftal #sidebar ul > li > a {
     padding: 1.2em 2em; }
