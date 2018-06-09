@@ -7354,6 +7354,9 @@ li.sortable-placeholder {
 .spay-256-payir {
   background-position: -512px -1536px; }
 
+.spay-256-resalat {
+  background-position: -768px -1536px; }
+
 [class^="spay-128-"] {
   background: url("../images/spay/spay128.png") no-repeat;
   display: inline-block;
@@ -7455,10 +7458,13 @@ li.sortable-placeholder {
   background-position: 0 -786px; }
 
 .spay-128-zarinpal {
-  background-position: -64px -786px; }
+  background-position: -128px -786px; }
 
 .spay-128-payir {
-  background-position: -128px -786px; }
+  background-position: -256px -786px; }
+
+.spay-128-resalat {
+  background-position: -384px -786px; }
 
 [class^="spay-64-"] {
   background: url("../images/spay/spay64.png") no-repeat;
@@ -7565,6 +7571,9 @@ li.sortable-placeholder {
 
 .spay-64-payir {
   background-position: -128px -384px; }
+
+.spay-64-resalat {
+  background-position: -192px -384px; }
 
 .tagDetector .tagBox {
   display: -webkit-box;
