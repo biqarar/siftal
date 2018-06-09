@@ -15830,6 +15830,9 @@ body.siftal .full .middle {
   font-size: 1.2em;
   cursor: pointer !important; }
 
+.siftal header #sidenavHandler:hover {
+  background-color: rgba(0, 0, 0, 0.2); }
+
 .siftal header #sidenavHandler i {
   width: 100%;
   padding: 0; }
@@ -17260,7 +17263,8 @@ body.siftal.loading-page #sidebar .avatar:before {
 
   .cn {
     min-width: 290px;
-    max-width: 750px; }
+    max-width: 750px;
+    width: 96%; }
 
   .f > .s {
     -webkit-flex-basis: 0;
