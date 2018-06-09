@@ -5,12 +5,20 @@
  */
 function responsiveSidebar()
 {
-  $('#main').on('click', function(_e)
+  $('body').on('click', function(_e)
   {
     if($(_e.target).parents('#sidenavHandler').length)
     {
       // click on hanlder, do nothing!
       $("body").attr('data-sidebar', 'dada');
+    }
+    else if($(_e.target).parents('#sidebar').length)
+    {
+      // do nothing because clicked on sidebar
+    }
+    else if($(_e.target).is('#sidebar'))
+    {
+      // do nothing because clicked on sidebar
     }
     else if($('body').attr('data-sidebar') === undefined)
     {
