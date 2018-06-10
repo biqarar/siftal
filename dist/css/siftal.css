@@ -1846,6 +1846,9 @@ progress.xl, meter.xl {
 .tbl p {
   margin: 0; }
 
+.tbl [class^="sf-"] {
+  display: inline-block; }
+
 .tbox {
   margin: 0.5em 0 1.5em;
   font-size: 1.2em;
