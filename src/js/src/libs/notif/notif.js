@@ -83,6 +83,16 @@ function notif(_type, _msg, _title, _timeout, _opt)
     {
       notifOpt.theme = _opt.theme;
     }
+    // add iconcolor
+    if(_opt.iconColor)
+    {
+      notifOpt.iconColor = _opt.iconColor;
+    }
+    // add iconcolor
+    if(_opt.timeout && Number.isInteger(_opt.timeout))
+    {
+      notifOpt.timeout = _opt.timeout;
+    }
   }
 
   // change some default options
@@ -183,7 +193,7 @@ function notifGenerator(_data, $_form)
       // generate new notif
       if(recordData.text || recordTitle)
       {
-        notif(recordData.type, recordData.text, recordTitle, delay);
+        notif(recordData.type, recordData.text, recordTitle, delay, recordDataMeta);
       }
 
       // set flag of error
