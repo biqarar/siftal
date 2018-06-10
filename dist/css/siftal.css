@@ -12859,8 +12859,11 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
 
 /* radio type 2*/
 .radio2 {
-  background-color: #eee;
+  background-color: #f7f7f7;
   border-radius: 3px; }
+
+.radio2 label[for] {
+  cursor: pointer; }
 
 .radio2 input[type="radio"] {
   padding: 0;
@@ -12873,19 +12876,18 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
 
 .radio2 input[type="radio"] + label {
   position: relative;
-  height: 50px;
+  height: 60px;
   display: block;
   color: #777;
-  font-size: 1rem;
+  font-size: 1em;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  padding: 0 20px;
-  line-height: 15px;
-  text-align: center;
-  padding-top: 35px; }
+  padding: 35px 5px 0;
+  line-height: 25px;
+  text-align: center; }
 
 .radio2 input[type="radio"] + label::before {
   -webkit-transition: all 250ms cubic-bezier(0.4, 0.25, 0.3, 1);
@@ -12898,7 +12900,7 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
   border: 0 solid #999;
   font-size: 0;
   position: absolute;
-  bottom: 32px;
+  bottom: 42px;
   left: 50%;
   -webkit-transform: translate(-50%, 50%);
   transform: translate(-50%, 50%); }
@@ -12912,7 +12914,7 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
   border-radius: 50%;
   background-color: #999;
   position: absolute;
-  bottom: 32px;
+  bottom: 42px;
   left: 50%;
   -webkit-transform: translate(-50%, 50%);
   transform: translate(-50%, 50%); }
@@ -12937,12 +12939,17 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
 .radio2 input[type="radio"]:focus + label::before {
   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2); }
 
+.radio2 img {
+  max-width: 120px;
+  max-height: 120px; }
+
 /* radio type 1 - vertical*/
 .radio2.v input[type="radio"] + label {
   padding: 0 20px;
   line-height: 50px;
   padding-left: 40px;
-  text-align: left; }
+  text-align: left;
+  height: 50px; }
 
 .radio2.v input[type="radio"] + label::before {
   bottom: 25px;
@@ -12953,7 +12960,7 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
   left: 20px; }
 
 .rtl .radio2.v input[type="radio"] + label {
-  padding-left: 20px;
+  padding-left: 5px;
   padding-right: 40px;
   text-align: right; }
 
