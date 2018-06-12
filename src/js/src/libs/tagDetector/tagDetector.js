@@ -61,6 +61,16 @@ function runTagDetector()
 		// remove element
 		$this.remove();
 	});
+	// handle click on specialTags
+	$(document).on('click', '.tagDetector .specialTags span' , function ()
+	{
+		var myVal   = $(this).attr('data-val');
+		var	myInput = $(this).closest('.tagDetector').find('.tagInput');
+		myInput.val(myVal);
+		addNewTags(this);
+		myInput.focus();
+		return false;
+	});
 }
 
 
