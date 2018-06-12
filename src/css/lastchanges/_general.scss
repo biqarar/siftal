@@ -21,10 +21,13 @@
 	font-size: 150%;
 }
 
-.disabled, :disabled{
+.disabled-f, :disabled{
 	opacity:0.6;
 	cursor: not-allowed;
 	pointer-events: none;
+}
+.disabled{
+	opacity:0.6;
 }
 
 .txtR{

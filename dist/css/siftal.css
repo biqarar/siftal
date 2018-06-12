@@ -15305,10 +15305,13 @@ body .we500 {
 .xl {
   font-size: 150%; }
 
-.disabled, :disabled {
+.disabled-f, :disabled {
   opacity: 0.6;
   cursor: not-allowed;
   pointer-events: none; }
+
+.disabled {
+  opacity: 0.6; }
 
 .txtR {
   text-align: right; }
@@ -15963,20 +15966,20 @@ body.siftal .full .middle {
 /* sidebar */
 .siftal #sidebar {
   overflow: hidden;
+  overflow-y: auto;
   width: 250px;
   height: 100%;
   position: relative;
   background-color: #302b2b;
   transition-duration: 0.3s;
   transition-property: right, left;
-  user-select: none;
-  padding-bottom: 80px; }
+  user-select: none; }
 
 .siftal #sidebar .scr {
   overflow: hidden;
   overflow-y: auto;
   height: 80%;
-  height: calc(100vh - 70px); }
+  height: calc(100% - 70px); }
 
 .siftal #sidebar figure {
   padding: 4em 0;
