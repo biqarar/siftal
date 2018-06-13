@@ -8088,7 +8088,23 @@ body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-anima
   padding: 5em 1em;
   border: 1px dashed #eee;
   background-color: #fcfcfc;
-  text-align: center; }
+  text-align: center;
+  transition: 0.3s; }
+
+.dropzone:hover {
+  border-color: #ccc; }
+
+.dropzone:focus {
+  border-color: #aaa; }
+
+.dropzone input[type="file"] {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  opacity: 0; }
 
 /*
  * # Semantic UI 2.3.1 - Transition
