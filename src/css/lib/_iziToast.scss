@@ -178,7 +178,7 @@
   float: left;
   color: #000;
 }
-.iziToast > .iziToast-body > p {
+.iziToast > .iziToast-body  p {
   padding: 0;
   margin: 10px 0;
   font-size: 14px;
@@ -1611,5 +1611,4 @@
 .rtl .iziToast-wrapper-topRight{
   text-align: left;
 }
-
 
