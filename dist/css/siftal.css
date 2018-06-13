@@ -5256,7 +5256,6 @@ img.mini {
   border-bottom-color: #fff; }
 
 .rtl .popover.bottom > .arrow:after {
-  margin-left: 0;
   margin-right: -10px; }
 
 .popover.left > .arrow {
