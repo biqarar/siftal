@@ -64,8 +64,8 @@
        {
           $.xhrPool.splice(index, 1);
        }
-      NProgress.done();
-      NProgress.remove();
+      NProgress.done(true);
+      // NProgress.remove();
     }
  });
 
