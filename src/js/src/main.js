@@ -73,6 +73,13 @@ $(document).ready(function()
     $(this).ajaxify({link: true});
   });
 
+  $(document).on('click', '[data-confirm]', function(e)
+  {
+    notifConfirm($(this));
+  });
+
+
+
   $(document).on('click', 'button[name]', function(e)
   {
       // $("input[type=submit]", $(this).parents("form")).removeAttr("clicked");

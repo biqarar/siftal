@@ -259,11 +259,19 @@ function notifGenerator(_data, $_form)
 }
 
 
-function notifConfirm(_id, _msg, _title, _okayBtn, _closeBtn, _data)
+function notifConfirm(_this, _data, _msg, _title, _okayBtn, _closeBtn)
 {
-  if(!_id)
+  if(_this !== undefined)
   {
-    logy('id not sended!');
+    _data     = _this.attr('data-data');
+    _msg      = _this.attr('data-msg');
+    _title    = _this.attr('data-title');
+    _okayBtn  = _this.attr('data-okayBtn');
+    _closeBtn = _this.attr('data-closeBtn');
+  }
+  if(!_data)
+  {
+    logy('data not sended!');
     return false;
   }
   if(_msg === undefined)
@@ -292,7 +300,7 @@ function notifConfirm(_id, _msg, _title, _okayBtn, _closeBtn, _data)
       progressBarColor: 'rgb(0, 255, 184)',
       buttons:
       [
-          ['<button data-ajaxify data-method="post" data-id='+ _id +' data-data='+ _data +'>'+ _okayBtn +'</button>', function (instance, toast){
+          ["<button data-ajaxify data-method='post' data-data='"+ _data +"'>"+ _okayBtn +'</button>', function (instance, toast){
             // do something if needed
             instance.hide(
             {
