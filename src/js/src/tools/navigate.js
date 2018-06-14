@@ -38,6 +38,29 @@
     beforeSend: function(jqXHR)
     {
         $.xhrPool.push(jqXHR);
+        // try to create loading elemet if not exist
+        if($('.pageLoader').length < 1)
+        {
+          var myLoader = document.createElement("div");
+          myLoader.setAttribute('class', 'pageLoader');
+          document.body.appendChild(myLoader);
+        }
+    },
+    xhr: function ()
+    {
+        var xhr = new window.XMLHttpRequest();
+        //Download progress
+        xhr.addEventListener("progress", function (evt)
+        {
+            if (evt.lengthComputable)
+            {
+                var percentComplete = evt.loaded / evt.total;
+                percentComplete = Math.round(percentComplete * 100);
+                console.log(percentComplete)
+                // progressElem.html(Math.round(percentComplete * 100) + "%");
+            }
+        }, false);
+        return xhr;
     },
     complete: function(jqXHR)
     {
@@ -46,6 +69,7 @@
        {
           $.xhrPool.splice(index, 1);
        }
+       $('.pageLoader').hide();
     }
  });
 
