@@ -28,7 +28,13 @@ function bindUploader()
     progress: function (e) {
       // $logs.append(p('* File ' + (e.index + 1) + ' uploaded: ' + Math.round(e.loaded / e.total * 100) + '%'));
       var myPercentage = Math.round(e.loaded / e.total * 100);
-      $('.dropzone .progress').removeClass('shadow').attr('data-percent', myPercentage);
+      myProgress = $('.dropzone .progress');
+      if(myProgress)
+      {
+        myProgress.removeClass('shadow').attr('data-percent', myPercentage);
+        myProgress.find('.detail').text(myPercentage + '%');
+
+      }
     },
 
     // fail: function (e, textStatus) {
