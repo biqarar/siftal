@@ -25,9 +25,11 @@ function bindUploader()
     //   $logs.append(p('* File ' + (e.index + 1) + ' uploading'));
     // },
 
-    // progress: function (e) {
-    //   $logs.append(p('* File ' + (e.index + 1) + ' uploaded: ' + Math.round(e.loaded / e.total * 100) + '%'));
-    // },
+    progress: function (e) {
+      // $logs.append(p('* File ' + (e.index + 1) + ' uploaded: ' + Math.round(e.loaded / e.total * 100) + '%'));
+      var myPercentage = Math.round(e.loaded / e.total * 100);
+      $('.dropzone .progress').removeClass('shadow').attr('data-percent', myPercentage);
+    },
 
     // fail: function (e, textStatus) {
     //   $logs.append(p('* File ' + (e.index + 1) + ' result fail: ' + textStatus));
