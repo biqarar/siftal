@@ -22,7 +22,7 @@
     positionUsing: '',
     speed: 200,
     trickle: true,
-    trickleSpeed: 200,
+    trickleSpeed: 5,
     showSpinner: true,
     barSelector: '[role="bar"]',
     spinnerSelector: '[role="spinner"]',

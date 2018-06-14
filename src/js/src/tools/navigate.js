@@ -50,9 +50,12 @@
             if (evt.lengthComputable)
             {
                 var percentComplete = evt.loaded / evt.total;
-                NProgress.set(percentComplete)
+                if(percentComplete > 0 && percentComplete < 1)
+                {
+                  NProgress.set(percentComplete)
+                }
                 // percentComplete = Math.round(percentComplete * 100);
-                // console.log(percentComplete)
+                logy(percentComplete);
             }
         }, false);
         return xhr;
