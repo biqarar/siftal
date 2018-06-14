@@ -258,3 +258,75 @@ function notifGenerator(_data, $_form)
   return result;
 }
 
+
+function notifConfirm(_id, _msg, _title, _okayBtn, _closeBtn, _data)
+{
+  if(!_id)
+  {
+    logy('id not sended!');
+    return false;
+  }
+  if(_msg === undefined)
+  {
+    _msg = 'Do you confirm?';
+  }
+  if(_title === undefined)
+  {
+    _title = '';
+  }
+  if(_okayBtn === undefined)
+  {
+    _okayBtn = 'Ok';
+  }
+  if(_closeBtn === undefined)
+  {
+    _closeBtn = 'Close';
+  }
+
+  iziToast.show({
+      theme: 'dark',
+      icon: 'question-circle',
+      title: _title,
+      message: _msg,
+      position: 'center', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter
+      progressBarColor: 'rgb(0, 255, 184)',
+      buttons:
+      [
+          ['<button data-ajaxify data-method="post" data-id='+ _id +' data-data='+ _data +'>'+ _okayBtn +'</button>', function (instance, toast){
+            // do something if needed
+            instance.hide(
+            {
+              transitionOut: 'flipOutX'
+              // ,
+              // onClosing: function(instance, toast, closedBy)
+              // {
+              //   // send ajaxify
+              //   // logy('closedBy: ' + closedBy); // The return will be: 'closedBy: buttonName'
+              // }
+            }, toast, 'buttonName');
+          }, true], // true to focus
+          ['<button>' + _closeBtn +'</button>', function (instance, toast){
+            instance.hide(
+            {
+              transitionOut: 'fadeOutUp'
+              // ,
+              // onClosing: function(instance, toast, closedBy)
+              // {
+              //   // logy('closedBy: ' + closedBy); // The return will be: 'closedBy: buttonName'
+              // }
+            }, toast, 'buttonName');
+          }]
+      ]
+      // ,
+      // onOpening: function(instance, toast)
+      // {
+      //     // logy('callback abriu!');
+      // },
+      // onClosing: function(instance, toast, closedBy)
+      // {
+      //     // logy('closedBy: ' + closedBy); // tells if it was closed by 'drag' or 'button'
+      // }
+  });
+}
+
+
