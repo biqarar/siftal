@@ -100,6 +100,11 @@
 
     var $html = $(html);
 
+
+    if(obj.id === '')
+    {
+      obj.id = 'home';
+    }
     if(obj.id) $('body').attr('id', obj.id);
     if(obj.id) $('body').attr('data-page', obj.id);
 
@@ -385,6 +390,7 @@
 
     if(!state.html)
     {
+      logy(state);
       fetch(state).then(function(data)
       {
         var props = _.extend(true, {}, state, data.json);
