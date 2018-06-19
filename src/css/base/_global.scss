@@ -1,4 +1,13 @@
 
+#ermileBadge{padding:10px 1.5em;background-color:#24292e;color:#eee;transition:0.3s;height:70px;user-select:none}
+#ermileBadge:hover{background-color:#044f6f;}
+#ermileBadge img{border-radius:50%;background-color:#eee;width:50px;height:50px;display:block;vertical-align:middle;overflow:hidden;transition:0.3s;padding:2px;}
+#ermileBadge img:hover{background-color:#fff}
+#ermileBadge h2{color:#eee;font-size:2em;margin:0;line-height:30px;transition:0.3s;}
+#ermileBadge h2:hover{color:#fff;}
+#ermileBadge h3{color:#eee;font-size:1em;margin:0;line-height:20px;transition:0.3s;}
+#ermileBadge h3:hover{color:#fff;}
+
 
 /* list */
 ul{list-style:none inside none;}
