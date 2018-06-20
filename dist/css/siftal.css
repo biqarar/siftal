@@ -3662,8 +3662,7 @@ body.errorPage {
   color: #fff;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  user-select: none; }
+  overflow: hidden; }
 
 body.errorPage.s50 {
   background-color: #750700; }
@@ -3687,7 +3686,7 @@ body.errorPage.s50 {
 .errorPage ol {
   font-size: 1.4em;
   direction: ltr;
-  padding: 1em 2em; }
+  padding: 2em 2em 0; }
 
 .errorPage li {
   padding-bottom: 5px; }
