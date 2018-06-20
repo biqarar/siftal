@@ -3704,7 +3704,8 @@ body.errorPage.s50 {
   user-select: none; }
 
 .errorPage #smile {
-  font-size: 7em; }
+  font-size: 10em;
+  margin-top: 20px; }
 
 @keyframes pulseLow {
   0% {
@@ -3721,11 +3722,6 @@ body.errorPage.s50 {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #218084;
-  background-image: none;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
   overflow: hidden;
   z-index: 0; }
 

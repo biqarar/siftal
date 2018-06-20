@@ -10,7 +10,7 @@ body.errorPage.s50{background-color:#750700;}
 .errorPage ol{font-size:1.4em;direction:ltr;padding:2em 2em 0;}
 .errorPage li{padding-bottom:5px}
 .errorPage #no{font-family:sans-serif;position:absolute;bottom:5%;right:5%;opacity:0.3;line-height:1;font-size:100px;font-size:20vw;animation:pulseLow 2s infinite ease-in-out;user-select:none;}
-.errorPage #smile{font-size:7em}
+.errorPage #smile{font-size:10em;margin-top:20px;}
 
 @keyframes pulseLow { 0%{opacity:.3} 50%{opacity:.5} 100%{opacity:.3}}
 
@@ -22,11 +22,6 @@ body.errorPage.s50{background-color:#750700;}
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #218084;
-  background-image: none;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
   overflow: hidden;
   z-index: 0;
 }
