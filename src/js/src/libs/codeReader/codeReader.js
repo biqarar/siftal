@@ -26,7 +26,7 @@
     var $barcodeTargetEl = null;
 
     // if current el is barcode this is target
-    if($focused.hasClass('barCode'))
+    if($focused.hasClass('barCode') || $focused.parents('.barCode').length === 1)
     {
       $barcodeTargetEl = $focused;
 
