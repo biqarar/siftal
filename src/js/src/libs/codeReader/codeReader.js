@@ -89,7 +89,7 @@
         }
       }
     }
-    else if($('.barCode[data-default]').length > 0)
+    else if($('.barCode[data-default]').length > 0 || $('.barCode [data-default]').length > 0)
     {
       $barcodeTargetEl = $('.barCode[data-default]');
       // show message if more than one default exist
@@ -101,7 +101,7 @@
       // if we have default and key pressed as fast as posible, prevent next keys
       if((Date.now() - time) > 1)
       {
-        if(keys.length > 1)
+        if(keys.length > 0)
         {
           _e.preventDefault();
         }
@@ -237,6 +237,8 @@
             }
           }
 
+          // remove old val from html for next use
+          $target.attr('data-oldval', '');
           logy('barcode: ' + detectedCode);
           $("body").trigger("barcode:detect", detectedCode);
         }
