@@ -94,3 +94,11 @@ function dropdownRunner()
   });
 }
 
+function clearDropdown(_el)
+{
+  // checo if el exist and corrent
+  _el.dropdown('hide');
+  _el.dropdown('clear');
+}
+
+
