@@ -20,13 +20,25 @@
     {
       return;
     }
+    // get target and try to save old value
+    var $target  = $(_e.target);
+    var myOldVal = null;
+    if($target.is('input'))
+    {
+      myOldVal = $target.val();
+      // try to save before start change
+      if(keys.length < 1)
+      {
+        $target.attr('data-oldval', myOldVal);
+      }
+    }
 
     // ----------------------------------------- detect target input
     var $focused         = $(':focus');
     var $barcodeTargetEl = null;
 
     // if current el is barcode this is target
-    if($focused.hasClass('barCode') || $focused.parents('.barCode').length === 1)
+    if($focused.hasClass('barCode'))
     {
       $barcodeTargetEl = $focused;
 
@@ -142,9 +154,22 @@
         if(typeSpeed > barcodeOptions.speed && len > barcodeOptions.min)
         {
           // change to english and after that to string
-          var detectedCode = keys.toEnglish().toString();
+          var detectedCode       = keys.toEnglish().toString();
           // bugfix for iranbarcode and change some persian char to en
-          detectedCode     = detectedCode.replace('چ', ']').replace('ژ', 'C');
+          detectedCode           = detectedCode.replace('چ', ']').replace('ژ', 'C');
+          // get saved value of input before barcode scaned
+          var valueBeforeBarcode = $target.attr('data-oldval');
+
+          // get position of cursor in input i exist
+          var tmpPos = null;
+          if($focused[0] && $focused[0].selectionStart)
+          {
+            tmpPos = $focused[0].selectionStart;
+            if(detectedCode.length)
+            {
+              tmpPos = tmpPos - detectedCode.length;
+            }
+          }
 
           if($barcodeTargetEl)
           {
@@ -154,12 +179,13 @@
               // if used as default barcode, remove last chart if we are in another input
               if($focused.length > 0 && $focused.is('input') || $focused.is('textarea'))
               {
-                var tmpPos = $focused[0].selectionStart;
-                var newVal = $focused.val();
-                newVal = newVal.substring(0, tmpPos - 2) + newVal.substring(tmpPos, newVal.length);
-                // set new val
-                $focused.val(newVal);
-                setCaretToPos($focused[0], tmpPos - 2);
+                // use old val after complete detect barcode
+                $focused.val(valueBeforeBarcode);
+                // set cursor to old location
+                if($focused[0] && tmpPos)
+                {
+                  setCaretToPos($focused[0], tmpPos);
+                }
               }
             }
 
@@ -201,16 +227,15 @@
           else if($focused.length > 0)
           {
             // if we are in another element not barcode and default is not exist
-            var tmpPos = $focused[0].selectionStart;
-            var newVal = $focused.val();
-            newVal = newVal.substring(0, tmpPos - detectedCode.length) + newVal.substring(tmpPos, newVal.length);
-            // set new val
-            $focused.val(newVal);
+
+            // use old val after complete detect barcode
+            $focused.val(valueBeforeBarcode);
             // set cursor to old location
-            setCaretToPos($focused[0], tmpPos - detectedCode.length);
+            if($focused[0] && tmpPos)
+            {
+              setCaretToPos($focused[0], tmpPos);
+            }
           }
-
-
 
           logy('barcode: ' + detectedCode);
           $("body").trigger("barcode:detect", detectedCode);
