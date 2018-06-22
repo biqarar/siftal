@@ -52,7 +52,14 @@ function shortkey_corridor(_e, _self, _key)
       // else do some default event like click or set focus
       if(elShortkey.is('a[href], a[href] *, button, input[type=submit]'))
       {
-        elShortkey.trigger("click");
+        if(elShortkey[0])
+        {
+          elShortkey[0].click();
+        }
+        else
+        {
+          elShortkey.trigger("click");
+        }
         return;
       }
       else if(elShortkey.is('input, select, textarea'))
