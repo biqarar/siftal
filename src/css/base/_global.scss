@@ -1,5 +1,6 @@
 
-#ermileBadge{padding:10px 1.5em;background-color:#24292e;color:#eee;transition:0.3s;height:70px;user-select:none}
+#ermileBadge{padding:10px 0 10px 1.5em;background-color:#24292e;color:#eee;transition:0.3s;height:70px;user-select:none}
+.rtl #ermileBadge{padding:10px 1.5em 10px 0;}
 #ermileBadge:hover{background-color:#044f6f;}
 #ermileBadge img{border-radius:50%;background-color:#eee;width:50px;height:50px;display:block;vertical-align:middle;overflow:hidden;transition:0.3s;padding:2px;}
 #ermileBadge img:hover{background-color:#fff}
