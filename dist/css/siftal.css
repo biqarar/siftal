@@ -16543,7 +16543,8 @@ body.siftal.loading-page #sidebar .avatar:before {
   transition: background-color 0.3s;
   cursor: pointer;
   max-width: 300px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  line-height: 1.5em; }
 
 .siftal #sidebar ul > li > a > i {
   font-size: 1.2em;
