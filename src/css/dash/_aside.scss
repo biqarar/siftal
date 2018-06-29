@@ -57,4 +57,6 @@ body.siftal.loading-page #sidebar .avatar:before{animation-duration:1s;-webkit-a
 
 .siftal #sidebar ul > li > a.weAreHere{background-color:rgba(0,0,0,0.8);color:#fff}
 
+.siftal.ltr #sidebar #ermileBadge{padding-right:0;}
+.siftal.rtl #sidebar #ermileBadge{padding-left:0;}
 
