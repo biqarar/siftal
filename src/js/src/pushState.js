@@ -45,3 +45,13 @@ $(document).ready(function()
   // call some static function without need to run with pushState
   inputChecker();
 });
+
+
+
+function beforePushStateSiftal()
+{
+  removeTippy();
+  callFunc('removeAmcharts4');
+
+}
+

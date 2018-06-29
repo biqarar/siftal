@@ -81,7 +81,7 @@
 
     $window.trigger('navigate:render:start', obj);
     // try to remove tippy from view
-    removeTippy();
+    beforePushStateSiftal();
 
 
     var html = obj.html.trim();
