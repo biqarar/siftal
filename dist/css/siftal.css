@@ -12200,7 +12200,9 @@ body.enter.bg15 {
   margin: 0 auto;
   transition: 0.3s;
   overflow: hidden;
-  text-align: center; }
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 2px; }
 
 .enter #enter .logo span {
   display: none !important; }
