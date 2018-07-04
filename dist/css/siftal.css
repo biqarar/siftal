@@ -16587,6 +16587,13 @@ body.siftal.loading-page #sidebar .avatar:before {
 .siftal.rtl #sidebar #ermileBadge {
   padding-left: 0; }
 
+.siftal #sidebar hr {
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  border-top-color: #777;
+  border-top-color: rgba(255, 255, 255, 0.2); }
+
 /* footer */
 .siftal footer {
   flex-shrink: 0;

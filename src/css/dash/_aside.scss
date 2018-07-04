@@ -60,3 +60,13 @@ body.siftal.loading-page #sidebar .avatar:before{animation-duration:1s;-webkit-a
 .siftal.ltr #sidebar #ermileBadge{padding-right:0;}
 .siftal.rtl #sidebar #ermileBadge{padding-left:0;}
 
+.siftal #sidebar hr{
+	margin-right:auto;
+	margin-left:auto;
+	width:80%;
+	border-top-color:#777;
+	border-top-color:rgba(255,255,255,0.2);
+}
+
+
+
