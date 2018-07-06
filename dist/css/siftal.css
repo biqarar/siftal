@@ -15421,6 +15421,18 @@ body .w500 {
   width: 500px;
   max-width: 100%; }
 
+body .we50 {
+  min-width: 50px;
+  width: 50px; }
+
+body .we70 {
+  min-width: 70px;
+  width: 70px; }
+
+body .we80 {
+  min-width: 80px;
+  width: 80px; }
+
 body .we100 {
   min-width: 100px;
   width: 100px; }
