@@ -1,0 +1,11 @@
+{
+  "name": "Siftal",
+  "version": "2.0.0",
+  "description": "",
+  "main": "runSass.bat",
+  "dependencies": {
+    "jquery": "^2.1.1",
+  },
+  "author": "Javad Evazzadeh",
+  "license": "MIT"
+}
