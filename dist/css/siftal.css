@@ -3652,6 +3652,9 @@ body.errorPage {
   height: 100%;
   overflow: hidden; }
 
+body.errorPage.s20 {
+  background-color: #102060; }
+
 body.errorPage.s50 {
   background-color: #750700; }
 
