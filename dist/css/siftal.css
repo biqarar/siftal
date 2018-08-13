@@ -2599,9 +2599,7 @@ img.mini {
   opacity: 0.5; }
 
 .live .vcard[data-live="half"]:before {
-  background-color: #b5cc18;
-  box-shadow: 0 0 0 0 rgba(15, 161, 166, 0.7);
-  animation: pulseOn 1.25s infinite cubic-bezier(0.66, 0, 0, 1); }
+  background-color: #b5cc18; }
 
 .live .vcard[data-live="none"]:before {
   display: none; }
