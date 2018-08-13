@@ -1918,7 +1918,7 @@ progress.xl, meter.xl {
   margin: 0.5em 0 1.5em;
   font-size: 1.2em;
   position: relative;
-  padding: 1em 7em 1em 1.5em;
+  padding: 1em 1.5em;
   border: 1px solid transparent;
   border-radius: 0.25rem;
   line-height: 1.25;
@@ -1932,8 +1932,11 @@ progress.xl, meter.xl {
 .tbox:hover {
   border-color: #fff; }
 
-.rtl .tbox {
-  padding: 1em 1.5em 1em 7em; }
+.ltr .tbox.pictogram {
+  padding-right: 7em; }
+
+.rtl .tbox.pictogram {
+  padding-left: 7em; }
 
 .tbox p {
   color: #777;
@@ -1953,7 +1956,7 @@ progress.xl, meter.xl {
 .tbox p .badge {
   line-height: 1.3; }
 
-.tbox .pictogram {
+.tbox.pictogram > span[class^="sf-"] {
   font-size: 5em;
   transition: color 0.3s;
   position: absolute;
@@ -1963,11 +1966,11 @@ progress.xl, meter.xl {
   margin-top: -30px;
   color: #aaa; }
 
-.rtl .tbox .pictogram {
+.rtl .tbox.pictogram > span[class^="sf-"] {
   right: initial;
   left: 10px; }
 
-.tbox:hover .pictogram {
+.tbox.pictogram:hover > span[class^="sf-"] {
   color: #398cd4; }
 
 .cbox {
