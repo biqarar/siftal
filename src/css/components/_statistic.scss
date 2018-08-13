@@ -100,7 +100,10 @@
     width: auto;
     margin: 0;
     font-size: 0.8em;
-    vertical-align: top;
+    vertical-align: middle;
+}
+.statistic>.value [class^="sf-"]:before {
+    line-height:inherit;
 }
 
 .statistic>.text.value,.statistics .statistic>.text.value {
