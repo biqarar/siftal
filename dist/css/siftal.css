@@ -2046,6 +2046,16 @@ progress.xl, meter.xl {
 .cbox:hover h4 [class^="sf-"]:before {
   color: #777; }
 
+.cbox .imgBox img {
+  display: block;
+  margin: 0 auto;
+  max-height: 500px;
+  transition: 0.3s opacity;
+  opacity: 1; }
+
+.cbox .imgBox img:hover {
+  opacity: 0.9; }
+
 .cbox .example {
   padding: 1em; }
 
@@ -16196,19 +16206,6 @@ body.siftal .full .middle {
 
 .siftal .scr.dark::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.2); }
-
-.siftal .imgBox {
-  max-width: 100%; }
-
-.siftal .imgBox img {
-  display: block;
-  margin: 0 auto;
-  max-height: 500px;
-  transition: 0.3s opacity;
-  opacity: 1; }
-
-.siftal .imgBox img:hover {
-  opacity: 0.9; }
 
 /* btns */
 .btns {

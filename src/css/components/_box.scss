@@ -95,6 +95,18 @@
 .cbox h4 [class^="sf-"]:before, .cbox h4 [class*=" sf-"]:before{vertical-align:middle;transition-duration:0.3s;transition-property:opacity, background-color, color;color:#ccc;font-size:1.3em;}
 .cbox:hover h4 [class^="sf-"]:before{color:#777;}
 
+// imgBox in cbox
+.cbox .imgBox img{
+	display:block;
+	margin: 0 auto;
+	max-height:500px;
+	transition:0.3s opacity;
+	opacity:1;
+}
+.cbox .imgBox img:hover{
+	opacity:0.9;
+}
+
 .cbox .example{padding: 1em;}
 
 .ibox{
