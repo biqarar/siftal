@@ -2,9 +2,13 @@
 /**
  * set link of language on each page
  */
-function setLanguageURL()
+function setLanguageURL(_direct)
 {
   if($('.langlist a').length < 1)
+  {
+    return;
+  }
+  if(_direct)
   {
     return;
   }
