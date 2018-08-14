@@ -13,5 +13,4 @@ package-lock.json
 
 *.me.*
 .sass-cache
-.htaccess
 
