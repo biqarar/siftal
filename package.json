@@ -1,0 +1,14 @@
+{
+  "name": "Siftal",
+  "version": "4.2.0",
+  "description": "CSS Framework, not bad ;)",
+  "license": "MIT",
+  "repository": "github:Ermile/siftal",
+  "bugs": {
+    "url": "https://github.com/Ermile/siftal/issues"
+  },
+  "homepage": "https://siftal.ir",
+  "dependencies": {
+    "jquery": "2.1.1"
+  }
+}
