@@ -2053,12 +2053,7 @@ progress.xl, meter.xl {
 .cbox .imgBox img {
   display: block;
   margin: 0 auto;
-  max-height: 500px;
-  transition: 0.3s;
-  opacity: 1; }
-
-.cbox .imgBox:hover img {
-  transform: scale(1.05); }
+  max-height: 500px; }
 
 .cbox .imgBox::before {
   position: absolute;
