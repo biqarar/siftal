@@ -127,11 +127,47 @@
 .radioRating.heart input:checked ~ label:before {
   content: '\2a';
 }
-// heart
+// bell
 .radioRating.bell label:before {
   content: '\66';
 }
 .radioRating.bell input:checked ~ label:before {
   content: '\65';
 }
+// bookmark
+.radioRating.bookmark label:before {
+  content: '\54';
+}
+.radioRating.bookmark input:checked ~ label:before {
+  content: '\55';
+}
+// flag
+.radioRating.flag label:before {
+  content: '\28';
+}
+.radioRating.flag input:checked ~ label:before {
+  content: '\26';
+}
+// like
+.radioRating.like label:before {
+  content: '\e01a';
+}
+.radioRating.like input:checked ~ label:before {
+  content: '\e01b';
+}
+// dislike
+.radioRating.dislike label:before {
+  content: '\e019';
+}
+.radioRating.dislike input:checked ~ label:before {
+  content: '\e018';
+}
+// user1
+.radioRating.user1 label:before {
+  content: '\e07a';
+}
+.radioRating.user1 input:checked ~ label:before {
+  content: '\e079';
+}
+
 

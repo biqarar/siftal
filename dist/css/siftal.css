@@ -13499,6 +13499,36 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
 .radioRating.bell input:checked ~ label:before {
   content: '\65'; }
 
+.radioRating.bookmark label:before {
+  content: '\54'; }
+
+.radioRating.bookmark input:checked ~ label:before {
+  content: '\55'; }
+
+.radioRating.flag label:before {
+  content: '\28'; }
+
+.radioRating.flag input:checked ~ label:before {
+  content: '\26'; }
+
+.radioRating.like label:before {
+  content: '\e01a'; }
+
+.radioRating.like input:checked ~ label:before {
+  content: '\e01b'; }
+
+.radioRating.dislike label:before {
+  content: '\e019'; }
+
+.radioRating.dislike input:checked ~ label:before {
+  content: '\e018'; }
+
+.radioRating.user1 label:before {
+  content: '\e07a'; }
+
+.radioRating.user1 input:checked ~ label:before {
+  content: '\e079'; }
+
 .txt {
   display: block;
   margin: 0;
