@@ -13458,34 +13458,46 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
 .radioGateway input:focus + label {
   border-color: #22827f; }
 
-.radioRating input.star {
+.radioRating input[type="radio"] {
   display: none; }
 
-.radioRating label.star {
+.radioRating label {
   float: right;
   padding: 10px;
   font-size: 36px;
   color: #444;
   transition: all .2s; }
 
-.radioRating input.star:checked ~ label.star:before {
+.radioRating label:before {
+  font-family: "siftal", "tahoma" !important;
+  content: '\e002'; }
+
+.radioRating label:hover {
+  transform: rotate(-15deg) scale(1.3); }
+
+.radioRating input:checked ~ label:before {
   content: '\5c';
   color: #FD4;
   transition: all .25s; }
 
-.radioRating input.star-5:checked ~ label.star:before {
+.radioRating input:first-of-type:checked ~ label:before {
   color: #FE7;
   text-shadow: 0 0 20px #952; }
 
-.radioRating input.star-1:checked ~ label.star:before {
+.radioRating input:last-of-type:checked ~ label:before {
   color: #F62; }
 
-.radioRating label.star:hover {
-  transform: rotate(-15deg) scale(1.3); }
+.radioRating.heart label:before {
+  content: '\2b'; }
 
-.radioRating label.star:before {
-  content: '\e002';
-  font-family: "siftal", "tahoma" !important; }
+.radioRating.heart input:checked ~ label:before {
+  content: '\2a'; }
+
+.radioRating.bell label:before {
+  content: '\66'; }
+
+.radioRating.bell input:checked ~ label:before {
+  content: '\65'; }
 
 .txt {
   display: block;
