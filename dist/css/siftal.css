@@ -16460,9 +16460,6 @@ body.siftal .full .middle {
   border-color: transparent #888;
   border-radius: 50%; }
 
-.siftal #sidebar figure:hover .avatar:before {
-  border-color: transparent #fff; }
-
 .siftal #sidebar figure .avatar:after {
   font-family: "siftal";
   content: "\e05f";
@@ -16480,10 +16477,6 @@ body.siftal .full .middle {
   transition: 0.3s;
   margin: 5px; }
 
-.siftal #sidebar figure:hover .avatar:after {
-  background-color: rgba(0, 0, 0, 0.3);
-  opacity: 1; }
-
 .siftal #sidebar figure .avatar img {
   display: block;
   max-width: 100%;
@@ -16492,7 +16485,21 @@ body.siftal .full .middle {
   border-radius: 50%;
   margin: 0 auto;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  transition: 0.3s; }
+
+.siftal #sidebar figure .avatar:hover img {
+  transform: scale(1.2); }
+
+.siftal #sidebar figure .avatar:focus img {
+  transform: scale(1.4); }
+
+.siftal #sidebar figure:hover .avatar:before {
+  border-color: transparent #fff; }
+
+.siftal #sidebar figure:hover .avatar:after {
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 1; }
 
 .siftal #sidebar figure figcaption {
   max-width: 100%;
