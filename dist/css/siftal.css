@@ -2046,16 +2046,16 @@ progress.xl, meter.xl {
 .cbox:hover h4 [class^="sf-"]:before {
   color: #777; }
 
-.cbox .imgBox {
+.cbox .mediaBox {
   position: relative;
   overflow: hidden; }
 
-.cbox .imgBox img {
+.cbox .mediaBox img {
   display: block;
   margin: 0 auto;
   max-height: 500px; }
 
-.cbox .imgBox::before {
+.cbox .mediaBox::before {
   position: absolute;
   top: 0;
   left: -75%;
@@ -2069,7 +2069,7 @@ progress.xl, meter.xl {
   -webkit-transform: skewX(-25deg);
   transform: skewX(-25deg); }
 
-.cbox .imgBox:hover::before {
+.cbox .mediaBox:hover::before {
   -webkit-animation: shine .75s;
   animation: shine .75s; }
 
