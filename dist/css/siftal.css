@@ -13652,6 +13652,13 @@ input[type="range"].slider::-moz-range-thumb {
   background: #4CAF50;
   cursor: pointer; }
 
+input[type="range"].slider.round {
+  height: 15px;
+  border-radius: 5px; }
+
+input[type="range"].slider.round::-webkit-slider-thumb {
+  border-radius: 50%; }
+
 .btn {
   cursor: pointer;
   display: inline-block;
