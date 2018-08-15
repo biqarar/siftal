@@ -15,4 +15,5 @@
 .rtl .check1 label::after{left:0;right:13px;}
 
 .check1.red input:checked+label::before{background-color:#da4041}
+.check1.green input:checked+label::before{background-color:#2ecc71}
 

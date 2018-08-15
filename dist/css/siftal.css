@@ -13055,6 +13055,9 @@ input[type="number"]::-webkit-outer-spin-button {
 .check1.red input:checked + label::before {
   background-color: #da4041; }
 
+.check1.green input:checked + label::before {
+  background-color: #2ecc71; }
+
 .switch1 {
   overflow: hidden;
   margin: 0 auto;
