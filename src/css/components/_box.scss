@@ -96,16 +96,51 @@
 .cbox:hover h4 [class^="sf-"]:before{color:#777;}
 
 // imgBox in cbox
+.cbox .imgBox {
+	position: relative;
+	overflow:hidden;
+}
 .cbox .imgBox img{
 	display:block;
 	margin: 0 auto;
 	max-height:500px;
-	transition:0.3s opacity;
+	transition:0.3s;
 	opacity:1;
 }
-.cbox .imgBox img:hover{
-	opacity:0.9;
+.cbox .imgBox:hover img{
+	transform: scale(1.05);
 }
+.cbox .imgBox::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+.cbox .imgBox:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+
+
 
 .cbox .example{padding: 1em;}
 
