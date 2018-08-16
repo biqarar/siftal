@@ -13499,7 +13499,7 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
 .radioRating label {
   float: right;
   padding: 0.5rem 1rem;
-  color: #444;
+  color: #777;
   transition: all .2s;
   cursor: pointer; }
 
@@ -13539,6 +13539,9 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
 .radioRating.heart input:first-of-type:checked ~ label:before {
   color: #F44;
   text-shadow: 0 0 10px #992222; }
+
+.radioRating.heart input:last-of-type:checked ~ label:before {
+  color: #ec9595; }
 
 .radioRating.bell label:before {
   content: '\66'; }
