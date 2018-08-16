@@ -13509,7 +13509,7 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
   font-size: 3em;
   line-height: 1em;
   margin: 2px;
-  vertical-align: middle; }
+  vertical-align: bottom; }
 
 .radioRating label:hover {
   transform: rotate(-15deg) scale(1.3); }
