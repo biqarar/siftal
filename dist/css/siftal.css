@@ -13740,6 +13740,16 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
   border-bottom: 7px solid transparent;
   content: ''; }
 
+.rtl .rangeSlider1 output {
+  margin-left: initial;
+  margin-right: 8px; }
+
+.rtl .rangeSlider1 output:after {
+  left: initial;
+  right: -7px;
+  border-right: none;
+  border-left: 7px solid #2c3e50; }
+
 .rangeSlider1 ::-moz-range-track {
   background: #d7dcdf;
   border: 0; }
