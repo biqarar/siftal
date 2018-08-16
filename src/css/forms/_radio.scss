@@ -143,6 +143,11 @@
 }
 .radioRating.heart input:checked ~ label:before {
   content: '\2a';
+  color: #F77;
+}
+.radioRating.heart input:first-of-type:checked ~ label:before {
+  color: #F44;
+  text-shadow: 0 0 10px #992222;
 }
 // bell
 .radioRating.bell label:before {

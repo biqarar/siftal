@@ -13514,7 +13514,12 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
   content: '\2b'; }
 
 .radioRating.heart input:checked ~ label:before {
-  content: '\2a'; }
+  content: '\2a';
+  color: #F77; }
+
+.radioRating.heart input:first-of-type:checked ~ label:before {
+  color: #F44;
+  text-shadow: 0 0 10px #992222; }
 
 .radioRating.bell label:before {
   content: '\66'; }
