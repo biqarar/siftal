@@ -13484,7 +13484,7 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
 
 .radioRating .rateBox {
   display: inline-block;
-  min-height: 3.5em; }
+  min-height: 3em; }
 
 .radioRating input[type="radio"] {
   padding: 0;
@@ -13499,8 +13499,6 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
 .radioRating label {
   float: right;
   padding: 0.5rem 1rem;
-  font-size: 2.5em;
-  line-height: 1em;
   color: #444;
   transition: all .2s;
   cursor: pointer; }
@@ -13508,6 +13506,9 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
 .radioRating label:before {
   font-family: "siftal", "tahoma" !important;
   content: '\e002';
+  font-size: 3em;
+  line-height: 1em;
+  margin: 2px;
   vertical-align: middle; }
 
 .radioRating label:hover {
