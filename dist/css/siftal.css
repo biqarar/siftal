@@ -13666,22 +13666,23 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
 
 .rangeSlider1 {
   margin: 10px 0;
-  width: 100%; }
+  width: 100%;
+  transition: 0.3s;
+  opacity: 0.8;
+  text-align: center; }
+
+.rangeSlider1:hover {
+  opacity: 1; }
 
 .rangeSlider1 input {
   -webkit-appearance: none;
-  width: calc(100% - (73px));
+  width: calc(100% - (75px));
   height: 10px;
   border-radius: 5px;
   background: #d7dcdf;
   outline: none;
   padding: 0;
-  margin: 0;
-  transition: 0.3s;
-  opacity: 0.7; }
-
-.rangeSlider1:hover input {
-  opacity: 1; }
+  margin: 0; }
 
 .rangeSlider1 input::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -13727,7 +13728,7 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
   border-radius: 3px;
   background: #2c3e50;
   padding: 5px 10px;
-  margin-left: 8px; }
+  margin-left: 10px; }
 
 .rangeSlider1 output:after {
   position: absolute;
@@ -13742,7 +13743,7 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
 
 .rtl .rangeSlider1 output {
   margin-left: initial;
-  margin-right: 8px; }
+  margin-right: 10px; }
 
 .rtl .rangeSlider1 output:after {
   left: initial;
