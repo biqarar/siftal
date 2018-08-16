@@ -13676,7 +13676,12 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
   background: #d7dcdf;
   outline: none;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  transition: 0.3s;
+  opacity: 0.7; }
+
+.rangeSlider1:hover input {
+  opacity: 1; }
 
 .rangeSlider1 input::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -13686,7 +13691,7 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
   border-radius: 50%;
   background: #2c3e50;
   cursor: pointer;
-  transition: background .15s ease-in-out; }
+  transition: .15s ease-in-out; }
 
 .rangeSlider1 input::-webkit-slider-thumb:hover {
   background: #1abc9c; }
@@ -13701,7 +13706,7 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
   border-radius: 50%;
   background: #2c3e50;
   cursor: pointer;
-  transition: background .15s ease-in-out; }
+  transition: .15s ease-in-out; }
 
 .rangeSlider1 input::-moz-range-thumb:hover {
   background: #1abc9c; }
