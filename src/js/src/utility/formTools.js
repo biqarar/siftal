@@ -19,6 +19,11 @@ var rangeSlider1 = function()
     value.each(function()
     {
       var value = $(this).prev().attr('value');
+      console.log(value);
+      if(!value)
+      {
+        value = '-';
+      }
       $(this).html(value);
     });
 
