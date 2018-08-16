@@ -89,6 +89,10 @@
 
 // radio rating
 .radioRating{
+
+}
+.radioRating .rateBox{
+	display:inline-block;
 	min-height:3.5em;
 }
 .radioRating input[type="radio"] {

@@ -13464,7 +13464,8 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
 .radioGateway input:focus + label {
   border-color: #22827f; }
 
-.radioRating {
+.radioRating .rateBox {
+  display: inline-block;
   min-height: 3.5em; }
 
 .radioRating input[type="radio"] {
