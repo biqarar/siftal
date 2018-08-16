@@ -1,3 +1,9 @@
+function formToolsRunner()
+{
+  rangeSlider1();
+  toggleRadio();
+}
+
 var rangeSlider1 = function()
 {
   var mySlider = $('.rangeSlider1');
@@ -26,8 +32,22 @@ var rangeSlider1 = function()
 
 function toggleRadio()
 {
-  $('.radio-button').on("click", function(event){
-    $('.radio-button').prop('checked', false);
-    $(this).prop('checked', true);
+  $('.togglable input[type=radio]').on("click", function(event)
+  {
+    var $thisRadio = $(this);
+
+    if($thisRadio.prop('checked-toggle'))
+    {
+      $thisRadio.prop('checked', false);
+      $thisRadio.prop('checked-toggle', false);
+    }
+    else
+    {
+      $thisRadio.prop('checked-toggle', true);
+      setTimeout(function()
+      {
+        $thisRadio.prop('checked-toggle', false);
+      }, 1000)
+    }
   });
 }
