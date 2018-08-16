@@ -59,6 +59,7 @@ var myModuleFiles =
 	'src/utility/fnCaller.js',
 	'src/utility/fitNumber.js',
 	'src/utility/urlParam.js',
+	'src/utility/formTools.js',
 
 	'src/utility/clock.js',
 	'src/utility/input-files.js',
