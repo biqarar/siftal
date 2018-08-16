@@ -55,7 +55,7 @@
                   NProgress.set(percentComplete)
                 }
                 // percentComplete = Math.round(percentComplete * 100);
-                logy(percentComplete);
+                // logy(percentComplete);
             }
         }, false);
         return xhr;
@@ -390,7 +390,7 @@
 
     if(!state.html)
     {
-      logy(state);
+      // logy(state);
       fetch(state).then(function(data)
       {
         var props = _.extend(true, {}, state, data.json);
