@@ -1,10 +1,14 @@
 var rangeSlider1 = function()
 {
-  var slider = $('.rangeSlider1');
+  var mySlider = $('.rangeSlider1');
+  if(mySlider.length < 1)
+  {
+    return;
+  }
   var range  = $('.rangeSlider1 input');
   var value  = $('.rangeSlider1 output');
 
-  slider.each(function()
+  mySlider.each(function()
   {
     value.each(function()
     {
@@ -19,4 +23,11 @@ var rangeSlider1 = function()
   });
 };
 
-rangeSlider1();
+
+function toggleRadio()
+{
+  $('.radio-button').on("click", function(event){
+    $('.radio-button').prop('checked', false);
+    $(this).prop('checked', true);
+  });
+}

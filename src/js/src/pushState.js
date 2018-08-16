@@ -22,6 +22,8 @@ function pushStateSiftal(_direct)
   scrollSmoothDetector(_direct);
   // run watchScroll func to watch all elements
   watchScroll();
+  // run rangeslider manager
+  rangeSlider1();
   runTippy();
   initTagDetector();
   bindUploader();
