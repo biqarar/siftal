@@ -13832,6 +13832,14 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
 .btn.weAreHere {
   border-color: #168187; }
 
+.btn[data-shortkey] kbd {
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.07);
+  transition: none; }
+
+.btn[data-shortkey] kbd.floatLa {
+  font-size: 1.3em; }
+
 .pA0 {
   padding: 0px 0px; }
 
