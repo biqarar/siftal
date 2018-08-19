@@ -24,8 +24,17 @@
     set: function(a, b) {
       return localStorage.setItem(a, stringify(b));
     },
-    get: function(a) {
-      return parse(localStorage.getItem(a));
+    get: function(a)
+    {
+      try
+      {
+        return parse(localStorage.getItem(a));
+      }
+      catch (_err)
+      {
+        console.error(_err);
+        return null;
+      }
     },
     remove: function(a) {
       return localStorage.removeItem(a);
