@@ -1946,16 +1946,21 @@ progress.xl, meter.xl {
   -fs-table-paginate: paginate;
   overflow: hidden; }
 
-.tbl1 th, .tbl1 td {
-  padding-right: 1rem;
-  text-align: left; }
-
-.rtl .tbl1 th, .rtl .tbl1 td {
-  text-align: right; }
+.tbl thead {
+  display: table-header-group; }
 
 .tbl1 th {
   padding-top: 18px;
   padding-bottom: 18px; }
+
+.tbl1 th, .tbl1 td {
+  padding-right: 1rem;
+  text-align: left;
+  max-width: 600px;
+  text-overflow: ellipsis; }
+
+.rtl .tbl1 th, .rtl .tbl1 td {
+  text-align: right; }
 
 .tbl1 td {
   padding-top: 16px;
@@ -1966,6 +1971,14 @@ progress.xl, meter.xl {
 
 /*==================================================================
 [ v1 ]*/
+.tbl1.v1 {
+  border-radius: 1rem;
+  box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15); }
+
 .tbl1.v1 th {
   font-size: 18px;
   color: #fff;
@@ -1980,8 +1993,9 @@ progress.xl, meter.xl {
 .tbl1.v1 tr:nth-child(even) {
   background-color: #f8f6ff; }
 
-/*---------------------------------------------*/
-.tbl1.v1 {
+/*==================================================================
+[ Ver2 ]*/
+.tbl1.ver2 {
   border-radius: 1rem;
   box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
@@ -1989,17 +2003,6 @@ progress.xl, meter.xl {
   -o-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
   -ms-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15); }
 
-.tbl1.v1 .ps__rail-y {
-  right: 5px; }
-
-.tbl1.v1 .ps__rail-y::before {
-  background-color: #ebebeb; }
-
-.tbl1.v1 .ps__rail-y .ps__thumb-y::before {
-  background-color: #cccccc; }
-
-/*==================================================================
-[ Ver2 ]*/
 .tbl1.ver2 .tbl1-head {
   box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
@@ -2022,7 +2025,9 @@ progress.xl, meter.xl {
   border-bottom: 1px solid #f2f2f2; }
 
 /*---------------------------------------------*/
-.tbl1.ver2 {
+/*==================================================================
+[ Ver3 ]*/
+.tbl1.ver3 {
   border-radius: 1rem;
   box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
@@ -2030,17 +2035,6 @@ progress.xl, meter.xl {
   -o-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
   -ms-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15); }
 
-.tbl1.ver2 .ps__rail-y {
-  right: 5px; }
-
-.tbl1.ver2 .ps__rail-y::before {
-  background-color: #ebebeb; }
-
-.tbl1.ver2 .ps__rail-y .ps__thumb-y::before {
-  background-color: #cccccc; }
-
-/*==================================================================
-[ Ver3 ]*/
 .tbl1.ver3 {
   background-color: #393939; }
 
@@ -2057,27 +2051,9 @@ progress.xl, meter.xl {
   line-height: 1.4;
   background-color: #222222; }
 
-/*---------------------------------------------*/
-.tbl1.ver3 {
-  border-radius: 1rem;
-  box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
-  -o-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
-  -ms-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15); }
-
-.tbl1.ver3 .ps__rail-y {
-  right: 5px; }
-
-.tbl1.ver3 .ps__rail-y::before {
-  background-color: #4e4e4e; }
-
-.tbl1.ver3 .ps__rail-y .ps__thumb-y::before {
-  background-color: #00ad5f; }
-
 /*==================================================================
 [ Ver4 ]*/
-.tbl1.ver4 .tbl1-head {
+.tbl1.ver4 .tbl1-body {
   padding-right: 20px; }
 
 .tbl1.ver4 th {
@@ -2099,18 +2075,6 @@ progress.xl, meter.xl {
   border-bottom: 1px solid #f2f2f2; }
 
 /*---------------------------------------------*/
-.tbl1.ver4 .tbl1-body {
-  padding-right: 20px; }
-
-.tbl1.ver4 .ps__rail-y {
-  right: 0px; }
-
-.tbl1.ver4 .ps__rail-y::before {
-  background-color: #ebebeb; }
-
-.tbl1.ver4 .ps__rail-y .ps__thumb-y::before {
-  background-color: #cccccc; }
-
 /*==================================================================
 [ Ver5 ]*/
 .tbl1.ver5 th {
@@ -2119,6 +2083,9 @@ progress.xl, meter.xl {
   line-height: 1.4;
   text-transform: uppercase;
   background-color: transparent; }
+
+.tbl1.ver5 .tbl1-body {
+  padding-right: 30px; }
 
 .tbl1.ver5 td {
   font-size: 15px;
@@ -2160,19 +2127,6 @@ progress.xl, meter.xl {
 .tbl1.ver5 .tbl1-head th {
   padding-top: 25px;
   padding-bottom: 25px; }
-
-/*---------------------------------------------*/
-.tbl1.ver5 .tbl1-body {
-  padding-right: 30px; }
-
-.tbl1.ver5 .ps__rail-y {
-  right: 0px; }
-
-.tbl1.ver5 .ps__rail-y::before {
-  background-color: #ebebeb; }
-
-.tbl1.ver5 .ps__rail-y .ps__thumb-y::before {
-  background-color: #cccccc; }
 
 .tbox {
   margin: 0.5em 0 1.5em;
