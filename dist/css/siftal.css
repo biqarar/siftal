@@ -2029,14 +2029,13 @@ progress.xl, meter.xl {
 /*==================================================================
 [ Ver1 ]*/
 .tbl1.ver1 th {
-  font-family: Lato-Bold;
   font-size: 18px;
+  font-weight: 700;
   color: #fff;
   line-height: 1.4;
   background-color: #6c7ae0; }
 
 .tbl1.ver1 td {
-  font-family: Lato-Regular;
   font-size: 15px;
   color: #808080;
   line-height: 1.4; }
@@ -2073,14 +2072,13 @@ progress.xl, meter.xl {
   -ms-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1); }
 
 .tbl1.ver2 th {
-  font-family: Lato-Bold;
   font-size: 18px;
+  font-weight: 700;
   color: #fa4251;
   line-height: 1.4;
   background-color: transparent; }
 
 .tbl1.ver2 td {
-  font-family: Lato-Regular;
   font-size: 15px;
   color: #808080;
   line-height: 1.4; }
@@ -2113,15 +2111,14 @@ progress.xl, meter.xl {
   background-color: #393939; }
 
 .tbl1.ver3 th {
-  font-family: Lato-Bold;
   font-size: 15px;
+  font-weight: 700;
   color: #00ad5f;
   line-height: 1.4;
   text-transform: uppercase;
   background-color: #393939; }
 
 .tbl1.ver3 td {
-  font-family: Lato-Regular;
   font-size: 15px;
   color: #808080;
   line-height: 1.4;
@@ -2155,8 +2152,8 @@ progress.xl, meter.xl {
   padding-right: 20px; }
 
 .tbl1.ver4 th {
-  font-family: Lato-Bold;
   font-size: 18px;
+  font-weight: 700;
   color: #4272d7;
   line-height: 1.4;
   background-color: transparent;
@@ -2166,7 +2163,6 @@ progress.xl, meter.xl {
   padding-left: 7px; }
 
 .tbl1.ver4 td {
-  font-family: Lato-Regular;
   font-size: 15px;
   color: #808080;
   line-height: 1.4; }
@@ -2199,15 +2195,14 @@ progress.xl, meter.xl {
   padding-right: 30px; }
 
 .tbl1.ver5 th {
-  font-family: Lato-Bold;
   font-size: 14px;
+  font-weight: 700;
   color: #555555;
   line-height: 1.4;
   text-transform: uppercase;
   background-color: transparent; }
 
 .tbl1.ver5 td {
-  font-family: Lato-Regular;
   font-size: 15px;
   color: #808080;
   line-height: 1.4;
