@@ -26,6 +26,9 @@
 .tbl1 tr{
   transition:0.3s;
 }
+.tbl1 tr:hover{
+	background-color:rgba(0,0,0,0.1);
+}
 .tbl1 td {
   padding-top: 1em;
   padding-bottom: 1em;
@@ -55,9 +58,6 @@
 .tbl1.v1 tr:nth-child(even) {
   background-color: #f8f6ff;
 }
-.tbl1.v1 tr:hover{
-	background-color:rgba(0,0,0,0.1);
-}
 
 
 /*================================================================== [ Ver2 ]*/
@@ -75,16 +75,14 @@
   -webkit-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
   -o-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
   -ms-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
+  color: #fa4251;
+  background-color: transparent;
 }
 .tbl1.v2 tbody tr:first-of-type td{
 	padding-top:2em;
 }
 .tbl1.v2 tr {
   border-bottom: 1px solid #f2f2f2;
-}
-.tbl1.v2 th {
-  color: #fa4251;
-  background-color: transparent;
 }
 
 
@@ -100,18 +98,19 @@
 }
 .tbl1.v3 thead {
   font-size: 1em;
-}
-.tbl1.v3 th {
   color: #00ad5f;
   text-transform: uppercase;
   background-color: #393939;
 }
-.tbl1.v3 td {
-  background-color: #222222;
+.tbl1.v3 tr {
+  background-color: #222;
+}
+.tbl1.v3 tr:hover {
+  background-color: #333;
 }
 
 /*================================================================== [ v4 ]*/
-.tbl1.v4 th {
+.tbl1.v4 thead {
   color: #4272d7;
   background-color: transparent;
   border-bottom: 2px solid #f2f2f2;
