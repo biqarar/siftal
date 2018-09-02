@@ -1946,43 +1946,43 @@ progress.xl, meter.xl {
   -fs-table-paginate: paginate;
   overflow: hidden; }
 
-.tbl thead {
-  display: table-header-group; }
+.tbl1 thead {
+  display: table-header-group;
+  font-size: 1.2em;
+  line-height: 1.4; }
 
 .tbl1 th {
-  padding-top: 18px;
-  padding-bottom: 18px; }
-
-.tbl1 th, .tbl1 td {
+  padding-top: 1em;
+  padding-bottom: 1em;
   padding-right: 1rem;
   text-align: left;
   max-width: 600px;
   text-overflow: ellipsis; }
 
-.rtl .tbl1 th, .rtl .tbl1 td {
+.rtl .tbl1 th {
   text-align: right; }
 
 .tbl1 td {
-  padding-top: 16px;
-  padding-bottom: 16px; }
+  padding-top: 1em;
+  padding-bottom: 1em; }
+
+.rtl .tbl1 td {
+  text-align: right; }
 
 .tbl1 tr th:first-of-type, .tbl1 tr td:first-of-type {
-  padding-left: 2rem; }
+  padding-left: 3rem; }
 
-/*==================================================================
-[ v1 ]*/
+/*================================================================== [ v1 ]*/
 .tbl1.v1 {
   border-radius: 1rem;
-  box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
-  -o-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
-  -ms-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15); }
 
 .tbl1.v1 th {
-  font-size: 18px;
   color: #fff;
-  line-height: 1.4;
   background-color: #6c7ae0; }
 
 .tbl1.v1 td {
@@ -1993,15 +1993,14 @@ progress.xl, meter.xl {
 .tbl1.v1 tr:nth-child(even) {
   background-color: #f8f6ff; }
 
-/*==================================================================
-[ Ver2 ]*/
+/*================================================================== [ Ver2 ]*/
 .tbl1.ver2 {
   border-radius: 1rem;
-  box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
-  -o-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
-  -ms-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15); }
 
 .tbl1.ver2 .tbl1-head {
   box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
@@ -2010,10 +2009,11 @@ progress.xl, meter.xl {
   -o-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
   -ms-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1); }
 
+.tbl1.ver2 tr {
+  border-bottom: 1px solid #f2f2f2; }
+
 .tbl1.ver2 th {
-  font-size: 18px;
   color: #fa4251;
-  line-height: 1.4;
   background-color: transparent; }
 
 .tbl1.ver2 td {
@@ -2021,27 +2021,23 @@ progress.xl, meter.xl {
   color: #808080;
   line-height: 1.4; }
 
-.tbl1.ver2 tr {
-  border-bottom: 1px solid #f2f2f2; }
-
-/*---------------------------------------------*/
-/*==================================================================
-[ Ver3 ]*/
+/*================================================================== [ Ver3 ]*/
 .tbl1.ver3 {
   border-radius: 1rem;
-  box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
-  -o-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
-  -ms-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15); }
 
 .tbl1.ver3 {
   background-color: #393939; }
 
+.tbl1.ver3 thead {
+  font-size: 1em; }
+
 .tbl1.ver3 th {
-  font-size: 15px;
   color: #00ad5f;
-  line-height: 1.4;
   text-transform: uppercase;
   background-color: #393939; }
 
@@ -2051,15 +2047,12 @@ progress.xl, meter.xl {
   line-height: 1.4;
   background-color: #222222; }
 
-/*==================================================================
-[ Ver4 ]*/
+/*================================================================== [ Ver4 ]*/
 .tbl1.ver4 .tbl1-body {
   padding-right: 20px; }
 
 .tbl1.ver4 th {
-  font-size: 18px;
   color: #4272d7;
-  line-height: 1.4;
   background-color: transparent;
   border-bottom: 2px solid #f2f2f2; }
 
@@ -2074,13 +2067,12 @@ progress.xl, meter.xl {
 .tbl1.ver4 tr {
   border-bottom: 1px solid #f2f2f2; }
 
-/*---------------------------------------------*/
-/*==================================================================
-[ Ver5 ]*/
+/*================================================================== [ Ver5 ]*/
+.tbl1.ver5 thead {
+  font-size: 1em; }
+
 .tbl1.ver5 th {
-  font-size: 14px;
   color: #555555;
-  line-height: 1.4;
   text-transform: uppercase;
   background-color: transparent; }
 
