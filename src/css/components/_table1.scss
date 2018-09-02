@@ -1,16 +1,12 @@
 
-
-
-
-
 .tbl1 {
   background-color: #fff;
+  width:100%;
+  max-width:100%;
+  position: relative;
+  -fs-table-paginate: paginate;
+  overflow: hidden;
 }
-
-.tbl1 table {
-  width: 100%;
-}
-
 .tbl1 th, .tbl1 td {
   padding-right: 1rem;
   text-align:left;
@@ -18,86 +14,43 @@
 .rtl .tbl1 th, .rtl .tbl1 td {
   text-align:right;
 }
-
-.tbl1 .column1 {
-  width: 33%;
-  padding-left: 40px;
-}
-
-.tbl1 .column2 {
-  width: 13%;
-}
-
-.tbl1 .column3 {
-  width: 22%;
-}
-
-.tbl1 .column4 {
-  width: 19%;
-}
-
-.tbl1 .column5 {
-  width: 13%;
-}
-
-.tbl1 .tbl1-head th {
+.tbl1 th {
   padding-top: 18px;
   padding-bottom: 18px;
 }
-
-.tbl1 .tbl1-body td {
+.tbl1 td {
   padding-top: 16px;
   padding-bottom: 16px;
 }
-
-
-
-/*==================================================================
-[ Fix header ]*/
-.tbl1 {
-  position: relative;
-  padding-top: 60px;
-}
-
-.tbl1 .tbl1-head {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-
-.tbl1 .tbl1-body {
-  max-height: 585px;
-  overflow: auto;
+.tbl1 tr th:first-of-type, .tbl1 tr td:first-of-type{
+  padding-left: 2rem;
 }
 
 
 /*==================================================================
-[ Ver1 ]*/
+[ v1 ]*/
 
-.tbl1.ver1 th {
+.tbl1.v1 th {
   font-size: 18px;
   color: #fff;
   line-height: 1.4;
-
   background-color: #6c7ae0;
 }
 
-.tbl1.ver1 td {
+.tbl1.v1 td {
   font-size: 15px;
   color: #808080;
   line-height: 1.4;
 }
 
-.tbl1.ver1 .tbl1-body tr:nth-child(even) {
+.tbl1.v1 tr:nth-child(even) {
   background-color: #f8f6ff;
 }
 
 /*---------------------------------------------*/
 
-.tbl1.ver1 {
+.tbl1.v1 {
   border-radius: 1rem;
-  overflow: hidden;
   box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
@@ -105,15 +58,15 @@
   -ms-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
 }
 
-.tbl1.ver1 .ps__rail-y {
+.tbl1.v1 .ps__rail-y {
   right: 5px;
 }
 
-.tbl1.ver1 .ps__rail-y::before {
+.tbl1.v1 .ps__rail-y::before {
   background-color: #ebebeb;
 }
 
-.tbl1.ver1 .ps__rail-y .ps__thumb-y::before {
+.tbl1.v1 .ps__rail-y .ps__thumb-y::before {
   background-color: #cccccc;
 }
 
@@ -143,7 +96,7 @@
   line-height: 1.4;
 }
 
-.tbl1.ver2 .tbl1-body tr {
+.tbl1.ver2 tr {
   border-bottom: 1px solid #f2f2f2;
 }
 
@@ -151,7 +104,6 @@
 
 .tbl1.ver2 {
   border-radius: 1rem;
-  overflow: hidden;
   box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
@@ -198,7 +150,6 @@
 
 .tbl1.ver3 {
   border-radius: 1rem;
-  overflow: hidden;
   box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
@@ -245,16 +196,11 @@
   line-height: 1.4;
 }
 
-.tbl1.ver4 .tbl1-body tr {
+.tbl1.ver4 tr {
   border-bottom: 1px solid #f2f2f2;
 }
 
 /*---------------------------------------------*/
-
-.tbl1.ver4 {
-  overflow: hidden;
-}
-
 .tbl1.ver4 .tbl1-body{
   padding-right: 20px;
 }
@@ -331,11 +277,6 @@
 }
 
 /*---------------------------------------------*/
-
-.tbl1.ver5 {
-  overflow: hidden;
-}
-
 .tbl1.ver5 .tbl1-body{
   padding-right: 30px;
 }
