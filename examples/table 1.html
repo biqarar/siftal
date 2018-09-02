@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>Siftal</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Siftal, a simple CSS framework with usefull tools for Ermile projects">
+  <link rel="shortcut icon" href="../dist/images/siftal/siftal.ico">
+  <link rel="icon" href="../dist/images/siftal/siftal.png" type="image/png">
+  <link rel="stylesheet" href="../dist/css/siftal.css">
+
+  <style>
+    body{background-color:#eee;}
+  </style>
+</head>
+<body class="ltr">
+  <div class="cn">
+
+
+    <div class="tbox">
+      <h2>Tables</h2>
+      <p>Documentation and examples for tables with Siftal.</p>
+    </div>
+
+    <div class="cbox">
+      <h3>Examples</h3>
+      <p>Just add the base class <code class="code1">.tbl</code> to any <code class="code1">&lt;table&gt;</code>, then extend with custom styles or our various included modifier classes.</p>
+
+      <h4>Simple table</h4>
+      <div class="example">
+        <table class="tbl1">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Username</th>
+            </tr>
+
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <td>Javad</td>
+              <td>Evazzadeh</td>
+              <td>@evazzadeh</td>
+            </tr>
+
+            <tr>
+              <th>2</th>
+              <td>Reza</td>
+              <td>Mohiti</td>
+              <td>@biqarar</td>
+            </tr>
+
+            <tr>
+              <th>3</th>
+              <td>Hasan</td>
+              <td>Salehi</td>
+              <td>@baravak</td>
+            </tr>
+
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>-</th>
+              <th colspan="3">Footer</th>
+            </tr>
+
+          </tfoot>
+
+        </table>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="cbox mB50">
+        <div class="tbl1 ver1">
+          <div class="tbl1-head">
+            <table>
+              <thead>
+                <tr class="row100 head">
+                  <th class="cell100 column1">Class name</th>
+                  <th class="cell100 column2">Type</th>
+                  <th class="cell100 column3">Hours</th>
+                  <th class="cell100 column4">Trainer</th>
+                  <th class="cell100 column5">Spots</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+
+          <div class="tbl1-body js-pscroll">
+            <table>
+              <tbody>
+                <tr class="row100 body">
+                  <td class="cell100 column1">Like a butterfly</td>
+                  <td class="cell100 column2">Boxing</td>
+                  <td class="cell100 column3">9:00 AM - 11:00 AM</td>
+                  <td class="cell100 column4">Aaron Chapman</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Mind & Body</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Adam Stewart</td>
+                  <td class="cell100 column5">15</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Crit Cardio</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">9:00 AM - 10:00 AM</td>
+                  <td class="cell100 column4">Aaron Chapman</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Wheel Pose Full Posture</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">7:00 AM - 8:30 AM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">15</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Playful Dancer's Flow</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Zumba Dance</td>
+                  <td class="cell100 column2">Dance</td>
+                  <td class="cell100 column3">5:00 PM - 7:00 PM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">20</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Cardio Blast</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">5:00 PM - 7:00 PM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Pilates Reformer</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Supple Spine and Shoulders</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">6:30 AM - 8:00 AM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">15</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Yoga for Divas</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">9:00 AM - 11:00 AM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">20</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Virtual Cycle</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">20</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Like a butterfly</td>
+                  <td class="cell100 column2">Boxing</td>
+                  <td class="cell100 column3">9:00 AM - 11:00 AM</td>
+                  <td class="cell100 column4">Aaron Chapman</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Mind & Body</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Adam Stewart</td>
+                  <td class="cell100 column5">15</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Crit Cardio</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">9:00 AM - 10:00 AM</td>
+                  <td class="cell100 column4">Aaron Chapman</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Wheel Pose Full Posture</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">7:00 AM - 8:30 AM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">15</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Playful Dancer's Flow</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Zumba Dance</td>
+                  <td class="cell100 column2">Dance</td>
+                  <td class="cell100 column3">5:00 PM - 7:00 PM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">20</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Cardio Blast</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">5:00 PM - 7:00 PM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Pilates Reformer</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Supple Spine and Shoulders</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">6:30 AM - 8:00 AM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">15</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Yoga for Divas</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">9:00 AM - 11:00 AM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">20</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Virtual Cycle</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">20</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="cbox mB50">
+      <div class="tbl1 ver2">
+          <div class="tbl1-head">
+            <table>
+              <thead>
+                <tr class="row100 head">
+                  <th class="cell100 column1">Class name</th>
+                  <th class="cell100 column2">Type</th>
+                  <th class="cell100 column3">Hours</th>
+                  <th class="cell100 column4">Trainer</th>
+                  <th class="cell100 column5">Spots</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+
+          <div class="tbl1-body js-pscroll">
+            <table>
+              <tbody>
+                <tr class="row100 body">
+                  <td class="cell100 column1">Like a butterfly</td>
+                  <td class="cell100 column2">Boxing</td>
+                  <td class="cell100 column3">9:00 AM - 11:00 AM</td>
+                  <td class="cell100 column4">Aaron Chapman</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Mind & Body</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Adam Stewart</td>
+                  <td class="cell100 column5">15</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Crit Cardio</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">9:00 AM - 10:00 AM</td>
+                  <td class="cell100 column4">Aaron Chapman</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Wheel Pose Full Posture</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">7:00 AM - 8:30 AM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">15</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Playful Dancer's Flow</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Zumba Dance</td>
+                  <td class="cell100 column2">Dance</td>
+                  <td class="cell100 column3">5:00 PM - 7:00 PM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">20</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Cardio Blast</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">5:00 PM - 7:00 PM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Pilates Reformer</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Supple Spine and Shoulders</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">6:30 AM - 8:00 AM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">15</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Yoga for Divas</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">9:00 AM - 11:00 AM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">20</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Virtual Cycle</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">20</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Like a butterfly</td>
+                  <td class="cell100 column2">Boxing</td>
+                  <td class="cell100 column3">9:00 AM - 11:00 AM</td>
+                  <td class="cell100 column4">Aaron Chapman</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Mind & Body</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Adam Stewart</td>
+                  <td class="cell100 column5">15</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Crit Cardio</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">9:00 AM - 10:00 AM</td>
+                  <td class="cell100 column4">Aaron Chapman</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Wheel Pose Full Posture</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">7:00 AM - 8:30 AM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">15</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Playful Dancer's Flow</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Zumba Dance</td>
+                  <td class="cell100 column2">Dance</td>
+                  <td class="cell100 column3">5:00 PM - 7:00 PM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">20</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Cardio Blast</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">5:00 PM - 7:00 PM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Pilates Reformer</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Supple Spine and Shoulders</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">6:30 AM - 8:00 AM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">15</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Yoga for Divas</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">9:00 AM - 11:00 AM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">20</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Virtual Cycle</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">20</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="cbox mB50">
+        <div class="tbl1 ver3">
+          <div class="tbl1-head">
+            <table>
+              <thead>
+                <tr class="row100 head">
+                  <th class="cell100 column1">Class name</th>
+                  <th class="cell100 column2">Type</th>
+                  <th class="cell100 column3">Hours</th>
+                  <th class="cell100 column4">Trainer</th>
+                  <th class="cell100 column5">Spots</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+
+          <div class="tbl1-body js-pscroll">
+            <table>
+              <tbody>
+                <tr class="row100 body">
+                  <td class="cell100 column1">Like a butterfly</td>
+                  <td class="cell100 column2">Boxing</td>
+                  <td class="cell100 column3">9:00 AM - 11:00 AM</td>
+                  <td class="cell100 column4">Aaron Chapman</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Mind & Body</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Adam Stewart</td>
+                  <td class="cell100 column5">15</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Crit Cardio</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">9:00 AM - 10:00 AM</td>
+                  <td class="cell100 column4">Aaron Chapman</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Wheel Pose Full Posture</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">7:00 AM - 8:30 AM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">15</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Playful Dancer's Flow</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Zumba Dance</td>
+                  <td class="cell100 column2">Dance</td>
+                  <td class="cell100 column3">5:00 PM - 7:00 PM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">20</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Cardio Blast</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">5:00 PM - 7:00 PM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Pilates Reformer</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Supple Spine and Shoulders</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">6:30 AM - 8:00 AM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">15</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Yoga for Divas</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">9:00 AM - 11:00 AM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">20</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Virtual Cycle</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">20</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Like a butterfly</td>
+                  <td class="cell100 column2">Boxing</td>
+                  <td class="cell100 column3">9:00 AM - 11:00 AM</td>
+                  <td class="cell100 column4">Aaron Chapman</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Mind & Body</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Adam Stewart</td>
+                  <td class="cell100 column5">15</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Crit Cardio</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">9:00 AM - 10:00 AM</td>
+                  <td class="cell100 column4">Aaron Chapman</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Wheel Pose Full Posture</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">7:00 AM - 8:30 AM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">15</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Playful Dancer's Flow</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Zumba Dance</td>
+                  <td class="cell100 column2">Dance</td>
+                  <td class="cell100 column3">5:00 PM - 7:00 PM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">20</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Cardio Blast</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">5:00 PM - 7:00 PM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Pilates Reformer</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Supple Spine and Shoulders</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">6:30 AM - 8:00 AM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">15</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Yoga for Divas</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">9:00 AM - 11:00 AM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">20</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Virtual Cycle</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">20</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="cbox mB50">
+        <div class="tbl1 ver4">
+          <div class="tbl1-head">
+            <table>
+              <thead>
+                <tr class="row100 head">
+                  <th class="cell100 column1">Class name</th>
+                  <th class="cell100 column2">Type</th>
+                  <th class="cell100 column3">Hours</th>
+                  <th class="cell100 column4">Trainer</th>
+                  <th class="cell100 column5">Spots</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+
+          <div class="tbl1-body js-pscroll">
+            <table>
+              <tbody>
+                <tr class="row100 body">
+                  <td class="cell100 column1">Like a butterfly</td>
+                  <td class="cell100 column2">Boxing</td>
+                  <td class="cell100 column3">9:00 AM - 11:00 AM</td>
+                  <td class="cell100 column4">Aaron Chapman</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Mind & Body</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Adam Stewart</td>
+                  <td class="cell100 column5">15</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Crit Cardio</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">9:00 AM - 10:00 AM</td>
+                  <td class="cell100 column4">Aaron Chapman</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Wheel Pose Full Posture</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">7:00 AM - 8:30 AM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">15</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Playful Dancer's Flow</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Zumba Dance</td>
+                  <td class="cell100 column2">Dance</td>
+                  <td class="cell100 column3">5:00 PM - 7:00 PM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">20</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Cardio Blast</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">5:00 PM - 7:00 PM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Pilates Reformer</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Supple Spine and Shoulders</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">6:30 AM - 8:00 AM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">15</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Yoga for Divas</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">9:00 AM - 11:00 AM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">20</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Virtual Cycle</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">20</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Like a butterfly</td>
+                  <td class="cell100 column2">Boxing</td>
+                  <td class="cell100 column3">9:00 AM - 11:00 AM</td>
+                  <td class="cell100 column4">Aaron Chapman</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Mind & Body</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Adam Stewart</td>
+                  <td class="cell100 column5">15</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Crit Cardio</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">9:00 AM - 10:00 AM</td>
+                  <td class="cell100 column4">Aaron Chapman</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Wheel Pose Full Posture</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">7:00 AM - 8:30 AM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">15</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Playful Dancer's Flow</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Zumba Dance</td>
+                  <td class="cell100 column2">Dance</td>
+                  <td class="cell100 column3">5:00 PM - 7:00 PM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">20</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Cardio Blast</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">5:00 PM - 7:00 PM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Pilates Reformer</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Supple Spine and Shoulders</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">6:30 AM - 8:00 AM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">15</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Yoga for Divas</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">9:00 AM - 11:00 AM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">20</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Virtual Cycle</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">20</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="cbox mB50">
+
+        <div class="tbl1 ver5">
+          <div class="tbl1-head">
+            <table>
+              <thead>
+                <tr class="row100 head">
+                  <th class="cell100 column1">Class name</th>
+                  <th class="cell100 column2">Type</th>
+                  <th class="cell100 column3">Hours</th>
+                  <th class="cell100 column4">Trainer</th>
+                  <th class="cell100 column5">Spots</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+
+          <div class="tbl1-body js-pscroll">
+            <table>
+              <tbody>
+                <tr class="row100 body">
+                  <td class="cell100 column1">Like a butterfly</td>
+                  <td class="cell100 column2">Boxing</td>
+                  <td class="cell100 column3">9:00 AM - 11:00 AM</td>
+                  <td class="cell100 column4">Aaron Chapman</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Mind & Body</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Adam Stewart</td>
+                  <td class="cell100 column5">15</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Crit Cardio</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">9:00 AM - 10:00 AM</td>
+                  <td class="cell100 column4">Aaron Chapman</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Wheel Pose Full Posture</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">7:00 AM - 8:30 AM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">15</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Playful Dancer's Flow</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Zumba Dance</td>
+                  <td class="cell100 column2">Dance</td>
+                  <td class="cell100 column3">5:00 PM - 7:00 PM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">20</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Cardio Blast</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">5:00 PM - 7:00 PM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Pilates Reformer</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Supple Spine and Shoulders</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">6:30 AM - 8:00 AM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">15</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Yoga for Divas</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">9:00 AM - 11:00 AM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">20</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Virtual Cycle</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">20</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Like a butterfly</td>
+                  <td class="cell100 column2">Boxing</td>
+                  <td class="cell100 column3">9:00 AM - 11:00 AM</td>
+                  <td class="cell100 column4">Aaron Chapman</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Mind & Body</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Adam Stewart</td>
+                  <td class="cell100 column5">15</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Crit Cardio</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">9:00 AM - 10:00 AM</td>
+                  <td class="cell100 column4">Aaron Chapman</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Wheel Pose Full Posture</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">7:00 AM - 8:30 AM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">15</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Playful Dancer's Flow</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Zumba Dance</td>
+                  <td class="cell100 column2">Dance</td>
+                  <td class="cell100 column3">5:00 PM - 7:00 PM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">20</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Cardio Blast</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">5:00 PM - 7:00 PM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Pilates Reformer</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">10</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Supple Spine and Shoulders</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">6:30 AM - 8:00 AM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">15</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Yoga for Divas</td>
+                  <td class="cell100 column2">Yoga</td>
+                  <td class="cell100 column3">9:00 AM - 11:00 AM</td>
+                  <td class="cell100 column4">Donna Wilson</td>
+                  <td class="cell100 column5">20</td>
+                </tr>
+
+                <tr class="row100 body">
+                  <td class="cell100 column1">Virtual Cycle</td>
+                  <td class="cell100 column2">Gym</td>
+                  <td class="cell100 column3">8:00 AM - 9:00 AM</td>
+                  <td class="cell100 column4">Randy Porter</td>
+                  <td class="cell100 column5">20</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+    </div>
+
+
+
+  </div>
+  <script src="../dist/js/siftal.min.js"></script>
+</body>
+</html>
