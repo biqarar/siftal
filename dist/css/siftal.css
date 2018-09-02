@@ -2119,6 +2119,28 @@ progress.xl, meter.xl {
 .tbl1.v6 tbody tr:hover {
   background-color: rgba(0, 0, 0, 0.1); }
 
+/*================================================================== [ v7 ]*/
+.tbl1.v7 {
+  border-radius: 1rem;
+  box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15); }
+
+.tbl1.v7 thead {
+  color: #fff;
+  background-color: #333; }
+
+.tbl1.v7 td {
+  color: #808080; }
+
+.tbl1.v7 tr:nth-child(even) {
+  background-color: #eaf8e6; }
+
+.tbl1.v7 tbody tr:hover {
+  background-color: #83d160; }
+
 .tbox {
   margin: 0.5em 0 1.5em;
   font-size: 1.2em;
