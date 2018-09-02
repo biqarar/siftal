@@ -53,8 +53,11 @@
 }
 
 .tbl1 th, .tbl1 td {
-  font-weight: unset;
-  padding-right: 10px;
+  padding-right: 1rem;
+  text-align:left;
+}
+.rtl .tbl1 th, .rtl .tbl1 td {
+  text-align:right;
 }
 
 .tbl1 .column1 {
@@ -113,7 +116,6 @@
 
 .tbl1.ver1 th {
   font-size: 18px;
-  font-weight:700;
   color: #fff;
   line-height: 1.4;
 
@@ -133,7 +135,7 @@
 /*---------------------------------------------*/
 
 .tbl1.ver1 {
-  border-radius: 10px;
+  border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
@@ -168,7 +170,6 @@
 
 .tbl1.ver2 th {
   font-size: 18px;
-  font-weight:700;
   color: #fa4251;
   line-height: 1.4;
 
@@ -188,7 +189,7 @@
 /*---------------------------------------------*/
 
 .tbl1.ver2 {
-  border-radius: 10px;
+  border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
@@ -218,7 +219,6 @@
 
 .tbl1.ver3 th {
   font-size: 15px;
-  font-weight:700;
   color: #00ad5f;
   line-height: 1.4;
   text-transform: uppercase;
@@ -236,7 +236,7 @@
 /*---------------------------------------------*/
 
 .tbl1.ver3 {
-  border-radius: 10px;
+  border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
@@ -270,7 +270,6 @@
 
 .tbl1.ver4 th {
   font-size: 18px;
-  font-weight:700;
   color: #4272d7;
   line-height: 1.4;
 
@@ -327,7 +326,6 @@
 
 .tbl1.ver5 th {
   font-size: 14px;
-  font-weight:700;
   color: #555555;
   line-height: 1.4;
   text-transform: uppercase;
@@ -339,40 +337,41 @@
   font-size: 15px;
   color: #808080;
   line-height: 1.4;
-
   background-color: #f7f7f7;
 }
 
 .tbl1.ver5 .tbl1-body tr {
   overflow: hidden;
-  border-bottom: 10px solid #fff;
-  border-radius: 10px;
+  border-bottom: 1rem solid #fff;
+  border-radius: 1rem;
 }
 
 .tbl1.ver5 .tbl1-body table {
   border-collapse: separate;
-  border-spacing: 0 10px;
+  border-spacing: 0 1rem;
 }
 .tbl1.ver5 .tbl1-body td {
     border: solid 1px transparent;
     border-style: solid none;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 .tbl1.ver5 .tbl1-body td:first-child {
     border-left-style: solid;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
 }
 .tbl1.ver5 .tbl1-body td:last-child {
     border-right-style: solid;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.tbl1.ver5 tr:hover td{
+	transition:0.3s;
 }
 
 .tbl1.ver5 tr:hover td {
   background-color: #ebebeb;
-  cursor: pointer;
 }
 
 .tbl1.ver5 .tbl1-head th {
