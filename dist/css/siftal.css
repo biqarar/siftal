@@ -1965,7 +1965,7 @@ progress.xl, meter.xl {
 .tbl1 tr {
   transition: 0.3s; }
 
-.tbl1 tr:hover {
+.tbl1 tbody tr:hover {
   background-color: rgba(0, 0, 0, 0.1); }
 
 .tbl1 td {
@@ -2059,12 +2059,12 @@ progress.xl, meter.xl {
   border-spacing: 0 1rem; }
 
 .tbl1.v5 thead {
-  font-size: 1em; }
-
-.tbl1.v5 thead th {
+  font-size: 1em;
   color: #555555;
   text-transform: uppercase;
-  background-color: transparent;
+  background-color: transparent; }
+
+.tbl1.v5 thead th {
   padding-top: 1.5em;
   padding-bottom: 1.5em; }
 
