@@ -1962,6 +1962,9 @@ progress.xl, meter.xl {
 .rtl .tbl1 th {
   text-align: right; }
 
+.tbl1 tr {
+  transition: 0.3s; }
+
 .tbl1 td {
   padding-top: 1em;
   padding-bottom: 1em;
@@ -1982,12 +1985,15 @@ progress.xl, meter.xl {
   -o-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
   -ms-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15); }
 
-.tbl1.v1 th {
+.tbl1.v1 thead {
   color: #fff;
   background-color: #6c7ae0; }
 
 .tbl1.v1 tr:nth-child(even) {
   background-color: #f8f6ff; }
+
+.tbl1.v1 tr:hover {
+  background-color: rgba(0, 0, 0, 0.1); }
 
 /*================================================================== [ Ver2 ]*/
 .tbl1.v2 {
