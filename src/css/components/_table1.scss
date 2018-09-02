@@ -143,9 +143,12 @@
 	overflow: hidden;
 	border-bottom: 1rem solid #fff;
 	border-radius: 1rem;
+	background-color: #f7f7f7;
+}
+.tbl1.v5 tbody tr:hover {
+	background-color: #ebebeb;
 }
 .tbl1.v5 tbody td {
-	background-color: #f7f7f7;
 	border: solid 1px transparent;
 	border-style: solid none;
 	padding-top: 1rem;
@@ -160,12 +163,6 @@
 	border-right-style: solid;
 	border-bottom-right-radius: 1rem;
 	border-top-right-radius: 1rem;
-}
-.tbl1.v5 tr:hover td{
-	transition:0.3s;
-}
-.tbl1.v5 tr:hover td {
-	background-color: #ebebeb;
 }
 
 
