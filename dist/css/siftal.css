@@ -1938,6 +1938,43 @@ progress.xl, meter.xl {
 .tbl [class^="sf-"] {
   display: inline-block; }
 
+.tbl1 {
+  background-color: #fff; }
+
+.tbl1 table {
+  width: 100%; }
+
+.tbl1 th, .tbl1 td {
+  padding-right: 1rem;
+  text-align: left; }
+
+.rtl .tbl1 th, .rtl .tbl1 td {
+  text-align: right; }
+
+.tbl1 .column1 {
+  width: 33%;
+  padding-left: 40px; }
+
+.tbl1 .column2 {
+  width: 13%; }
+
+.tbl1 .column3 {
+  width: 22%; }
+
+.tbl1 .column4 {
+  width: 19%; }
+
+.tbl1 .column5 {
+  width: 13%; }
+
+.tbl1 .tbl1-head th {
+  padding-top: 18px;
+  padding-bottom: 18px; }
+
+.tbl1 .tbl1-body td {
+  padding-top: 16px;
+  padding-bottom: 16px; }
+
 .tbl1 .js-pscroll {
   position: relative;
   overflow: hidden; }
@@ -1975,43 +2012,6 @@ progress.xl, meter.xl {
   height: calc(100% - 30px);
   left: 0;
   top: 15px; }
-
-.tbl1 {
-  background-color: #fff; }
-
-.tbl1 table {
-  width: 100%; }
-
-.tbl1 th, .tbl1 td {
-  padding-right: 1rem;
-  text-align: left; }
-
-.rtl .tbl1 th, .rtl .tbl1 td {
-  text-align: right; }
-
-.tbl1 .column1 {
-  width: 33%;
-  padding-left: 40px; }
-
-.tbl1 .column2 {
-  width: 13%; }
-
-.tbl1 .column3 {
-  width: 22%; }
-
-.tbl1 .column4 {
-  width: 19%; }
-
-.tbl1 .column5 {
-  width: 13%; }
-
-.tbl1 .tbl1-head th {
-  padding-top: 18px;
-  padding-bottom: 18px; }
-
-.tbl1 .tbl1-body td {
-  padding-top: 16px;
-  padding-bottom: 16px; }
 
 /*==================================================================
 [ Fix header ]*/
@@ -2145,9 +2145,6 @@ progress.xl, meter.xl {
 
 /*==================================================================
 [ Ver4 ]*/
-.tbl1.ver4 {
-  margin-right: -20px; }
-
 .tbl1.ver4 .tbl1-head {
   padding-right: 20px; }
 
@@ -2187,12 +2184,6 @@ progress.xl, meter.xl {
 
 /*==================================================================
 [ Ver5 ]*/
-.tbl1.ver5 {
-  margin-right: -30px; }
-
-.tbl1.ver5 .tbl1-head {
-  padding-right: 30px; }
-
 .tbl1.ver5 th {
   font-size: 14px;
   color: #555555;
@@ -16758,36 +16749,36 @@ body.siftal .full .middle {
   width: 100%;
   max-height: 100%; }
 
-.siftal .scr::-webkit-scrollbar {
+.scr::-webkit-scrollbar {
   width: 10px;
   height: 10px;
   border: none;
   background: rgba(0, 0, 0, 0.1);
   transition: 0.3s; }
 
-.siftal .scr::-webkit-scrollbar:hover {
+.scr::-webkit-scrollbar:hover {
   background: rgba(0, 0, 0, 0.15); }
 
-.siftal .scr::-webkit-scrollbar-track {
+.scr::-webkit-scrollbar-track {
   background: none; }
 
-.siftal .scr::-webkit-scrollbar-thumb {
+.scr::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.1);
   border-radius: 0; }
 
-.siftal .scr::-webkit-scrollbar-thumb:hover {
+.scr::-webkit-scrollbar-thumb:hover {
   background: rgba(0, 0, 0, 0.2); }
 
-.siftal .scr.dark::-webkit-scrollbar {
+.scr.dark::-webkit-scrollbar {
   background: rgba(255, 255, 255, 0.1); }
 
-.siftal .scr.dark::-webkit-scrollbar:hover {
+.scr.dark::-webkit-scrollbar:hover {
   background: rgba(255, 255, 255, 0.15); }
 
-.siftal .scr.dark::-webkit-scrollbar-thumb {
+.scr.dark::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.1); }
 
-.siftal .scr.dark::-webkit-scrollbar-thumb:hover {
+.scr.dark::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.2); }
 
 /* btns */

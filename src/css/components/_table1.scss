@@ -1,45 +1,4 @@
-.tbl1 .js-pscroll {
-  position: relative;
-  overflow: hidden;
-}
 
-.tbl1 .ps__rail-y {
-  width: 9px;
-  background-color: transparent;
-  opacity: 1 !important;
-  right: 5px;
-}
-
-.tbl1 .ps__rail-y::before {
-  content: "";
-  display: block;
-  position: absolute;
-  background-color: #ebebeb;
-  border-radius: 5px;
-  width: 100%;
-  height: calc(100% - 30px);
-  left: 0;
-  top: 15px;
-}
-
-.tbl1 .ps__rail-y .ps__thumb-y {
-  width: 100%;
-  right: 0;
-  background-color: transparent;
-  opacity: 1 !important;
-}
-
-.tbl1 .ps__rail-y .ps__thumb-y::before {
-  content: "";
-  display: block;
-  position: absolute;
-  background-color: #cccccc;
-  border-radius: 5px;
-  width: 100%;
-  height: calc(100% - 30px);
-  left: 0;
-  top: 15px;
-}
 
 
 
@@ -90,6 +49,55 @@
   padding-top: 16px;
   padding-bottom: 16px;
 }
+
+
+
+.tbl1 .js-pscroll {
+  position: relative;
+  overflow: hidden;
+}
+
+.tbl1 .ps__rail-y {
+  width: 9px;
+  background-color: transparent;
+  opacity: 1 !important;
+  right: 5px;
+}
+
+.tbl1 .ps__rail-y::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #ebebeb;
+  border-radius: 5px;
+  width: 100%;
+  height: calc(100% - 30px);
+  left: 0;
+  top: 15px;
+}
+
+.tbl1 .ps__rail-y .ps__thumb-y {
+  width: 100%;
+  right: 0;
+  background-color: transparent;
+  opacity: 1 !important;
+}
+
+.tbl1 .ps__rail-y .ps__thumb-y::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #cccccc;
+  border-radius: 5px;
+  width: 100%;
+  height: calc(100% - 30px);
+  left: 0;
+  top: 15px;
+}
+
+
+
+
 
 /*==================================================================
 [ Fix header ]*/
@@ -260,9 +268,6 @@
 
 /*==================================================================
 [ Ver4 ]*/
-.tbl1.ver4 {
-  margin-right: -20px;
-}
 
 .tbl1.ver4 .tbl1-head {
   padding-right: 20px;
@@ -316,13 +321,6 @@
 
 /*==================================================================
 [ Ver5 ]*/
-.tbl1.ver5 {
-  margin-right: -30px;
-}
-
-.tbl1.ver5 .tbl1-head {
-  padding-right: 30px;
-}
 
 .tbl1.ver5 th {
   font-size: 14px;
