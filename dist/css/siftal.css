@@ -16781,43 +16781,6 @@ body.siftal .full .middle {
   width: 100%;
   max-height: 100%; }
 
-/* btns */
-.btns {
-  margin-bottom: 2em; }
-
-.btns a {
-  display: inline-block;
-  background-color: #e8e8e8;
-  padding: 1em 2em;
-  margin: 0.5em;
-  border-radius: 2px;
-  color: #000;
-  transition: .3s; }
-
-.btns a:hover {
-  background-color: #ddd; }
-
-.btns a:focus {
-  background-color: #3d4e5d;
-  color: #fff; }
-
-.btns .info {
-  background-color: #d9edf7; }
-
-.btns .warn {
-  background-color: #fdd5d1; }
-
-.btns input {
-  border: none;
-  padding: 0.5em 1em;
-  margin: 0 0.5em; }
-
-.btns input:hover {
-  opacity: 0.8; }
-
-.btns input[type="submit"] {
-  cursor: pointer; }
-
 .siftal form #mobile {
   direction: ltr; }
 
