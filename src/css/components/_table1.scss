@@ -3,42 +3,42 @@
   background-color: #fff;
 }
 
-table {
+.tbl1 table {
   width: 100%;
 }
 
-th, td {
+.tbl1 th, .tbl1 td {
   font-weight: unset;
   padding-right: 10px;
 }
 
-.column1 {
+.tbl1 .column1 {
   width: 33%;
   padding-left: 40px;
 }
 
-.column2 {
+.tbl1 .column2 {
   width: 13%;
 }
 
-.column3 {
+.tbl1 .column3 {
   width: 22%;
 }
 
-.column4 {
+.tbl1 .column4 {
   width: 19%;
 }
 
-.column5 {
+.tbl1 .column5 {
   width: 13%;
 }
 
-.tbl1-head th {
+.tbl1 .tbl1-head th {
   padding-top: 18px;
   padding-bottom: 18px;
 }
 
-.tbl1-body td {
+.tbl1 .tbl1-body td {
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -50,14 +50,14 @@ th, td {
   padding-top: 60px;
 }
 
-.tbl1-head {
+.tbl1 .tbl1-head {
   position: absolute;
   width: 100%;
   top: 0;
   left: 0;
 }
 
-.tbl1-body {
+.tbl1 .tbl1-body {
   max-height: 585px;
   overflow: auto;
 }
