@@ -105,21 +105,17 @@
 }
 
 /*================================================================== [ v4 ]*/
-.tbl1.v4 .tbl1-body{
-  padding-right: 20px;
-}
 .tbl1.v4 th {
   color: #4272d7;
   background-color: transparent;
   border-bottom: 2px solid #f2f2f2;
 }
-.tbl1.v4 .column1 {
-  padding-left: 7px;
-}
 .tbl1.v4 tr {
   border-bottom: 1px solid #f2f2f2;
 }
-
+.tbl1.v4 tr th:first-of-type, .tbl1.v4 tr td:first-of-type{
+  padding-left: 1rem;
+}
 
 
 
