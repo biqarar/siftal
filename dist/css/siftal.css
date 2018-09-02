@@ -1947,6 +1947,10 @@ progress.xl, meter.xl {
   overflow: hidden;
   line-height: 1.4; }
 
+.tbl1.cbox {
+  display: table;
+  padding: 0; }
+
 .tbl1 thead {
   display: table-header-group;
   font-size: 1.2em; }
@@ -2074,6 +2078,9 @@ progress.xl, meter.xl {
   border-radius: 1rem;
   background-color: #f7f7f7; }
 
+.tbl1.v5 tbody tr:hover {
+  background-color: #ebebeb; }
+
 .tbl1.v5 tbody td {
   border: solid 1px transparent;
   border-style: solid none;
@@ -2089,9 +2096,6 @@ progress.xl, meter.xl {
   border-right-style: solid;
   border-bottom-right-radius: 1rem;
   border-top-right-radius: 1rem; }
-
-.tbl1.v5 tbody tr:hover {
-  background-color: #ebebeb; }
 
 .tbox {
   margin: 0.5em 0 1.5em;

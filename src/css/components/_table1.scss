@@ -8,6 +8,10 @@
 	overflow: hidden;
 	line-height: 1.4;
 }
+.tbl1.cbox{
+	display:table;
+	padding:0;
+}
 .tbl1 thead{
 	display: table-header-group;
 	font-size:1.2em;
