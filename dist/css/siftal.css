@@ -4101,6 +4101,38 @@ body.errorPage.s50 {
   overflow: hidden;
   z-index: 0; }
 
+.scr::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  border: none;
+  background: rgba(0, 0, 0, 0.1);
+  transition: 0.3s; }
+
+.scr::-webkit-scrollbar:hover {
+  background: rgba(0, 0, 0, 0.15); }
+
+.scr::-webkit-scrollbar-track {
+  background: none; }
+
+.scr::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 0; }
+
+.scr::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2); }
+
+.scr.dark::-webkit-scrollbar {
+  background: rgba(255, 255, 255, 0.1); }
+
+.scr.dark::-webkit-scrollbar:hover {
+  background: rgba(255, 255, 255, 0.15); }
+
+.scr.dark::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1); }
+
+.scr.dark::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2); }
+
 [class^="sf-"] {
   margin: 0;
   min-width: 1.2em;
@@ -16748,38 +16780,6 @@ body.siftal .full {
 body.siftal .full .middle {
   width: 100%;
   max-height: 100%; }
-
-.scr::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-  border: none;
-  background: rgba(0, 0, 0, 0.1);
-  transition: 0.3s; }
-
-.scr::-webkit-scrollbar:hover {
-  background: rgba(0, 0, 0, 0.15); }
-
-.scr::-webkit-scrollbar-track {
-  background: none; }
-
-.scr::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 0; }
-
-.scr::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.2); }
-
-.scr.dark::-webkit-scrollbar {
-  background: rgba(255, 255, 255, 0.1); }
-
-.scr.dark::-webkit-scrollbar:hover {
-  background: rgba(255, 255, 255, 0.15); }
-
-.scr.dark::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.1); }
-
-.scr.dark::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.2); }
 
 /* btns */
 .btns {
