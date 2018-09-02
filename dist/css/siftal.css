@@ -1975,7 +1975,8 @@ progress.xl, meter.xl {
 .tbl1 td {
   padding-top: 1em;
   padding-bottom: 1em;
-  color: #808080; }
+  color: #808080;
+  transition: 0.3s; }
 
 .rtl .tbl1 td {
   text-align: right; }
@@ -2164,6 +2165,7 @@ progress.xl, meter.xl {
   border-bottom: 1px solid #e5e5e5; }
 
 .tbl1.v8 td {
+  text-align: center !important;
   color: #808080; }
 
 .tbl1.v8 tbody tr:hover {
@@ -2172,6 +2174,29 @@ progress.xl, meter.xl {
 .tbl1.v8 td:hover {
   background-color: #e03e9c;
   color: #fff; }
+
+/*================================================================== [ v9 ]*/
+.tbl1.v9 {
+  border-radius: 1rem;
+  box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15); }
+
+.tbl1.v9 thead {
+  color: #fff;
+  background-color: #002933; }
+
+.tbl1.v9 td {
+  color: #808080; }
+
+.tbl1.v9 tr:nth-child(even) {
+  background-color: #e9faff; }
+
+.tbl1.v9 tbody tr:hover td {
+  color: #fe3e64;
+  background-color: #bee5f1; }
 
 .tbox {
   margin: 0.5em 0 1.5em;
