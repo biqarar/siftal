@@ -26,6 +26,9 @@
 .tbl1 td {
   padding-top: 1em;
   padding-bottom: 1em;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #808080;
 }
 .rtl .tbl1 td {
   text-align:right;
@@ -47,11 +50,6 @@
 .tbl1.v1 th {
   color: #fff;
   background-color: #6c7ae0;
-}
-.tbl1.v1 td {
-  font-size: 15px;
-  color: #808080;
-  line-height: 1.4;
 }
 .tbl1.v1 tr:nth-child(even) {
   background-color: #f8f6ff;
@@ -81,11 +79,6 @@
   color: #fa4251;
   background-color: transparent;
 }
-.tbl1.ver2 td {
-  font-size: 15px;
-  color: #808080;
-  line-height: 1.4;
-}
 
 
 /*================================================================== [ Ver3 ]*/
@@ -109,9 +102,6 @@
   background-color: #393939;
 }
 .tbl1.ver3 td {
-  font-size: 15px;
-  color: #808080;
-  line-height: 1.4;
   background-color: #222222;
 }
 
@@ -126,11 +116,6 @@
 }
 .tbl1.ver4 .column1 {
   padding-left: 7px;
-}
-.tbl1.ver4 td {
-  font-size: 15px;
-  color: #808080;
-  line-height: 1.4;
 }
 .tbl1.ver4 tr {
   border-bottom: 1px solid #f2f2f2;
@@ -152,9 +137,6 @@
   padding-right: 30px;
 }
 .tbl1.ver5 td {
-  font-size: 15px;
-  color: #808080;
-  line-height: 1.4;
   background-color: #f7f7f7;
 }
 .tbl1.ver5 .tbl1-body tr {
