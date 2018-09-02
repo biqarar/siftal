@@ -62,6 +62,9 @@
 .tbl1.v1 tr:nth-child(even) {
 	background-color: #f8f6ff;
 }
+.tbl1.v1 tbody tr:hover{
+	background-color:rgba(0,0,0,0.1);
+}
 
 
 /*================================================================== [ Ver2 ]*/
