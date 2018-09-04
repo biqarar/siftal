@@ -82,7 +82,10 @@
     $window.trigger('navigate:render:start', obj);
     // try to remove tippy from view
     beforePushStateSiftal();
-
+    if(!obj.url)
+    {
+      obj.url = '/';
+    }
 
     var html = obj.html.trim();
     if(html.indexOf('data-xhr') === false)
@@ -298,6 +301,7 @@
           notif('error', 'There was an error in parsing JSON!');
         }
         deferred.reject();
+        console.log(5);
         return location.replace(props.url);
       }
 
