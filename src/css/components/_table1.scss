@@ -26,6 +26,8 @@
 }
 .rtl .tbl1 th {
 	text-align:right;
+	padding-right: 0;
+	padding-left: 1rem;
 }
 .tbl1 tr{
 	transition:0.3s;
@@ -42,10 +44,12 @@
 .rtl .tbl1 td {
 	text-align:right;
 }
-.tbl1 tr th:first-of-type, .tbl1 tr td:first-of-type{
+.ltr .tbl1 tr th:first-of-type, .ltr .tbl1 tr td:first-of-type{
 	padding-left: 3rem;
 }
-
+.rtl .tbl1 tr th:first-of-type, .rtl .tbl1 tr td:first-of-type{
+	padding-right: 3rem;
+}
 
 /*================================================================== [ v1 ]*/
 .tbl1.v1 {
@@ -126,10 +130,12 @@
 .tbl1.v4 tr {
 	border-bottom: 1px solid #f2f2f2;
 }
-.tbl1.v4 tr th:first-of-type, .tbl1.v4 tr td:first-of-type{
+.ltr .tbl1.v4 tr th:first-of-type, .ltr .tbl1.v4 tr td:first-of-type{
 	padding-left: 1rem;
 }
-
+.rtl .tbl1.v4 tr th:first-of-type, .rtl .tbl1.v4 tr td:first-of-type{
+	padding-right: 1rem;
+}
 
 
 /*================================================================== [ v5 ]*/
