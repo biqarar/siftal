@@ -168,15 +168,25 @@
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 }
-.tbl1.v5 tbody td:first-child {
+.ltr .tbl1.v5 tbody td:first-child {
 	border-left-style: solid;
 	border-top-left-radius: 1rem;
 	border-bottom-left-radius: 1rem;
 }
-.tbl1.v5 tbody td:last-child {
+.ltr .tbl1.v5 tbody td:last-child {
 	border-right-style: solid;
 	border-bottom-right-radius: 1rem;
 	border-top-right-radius: 1rem;
+}
+.rtl .tbl1.v5 tbody td:first-child {
+	border-right-style: solid;
+	border-top-right-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+}
+.rtl .tbl1.v5 tbody td:last-child {
+	border-left-style: solid;
+	border-bottom-left-radius: 1rem;
+	border-top-left-radius: 1rem;
 }
 
 /*================================================================== [ v6 ]*/
