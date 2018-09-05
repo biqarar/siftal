@@ -2268,6 +2268,41 @@ progress.xl, meter.xl {
 .tbl1.v10 tbody tr:hover {
   background-color: rgba(255, 255, 255, 0.1); }
 
+.tbl1 thead th[data-sort] {
+  transition: background-color 0.3s;
+  cursor: pointer;
+  position: relative; }
+
+.tbl1 thead th[data-sort]:hover {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+.tbl1 thead th[data-sort] a {
+  display: block;
+  color: inherit;
+  padding: 1em;
+  position: relative; }
+
+.tbl1 thead th[data-sort]::after {
+  font-family: "siftal";
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: bottom;
+  padding: 0 5px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -12px; }
+
+.rtl .tbl1 thead th[data-sort]::after {
+  right: inherit;
+  left: 0; }
+
+.tbl1 thead th[data-sort='desc']::after {
+  content: "\58"; }
+
+.tbl1 thead th[data-sort='asc']::after {
+  content: "\59"; }
+
 .tbox {
   margin: 0.5em 0 1.5em;
   font-size: 1.2em;
@@ -16358,28 +16393,28 @@ body .we500 {
   opacity: 0.6; }
 
 .txtR {
-  text-align: right; }
+  text-align: right !important; }
 
 .txtL {
-  text-align: left; }
+  text-align: left !important; }
 
 .txtC {
-  text-align: center; }
+  text-align: center !important; }
 
-.txtRa {
-  text-align: right; }
+.ltr .txtRa {
+  text-align: right !important; }
 
 .rtl .txtRa {
-  text-align: left; }
+  text-align: left !important; }
 
-.txtLa {
-  text-align: left; }
+.ltr .txtLa {
+  text-align: left !important; }
 
 .rtl .txtLa {
-  text-align: right; }
+  text-align: right !important; }
 
 .txtB {
-  font-weight: 700; }
+  font-weight: 700 !important; }
 
 .fadeIn {
   display: none; }

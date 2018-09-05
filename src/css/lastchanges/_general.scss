@@ -31,31 +31,33 @@
 }
 
 .txtR{
-	text-align: right;
+	text-align: right!important;
 }
 
 .txtL{
-	text-align: left;
+	text-align: left!important;
 }
 .txtC{
-	text-align: center;
+	text-align: center!important;
 }
 
-.txtRa{
-	text-align: right;
+.ltr .txtRa{
+	text-align: right!important;
 }
 .rtl .txtRa{
-	text-align: left;
+	text-align: left!important;
 }
 
-.txtLa{
-	text-align: left;
+.ltr .txtLa{
+	text-align: left!important;
 }
 .rtl .txtLa{
-	text-align: right;
+	text-align: right!important;
 }
 
-.txtB{font-weight:700;}
+.txtB{
+	font-weight:700!important;
+}
 
 .fadeIn{
 	display:none;
