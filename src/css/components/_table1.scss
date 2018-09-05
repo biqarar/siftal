@@ -74,6 +74,12 @@
 	color: #fff;
 	background-color: #6c7ae0;
 }
+.tbl1.v1 thead a{
+	color: #eee;
+}
+.tbl1.v1 thead a:focus{
+	color: #fff;
+}
 .tbl1.v1 tr:nth-child(even) {
 	background-color: #f8f6ff;
 }
