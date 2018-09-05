@@ -1945,7 +1945,8 @@ progress.xl, meter.xl {
   position: relative;
   -fs-table-paginate: paginate;
   overflow: hidden;
-  line-height: 1.4; }
+  line-height: 1.4;
+  border-collapse: collapse; }
 
 .tbl1.cbox {
   display: table;
@@ -2302,6 +2303,51 @@ progress.xl, meter.xl {
 
 .tbl1 thead th[data-sort='asc']::after {
   content: "\59"; }
+
+.ltr .tbl1 tr.positive {
+  border-left: 5px solid #10c000; }
+
+.rtl .tbl1 tr.positive {
+  border-right: 5px solid #10c000; }
+
+.tbl1 tbody tr.positive:hover {
+  background-color: rgba(16, 192, 0, 0.2); }
+
+.ltr .tbl1 tr.negative {
+  border-left: 5px solid #f07040; }
+
+.rtl .tbl1 tr.negative {
+  border-right: 5px solid #f07040; }
+
+.tbl1 tbody tr.negative:hover {
+  background-color: rgba(240, 64, 64, 0.3); }
+
+.ltr .tbl1 tr.active {
+  border-left: 5px solid #50b5f0; }
+
+.rtl .tbl1 tr.active {
+  border-right: 5px solid #50b5f0; }
+
+.tbl1 tbody tr.active:hover {
+  background-color: rgba(0, 105, 255, 0.3); }
+
+.ltr .tbl1 tr.warning {
+  border-left: 5px solid #c0c010; }
+
+.rtl .tbl1 tr.warning {
+  border-right: 5px solid #c0c010; }
+
+.tbl1 tbody tr.warning:hover {
+  background-color: rgba(192, 192, 16, 0.3); }
+
+.ltr .tbl1 tr.disabled {
+  border-left: 5px solid #807070; }
+
+.rtl .tbl1 tr.disabled {
+  border-right: 5px solid #807070; }
+
+.tbl1 tbody tr.disabled:hover {
+  background-color: rgba(0, 0, 0, 0.1); }
 
 .tbox {
   margin: 0.5em 0 1.5em;
