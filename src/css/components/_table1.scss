@@ -27,12 +27,12 @@
 .ltr .tbl1 th.collapsing, .ltr .tbl1 td.collapsing{
 	width:1px;
 	white-space: nowrap;
-	padding-right: 1em;
+	padding-right: 2em;
 }
 .rtl .tbl1 th.collapsing, .rtl .tbl1 td.collapsing{
 	width:1px;
 	white-space: nowrap;
-	padding-left: 1em;
+	padding-left: 2em;
 }
 .rtl .tbl1 th {
 	text-align:right;
@@ -146,7 +146,16 @@
 .rtl .tbl1.v4 tr th:first-of-type, .rtl .tbl1.v4 tr td:first-of-type{
 	padding-right: 1rem;
 }
-
+.ltr .tbl1.v4 th.collapsing, .ltr .tbl1.v4 td.collapsing{
+	width:1px;
+	white-space: nowrap;
+	padding-right: 1em;
+}
+.rtl .tbl1.v4 th.collapsing, .rtl .tbl1.v4 td.collapsing{
+	width:1px;
+	white-space: nowrap;
+	padding-left: 1em;
+}
 
 /*================================================================== [ v5 ]*/
 .tbl1.v5 {
