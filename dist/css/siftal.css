@@ -2673,6 +2673,8 @@ progress.xl, meter.xl {
   border-top-right-radius: 0; }
 
 img.avatar {
+  min-width: 2em;
+  min-height: 2em;
   width: 2em;
   height: 2em;
   display: inline-block;
