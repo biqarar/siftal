@@ -28,6 +28,15 @@
 .msg:empty{
   display:none
 }
+.msg.special{
+  opacity: 1;
+  border-radius:1rem;
+  box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
+}
 
 .msg .title{
   font-size:120%;
@@ -52,7 +61,9 @@
 }
 .msg:focus{
   border-color: rgba(0,0,0,0.2);
+  opacity: 0.8;
 }
 .msg:active, .msg.active{
   border-color: rgba(0,0,0,0.2);
+  opacity: 0.85;
 }
