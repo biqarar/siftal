@@ -2329,7 +2329,7 @@ progress.xl, meter.xl {
   border-right: 5px solid #50b5f0; }
 
 .tbl1 tbody tr.active:hover {
-  background-color: rgba(0, 105, 255, 0.3); }
+  background-color: rgba(0, 105, 255, 0.2); }
 
 .ltr .tbl1 tr.warning {
   border-left: 5px solid #c0c010; }
@@ -16743,6 +16743,36 @@ body .we500 {
     color: #111; }
   .link > a:active {
     color: #111; }
+
+.pain {
+  background-color: #6c7ae0;
+  color: #fff; }
+
+.pain.outline {
+  background-color: transparent;
+  border-color: #6c7ae0;
+  color: #6c7ae0; }
+
+.pain:hover {
+  background-color: #7070f0;
+  color: #fff; }
+
+.pain:focus {
+  background-color: #6060f0;
+  color: #fff; }
+
+.pain:active, .pain.active {
+  background-color: #5050f0;
+  color: #fff; }
+
+.pain > a {
+  color: #eee; }
+  .pain > a:hover {
+    color: #efefef; }
+  .pain > a:focus {
+    color: #fff; }
+  .pain > a:active {
+    color: #fff; }
 
 .primary2 {
   background-color: #cce5ff;

@@ -252,6 +252,32 @@
 }
 
 
+// pain
+.pain{
+	background-color: #6c7ae0;
+	color: #fff;
+}
+.pain.outline{
+	background-color: transparent;
+	border-color:#6c7ae0;
+	color: #6c7ae0;
+}
+.pain:hover{
+	background-color: #7070f0;
+	color: #fff;
+}
+.pain:focus{
+	background-color: #6060f0;
+	color: #fff;
+}
+.pain:active, .pain.active{
+	background-color: #5050f0;
+	color: #fff;
+}
+.pain > a{
+	@include links(#eee, #efefef, #fff, #fff);
+}
+
 
 
 
