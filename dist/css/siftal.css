@@ -12517,6 +12517,9 @@ i.flag.zambia:before, i.flag.zm:before {
 i.flag.zimbabwe:before, i.flag.zw:before {
   background-position: -108px -390px; }
 
+i.flag.cn {
+  min-width: initial; }
+
 /* Make clicks pass-through */
 #nprogress {
   pointer-events: none; }
