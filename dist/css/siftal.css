@@ -1479,10 +1479,14 @@ a.badge.danger {
 .rtl .breadcrumb2 > a + a:before {
   float: right; }
 
-.breadcrumb.sm {
+.tbox .breadcrumb {
   line-height: 2em;
   height: 2em;
-  padding: 1px 1em; }
+  padding: 1px 1em;
+  font-size: 85%; }
+
+.tbox .breadcrumb:empty {
+  display: none; }
 
 .pagination {
   text-align: center;
