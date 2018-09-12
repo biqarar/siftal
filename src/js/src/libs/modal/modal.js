@@ -99,7 +99,7 @@ function modalOpenClose()
     $.each($this.data(), function(key)
     {
       if(key === 'modal') return;
-      $(this).removeAttr(key);
+      $(this).prop(key, false);
     });
   });
 
@@ -123,7 +123,7 @@ function modalOpenClose()
     {
       if(key === 'modal') return;
 
-      $send.removeAttr(key);
+      $send.prop(key, false);
     });
 
     $send.copyData(this, ['modal']);

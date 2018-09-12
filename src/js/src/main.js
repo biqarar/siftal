@@ -82,7 +82,7 @@ $(document).ready(function()
 
   $(document).on('click', 'button[name]', function(e)
   {
-      // $("input[type=submit]", $(this).parents("form")).removeAttr("clicked");
+      // $("input[type=submit]", $(this).parents("form")).prop("clicked", false);
       $(this).attr("data-clicked", '');
   });
 

@@ -69,7 +69,7 @@
           {
             fd.append(this.getAttribute('name'), this.value);
           }
-          $(this).removeAttr('data-clicked');
+          $(this).prop('data-clicked', false);
         });
 
         // $this.find('[contenteditable]').each(function()
@@ -225,7 +225,7 @@
   {
     if(_locked)
     {
-      $('input, button, textarea, [contenteditable], [data-ajaxify]').removeAttr('disabled');
+      $('input, button, textarea, [contenteditable], [data-ajaxify]').prop('disabled', false);
     }
 
    $('body').removeClass('loading-form');

@@ -26,7 +26,7 @@ jQuery.fn.copyData = function(el, dont)
     {
       // $.each($this.data(), function(key, val)
       // {
-      //   $this.removeAttr("data-" + key);
+      //   $this.prop("data-" + key, false);
       // });
       $this.removeData();
     }
