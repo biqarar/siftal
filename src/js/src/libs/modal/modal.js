@@ -31,7 +31,7 @@
       closeModalTrigger('exit');
     });
 
-    $(window).keydown(function(e)
+    $(window).on("keydown", function(e)
     {
       if(e.which === 27)
       {

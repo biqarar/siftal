@@ -13,7 +13,7 @@ $(document).ready(function()
   // }
 
     /* Blur inputs with ESC key */
-  $(document).keydown(function(e)
+  $(document).on("keydown", function(e)
   {
       switch (e.keyCode)
       {
