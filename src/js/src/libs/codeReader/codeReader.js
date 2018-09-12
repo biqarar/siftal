@@ -12,7 +12,7 @@
   var keys = '';
 
   var timeout = 0;
-  $(document.body).keydown(function(_e)
+  $(document.body).on("keydown", function(_e)
   {
     // ----------------------------------------- cancel monitoring
     // if we are not have barcode in this page, return

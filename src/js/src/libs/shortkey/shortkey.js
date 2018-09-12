@@ -12,7 +12,7 @@ bindHtmlShortkey();
  */
 function bindHtmlShortkey()
 {
-  $(document).keydown(function(_e) { shortkey_corridor.call(this, _e)});
+  $(document).on("keydown", function(_e) { shortkey_corridor.call(this, _e)});
 }
 
 
