@@ -64,7 +64,7 @@ function shortkey_corridor(_e, _self, _key)
       }
       else if(elShortkey.is('input, select, textarea'))
       {
-        elShortkey.focus();
+        elShortkey.trigger("focus");
       }
       _e.preventDefault();
     }

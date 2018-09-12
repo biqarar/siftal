@@ -11,7 +11,7 @@ function dropdownRunner()
         var searchEl = $myDropDown.parents('.ui.dropdown').find('.search');
         if(searchEl)
         {
-          searchEl.focus();
+          searchEl.trigger("focus");
         }
       }
     }, 100);

@@ -279,11 +279,11 @@ function checkInputResponse(_this, _firstTime)
 				}
 				if($(this).find('[data-response-focus]').length)
 				{
-					$(this).find('[data-response-focus]').focus();
+					$(this).find('[data-response-focus]').trigger("focus");
 				}
 				else
 				{
-					$(this).closest('[data-response-focus]').focus();
+					$(this).closest('[data-response-focus]').trigger("focus");
 				}
 				elResult = 'open';
 			}

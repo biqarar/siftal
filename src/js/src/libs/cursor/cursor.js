@@ -9,7 +9,7 @@ function setSelectionRange(_input, _selectionStart, _selectionEnd)
 {
   if (_input.setSelectionRange)
   {
-    _input.focus();
+    _input.trigger("focus");
     _input.setSelectionRange(_selectionStart, _selectionEnd);
   }
   else if (_input.createTextRange)

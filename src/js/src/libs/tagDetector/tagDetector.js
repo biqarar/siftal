@@ -33,7 +33,7 @@ function runTagDetector()
 	$(document).on('click', '.tagDetector .tagAdd' , function ()
 	{
 		addNewTags(this);
-		$(this).closest('.tagDetector').find('.tagInput').focus();
+		$(this).closest('.tagDetector').find('.tagInput').trigger("focus");
 		return false;
 	});
 	// on click on existing tag, show it for edit
@@ -57,7 +57,7 @@ function runTagDetector()
 		// set taglist
 		setTagList(myDetector, attrData);
 		// fill text in input and set focus
-		elInput.val(clickedTagText).focus();
+		elInput.val(clickedTagText).trigger("focus");
 		// remove element
 		$this.remove();
 	});
@@ -68,7 +68,7 @@ function runTagDetector()
 		var	myInput = $(this).closest('.tagDetector').find('.tagInput');
 		myInput.val(myVal);
 		addNewTags(this);
-		myInput.focus();
+		myInput.trigger("focus");
 		return false;
 	});
 }

@@ -210,14 +210,14 @@
                 if($barcodeTargetEl.is($focused))
                 {
                   var inputs = $focused.parents('form').find(':input');
-                  inputs.eq( inputs.index($focused)+ 1 ).focus();
+                  inputs.eq( inputs.index($focused)+ 1 ).trigger("focus");
                 }
                 break;
 
               default:
                 if(!$barcodeTargetEl.is($focused))
                 {
-                  $barcodeTargetEl.focus();
+                  $barcodeTargetEl.trigger("focus");
                 }
                 // check call funtions
                 // ...

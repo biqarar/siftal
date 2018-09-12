@@ -258,7 +258,7 @@
         }
         else if(_super.lockForm)
         {
-          $('[data-hasFocus]').focus();
+          $('[data-hasFocus]').trigger("focus");
           $('[data-hasFocus]').attr('data-hasFocus', null);
         }
       }, 100);

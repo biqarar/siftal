@@ -72,7 +72,7 @@ function fillAuto()
 		// if this field is parent of another, enable and transfer focus to it
 		var myChild = $('.autoList[data-parent="#' + this.id + '"]')
 		myChild.attr('disabled', null);
-		myChild.focus();
+		myChild.trigger("focus");
 		// call func if needed
 		var myFunc = $(this).attr('data-call');
 		// if function exist and callable
