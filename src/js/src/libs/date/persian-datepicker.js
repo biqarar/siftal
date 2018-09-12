@@ -1534,7 +1534,7 @@ var Input = function () {
         value: function observe() {
             var that = this;
             /////////////////   Manipulate by Copy And paste
-            $(that.elem).bind('paste', function (e) {
+            $(that.elem).on('paste', function (e) {
                 Helper.delay(function () {
                     that.parseInput(e.target.value);
                 }, 60);
@@ -1545,13 +1545,13 @@ var Input = function () {
                 ctrlKey = [17, 91],
                 vKey = 86;
 
-            $(document).keydown(function (e) {
+            $(document).on("keydown", function (e) {
                 if ($.inArray(e.keyCode, ctrlKey) > 0) ctrlDown = true;
-            }).keyup(function (e) {
+            }).on("keyup", function (e) {
                 if ($.inArray(e.keyCode, ctrlKey) > 0) ctrlDown = false;
             });
 
-            $(that.elem).bind('keyup', function (e) {
+            $(that.elem).on('keyup', function (e) {
                 var $self = $(this);
                 var trueKey = false;
                 if (e.keyCode === 8 || e.keyCode < 105 && e.keyCode > 96 || e.keyCode < 58 && e.keyCode > 47 || ctrlDown && (e.keyCode == vKey || $.inArray(e.keyCode, ctrlKey) > 0)) {
@@ -1574,7 +1574,7 @@ var Input = function () {
 
             /////////////////   Manipulate by alt changes
             // TO DO
-            // self.model.options.altField.bind("change", function () {
+            // self.model.options.altField.on("change", function () {
             //     //if (!self._flagSelfManipulate) {
             //         let newDate = new Date($(this).val());
             //         if (newDate !== "Invalid Date") {
@@ -1597,14 +1597,14 @@ var Input = function () {
             var closePickerHandler = function closePickerHandler(e) {
                 if (!$(e.target).is(that.elem) && !$(e.target).is(that.model.view.$container) && $(e.target).closest('#' + that.model.view.$container.attr('id')).length == 0 && !$(e.target).is($(that.elem).children())) {
                     that.model.api.hide();
-                    $('body').unbind('click', closePickerHandler);
+                    $('body').off('click', closePickerHandler);
                 }
             };
 
             $(this.elem).on('focus click', Helper.debounce(function (evt) {
                 that.model.api.show();
                 if (that.model.state.ui.isInline === false) {
-                    $('body').unbind('click', closePickerHandler).bind('click', closePickerHandler);
+                    $('body').off('click', closePickerHandler).on('click', closePickerHandler);
                 }
                 if (Helper.isMobile) {
                     $(this).blur();
