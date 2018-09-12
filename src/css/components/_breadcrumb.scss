@@ -1,5 +1,5 @@
 /* breadcrumb */
-.breadcrumb{padding:5px 1em;display:inline-block;line-height:30px;height:30px;outline:none}
+.breadcrumb{padding:5px 1em;display:block;line-height:30px;height:30px;outline:none}
 .breadcrumb a{font-size:1em;line-height:20px;float:left;font-weight:500;transition:0.3s;}
 .breadcrumb a:last-child{font-weight:900;}
 .breadcrumb > a + a:before{font-family:"siftal";content:"\63";padding:0px 8px;float:left;}
@@ -7,9 +7,11 @@
 .rtl .breadcrumb > a + a:before{content:"\62";float:right;}
 
 
-.breadcrumb2{padding:5px 1em;display:inline-block;line-height:30px;height:30px}
+.breadcrumb2{padding:5px 1em;display:block;line-height:30px;height:30px}
 .breadcrumb2 a{font-size:1em;line-height:20px;float:left;font-weight:500;transition:0.3s;}
 .breadcrumb2 a:last-child{font-weight:900;}
 .breadcrumb2 > a + a:before{content:"/";padding:0px 8px;float:left;}
 .rtl .breadcrumb2 a{float:right;}
 .rtl .breadcrumb2 > a + a:before{float:right;}
+
+.breadcrumb.sm{line-height:2em;height:2em;padding:1px 1em;}

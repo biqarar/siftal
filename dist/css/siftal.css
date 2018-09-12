@@ -1424,7 +1424,7 @@ a.badge.danger {
 /* breadcrumb */
 .breadcrumb {
   padding: 5px 1em;
-  display: inline-block;
+  display: block;
   line-height: 30px;
   height: 30px;
   outline: none; }
@@ -1454,7 +1454,7 @@ a.badge.danger {
 
 .breadcrumb2 {
   padding: 5px 1em;
-  display: inline-block;
+  display: block;
   line-height: 30px;
   height: 30px; }
 
@@ -1478,6 +1478,11 @@ a.badge.danger {
 
 .rtl .breadcrumb2 > a + a:before {
   float: right; }
+
+.breadcrumb.sm {
+  line-height: 2em;
+  height: 2em;
+  padding: 1px 1em; }
 
 .pagination {
   text-align: center;
