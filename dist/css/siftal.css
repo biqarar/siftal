@@ -8025,6 +8025,13 @@ li.sortable-placeholder {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
     transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
     opacity: 0; } }
+.chartBox {
+  max-height: 600px !important;
+  min-height: auto !important;
+  height: 100% !important;
+  width: 100%;
+  display: block; }
+
 .chart {
   direction: ltr;
   width: 100%;
@@ -16389,13 +16396,6 @@ body .we500 {
   max-height: 600px !important;
   min-height: auto !important;
   height: 100% !important; }
-
-.chartBox {
-  max-height: 600px !important;
-  min-height: auto !important;
-  height: 100% !important;
-  width: 100%;
-  display: block; }
 
 .block {
   display: block;
