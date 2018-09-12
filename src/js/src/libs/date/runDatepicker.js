@@ -111,6 +111,30 @@ function runDatePicker()
 
     // logy(mydateOpt);
     $mydatePicker.persianDatepicker(mydateOpt);
+
+    // // on blur
+    // $mydatePicker.on("blur", function()
+    // {
+    //   console.log($(':focus'));
+    //   console.log($(':focus').is('input'));
+    //   if($mydatePicker.pDatePicker && $(':focus').is('input'))
+    //   {
+    //     $mydatePicker.pDatePicker.model.view.hide();
+    //   }
+    // });
+
+    $mydatePicker.on("keydown", function(_e)
+    {
+      console.log(_e.which);
+      if(_e.which == 9)
+      {
+        if($mydatePicker.pDatePicker)
+        {
+          $mydatePicker.pDatePicker.model.view.hide();
+        }
+      }
+    });
+
   });
 }
 
