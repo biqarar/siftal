@@ -1607,7 +1607,7 @@ var Input = function () {
                     $('body').off('click', closePickerHandler).on('click', closePickerHandler);
                 }
                 if (Helper.isMobile) {
-                    $(this).blur();
+                    $(this).trigger("blur");
                 }
                 evt.stopPropagation();
                 return false;
