@@ -6167,7 +6167,6 @@ body.errorPage.s50 {
 
 .datepicker-plot-area .datepicker-day-view .table-days td span, .datepicker-plot-area .datepicker-year-view .year-item,
 .datepicker-plot-area .datepicker-month-view .month-item {
-  font: 14px;
   background-color: #fff;
   color: #333;
   border: 0;
@@ -6226,7 +6225,7 @@ body.errorPage.s50 {
   min-width: 200px;
   padding: 3px;
   position: absolute;
-  font: 12px;
+  font-size: 12px;
   border: 1px solid #ccc;
   background-color: #fff; }
 
@@ -6283,7 +6282,8 @@ body.errorPage.s50 {
   line-height: 60px;
   float: left;
   overflow: hidden;
-  font: 12px bold; }
+  font-size: 12px;
+  font-weight: bold; }
 
 .datepicker-plot-area .datepicker-time-view .divider span {
   height: 60px;
@@ -6394,7 +6394,7 @@ body.errorPage.s50 {
   height: 25px;
   float: right;
   line-height: 25px;
-  font: 11px;
+  font-size: 11px;
   font-weight: bold;
   color: #333; }
 
