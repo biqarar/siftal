@@ -28,7 +28,7 @@ $(document).ready(function()
 
 
         case 27:
-          $('input').blur();
+          $('input').trigger("blur");
           break;
 
 
