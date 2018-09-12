@@ -1,5 +1,5 @@
 /*
-** persian-datepicker - v1.1.1
+** persian-datepicker - v1.1.2
 ** Reza Babakhani <babakhani.reza@gmail.com>
 ** http://babakhani.github.io/PersianWebToolkit/docs/datepicker
 ** Under WTFPL license
@@ -1617,7 +1617,6 @@ var Input = function () {
         /**
          * @desc get <input/> element position
          * @return {{top: Number, left: Number}}
-         * @when? remove jquery
          */
 
     }, {
@@ -1629,7 +1628,6 @@ var Input = function () {
         /**
          * @desc get <input/> element size
          * @return {{width: Number, height: Number}}
-         * @when? remove jquery
          */
 
     }, {
@@ -1644,7 +1642,6 @@ var Input = function () {
         /**
          * @desc update <input/> element value
          * @param {Number} unix
-         * @when? remove jquery
          * @private
          */
 
@@ -1658,7 +1655,6 @@ var Input = function () {
         /**
          * @desc update <input/> element value
          * @param {Number} unix
-         * @when? remove jquery
          * @private
          */
 
@@ -1782,7 +1778,6 @@ var Navigator = function () {
     /**
      * @desc attach events that needed attach after every render
      * @public
-     * @when? attach as a live way
      */
 
 
@@ -1897,7 +1892,6 @@ var Navigator = function () {
 
         /**
          * @desc attach dom events
-         * @when? remove jquery
          * @private
          */
 
@@ -1938,6 +1932,7 @@ var Navigator = function () {
                 $(document).on('click', '#' + that.model.view.id + ' .up-btn', function () {
                     var timekey = $(this).data('time-key');
                     that.timeUp(timekey);
+                    that.model.options.onSelect(that.model.state.selected.unix);
                 });
 
                 /**
@@ -1946,6 +1941,7 @@ var Navigator = function () {
                 $(document).on('click', '#' + that.model.view.id + ' .down-btn', function () {
                     var timekey = $(this).data('time-key');
                     that.timeDown(timekey);
+                    that.model.options.onSelect(that.model.state.selected.unix);
                 });
             }
 
@@ -2061,7 +2057,6 @@ var Options = function () {
     /**
      * @param {object} options config passed when initialize
      * @return {object}
-     * @when? remove jquery
      */
     function Options(options, model) {
         _classCallCheck(this, Options);
@@ -2272,7 +2267,6 @@ var State = function () {
          * @desc view mode string day, month, year
          * @type {String}
          * @default day
-         * @when? add time to view modes
          */
         this.viewMode = this.viewModeList.indexOf(model.options.viewMode) > 0 ? model.options.viewMode : this.viewModeList[0];
 
@@ -2676,7 +2670,6 @@ var Toolbox = function () {
                 that.model.view.reRender();
                 /**
                  * @deprecated
-                 * @when? remove this
                  */
                 that.model.options.toolbox.onToday(that.model);
                 that.model.options.toolbox.todayButton.onToday(that.model);
