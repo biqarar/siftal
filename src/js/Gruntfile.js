@@ -7,8 +7,8 @@ var myModuleFiles =
 	'src/libs/logy/logy.js',
 
 	// include jquery
-	// 'src/libs/jquery/jquery2.1.1.js',
-	'src/libs/jquery/jquery2.2.4.js',
+	// 'src/libs/jquery/jquery-2.1.1.min.js',
+	'src/libs/jquery/jquery-2.2.4.min.js',
 	'src/libs/jquery/jquery-fn.js',
 
 	'src/libs/localstorage.js',
