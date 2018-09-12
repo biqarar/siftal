@@ -216,7 +216,11 @@
       }
       else
       {
-        $('input[autofocus]')[0].trigger("focus");
+        var myNewInput = $('input[autofocus]')[0];
+        if(myNewInput)
+        {
+          $(myNewInput).trigger("focus");
+        }
         // logy(24);
       }
     }
