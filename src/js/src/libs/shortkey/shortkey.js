@@ -52,9 +52,10 @@ function shortkey_corridor(_e, _self, _key)
       // else do some default event like click or set focus
       if(elShortkey.is('a[href], a[href] *, button, input[type=submit]'))
       {
-        if(elShortkey[0])
+        var myInputClickable = elShortkey[0];
+        if(myInputClickable)
         {
-          elShortkey[0].click();
+          $(myInputClickable).trigger("click");
         }
         else
         {
