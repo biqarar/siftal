@@ -1,5 +1,5 @@
 /*
-* iziToast | v1.3.0
+* iziToast | v1.4.0
 * http://izitoast.marcelodolce.com
 * by Marcelo Dolce.
 */
@@ -55,7 +55,7 @@
 
 	// Default settings
 	var defaults = {
-		id: null, 
+		id: null,
 		class: '',
 		title: '',
 		titleColor: '',
@@ -71,6 +71,7 @@
 		icon: '',
 		iconText: '',
 		iconColor: '',
+		iconUrl: null,
 		image: '',
 		imageWidth: 50,
 		maxWidth: null,
@@ -80,12 +81,12 @@
 		close: true,
 		closeOnEscape: false,
 		closeOnClick: false,
-		rtl: false,
+		displayMode: 0,
 		position: 'bottomRight', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter, center
 		target: '',
 		targetFirst: true,
-		toastOnce: false,
 		timeout: 5000,
+		rtl: false,
 		animateInside: true,
 		drag: true,
 		pauseOnHover: true,
@@ -199,6 +200,16 @@
 
 
 	/**
+	 * Generate new ID
+	 * @private
+	 */
+	var generateId = function(params) {
+		var newId = btoa(encodeURIComponent(params));
+		return newId.replace(/=/g, "");
+	};
+
+
+	/**
 	 * Check if is a color
 	 * @private
 	 */
@@ -229,16 +240,16 @@
 	 * @private
 	 */
 	var drag = function() {
-	    
+
 	    return {
 	        move: function(toast, instance, settings, xpos) {
 
 	        	var opacity,
 	        		opacityRange = 0.3,
 	        		distance = 180;
-	            
+
 	            if(xpos !== 0){
-	            	
+
 	            	toast.classList.add(PLUGIN_NAME+'-dragged');
 
 	            	toast.style.transform = 'translateX('+xpos + 'px)';
@@ -255,7 +266,7 @@
 						}
 		            }
 					toast.style.opacity = opacity;
-			
+
 					if(opacity < opacityRange){
 
 						if(ISCHROME || ISFIREFOX)
@@ -267,7 +278,7 @@
 					}
 	            }
 
-				
+
 	        },
 	        startMoving: function(toast, instance, settings, e) {
 
@@ -277,8 +288,12 @@
 	                toastLeft = toastLeft.replace('translateX(', '');
 	            var offsetX = posX - toastLeft;
 
-				toast.classList.remove(settings.transitionIn);
-				toast.classList.remove(settings.transitionInMobile);
+				if(settings.transitionIn){
+					toast.classList.remove(settings.transitionIn);
+				}
+				if(settings.transitionInMobile){
+					toast.classList.remove(settings.transitionInMobile);
+				}
 				toast.style.transition = '';
 
 	            if(ACCEPTSTOUCH) {
@@ -312,7 +327,7 @@
 				toast.style.transform = '';
 
 	            if(toast.classList.contains(PLUGIN_NAME+'-dragged')){
-	            	
+
 	            	toast.classList.remove(PLUGIN_NAME+'-dragged');
 
 					toast.style.transition = 'transform 0.4s ease, opacity 0.4s ease';
@@ -350,6 +365,10 @@
 	 */
 	$iziToast.destroy = function () {
 
+		forEach(document.querySelectorAll('.'+PLUGIN_NAME+'-overlay'), function(element, index) {
+			element.remove();
+		});
+
 		forEach(document.querySelectorAll('.'+PLUGIN_NAME+'-wrapper'), function(element, index) {
 			element.remove();
 		});
@@ -357,6 +376,8 @@
 		forEach(document.querySelectorAll('.'+PLUGIN_NAME), function(element, index) {
 			element.remove();
 		});
+
+		this.children = {};
 
 		// Remove event listeners
 		document.removeEventListener(PLUGIN_NAME+'-opened', {}, false);
@@ -441,7 +462,7 @@
 							}
 						}
 
-					}, settings.timeout);			
+					}, settings.timeout);
 		        	that.setSetting(ref, 'time', settings.time);
 	        	}
 	        },
@@ -462,12 +483,12 @@
 							propertyWidth = computedStyle.getPropertyValue('width');
 
 						$elem.style.transition = 'none';
-						$elem.style.width = propertyWidth;					
+						$elem.style.width = propertyWidth;
 					}
 
 					if(typeof callback === 'function'){
 						setTimeout(function() {
-							callback.apply(that);						
+							callback.apply(that);
 						}, 10);
 					}
         		}
@@ -524,7 +545,7 @@
 
 				if(typeof callback === 'function'){
 					setTimeout(function() {
-						callback.apply(that);						
+						callback.apply(that);
 					}, 10);
 				}
 	        }
@@ -540,15 +561,15 @@
 	 */
 	$iziToast.hide = function (options, $toast, closedBy) {
 
+		if(typeof $toast != 'object'){
+			$toast = document.querySelector($toast);
+		}
+
 		var that = this,
 			settings = extend(this.children[$toast.getAttribute('data-iziToast-ref')], options || {});
 			settings.closedBy = closedBy || null;
 
 		delete settings.time.REMAINING;
-
-		if(typeof $toast != 'object'){
-			$toast = document.querySelector($toast);
-		}		
 
 		$toast.classList.add(PLUGIN_NAME+'-closing');
 
@@ -557,12 +578,12 @@
 
 			var $overlay = document.querySelector('.'+PLUGIN_NAME+'-overlay');
 			if($overlay !== null){
-				var refs = $overlay.getAttribute('data-iziToast-ref');		
+				var refs = $overlay.getAttribute('data-iziToast-ref');
 					refs = refs.split(',');
 				var index = refs.indexOf(String(settings.ref));
 
 				if(index !== -1){
-					refs.splice(index, 1);			
+					refs.splice(index, 1);
 				}
 				$overlay.setAttribute('data-iziToast-ref', refs.join());
 
@@ -577,8 +598,11 @@
 
 		})();
 
-		if(settings.transitionIn || settings.transitionInMobile){
+		if(settings.transitionIn){
 			$toast.classList.remove(settings.transitionIn);
+		}
+
+		if(settings.transitionInMobile){
 			$toast.classList.remove(settings.transitionInMobile);
 		}
 
@@ -592,7 +616,7 @@
 		var H = $toast.parentNode.offsetHeight;
 				$toast.parentNode.style.height = H+'px';
 				$toast.style.pointerEvents = 'none';
-		
+
 		if(!ISMOBILE || window.innerWidth > MOBILEWIDTH){
 			$toast.parentNode.style.transitionDelay = '0.2s';
 		}
@@ -605,12 +629,12 @@
 		}
 
 		setTimeout(function() {
-			
+
 			$toast.parentNode.style.height = '0px';
 			$toast.parentNode.style.overflow = '';
 
 			setTimeout(function(){
-				
+
 				delete that.children[settings.ref];
 
 				$toast.parentNode.remove();
@@ -649,8 +673,28 @@
 			settings = extend(defaults, settings);
 			settings.time = {};
 
-		if(settings.toastOnce && settings.id && document.querySelectorAll('.'+PLUGIN_NAME+'#'+settings.id).length > 0){
-			return false;
+		if(settings.id === null){
+			settings.id = generateId(settings.title+settings.message+settings.color);
+		}
+
+		if(settings.displayMode === 1 || settings.displayMode == 'once'){
+			try {
+				if(document.querySelectorAll('.'+PLUGIN_NAME+'#'+settings.id).length > 0){
+					return false;
+				}
+			} catch (exc) {
+				console.warn('['+PLUGIN_NAME+'] Could not find an element with this selector: '+'#'+settings.id+'. Try to set an valid id.');
+			}
+		}
+
+		if(settings.displayMode === 2 || settings.displayMode == 'replace'){
+			try {
+				forEach(document.querySelectorAll('.'+PLUGIN_NAME+'#'+settings.id), function(element, index) {
+					that.hide(settings, element, 'replaced');
+				});
+			} catch (exc) {
+				console.warn('['+PLUGIN_NAME+'] Could not find an element with this selector: '+'#'+settings.id+'. Try to set an valid id.');
+			}
 		}
 
 		settings.ref = new Date().getTime() + Math.floor((Math.random() * 10000000) + 1);
@@ -664,10 +708,10 @@
 			toastBody: document.createElement('div'),
 			toastTexts: document.createElement('div'),
 			toastCapsule: document.createElement('div'),
-			icon: document.createElement('i'),
 			cover: document.createElement('div'),
 			buttons: document.createElement('div'),
 			inputs: document.createElement('div'),
+			icon: !settings.iconUrl ? document.createElement('i') : document.createElement('img'),
 			wrapper: null
 		};
 
@@ -724,7 +768,7 @@
 			}
 
 			if(settings.color) { //#, rgb, rgba, hsl
-				
+
 				if( isColor(settings.color) ){
 					$DOM.toast.style.background = settings.color;
 				} else {
@@ -735,7 +779,7 @@
 			if(settings.backgroundColor) {
 				$DOM.toast.style.background = settings.backgroundColor;
 				if(settings.balloon){
-					$DOM.toast.style.borderColor = settings.backgroundColor;				
+					$DOM.toast.style.borderColor = settings.backgroundColor;
 				}
 			}
 		})();
@@ -755,7 +799,7 @@
 				if(settings.rtl){
 					$DOM.toastBody.style.marginRight = (settings.imageWidth + 10) + 'px';
 				} else {
-					$DOM.toastBody.style.marginLeft = (settings.imageWidth + 10) + 'px';				
+					$DOM.toastBody.style.marginLeft = (settings.imageWidth + 10) + 'px';
 				}
 				$DOM.toast.appendChild($DOM.cover);
 			}
@@ -764,9 +808,9 @@
 		// Button close
 		(function(){
 			if(settings.close){
-				
-				$DOM.buttonClose = document.createElement('button');
 
+				$DOM.buttonClose = document.createElement('button');
+				$DOM.buttonClose.type = 'button';
 				$DOM.buttonClose.classList.add(PLUGIN_NAME + '-close');
 				$DOM.buttonClose.addEventListener('click', function (e) {
 					var button = e.target;
@@ -797,7 +841,7 @@
 			if(settings.timeout) {
 
 				if(settings.pauseOnHover && !settings.resetOnHover){
-					
+
 					$DOM.toast.addEventListener('mouseenter', function (e) {
 						that.progress(settings, $DOM.toast).pause();
 					});
@@ -820,24 +864,35 @@
 
 		// Icon
 		(function(){
-			if(settings.icon) {
+
+			if(settings.iconUrl) {
+
+				$DOM.icon.setAttribute('class', PLUGIN_NAME + '-icon');
+				$DOM.icon.setAttribute('src', settings.iconUrl);
+
+			} else if(settings.icon) {
 				$DOM.icon.setAttribute('class', PLUGIN_NAME + '-icon ' + settings.icon);
-				
+
 				if(settings.iconText){
 					$DOM.icon.appendChild(document.createTextNode(settings.iconText));
 				}
 
-				if(settings.rtl){
-					$DOM.toastBody.style.paddingRight = '33px';
-				} else {
-					$DOM.toastBody.style.paddingLeft = '33px';				
-				}
-				
 				if(settings.iconColor){
 					$DOM.icon.style.color = settings.iconColor;
 				}
+			}
+
+			if(settings.icon || settings.iconUrl) {
+
+				if(settings.rtl){
+					$DOM.toastBody.style.paddingRight = '33px';
+				} else {
+					$DOM.toastBody.style.paddingLeft = '33px';
+				}
+
 				$DOM.toastBody.appendChild($DOM.icon);
 			}
+
 		})();
 
 		// Title & Message
@@ -886,7 +941,7 @@
 					}
 				}
 				if(settings.messageLineHeight) {
-					
+
 					if( !isNaN(settings.titleSize) ){
 						$DOM.p.style.lineHeight = settings.messageLineHeight+'px';
 					} else {
@@ -899,7 +954,7 @@
 				if(settings.rtl){
 					$DOM.strong.style.marginLeft = '10px';
 				} else if(settings.layout !== 2 && !settings.rtl) {
-					$DOM.strong.style.marginRight = '10px';	
+					$DOM.strong.style.marginRight = '10px';
 				}
 			}
 		})();
@@ -1104,16 +1159,14 @@
 				} else {
 					$DOM.overlay.removeEventListener('click', {});
 				}
-
 			}
-
 		})();
 
 		// Inside animations
 		(function(){
 			if(settings.animateInside){
 				$DOM.toast.classList.add(PLUGIN_NAME+'-animateInside');
-			
+
 				var animationTimes = [200, 100, 300];
 				if(settings.transitionIn == 'bounceInLeft' || settings.transitionIn == 'bounceInRight'){
 					animationTimes = [400, 200, 400];
@@ -1131,7 +1184,7 @@
 					}, animationTimes[1]);
 				}
 
-				if(settings.icon) {
+				if(settings.icon || settings.iconUrl) {
 					setTimeout(function(){
 						$DOM.icon.classList.add('revealIn');
 					}, animationTimes[2]);
@@ -1231,9 +1284,9 @@
 			});
 		}
 
-		that.toast = $DOM.toast;		
+		that.toast = $DOM.toast;
 	};
-	
+
 
 	return $iziToast;
 });
