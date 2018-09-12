@@ -62,6 +62,8 @@ function runDatePicker()
     mydateOpt.observer     = $mydatePicker.attr('data-off') !== undefined? false: true;
     // auto close after chose date
     mydateOpt.autoClose    = $mydatePicker.attr('data-open') !== undefined? false: true;
+    // set position for
+    mydateOpt.position     = [36,0];
     // use persian digit
     if($mydatePicker.attr('data-en') !== undefined)
     {

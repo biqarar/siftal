@@ -2762,7 +2762,8 @@ var View = function () {
         if (this.model.state.ui.isInline) {
             this.$container = $('<div  id="' + this.id + '" class="datepicker-container-inline"></div>').appendTo(that.model.inputElement);
         } else {
-            this.$container = $('<div  id="' + this.id + '" class="datepicker-container"></div>').appendTo('body');
+            var myInputEl = $(this.model.inputElement).parent();
+            this.$container = $('<div  id="' + this.id + '" class="datepicker-container"></div>').appendTo(myInputEl);
             this.hide();
             this.setPickerBoxPosition();
             this.addCompatibilityClass();
@@ -2807,11 +2808,25 @@ var View = function () {
                     left: inputPosition.left + 'px',
                     top: inputSize.height + inputPosition.top + 'px'
                 });
-            } else {
-                this.$container.css({
-                    left: this.model.options.position[1] + inputPosition.left + 'px',
-                    top: this.model.options.position[0] + inputPosition.top + 'px'
-                });
+            }
+            else
+            {
+                if($('html').attr('lang') === 'fa')
+                {
+                  this.$container.css(
+                  {
+                      right: this.model.options.position[1] + 200 + 'px',
+                      top: this.model.options.position[0] + 'px'
+                  });
+                }
+                else
+                {
+                  this.$container.css(
+                  {
+                      left: this.model.options.position[1] + 'px',
+                      top: this.model.options.position[0] + 'px'
+                  });
+                }
             }
         }
 
