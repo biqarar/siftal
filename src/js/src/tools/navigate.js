@@ -313,7 +313,7 @@
       callFunc('loading_page', false);
 
 
-    }).error(function(_result, b, c)
+    }).fail(function(_result, b, c)
     {
       if(_result && _result.responseJSON)
       {
