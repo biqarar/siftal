@@ -2,7 +2,7 @@
 {
   $(document).ready(function()
   {
-    $(document.body).click(function(e)
+    $(document.body).on("click", function(e)
     {
       var $target = $(e.target);
 
