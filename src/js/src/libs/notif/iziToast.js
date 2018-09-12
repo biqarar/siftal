@@ -977,7 +977,7 @@
 
 					if(value[3]){
 						setTimeout(function() {
-							$inputs[index].focus();
+							$inputs[index].trigger("focus");
 						}, 300);
 					}
 
@@ -1005,7 +1005,7 @@
 
 					if(value[2]){
 						setTimeout(function() {
-							$btns[index].focus();
+							$btns[index].trigger("focus");
 						}, 300);
 					}
 
