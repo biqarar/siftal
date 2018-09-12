@@ -8,7 +8,9 @@ var myModuleFiles =
 
 	// include jquery
 	// 'src/libs/jquery/jquery-2.1.1.min.js',
-	'src/libs/jquery/jquery-2.2.4.min.js',
+	// 'src/libs/jquery/jquery-2.2.4.min.js',
+	'src/libs/jquery/jquery-3.3.1.min.js',
+	'src/libs/jquery/jquery-migrate-3.0.0.js',
 	'src/libs/jquery/jquery-fn.js',
 
 	'src/libs/localstorage.js',
