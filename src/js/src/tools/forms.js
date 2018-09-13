@@ -190,9 +190,14 @@
 
         $form.trigger('ajaxify:success', data, status, xhr);
       })
-      .fail(function(xhr, status, error)
+      .fail(function(_result, status, error)
       {
-        $form.trigger('ajaxify:fail', xhr, status, error);
+        if(_result && _result.responseJSON)
+        {
+          notifGenerator(_result.responseJSON);
+        }
+
+        $form.trigger('ajaxify:fail', _result, status, error);
         unlockForm(_super.lockForm);
       })
       .always(function(a1, a2, a3)
