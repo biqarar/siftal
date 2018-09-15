@@ -18467,6 +18467,9 @@ body.siftal.loading-page #sidebar .avatar:before {
   .siftal .toggleClean {
     display: none; }
 
+  .siftal .tbox p {
+    display: none; }
+
   .tbl td.collapsing.sauto, .tbl th.collapsing.sauto {
     white-space: initial; }
 
