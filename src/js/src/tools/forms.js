@@ -210,6 +210,7 @@
         if(_textStatus === 'timeout')
         {
           notif('fatal', 'Failed from timeout', 'Request failed', 5000, {'position':'topCenter', 'icon':'sf-hourglass-o'});
+          pingi();
         }
         else
         {
