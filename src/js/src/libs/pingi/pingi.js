@@ -69,6 +69,8 @@ function pingiRunner()
       notif('okay', "We are online on "+ window.location.hostname, 'Connection is re-established', 5000, {'position':'topCenter', 'icon':'sf-link', 'displayMode':1});
     }
 
+    // remove offline mode
+    $("body").attr('data-offline', null);
   });
 }
 
