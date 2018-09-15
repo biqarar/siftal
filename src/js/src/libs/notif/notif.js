@@ -254,6 +254,10 @@ function notifGenerator(_data, $_form)
       }
     }
   }
+  else
+  {
+    return false;
+  }
 
   return result;
 }

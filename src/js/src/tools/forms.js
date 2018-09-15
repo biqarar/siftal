@@ -193,16 +193,28 @@
       .fail(function(_result, status, error)
       {
 
-        if($('html').attr('data-debugger') !== undefined && status == 'error')
-        {
-          alert(JSON.stringify( _result ));
-          alert(JSON.stringify( error ));
-        }
 
 
-        if(_result && _result.responseJSON)
+        if(_result)
         {
-          notifGenerator(_result.responseJSON);
+          if(_result.responseJSON)
+          {
+            var notifResult = notifGenerator(_result.responseJSON);
+
+            if(notifResult === false)
+            {
+              notif('fatal', 'Error in detect server result', 'Ajax is failed!');
+            }
+          }
+          else
+          {
+            if($('html').attr('data-debugger') !== undefined && status == 'error')
+            {
+              alert(JSON.stringify( _result ));
+              alert(JSON.stringify( error ));
+            }
+            notif('fatal', 'No result from server', 'Ajax is failed!');
+          }
         }
 
         $form.trigger('ajaxify:fail', _result, status, error);
