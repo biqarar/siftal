@@ -88,6 +88,11 @@ function notif(_type, _msg, _title, _timeout, _opt)
     {
       notifOpt.iconColor = _opt.iconColor;
     }
+    // add iconcolor
+    if(_opt.displayMode)
+    {
+      notifOpt.displayMode = _opt.displayMode;
+    }
     // add timeout
     if(_opt.timeout && Number.isInteger(_opt.timeout))
     {
