@@ -56,7 +56,21 @@
         // if we are in form use it, else use empty param
         if($this.is('form'))
         {
+          // try to detect empty input file and disabled them because
+          // we have problem on safari ajax request with erro 400!
+          var $fileInputs = $('input[type="file"]:not([disabled])', $this)
+          $fileInputs.each(function(a, myFileInput)
+          {
+            if (myFileInput.files.length > 0)
+            {
+              return;
+            }
+            $(myFileInput).prop('disabled', true);
+          })
+
           var fd = new FormData($this.get(0));
+          // change file disabled status to normal condition
+          $fileInputs.prop('disabled', false)
         }
         else
         {
