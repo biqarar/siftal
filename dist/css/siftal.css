@@ -2383,7 +2383,8 @@ progress.xl, meter.xl {
   color: #444;
   transition-duration: 0.3s;
   transition-property: opacity, background-color, box-shadow, border;
-  user-select: none; }
+  user-select: none;
+  overflow: hidden; }
 
 .tbox:hover {
   border-color: #fff; }
@@ -18487,9 +18488,6 @@ body.siftal.loading-page #sidebar .avatar:before {
   .breadcrumb {
     padding: 5px 5px;
     height: auto; }
-
-  .breadcrumb a {
-    width: 100%; }
 
   .breadcrumb2 {
     padding: 5px 5px;

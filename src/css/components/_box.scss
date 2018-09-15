@@ -12,6 +12,7 @@
 	transition-duration:0.3s;
 	transition-property:opacity, background-color, box-shadow, border;
 	user-select:none;
+	overflow:hidden;
 }
 .tbox:hover{
 	border-color:#fff;
