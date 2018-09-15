@@ -192,6 +192,14 @@
       })
       .fail(function(_result, status, error)
       {
+
+        if($('html').attr('data-debugger') !== undefined && status == 'error')
+        {
+          alert(JSON.stringify( _result ));
+          alert(JSON.stringify( error ));
+        }
+
+
         if(_result && _result.responseJSON)
         {
           notifGenerator(_result.responseJSON);
