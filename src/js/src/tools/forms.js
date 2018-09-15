@@ -87,17 +87,17 @@
 
 
 
-      if(ajaxOptions.type === "get")
-      {
-        if($this.serialize())
+        if(ajaxOptions.type === "get")
         {
-          Navigate(
+          if($this.serialize())
           {
-            url: ajaxOptions.url + '?' + $this.serialize()
-          });
-          return;
+            Navigate(
+            {
+              url: ajaxOptions.url + '?' + $this.serialize()
+            });
+            return;
+          }
         }
-      }
 
         if(_super.lockForm)
         {
@@ -208,13 +208,23 @@
           }
           else
           {
+            notif('fatal', 'Server result is empty', 'Ajax is failed!');
+
             if($('html').attr('data-debugger') !== undefined && status == 'error')
             {
+              // notif('fatal', JSON.stringify(ajaxOptions));
+              document.write(JSON.stringify(ajaxOptions));
+              document.write(fd);
+              document.write(JSON.stringify(myXhr));
+
               alert(JSON.stringify( _result ));
               alert(JSON.stringify( error ));
             }
-            notif('fatal', 'No result from server', 'Ajax is failed!');
           }
+        }
+        else
+        {
+          notif('fatal', 'No result from server', 'Ajax is failed!');
         }
 
         $form.trigger('ajaxify:fail', _result, status, error);
