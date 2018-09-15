@@ -226,13 +226,7 @@
 
             if($('html').attr('data-debugger') !== undefined && status == 'error')
             {
-              // notif('fatal', JSON.stringify(ajaxOptions));
-              document.write(JSON.stringify(ajaxOptions));
-              document.write(fd);
-              document.write(JSON.stringify(myXhr));
-
               alert(JSON.stringify( _result ));
-              alert(JSON.stringify( error ));
             }
           }
         }
