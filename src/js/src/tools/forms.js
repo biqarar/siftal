@@ -13,6 +13,7 @@
       contentType: false,
       dataType: 'json',
       cache: false,
+      timeout: 10000,
       abort: false,
       async: true,
       beforeSend: function (request)
@@ -204,38 +205,43 @@
 
         $form.trigger('ajaxify:success', data, status, xhr);
       })
-      .fail(function(_result, status, error)
+      .fail(function(_result, _textStatus, _error)
       {
-
-
-
-        if(_result)
+        if(_textStatus === 'timeout')
         {
-          if(_result.responseJSON)
+          notif('fatal', 'Failed from timeout', 'Request failed', 5000, {'position':'topCenter', 'icon':'sf-hourglass-o'});
+        }
+        else
+        {
+          if(_result)
           {
-            var notifResult = notifGenerator(_result.responseJSON);
-
-            if(notifResult === false)
+            if(_result.responseJSON)
             {
-              notif('fatal', 'Error in detect server result', 'Ajax is failed!');
+              var notifResult = notifGenerator(_result.responseJSON);
+
+              if(notifResult === false)
+              {
+                notif('fatal', 'Error in detect server result', 'Ajax is failed!');
+              }
+            }
+            else
+            {
+              notif('fatal', 'Server result is empty', 'Ajax is failed!');
+
+              if($('html').attr('data-debugger') !== undefined && _textStatus == 'error')
+              {
+                alert(JSON.stringify( _result ));
+              }
             }
           }
           else
           {
-            notif('fatal', 'Server result is empty', 'Ajax is failed!');
-
-            if($('html').attr('data-debugger') !== undefined && status == 'error')
-            {
-              alert(JSON.stringify( _result ));
-            }
+            notif('fatal', 'No result from server', 'Ajax is failed!');
           }
         }
-        else
-        {
-          notif('fatal', 'No result from server', 'Ajax is failed!');
-        }
 
-        $form.trigger('ajaxify:fail', _result, status, error);
+
+        $form.trigger('ajaxify:fail', _result, _textStatus, _error);
         unlockForm(_super.lockForm);
       })
       .always(function(a1, a2, a3)
