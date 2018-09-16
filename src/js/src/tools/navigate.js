@@ -251,6 +251,9 @@
       NProgress.done(true);
     };
 
+    // set timeout for fetch page
+    options.timeout = 10000;
+
 
 
 
@@ -308,14 +311,29 @@
       callFunc('loading_page', false);
 
 
-    }).fail(function(_result, b, c)
+    })
+    .fail(function(_result, _textStatus, _error)
     {
+      if(_textStatus === 'timeout')
+      {
+        notif('fatal', 'Failed from timeout', 'Request failed', 5000, {'position':'topCenter', 'icon':'sf-hourglass-o'});
+        pingi();
+      }
+      if(_textStatus === 'error' && _result.readyState == 0 && _error == "")
+      {
+        // probably network is failed like internet connection
+        console.log("Network error detected");
+        // check with pingi
+        pingi();
+      }
+
+
       if(_result && _result.responseJSON)
       {
         notifGenerator(_result.responseJSON);
       }
 
-      $window.trigger('navigate:fetch:ajax:error', _result, b, c);
+      $window.trigger('navigate:fetch:ajax:error', _result, _textStatus, _error);
     });
 
     return deferred.promise();
