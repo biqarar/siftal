@@ -150,6 +150,11 @@
         callFunc('loading_form', true);
       }
 
+      // get timeout from form attr
+      if($this.attr('data-timeout'))
+      {
+        ajaxOptions.timeout = $this.attr('data-timeout');
+      }
 
       // add progress to all ajaify forms
       ajaxOptions.beforeSend = function()
