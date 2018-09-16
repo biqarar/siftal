@@ -17,12 +17,12 @@
   NProgress.version = '0.2.0';
 
   var Settings = NProgress.settings = {
-    minimum: 0.08,
-    easing: 'linear',
+    minimum: 0.1,
+    easing: 'ease',
     positionUsing: '',
-    speed: 200,
+    speed: 500,
     trickle: true,
-    trickleSpeed: 5,
+    trickleSpeed: 200,
     showSpinner: true,
     barSelector: '[role="bar"]',
     spinnerSelector: '[role="spinner"]',
