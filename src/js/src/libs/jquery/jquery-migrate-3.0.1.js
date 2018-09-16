@@ -1,4 +1,4 @@
-/*!
+/*
  * jQuery Migrate - v3.0.1 - 2017-09-26
  * Copyright jQuery Foundation and other contributors
  */
@@ -21,7 +21,7 @@
 "use strict";
 
 
-jQuery.migrateVersion = "3.0.1";
+// jQuery.migrateVersion = "3.0.1";
 
 /* exported migrateWarn, migrateWarnFunc, migrateWarnProp */
 
@@ -45,9 +45,10 @@ jQuery.migrateVersion = "3.0.1";
 	}
 
 	// Show a message on the console so devs know we're active
-	window.console.log( "JQMIGRATE: Migrate is installed" +
-		( jQuery.migrateMute ? "" : " with logging active" ) +
-		", version " + jQuery.migrateVersion );
+	window.console.log( "migrating to new version" );
+	// window.console.log( "JQMIGRATE: Migrate is installed" +
+	// 	( jQuery.migrateMute ? "" : " with logging active" ) +
+	// 	", version " + jQuery.migrateVersion );
 
 } )();
 
