@@ -38,27 +38,6 @@
     beforeSend: function(jqXHR)
     {
         $.xhrPool.push(jqXHR);
-
-        NProgress.start();
-    },
-    xhr: function ()
-    {
-        var xhr = new window.XMLHttpRequest();
-        //Download progress
-        xhr.addEventListener("progress", function (evt)
-        {
-            if (evt.lengthComputable)
-            {
-                var percentComplete = evt.loaded / evt.total;
-                if(percentComplete > 0 && percentComplete < 1)
-                {
-                  NProgress.set(percentComplete)
-                }
-                // percentComplete = Math.round(percentComplete * 100);
-                // logy(percentComplete);
-            }
-        }, false);
-        return xhr;
     },
     complete: function(jqXHR)
     {
@@ -67,8 +46,6 @@
        {
           $.xhrPool.splice(index, 1);
        }
-      NProgress.done(true);
-      // NProgress.remove();
     }
  });
 
@@ -262,6 +239,39 @@
     {
       $.xhrPool.abortAll();
     }
+
+    // add progress to all ajaify forms
+    options.beforeSend = function()
+    {
+      NProgress.start();
+    };
+    options.xhr = function ()
+    {
+        var xhr = new window.XMLHttpRequest();
+        //Download progress
+        xhr.addEventListener("progress", function (evt)
+        {
+            if (evt.lengthComputable)
+            {
+                var percentComplete = evt.loaded / evt.total;
+                if(percentComplete > 0 && percentComplete < 1)
+                {
+                  NProgress.set(percentComplete)
+                }
+                // percentComplete = Math.round(percentComplete * 100);
+                // logy(percentComplete);
+            }
+        }, false);
+        return xhr;
+    };
+    options.complete = function(jqXHR)
+    {
+      NProgress.done(true);
+      // NProgress.remove();
+    };
+
+
+
 
     var myXhr = $.ajax(options)
     .done(function(res)

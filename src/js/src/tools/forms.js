@@ -151,6 +151,37 @@
       }
 
 
+      // add progress to all ajaify forms
+      ajaxOptions.beforeSend = function()
+      {
+        NProgress.start();
+      };
+      ajaxOptions.xhr = function ()
+      {
+          var xhr = new window.XMLHttpRequest();
+          //Download progress
+          xhr.addEventListener("progress", function (evt)
+          {
+              if (evt.lengthComputable)
+              {
+                  var percentComplete = evt.loaded / evt.total;
+                  if(percentComplete > 0 && percentComplete < 1)
+                  {
+                    NProgress.set(percentComplete)
+                  }
+                  // percentComplete = Math.round(percentComplete * 100);
+                  // logy(percentComplete);
+              }
+          }, false);
+          return xhr;
+      };
+      ajaxOptions.complete = function(jqXHR)
+      {
+        NProgress.done(true);
+        // NProgress.remove();
+      };
+
+
       $form.trigger('ajaxify:send:ajax:start', ajaxOptions);
 
 
