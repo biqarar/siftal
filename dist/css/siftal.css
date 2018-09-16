@@ -8035,6 +8035,18 @@ li.sortable-placeholder {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
     transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
     opacity: 0; } }
+.rtl .iziToast-wrapper-bottomLeft {
+  text-align: right; }
+
+.rtl .iziToast-wrapper-bottomRight {
+  text-align: left; }
+
+.rtl .iziToast-wrapper-topLeft {
+  text-align: right; }
+
+.rtl .iziToast-wrapper-topRight {
+  text-align: left; }
+
 .chartBox {
   max-height: 600px !important;
   min-height: auto !important;
