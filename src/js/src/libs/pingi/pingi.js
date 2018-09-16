@@ -4,11 +4,11 @@ function pingi()
   // ping google to check internet connection
   // pingiGoogle();
   // ping our website to check our website is up or not!
-  pingiWebsite();
+  pingiWebsite(true);
 }
 
 
-function pingiWebsite()
+function pingiWebsite(_firstTime)
 {
   $.ajax(
     {
@@ -26,12 +26,12 @@ function pingiWebsite()
     .done(function(data, status, xhr)
     {
       console.log('We are okay!');
-      $("body").trigger("pingi:website:ok");
+      $("body").trigger("pingi:website:ok", _firstTime);
     })
     .fail(function(_result, _textStatus, _error)
     {
       console.log('fail get website with ping :|');
-      $("body").trigger("pingi:website:fail");
+      $("body").trigger("pingi:website:fail", _firstTime);
     }
   );
 }
@@ -40,24 +40,31 @@ function pingiWebsite()
 function pingiRunner()
 {
   // on fail do something
-  $('body').on('pingi:website:fail', function()
+  $('body').on('pingi:website:fail', function(_e, _firstTime)
   {
-    console.log($("body").attr('data-offline'));
     // show notif on offline mode if we cant see website
-    if($("body").attr('data-offline') === undefined)
+    notif('fatal', "We can't see "+ window.location.hostname, 'Connection is lost', 8000, {'position':'topCenter', 'icon':'sf-plug', 'displayMode':1});
+
+
+    // disallow to run multiple and only create one task to check
+    if(_firstTime)
     {
-      notif('fatal', "We can't see "+ window.location.hostname, 'Connection is lost', 5000, {'position':'topCenter', 'icon':'sf-plug', 'displayMode':1});
+      if($("body").attr('data-offline') === undefined)
+      {
+        setTimeout(pingiWebsite, 10000);
+        // set offline mode
+        $("body").attr('data-offline', '');
+      }
     }
-
-    // set offline mode
-    $("body").attr('data-offline', '');
-
-    // after a delay try to recheck connection
-    setTimeout(pingiWebsite, 10000);
+    else
+    {
+      // after a delay try to recheck connection
+      setTimeout(pingiWebsite, 10000);
+    }
   });
 
   // if we are get online again
-  $('body').on('pingi:website:ok', function()
+  $('body').on('pingi:website:ok', function(_e, _firstTime)
   {
     // we are online and now again online
     if($("body").attr('data-offline') === undefined)
