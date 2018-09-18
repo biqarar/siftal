@@ -83,7 +83,10 @@
             break;
 
           default:
-            $barcodeTargetEl.attr('data-barcode', null);
+            if($barcodeTargetEl.length > 0)
+            {
+              $barcodeTargetEl.attr('data-barcode', null);
+            }
             // do nothing
             break;
         }
@@ -158,7 +161,11 @@
           // bugfix for iranbarcode and change some persian char to en
           detectedCode           = detectedCode.replace('چ', ']').replace('ژ', 'C');
           // get saved value of input before barcode scaned
-          var valueBeforeBarcode = $target.attr('data-oldval');
+          var valueBeforeBarcode = '';
+          if($target)
+          {
+            var valueBeforeBarcode = $target.attr('data-oldval');
+          }
 
           // get position of cursor in input i exist
           var tmpPos = null;
@@ -238,7 +245,10 @@
           }
 
           // remove old val from html for next use
-          $target.attr('data-oldval', '');
+          if($target)
+          {
+            $target.attr('data-oldval', '');
+          }
           logy('barcode: ' + detectedCode);
           $("body").trigger("barcode:detect", detectedCode);
         }
