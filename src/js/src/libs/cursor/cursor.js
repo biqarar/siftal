@@ -9,7 +9,8 @@ function setSelectionRange(_input, _selectionStart, _selectionEnd)
 {
   if (_input.setSelectionRange)
   {
-    _input.trigger("focus");
+    // this focus is js not jquery
+    _input.focus();
     _input.setSelectionRange(_selectionStart, _selectionEnd);
   }
   else if (_input.createTextRange)
