@@ -28,6 +28,8 @@ function pushStateSiftal(_direct)
   initTagDetector();
   bindUploader();
   dropdownRunner();
+  // check navigate is done or not
+  navigateChecker();
 
   if($('body').hasClass('enter'))
   {
