@@ -68,7 +68,7 @@ function shortkey_corridor(_e, _self, _key)
 
 function shortkeyDo(_elShortkey)
 {
-  var effectTimeout = 0;
+  var effectTimeout = 1000;
   if(_elShortkey.attr('data-shortkey-timeout'))
   {
     effectTimeout = _elShortkey.attr('data-shortkey-timeout');
@@ -80,13 +80,21 @@ function shortkeyDo(_elShortkey)
     var myInputClickable = _elShortkey[0];
     if(myInputClickable)
     {
-      $(myInputClickable).addClass('clicked');
-      setTimeout(function()
+      if(effectTimeout)
+      {
+        $(myInputClickable).addClass('clicked');
+        setTimeout(function()
+        {
+          $(myInputClickable).removeClass('clicked');
+          // click with javascript not jquery
+          myInputClickable.click();
+        }, effectTimeout);
+      }
+      else
       {
         // click with javascript not jquery
-        $(myInputClickable).removeClass('clicked');
         myInputClickable.click();
-      }, effectTimeout);
+      }
       return true;
     }
     else
