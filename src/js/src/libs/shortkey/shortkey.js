@@ -54,26 +54,7 @@ function shortkey_corridor(_e, _self, _key)
     }
     else
     {
-      // else do some default event like click or set focus
-      if(elShortkey.is('a[href], a[href] *, button, input[type=submit]'))
-      {
-        var myInputClickable = elShortkey[0];
-        if(myInputClickable)
-        {
-          // click with javascript not jquery
-          myInputClickable.click();
-        }
-        else
-        {
-          elShortkey.trigger("click");
-        }
-        return;
-      }
-      else if(elShortkey.is('input, select, textarea'))
-      {
-        elShortkey.trigger("focus");
-      }
-      _e.preventDefault();
+      shortkeyDo(elShortkey);
     }
 
   }
@@ -82,6 +63,56 @@ function shortkey_corridor(_e, _self, _key)
     // if yes prevent default changes
     _e.preventDefault();
   }
+}
+
+
+function shortkeyDo(_elShortkey)
+{
+  var effectTimeout = 0;
+  if(_elShortkey.attr('data-shortkey-timeout'))
+  {
+    effectTimeout = _elShortkey.attr('data-shortkey-timeout');
+  }
+
+  // else do some default event like click or set focus
+  if(_elShortkey.is('a[href], a[href] *, button, input[type=submit]'))
+  {
+    var myInputClickable = _elShortkey[0];
+    if(myInputClickable)
+    {
+      $(myInputClickable).addClass('clicked');
+      setTimeout(function()
+      {
+        // click with javascript not jquery
+        $(myInputClickable).removeClass('clicked');
+        myInputClickable.click();
+      }, effectTimeout);
+      return true;
+    }
+    else
+    {
+      $(_elShortkey).addClass('clicked');
+      setTimeout(function()
+      {
+        $(_elShortkey).removeClass('clicked');
+        _elShortkey.trigger("click");
+      }, effectTimeout);
+      return true;
+    }
+    return;
+  }
+  else if(_elShortkey.is('input, select, textarea'))
+  {
+    $(_elShortkey).addClass('clicked');
+    setTimeout(function()
+    {
+      $(_elShortkey).removeClass('clicked');
+      _elShortkey.trigger("focus");
+    }, effectTimeout);
+    return true;
+  }
+
+  return null;
 }
 
 
