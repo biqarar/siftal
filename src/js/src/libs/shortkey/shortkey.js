@@ -63,6 +63,13 @@ function shortkey_corridor(_e, _self, _key)
     // if yes prevent default changes
     _e.preventDefault();
   }
+  else if(mytxt === '112')
+  {
+    // prevent any other change
+    _e.preventDefault();
+    // call support fn
+    shortkeySupport();
+  }
 }
 
 
@@ -149,4 +156,15 @@ function shortkeyCallFunc(_elShortkey, _e)
     return false;
 }
 
+
+function shortkeySupport()
+{
+  var supportURL = 'support';
+  if($('html').attr('lang') !== undefined)
+  {
+    supportURL = $('html').attr('lang')+ '/'+ supportURL;
+  }
+  // open support in new tab
+  window.open(supportURL, '_blank');
+}
 
