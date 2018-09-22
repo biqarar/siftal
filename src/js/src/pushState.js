@@ -50,6 +50,8 @@ $(document).ready(function()
   inputChecker();
   // check requirements of form and highlight them
   inputRequirement();
+  // do something before unload page
+  catchBeforeUnload();
   pingiRunner();
 });
 
