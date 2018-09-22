@@ -60,7 +60,8 @@ function shortkey_corridor(_e, _self, _key)
         var myInputClickable = elShortkey[0];
         if(myInputClickable)
         {
-          $(myInputClickable).trigger("click");
+          // click with javascript not jquery
+          myInputClickable.click();
         }
         else
         {
