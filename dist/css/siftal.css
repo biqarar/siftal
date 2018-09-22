@@ -13100,13 +13100,16 @@ body.enter.bg15 {
 .enter form .flex input {
   padding: 0 1em;
   line-height: 50px;
-  border: none;
+  border: 1px solid transparent;
   direction: ltr;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.1);
   color: #eee;
   transition: 0.3s;
   font-weight: 100; }
+
+.enter form .flex input.error {
+  border-color: #ffa000; }
 
 .enter form .flex input:disabled {
   opacity: 0.8; }
