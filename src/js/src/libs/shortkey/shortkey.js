@@ -41,10 +41,15 @@ function shortkey_corridor(_e, _self, _key)
   var elShortkey = $('[data-shortkey= '+ mytxt +']');
   if(elShortkey.length == 1)
   {
+    if(elShortkey.attr('data-shortkey-prevent') !== undefined)
+    {
+      // prevent default
+      _e.preventDefault();
+    }
     // this shortkey has called function
     if(shortkeyCallFunc(elShortkey, _e))
     {
-      // if yse prevent default changes
+      // if yes prevent default changes
       _e.preventDefault();
     }
     else
