@@ -14327,6 +14327,9 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
 .select.error {
   border-color: rgba(255, 0, 0, 0.5); }
 
+.select.requirement {
+  border-color: rgba(255, 0, 0, 0.3); }
+
 .select.warning {
   border-color: rgba(255, 145, 0, 0.5); }
 
