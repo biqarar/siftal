@@ -48,6 +48,8 @@ $(document).ready(function()
 
   // call some static function without need to run with pushState
   inputChecker();
+  // check requirements of form and highlight them
+  inputRequirement();
   pingiRunner();
 });
 

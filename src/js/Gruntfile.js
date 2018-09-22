@@ -75,6 +75,7 @@ var myModuleFiles =
 	'src/utility/json.js',
 	'src/utility/smoothScroll.js',
 	'src/utility/inputChecker.js',
+	'src/utility/inputRequirement.js',
 	'src/utility/navigateChecker.js',
 
 
