@@ -81,3 +81,9 @@
 }
 
 
+.btn.clicked{
+  animation:pulsePulseBorder 0.5s infinite ease-in-out;
+}
+@keyframes pulsePulseBorder { 0%{box-shadow: 0 0 5px 2px #ddd;} 70%{box-shadow: 0 0 5px 2px #aaa;} 100%{box-shadow: 0 0 5px 2px #ddd;}}
+
+

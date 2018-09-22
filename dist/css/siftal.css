@@ -1399,6 +1399,16 @@ a:active {
 a.badge.danger {
   color: #fff !important; }
 
+.badge.clicked {
+  animation: pulsePulseBorder 0.5s infinite ease-in-out; }
+
+@keyframes pulsePulseBorder {
+  0% {
+    box-shadow: 0 0 5px 2px #ddd; }
+  70% {
+    box-shadow: 0 0 5px 2px #aaa; }
+  100% {
+    box-shadow: 0 0 5px 2px #ddd; } }
 [class^="sf-"].vlmiddle:before {
   vertical-align: middle; }
 
@@ -14496,6 +14506,16 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
 .btn[data-shortkey] kbd.floatLa {
   font-size: 1.3em; }
 
+.btn.clicked {
+  animation: pulsePulseBorder 0.5s infinite ease-in-out; }
+
+@keyframes pulsePulseBorder {
+  0% {
+    box-shadow: 0 0 5px 2px #ddd; }
+  70% {
+    box-shadow: 0 0 5px 2px #aaa; }
+  100% {
+    box-shadow: 0 0 5px 2px #ddd; } }
 .pA0 {
   padding: 0px 0px; }
 
