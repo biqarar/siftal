@@ -162,7 +162,7 @@ function shortkeySupport()
   var supportURL = 'support';
   if($('html').attr('lang') !== undefined)
   {
-    supportURL = $('html').attr('lang')+ '/'+ supportURL;
+    supportURL = '/'+ $('html').attr('lang')+ '/'+ supportURL;
   }
   // open support in new tab
   window.open(supportURL, '_blank');
