@@ -69,6 +69,12 @@ var wordifyTomans = function (num)
     return wordifyfa(num, 0) + " تومان";
 };
 
+var wordifyResponse = function (_status, _textBox, _inputBox)
+{
+  var myVal = _inputBox.val().trim();
+  _textBox.text(wordifyfa(myVal, 0) + " تومان" );
+};
+
 var wordifyRialsInTomans = function (num)
 {
   'use strict';
