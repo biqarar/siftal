@@ -47,6 +47,7 @@ var myModuleFiles =
 	'src/libs/shortkey/shortkey.js',
 	'src/libs/nprogress/nprogress.js',
 	'src/libs/pingi/pingi.js',
+	'src/libs/wordify/wordify.js',
 	// semantic
 	'src/libs/semantic-ui/api/api.min.js',
 	'src/libs/semantic-ui/transition/transition.min.js',
