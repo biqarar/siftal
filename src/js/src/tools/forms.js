@@ -245,7 +245,14 @@
       {
         if(_textStatus === 'timeout')
         {
-          notif('fatal', 'Failed from timeout', 'Request failed', 5000, {'position':'topCenter', 'icon':'sf-hourglass-o'});
+          if($('html').attr('lang') === 'fa')
+          {
+            notif('fatal', 'مهلت درخواست  به پایان رسید', 'درخواست ناموفق', 5000, {'position':'topCenter', 'icon':'sf-hourglass-o'});
+          }
+          else
+          {
+            notif('fatal', 'Failed from timeout', 'Request failed', 5000, {'position':'topCenter', 'icon':'sf-hourglass-o'});
+          }
           pingi();
         }
         else
@@ -258,12 +265,26 @@
 
               if(notifResult === false)
               {
-                notif('fatal', 'Error in detect server result', 'Ajax is failed!');
+                if($('html').attr('lang') === 'fa')
+                {
+                  notif('fatal', 'خطا در دریافت اطلاعات از سرور', 'درخواست ناموفق بود!');
+                }
+                else
+                {
+                  notif('fatal', 'Error in detect server result', 'Ajax is failed!');
+                }
               }
             }
             else
             {
-              notif('fatal', 'Server result is empty', 'Ajax is failed!');
+              if($('html').attr('lang') === 'fa')
+              {
+                notif('fatal', 'نتیجه دریافتی از سرور خالی است', 'درخواست ناموفق بود!');
+              }
+              else
+              {
+                notif('fatal', 'Server result is empty', 'Ajax is failed!');
+              }
 
               if($('html').attr('data-debugger') !== undefined && _textStatus == 'error')
               {
@@ -273,7 +294,14 @@
           }
           else
           {
-            notif('fatal', 'No result from server', 'Ajax is failed!');
+            if($('html').attr('lang') === 'fa')
+            {
+              notif('fatal', 'هیچ پاسخی از سرور  دریافت نشد', 'درخواست ناموفق بود!');
+            }
+            else
+            {
+              notif('fatal', 'No result from server', 'Ajax is failed!');
+            }
           }
         }
 
