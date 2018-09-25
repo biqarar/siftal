@@ -75,7 +75,7 @@ function shortkey_corridor(_e, _self, _key)
 
 function shortkeyDo(_elShortkey)
 {
-  var effectTimeout = 1000;
+  var effectTimeout = 0;
   if(_elShortkey.attr('data-shortkey-timeout'))
   {
     effectTimeout = _elShortkey.attr('data-shortkey-timeout');
