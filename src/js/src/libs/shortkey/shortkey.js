@@ -106,24 +106,38 @@ function shortkeyDo(_elShortkey)
     }
     else
     {
-      $(_elShortkey).addClass('clicked');
-      setTimeout(function()
+      if(effectTimeout)
       {
-        $(_elShortkey).removeClass('clicked');
+        $(_elShortkey).addClass('clicked');
+        setTimeout(function()
+        {
+          $(_elShortkey).removeClass('clicked');
+          _elShortkey.trigger("click");
+        }, effectTimeout);
+      }
+      else
+      {
         _elShortkey.trigger("click");
-      }, effectTimeout);
+      }
       return true;
     }
     return;
   }
   else if(_elShortkey.is('input, select, textarea'))
   {
-    $(_elShortkey).addClass('clicked');
-    setTimeout(function()
+    if(effectTimeout)
     {
-      $(_elShortkey).removeClass('clicked');
+      $(_elShortkey).addClass('clicked');
+      setTimeout(function()
+      {
+        $(_elShortkey).removeClass('clicked');
+        _elShortkey.trigger("focus");
+      }, effectTimeout);
+    }
+    else
+    {
       _elShortkey.trigger("focus");
-    }, effectTimeout);
+    }
     return true;
   }
 
