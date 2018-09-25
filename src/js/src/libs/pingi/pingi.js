@@ -43,7 +43,14 @@ function pingiRunner()
   $('body').on('pingi:website:fail', function(_e, _firstTime)
   {
     // show notif on offline mode if we cant see website
-    notif('fatal', "We can't see "+ window.location.hostname, 'Connection is lost', 8000, {'position':'topCenter', 'icon':'sf-plug', 'displayMode':1});
+    if($('html').attr('lang') === 'fa')
+    {
+      notif('fatal', "ما نمی‌توانیم  "+ window.location.hostname + " را ببینیم", 'ارتباط از دست رفت!', 8000, {'position':'topCenter', 'icon':'sf-plug', 'displayMode':1});
+    }
+    else
+    {
+      notif('fatal', "We can't see "+ window.location.hostname, 'Connection is lost', 8000, {'position':'topCenter', 'icon':'sf-plug', 'displayMode':1});
+    }
 
 
     // disallow to run multiple and only create one task to check
@@ -73,7 +80,14 @@ function pingiRunner()
     }
     else
     {
-      notif('okay', "We are online on "+ window.location.hostname, 'Connection is re-established', 5000, {'position':'topCenter', 'icon':'sf-link', 'displayMode':1});
+      if($('html').attr('lang') === 'fa')
+      {
+        notif('okay', "ما روی  "+ window.location.hostname + " آنلاین هستیم", 'اتصال برقرار شد', 5000, {'position':'topCenter', 'icon':'sf-link', 'displayMode':1});
+      }
+      else
+      {
+        notif('okay', "We are online on "+ window.location.hostname, 'Connection is re-established', 5000, {'position':'topCenter', 'icon':'sf-link', 'displayMode':1});
+      }
     }
 
     // remove offline mode
