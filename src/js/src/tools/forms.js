@@ -279,11 +279,11 @@
             {
               if($('html').attr('lang') === 'fa')
               {
-                notif('fatal', 'نتیجه دریافتی از سرور خالی است', 'درخواست ناموفق بود!');
+                notif('fatal', 'نتیجه دریافتی از سرور نامعتبر است', 'درخواست ناموفق بود!');
               }
               else
               {
-                notif('fatal', 'Server result is empty', 'Ajax is failed!');
+                notif('fatal', 'Server result is invalid', 'Ajax is failed!');
               }
 
               if($('html').attr('data-debugger') !== undefined && _textStatus == 'error')
