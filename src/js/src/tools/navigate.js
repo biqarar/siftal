@@ -244,11 +244,18 @@
     options.beforeSend = function()
     {
       NProgress.start();
-      NProgress.inc()
+      NProgress.inc();
     };
     options.complete = function(jqXHR)
     {
-      NProgress.done(true);
+      if(jqXHR.responseJSON && jqXHR.responseJSON.ok === true && jqXHR.responseJSON.redirect)
+      {
+        // do nothing because we have another navigate
+      }
+      else
+      {
+        NProgress.done(true);
+      }
     };
 
     // set timeout for fetch page
