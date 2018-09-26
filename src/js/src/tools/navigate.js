@@ -262,6 +262,16 @@
     {
       $window.trigger('navigate:fetch:ajax:start', options);
 
+      // redirect it's okay and we have redirect
+      if(res.ok === true && res.redirect)
+      {
+        Navigate(
+        {
+          url: res.redirect
+        });
+        return;
+      }
+
       var json, html;
 
       var jsonExpected = res[0] === '{';
