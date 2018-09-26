@@ -116,11 +116,10 @@
     width: 100%;
   }
   // pagination
-  .pagination a.next, .pagination a.prev{
-    display: none;
-  }
-  .pagination a:not([href]):not(.active){
-    display: none;
+  .pagination a:not([href]):not(.active)
+  {
+    padding-right:2px;
+    padding-left:2px;
   }
 
 
