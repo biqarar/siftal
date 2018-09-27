@@ -99,7 +99,7 @@ $(document).ready(function()
     input[type="datetime-local"],\
     input[type="number"],\
     input[type="tel"],\
-    input[name="usernameormobile"],\
+    input[data-disallowFaNum],\
     input#mobile',
     function(e)
     {
@@ -168,7 +168,6 @@ $(document).ready(function()
       else if($(this).attr('type') === 'number' || $(this).attr('type') === 'tel')
       {
           disallowInput = true;
-
       }
       else
       {
