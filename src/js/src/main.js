@@ -99,6 +99,7 @@ $(document).ready(function()
     input[type="datetime-local"],\
     input[type="number"],\
     input[type="tel"],\
+    input[name="usernameormobile"],\
     input#mobile',
     function(e)
     {
@@ -164,9 +165,14 @@ $(document).ready(function()
       {
         // accept system btn
       }
-      else
+      else if($(this).attr('type') === 'number' || $(this).attr('type') === 'tel')
       {
           disallowInput = true;
+
+      }
+      else
+      {
+        // do nothing
       }
 
 
