@@ -71,7 +71,7 @@ body.enter.bg15{background-image:url(../images/bg/15.jpg)}
 .enter form .flex input::-webkit-outer-spin-button,.enter form .flex input::-webkit-inner-spin-button{-webkit-appearance:none;}
 .enter form .flex ::-webkit-input-placeholder{color:#ccc;}
 .enter label{padding:1em 0;display:block;font-size:0.8em;}
-.enter form textarea{min-height:3em;padding:1em;line-height:2em;background-color:rgba(0,0,0,0.1);color:#eee;font-size:0.8em}
+.enter form textarea{min-height:120px;max-height:200px;padding:1em;line-height:2em;background-color:rgba(0,0,0,0.1);color:#eee;font-size:0.8em;min-width:100%;}
 /* custom style for some inputs*/
 .enter form #emobile label{
 	font-size:2em;
