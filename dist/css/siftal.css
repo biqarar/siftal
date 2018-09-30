@@ -4105,7 +4105,7 @@ img.mini {
   .printArea {
     background: #fff;
     box-shadow: 0 0.5mm 2mm rgba(0, 0, 0, 0.3);
-    margin: 1em auto;
+    margin: 0 auto 1em;
     overflow: visible;
     position: relative;
     box-sizing: border-box;
