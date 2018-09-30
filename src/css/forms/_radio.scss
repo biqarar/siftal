@@ -76,13 +76,13 @@
 
 
 // radio gateway
-.radioGateway{padding:1em;position:relative;cursor:pointer;display:inline-flex;}
+.radioGateway{padding:0.5em;position:relative;cursor:pointer;display:inline-flex;}
 .radioGateway input{padding:0;margin:0;position:absolute;z-index:-1;width:0;height:0;opacity:0}
-.radioGateway label{padding:0;position:relative;cursor:pointer;border:2px solid #efefef;transition:0.3s;background-color:rgba(0,0,0,0.1);width:68px;height:68px;border-radius:0.25rem;}
+.radioGateway label{padding:1px;position:relative;cursor:pointer;border:2px solid #efefef;transition:0.3s;background-color:rgba(0,0,0,0.1);width:70px;height:70px;border-radius:0.25rem;}
 .radioGateway img{width:100%;height:auto;}
-.radioGateway input:checked+label{border-color:#37aaa7;background-color:rgba(240,240,240,0.5)}
-.radioGateway input:hover+label{opacity:0.8}
-.radioGateway input:focus+label{border-color:#22827f;}
+.radioGateway input:checked+label{border-color:#37aaa7;background-color:rgba(240,240,240,0.5);box-shadow: inset 0px 0px 30px 0px #4090d0}
+.radioGateway input:hover+label{opacity:0.8;border-color:#ccc;}
+.radioGateway input:focus+label{border-color:#00a0f0;}
 
 
 

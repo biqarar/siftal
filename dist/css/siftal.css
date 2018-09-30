@@ -14133,7 +14133,7 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
   transform: translate(50%, 50%); }
 
 .radioGateway {
-  padding: 1em;
+  padding: 0.5em;
   position: relative;
   cursor: pointer;
   display: inline-flex; }
@@ -14148,14 +14148,14 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
   opacity: 0; }
 
 .radioGateway label {
-  padding: 0;
+  padding: 1px;
   position: relative;
   cursor: pointer;
   border: 2px solid #efefef;
   transition: 0.3s;
   background-color: rgba(0, 0, 0, 0.1);
-  width: 68px;
-  height: 68px;
+  width: 70px;
+  height: 70px;
   border-radius: 0.25rem; }
 
 .radioGateway img {
@@ -14164,13 +14164,15 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
 
 .radioGateway input:checked + label {
   border-color: #37aaa7;
-  background-color: rgba(240, 240, 240, 0.5); }
+  background-color: rgba(240, 240, 240, 0.5);
+  box-shadow: inset 0px 0px 30px 0px #4090d0; }
 
 .radioGateway input:hover + label {
-  opacity: 0.8; }
+  opacity: 0.8;
+  border-color: #ccc; }
 
 .radioGateway input:focus + label {
-  border-color: #22827f; }
+  border-color: #00a0f0; }
 
 .radioRating .rateBox {
   display: inline-block;
