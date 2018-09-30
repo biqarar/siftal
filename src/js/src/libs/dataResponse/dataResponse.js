@@ -250,7 +250,7 @@ function checkInputResponse(_this, _firstTime)
 		{
 			if(transition)
 			{
-				$(this).transition(transition);
+				$(this).transition('stop all').transition(transition);
 			}
 			else
 			{
@@ -283,7 +283,7 @@ function checkInputResponse(_this, _firstTime)
 						// if condition is true run effect
 						if(transition)
 						{
-							$(this).transition(transition);
+							$(this).transition('stop all').transition(transition);
 						}
 						else
 						{
@@ -325,7 +325,7 @@ function checkInputResponse(_this, _firstTime)
 						// if condition is false run effect
 						if(transition)
 						{
-							$(this).transition(transition);
+							$(this).transition('stop all').transition(transition);
 						}
 						else
 						{
