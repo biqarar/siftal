@@ -65,14 +65,18 @@ var wordifyRials = function (num)
 
 var wordifyTomans = function (num)
 {
-  'use strict';
-    return wordifyfa(num, 0) + " تومان";
+  var myText = wordifyfa(num, 0);
+  if(myText)
+  {
+    return myText + " تومان";
+  }
+  return '';
 };
 
 var wordifyResponse = function (_status, _textBox, _inputBox)
 {
   var myVal = _inputBox.val().trim();
-  _textBox.text(wordifyfa(myVal, 0) + " تومان" );
+  _textBox.text(wordifyTomans(myVal));
 };
 
 var wordifyRialsInTomans = function (num)
