@@ -132,6 +132,7 @@ function checkInputResponse(_this, _firstTime)
 	childrens.each(function()
 	{
 		var effect     = $(this).attr('data-response-effect');
+		var transition = $(this).attr('data-response-transition');
 		var timing     = $(this).attr('data-response-timing');
 		var where      = $(this).attr('data-response-where');
 		var whereNot   = $(this).attr('data-response-where-not');
@@ -247,7 +248,14 @@ function checkInputResponse(_this, _firstTime)
 		// if wanna to toggle element do this
 		if(toggle)
 		{
-			$(this)[effect['effect']](timing);
+			if(transition)
+			{
+				$(this).transition(transition);
+			}
+			else
+			{
+				$(this)[effect['effect']](timing);
+			}
 		}
 		else
 		{
@@ -273,8 +281,15 @@ function checkInputResponse(_this, _firstTime)
 					else
 					{
 						// if condition is true run effect
-						$(this).attr('data-response-hide', null);
-						$(this)[effect['open']](timing);
+						if(transition)
+						{
+							$(this).transition(transition);
+						}
+						else
+						{
+							$(this).attr('data-response-hide', null);
+							$(this)[effect['open']](timing);
+						}
 					}
 				}
 				if($(this).find('[data-response-focus]').length)
@@ -308,10 +323,17 @@ function checkInputResponse(_this, _firstTime)
 					else
 					{
 						// if condition is false run effect
-						$(this)[effect['close']](timing, function()
+						if(transition)
 						{
-							$(this).attr('data-response-hide', '');
-						});
+							$(this).transition(transition);
+						}
+						else
+						{
+							$(this)[effect['close']](timing, function()
+							{
+								$(this).attr('data-response-hide', '');
+							});
+						}
 					}
 				}
 				elResult = 'close';
