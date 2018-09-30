@@ -14175,6 +14175,9 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
 .radioGateway input:focus + label {
   border-color: #00a0f0; }
 
+.radioGateway input:active + label {
+  transform: translateY(5px); }
+
 .radioRating .rateBox {
   display: inline-block;
   min-height: 3em; }
@@ -14359,6 +14362,9 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
 
 .radioType input:focus + label::after {
   border-color: #00a0f0; }
+
+.radioType input:active + label {
+  transform: translateY(5px); }
 
 .txt {
   display: block;
