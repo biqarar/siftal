@@ -1968,6 +1968,7 @@ progress.xl, meter.xl {
   -fs-table-paginate: paginate;
   overflow: hidden;
   line-height: 1.4;
+  margin-bottom: 1em;
   border-collapse: collapse; }
 
 .tbl1.cbox {
