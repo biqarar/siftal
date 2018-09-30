@@ -1,36 +1,36 @@
 .radio1{padding:8px 0;overflow:hidden;}
 
 .radio1 input{
-	padding:0;
-	margin:0;
-	position:absolute;
-	z-index:-1;
-	width:0;
-	height:0;
-	opacity:0;
-	cursor: pointer;
+  padding:0;
+  margin:0;
+  position:absolute;
+  z-index:-1;
+  width:0;
+  height:0;
+  opacity:0;
+  cursor: pointer;
 }
 .radio1 label{
-	position:relative;
-	cursor:pointer;
-	padding:0;
-	display:inline-block;
-	line-height: 1;
+  position:relative;
+  cursor:pointer;
+  padding:0;
+  display:inline-block;
+  line-height: 1;
 }
 .radio1 label:first-of-type::before{content:'';margin-right:10px;display:inline-block;vertical-align:middle;width:20px;height:20px;transition:0.3s;border-radius:50%;border:1px solid rgba(0,0,0,0.1);}
 .radio1 label:first-of-type::after{
-	content:'';
-	position:absolute;
-	left:5px;
-	top:9px;
-	background-color:#fff;
-	width:2px;
-	height:2px;
-	box-shadow:2px 0 0 white,4px 0 0 white,4px -2px 0 white,4px -4px 0 white,4px -6px 0 white,4px -8px 0 #fff;
-	-webkit-transform:rotate(45deg);
-	transform:rotate(45deg);
-	opacity:0;
-	transition:0.1s;
+  content:'';
+  position:absolute;
+  left:5px;
+  top:9px;
+  background-color:#fff;
+  width:2px;
+  height:2px;
+  box-shadow:2px 0 0 white,4px 0 0 white,4px -2px 0 white,4px -4px 0 white,4px -6px 0 white,4px -8px 0 #fff;
+  -webkit-transform:rotate(45deg);
+  transform:rotate(45deg);
+  opacity:0;
+  transition:0.1s;
 }
 .radio1 label:first-of-type:hover::before{border-color:rgba(0, 0, 0, 0.2)}
 .radio1 input:checked+label:first-of-type::after{opacity:1}
@@ -92,18 +92,18 @@
 
 }
 .radioRating .rateBox{
-	display:inline-block;
-	min-height:3em;
+  display:inline-block;
+  min-height:3em;
 }
 .radioRating input[type="radio"] {
-	padding:0;
-	margin:0;
-	position:absolute;
-	z-index:-1;
-	width:0;
-	height:0;
-	opacity:0;
-	cursor: pointer;
+  padding:0;
+  margin:0;
+  position:absolute;
+  z-index:-1;
+  width:0;
+  height:0;
+  opacity:0;
+  cursor: pointer;
 }
 .radioRating label {
   float: right;
@@ -121,7 +121,7 @@
   vertical-align:bottom;
 }
 .radioRating label:hover {
-	transform: rotate(-15deg) scale(1.3);
+  transform: rotate(-15deg) scale(1.3);
 }
 .radioRating input:checked ~ label {
   transform: rotate(-10deg) scale(1.1);
@@ -136,7 +136,7 @@
   text-shadow: 0 0 10px #979922;
 }
 .radioRating input:last-of-type:checked ~ label:before {
-	color: #F62;
+  color: #F62;
 }
 // heart
 .radioRating.heart label:before {
@@ -151,7 +151,7 @@
   text-shadow: 0 0 10px #992222;
 }
 .radioRating.heart input:last-of-type:checked ~ label:before {
-	color: #ec9595;
+  color: #ec9595;
 }
 // bell
 .radioRating.bell label:before {
@@ -195,5 +195,102 @@
 .radioRating.user1 input:checked ~ label:before {
   content: '\e079';
 }
+
+
+
+
+
+/* radio type selector*/
+.radioType{
+  margin: 0.5em;
+  font-size:1.4em;
+  min-width:100px;
+  min-height:90px;
+  position:relative;
+}
+.radioType input{
+  padding:0;
+  margin:0;
+  position:absolute;
+  z-index:-1;
+  width:0;
+  height:0;
+  opacity:0;
+  cursor: pointer;
+}
+.radioType label{
+  cursor: pointer;
+  display: block;
+  min-height:60px;;
+  background: #fff;
+  border: 2px solid #efefef;
+  border-radius: 0.25rem;
+  padding: 2em 1em 1em;
+  line-height:1.5;
+  margin-top:1.1em;
+  text-align: center;
+  box-shadow: 0px 0 10px -2px rgba(161, 170, 166, 0.5);
+  position: relative;
+  transition:0.3s ease-out;
+}
+.radioType input:disabled ~ label {
+  color: #bcc2bf;
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity:0.7;
+}
+.radioType input:checked + label {
+  background: #64db84;
+  color: #fff;
+  box-shadow: 0px 0px 20px #64db84;
+  border-color:transparent;
+}
+.radioType input + label::after {
+  color: #3d3f43;
+  font-family: "Siftal";
+  border: 2px solid #efefef;
+  content: " ";
+  font-size: 1.2em;
+  position: absolute;
+  top: -1em;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2em;
+  width: 2em;
+  line-height: 1.8em;
+  text-align: center;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0px 0 10px -2px rgba(161, 170, 166, 0.5);
+  // opacity:0;
+  transition:0.3s ease-out;
+}
+.radioType input:checked + label::after {
+  content: "\6f";
+  border-color:#1dc973;
+  box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.25);
+  opacity:1;
+}
+.radioType.default input + label {
+  border-color: #64da85;
+}
+.radioType.default input + label::after {
+  border-color: #64da85;
+}
+.radioType:hover label
+{
+  border-color:#ccc;
+}
+.radioType:hover label:after{
+  border-color:#ccc;
+}
+.radioType input:focus + label {
+  border-color: #00a0f0;
+}
+.radioType input:focus + label::after {
+  border-color: #00a0f0;
+}
+
+
 
 
