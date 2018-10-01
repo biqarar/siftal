@@ -662,7 +662,8 @@ address {
 
 /* list */
 ul {
-  list-style: none inside none; }
+  list-style: none inside none;
+  line-height: 1.5em; }
 
 ul.list {
   list-style: square outside none;
@@ -673,6 +674,9 @@ ul.list li {
 
 ul.list li a {
   padding: 0.3em 0.5em; }
+
+.rtl ul {
+  line-height: 2em; }
 
 /* very usefull styles*/
 .unselectable {
@@ -4438,6 +4442,25 @@ iframe.gMap {
   border-bottom: 1px dashed #ccc;
   margin-bottom: 3em;
   overflow: hidden; }
+
+.cms ul {
+  list-style: square outside none;
+  margin: 0 2em;
+  line-height: 2em; }
+
+.cms ul li {
+  padding-bottom: 0.5em; }
+
+.cms ul li a {
+  padding: 0 0.5em;
+  transition: 0.3s;
+  display: block; }
+
+.cms ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.05); }
+
+.cms ul li a:focus {
+  background-color: rgba(0, 0, 0, 0.1); }
 
 [class^="sf-"] {
   margin: 0;

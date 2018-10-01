@@ -203,3 +203,10 @@ iframe.gMap{
   overflow:hidden
 }
 
+.cms ul{list-style:square outside none;margin:0 2em;line-height:2em;}
+.cms ul li {padding-bottom:0.5em;}
+.cms ul li a {padding:0 0.5em;transition:0.3s;display:block;}
+.cms ul li a:hover{background-color:rgba(0,0,0,0.05)}
+.cms ul li a:focus{background-color:rgba(0,0,0,0.1)}
+
+

@@ -11,10 +11,11 @@
 
 
 /* list */
-ul{list-style:none inside none;}
+ul{list-style:none inside none;line-height:1.5em}
 ul.list{list-style:square outside none;margin:0 2em;}
 ul.list li {padding:0.5em 1em;}
 ul.list li a {padding:0.3em 0.5em;}
+.rtl ul{line-height:2em}
 
 
 /* very usefull styles*/
