@@ -4158,6 +4158,12 @@ img.mini {
 .printArea {
   -webkit-print-color-adjust: exact; }
 
+.ltr .printArea .tbl1 tr th:first-of-type, .ltr .printArea .tbl1 tr td:first-of-type {
+  padding-left: 1rem; }
+
+.rtl .printArea .tbl1 tr th:first-of-type, .rtl .printArea .tbl1 tr td:first-of-type {
+  padding-right: 1rem; }
+
 body.errorPage {
   background-color: #0e5860;
   color: #fff;
