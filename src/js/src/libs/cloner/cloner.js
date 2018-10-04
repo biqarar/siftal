@@ -15,7 +15,7 @@ function cloner()
 
 
   // on body scroll used in siftal
-  $('body').on("scroll", function()
+  $(window).on("scroll", function()
   {
     var myScroll = $("html").scrollTop() || $("body").scrollTop();
     $.each($('.cloner'), function(index, val)
@@ -34,6 +34,5 @@ function cloner()
       }
     });
   });
-
 }
 
