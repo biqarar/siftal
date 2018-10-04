@@ -17292,6 +17292,8 @@ body .we500 {
   background-color: #302b2b;
   user-select: none;
   position: fixed;
+  top: 0;
+  bottom: 0;
   z-index: 1;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -17299,6 +17301,12 @@ body .we500 {
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   transition: all 300ms cubic-bezier(0.694, 0.0482, 0.335, 1); }
+
+.siftal.ltr #sidebar {
+  left: 0; }
+
+.siftal.rtl #sidebar {
+  right: 0; }
 
 .siftal[data-clean].ltr #main {
   margin-left: 0; }

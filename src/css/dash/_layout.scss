@@ -27,7 +27,7 @@ transition: all 300ms cubic-bezier(.694, .0482, .335, 1);
 .siftal #main::before{content:"";position:fixed;background-color:rgba(0,0,0,0.7);z-index:-1;opacity:0;transition:.3s;}
 
 // sidebar
-.siftal #sidebar{overflow:hidden;overflow-y:auto;width:250px;height:100%;position:relative;background-color:#302b2b;user-select:none;position:fixed;z-index:1;
+.siftal #sidebar{overflow:hidden;overflow-y:auto;width:250px;height:100%;position:relative;background-color:#302b2b;user-select:none;position:fixed;top:0;bottom:0;z-index:1;
 -webkit-transition: all 0.2s ease-out;
 -moz-transition: all 0.2s ease-out;
 -ms-transition: all 0.2s ease-out;
@@ -35,6 +35,8 @@ transition: all 300ms cubic-bezier(.694, .0482, .335, 1);
 transition: all 0.2s ease-out;
 transition: all 300ms cubic-bezier(.694, .0482, .335, 1);
 }
+.siftal.ltr #sidebar{left:0}
+.siftal.rtl #sidebar{right:0}
 
 //----------------------------------- clean mode style
 // main
