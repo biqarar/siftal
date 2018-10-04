@@ -11,8 +11,10 @@
 	-webkit-user-select: none;
 	-moz-user-select:none;
 	user-select:none;
-	overflow-x:hidden;
-	overflow-y:auto;
+
+	// add overflow start bug of scroll on mobiles like iphone!
+	// overflow-x:hidden;
+	// overflow-y:auto;
 }
 
 // main

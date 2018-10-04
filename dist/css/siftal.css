@@ -17258,9 +17258,7 @@ body .we500 {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-user-select: none;
   -moz-user-select: none;
-  user-select: none;
-  overflow-x: hidden;
-  overflow-y: auto; }
+  user-select: none; }
 
 .siftal #main {
   overflow: hidden;
