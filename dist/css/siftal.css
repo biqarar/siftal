@@ -17286,6 +17286,7 @@ body .we500 {
   height: 0;
   width: 100%;
   z-index: 9;
+  cursor: col-resize;
   background-color: rgba(0, 0, 0, 0.7);
   transition: .3s;
   -webkit-transition: all 0.2s ease-out;
@@ -17293,6 +17294,38 @@ body .we500 {
   -ms-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out; }
+
+.siftal #main:after {
+  content: "\e041";
+  font-family: "siftal", "tahoma" !important;
+  font-size: 50px;
+  line-height: 60px;
+  color: #ccc;
+  text-align: center;
+  position: fixed;
+  top: -60px;
+  left: 250px;
+  height: 60px;
+  width: 60px;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: .3s;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out; }
+
+.siftal.rtl #main:after {
+  left: initial;
+  right: 250px; }
+
+.siftal #main:hover:before {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.siftal #main:hover:after {
+  color: #eee; }
 
 .siftal #sidebar {
   overflow: hidden;
@@ -17358,6 +17391,9 @@ body .we500 {
 .siftal[data-sidebar] #main:before {
   bottom: 0;
   height: 100%; }
+
+.siftal[data-sidebar] #main:after {
+  top: 0; }
 
 .siftal #main #content {
   -webkit-box-flex: 1;
@@ -18132,6 +18168,14 @@ body.siftal .cbox table {
 
   .siftal.rtl #main {
     margin-right: 300px; }
+
+  .siftal.ltr #main:after {
+    left: 300px;
+    right: initial; }
+
+  .siftal.rtl #main:after {
+    left: initial;
+    right: 300px; }
 
   .siftal #sidebar {
     width: 300px; }

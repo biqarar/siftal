@@ -55,6 +55,8 @@
 
   .siftal.ltr #main{margin-left:300px;}
   .siftal.rtl #main{margin-right:300px;}
+  .siftal.ltr #main:after{left:300px;right:initial;}
+  .siftal.rtl #main:after{left:initial;right:300px;}
   .siftal #sidebar{width:300px;}
   .siftal[data-clean].ltr #sidebar {left:-300px;}
   .siftal[data-clean].rtl #sidebar{right:-300px;}
