@@ -52,6 +52,8 @@ $(document).ready(function()
   inputRequirement();
   // do something before unload page
   catchBeforeUnload();
+  // run cloner
+  cloner();
   pingiRunner();
 });
 
