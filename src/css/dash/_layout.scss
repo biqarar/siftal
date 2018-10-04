@@ -49,8 +49,9 @@
 .siftal[data-sidebar] #main:after{top:0;}
 
 
-
-
+// cloner class
+.siftal #header.cloner{position:fixed;top:-100%;width:100%;width:calc( 100% - 250px); -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; -ms-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; transition: all 0.2s ease-out; transition: all 200ms cubic-bezier(.694, .0482, .335, 1);transform: translateX(0);}
+.siftal #header.cloner[data-cloner-trigger]{top:0;}
 
 
 

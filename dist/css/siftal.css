@@ -17395,6 +17395,22 @@ body .we500 {
 .siftal[data-sidebar] #main:after {
   top: 0; }
 
+.siftal #header.cloner {
+  position: fixed;
+  top: -100%;
+  width: 100%;
+  width: calc( 100% - 250px);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  transition: all 200ms cubic-bezier(0.694, 0.0482, 0.335, 1);
+  transform: translateX(0); }
+
+.siftal #header.cloner[data-cloner-trigger] {
+  top: 0; }
+
 .siftal #main #content {
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -18177,6 +18193,9 @@ body.siftal .cbox table {
     left: initial;
     right: 300px; }
 
+  .siftal #header.cloner {
+    width: calc( 100% - 300px); }
+
   .siftal #sidebar {
     width: 300px; }
 
@@ -18520,6 +18539,9 @@ body.siftal .cbox table {
 
   .siftal.rtl #sidebar {
     right: -250px; }
+
+  .siftal #header.cloner {
+    width: 100%; }
 
   .siftal .toggleClean {
     display: none; }
@@ -18905,6 +18927,9 @@ body.siftal .cbox table {
 
   .siftal.rtl #main {
     margin-right: 0; }
+
+  .siftal #header.cloner {
+    width: 100%; }
 
   .siftal.ltr #sidebar {
     left: -250px; }
