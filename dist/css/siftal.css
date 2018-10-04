@@ -17275,6 +17275,23 @@ body .we500 {
 .siftal.rtl #main {
   margin-right: 250px; }
 
+.siftal #main:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: .3s;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out; }
+
 .siftal #sidebar {
   overflow: hidden;
   overflow-y: auto;
@@ -17300,22 +17317,6 @@ body .we500 {
 
 .siftal.rtl #sidebar {
   right: 0; }
-
-.siftal #sidebarShadow {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 0;
-  width: 100%;
-  z-index: 9;
-  background-color: rgba(0, 0, 0, 0.7);
-  transition: .3s;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -ms-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out; }
 
 .siftal[data-clean].ltr #main {
   margin-left: 0; }
@@ -17352,7 +17353,7 @@ body .we500 {
 .siftal[data-sidebar].rtl #sidebar {
   right: 0 !important; }
 
-.siftal[data-sidebar] #sidebarShadow {
+.siftal[data-sidebar] #main:before {
   bottom: 0;
   height: 100%; }
 
