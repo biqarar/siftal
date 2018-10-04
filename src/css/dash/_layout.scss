@@ -14,13 +14,24 @@
 }
 
 // main
-.siftal #main{overflow:hidden;}
+.siftal #main{overflow:hidden;
+-webkit-transition: all 0.3s ease-out;
+-moz-transition: all 0.3s ease-out;
+-ms-transition: all 0.3s ease-out;
+-o-transition: all 0.3s ease-out;
+transition: all 0.3s ease-out;
+}
 .siftal.ltr #main{margin-left:250px;}
 .siftal.rtl #main{margin-right:250px;}
 .siftal #main::before{content:"";position:fixed;background-color:rgba(0,0,0,0.7);z-index:-1;opacity:0;transition:.3s;}
 
 // sidebar
-.siftal #sidebar{overflow:hidden;overflow-y:auto;width:250px;height:100%;position:relative;background-color:#302b2b;transition-duration:0.3s;transition-property:right, left;user-select:none;position:fixed;z-index:1;}
+.siftal #sidebar{overflow:hidden;overflow-y:auto;width:250px;height:100%;position:relative;background-color:#302b2b;user-select:none;position:fixed;z-index:1;
+-webkit-transition: all 0.3s ease-out;
+-moz-transition: all 0.3s ease-out;
+-ms-transition: all 0.3s ease-out;
+-o-transition: all 0.3s ease-out;
+transition: all 0.3s ease-out;}
 
 //----------------------------------- clean mode style
 // main

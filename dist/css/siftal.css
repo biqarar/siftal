@@ -17261,7 +17261,12 @@ body .we500 {
   user-select: none; }
 
 .siftal #main {
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
 
 .siftal.ltr #main {
   margin-left: 250px; }
@@ -17284,11 +17289,14 @@ body .we500 {
   height: 100%;
   position: relative;
   background-color: #302b2b;
-  transition-duration: 0.3s;
-  transition-property: right, left;
   user-select: none;
   position: fixed;
-  z-index: 1; }
+  z-index: 1;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
 
 .siftal[data-clean].ltr #main {
   margin-left: 0; }
