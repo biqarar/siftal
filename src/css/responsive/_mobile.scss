@@ -65,6 +65,8 @@
   .siftal #header h1{max-width: 60%;max-width:calc( 100% - 110px);font-size:1.2em}
   .siftal #header h1 + .hm {display:none!important;}
 
+  .siftal.ltr #main{margin-left:0}
+  .siftal.rtl #main{margin-right:0}
   .siftal #sidebar {display:block;position:fixed;top:0;bottom:0;z-index:3;left:-250px;}
   .siftal.rtl #sidebar{right:-250px;left:initial;}
   .siftal #sidebar figure{margin:0.5em 0;padding:0}

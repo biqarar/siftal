@@ -50,9 +50,10 @@
 
 
   // custom style for another part of siftal
+  .siftal.ltr #main{margin-left:0}
+  .siftal.rtl #main{margin-right:0}
   .siftal #sidebar {display:block;position:fixed;top:0;bottom:0;z-index:3;left:-250px;}
   .siftal.rtl #sidebar{right:-250px;left:initial;}
-  .siftal #sidebar figure{margin:2em 0;}
   .siftal .toggleClean{display:none}
 
 

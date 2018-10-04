@@ -1,10 +1,5 @@
-/* main styles */
-body.siftal{
-	display:-webkit-box;
-	display:-webkit-flex;
-	display:-ms-flexbox;
-	display:-moz-box;
-	display:flex;
+/* siftal layout */
+.siftal{
 	min-height:100%;
 	height:100%;
 	color:#333;
@@ -12,30 +7,68 @@ body.siftal{
 	-webkit-touch-callout:none;
 	cursor:default;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
-
 	// disable user select
 	-webkit-user-select: none;
 	-moz-user-select:none;
 	user-select:none;
 }
 
+// main
+.siftal #main{overflow:hidden;}
+.siftal.ltr #main{margin-left:250px;}
+.siftal.rtl #main{margin-right:250px;}
+.siftal #main::before{content:"";position:fixed;background-color:rgba(0,0,0,0.7);z-index:-1;opacity:0;transition:.3s;}
+
+// sidebar
+.siftal #sidebar{overflow:hidden;overflow-y:auto;width:250px;height:100%;position:relative;background-color:#302b2b;transition-duration:0.3s;transition-property:right, left;user-select:none;position:fixed;z-index:1;}
+
+//----------------------------------- clean mode style
+// main
+.siftal[data-clean].ltr #main {margin-left:0;}
+.siftal[data-clean].rtl #main {margin-right:0;}
+// sidebar
+.siftal[data-clean] #sidebar {display:block;position:fixed;top:0;bottom:0;z-index:3;left:-250px;}
+.siftal[data-clean].rtl #sidebar{right:-250px;left:initial;}
+.siftal[data-clean] #sidebar figure{margin:2em 0;}
+.siftal[data-clean] header #sidenavHandler{-webkit-box-flex: 0;-webkit-flex: 0 0 auto;-ms-flex: 0 0 auto;-moz-box-flex: 0;flex: 0 0 auto;max-width: initial;display: flex !important;}
+
+//----------------------------------- slideout mode
+// sidebar
+.siftal[data-sidebar] #main::before{top:0;bottom:0;right:0;left:0;opacity:1;z-index:2}
+.siftal.ltr[data-sidebar] #sidebar{left:0!important}
+.siftal.rtl[data-sidebar] #sidebar{right:0!important}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .siftal #main{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:-moz-box;display:flex;flex-direction:column;width:100%;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;overflow:hidden;-webkit-box-flex:1;-ms-flex:1;-webkit-flex:1;-moz-box-flex:1;flex:1}
+.siftal #main #content{-webkit-box-flex:1;-ms-flex:1;-webkit-flex:1;-moz-box-flex:1;flex:1;overflow-y:auto;padding:1em 2%;overflow-x:hidden;}
+
+
+
+
+
+body.siftal .full{width:100%;height:100%;}
+body.siftal .full .middle{width:100%;max-height:100%;}
 body.siftal .cbox table{
 	-webkit-user-select: text;
 	-moz-user-select: text;
 	user-select: text;
 }
-
-body.siftal #main{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:-moz-box;display:flex;flex-direction:column;width:100%;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;overflow:hidden}
-body.siftal #main,body.siftal #main #content{-webkit-box-flex:1;-ms-flex:1;-webkit-flex:1;-moz-box-flex:1;flex:1}
-body.siftal #main #content{overflow-y:auto;padding:1em 2%;overflow-x:hidden;}
-
-
-body.siftal .full{width:100%;height:100%;}
-body.siftal .full .middle{width:100%;max-height:100%;}
-
-
-
-
-
 .siftal form #mobile{direction:ltr;}
 .siftal form #email{direction:ltr;}

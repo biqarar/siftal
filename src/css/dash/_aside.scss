@@ -1,6 +1,5 @@
 
 /* sidebar */
-.siftal #sidebar{overflow:hidden;overflow-y:auto;width:250px;height:100%;position:relative;background-color:#302b2b;transition-duration:0.3s;transition-property:right, left;user-select:none;}
 .siftal #sidebar .scr{overflow:hidden;overflow-y:auto;height:80%;height:calc(100% - 70px);}
 .siftal #sidebar figure{padding:4em 0;text-align:center;color:#ddd}
 .siftal #sidebar figure .avatar{position:relative;width:100px;margin:1em auto;display:block;height:100px;}
@@ -13,23 +12,12 @@
 .siftal #sidebar figure:hover .avatar:after{background-color:rgba(0,0,0,0.3);opacity:1}
 .siftal #sidebar figure figcaption{max-width:100%;margin:0 auto;padding:1em 0}
 .siftal #sidebar .menu{overflow-y:auto;}
-/*responsive sidebar*/
-.siftal #main::before{content:"";position:fixed;background-color:rgba(0,0,0,0.7);z-index:-1;opacity:0;transition:.3s;}
-body[data-sidebar].siftal #main::before{top:0;bottom:0;right:0;left:0;opacity:1;z-index:2}
-body.siftal.ltr[data-sidebar] #sidebar{left:0}
-body.siftal.rtl[data-sidebar] #sidebar{right:0}
-
-// clean mode style
-.siftal[data-clean] #sidebar {display:block;position:fixed;top:0;bottom:0;z-index:3;left:-250px;}
-.siftal[data-clean].rtl #sidebar{right:-250px;left:initial;}
-.siftal[data-clean] #sidebar figure{margin:2em 0;}
-.siftal[data-clean] header #sidenavHandler{-webkit-box-flex: 0;-webkit-flex: 0 0 auto;-ms-flex: 0 0 auto;-moz-box-flex: 0;flex: 0 0 auto;max-width: initial;display: flex !important;}
 
 #sidebar .toggleClean{position:absolute;top:0;left:0;color:#fff;padding:5px;margin:5px;font-size:2em;z-index:-1;opacity:0;transition:0.3s;}
 #sidebar:hover .toggleClean{z-index:1;opacity:1;}
 
 /* change avatar placeholder on page loading */
-body.siftal.loading-page #sidebar .avatar:before{animation-duration:1s;-webkit-animation-duration:1s;animation-fill-mode:both;-webkit-animation-fill-mode:both;animation-name:flash;-webkit-animation-name:flash;animation-iteration-count:infinite;-webkit-animation-iteration-count:infinite;}
+.siftal.loading-page #sidebar .avatar:before{animation-duration:1s;-webkit-animation-duration:1s;animation-fill-mode:both;-webkit-animation-fill-mode:both;animation-name:flash;-webkit-animation-name:flash;animation-iteration-count:infinite;-webkit-animation-iteration-count:infinite;}
 @-webkit-keyframes flash{ from, 50%, to {opacity:1;} 25%, 75% {opacity:0.5;}}
 @keyframes flash { from, 50%, to {opacity:1;} 25%, 75% {opacity:0.5;}}
 
