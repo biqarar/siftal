@@ -22,9 +22,7 @@
 .siftal.ltr #sidebar{left:0}
 .siftal.rtl #sidebar{right:0}
 // sidebarShadow
-.siftal #sidebarShadow{position:fixed;top:0;bottom:0;z-index:9;width:250px;background-color:rgba(0,0,0,0.7);opacity:1;transition:.3s; -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; -ms-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; transition: all 0.2s ease-out; transition: all 50ms cubic-bezier(.694, .0482, .335, 1);}
-.siftal.ltr #sidebarShadow{left:0}
-.siftal.rtl #sidebarShadow{right:0}
+.siftal #sidebarShadow{position:fixed;top:0;right:0;left:0;height:0;width:100%;z-index:9;background-color:rgba(0,0,0,0.7);transition:.3s; -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; -ms-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; transition: all 0.2s ease-out;}
 
 //----------------------------------- clean mode style
 // main
@@ -35,14 +33,12 @@
 .siftal[data-clean].rtl #sidebar{right:-250px;left:initial;}
 .siftal[data-clean] #sidebar figure{margin:2em 0;}
 .siftal[data-clean] header #sidenavHandler{-webkit-box-flex: 0;-webkit-flex: 0 0 auto;-ms-flex: 0 0 auto;-moz-box-flex: 0;flex: 0 0 auto;max-width: initial;display: flex !important;}
-// sidebarShadow
-.siftal[data-clean] #sidebarShadow{width:0;}
 
 //----------------------------------- slideout mode
 // sidebar
 .siftal[data-sidebar].ltr #sidebar{left:0!important}
 .siftal[data-sidebar].rtl #sidebar{right:0!important}
-.siftal[data-sidebar] #sidebarShadow{width:100%;}
+.siftal[data-sidebar] #sidebarShadow{bottom:0;height:100%;}
 
 
 

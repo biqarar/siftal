@@ -17304,24 +17304,18 @@ body .we500 {
 .siftal #sidebarShadow {
   position: fixed;
   top: 0;
-  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
   z-index: 9;
-  width: 250px;
   background-color: rgba(0, 0, 0, 0.7);
-  opacity: 1;
   transition: .3s;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -ms-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-  transition: all 50ms cubic-bezier(0.694, 0.0482, 0.335, 1); }
-
-.siftal.ltr #sidebarShadow {
-  left: 0; }
-
-.siftal.rtl #sidebarShadow {
-  right: 0; }
+  transition: all 0.2s ease-out; }
 
 .siftal[data-clean].ltr #main {
   margin-left: 0; }
@@ -17352,9 +17346,6 @@ body .we500 {
   max-width: initial;
   display: flex !important; }
 
-.siftal[data-clean] #sidebarShadow {
-  width: 0; }
-
 .siftal[data-sidebar].ltr #sidebar {
   left: 0 !important; }
 
@@ -17362,7 +17353,8 @@ body .we500 {
   right: 0 !important; }
 
 .siftal[data-sidebar] #sidebarShadow {
-  width: 100%; }
+  bottom: 0;
+  height: 100%; }
 
 .siftal #main #content {
   -webkit-box-flex: 1;
@@ -18141,9 +18133,6 @@ body.siftal .cbox table {
   .siftal #sidebar {
     width: 300px; }
 
-  .siftal #sidebarShadow {
-    width: 300px; }
-
   .siftal[data-clean].ltr #sidebar {
     left: -300px; }
 
@@ -18484,9 +18473,6 @@ body.siftal .cbox table {
 
   .siftal.rtl #sidebar {
     right: -250px; }
-
-  .siftal #sidebarShadow {
-    width: 0; }
 
   .siftal .toggleClean {
     display: none; }
@@ -18878,9 +18864,6 @@ body.siftal .cbox table {
 
   .siftal.rtl #sidebar {
     right: -250px; }
-
-  .siftal #sidebarShadow {
-    width: 0; }
 
   .siftal #sidebar figure {
     margin: 0.5em 0;
