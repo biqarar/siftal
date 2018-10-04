@@ -8299,7 +8299,8 @@ li.sortable-placeholder {
 
 .rtl .highcharts-tooltip > span {
   direction: rtl;
-  text-align: right; }
+  text-align: right;
+  unicode-bidi: embed; }
 
 .highcharts-credits {
   display: none; }
@@ -17634,7 +17635,7 @@ body.siftal.loading-page #sidebar .avatar:before {
     opacity: 0.5; } }
 /* sidenav menu */
 .siftal #sidebar ul.sidenav {
-  font-size: 1.4em;
+  font-size: 1.2em;
   margin-bottom: 1em; }
 
 .siftal #sidebar ul > li {
@@ -17662,7 +17663,7 @@ body.siftal.loading-page #sidebar .avatar:before {
 .siftal #sidebar ul > li > a {
   position: relative;
   display: block;
-  padding: 1.2em 1.5em;
+  padding: 1em 1.5em;
   color: #d5d5d5;
   transition: background-color 0.3s;
   cursor: pointer;
