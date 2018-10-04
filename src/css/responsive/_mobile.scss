@@ -67,8 +67,10 @@
 
   .siftal.ltr #main{margin-left:0}
   .siftal.rtl #main{margin-right:0}
-  .siftal #sidebar {display:block;position:fixed;top:0;bottom:0;z-index:3;left:-250px;}
-  .siftal.rtl #sidebar{right:-250px;left:initial;}
+  // sidebar
+  .siftal.ltr #sidebar{left:-250px;}
+  .siftal.rtl #sidebar{right:-250px;}
+  .siftal #sidebarShadow{width:0;}
   .siftal #sidebar figure{margin:0.5em 0;padding:0}
   .siftal #sidebar figure .avatar{display:inline-block;vertical-align:middle;width:75px;height:75px;margin:1em;}
   .siftal #sidebar figure figcaption{display:inline-block;max-width:140px;line-height:1.5;vertical-align:middle;}
