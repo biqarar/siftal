@@ -17298,17 +17298,17 @@ body .we500 {
 .siftal #main:after {
   content: "\e041";
   font-family: "siftal", "tahoma" !important;
-  font-size: 50px;
-  line-height: 60px;
+  font-size: 40px;
+  line-height: 50px;
   color: #ccc;
-  text-align: center;
+  padding: 0 2rem;
   position: fixed;
-  top: -60px;
+  top: -50px;
   left: 250px;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 100%;
   z-index: 10;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.7);
   cursor: pointer;
   transition: .3s;
   -webkit-transition: all 0.2s ease-out;
