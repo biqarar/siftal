@@ -13235,6 +13235,11 @@ body.enter.bg15 {
 .enter form .flex button:focus {
   opacity: 1; }
 
+.enter form .flex button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: #6a788e; }
+
 .enter form .link {
   color: #eee;
   font-size: 0.8em;
