@@ -14721,6 +14721,21 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
     box-shadow: 0 0 5px 2px #aaa; }
   100% {
     box-shadow: 0 0 5px 2px #ddd; } }
+.loading-form button.btn:after {
+  content: "\e188";
+  font-family: "siftal","tahoma" !important;
+  display: inline-block;
+  float: right;
+  padding: 5px;
+  font-size: 1.2em;
+  line-height: 1;
+  vertical-align: middle;
+  animation: spiner 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+  cursor: wait; }
+
+.loading-form.rtl button.btn:after {
+  float: left; }
+
 .pA0 {
   padding: 0px 0px; }
 
@@ -16860,16 +16875,15 @@ body .we500 {
   font-size: 150%; }
 
 .disabled-f, :disabled {
-  opacity: 0.6;
+  pointer-events: none;
   cursor: not-allowed;
-  pointer-events: none; }
+  opacity: 0.6; }
 
-.disabled-f, :disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-  pointer-events: none; }
+.loading-form form {
+  cursor: progress; }
 
-.loading-form :disabled {
+.loading-form form :disabled {
+  pointer-events: auto;
   cursor: progress; }
 
 .disabled {
