@@ -42,6 +42,7 @@
 
     function send($this)
     {
+      $form.addClass('submitedForm');
       $form.trigger('ajaxify:send:before', _super);
 
       var elementOptions =
@@ -342,7 +343,8 @@
       $('input, button, textarea, [contenteditable], [data-ajaxify]').prop('disabled', false);
     }
 
-   $('body').removeClass('loading-form');
+    $('body').removeClass('loading-form');
+    $('.submitedForm').removeClass('submitedForm');
     callFunc('loading_form', false);
   }
 
