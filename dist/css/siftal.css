@@ -1435,6 +1435,21 @@ a.badge.danger {
   animation-timing-function: cubic-bezier(0.43, 0.84, 0.61, 0.14);
   transform-origin: 50% 50%; }
 
+@-moz-keyframes spiner {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spiner {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+@keyframes spiner {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
 /* breadcrumb */
 .breadcrumb {
   padding: 5px 1em;
@@ -13218,6 +13233,7 @@ body.enter.bg15 {
   transition: background-color 0.3 ease-in-out 0s; }
 
 .enter form .flex button {
+  line-height: 30px;
   width: 100%;
   padding: 10px;
   cursor: pointer;
@@ -13239,6 +13255,20 @@ body.enter.bg15 {
   opacity: 0.5;
   cursor: not-allowed;
   background-color: #6a788e; }
+
+.enter form .flex button:disabled:after {
+  content: "\e057";
+  font-family: "siftal","tahoma" !important;
+  display: inline-block;
+  float: right;
+  padding: 5px;
+  font-size: 1.2em;
+  line-height: 1;
+  vertical-align: middle;
+  animation: spiner 1s ease infinite; }
+
+.enter.rtl form .flex button:disabled:after {
+  float: left; }
 
 .enter form .link {
   color: #eee;
