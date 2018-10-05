@@ -13,7 +13,7 @@
       contentType: false,
       dataType: 'json',
       cache: false,
-      timeout: 10000,
+      timeout: 30000,
       abort: false,
       async: true,
       beforeSend: function (request)

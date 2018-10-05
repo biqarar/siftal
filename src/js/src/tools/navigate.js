@@ -259,7 +259,7 @@
     };
 
     // set timeout for fetch page
-    options.timeout = 10000;
+    options.timeout = 30000;
 
 
 
