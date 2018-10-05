@@ -17806,7 +17806,7 @@ body.siftal .cbox table {
 
 .siftal #sidebar ul > li.title {
   background-color: #333;
-  padding: 0.5em 1em; }
+  padding: 0 1em; }
 
 .siftal #sidebar ul > li.detail {
   background-color: #333;
