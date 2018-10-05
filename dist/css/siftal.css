@@ -1450,6 +1450,39 @@ a.badge.danger {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
+@-moz-keyframes shaker {
+  0% {
+    -moz-transform: rotate(0deg); }
+  25% {
+    -moz-transform: rotate(45deg); }
+  50% {
+    -moz-transform: rotate(0deg); }
+  75% {
+    -moz-transform: rotate(-45deg); }
+  100% {
+    -moz-transform: rotate(0deg); } }
+@-webkit-keyframes shaker {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  25% {
+    -webkit-transform: rotate(45deg); }
+  50% {
+    -webkit-transform: rotate(0deg); }
+  75% {
+    -webkit-transform: rotate(-45deg); }
+  100% {
+    -webkit-transform: rotate(0deg); } }
+@keyframes shaker {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(45deg); }
+  50% {
+    transform: rotate(0deg); }
+  75% {
+    transform: rotate(-45deg); }
+  100% {
+    transform: rotate(0deg); } }
 /* breadcrumb */
 .breadcrumb {
   padding: 5px 1em;
@@ -14721,21 +14754,6 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
     box-shadow: 0 0 5px 2px #aaa; }
   100% {
     box-shadow: 0 0 5px 2px #ddd; } }
-.loading-form button.btn:after {
-  content: "\e150";
-  font-family: "siftal","tahoma" !important;
-  display: inline-block;
-  float: right;
-  padding: 5px;
-  font-size: 1.2em;
-  line-height: 1;
-  vertical-align: middle;
-  animation: spiner 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
-  cursor: wait; }
-
-.loading-form.rtl button.btn:after {
-  float: left; }
-
 .loading-form form.submitedForm button.btn:after {
   content: "\e188";
   font-family: "siftal","tahoma" !important;
