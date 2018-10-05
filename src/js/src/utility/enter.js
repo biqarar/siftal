@@ -7,11 +7,27 @@ function handleEnterEvents()
 	$('input').on('input', function()
 	{
 		runDataRequire();
+		autoSubmitVerifyCode();
 	});
 	allowTogglePass();
 	runTimer();
 	// add check handler to all data-require elements
 	runDataRequire(true);
+}
+
+
+
+function autoSubmitVerifyCode()
+{
+	var codeEl = $('#code[name="code"]');
+
+	if(codeEl.length)
+	{
+		if(codeEl.val().length === 5)
+		{
+			codeEl.parents('form').submit();
+		}
+	}
 }
 
 
