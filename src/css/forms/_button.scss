@@ -87,7 +87,9 @@
 @keyframes pulsePulseBorder { 0%{box-shadow: 0 0 5px 2px #ddd;} 70%{box-shadow: 0 0 5px 2px #aaa;} 100%{box-shadow: 0 0 5px 2px #ddd;}}
 
 
-.loading-form button.btn:after{content:"\e188";font-family:"siftal","tahoma" !important;display:inline-block;float:right; padding:5px;font-size:1.2em;line-height:1;vertical-align:middle;animation:spiner 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;cursor:wait;}
+.loading-form button.btn:after{content:"\e150";font-family:"siftal","tahoma" !important;display:inline-block;float:right; padding:5px;font-size:1.2em;line-height:1;vertical-align:middle;animation:spiner 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;cursor:wait;}
 .loading-form.rtl button.btn:after{float:left;}
 
+.loading-form form.submitedForm button.btn:after{content:"\e188";font-family:"siftal","tahoma" !important;display:inline-block;float:right; padding:5px;font-size:1.2em;line-height:1;vertical-align:middle;animation:spiner 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;cursor:wait;}
+.loading-form.rtl form.submitedForm button.btn:after{float:left;}
 

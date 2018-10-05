@@ -33,6 +33,9 @@
 	pointer-events: auto;
 	cursor: progress;
 }
+.loading-form form.submitedForm :disabled{
+	cursor: wait;
+}
 .disabled{
 	opacity:0.6;
 }
