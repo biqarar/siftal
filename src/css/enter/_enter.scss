@@ -80,9 +80,7 @@ body.enter.bg15{background-image:url(../images/bg/15.jpg)}
 .enter form #eramz label,
 .enter form #eramzNew label,
 .enter form #displaynameBox label,
-.enter form #eramz input[type="text"],
-.enter form #eusername label,
-.enter form #eramzNew input[type="text"]{
+.enter form #eusername label{
 	font-size:1.5em;
 	line-height:50px;
 }
@@ -91,13 +89,13 @@ body.enter.bg15{background-image:url(../images/bg/15.jpg)}
 
 /* change style of autocomplete*/
 .enter input:-webkit-autofill,.enter input:-webkit-autofill:hover,.enter input:-webkit-autofill:focus,.enter input:-webkit-autofill{border: none;-webkit-text-fill-color: #fff;-webkit-box-shadow: 0 0 0px 1000px #000 inset;transition: background-color 0.3 ease-in-out 0s;}
-
+.enter.loading-form #enter{cursor:progress;}
 .enter form .flex button{line-height:30px;width:100%;padding:10px;cursor:pointer;border:none;border-radius:3px;outline:none;background-color:#0275d8;color:#fff;opacity:0.6;transition:0.3s}
 .enter form .flex button:hover{opacity:0.8}
 .enter form .flex button:focus{opacity:1}
-.enter form .flex button:disabled{opacity:0.5;cursor:not-allowed;background-color:#6a788e;}
-.enter form .flex button:disabled:after{content:"\e057";font-family:"siftal","tahoma" !important;display:inline-block;float:right; padding:5px;font-size:1.2em;line-height:1;vertical-align:middle;animation:spiner 1s ease infinite;}
-.enter.rtl form .flex button:disabled:after{float:left;}
+.enter form .flex button:disabled{opacity:0.5;cursor:not-allowed;background-color:#0d3050;}
+.enter.loading-form form .flex button:after{content:"\e188";font-family:"siftal","tahoma" !important;display:inline-block;float:right; padding:5px;font-size:1.2em;line-height:1;vertical-align:middle;animation:spiner 1s ease infinite;animation:spiner 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;}
+.enter.loading-form.rtl form .flex button:after{float:left;}
 .enter form .link{color:#eee;font-size:0.8em;padding:0.5em 1em;transition:0.3s;display:block;}
 .enter form .link:hover{background-color:rgba(0,0,0,0.1)}
 .enter form .link:focus{background-color:rgba(0,0,0,0.2)}

@@ -13216,9 +13216,7 @@ body.enter.bg15 {
 .enter form #eramz label,
 .enter form #eramzNew label,
 .enter form #displaynameBox label,
-.enter form #eramz input[type="text"],
-.enter form #eusername label,
-.enter form #eramzNew input[type="text"] {
+.enter form #eusername label {
   font-size: 1.5em;
   line-height: 50px; }
 
@@ -13231,6 +13229,9 @@ body.enter.bg15 {
   -webkit-text-fill-color: #fff;
   -webkit-box-shadow: 0 0 0px 1000px #000 inset;
   transition: background-color 0.3 ease-in-out 0s; }
+
+.enter.loading-form #enter {
+  cursor: progress; }
 
 .enter form .flex button {
   line-height: 30px;
@@ -13254,10 +13255,10 @@ body.enter.bg15 {
 .enter form .flex button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
-  background-color: #6a788e; }
+  background-color: #0d3050; }
 
-.enter form .flex button:disabled:after {
-  content: "\e057";
+.enter.loading-form form .flex button:after {
+  content: "\e188";
   font-family: "siftal","tahoma" !important;
   display: inline-block;
   float: right;
@@ -13265,9 +13266,10 @@ body.enter.bg15 {
   font-size: 1.2em;
   line-height: 1;
   vertical-align: middle;
-  animation: spiner 1s ease infinite; }
+  animation: spiner 1s ease infinite;
+  animation: spiner 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite; }
 
-.enter.rtl form .flex button:disabled:after {
+.enter.loading-form.rtl form .flex button:after {
   float: left; }
 
 .enter form .link {
@@ -16861,6 +16863,14 @@ body .we500 {
   opacity: 0.6;
   cursor: not-allowed;
   pointer-events: none; }
+
+.disabled-f, :disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none; }
+
+.loading-form :disabled {
+  cursor: progress; }
 
 .disabled {
   opacity: 0.6; }
