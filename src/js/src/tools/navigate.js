@@ -73,9 +73,16 @@
     }
     if(obj.content && $('body').attr('data-in') !== obj.content)
     {
-      // hard redirect to new content
-      location.replace(obj.url);
-      return;
+      if($('body').hasClass('siftal') && obj.siftal)
+      {
+        // body has class siftal, dont worry, continue
+      }
+      else
+      {
+        // hard redirect to new content
+        location.replace(obj.url);
+        return;
+      }
     }
 
     var $html = $(html);
