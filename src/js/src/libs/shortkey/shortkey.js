@@ -5,7 +5,7 @@
 
 // bind shortkeys
 bindHtmlShortkey();
-
+var lastKeyPressed;
 /**
  * [bindHtmlShortkey description]
  * @return {[type]} [description]
@@ -36,9 +36,37 @@ function shortkey_corridor(_e, _self, _key)
   var alt    = _e.altKey   ? 'alt'   : '';
   var mytxt  = String(_key) + ctrl + alt + shift;
 
+  if(String(_key) === '16')
+  {
+    // shift
+    return null;
+  }
+  else if(String(_key) === '17')
+  {
+    // ctrl
+    return null;
+  }
+  else if(String(_key) === '18')
+  {
+    // alt
+    return null;
+  }
+
+
   // logy(mytxt, 'info');
 
-  var elShortkey = $('[data-shortkey= '+ mytxt +']');
+  var elShortkey = $('[data-shortkey="'+ mytxt +'"]');
+
+  // try to search for combine mode
+  if(elShortkey.length == 0)
+  {
+    if(lastKeyPressed)
+    {
+      var mytxt2 = lastKeyPressed + "+" + mytxt;
+      elShortkey = $('[data-shortkey="'+ mytxt2 +'"]');
+    }
+  }
+
   if(elShortkey.length == 1)
   {
     if(elShortkey.attr('data-shortkey-prevent') !== undefined)
@@ -58,11 +86,6 @@ function shortkey_corridor(_e, _self, _key)
     }
 
   }
-  else if(shortkeyCallFunc(elShortkey, _e))
-  {
-    // if yes prevent default changes
-    _e.preventDefault();
-  }
   else if(mytxt === '112')
   {
     // prevent any other change
@@ -70,6 +93,9 @@ function shortkey_corridor(_e, _self, _key)
     // call support fn
     shortkeySupport();
   }
+
+  // set lastKeyPressed Value
+  lastKeyPressed = mytxt;
 }
 
 
