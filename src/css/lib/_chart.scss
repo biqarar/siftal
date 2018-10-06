@@ -38,6 +38,10 @@
     text-align:right;
     unicode-bidi: embed;
 }
+.rtl .highcharts-tooltip > span b{
+    display:inline-block;
+    direction:ltr;
+}
 .highcharts-credits{
   display: none
 }
