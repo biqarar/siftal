@@ -60,7 +60,8 @@ function shortkey_corridor(_e, _self, _key)
   // try to search for combine mode
   if(elShortkey.length == 0)
   {
-    if(lastKeyPressed)
+    var $focused = $(':focus');
+    if(lastKeyPressed && !$focused.is('input'))
     {
       var mytxt2 = lastKeyPressed + "+" + mytxt;
       elShortkey = $('[data-shortkey="'+ mytxt2 +'"]');
