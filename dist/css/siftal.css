@@ -2610,7 +2610,7 @@ progress.xl, meter.xl {
   padding: 10px 1.5em;
   opacity: 0.8;
   transition-duration: 0.3s;
-  transition-property: opacity, background-color;
+  transition-property: opacity, background-color, border;
   min-height: 100px;
   max-height: 100px;
   border: 1px solid transparent;
@@ -2641,6 +2641,9 @@ progress.xl, meter.xl {
 .dcard:hover {
   opacity: 1;
   background-color: white; }
+
+a.dcard:hover {
+  border-color: #bbb; }
 
 .dcard h1, .dcard h2, .dcard h3, .dcard h4, .dcard h5 {
   margin: 0; }
