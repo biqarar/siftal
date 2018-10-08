@@ -17609,7 +17609,8 @@ body.siftal .cbox table {
 .siftal header .hm a, .siftal header .hm div {
   transition-duration: 0.3s;
   transition-property: color, background-color;
-  color: #888; }
+  color: #888;
+  max-height: 50px; }
 
 .siftal header .hm a:hover, .siftal header .hm div:hover {
   color: #555;

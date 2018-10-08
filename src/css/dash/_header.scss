@@ -22,7 +22,7 @@
 /* header flex */
 .siftal header i{padding:0 1.5em;cursor:pointer;transition-duration:0.3s;transition-property:color, background-color;display:block;height:100%;width:50px;color:#888;line-height:45px;}
 .siftal header i:before{font-size:1.5em;vertical-align:-webkit-baseline-middle!important;}
-.siftal header .hm a, .siftal header .hm div{transition-duration:0.3s;transition-property:color, background-color;color:#888;}
+.siftal header .hm a, .siftal header .hm div{transition-duration:0.3s;transition-property:color, background-color;color:#888;max-height:50px;}
 .siftal header .hm a:hover, .siftal header .hm div:hover{color:#555;background-color:rgba(0,0,0,0.1);}
 .siftal header .hm a:focus, .siftal header .hm div:focus{color:#000;background-color:rgba(0,0,0,0.2);}
 /* vertical menu nav */
