@@ -2723,6 +2723,18 @@ a.dcard:hover {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg); }
 
+.ltr .f .c:first-child .dcard {
+  margin-left: 0; }
+
+.ltr .f .c:last-child .dcard {
+  margin-right: 0; }
+
+.rtl .f .c:first-child .dcard {
+  margin-right: 0; }
+
+.rtl .f .c:last-child .dcard {
+  margin-left: 0; }
+
 .vcard {
   position: relative;
   max-width: 100%;
