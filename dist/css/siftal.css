@@ -11005,7 +11005,7 @@ body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-anima
   outline: 0;
   -webkit-transform: rotateZ(0deg);
   transform: rotateZ(0deg);
-  min-width: 14em;
+  min-width: 100px;
   height: 36px;
   background: #FFFFFF;
   display: inline-block;
@@ -12080,6 +12080,9 @@ select.ui.dropdown {
 
 .ui.dropdown .text {
   line-height: 24px; }
+
+label + .ui.dropdown {
+  margin-bottom: 10px; }
 
 /*
  * # Semantic UI 2.3.1 - Flag
