@@ -4651,7 +4651,7 @@ iframe.gMap {
   .sTimeline .event .box {
     width: 85%;
     float: none !important;
-    margin-left: 40px; }
+    margin-left: 30px; }
 
   .sTimeline .event .box::before {
     top: 30px;
