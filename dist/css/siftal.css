@@ -4557,7 +4557,7 @@ iframe.gMap {
 .sTimeline .event:before {
   content: "";
   position: absolute;
-  top: 30px;
+  top: 31px;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -4580,7 +4580,8 @@ iframe.gMap {
   margin-right: 30px;
   background: #e8eded;
   border-radius: 2px;
-  padding: 1em; }
+  padding: 1em;
+  transition: 0.3s; }
 
 .sTimeline .timeline-content::before {
   content: '';
@@ -4597,6 +4598,9 @@ iframe.gMap {
   display: table;
   clear: both; }
 
+.sTimeline .timeline-content:hover {
+  background-color: #e4e5e7; }
+
 .sTimeline .timeline-content h2 {
   color: rgba(0, 0, 0, 0.9);
   margin-top: 0;
@@ -4611,8 +4615,7 @@ iframe.gMap {
 
 .sTimeline .timeline-content p {
   color: rgba(0, 0, 0, 0.7);
-  margin: 1em 0;
-  line-height: 1.6; }
+  margin: 1em 0; }
 
 @media only screen and (min-width: 1170px) {
   .sTimeline .event:nth-child(even) .timeline-content {
