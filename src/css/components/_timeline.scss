@@ -9,13 +9,13 @@
 .sTimeline .event[data-done]:before{background-color:green;}
 .sTimeline .event:after{content:"";display:table;clear:both}
 // content
-.sTimeline .timeline-content{position:relative;margin-left:60px;margin-right:30px;background:#e8eded;border-radius:2px;padding:1em;transition:0.3s;}
-.sTimeline .timeline-content::before{content:'';position:absolute;top:16px;right:100%;height:0;width:0;border:7px solid transparent;border-right:7px solid #e8eded}
-.sTimeline .timeline-content:after{content:"";display:table;clear:both}
-.sTimeline .timeline-content:hover{background-color:#e4e5e7}
-.sTimeline .timeline-content h2{color:rgba(0,0,0,0.9);margin-top:0;margin-bottom:5px}
-.sTimeline .timeline-info{background:#f5f6f8;padding:5px 10px;color:rgba(0,0,0,0.7);box-shadow:inset 0 2px 0 rgba(0,0,0,0.08);border-radius:2px}
-.sTimeline .timeline-content p{color:rgba(0,0,0,0.7);margin:1em 0;}
+.sTimeline .event .timeline-content{position:relative;margin-left:60px;margin-right:30px;background:#e8eded;border-radius:2px;padding:1em;transition:0.3s;}
+.sTimeline .event .timeline-content::before{content:'';position:absolute;top:16px;right:100%;height:0;width:0;border:7px solid transparent;border-right:7px solid #e8eded}
+.sTimeline .event .timeline-content:after{content:"";display:table;clear:both}
+.sTimeline .event .timeline-content:hover{background-color:#e4e5e7}
+.sTimeline .event .timeline-content h2{color:rgba(0,0,0,0.9);margin-top:0;margin-bottom:5px}
+.sTimeline .event .detail{background:#f5f6f8;padding:5px 10px;color:rgba(0,0,0,0.7);box-shadow:inset 0 2px 0 rgba(0,0,0,0.08);border-radius:2px}
+.sTimeline .event .timeline-content p{color:rgba(0,0,0,0.7);margin:1em 0;}
 
 
 
@@ -26,9 +26,9 @@
 .rtl .sTimeline .event:nth-child(even) .timeline-content{float:left}
 .rtl .sTimeline .event:nth-child(even) .timeline-content::before{top:30px;left:100%;right:auto;border-color:transparent;border-left-color:#e8eded}
 // content
-.sTimeline .timeline-content{color:#fff;padding:1em;width:45%;margin:0 2%}
-.sTimeline .timeline-content::before{top:30px;left:100%;border-color:transparent;border-left-color:#e8eded}
-.rtl .sTimeline .timeline-content::before{left:auto;right:100%;border-color:transparent;border-right-color:#e8eded}
+.sTimeline .event .timeline-content{color:#fff;padding:1em;width:45%;margin:0 2%}
+.sTimeline .event .timeline-content::before{top:30px;left:100%;border-color:transparent;border-left-color:#e8eded}
+.rtl .sTimeline .event .timeline-content::before{left:auto;right:100%;border-color:transparent;border-right-color:#e8eded}
 }
 
 @media only screen and (max-width: 768px) {
