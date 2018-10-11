@@ -93,6 +93,11 @@ function notif(_type, _msg, _title, _timeout, _opt)
     {
       notifOpt.displayMode = _opt.displayMode;
     }
+    // add iconcolor
+    if(_opt.transitionIn)
+    {
+      notifOpt.transitionIn = _opt.transitionIn;
+    }
     // add timeout
     if(_opt.timeout && $.isNumeric(_opt.timeout))
     {
