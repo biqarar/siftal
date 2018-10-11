@@ -115,12 +115,13 @@ function notif(_type, _msg, _title, _timeout, _opt)
 
   // change some default options
   notifOpt.layout = 2;
+  notifOpt.transitionIn = 'fadeInLeft';
   if($('body').hasClass('rtl'))
   {
     notifOpt.rtl = true;
+    notifOpt.transitionIn = 'fadeInRight';
   }
 
-  // notifOpt.transitionIn = 'fadeInLeft';
 
   // run if exist
   if(typeof iziToast[_type] === 'function')
