@@ -50,7 +50,7 @@ function notif(_type, _msg, _title, _timeout, _opt)
     notifOpt.title = _title;
   }
   // add delay if exit
-  if(Number.isInteger(_timeout) || _timeout==false || _timeout==='false')
+  if($.isNumeric(_timeout) || _timeout==false || _timeout==='false')
   {
     notifOpt.timeout = _timeout;
   }
@@ -94,7 +94,7 @@ function notif(_type, _msg, _title, _timeout, _opt)
       notifOpt.displayMode = _opt.displayMode;
     }
     // add timeout
-    if(_opt.timeout && Number.isInteger(_opt.timeout))
+    if(_opt.timeout && $.isNumeric(_opt.timeout))
     {
       notifOpt.timeout = _opt.timeout;
     }
