@@ -76,6 +76,10 @@ var wordifyTomans = function (num)
 var wordifyResponse = function (_status, _textBox, _inputBox)
 {
   var myVal = _inputBox.val().trim();
+  if(myVal && _inputBox.attr('data-rial') !== undefined)
+  {
+    myVal = Math.round(myVal / 10);
+  }
   _textBox.text(wordifyTomans(myVal));
 };
 
