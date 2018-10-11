@@ -2041,13 +2041,11 @@ progress.xl, meter.xl {
 
 .ltr .tbl1 th.collapsing, .ltr .tbl1 td.collapsing {
   width: 1px;
-  white-space: nowrap;
-  padding-right: 2em; }
+  white-space: nowrap; }
 
 .rtl .tbl1 th.collapsing, .rtl .tbl1 td.collapsing {
   width: 1px;
-  white-space: nowrap;
-  padding-left: 2em; }
+  white-space: nowrap; }
 
 .rtl .tbl1 th {
   text-align: right;
