@@ -22,23 +22,53 @@ function notif(_type, _msg, _title, _timeout, _opt)
     case 'okay':
     case 'ok':
       _type = 'success';
+      notifOpt.transitionIn = 'fadeInLeft';
       break;
 
     case 'warn':
     case 'warning':
       _type = 'warning';
+      notifOpt.transitionIn = 'bounceInLeft';
       break;
 
     case 'fatal':
     case 'danger':
     case 'error':
       _type = 'error';
+      notifOpt.transitionIn = 'bounceInUp';
       break;
 
     default:
       _type = 'info';
+      notifOpt.transitionIn = 'flipInX';
       break;
   }
+
+  notifOpt.transitionOut = 'fadeOutRight';
+  // rtl design
+  if($('body').hasClass('rtl'))
+  {
+    notifOpt.rtl = true;
+    notifOpt.transitionOut = 'fadeOutLeft';
+
+    if(_type == 'error')
+    {
+      notifOpt.transitionIn = 'bounceInUp';
+    }
+    else if(_type == 'warning')
+    {
+      notifOpt.transitionIn = 'bounceInRight';
+    }
+    else if(_type == 'success')
+    {
+      notifOpt.transitionIn = 'fadeInRight';
+    }
+    else
+    {
+      notifOpt.transitionIn = 'fadeInRight';
+    }
+  }
+
   // add message
   if(_msg)
   {
@@ -115,13 +145,6 @@ function notif(_type, _msg, _title, _timeout, _opt)
 
   // change some default options
   notifOpt.layout = 2;
-  notifOpt.transitionIn = 'fadeInLeft';
-  if($('body').hasClass('rtl'))
-  {
-    notifOpt.rtl = true;
-    notifOpt.transitionIn = 'fadeInRight';
-  }
-
 
   // run if exist
   if(typeof iziToast[_type] === 'function')
