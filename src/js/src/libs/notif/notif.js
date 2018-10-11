@@ -50,9 +50,13 @@ function notif(_type, _msg, _title, _timeout, _opt)
     notifOpt.title = _title;
   }
   // add delay if exit
-  if($.isNumeric(_timeout) || _timeout==false || _timeout==='false')
+  if($.isNumeric(_timeout))
   {
     notifOpt.timeout = _timeout;
+  }
+  else if(_timeout == false || _timeout === 'false')
+  {
+    notifOpt.timeout = false;
   }
 
   // get extra options of notify
@@ -102,6 +106,10 @@ function notif(_type, _msg, _title, _timeout, _opt)
     if(_opt.timeout && $.isNumeric(_opt.timeout))
     {
       notifOpt.timeout = _opt.timeout;
+    }
+    else if(_opt.timeout == false || _opt.timeout === 'false')
+    {
+      notifOpt.timeout = false;
     }
   }
 
