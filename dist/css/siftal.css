@@ -19298,6 +19298,9 @@ body.siftal .cbox table {
   body.siftal {
     background-color: transparent; }
 
+  .siftal #main:after {
+    display: none; }
+
   .siftal > #sidebar {
     display: none; }
 

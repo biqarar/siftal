@@ -22,6 +22,7 @@
 
   // for siftal panel
   body.siftal{background-color:transparent;}
+  .siftal #main:after{display:none}
   .siftal > #sidebar{display:none;}
   .siftal > #main > header{display:none;}
   .siftal > #main > footer{display:none;}
