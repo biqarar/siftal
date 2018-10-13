@@ -17646,6 +17646,7 @@ body .we500 {
 
 .siftal #header.cloner {
   position: fixed;
+  z-index: 8;
   top: -100%;
   width: 100%;
   width: calc( 100% - 250px);
