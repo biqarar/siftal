@@ -4652,16 +4652,16 @@ iframe.gMap {
     left: 10px; }
 
   .sTimeline .event .box {
-    width: 85%;
+    width: 88%;
     float: none !important;
     margin-left: 30px; }
 
   .sTimeline .event .box::before {
-    top: 30px;
-    left: auto;
-    right: 100%;
-    border-color: transparent;
-    border-right-color: #e8eded; } }
+    top: 30px !important;
+    left: auto !important;
+    right: 100% !important;
+    border-color: transparent !important;
+    border-right-color: #e8eded !important; } }
 [class^="sf-"] {
   margin: 0;
   min-width: 1.2em;
