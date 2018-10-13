@@ -2431,7 +2431,7 @@ progress.xl, meter.xl {
   border: 1px solid transparent;
   border-radius: 0.25rem;
   line-height: 1.25;
-  opacity: 0.7;
+  opacity: 0.8;
   background-color: #f7f7f7;
   color: #444;
   transition-duration: 0.3s;
@@ -2453,7 +2453,7 @@ progress.xl, meter.xl {
   margin-bottom: 0; }
 
 .tbox:hover {
-  opacity: 0.9; }
+  opacity: 1; }
 
 .tbox h2 {
   font-weight: 700;
@@ -2468,13 +2468,16 @@ progress.xl, meter.xl {
 
 .tbox.pictogram > span[class^="sf-"] {
   font-size: 5em;
-  transition: color 0.3s;
+  transition: color 0.1s;
   position: absolute;
   line-height: 50px;
   top: 50%;
   right: 10px;
   margin-top: -30px;
   color: #aaa; }
+
+.tbox.pictogram > span[class^="sf-"]:before {
+  vertical-align: -webkit-baseline-middle; }
 
 .rtl .tbox.pictogram > span[class^="sf-"] {
   right: initial;
