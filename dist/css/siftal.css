@@ -2061,12 +2061,15 @@ progress.xl, meter.xl {
 .tbl1 td {
   padding-top: 1em;
   padding-bottom: 1em;
+  padding-right: 1rem;
   color: #808080;
   transition: 0.3s;
   word-break: break-word; }
 
 .rtl .tbl1 td {
-  text-align: right; }
+  text-align: right;
+  padding-right: 0;
+  padding-left: 1rem; }
 
 .ltr .tbl1 tr th:first-of-type, .ltr .tbl1 tr td:first-of-type {
   padding-left: 3rem; }
