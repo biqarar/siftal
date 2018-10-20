@@ -18362,7 +18362,7 @@ body .we500 {
 .siftal[data-clean] #sidebar figure {
   margin: 2em 0; }
 
-.siftal[data-clean] .header #sidenavHandler {
+.siftal[data-clean] .header .sidenavHandler {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
@@ -18436,16 +18436,16 @@ body.siftal .cbox table {
 .siftal .header:hover {
   overflow: visible; }
 
-.siftal .header #sidenavHandler {
+.siftal .header .sidenavHandler {
   width: 50px;
   text-align: center;
   font-size: 1.2em;
   cursor: pointer !important; }
 
-.siftal .header #sidenavHandler:hover {
+.siftal .header .sidenavHandler:hover {
   background-color: rgba(0, 0, 0, 0.2); }
 
-.siftal .header #sidenavHandler i {
+.siftal .header .sidenavHandler i {
   width: 100%;
   padding: 0; }
 
