@@ -1,5 +1,5 @@
-SET SIFTAL=%~dp0%dist
-SET PROJECTS=%~dp0%..\
+SET SIFTAL=%~dp0%..\dist
+SET PROJECTS=%~dp0%..\..\
 
 xcopy "%SIFTAL%" "%PROJECTS%\azvir\public_html\static\siftal" /E /H /K /Y
 xcopy "%SIFTAL%" "%PROJECTS%\dashSample\public_html\static\siftal" /E /H /K /Y
