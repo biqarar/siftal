@@ -7,7 +7,7 @@ function responsiveSidebar()
 {
   $('body').on('click', function(_e)
   {
-    if($(_e.target).parents('#sidenavHandler').length)
+    if($(_e.target).parents('.sidenavHandler').length)
     {
       // click on hanlder, do nothing!
       $("body").attr('data-sidebar', 'dada');
