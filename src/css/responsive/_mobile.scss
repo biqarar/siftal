@@ -51,7 +51,7 @@
   kbd {display:none;}
 
   // custom style for another part of siftal
-  .siftal header h1 a{padding:0;}
+  .siftal .header h1 a{padding:0;}
   .siftal .wrapper{padding:2em 1em}
   .siftal .card .card-data img{max-height:25px}
   .siftal .card .card-data span{font-size:1.6em}
@@ -62,12 +62,12 @@
   body .w150{min-width:125px;width:125px}
   body .w200{min-width:150px;width:150px}
 
-  .siftal #header h1{max-width: 60%;max-width:calc( 100% - 110px);font-size:1.2em}
-  .siftal #header h1 + .hm {display:none!important;}
+  .siftal .header h1{max-width: 60%;max-width:calc( 100% - 110px);font-size:1.2em}
+  .siftal .header h1 + .hm {display:none!important;}
 
   .siftal.ltr #main{margin-left:0}
   .siftal.rtl #main{margin-right:0}
-  .siftal #header.cloner{width:100%;}
+  .siftal .header.cloner{width:100%;}
   // sidebar
   .siftal.ltr #sidebar{left:-250px;}
   .siftal.rtl #sidebar{right:-250px;}
