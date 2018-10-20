@@ -24,7 +24,7 @@
   body.siftal{background-color:transparent;}
   .siftal #main:after{display:none}
   .siftal > #sidebar{display:none;}
-  .siftal > #main > header{display:none;}
+  .siftal > #main > .dashHead{display:none;}
   .siftal > #main > footer{display:none;}
   .siftal .scr::-webkit-scrollbar{display:none;}
   .siftal .tbox .badge{display:none;}
