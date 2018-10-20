@@ -29,7 +29,7 @@
 .siftal #main:hover:before{background-color:rgba(0,0,0,0.5);}
 .siftal #main:hover:after{color:#eee;}
 // sidebar
-.siftal #sidebar{overflow:hidden;overflow-y:auto;width:250px;height:100%;position:relative;background-color:#302b2b;user-select:none;position:fixed;top:0;bottom:0;z-index:10; -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; -ms-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; transition: all 0.2s ease-out; transition: all 200ms cubic-bezier(.694, .0482, .335, 1);transform: translateX(0)}
+.siftal #sidebar{overflow:hidden;overflow-y:auto;width:250px;height:100%;position:relative;background-color:#302b2b;user-select:none;position:fixed;top:0;bottom:0;z-index:10; -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; -ms-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; transition: all 0.2s ease-out; transition: all 200ms cubic-bezier(.694, .0482, .335, 1);transition-property:right,left;transform: translateX(0)}
 .siftal.ltr #sidebar{left:0}
 .siftal.rtl #sidebar{right:0}
 
