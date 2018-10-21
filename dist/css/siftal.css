@@ -18451,6 +18451,10 @@ body.siftal .cbox table {
 .siftal[data-in="su"] .tbox:hover {
   border-color: #444; }
 
+.siftal[data-in="su"] .tbox .badge.light {
+  background-color: #555;
+  color: #bbb; }
+
 .siftal[data-in="su"] .cbox {
   background-color: #222;
   color: #aaa; }
@@ -18491,6 +18495,19 @@ body.siftal .cbox table {
 
 .siftal[data-in="su"] .select:focus, .siftal[data-in="su"] .select.focus {
   border-color: #777; }
+
+.siftal[data-in="su"] .btn {
+  background-color: #333;
+  color: #ccc; }
+
+.siftal[data-in="su"] .dark.outline {
+  color: #ccc; }
+
+.siftal[data-in="su"] .pagination {
+  background-color: #000; }
+
+.siftal[data-in="su"] .pagination a {
+  color: #ccc; }
 
 /* header */
 .siftal .dashHead {
