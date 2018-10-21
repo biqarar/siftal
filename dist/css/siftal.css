@@ -18509,6 +18509,10 @@ body.siftal .cbox table {
 .siftal[data-in="su"] .pagination a {
   color: #ccc; }
 
+.siftal[data-in="su"] .pagination a:link:hover {
+  color: #eee;
+  background-color: #333; }
+
 /* header */
 .siftal .dashHead {
   height: 50px;
