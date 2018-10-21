@@ -107,9 +107,12 @@ body.siftal .cbox table{
 .siftal[data-in="su"] .chart path.highcharts-axis-line{stroke:#000}
 .siftal[data-in="su"] .chart path.highcharts-grid-line{stroke:#000}
 .siftal[data-in="su"] .msg{background-color:#444;color:#ddd;}
+.siftal[data-in="su"] .input{color:#777}
 .siftal[data-in="su"] .input input{background-color:#000;color:#eee}
 .siftal[data-in="su"] .input .addon:not(.btn){color:#bbb;}
 .siftal[data-in="su"] .select{background-color:#000;color:#eee}
+.siftal[data-in="su"] .txt{background-color:#000;color:#bbb}
+.siftal[data-in="su"] .txt:hover{border-color:#777}
 .siftal[data-in="su"] .switch1 label:first-of-type{background-color:#444;}
 .siftal[data-in="su"] .input input:focus, .siftal[data-in="su"] .input.focus input{border-color:#777}
 .siftal[data-in="su"] .select:focus, .siftal[data-in="su"] .select.focus{border-color:#777}
