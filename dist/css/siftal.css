@@ -18472,6 +18472,9 @@ body.siftal .cbox table {
 .siftal[data-in="su"] .chart path.highcharts-axis-line {
   stroke: #000; }
 
+.siftal[data-in="su"] .chart path.highcharts-grid-line {
+  stroke: #000; }
+
 .siftal[data-in="su"] .msg {
   background-color: #444;
   color: #ddd; }
