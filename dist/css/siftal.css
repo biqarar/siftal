@@ -2141,21 +2141,29 @@ progress.xl, meter.xl {
 
 .tbl1.v3 thead {
   font-size: 1em;
+  text-transform: uppercase; }
+
+.tbl1.v3 thead tr {
   color: #00ad5f;
-  text-transform: uppercase;
   background-color: #393939; }
 
-.tbl1.v3 tr {
+.tbl1.v3 tbody tr {
   background-color: #222; }
 
-.tbl1.v3 tr:hover {
+.tbl1.v3 tbody tr:hover {
   background-color: #333; }
 
-.tbl1.v3 tr th {
+.tbl1.v3 tbody tr th {
   color: #aaa; }
 
-.tbl1.v3 tr a {
+.tbl1.v3 tbody tr a {
   color: #bbb; }
+
+.tbl1.v3 tbody tr a:hover {
+  color: #ccc; }
+
+.tbl1.v3 tbody tr a:focus {
+  color: #ddd; }
 
 /*================================================================== [ v4 ]*/
 .tbl1.v4 thead {
