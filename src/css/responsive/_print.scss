@@ -28,12 +28,16 @@
   .siftal > #main > footer{display:none;}
   .siftal .scr::-webkit-scrollbar{display:none;}
   .siftal .tbox .badge{display:none;}
+  .siftal .tbox.pictogram > span[class^="sf-"]{font-size:3em;}
+  .highcharts-button{display: none;}
+
   // some default for dash
   .superAdmin{display:none;}
   #xaccess{display:none;}
   .iziToast-wrapper{display:none;}
   video{display:none;}
   audio{display:none;}
+  #nprogress{display: none;}
 
   .p0{display:none;}
   .pBlock{display:block;}
