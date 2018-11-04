@@ -66,6 +66,7 @@ var myModuleFiles =
 	'src/utility/urlParam.js',
 	'src/utility/shrink.js',
 	'src/utility/print.js',
+	'src/utility/dataRunner.js',
 	'src/utility/formTools.js',
 
 	'src/utility/clock.js',

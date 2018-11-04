@@ -32,6 +32,8 @@ function pushStateSiftal(_direct)
   navigateChecker();
   // check autoPrint detection
   autoPrint();
+  // run runner
+  dataRunner();
 
 
   if($('body').hasClass('enter'))
@@ -58,8 +60,6 @@ $(document).ready(function()
   // run cloner
   cloner();
   pingiRunner();
-  // check autoPrint detection
-  autoPrint();
 });
 
 
