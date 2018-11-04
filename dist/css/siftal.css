@@ -2063,8 +2063,13 @@ progress.xl, meter.xl {
   padding-bottom: 1em;
   padding-right: 1rem;
   color: #808080;
-  transition: 0.3s;
+  transition: 0.3s; }
+
+.tbl1 td.breakWord {
   word-break: break-word; }
+
+.tbl1 td.breakAll {
+  word-break: break-all; }
 
 .rtl .tbl1 td {
   text-align: right;
