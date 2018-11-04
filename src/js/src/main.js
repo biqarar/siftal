@@ -142,6 +142,16 @@ $(document).ready(function()
         // need chage cursor position at future
         //
         //
+
+        // call input event
+        var inputEvent = document.createEvent('Event');
+        inputEvent.initEvent('input', true, true);
+        this.dispatchEvent(inputEvent);
+
+        var changeEvent = new Event('change');
+        this.dispatchEvent(changeEvent);
+
+        return true;
       }
       else if(e.which >= 48 && e.which <= 57)
       {
