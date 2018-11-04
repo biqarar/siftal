@@ -30,6 +30,9 @@ function pushStateSiftal(_direct)
   dropdownRunner();
   // check navigate is done or not
   navigateChecker();
+  // check autoPrint detection
+  autoPrint();
+
 
   if($('body').hasClass('enter'))
   {
@@ -55,6 +58,8 @@ $(document).ready(function()
   // run cloner
   cloner();
   pingiRunner();
+  // check autoPrint detection
+  autoPrint();
 });
 
 

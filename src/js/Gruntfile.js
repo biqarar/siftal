@@ -65,6 +65,7 @@ var myModuleFiles =
 	'src/utility/fitNumber.js',
 	'src/utility/urlParam.js',
 	'src/utility/shrink.js',
+	'src/utility/print.js',
 	'src/utility/formTools.js',
 
 	'src/utility/clock.js',
