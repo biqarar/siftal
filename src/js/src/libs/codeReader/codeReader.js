@@ -5,7 +5,7 @@
   root.barcodeOptions =
   {
     min: 2,
-    speed: 30
+    speed: 25
   };
 
   var time = 0
