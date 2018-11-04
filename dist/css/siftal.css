@@ -2056,6 +2056,9 @@ progress.xl, meter.xl {
   transition: 0.3s; }
 
 .tbl1 tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.05); }
+
+.tbl1 tbody tr[data-selected] {
   background-color: rgba(0, 0, 0, 0.1); }
 
 .tbl1 td {
@@ -2194,6 +2197,14 @@ progress.xl, meter.xl {
   width: 1px;
   white-space: nowrap;
   padding-left: 1em; }
+
+.tbl1 tbody tr[data-selected] {
+  background-color: #daecf9 !important;
+  color: #2c662d !important; }
+
+.tbl1 tbody tr[data-selected="warn"] {
+  background-color: #f9f7da !important;
+  color: #573a08 !important; }
 
 /*================================================================== [ v5 ]*/
 .tbl1.v5 {
@@ -12368,7 +12379,7 @@ select.ui.dropdown {
 /* Selected Item */
 .ui.dropdown.selected,
 .ui.dropdown .menu .selected.item {
-  background: rgba(0, 0, 0, 0.03);
+  background: rgba(0, 0, 0, 0.15);
   color: rgba(0, 0, 0, 0.95); }
 
 /*--------------------

@@ -43,6 +43,9 @@
 	transition:0.3s;
 }
 .tbl1 tbody tr:hover{
+	background-color:rgba(0,0,0,0.05);
+}
+.tbl1 tbody tr[data-selected]{
 	background-color:rgba(0,0,0,0.1);
 }
 .tbl1 td {
@@ -189,6 +192,9 @@
 	white-space: nowrap;
 	padding-left: 1em;
 }
+.tbl1 tbody tr[data-selected]{background-color:#daecf9!important;color:#2c662d!important}
+.tbl1 tbody tr[data-selected="warn"]{background-color:#f9f7da!important;color:#573a08!important}
+
 
 /*================================================================== [ v5 ]*/
 .tbl1.v5 {
