@@ -76,6 +76,10 @@
 .tbl1 td a{
 	word-break:break-all;
 }
+// fix align center
+.tbl1.txtC th, .tbl1.txtC td {
+	text-align: center;
+}
 
 /*================================================================== [ v1 ]*/
 .tbl1.v1 {

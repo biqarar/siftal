@@ -2088,6 +2088,9 @@ progress.xl, meter.xl {
 .tbl1 td a {
   word-break: break-all; }
 
+.tbl1.txtC th, .tbl1.txtC td {
+  text-align: center; }
+
 /*================================================================== [ v1 ]*/
 .tbl1.v1 {
   border-radius: 1rem;
