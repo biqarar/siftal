@@ -4,7 +4,7 @@
 .chartBox{max-height:600px!important; min-height: auto!important;height: 100%!important;width:100%;display:block;}
 
 
-.chart{direction:ltr;width:100%;display:block;min-height:90px;max-height:600px;user-select:none;}
+.chart{direction:ltr;width:100%;max-height:600px;user-select:none;}
 .chart .amcharts-chart-div>a{display:none!important;}
 
 .rtl .chart{text-align:right}
