@@ -45,6 +45,9 @@
     display:inline-block;
     direction:ltr;
 }
+.rtl .highcharts-contextmenu{
+    text-align: right;
+}
 
 .chart .chartServiceLogo{
     y:calc(100% - 32px);
