@@ -23,7 +23,7 @@ function dropdownRunner()
       {
         allowAdditions: true,
         forceSelection: false,
-        hideAdditions: false,
+        hideAdditions: false
       });
       return true;
     }
@@ -102,5 +102,4 @@ function clearDropdown(_el)
   _el.dropdown('hide');
   _el.dropdown('clear');
 }
-
 
