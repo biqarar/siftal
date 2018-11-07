@@ -21,7 +21,9 @@ function dropdownRunner()
     {
       $myDropDown.dropdown(
       {
-        allowAdditions: true
+        allowAdditions: true,
+        forceSelection: false,
+        hideAdditions: false,
       });
       return true;
     }
