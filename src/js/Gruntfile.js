@@ -49,6 +49,7 @@ var myModuleFiles =
 	'src/libs/wordify/wordify.js',
 	'src/libs/cloner/cloner.js',
 	'src/libs/alerty/alerty.min.js',
+	'src/libs/alerty/alerty-runner.js',
 
 	// semantic
 	'src/libs/semantic-ui/api/api.min.js',
