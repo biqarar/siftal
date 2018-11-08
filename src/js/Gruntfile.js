@@ -48,7 +48,7 @@ var myModuleFiles =
 	'src/libs/pingi/pingi.js',
 	'src/libs/wordify/wordify.js',
 	'src/libs/cloner/cloner.js',
-	'src/libs/sweetalert/sweetalert2.min.js',
+	'src/libs/alerty/alerty.min.js',
 
 	// semantic
 	'src/libs/semantic-ui/api/api.min.js',
