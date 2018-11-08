@@ -75,7 +75,8 @@ $(document).ready(function()
 
   $(document).on('click', '[data-confirm]', function(e)
   {
-    notifConfirm($(this));
+    e.preventDefault();
+    deleteConfirmer($(this));
   });
 
 

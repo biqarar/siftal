@@ -18,30 +18,66 @@ else
 }
 
 
-function deleteConfirmer()
+function deleteConfirmer(_this)
 {
-  // const sayWithBootstrapButtons = say.mixin({
-  //   confirmButtonClass: 'btn btn-success',
-  //   cancelButtonClass: 'btn btn-danger',
-  //   buttonsStyling: false,
-  // })
+  _data  = null;
+  _title = null
+  _text  = null;
+  if(_this !== undefined && _this)
+  {
+    _data  = _this.attr('data-data');
+    _title = _this.attr('data-title');
+    _text  = _this.attr('data-msg');
+  }
+  var myLang = $('html').attr('lang') === 'fa';
+
+  if(_data === undefined)
+  {
+    logy('data not sended!');
+    // return false;
+  }
+
+  if(!_title)
+  {
+    if(myLang === 'fa')
+    {
+      _title = 'آیا تایید می‌کنید؟';
+    }
+    else
+    {
+      _title = 'Do you confirm?';
+    }
+  }
+  if(!_text)
+  {
+    _text = '';
+  }
+
 
   say({
-    title: 'Are you sure?',
-    text: "You won't be able to revert this!",
+    title: _title,
+    text: _text,
     type: 'warning',
+    focusConfirm: false,
     showCancelButton: true,
-    confirmButtonText: 'Yes, delete it!',
     reverseButtons: true
   }).then((result) =>
   {
     if (result.value)
     {
+      // send ajax request if elemet is exist
+      if(_this)
+      {
+        console.log(_this);
+        _this.ajaxify({link: true, type: 'post'});
+      }
       say(
-        'Deleted!',
-        'Your file has been deleted.',
-        'success'
-      )
+      {
+        type: 'success',
+        title: 'Deleted request sended',
+        showConfirmButton: false,
+        timer: 1000
+      });
     }
     else if (result.dismiss === alerty.DismissReason.cancel)
     {
@@ -53,3 +89,4 @@ function deleteConfirmer()
     }
   });
 }
+

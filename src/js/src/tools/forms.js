@@ -50,6 +50,10 @@
         type: _super.link ? $this.attr('data-method') || 'get' : $this.prop('method') || $this.attr('data-method'),
         url: (_super.link ? $this.prop('href') : $this.prop('action')  || $this.attr('data-action')) || location.href
       };
+      if(_super.type === 'post')
+      {
+        elementOptions.type = 'post';
+      }
       var ajax = _.extend(_super.ajax, elementOptions);
 
       var ajaxOptions;
