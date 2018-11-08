@@ -19,7 +19,7 @@ $(document).ready(function()
       {
         case 13:
           // if we have enter on form elements, disallow to submit
-          if($(":focus").parents('form').attr('disallowEnter') !== undefined)
+          if($(":focus").parents('form').attr('data-disallowEnter') !== undefined)
           {
             // logy('You are not allow to submit form via keyboard enter');
             e.preventDefault();
