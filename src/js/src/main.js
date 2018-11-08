@@ -76,7 +76,9 @@ $(document).ready(function()
   $(document).on('click', '[data-confirm]', function(e)
   {
     e.preventDefault();
+    e.stopPropagation();
     deleteConfirmer($(this));
+    return false;
   });
 
 
