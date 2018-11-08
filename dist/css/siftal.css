@@ -13104,6 +13104,20 @@ select.ui.dropdown {
 label + .ui.dropdown {
   margin-bottom: 10px; }
 
+.ui.dropdown.posList {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.ui.dropdown.posList [class^="spay-32-"] {
+  display: block; }
+
+.ui.dropdown.posList .default.text {
+  top: 5px; }
+
+.ui.dropdown.posList .menu > .item {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important; }
+
 /*
  * # Semantic UI 2.3.1 - Flag
  * http://github.com/semantic-org/semantic-ui/
