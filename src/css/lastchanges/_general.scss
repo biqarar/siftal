@@ -6,6 +6,7 @@
 .circle{@include border-radius(50%)}
 .rounded{@include border-radius(10rem)}
 
+[data-confirm]{cursor:pointer}
 
 // sizes
 .xs{

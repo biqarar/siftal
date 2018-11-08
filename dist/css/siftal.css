@@ -19212,6 +19212,9 @@ body .we500 {
   -ms-border-radius: 10rem;
   border-radius: 10rem; }
 
+[data-confirm] {
+  cursor: pointer; }
+
 .xs {
   font-size: 60%; }
 
