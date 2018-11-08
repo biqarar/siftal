@@ -29,14 +29,13 @@ function deleteConfirmer(_this)
     _title = _this.attr('data-title');
     _text  = _this.attr('data-msg');
   }
-  var myLang = $('html').attr('lang') === 'fa';
+  var myLang = $('html').attr('lang');
 
   if(_data === undefined)
   {
     logy('data not sended!');
     // return false;
   }
-
   if(!_title)
   {
     if(myLang === 'fa')
@@ -71,13 +70,13 @@ function deleteConfirmer(_this)
         console.log(_this);
         _this.ajaxify({link: true, type: 'post'});
       }
-      say(
-      {
-        type: 'success',
-        title: 'Deleted request sended',
-        showConfirmButton: false,
-        timer: 1000
-      });
+      // say(
+      // {
+      //   type: 'success',
+      //   title: 'Deleted request sended',
+      //   showConfirmButton: false,
+      //   timer: 500
+      // });
     }
     else if (result.dismiss === alerty.DismissReason.cancel)
     {
