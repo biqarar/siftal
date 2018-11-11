@@ -217,7 +217,7 @@
           }, closeAfter);
         }
         // unlock form
-        unlockForm(_super.lockForm);
+        unlockForm(_super.lockForm, data);
 
         if(data && data.redirect)
         {
@@ -340,9 +340,15 @@
   };
 
 
-  function unlockForm(_locked)
+  function unlockForm(_locked, _data)
   {
-    if(_locked)
+    var unlockAll = true;
+    if(_data && _data.msg && _data.msg[0] && _data.msg[0]['meta'] && _data.msg[0]['meta']['unlock'] === false)
+    {
+      unlockAll = false;
+    }
+
+    if(unlockAll && _locked)
     {
       $('input, button, textarea, [contenteditable], [data-ajaxify]').prop('disabled', false);
     }
