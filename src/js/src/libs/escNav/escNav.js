@@ -15,12 +15,18 @@ function escPressed()
 		return true;
 	}
 
-	var pressCounter = parseInt($('body').prop('escCounter'));
-	if(isNaN(pressCounter))
+	// save press counter in sessionStorage
+	var pressCounter = null;
+	if(typeof(Storage) !== "undefined")
 	{
-		pressCounter = 0;
+		pressCounter = parseInt(sessionStorage.getItem("escCounter"));
+		if(isNaN(pressCounter))
+		{
+			pressCounter = 0;
+		}
+		pressCounter += 1;
+		sessionStorage.setItem("escCounter", pressCounter);
 	}
-	$('body').prop('escCounter', pressCounter+1);
 
 	// detect url and try to go one level up
 	var myNewAddr = window.location.protocol + '//';
@@ -77,7 +83,7 @@ function escPressed()
 
 	if(myNewAddr)
 	{
-		if(pressCounter < 1)
+		if(pressCounter === 1)
 		{
 			// show info message
 			if($('html').attr('lang') === 'fa')
@@ -94,9 +100,9 @@ function escPressed()
 		// try to navigate to new url
 		Navigate( { url: myNewAddr });
 	}
-	else
+	else if(typeof(Storage) !== "undefined")
 	{
-		$('body').prop('escCounter', 0);
+		sessionStorage.setItem("escCounter", 0);
 	}
 }
 
