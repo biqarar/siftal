@@ -28,7 +28,8 @@ $(document).ready(function()
 
 
         case 27:
-          $('input').trigger("blur");
+          // handle press escape
+          escPressed();
           break;
 
 

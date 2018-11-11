@@ -50,6 +50,7 @@ var myModuleFiles =
 	'src/libs/cloner/cloner.js',
 	'src/libs/alerty/alerty.min.js',
 	'src/libs/alerty/alerty-runner.js',
+	'src/libs/escNav/escNav.js',
 
 	// semantic
 	'src/libs/semantic-ui/api/api.min.js',
