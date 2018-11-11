@@ -15,6 +15,13 @@ function escPressed()
 		return true;
 	}
 
+	var pressCounter = parseInt($('body').prop('escCounter'));
+	if(isNaN(pressCounter))
+	{
+		pressCounter = 0;
+	}
+	$('body').prop('escCounter', pressCounter+1);
+
 	// detect url and try to go one level up
 	var myNewAddr = window.location.protocol + '//';
 	var myHost    = window.location.host;
@@ -70,9 +77,26 @@ function escPressed()
 
 	if(myNewAddr)
 	{
+		if(pressCounter < 1)
+		{
+			// show info message
+			if($('html').attr('lang') === 'fa')
+			{
+				notif('info', 'با فشردن مجدد دکمه اسکیپ به یک آدرس بالاتر منتقل می‌شوید');
+			}
+			else
+			{
+				notif('info', 'Press Esc key another time to go one level up');
+			}
+			return true;
+		}
+
 		// try to navigate to new url
 		Navigate( { url: myNewAddr });
 	}
-	console.log(myNewAddr);
+	else
+	{
+		$('body').prop('escCounter', 0);
+	}
 }
 
