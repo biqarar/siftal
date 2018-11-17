@@ -29,9 +29,10 @@ function escPressed()
 	}
 
 	// detect url and try to go one level up
-	var myNewAddr = window.location.protocol + '//';
-	var myHost    = window.location.host;
-	var myPath    = window.location.pathname;
+	var myNewAddr    = window.location.protocol + '//';
+	var myHost       = window.location.host;
+	var myPath       = window.location.pathname;
+	var hardRedirect = null;
 	if(myPath.substring(0, 1) === '/')
 	{
 		myPath = myPath.substring(1);
@@ -64,7 +65,8 @@ function escPressed()
 		}
 		else
 		{
-			myNewAddr += myHost + '/';
+			myNewAddr    += myHost + '/';
+			hardRedirect = true;
 		}
 
 	}
@@ -73,7 +75,8 @@ function escPressed()
 		if(myHost.split('.').length > 2)
 		{
 			// we dont have path, try to remove subdomain if exist
-			myNewAddr += myHost.replace(/^[^.]+\./g, "");
+			myNewAddr    += myHost.replace(/^[^.]+\./g, "");
+			hardRedirect = true;
 		}
 		else
 		{
@@ -98,7 +101,14 @@ function escPressed()
 		}
 
 		// try to navigate to new url
-		Navigate( { url: myNewAddr });
+		if(hardRedirect)
+		{
+			location.replace(myNewAddr);
+		}
+		else
+		{
+			Navigate( { url: myNewAddr });
+		}
 	}
 	else if(typeof(Storage) !== "undefined")
 	{
