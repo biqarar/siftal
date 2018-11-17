@@ -131,6 +131,12 @@ function showUserProfile()
     });
 
   });
+
+  $(document).on('click', '.siftal .alerty2-footer a', function(_e)
+  {
+    say.close();
+  });
+
 }
 
 
