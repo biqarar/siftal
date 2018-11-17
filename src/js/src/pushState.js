@@ -59,6 +59,8 @@ $(document).ready(function()
   catchBeforeUnload();
   // run cloner
   cloner();
+  // bind userprofile to show detail
+  showUserProfile();
   pingiRunner();
 });
 

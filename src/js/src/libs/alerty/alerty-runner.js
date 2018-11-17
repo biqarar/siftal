@@ -89,3 +89,55 @@ function deleteConfirmer(_this)
   });
 }
 
+
+function showUserProfile()
+{
+  $(document).on('click', '.siftal .profileShow', function(_e)
+  {
+    var $this   = $(this);
+
+    var userImg = $this.find('img');
+    // on click
+    say(
+    {
+
+      html: $this.attr('data-desc'),
+      footer: $this.attr('data-footer'),
+      showCloseButton: true,
+      focusConfirm: false,
+      showCancelButton: true,
+      confirmButtonText: $this.attr('data-confirmTxt'),
+      cancelButtonText: $this.attr('data-cancelTxt'),
+
+      imageUrl: userImg.attr('src'),
+      imageAlt: userImg.attr('alt'),
+      imageWidth: 100,
+      imageHeight: 100,
+
+    }).then((myResult) =>
+    {
+      console.log(myResult);
+
+      if (myResult.value)
+      {
+        if($this.attr('data-confirmLink'))
+        {
+          // press profile btn
+          Navigate({ url: $this.attr('data-confirmLink') });
+        }
+      }
+      else if (myResult.dismiss === alerty.DismissReason.cancel)
+      {
+        // press notify btn
+        if($this.attr('data-cancelLink'))
+        {
+          // press profile btn
+          Navigate({ url: $this.attr('data-cancelLink') });
+        }
+      }
+    });
+
+  });
+}
+
+
