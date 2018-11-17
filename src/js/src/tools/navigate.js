@@ -88,12 +88,18 @@
     var $html = $(html);
 
 
-    if(obj.id === '')
+    if(obj.page === '')
     {
-      obj.id = 'home';
+      obj.page = 'home';
     }
-    if(obj.id) $('body').attr('id', obj.id);
-    if(obj.id) $('body').attr('data-page', obj.id);
+    if(obj.page)
+    {
+      $('body').attr('data-page', obj.page);
+    }
+    // set content on each request
+    $('body').attr('data-in', obj.content);
+    // set subdomain on body
+    $('body').attr('data-subdomain', obj.subdomain);
 
     $window.trigger('navigate:render:filter:before', obj.filter);
 
