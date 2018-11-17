@@ -116,13 +116,11 @@ function showUserProfile()
 
     }).then((myResult) =>
     {
-      console.log(myResult);
-
       if (myResult.value)
       {
+        // press profile btn
         if($this.attr('data-confirmLink'))
         {
-          // press profile btn
           Navigate({ url: $this.attr('data-confirmLink') });
         }
       }
@@ -131,7 +129,6 @@ function showUserProfile()
         // press notify btn
         if($this.attr('data-cancelLink'))
         {
-          // press profile btn
           Navigate({ url: $this.attr('data-cancelLink') });
         }
       }
