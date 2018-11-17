@@ -146,6 +146,7 @@ function logoutConfirmer($this)
     type: 'question',
     focusConfirm: false,
     showCancelButton: true,
+    confirmButtonColor: '#d33',
     reverseButtons: true
   }).then((result) =>
   {
@@ -157,8 +158,9 @@ function logoutConfirmer($this)
         html: myLogoutTxt,
         showConfirmButton: false,
         timer: 1000,
-        onClose: () => {
-          Navigate({ url: myLogouturl });
+        onClose: () =>
+        {
+          location.replace(myLogouturl);
         }
       });
 
