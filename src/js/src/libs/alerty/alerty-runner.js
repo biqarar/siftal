@@ -126,11 +126,7 @@ function showUserProfile()
       }
       else if (myResult.dismiss === alerty.DismissReason.cancel)
       {
-        // press notify btn
-        if($this.attr('data-cancelLink'))
-        {
-          Navigate({ url: $this.attr('data-cancelLink') });
-        }
+        logoutConfirmer($this);
       }
     });
 
@@ -138,3 +134,38 @@ function showUserProfile()
 }
 
 
+
+function logoutConfirmer($this)
+{
+  myTitle     = $this.attr('data-logoutConfirmTxt');
+  myLogoutTxt = $this.attr('data-logoutTxt');
+  myLogouturl = $this.attr('data-logoutUrl');
+
+  say({
+    title: myTitle,
+    type: 'question',
+    focusConfirm: false,
+    showCancelButton: true,
+    reverseButtons: true
+  }).then((result) =>
+  {
+    if (result.value)
+    {
+      say(
+      {
+        type: 'success',
+        html: myLogoutTxt,
+        showConfirmButton: false,
+        timer: 1000,
+        onClose: () => {
+          Navigate({ url: myLogouturl });
+        }
+      });
+
+    }
+    else if (result.dismiss === alerty.DismissReason.cancel)
+    {
+      // do nothing
+    }
+  });
+}
