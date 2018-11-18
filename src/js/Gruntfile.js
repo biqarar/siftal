@@ -72,6 +72,7 @@ var myModuleFiles =
 	'src/utility/print.js',
 	'src/utility/dataRunner.js',
 	'src/utility/formTools.js',
+	'src/utility/smileChecker.js',
 
 	'src/utility/clock.js',
 	'src/utility/input-files.js',

@@ -35,10 +35,15 @@ function pushStateSiftal(_direct)
   // run runner
   dataRunner();
 
-
   if($('body').hasClass('enter'))
   {
+    // run on enter
     handleEnterEvents();
+  }
+  if($('body').hasClass('siftal'))
+  {
+    // run on siftal admin panel
+
   }
   callFunc('pushState', _direct);
   callFunc('pushStateFinal', _direct);
@@ -59,9 +64,16 @@ $(document).ready(function()
   catchBeforeUnload();
   // run cloner
   cloner();
-  // bind userprofile to show detail
-  showUserProfile();
   pingiRunner();
+
+  if($('body').hasClass('siftal'))
+  {
+    // bind userprofile to show detail
+    showUserProfile();
+    // check for new smile
+    checkSmile(true);
+  }
+
 });
 
 
