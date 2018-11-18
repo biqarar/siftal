@@ -10,7 +10,7 @@
 .siftal #sidebar figure .avatar:focus img{transform: scale(1.4);}
 .siftal #sidebar figure:hover .avatar:before{border-color:transparent #fff}
 .siftal #sidebar figure:hover .avatar:after{background-color:rgba(0,0,0,0.3);opacity:1}
-.siftal #sidebar figure figcaption{max-width:100%;margin:0 auto;padding:1em 0}
+.siftal #sidebar figure figcaption{max-width:100%;margin:0 auto;padding:1em 0;overflow:hidden;white-space: nowrap;text-overflow:ellipsis;}
 .siftal #sidebar .menu{overflow-y:auto;}
 
 #sidebar .toggleClean{position:absolute;top:0;left:0;color:#fff;padding:5px;margin:5px;font-size:2em;z-index:-1;opacity:0;transition:0.3s;}

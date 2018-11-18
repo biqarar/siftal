@@ -645,7 +645,11 @@ address {
   font-size: 2em;
   margin: 0;
   line-height: 30px;
-  transition: 0.3s; }
+  transition: 0.3s;
+  max-width: 170px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
 
 #ermileBadge h2:hover {
   color: #fff; }
@@ -655,7 +659,11 @@ address {
   font-size: 1em;
   margin: 0;
   line-height: 20px;
-  transition: 0.3s; }
+  transition: 0.3s;
+  max-width: 170px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
 
 #ermileBadge h3:hover {
   color: #fff; }
@@ -20199,7 +20207,10 @@ body.siftal .cbox table {
 .siftal #sidebar figure figcaption {
   max-width: 100%;
   margin: 0 auto;
-  padding: 1em 0; }
+  padding: 1em 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
 
 .siftal #sidebar .menu {
   overflow-y: auto; }
