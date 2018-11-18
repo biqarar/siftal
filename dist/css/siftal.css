@@ -20010,7 +20010,11 @@ body.siftal .cbox table {
 
 .siftal .dashHead h1 span {
   padding: 0 0.5em;
-  font-weight: bold; }
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 300px; }
 
 /* header flex */
 .siftal .dashHead i {
@@ -21419,6 +21423,9 @@ body.siftal .cbox table {
 
   .siftal .dashHead h1 a {
     padding: 0; }
+
+  .siftal .dashHead h1 a span {
+    max-width: 120px; }
 
   .siftal .wrapper {
     padding: 2em 1em; }
