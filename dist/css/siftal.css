@@ -20122,7 +20122,8 @@ body.siftal .cbox table {
   animation: pulseNotificationHeart 0.7s infinite ease-in-out; }
 
 .siftal .dashHead .notification[data-new] .sf-bell {
-  font-size: 1.3em; }
+  font-size: 1.3em;
+  transition: 0.1s; }
 
 @keyframes pulseNotificationHeart {
   0% {
