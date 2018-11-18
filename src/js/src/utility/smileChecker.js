@@ -17,7 +17,7 @@ function checkSmile(_register)
 
   $.ajax(
   {
-    url:"/account/smile",
+    url:"/hook/smile",
     method:"POST",
     dataType:"json",
     success:function(smileResult)
@@ -59,7 +59,7 @@ function checkSmileLogout(_data)
       type: 'warning',
       html: logoutTxt,
       showConfirmButton: false,
-      // timer: 1000,
+      timer: 1000,
       onClose: () =>
       {
         location.replace(logoutUrl);
