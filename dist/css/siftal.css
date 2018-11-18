@@ -20014,7 +20014,7 @@ body.siftal .cbox table {
 
 /* header flex */
 .siftal .dashHead i {
-  padding: 0 1.5em;
+  padding: 0;
   cursor: pointer;
   transition-duration: 0.3s;
   transition-property: color, background-color;
@@ -20099,6 +20099,27 @@ body.siftal .cbox table {
   border-radius: 50%;
   margin: 5px; }
 
+.siftal .dashHead .notification[data-new]:after {
+  content: "\2a";
+  font-family: "siftal","tahoma" !important;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #f02020;
+  font-size: 1.1em;
+  animation: pulseNotificationHeart 0.7s infinite ease-in-out; }
+
+.siftal .dashHead .notification[data-new] .sf-bell {
+  font-size: 1.3em; }
+
+@keyframes pulseNotificationHeart {
+  0% {
+    opacity: .7; }
+  80% {
+    opacity: .9;
+    transform: scale(1.4); }
+  100% {
+    opacity: .7; } }
 /* sidebar */
 .siftal #sidebar .scr {
   overflow: hidden;
