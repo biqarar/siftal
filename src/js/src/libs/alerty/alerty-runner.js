@@ -100,7 +100,6 @@ function showUserProfile()
     // on click
     say(
     {
-
       html: $this.attr('data-desc'),
       footer: $this.attr('data-footer'),
       showCloseButton: true,
@@ -177,3 +176,104 @@ function logoutConfirmer($this)
     }
   });
 }
+
+
+
+function notifAlerty(_type, _msg, _title, _timeout, _opt)
+{
+  var alertyOpt = {};
+
+  // detect type of notify to show
+  switch(_type)
+  {
+    case 'true':
+    case 'success':
+    case 'okay':
+    case 'ok':
+      _type = 'success';
+      break;
+
+    case 'warn':
+    case 'warning':
+      _type = 'warning';
+      break;
+
+    case 'fatal':
+    case 'danger':
+    case 'error':
+      _type = 'error';
+      break;
+
+    default:
+      _type = 'info';
+      break;
+  }
+
+  // add message
+  if(_type)
+  {
+    alertyOpt.type = _msg;
+  }
+  if(_msg)
+  {
+    alertyOpt.text = _msg;
+  }
+  // add title
+  if(_title)
+  {
+    alertyOpt.title = _title;
+  }
+  // add delay if exit
+  if($.isNumeric(_timeout))
+  {
+    alertyOpt.timer = _timeout;
+  }
+  else if(_timeout == false || _timeout === 'false')
+  {
+    alertyOpt.timer = false;
+  }
+
+
+  // get extra options of notify
+  if(_opt)
+  {
+    // add position
+    if(_opt.position)
+    {
+      alertyOpt.position = _opt.position;
+    }
+    if(_opt.html)
+    {
+      alertyOpt.html = _opt.html;
+    }
+
+    // add image
+    if(_opt.image)
+    {
+      alertyOpt.imageUrl = _opt.image;
+    }
+    if(_opt.imageHeight)
+    {
+      alertyOpt.imageHeight = _opt.imageHeight;
+    }
+    if(_opt.imageAlt)
+    {
+      alertyOpt.imageAlt = _opt.imageAlt;
+    }
+
+    // add timeout
+    if(_opt.timeout && $.isNumeric(_opt.timeout))
+    {
+      alertyOpt.timer = _opt.timeout;
+    }
+    else if(_opt.timeout == false || _opt.timeout === 'false')
+    {
+      alertyOpt.timer = false;
+    }
+  }
+
+  say(alertyOpt);
+}
+
+
+

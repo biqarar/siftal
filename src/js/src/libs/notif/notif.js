@@ -184,6 +184,7 @@ function getNotifData(_el)
 {
     var notifOpt      = {}
     // get main variables
+    notifOpt.alerty   = _el.attr('data-alerty');
     notifOpt.type     = _el.attr('data-notif-type');
     notifOpt.message  = _el.attr('data-notif');
     notifOpt.title    = _el.attr('data-notif-title');
@@ -194,7 +195,14 @@ function getNotifData(_el)
     notifOpt.icon     = _el.attr('data-notif-icon');
     notifOpt.image     = _el.attr('data-notif-image');
 
-    notif(notifOpt.type, notifOpt.message, notifOpt.title, notifOpt.timeout, notifOpt);
+    if(notifOpt.alerty === undefined)
+    {
+      notif(notifOpt.type, notifOpt.message, notifOpt.title, notifOpt.timeout, notifOpt);
+    }
+    else
+    {
+      notifAlerty(notifOpt.type, notifOpt.message, notifOpt.title, notifOpt.timeout, notifOpt);
+    }
 }
 
 
@@ -235,7 +243,14 @@ function notifGenerator(_data, $_form)
       // generate new notif
       if(recordData.text || recordTitle)
       {
-        notif(recordData.type, recordData.text, recordTitle, delay, recordDataMeta);
+        if(recordData.alerty)
+        {
+          notifAlerty(recordData.type, recordData.text, recordTitle, delay, recordDataMeta);
+        }
+        else
+        {
+          notif(recordData.type, recordData.text, recordTitle, delay, recordDataMeta);
+        }
       }
 
       // set flag of error
