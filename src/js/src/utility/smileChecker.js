@@ -22,10 +22,15 @@ function checkSmile(_register)
     dataType:"json",
     success:function(smileResult)
     {
+      var notifResult = notifGenerator(smileResult);
+
       if(checkSmileLogout(smileResult))
       {
-        // if is not logged out check notifications
+        // if is not logged out
+        // check notifications
         checkNewNotification(smileResult);
+        // check redirect
+        checkSmileRedirect(smileResult);
       }
     }
   });
@@ -35,18 +40,18 @@ function checkSmile(_register)
 
 function checkSmileLogout(_data)
 {
-  if(_data.okay !== true)
+  if(_data.result && _data.result.okay !== true)
   {
     var logoutTxt = 'Logout';
     var logoutUrl = '/logout';
 
-    if(_data.logoutTxt)
+    if(_data.result.logoutTxt)
     {
-      logoutTxt = _data.logoutTxt;
+      logoutTxt = _data.result.logoutTxt;
     }
-    if(_data.logoutUrl)
+    if(_data.result.logoutUrl)
     {
-      logoutUrl = _data.logoutUrl;
+      logoutUrl = _data.result.logoutUrl;
     }
 
     say(
@@ -67,10 +72,28 @@ function checkSmileLogout(_data)
 }
 
 
+function checkSmileRedirect(_data)
+{
+  if(_data && _data.redirect)
+  {
+    var a = $('<a href="' + _data.redirect + '"></a>');
+    if(a.isAbsoluteURL() || _data.direct)
+    {
+      location.replace(_data.redirect);
+    }
+    else
+    {
+      Navigate({ url: _data.redirect });
+    }
+    return;
+  }
+}
+
+
 function checkNewNotification(_data)
 {
   var notifEl = $('.siftal .dashHead .notification');
-  if(_data.newNotif)
+  if(_data.result && _data.result.newNotif)
   {
     if(notifEl.attr('data-new') === undefined)
     {
