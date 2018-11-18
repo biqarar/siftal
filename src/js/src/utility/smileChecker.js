@@ -22,10 +22,48 @@ function checkSmile(_register)
     dataType:"json",
     success:function(smileResult)
     {
-      checkNewNotification(smileResult);
+      if(checkSmileLogout(smileResult))
+      {
+        // if is not logged out check notifications
+        checkNewNotification(smileResult);
+      }
     }
   });
 
+}
+
+
+function checkSmileLogout(_data)
+{
+  if(_data.ok !== true)
+  {
+    var logoutTxt = 'Logout';
+    var logoutUrl = '/logout';
+
+    if(_data.logoutTxt !== true)
+    {
+      logoutTxt = _data.logoutTxt;
+    }
+    if(_data.logoutUrl !== true)
+    {
+      logoutUrl = _data.logoutUrl;
+    }
+
+    say(
+    {
+      type: 'warning',
+      html: logoutTxt,
+      showConfirmButton: false,
+      timer: 1000,
+      onClose: () =>
+      {
+        location.replace(logoutUrl);
+      }
+    });
+    return false;
+  }
+
+  return true;
 }
 
 
@@ -46,6 +84,4 @@ function checkNewNotification(_data)
     notifEl.attr('data-new', null);
   }
 }
-
-
 
