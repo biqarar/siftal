@@ -14,12 +14,21 @@ function checkSmile(_register)
   {
     checkSmileLoop();
   }
-
+  var aleadyIsNew = false;
+  if($('.siftal .dashHead .notification').attr('data-new') !== undefined)
+  {
+    aleadyIsNew = true;
+  }
   $.ajax(
   {
     url:"/hook/smile",
     method:"POST",
+    timeout: 1000,
     dataType:"json",
+    data:
+    {
+      'notifOn': aleadyIsNew
+    },
     success:function(smileResult)
     {
       var notifResult = notifGenerator(smileResult);
@@ -40,18 +49,18 @@ function checkSmile(_register)
 
 function checkSmileLogout(_data)
 {
-  if(_data.result && _data.result.okay !== true)
+  if(_data.result && _data.result.logout)
   {
     var logoutTxt = 'Logout';
     var logoutUrl = '/logout';
 
-    if(_data.result.logoutTxt)
+    if(_data.result.logout.logoutTxt)
     {
-      logoutTxt = _data.result.logoutTxt;
+      logoutTxt = _data.result.logout.logoutTxt;
     }
-    if(_data.result.logoutUrl)
+    if(_data.result.logout.logoutUrl)
     {
-      logoutUrl = _data.result.logoutUrl;
+      logoutUrl = _data.result.logout.logoutUrl;
     }
 
     say(
@@ -93,7 +102,7 @@ function checkSmileRedirect(_data)
 function checkNewNotification(_data)
 {
   var notifEl = $('.siftal .dashHead .notification');
-  if(_data.result && _data.result.newNotif)
+  if(_data.result && _data.result.notifNew)
   {
     if(notifEl.attr('data-new') === undefined)
     {
