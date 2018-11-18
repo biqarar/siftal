@@ -220,20 +220,20 @@ function notifAlerty(_type, _msg, _title, _timeout, _opt)
     // add image
     if(_opt.image)
     {
-      delete alertyOpt.image;
       alertyOpt.imageUrl = _opt.image;
+      delete alertyOpt.image;
     }
 
     // add timeout
     if(_opt.timeout && $.isNumeric(_opt.timeout))
     {
-      delete alertyOpt.timeout;
       alertyOpt.timer = _opt.timeout;
+      delete alertyOpt.timeout;
     }
     else if(_opt.timeout == false || _opt.timeout === 'false')
     {
-      delete alertyOpt.timeout;
       alertyOpt.timer = false;
+      delete alertyOpt.timeout;
     }
   }
 
