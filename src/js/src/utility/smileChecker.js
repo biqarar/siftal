@@ -35,16 +35,16 @@ function checkSmile(_register)
 
 function checkSmileLogout(_data)
 {
-  if(_data.ok !== true)
+  if(_data.okay !== true)
   {
     var logoutTxt = 'Logout';
     var logoutUrl = '/logout';
 
-    if(_data.logoutTxt !== true)
+    if(_data.logoutTxt)
     {
       logoutTxt = _data.logoutTxt;
     }
-    if(_data.logoutUrl !== true)
+    if(_data.logoutUrl)
     {
       logoutUrl = _data.logoutUrl;
     }
@@ -54,7 +54,7 @@ function checkSmileLogout(_data)
       type: 'warning',
       html: logoutTxt,
       showConfirmButton: false,
-      timer: 1000,
+      // timer: 1000,
       onClose: () =>
       {
         location.replace(logoutUrl);
