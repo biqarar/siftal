@@ -209,10 +209,34 @@ function notifAlerty(_type, _msg, _title, _timeout, _opt)
       break;
   }
 
+  // get extra options of notify
+  if(_opt)
+  {
+    // set all setting from old one
+    alertyOpt = _opt;
+
+    // add image
+    if(_opt.image)
+    {
+      alertyOpt.imageUrl = _opt.image;
+    }
+
+    // add timeout
+    if(_opt.timeout && $.isNumeric(_opt.timeout))
+    {
+      alertyOpt.timer = _opt.timeout;
+    }
+    else if(_opt.timeout == false || _opt.timeout === 'false')
+    {
+      alertyOpt.timer = false;
+    }
+  }
+
+
   // add message
   if(_type)
   {
-    alertyOpt.type = _msg;
+    alertyOpt.type = _type;
   }
   if(_msg)
   {
@@ -233,44 +257,6 @@ function notifAlerty(_type, _msg, _title, _timeout, _opt)
     alertyOpt.timer = false;
   }
 
-
-  // get extra options of notify
-  if(_opt)
-  {
-    // add position
-    if(_opt.position)
-    {
-      alertyOpt.position = _opt.position;
-    }
-    if(_opt.html)
-    {
-      alertyOpt.html = _opt.html;
-    }
-
-    // add image
-    if(_opt.image)
-    {
-      alertyOpt.imageUrl = _opt.image;
-    }
-    if(_opt.imageHeight)
-    {
-      alertyOpt.imageHeight = _opt.imageHeight;
-    }
-    if(_opt.imageAlt)
-    {
-      alertyOpt.imageAlt = _opt.imageAlt;
-    }
-
-    // add timeout
-    if(_opt.timeout && $.isNumeric(_opt.timeout))
-    {
-      alertyOpt.timer = _opt.timeout;
-    }
-    else if(_opt.timeout == false || _opt.timeout === 'false')
-    {
-      alertyOpt.timer = false;
-    }
-  }
 
   say(alertyOpt);
 }

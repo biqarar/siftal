@@ -243,7 +243,7 @@ function notifGenerator(_data, $_form)
       // generate new notif
       if(recordData.text || recordTitle)
       {
-        if(recordData.alerty)
+        if(recordDataMeta.alerty)
         {
           notifAlerty(recordData.type, recordData.text, recordTitle, delay, recordDataMeta);
         }
