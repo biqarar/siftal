@@ -2035,6 +2035,9 @@ progress.xl, meter.xl {
   display: table;
   padding: 0; }
 
+.tbl1.layoutFixed {
+  table-layout: fixed; }
+
 .tbl1 thead {
   display: table-header-group;
   font-size: 1.2em; }
@@ -18937,6 +18940,12 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
 .ova {
   overflow: auto; }
 
+.txtCut {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
 .code1 {
   padding: 0.2em 0.5em;
   color: #c04040;
@@ -19959,6 +19968,60 @@ body.siftal .cbox table {
 .siftal[data-in="su"] .pagination a:link:hover {
   color: #eee;
   background-color: #333; }
+
+.siftal .tbl1.openable th.type, .siftal .tbl1.openable td.type {
+  width: 60px; }
+
+.siftal .tbl1.openable th.subject, .siftal .tbl1.openable td.subject {
+  width: 70%; }
+
+.siftal .tbl1.openable th.date, .siftal .tbl1.openable td.date {
+  width: 150px; }
+
+.siftal .tbl1.openable td.type i {
+  background-color: #eee;
+  padding: 5px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 32px;
+  font-size: 1.2em;
+  display: block; }
+
+.siftal .tbl1.openable tbody tr {
+  cursor: pointer; }
+
+.siftal .tbl1.openable tbody tr .detail {
+  overflow: hidden;
+  position: relative;
+  transition: height .25s ease; }
+
+.siftal .tbl1.openable tbody tr.open .detail {
+  height: auto; }
+
+.siftal .tbl1.openable tbody tr:not(.open) .detail {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 30px; }
+
+.siftal .tbl1.openable tbody tr:not(.open) .detail p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.siftal .tbl1.openable tbody tr:not(.open) .detail a {
+  pointer-events: none;
+  color: inherit; }
+
+.siftal .tbl1.openable tbody tr:not(.open) .detail img {
+  display: none; }
+
+.siftal .tbl1.openable tbody tr:not(.open) .detail br {
+  display: none; }
+
+.siftal .tbl1.openable tbody tr:not(.open) .detail p {
+  margin-bottom: 0; }
 
 /* header */
 .siftal .dashHead {

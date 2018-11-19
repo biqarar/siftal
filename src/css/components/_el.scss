@@ -138,7 +138,7 @@
 // overflow
 .ovh{overflow:hidden}
 .ova{overflow:auto}
-
+.txtCut{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 
 // ways
 .code1{padding:0.2em 0.5em; color:#c04040;background-color:#f8f8f8;border-radius:0.25rem;font-size:90%;}
