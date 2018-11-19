@@ -62,6 +62,8 @@ $(document).ready(function()
   inputRequirement();
   // do something before unload page
   catchBeforeUnload();
+  // openable table
+  tbl1Openable();
   // run cloner
   cloner();
   pingiRunner();
