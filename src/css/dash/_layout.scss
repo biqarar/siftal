@@ -125,15 +125,15 @@ body.siftal .cbox table{
 
 
 // openable table for notification
-.tbl1.openable th.type, .tbl1.openable td.type{width:60px;}
+.tbl1.openable th.type, .tbl1.openable td.type{width:60px;text-align:center;}
 .tbl1.openable th.subject, .tbl1.openable td.subject{width:70%;}
 .tbl1.openable th.date, .tbl1.openable td.date{width:150px;}
-.tbl1.openable td.type i{background-color:#eee;padding:5px;border-radius:50%;width: 40px;height: 40px;line-height: 32px;font-size: 1.2em;display: block;}
+.tbl1.openable td.type i{background-color:#eee;padding:5px;border-radius:50%;width: 40px;height: 40px;line-height: 32px;font-size: 1.2em;display: block;margin:0 auto;}
 
 .tbl1.openable tbody tr{cursor: pointer;}
+.tbl1.openable tbody tr[data-open-disable]{cursor: auto;}
 .tbl1.openable tbody tr [data-openable-open] {display: none}
 .tbl1.openable tbody tr td.subject .title{font-weight:700;margin-bottom:0.5em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 .tbl1.openable tbody tr[data-open] td.subject .title{white-space:normal}
-
-
+.tbl1.openable tbody tr td .sendVia{margin-top:0.5em;}
 

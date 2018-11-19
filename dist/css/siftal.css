@@ -19970,7 +19970,8 @@ body.siftal .cbox table {
   background-color: #333; }
 
 .tbl1.openable th.type, .tbl1.openable td.type {
-  width: 60px; }
+  width: 60px;
+  text-align: center; }
 
 .tbl1.openable th.subject, .tbl1.openable td.subject {
   width: 70%; }
@@ -19986,10 +19987,14 @@ body.siftal .cbox table {
   height: 40px;
   line-height: 32px;
   font-size: 1.2em;
-  display: block; }
+  display: block;
+  margin: 0 auto; }
 
 .tbl1.openable tbody tr {
   cursor: pointer; }
+
+.tbl1.openable tbody tr[data-open-disable] {
+  cursor: auto; }
 
 .tbl1.openable tbody tr [data-openable-open] {
   display: none; }
@@ -20003,6 +20008,9 @@ body.siftal .cbox table {
 
 .tbl1.openable tbody tr[data-open] td.subject .title {
   white-space: normal; }
+
+.tbl1.openable tbody tr td .sendVia {
+  margin-top: 0.5em; }
 
 /* header */
 .siftal .dashHead {
