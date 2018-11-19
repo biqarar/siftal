@@ -2069,6 +2069,9 @@ progress.xl, meter.xl {
 .tbl1 tbody tr:hover {
   background-color: rgba(0, 0, 0, 0.05); }
 
+.tbl1 tbody tr:active {
+  background-color: rgba(0, 0, 0, 0.15) !important; }
+
 .tbl1 tbody tr[data-selected] {
   background-color: rgba(0, 0, 0, 0.1); }
 
@@ -2208,6 +2211,9 @@ progress.xl, meter.xl {
   width: 1px;
   white-space: nowrap;
   padding-left: 1em; }
+
+.tbl1.v4 tbody tr:hover {
+  background-color: #ebebeb; }
 
 .tbl1 tbody tr[data-selected] {
   background-color: #daecf9 !important;
