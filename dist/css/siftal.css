@@ -14279,6 +14279,20 @@ body.alerty2-toast-column .alerty2-toast .alerty2-input {
 body.alerty2-toast-column .alerty2-toast .alerty2-validation-message {
   font-size: 1em; }
 
+body.siftal.alerty2-toast-shown .alerty2-container.alerty2-top-end, body.siftal.alerty2-toast-shown .alerty2-container.alerty2-top-right {
+  top: 50px; }
+
+body.siftal.alerty2-toast-shown .alerty2-container.alerty2-top-start, body.siftal.alerty2-toast-shown .alerty2-container.alerty2-top-left {
+  top: 50px; }
+
+body.rtl.alerty2-toast-shown .alerty2-container.alerty2-top-end, body.rtl.alerty2-toast-shown .alerty2-container.alerty2-top-right {
+  right: auto;
+  left: 0; }
+
+body.rtl.alerty2-toast-shown .alerty2-container.alerty2-top-start, body.rtl.alerty2-toast-shown .alerty2-container.alerty2-top-left {
+  right: 0;
+  left: auto; }
+
 .alerty2-popup.alerty2-toast {
   flex-direction: row;
   align-items: center;
