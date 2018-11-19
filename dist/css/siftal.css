@@ -19969,16 +19969,16 @@ body.siftal .cbox table {
   color: #eee;
   background-color: #333; }
 
-.siftal .tbl1.openable th.type, .siftal .tbl1.openable td.type {
+.tbl1.openable th.type, .tbl1.openable td.type {
   width: 60px; }
 
-.siftal .tbl1.openable th.subject, .siftal .tbl1.openable td.subject {
+.tbl1.openable th.subject, .tbl1.openable td.subject {
   width: 70%; }
 
-.siftal .tbl1.openable th.date, .siftal .tbl1.openable td.date {
+.tbl1.openable th.date, .tbl1.openable td.date {
   width: 150px; }
 
-.siftal .tbl1.openable td.type i {
+.tbl1.openable td.type i {
   background-color: #eee;
   padding: 5px;
   border-radius: 50%;
@@ -19988,40 +19988,21 @@ body.siftal .cbox table {
   font-size: 1.2em;
   display: block; }
 
-.siftal .tbl1.openable tbody tr {
+.tbl1.openable tbody tr {
   cursor: pointer; }
 
-.siftal .tbl1.openable tbody tr .detail {
-  overflow: hidden;
-  position: relative;
-  transition: height .25s ease; }
+.tbl1.openable tbody tr [data-openable-open] {
+  display: none; }
 
-.siftal .tbl1.openable tbody tr.open .detail {
-  height: auto; }
-
-.siftal .tbl1.openable tbody tr:not(.open) .detail {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  height: 30px; }
-
-.siftal .tbl1.openable tbody tr:not(.open) .detail p {
+.tbl1.openable tbody tr td.subject .title {
+  font-weight: 700;
+  margin-bottom: 0.5em;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
 
-.siftal .tbl1.openable tbody tr:not(.open) .detail a {
-  pointer-events: none;
-  color: inherit; }
-
-.siftal .tbl1.openable tbody tr:not(.open) .detail img {
-  display: none; }
-
-.siftal .tbl1.openable tbody tr:not(.open) .detail br {
-  display: none; }
-
-.siftal .tbl1.openable tbody tr:not(.open) .detail p {
-  margin-bottom: 0; }
+.tbl1.openable tbody tr[data-open] td.subject .title {
+  white-space: normal; }
 
 /* header */
 .siftal .dashHead {
