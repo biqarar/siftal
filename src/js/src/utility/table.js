@@ -10,7 +10,19 @@ function tbl1Openable()
   	}
   	else
   	{
-    	$(this).toggleClass('open');
+      var $row = $(this);
+      if($row.attr('data-open') !== undefined)
+      {
+        $row.attr('data-open', null);
+        $row.find('[data-openable-close]').slideDown('100');
+        $row.find('[data-openable-open]').slideUp('300');
+      }
+      else
+      {
+        $row.attr('data-open', '');
+        $row.find('[data-openable-close]').slideUp('100');
+        $row.find('[data-openable-open]').slideDown('300');
+      }
   	}
   });
 }
