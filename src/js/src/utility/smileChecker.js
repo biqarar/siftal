@@ -54,13 +54,13 @@ function checkSmileLogout(_data)
     var logoutTxt = 'Logout';
     var logoutUrl = '/logout';
 
-    if(_data.result.logout.logoutTxt)
+    if(_data.result.logout.txt)
     {
-      logoutTxt = _data.result.logout.logoutTxt;
+      logoutTxt = _data.result.logout.txt;
     }
-    if(_data.result.logout.logoutUrl)
+    if(_data.result.logout.url)
     {
-      logoutUrl = _data.result.logout.logoutUrl;
+      logoutUrl = _data.result.logout.url;
     }
 
     say(

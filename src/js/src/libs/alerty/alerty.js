@@ -1124,7 +1124,7 @@ var defaultParams = {
   expectRejections: false
 };
 var deprecatedParams = ['useRejections', 'expectRejections', 'extraParams'];
-var toastIncompatibleParams = ['allowOutsideClick', 'allowEnterKey', 'backdrop', 'focusConfirm', 'focusCancel', 'heightAuto', 'keydownListenerCapture'];
+var toastIncompatibleParams = ['allowOutsideClick', 'allowEnterKey', 'backdrop', 'focusConfirm', 'focusCancel', 'keydownListenerCapture'];
 /**
  * Is valid parameter
  * @param {String} paramName
