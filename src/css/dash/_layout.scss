@@ -128,6 +128,7 @@ body.siftal .cbox table{
 .tbl1.openable th.type, .tbl1.openable td.type{width:60px;text-align:center;}
 .tbl1.openable th.subject, .tbl1.openable td.subject{width:70%;}
 .tbl1.openable th.date, .tbl1.openable td.date{width:150px;}
+.tbl1.openable th.via, .tbl1.openable td.via{width:75px;}
 .tbl1.openable td.type i{background-color:#eee;padding:5px;border-radius:50%;width: 40px;height: 40px;line-height: 32px;font-size: 1.2em;display: block;margin:0 auto;}
 
 .tbl1.openable tbody tr{cursor: pointer;}
@@ -135,5 +136,5 @@ body.siftal .cbox table{
 .tbl1.openable tbody tr [data-openable-open] {display: none}
 .tbl1.openable tbody tr td.subject .title{font-weight:700;margin-bottom:0.5em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 .tbl1.openable tbody tr[data-open] td.subject .title{white-space:normal}
-.tbl1.openable tbody tr td .sendVia{margin-top:0.5em;}
+.tbl1.openable tbody tr td.via i{width:30px;height:30px;line-height:30px;background-color:#eee;border-radius:30%;display:inline-block}
 
