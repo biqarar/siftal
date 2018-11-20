@@ -20262,6 +20262,9 @@ body.siftal .cbox table {
 .siftal #sidebar .menu {
   overflow-y: auto; }
 
+[data-debugger] .siftal #sidebar figure .avatar:before {
+  border-color: #f69900; }
+
 #sidebar .toggleClean {
   position: absolute;
   top: 0;
