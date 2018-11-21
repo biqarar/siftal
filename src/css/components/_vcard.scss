@@ -180,6 +180,7 @@ img.mini{
 .mini .vcard {
 	width: 150px;
 	min-width: 150px;
+	max-width: 100%;
 	@include inline-flex;
 	@include flex-wrap(wrap);
 	@include flex-direction(row);
@@ -408,3 +409,19 @@ img.mini{
 @keyframes pulseOff{0%{box-shadow:0 0 0 0 rgba(204,169,44,0.4)}70%{box-shadow:0 0 0 0.5em rgba(204,169,44,0)}100%{box-shadow:0 0 0 0 rgba(204,169,44,0)}}
 
 
+// vcard in vcard
+.vcard .mini .vcard {
+	min-width: auto;
+	margin: 0
+}
+
+.vcard .mini .vcard .content .header{
+	margin:0;
+	height: 25px;
+	line-height: 25px;
+}
+.vcard .mini .vcard .content .btn
+{
+	height: 35px;
+	line-height: 31px;
+}
