@@ -4,7 +4,7 @@ function checkSmileLoop()
   setInterval(function()
   {
     checkSmile();;
-  }, 5000);
+  }, 10000);
 }
 
 
