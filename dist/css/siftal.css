@@ -646,7 +646,6 @@ address {
   margin: 0;
   line-height: 30px;
   transition: 0.3s;
-  max-width: 170px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis; }
@@ -660,13 +659,18 @@ address {
   margin: 0;
   line-height: 20px;
   transition: 0.3s;
-  max-width: 170px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis; }
 
 #ermileBadge h3:hover {
   color: #fff; }
+
+.siftal #sidebar #ermileBadge h2 {
+  max-width: 170px; }
+
+.siftal #sidebar #ermileBadge h3 {
+  max-width: 170px; }
 
 /* list */
 ul {
