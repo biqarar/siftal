@@ -34,6 +34,8 @@ function pushStateSiftal(_direct)
   autoPrint();
   // run runner
   dataRunner();
+  // run kerkere
+  kerkere();
 
   if($('body').hasClass('enter'))
   {

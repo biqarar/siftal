@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>Siftal</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Siftal, a simple CSS framework with usefull tools for Ermile projects">
+  <meta name="viewport"    content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0 maximum-scale=1.2, minimal-ui"/>
+  <link rel="shortcut icon" href="../dist/images/siftal/siftal.ico">
+  <link rel="icon" href="../dist/images/siftal/siftal.png" type="image/png">
+  <link rel="stylesheet" href="../dist/css/siftal.css">
+
+  <style>
+    body{background-color:#eee;}
+    .kerkere-toggle {cursor: pointer; margin: 0;}
+    .kerkere-content {display: none;}
+    .kerkere-content.default {display: block;}
+  </style>
+</head>
+<body class="ltr">
+  <div class="cn">
+
+
+    <div class="tbox">
+      <h2>Kerkere</h2>
+      <p>A simple kerkere like accordion</p>
+    </div>
+
+
+    <div class="cbox">
+        <h4 class="kerkere-toggle">kerkere 1</h4>
+        <div class="kerkere-content default">
+          <p>Cras malesuada ultrices augue molestie risus.</p>
+        </div>
+        <h4 class="kerkere-toggle">kerkere 2</h4>
+        <div class="kerkere-content">
+          <p>Lorem ipsum dolor sit amet mauris eu turpis.</p>
+        </div>
+        <h4 class="kerkere-toggle">kerkere 3</h4>
+        <div class="kerkere-content">
+          <p>Vivamus facilisisnibh scelerisque laoreet.</p>
+        </div>
+     </div>
+   </div>
+
+
+
+
+  </div>
+  <script src="../dist/js/siftal.min.js"></script>
+</body>
+</html>
