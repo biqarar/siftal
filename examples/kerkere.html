@@ -13,8 +13,7 @@
     body{background-color:#eee;}
 
     [data-kerkere] {cursor: pointer;}
-    .kerkereHide {display: none;}
-    .kerkereContent.default {display: block;}
+    [data-kerkere-content = "hide"] {display: none;}
   </style>
 </head>
 <body class="ltr">
@@ -32,27 +31,27 @@
       <div class="kerkere">
 
         <h4 data-kerkere="#kModel1" data-kerkere-single>kerkere 1</h4>
-        <div class="kerkereHide" data-kerkere-content id='kModel1'>
+        <div data-kerkere-content='hide' id='kModel1'>
           <p>Cras malesuada ultrices augue molestie risus.</p>
         </div>
 
         <h4 data-kerkere=".kModel2" data-kerkere-single>kerkere 2</h4>
-        <div class="kModel2" data-kerkere-content>
+        <div class="kModel2" data-kerkere-content='hide'>
           <p>Lorem ipsum dolor sit amet mauris eu turpis.</p>
         </div>
 
         <h4 data-kerkere="[data-kModel3]">kerkere 3</h4>
-        <div class="kerkereHide" data-kerkere-content data-kModel3>
+        <div data-kerkere-content='hide' data-kModel3>
           <p>Vivamus facilisisnibh scelerisque laoreet.</p>
         </div>
 
         <h4 data-kerkere="#kModel4">kerkere 4</h4>
-        <div class="kerkereHide" data-kerkere-content id='kModel4'>
+        <div data-kerkere-content id='kModel4'>
           <p>Cras malesuada ultrices augue molestie risus.</p>
         </div>
 
         <h4 data-kerkere="#kModel5">kerkere 5</h4>
-        <div class="kerkereHide" data-kerkere-content id='kModel5'>
+        <div data-kerkere-content='hide' id='kModel5'>
           <p>Cras malesuada ultrices augue molestie risus.</p>
         </div>
 
