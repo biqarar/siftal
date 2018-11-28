@@ -35,7 +35,7 @@ function pushStateSiftal(_direct)
   // run runner
   dataRunner();
   // run kerkere
-  kerkere();
+  kerkereRunner();
 
   if($('body').hasClass('enter'))
   {
