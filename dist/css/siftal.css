@@ -15265,6 +15265,21 @@ body.alerty2-no-backdrop .alerty2-shown.alerty2-bottom-end, body.alerty2-no-back
 [data-kerkere-content="hide"] {
   display: none; }
 
+[data-kerkere-icon]::before {
+  content: "\e138";
+  font-family: "siftal","tahoma" !important;
+  margin: 0 0.5em;
+  vertical-align: middle; }
+
+[data-kerkere-icon="open"]::before {
+  content: "\e0c0"; }
+
+.ltr [data-kerkere-icon="close"]::before {
+  content: "\e0c2"; }
+
+.rtl [data-kerkere-icon="close"]::before {
+  content: "\e0c1"; }
+
 body.enter {
   min-height: 100%; }
 
