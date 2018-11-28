@@ -7,8 +7,6 @@ var myModuleFiles =
 	'src/libs/logy/logy.js',
 
 	// include jquery
-	// 'src/libs/jquery/jquery-2.1.1.min.js',
-	// 'src/libs/jquery/jquery-2.2.4.min.js',
 	'src/libs/jquery/jquery-3.3.1.min.js',
 	'src/libs/jquery/jquery-fn.js',
 
@@ -30,8 +28,7 @@ var myModuleFiles =
 	'src/libs/dataResponse/dataResponse.js',
 	'src/libs/sortable/Sortable.js',
 	'src/libs/sortable/SortableRunner.js',
-	// 'src/libs/awesomplete/awesomplete.js',
-	// 'src/libs/awesomplete/awesompleteRunner.js',
+
 	'src/libs/counter/jquery.counterup.js',
 	'src/libs/counter/counterRunner.js',
 	'src/libs/notif/iziToast.js',
