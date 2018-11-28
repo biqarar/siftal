@@ -11,9 +11,17 @@ function kerkereRunner()
 
 function kerkere(_this)
 {
-    var myTarget = $(_this.attr('data-kerkere'));
+    var myTarget = null;
+    if(_this)
+    {
+      myTarget = _this.attr('data-kerkere');
+      if(myTarget)
+      {
+        myTarget = $(myTarget);
+      }
+    }
 
-    if(myTarget.length)
+    if(myTarget && myTarget.length)
     {
       // if want icon
       if(_this.attr('data-kerkere-icon') !== undefined)
@@ -43,4 +51,3 @@ function kerkere(_this)
       $('[data-kerkere]').not(_this).attr('data-kerkere-icon', 'close');
     }
 }
-
