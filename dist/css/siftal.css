@@ -15266,19 +15266,16 @@ body.alerty2-no-backdrop .alerty2-shown.alerty2-bottom-end, body.alerty2-no-back
   display: none; }
 
 [data-kerkere-icon]::before {
-  content: "";
+  content: "\e0c2";
   font-family: "siftal","tahoma" !important;
   margin: 0 0.5em;
   vertical-align: middle; }
-
-.ltr [data-kerkere-icon]::before {
-  content: "\e0c2"; }
 
 .rtl [data-kerkere-icon]::before {
   content: "\e0c1"; }
 
 [data-kerkere-icon="open"]::before {
-  content: "\e0c0"; }
+  content: "" !important; }
 
 body.enter {
   min-height: 100%; }

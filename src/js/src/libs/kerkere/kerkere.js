@@ -48,6 +48,6 @@ function kerkere(_this)
       //Hide the other panels
       $('[data-kerkere-content]').not(myTarget).slideUp('fast');
       // change icon of all other
-      $('[data-kerkere]').not(_this).attr('data-kerkere-icon', 'close');
+      $('[data-kerkere][data-kerkere-icon]').not(_this).attr('data-kerkere-icon', 'close');
     }
 }
