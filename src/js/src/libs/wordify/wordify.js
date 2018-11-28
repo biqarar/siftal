@@ -73,6 +73,21 @@ var wordifyTomans = function (num)
   return '';
 };
 
+
+var wordifyUnit = function (_num, _unit)
+{
+  var myText = wordifyfa(_num, 0);
+  if(myText)
+  {
+    if(!_unit)
+    {
+      _unit = ' تومان';
+    }
+    return myText + _unit;
+  }
+  return '';
+};
+
 var wordifyResponse = function (_status, _textBox, _inputBox)
 {
   var myVal = _inputBox.val().trim();
