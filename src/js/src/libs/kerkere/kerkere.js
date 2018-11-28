@@ -14,8 +14,11 @@ function kerkere()
     }
 
     //Hide the other panels
-    $(".kerkereContent").not($(this).next()).slideUp('fast');
-
+    if($this.attr('data-kerkere-single') !== undefined)
+    {
+      $('[data-kerkere-content]').not(myTarget).slideUp('fast');
+      // $(".kerkereContent").not($(this).next()).slideUp('fast');
+    }
   });
 }
 
