@@ -1,12 +1,17 @@
 
 function kerkere()
 {
-  $(document).off('click', '.kerkereTitle');
-  $(document).on('click', '.kerkereTitle', function()
+  $(document).off('click', '[data-kerkere]');
+  $(document).on('click', '[data-kerkere]', function()
   {
-    console.log(11);
-    //Expand or collapse this panel
-    $(this).next().slideToggle('fast');
+    var $this    = $(this);
+    var myTarget = $($this.attr('data-kerkere'));
+
+    if(myTarget.length)
+    {
+      //Expand or collapse this panel
+      myTarget.slideToggle('fast');
+    }
 
     //Hide the other panels
     $(".kerkereContent").not($(this).next()).slideUp('fast');

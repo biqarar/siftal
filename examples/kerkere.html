@@ -11,8 +11,9 @@
 
   <style>
     body{background-color:#eee;}
-    .kerkereTitle {cursor: pointer; margin: 0;}
-    .kerkereContent {display: none;}
+
+    [data-kerkere] {cursor: pointer;}
+    .kerkereHide {display: none;}
     .kerkereContent.default {display: block;}
   </style>
 </head>
@@ -29,16 +30,16 @@
     <div class="cbox">
 
       <div class="kerkere">
-        <h4 class="kerkereTitle">kerkere 1</h4>
-        <div class="kerkereContent default">
+        <h4 class="kerkereTitle" data-kerkere="#kModel1">kerkere 1</h4>
+        <div class="kerkereHide" data-kerkere-content id='kModel1'>
           <p>Cras malesuada ultrices augue molestie risus.</p>
         </div>
-        <h4 class="kerkereTitle">kerkere 2</h4>
-        <div class="kerkereContent">
+        <h4 class="kerkereTitle" data-kerkere=".kModel2">kerkere 2</h4>
+        <div class="kModel2" data-kerkere-content>
           <p>Lorem ipsum dolor sit amet mauris eu turpis.</p>
         </div>
-        <h4 class="kerkereTitle">kerkere 3</h4>
-        <div class="kerkereContent">
+        <h4 class="kerkereTitle" data-kerkere="[data-kModel3]">kerkere 3</h4>
+        <div class="kerkereHide" data-kerkere-content data-kModel3>
           <p>Vivamus facilisisnibh scelerisque laoreet.</p>
         </div>
       </div>
