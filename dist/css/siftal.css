@@ -15256,6 +15256,15 @@ body.alerty2-no-backdrop .alerty2-shown.alerty2-bottom-end, body.alerty2-no-back
 
   body.alerty2-shown:not(.alerty2-no-backdrop):not(.alerty2-toast-shown) .alerty2-container {
     position: initial !important; } }
+[data-kerkere] {
+  cursor: pointer; }
+
+[data-kerkere-content] {
+  display: block; }
+
+[data-kerkere-content="hide"] {
+  display: none; }
+
 body.enter {
   min-height: 100%; }
 
