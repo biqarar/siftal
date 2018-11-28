@@ -127,6 +127,9 @@ span.input{
 	border:$inputBorder;
 }
 
+.input .addon:empty{
+	padding:5px;
+}
 // for radius
 .ltr .input > :first-child{
 	border-top-right-radius: 0;

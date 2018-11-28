@@ -15960,6 +15960,9 @@ span.input {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1); }
 
+.input .addon:empty {
+  padding: 5px; }
+
 .ltr .input > :first-child {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
