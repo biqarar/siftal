@@ -16475,6 +16475,27 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
 .radio1.black input:checked + label:first-of-type::before {
   background-color: #333; }
 
+.radio1.likeBtn {
+  display: block;
+  padding: 0; }
+
+.radio1.likeBtn label {
+  padding: 7px 10px;
+  background-color: #f6f8fa;
+  display: block;
+  border: 1px solid transparent; }
+
+.radio1.likeBtn input:checked + label:first-of-type {
+  border-color: #2080d0; }
+
+.radio1.likeBtn label:first-of-type::after {
+  top: 16px;
+  left: 23px; }
+
+.rtl .radio1.likeBtn label:first-of-type::after {
+  left: 0;
+  right: 23px; }
+
 /* radio type 2*/
 .radio2 {
   background-color: #f7f7f7;
