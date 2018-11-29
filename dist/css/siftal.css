@@ -857,6 +857,9 @@ a:active {
   flex-grow: 1;
   max-width: 100%; }
 
+.f > .transition {
+  transition: 0.3s; }
+
 .f > .cauto {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
