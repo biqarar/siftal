@@ -1,0 +1,6 @@
+
+[data-copy]{position:relative;}
+[data-copy]::after{position:absolute;display:block;content:"copied";font-size:0.9em;line-height:2em;padding:0 1em;color:#fff;background-color:#777;border-radius:0.25rem;opacity:0;transition:0.2s;}
+.copied[data-copy]{overflow: visible!important;}
+.copied[data-copy]::after{opacity:1}
+
