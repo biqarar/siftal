@@ -49,6 +49,7 @@ var myModuleFiles =
 	'src/libs/alerty/alerty-runner.js',
 	'src/libs/escNav/escNav.js',
 	'src/libs/kerkere/kerkere.js',
+	'src/libs/dataCopy/dataCopy.js',
 
 	// semantic
 	'src/libs/semantic-ui/api/api.min.js',
