@@ -60,3 +60,11 @@
     75% {transform:rotate(-45deg);}
     100% {transform:rotate(0deg);}
 }
+
+
+[class^="sf-"].redPlus{
+    color:#e91e1e;
+    transform: scale(1.0);
+    animation:pulseNotificationHeart 0.7s infinite ease-in-out;
+}
+@keyframes pulseHeart { 0%{opacity:.7} 80%{opacity:.9;transform: scale(1.05);} 100%{opacity:.7}}
