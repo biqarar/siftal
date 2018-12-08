@@ -10,7 +10,6 @@ function catchBeforeUnload()
       method: "POST",
       data: { cmd: "unload"},
       dataType: 'json',
-      // async: false,
       cache: false
     });
 
