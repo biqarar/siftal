@@ -329,7 +329,6 @@
           notif('error', 'There was an error in parsing JSON!');
         }
         deferred.reject();
-        console.log(5);
         return location.replace(props.url);
       }
 
@@ -337,9 +336,11 @@
              .trigger('navigate:fetch:done', json);
       deferred.resolve(json);
       // remove loading
-      $(document.body).removeClass('loading-page');
+      setTimeout (function()
+      {
+        $(document.body).removeClass('loading-page');
+      }, 500);
       callFunc('loading_page', false);
-
 
     })
     .fail(function(_result, _textStatus, _error)
@@ -418,9 +419,6 @@
       }
 
       $window.trigger('statechange');
-      // remove loading
-      $('body').removeClass('loading-page');
-      callFunc('loading_page', false);
 
       deferred.resolve(props);
     });
