@@ -2246,7 +2246,8 @@ progress.xl, meter.xl {
 /*================================================================== [ v5 ]*/
 .tbl1.v5 {
   border-collapse: separate;
-  border-spacing: 0 1rem; }
+  border-spacing: 0 1rem;
+  padding: 0 1rem; }
 
 .tbl1.v5 thead {
   font-size: 1em;
