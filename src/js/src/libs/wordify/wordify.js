@@ -83,7 +83,7 @@ var wordifyUnit = function (_num, _unit)
     {
       _unit = ' تومان';
     }
-    return myText + _unit;
+    return myText + ' ' + _unit;
   }
   return '';
 };
