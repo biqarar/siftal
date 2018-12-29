@@ -115,10 +115,10 @@
   height: auto;
   text-align: left;
   border-top: none;
-  line-height: 1em;
+  line-height: 1.4em;
   color: rgba(0, 0, 0, 0.87);
   padding: 0.78571429rem 1.14285714rem !important;
-  font-size: 1em;
+  font-size: 0.9em;
   text-transform: none;
   font-weight: normal;
   -webkit-box-shadow: none;
@@ -585,8 +585,12 @@ select.ui.dropdown {
   position: relative;
   left: 1px;
   z-index: 3;
-  line-height:24px;
   transition:0.3s color;
+  line-height:24px;
+  height:24px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 /* Search Selection */
