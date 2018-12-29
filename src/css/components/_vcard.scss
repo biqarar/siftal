@@ -412,7 +412,8 @@ img.mini{
 // vcard in vcard
 .vcard .mini .vcard {
 	min-width: auto;
-	margin: 0
+	margin: 0;
+	width: 100%;
 }
 
 .vcard .mini .vcard .content .header{

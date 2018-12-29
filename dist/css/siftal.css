@@ -3259,7 +3259,8 @@ img.mini {
     box-shadow: 0 0 0 0 rgba(204, 169, 44, 0); } }
 .vcard .mini .vcard {
   min-width: auto;
-  margin: 0; }
+  margin: 0;
+  width: 100%; }
 
 .vcard .mini .vcard .content .header {
   margin: 0;
