@@ -364,6 +364,13 @@
         notifGenerator(_result.responseJSON);
       }
 
+      // remove loading
+      setTimeout (function()
+      {
+        $(document.body).removeClass('loading-page');
+      }, 500);
+      callFunc('loading_page', false);
+
       $window.trigger('navigate:fetch:ajax:error', _result, _textStatus, _error);
     });
 
