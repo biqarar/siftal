@@ -153,10 +153,13 @@ body.enter.bg15{background-image:url(../images/bg/15.jpg)}
 @media all and (max-width:767px) {
  .enter #enter{min-width:300px;min-height:300px; padding:10px 20px;width:50%;margin-bottom:40px;}
  .enter #enter .logo{}
- .enter form .flex{margin: 0.5em 0}
+ .enter form .flex{margin: 0.5em 0;height:40px;}
  .enter .langlist{position:absolute;}
  .enter #eMethods a{height:30px;line-height:30px;}
-
+ .enter form .flex label{line-height: 40px;}
+ .enter form #eramz label, .enter form #eramzNew label, .enter form #displaynameBox label, .enter form #eusername label{line-height:40px;}
+ .enter form .flex button{padding:5px 10px;}
+ .enter form .flex input{line-height:40px;}
 }
 
 /* Design for print */

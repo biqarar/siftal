@@ -15897,14 +15897,27 @@ body.enter.bg15 {
     margin-bottom: 40px; }
 
   .enter form .flex {
-    margin: 0.5em 0; }
+    margin: 0.5em 0;
+    height: 40px; }
 
   .enter .langlist {
     position: absolute; }
 
   .enter #eMethods a {
     height: 30px;
-    line-height: 30px; } }
+    line-height: 30px; }
+
+  .enter form .flex label {
+    line-height: 40px; }
+
+  .enter form #eramz label, .enter form #eramzNew label, .enter form #displaynameBox label, .enter form #eusername label {
+    line-height: 40px; }
+
+  .enter form .flex button {
+    padding: 5px 10px; }
+
+  .enter form .flex input {
+    line-height: 40px; } }
 /* Design for print */
 @media print {
   .enter footer {
