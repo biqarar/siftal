@@ -146,7 +146,7 @@ body.enter.bg15{background-image:url(../images/bg/15.jpg)}
 }
 
 @media all and (max-width:767px) {
- .enter #enter{min-width:300px;padding:40px 20px;width:50%}
+ .enter #enter{min-width:300px;padding:20px 20px;width:50%;margin-bottom:40px;}
  .enter #enter .logo{}
  .enter .langlist{position:absolute;}
 }
