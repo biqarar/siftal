@@ -15321,9 +15321,6 @@ body.alerty2-no-backdrop .alerty2-shown.alerty2-bottom-end, body.alerty2-no-back
 .copied[data-copy]::after {
   opacity: 1; }
 
-body.enter {
-  min-height: 100%; }
-
 /* Initial CSS */
 body.enter {
   background-color: #d7d8d8;
@@ -15346,7 +15343,15 @@ body.enter {
   -moz-box-align: center !important;
   align-items: center !important;
   background-attachment: fixed;
-  position: relative; }
+  position: relative;
+  min-height: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default; }
 
 body.enter.bg1 {
   background-image: url("../images/bg/1.jpg"); }
