@@ -1,22 +1,22 @@
 body.enter{min-height:100%}
 /* Initial CSS */
-body.enter{background-color:#d7d8d8;background-image:url(../images/bg/1.jpg);background-repeat:repeat;background-size:cover;display:-webkit-box !important;display:-webkit-flex !important;display:-ms-flexbox !important;display:-moz-box !important;display:flex !important;-webkit-box-pack:center !important;-webkit-justify-content:center !important;-ms-flex-pack:center !important;-moz-box-pack:center !important;justify-content:center !important;-webkit-box-align:center !important;-webkit-align-items:center !important;-ms-flex-align:center !important;-moz-box-align:center !important;align-items:center!important;background-attachment:fixed;position:relative;}
-body.enter.bg1{background-image:url(../images/bg/1.jpg)}
-body.enter.bg2{background-image:url(../images/bg/2.jpg)}
-body.enter.bg3{background-image:url(../images/bg/3.jpg)}
-body.enter.bg4{background-image:url(../images/bg/4.jpg)}
-body.enter.bg5{background-image:url(../images/bg/5.jpg)}
-body.enter.bg6{background-image:url(../images/bg/6.jpg)}
-body.enter.bg7{background-image:url(../images/bg/7.jpg)}
-body.enter.bg8{background-image:url(../images/bg/8.jpg)}
-body.enter.bg9{background-image:url(../images/bg/9.jpg)}
-body.enter.bg10{background-image:url(../images/bg/10.jpg)}
-body.enter.bg11{background-image:url(../images/bg/11.jpg)}
-body.enter.bg12{background-image:url(../images/bg/12.jpg)}
-body.enter.bg12{background-image:url(../images/bg/12.jpg)}
-body.enter.bg13{background-image:url(../images/bg/13.jpg)}
-body.enter.bg14{background-image:url(../images/bg/14.jpg)}
-body.enter.bg15{background-image:url(../images/bg/15.jpg)}
+body.enter{background-color:#d7d8d8;background-image:url('../images/bg/1.jpg');background-repeat:repeat;background-size:cover;display:-webkit-box !important;display:-webkit-flex !important;display:-ms-flexbox !important;display:-moz-box !important;display:flex !important;-webkit-box-pack:center !important;-webkit-justify-content:center !important;-ms-flex-pack:center !important;-moz-box-pack:center !important;justify-content:center !important;-webkit-box-align:center !important;-webkit-align-items:center !important;-ms-flex-align:center !important;-moz-box-align:center !important;align-items:center!important;background-attachment:fixed;position:relative;}
+body.enter.bg1{background-image:url('../images/bg/1.jpg')}
+body.enter.bg2{background-image:url('../images/bg/2.jpg')}
+body.enter.bg3{background-image:url('../images/bg/3.jpg')}
+body.enter.bg4{background-image:url('../images/bg/4.jpg')}
+body.enter.bg5{background-image:url('../images/bg/5.jpg')}
+body.enter.bg6{background-image:url('../images/bg/6.jpg')}
+body.enter.bg7{background-image:url('../images/bg/7.jpg')}
+body.enter.bg8{background-image:url('../images/bg/8.jpg')}
+body.enter.bg9{background-image:url('../images/bg/9.jpg')}
+body.enter.bg10{background-image:url('../images/bg/10.jpg')}
+body.enter.bg11{background-image:url('../images/bg/11.jpg')}
+body.enter.bg12{background-image:url('../images/bg/12.jpg')}
+body.enter.bg12{background-image:url('../images/bg/12.jpg')}
+body.enter.bg13{background-image:url('../images/bg/13.jpg')}
+body.enter.bg14{background-image:url('../images/bg/14.jpg')}
+body.enter.bg15{background-image:url('../images/bg/15.jpg')}
 
 /* Layout */
 .enter #enter{width:20%;min-width:380px;max-width:450px;min-height:370px;margin:10px 0 70px;padding:30px;background-color:rgba(255,255,255,0.2);border-radius:5px;box-shadow:0 3px 6px rgba(0,0,0,0.10), 0 3px 6px rgba(0, 0, 0, 0.05);transition:0.3s;color:#fff;}
