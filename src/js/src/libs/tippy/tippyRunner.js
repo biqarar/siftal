@@ -2,13 +2,16 @@ var myTippy;
 
 function runTippy()
 {
-	// removeTippy();
-	myTippy = tippy('[title]',
+	if($('html').attr('data-app') === undefined)
 	{
-		arrow: true,
-		animation: 'scale',
-		dynamicTitle: true,
-	});
+		// removeTippy();
+		myTippy = tippy('[title]',
+		{
+			arrow: true,
+			animation: 'scale',
+			dynamicTitle: true,
+		});
+	}
 }
 
 
