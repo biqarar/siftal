@@ -15288,16 +15288,19 @@ body.alerty2-no-backdrop .alerty2-shown.alerty2-bottom-end, body.alerty2-no-back
   display: none; }
 
 [data-kerkere-icon]::before {
-  content: "\e0c2";
+  content: "\e026";
   font-family: "siftal","tahoma" !important;
   margin: 0 0.5em;
   vertical-align: middle; }
 
-.rtl [data-kerkere-icon]::before {
-  content: "\e0c1"; }
-
 [data-kerkere-icon="open"]::before {
   content: "" !important; }
+
+[data-kerkere-icon="close"]::before {
+  content: "" !important; }
+
+.rtl [data-kerkere-icon="close"]::before {
+  content: "\e0c1"; }
 
 [data-copy] {
   position: relative; }

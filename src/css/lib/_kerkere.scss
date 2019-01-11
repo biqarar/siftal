@@ -4,7 +4,12 @@
 [data-kerkere-content="hide"] {display: none;}
 
 
-[data-kerkere-icon]::before{content:"\e0c2";font-family:"siftal","tahoma" !important;margin:0 0.5em;vertical-align: middle;}
-.rtl [data-kerkere-icon]::before{content:"\e0c1";}
+[data-kerkere-icon]::before{content:"\e026";font-family:"siftal","tahoma" !important;margin:0 0.5em;vertical-align: middle;}
+
+
+// on open
 [data-kerkere-icon="open"]::before{content:"\e0c0"!important;}
+// on close
+[data-kerkere-icon="close"]::before{content:"\e0c2"!important;}
+.rtl [data-kerkere-icon="close"]::before{content:"\e0c1";}
 
