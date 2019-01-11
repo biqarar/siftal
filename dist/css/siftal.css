@@ -20255,6 +20255,7 @@ body.siftal .cbox table {
   max-width: 100%; }
 
 .siftal .alerty2-popup .langlist a.active {
+  min-width: 10rem;
   border-color: #5cb85c; }
 
 .siftal .alerty2-popup .langlist a.active::after {
