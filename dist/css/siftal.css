@@ -20732,6 +20732,9 @@ body.siftal .cbox table {
   line-height: 25px;
   height: 25px; }
 
+.siftal[data-in="pay"] .tbox {
+  display: none; }
+
 @media all and (min-width: 1400px) {
   html {
     font-size: 70%; }
