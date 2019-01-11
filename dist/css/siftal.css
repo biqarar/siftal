@@ -20360,6 +20360,7 @@ body.siftal .cbox table {
   vertical-align: -webkit-baseline-middle !important; }
 
 .siftal .dashHead .hm a, .siftal .dashHead .hm div {
+  position: relative;
   transition-duration: 0.3s;
   transition-property: color, background-color;
   color: #888;
