@@ -1,5 +1,92 @@
+.siftal[data-in="pay"]{
+	background-color:#fff;
+}
+
 .siftal[data-in="pay"] .tbox{
 	display: none;
+}
+
+.siftal[data-in="pay"] #main #content{padding:0;}
+.siftal[data-in="pay"] .animatedBgBox {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+}
+.siftal[data-in="pay"] .bgImage {
+    height: calc(100vh + 400px);
+    width: calc(200vw + 400px);
+    position: absolute;
+    top: 0;
+    left: -400px;
+    z-index: -1;
+    background: url(../images/pattern/diagonal-line1.png);
+    -webkit-animation: backgroundscroll 30s linear infinite;
+    animation: backgroundscroll 30s linear infinite;
+}
+@-webkit-keyframes backgroundscroll { to { -webkit-transform: translate(400px, -400px); transform: translate(400px, -400px); } }
+@keyframes backgroundscroll { to { -webkit-transform: translate(400px, -400px); transform: translate(400px, -400px); } }
+
+
+.payBox{
+  min-width: 280px;
+  box-shadow: 0px 0px 4rem 1px #eee;
+  border-radius: 9px;
+  margin-top: 1em;
+}
+.payBox .topBox{
+	color: #1f8fff;
+	overflow: visible!important;
+}
+.payBox .topBox .priceBox{
+  	background: #fff;
+	text-align: left;
+	padding:0 1rem;
+	height: 120px;
+	overflow: hidden;
+}
+.payBox .topBox .price{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 120px;
+	line-height: 150px;
+	overflow: hidden;
+	height: 120px;
+}
+.payBox .topBox .unit{
+	display: inline-block;
+}
+
+
+.payBox .rip {
+  width: 20px;
+  height: 120px;
+  margin: 0 10px;
+  position: relative;
+  box-shadow: 0 1px 0 0 #fff, 0 -1px 0 0 #fff;
+}
+.payBox .rip:before, .payBox .rip:after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  -webkit-transform:rotate(-45deg);
+          transform:rotate(-45deg);
+  border: 5px solid transparent;
+  border-top-color: #f00;
+  border-right-color: #f00;
+  border-radius: 100%;
+  pointer-events: none;
+}
+.payBox .rip:before {
+  top: -10px;
+}
+.payBox .rip:after {
+  -webkit-transform:rotate(-225deg);
+          transform:rotate(-225deg);
+  bottom: -10px;
 }
 
 
