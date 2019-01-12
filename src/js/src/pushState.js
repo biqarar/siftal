@@ -39,11 +39,18 @@ function pushStateSiftal(_direct)
   // run dataCopy
   dataCopy();
 
-  if($('body').hasClass('enter'))
+  if($('body').attr('data-in') === 'enter')
   {
     // run on enter
     handleEnterEvents();
   }
+
+  if($('body').attr('data-in') === 'pay')
+  {
+    // run on enter
+    handlePayEvents();
+  }
+
   if($('body').hasClass('siftal'))
   {
     // run on siftal admin panel

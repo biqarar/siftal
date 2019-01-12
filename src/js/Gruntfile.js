@@ -80,6 +80,7 @@ var myModuleFiles =
 	'src/utility/responsive.js',
 	'src/utility/life.js',
 	'src/utility/enter.js',
+	'src/utility/pay.js',
 	'src/utility/weAreHere.js',
 	'src/utility/json.js',
 	'src/utility/smoothScroll.js',
