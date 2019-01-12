@@ -20783,7 +20783,7 @@ body.siftal .cbox table {
   overflow: visible !important; }
 
 .payBox .topBox .priceBox {
-  background: #fff;
+  background: #c5e2ff;
   text-align: left;
   padding: 0 1rem;
   height: 120px;
@@ -20800,34 +20800,54 @@ body.siftal .cbox table {
 .payBox .topBox .unit {
   display: inline-block; }
 
-.payBox .rip {
+.payBox .breakLine {
   width: 20px;
-  height: 120px;
-  margin: 0 10px;
+  height: 100px;
+  margin: 10px 0;
   position: relative;
-  box-shadow: 0 1px 0 0 #fff, 0 -1px 0 0 #fff; }
+  box-shadow: 0 1px 0 0 #fff, 0 -1px 0 0 #fff;
+  background-color: #c5e2ff; }
 
-.payBox .rip:before, .payBox .rip:after {
+.payBox .breakLine:before, .payBox .breakLine:after {
   content: '';
   position: absolute;
-  width: 20px;
-  height: 20px;
+  right: -5px;
+  width: 30px;
+  height: 30px;
   top: 50%;
+  border: 5px solid transparent;
+  border-top-color: #c5e2ff;
+  border-right-color: #c5e2ff;
+  border-radius: 100%;
+  pointer-events: none;
+  -webkit-transform: rotate(-225deg);
+  transform: rotate(-225deg); }
+
+.payBox .breakLine:before {
+  top: -25px; }
+
+.payBox .breakLine:after {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  border: 5px solid transparent;
-  border-top-color: #f00;
-  border-right-color: #f00;
-  border-radius: 100%;
-  pointer-events: none; }
+  top: 95px; }
 
-.payBox .rip:before {
-  top: -10px; }
+.payBox .breakLine i {
+  display: block;
+  width: 0;
+  height: 100%;
+  margin: 0 auto;
+  border-right: 3px dotted #fff; }
 
-.payBox .rip:after {
-  -webkit-transform: rotate(-225deg);
-  transform: rotate(-225deg);
-  bottom: -10px; }
+.payBox .status {
+  background-color: #c5e2ff; }
+
+.payBox .myStatus {
+  font-size: 80px;
+  line-height: 120px;
+  overflow: hidden;
+  height: 120px;
+  display: block;
+  text-align: center; }
 
 @media all and (min-width: 1400px) {
   html {
