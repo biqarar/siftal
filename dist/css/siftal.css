@@ -20809,9 +20809,12 @@ body.siftal .cbox table {
   border-right: 3px dotted #fff; }
 
 .payTicket .status {
-  background-color: #c5e2ff; }
+  background-color: #c5e2ff;
+  position: relative;
+  height: 120px;
+  overflow: hidden; }
 
-.payTicket .myStatus {
+.payTicket .status .myStatus {
   font-size: 60px;
   min-width: 60px;
   line-height: 120px;
@@ -20819,6 +20822,14 @@ body.siftal .cbox table {
   height: 120px;
   display: block;
   text-align: center; }
+
+.payTicket .status .statusDesc {
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+  left: 0;
+  text-align: center;
+  font-weight: 900; }
 
 .payTicketDetail {
   background-color: #fff;
