@@ -35,7 +35,11 @@
 // @keyframes backgroundscroll { to { -webkit-transform: translate(400px, -400px); transform: translate(400px, -400px); } }
 
 
-$payTicketBg: #c5e2ff;
+$payTicketBg: #d7dbde;
+$payTicketBgActive: #c5e2ff;
+$payTicketBgPositive: #9dd026;
+$payTicketBgNegative: #fff6f6;
+$payTicketBgWarning: #eadc2c;
 
 .payTicket{
   min-width: 280px;
@@ -44,11 +48,10 @@ $payTicketBg: #c5e2ff;
   box-shadow: 0px 0px 4rem 1px #eee;
   border-radius: 0.5rem;
   margin: 1em auto;
+  color: #777;
 }
-.payTicket .topBox{
-	color: #1f8fff;
-	overflow: visible!important;
-}
+
+
 .payTicket .topBox .priceBox{
   	background: $payTicketBg;
 	text-align: left;
@@ -132,6 +135,85 @@ $payTicketBg: #c5e2ff;
 	text-align: center;
 	font-weight: 900;
 }
+
+// active
+.payTicket.active{
+  color: #1f8fff;
+}
+.payTicket.active .topBox .priceBox{
+  	background: $payTicketBgActive;
+}
+.payTicket.active .breakLine {
+  background-color:$payTicketBgActive;
+}
+.payTicket.active .breakLine:before, .payTicket.active .breakLine:after {
+  border-top-color: $payTicketBgActive;
+  border-right-color: $payTicketBgActive;
+}
+.payTicket.active .status{
+  background-color:$payTicketBgActive;
+}
+
+// positive
+.payTicket.positive{
+  color: #2c662d;
+}
+.payTicket.positive .topBox .priceBox{
+  	background: $payTicketBgPositive;
+}
+.payTicket.positive .breakLine {
+  background-color:$payTicketBgPositive;
+}
+.payTicket.positive .breakLine:before, .payTicket.positive .breakLine:after {
+  border-top-color: $payTicketBgPositive;
+  border-right-color: $payTicketBgPositive;
+}
+.payTicket.positive .status{
+  background-color:$payTicketBgPositive;
+}
+
+// negative
+.payTicket.negative{
+  color: #9f3a38;
+}
+.payTicket.negative .topBox .priceBox{
+  	background: $payTicketBgNegative;
+}
+.payTicket.negative .breakLine {
+  background-color:$payTicketBgNegative;
+}
+.payTicket.negative .breakLine:before, .payTicket.negative .breakLine:after {
+  border-top-color: $payTicketBgNegative;
+  border-right-color: $payTicketBgNegative;
+}
+.payTicket.negative .status{
+  background-color:$payTicketBgNegative;
+}
+
+// warning
+.payTicket.warning{
+  color: #573a08;
+}
+.payTicket.warning .topBox .priceBox{
+  	background: $payTicketBgWarning;
+}
+.payTicket.warning .breakLine {
+  background-color:$payTicketBgWarning;
+}
+.payTicket.warning .breakLine:before, .payTicket.warning .breakLine:after {
+  border-top-color: $payTicketBgWarning;
+  border-right-color: $payTicketBgWarning;
+}
+.payTicket.warning .status{
+  background-color:$payTicketBgWarning;
+}
+
+
+
+
+
+
+
 
 .payTicketDetail{
 	background-color:#fff;

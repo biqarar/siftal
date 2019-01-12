@@ -20746,14 +20746,11 @@ body.siftal .cbox table {
   overflow: hidden;
   box-shadow: 0px 0px 4rem 1px #eee;
   border-radius: 0.5rem;
-  margin: 1em auto; }
-
-.payTicket .topBox {
-  color: #1f8fff;
-  overflow: visible !important; }
+  margin: 1em auto;
+  color: #777; }
 
 .payTicket .topBox .priceBox {
-  background: #c5e2ff;
+  background: #d7dbde;
   text-align: left;
   padding: 0 1rem;
   height: 120px;
@@ -20776,7 +20773,7 @@ body.siftal .cbox table {
   margin: 10px 0;
   position: relative;
   box-shadow: 0 1px 0 0 #fff, 0 -1px 0 0 #fff;
-  background-color: #c5e2ff; }
+  background-color: #d7dbde; }
 
 .payTicket .breakLine:before, .payTicket .breakLine:after {
   content: '';
@@ -20786,8 +20783,8 @@ body.siftal .cbox table {
   height: 30px;
   top: 50%;
   border: 5px solid transparent;
-  border-top-color: #c5e2ff;
-  border-right-color: #c5e2ff;
+  border-top-color: #d7dbde;
+  border-right-color: #d7dbde;
   border-radius: 100%;
   pointer-events: none;
   -webkit-transform: rotate(-225deg);
@@ -20809,7 +20806,7 @@ body.siftal .cbox table {
   border-right: 3px dotted #fff; }
 
 .payTicket .status {
-  background-color: #c5e2ff;
+  background-color: #d7dbde;
   position: relative;
   height: 120px;
   overflow: hidden; }
@@ -20830,6 +20827,70 @@ body.siftal .cbox table {
   left: 0;
   text-align: center;
   font-weight: 900; }
+
+.payTicket.active {
+  color: #1f8fff; }
+
+.payTicket.active .topBox .priceBox {
+  background: #c5e2ff; }
+
+.payTicket.active .breakLine {
+  background-color: #c5e2ff; }
+
+.payTicket.active .breakLine:before, .payTicket.active .breakLine:after {
+  border-top-color: #c5e2ff;
+  border-right-color: #c5e2ff; }
+
+.payTicket.active .status {
+  background-color: #c5e2ff; }
+
+.payTicket.positive {
+  color: #2c662d; }
+
+.payTicket.positive .topBox .priceBox {
+  background: #9dd026; }
+
+.payTicket.positive .breakLine {
+  background-color: #9dd026; }
+
+.payTicket.positive .breakLine:before, .payTicket.positive .breakLine:after {
+  border-top-color: #9dd026;
+  border-right-color: #9dd026; }
+
+.payTicket.positive .status {
+  background-color: #9dd026; }
+
+.payTicket.negative {
+  color: #9f3a38; }
+
+.payTicket.negative .topBox .priceBox {
+  background: #fff6f6; }
+
+.payTicket.negative .breakLine {
+  background-color: #fff6f6; }
+
+.payTicket.negative .breakLine:before, .payTicket.negative .breakLine:after {
+  border-top-color: #fff6f6;
+  border-right-color: #fff6f6; }
+
+.payTicket.negative .status {
+  background-color: #fff6f6; }
+
+.payTicket.warning {
+  color: #573a08; }
+
+.payTicket.warning .topBox .priceBox {
+  background: #eadc2c; }
+
+.payTicket.warning .breakLine {
+  background-color: #eadc2c; }
+
+.payTicket.warning .breakLine:before, .payTicket.warning .breakLine:after {
+  border-top-color: #eadc2c;
+  border-right-color: #eadc2c; }
+
+.payTicket.warning .status {
+  background-color: #eadc2c; }
 
 .payTicketDetail {
   background-color: #fff;
