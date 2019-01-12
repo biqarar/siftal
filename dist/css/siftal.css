@@ -20772,24 +20772,24 @@ body.siftal .cbox table {
   to {
     -webkit-transform: translate(400px, -400px);
     transform: translate(400px, -400px); } }
-.payBox {
+.payTicket {
   min-width: 280px;
   box-shadow: 0px 0px 4rem 1px #eee;
   border-radius: 9px;
   margin-top: 1em; }
 
-.payBox .topBox {
+.payTicket .topBox {
   color: #1f8fff;
   overflow: visible !important; }
 
-.payBox .topBox .priceBox {
+.payTicket .topBox .priceBox {
   background: #c5e2ff;
   text-align: left;
   padding: 0 1rem;
   height: 120px;
   overflow: hidden; }
 
-.payBox .topBox .price {
+.payTicket .topBox .price {
   display: inline-block;
   vertical-align: middle;
   font-size: 120px;
@@ -20797,10 +20797,10 @@ body.siftal .cbox table {
   overflow: hidden;
   height: 120px; }
 
-.payBox .topBox .unit {
+.payTicket .topBox .unit {
   display: inline-block; }
 
-.payBox .breakLine {
+.payTicket .breakLine {
   width: 20px;
   height: 100px;
   margin: 10px 0;
@@ -20808,7 +20808,7 @@ body.siftal .cbox table {
   box-shadow: 0 1px 0 0 #fff, 0 -1px 0 0 #fff;
   background-color: #c5e2ff; }
 
-.payBox .breakLine:before, .payBox .breakLine:after {
+.payTicket .breakLine:before, .payTicket .breakLine:after {
   content: '';
   position: absolute;
   right: -5px;
@@ -20823,25 +20823,25 @@ body.siftal .cbox table {
   -webkit-transform: rotate(-225deg);
   transform: rotate(-225deg); }
 
-.payBox .breakLine:before {
+.payTicket .breakLine:before {
   top: -25px; }
 
-.payBox .breakLine:after {
+.payTicket .breakLine:after {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   top: 95px; }
 
-.payBox .breakLine i {
+.payTicket .breakLine i {
   display: block;
   width: 0;
   height: 100%;
   margin: 0 auto;
   border-right: 3px dotted #fff; }
 
-.payBox .status {
+.payTicket .status {
   background-color: #c5e2ff; }
 
-.payBox .myStatus {
+.payTicket .myStatus {
   font-size: 80px;
   line-height: 120px;
   overflow: hidden;
