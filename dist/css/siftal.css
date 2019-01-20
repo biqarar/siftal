@@ -15311,10 +15311,10 @@ body.alerty2-no-backdrop .alerty2-shown.alerty2-bottom-end, body.alerty2-no-back
   vertical-align: middle; }
 
 [data-kerkere-icon="open"]::before {
-  content: "" !important; }
+  content: "\e0c0"; }
 
 [data-kerkere-icon="close"]::before {
-  content: "" !important; }
+  content: "\e0c2"; }
 
 .rtl [data-kerkere-icon="close"]::before {
   content: "\e0c1"; }
