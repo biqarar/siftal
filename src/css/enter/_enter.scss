@@ -170,9 +170,6 @@ body.enter.bg15{background-image:url('../images/bg/15.jpg')}
 @keyframes blink{ 0%{opacity:1} 100%{opacity:0} }
 
 
-// design for apps
-[data-app] .enter .langlist{display: none;}
-[data-app] .enter #enter{margin-bottom:10px;}
 
 /* responsive design*/
 @media all and (min-width:768px) and (max-width:959px) {
