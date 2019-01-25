@@ -38,8 +38,6 @@ function pushStateSiftal(_direct)
   kerkereRunner();
   // run dataCopy
   dataCopy();
-  // send google analytics
-  googleAnalyticsNewPage();
 
   if($('body').attr('data-in') === 'enter')
   {
@@ -61,6 +59,7 @@ function pushStateSiftal(_direct)
   callFunc('pushState', _direct);
   callFunc('pushStateFinal', _direct);
   callFunc('chartDrawer', _direct);
+  callFunc('pushStateGA', _direct);
 }
 
 

@@ -74,7 +74,6 @@ var myModuleFiles =
 	'src/utility/smileChecker.js',
 	'src/utility/table.js',
 	'src/utility/noscriptRemover.js',
-	'src/utility/googleAnalytics.js',
 
 	'src/utility/clock.js',
 	'src/utility/input-files.js',
