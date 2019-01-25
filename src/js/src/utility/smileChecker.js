@@ -19,9 +19,12 @@ function checkSmile(_register)
   {
     aleadyIsNew = true;
   }
+  // get user language
+  var lang = $('html').attr('lang');
+
   $.ajax(
   {
-    url:"/hook/smile",
+    url:'/' + lang + "/hook/smile",
     method:"POST",
     timeout: 1000,
     dataType:"json",
