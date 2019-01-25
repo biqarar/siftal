@@ -36,13 +36,17 @@ function checkSmile(_register)
     {
       var notifResult = notifGenerator(smileResult);
 
-      if(checkSmileLogout(smileResult))
+      // if user is loginned on this page, try to check logout
+      if($('body').attr('data-user'))
       {
-        // if is not logged out
-        // check notifications
-        checkNewNotification(smileResult);
-        // check redirect
-        checkSmileRedirect(smileResult);
+        if(checkSmileLogout(smileResult))
+        {
+          // if is not logged out
+          // check notifications
+          checkNewNotification(smileResult);
+          // check redirect
+          checkSmileRedirect(smileResult);
+        }
       }
     }
   });
