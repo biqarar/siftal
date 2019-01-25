@@ -75,6 +75,8 @@ $(document).ready(function()
   catchBeforeUnload();
   // openable table
   tbl1Openable();
+  // remove noscript tag
+  noscriptRemover();
   // run cloner
   cloner();
   pingiRunner();

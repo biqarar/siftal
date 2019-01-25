@@ -1,0 +1,6 @@
+
+function noscriptRemover()
+{
+  $('noscript').remove();
+};
+
