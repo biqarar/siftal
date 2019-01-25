@@ -1,14 +1,11 @@
 
 function googleAnalyticsNewPage()
 {
-	if(typeof window['ga'] === 'function')
+	if(typeof window['gtag'] === 'function')
 	{
-		ga('set',
-		{
-			page: window.location.href,
-			title: $('title').text()
-		});
-		ga('send', 'pageview');
+		var origin = window.location.protocol + '//' + window.location.host;
+		var pathname = window.location.href.substr(origin.length);
+		gtag('config', 'GA_TRACKING_ID', {'page_path': pathname});
 	}
 
 }
