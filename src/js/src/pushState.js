@@ -38,6 +38,8 @@ function pushStateSiftal(_direct)
   kerkereRunner();
   // run dataCopy
   dataCopy();
+  // send google analytics
+  googleAnalyticsNewPage();
 
   if($('body').attr('data-in') === 'enter')
   {
