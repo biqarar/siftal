@@ -1,6 +1,6 @@
 
 function handlePayEvents()
 {
-	$(".payTicket .price").shrink(100);
+	$(".payTicket .priceBox").shrink(100);
 }
 
