@@ -20822,6 +20822,10 @@ body.siftal .cbox table {
   font-size: 1.2em;
   margin-bottom: 1em; }
 
+.siftal #sidebar ul.sidenavService {
+  font-size: 1.2em;
+  margin-bottom: 1em; }
+
 .siftal #sidebar ul > li {
   color: #d5d5d5; }
 
