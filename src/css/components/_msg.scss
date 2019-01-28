@@ -20,10 +20,13 @@
   border: 1px solid transparent;
   border-radius:0.25rem;
   min-height: 1em;
-  line-height:1.25;
+  line-height:1.5;
   opacity: 0.7;
   background-color:#f7f7f7;
   color: #333;
+}
+.rtl .msg{
+  line-height: 2;
 }
 .msg:empty{
   display:none

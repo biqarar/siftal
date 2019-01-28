@@ -3,6 +3,7 @@
 .check1 input{padding:0;margin:0;position:absolute;z-index:-1;width:0;height:0;opacity:0}
 .check1 label{position:relative;cursor:pointer;padding:0;display:inline-block;line-height: 20px;}
 .check1 label::before{content:'';margin-right:10px;display:inline-block;vertical-align:middle;width:20px;height:20px;transition:0.3s;border-radius:3px;border:1px solid rgba(0,0,0,0.1);}
+.msg .check1 label::before{border-color: #333}
 .check1 label::after{content:'';position:absolute;left:5px;top:9px;background-color:#fff;width:2px;height:2px;box-shadow:2px 0 0 white,4px 0 0 white,4px -2px 0 white,4px -4px 0 white,4px -6px 0 white,4px -8px 0 #fff;-webkit-transform:rotate(45deg);transform:rotate(45deg);opacity:0;transition:0.1s}
 .check1 label:hover::before{border-color:rgba(0, 0, 0, 0.2)}
 .check1 input:checked+label::after{opacity:1}
