@@ -8,6 +8,19 @@ function watchScroll()
   // watch simple links
   $('a[href*="#"]:not([href="#"])').on("click", function()
   {
+    var $this = $(this);
+    if(
+        $this.attr('target') === '_blank' ||
+        $this.hasAttr('data-ajaxify') ||
+        $this.hasAttr('data-action') ||
+        $this.hasAttr('data-direct') ||
+        $this.hasAttr('data-modal') ||
+        $this.isAbsoluteURL()
+      )
+      {
+        return;
+      }
+
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname)
     {
       var hash   = this.hash;
