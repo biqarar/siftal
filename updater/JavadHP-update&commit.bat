@@ -78,3 +78,11 @@ git commit -m "Automatic update Siftal! 0_0"
 
 
 
+xcopy "%SIFTAL%" "%PROJECTS%\SalamQuran\public_html\static\siftal" /E /H /K /Y
+cd "%PROJECTS%\SalamQuran\"
+git add .
+git commit -m "Automatic update Siftal! 0_0"
+
+
+
+

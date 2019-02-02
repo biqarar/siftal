@@ -89,3 +89,10 @@ git push origin master
 
 
 
+xcopy "%SIFTAL%" "%PROJECTS%\SalamQuran\public_html\static\siftal" /E /H /K /Y
+cd "%PROJECTS%\SalamQuran\"
+git add .
+git commit -m "Automatic update Siftal! 🐝 🍭"
+git push origin master
+
+

@@ -12,3 +12,4 @@ xcopy "%SIFTAL%" "%PROJECTS%\sarshomar\public_html\static\siftal" /E /H /K /Y
 xcopy "%SIFTAL%" "%PROJECTS%\taraztax\public_html\static\siftal" /E /H /K /Y
 xcopy "%SIFTAL%" "%PROJECTS%\tejarak\public_html\static\siftal" /E /H /K /Y
 xcopy "%SIFTAL%" "%PROJECTS%\karimehDonate\public_html\static\siftal" /E /H /K /Y
+xcopy "%SIFTAL%" "%PROJECTS%\SalamQuran\public_html\static\siftal" /E /H /K /Y
