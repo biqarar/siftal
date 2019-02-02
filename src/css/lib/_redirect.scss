@@ -24,7 +24,9 @@ body.redirecting .detail h2{
   font-size: 0.9em;
   font-weight: 100;
 }
-
+body.redirecting .detail h2 a{
+  font-weight: 100;
+}
 body.redirecting .jet {
   position:relative;
   margin: 150px auto 50px;
