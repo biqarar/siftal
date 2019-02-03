@@ -5,7 +5,7 @@
  */
 function responsiveSidebar()
 {
-  $('body').on('click', function(_e)
+  $('body').on('mousedown touchmove', function(_e)
   {
     if($(_e.target).parents('.sidenavHandler').length)
     {
