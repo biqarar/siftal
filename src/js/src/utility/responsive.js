@@ -7,7 +7,7 @@ function responsiveSidebar()
 {
   $('body').on('mousedown touchmove', function(_e)
   {
-    if($(_e.target).parents('.sidenavHandler').length)
+    if($(_e.target).parents('.sidenavHandler').length || $(_e.target).hasClass('sidenavHandler') )
     {
       // click on hanlder, do nothing!
       $("body").attr('data-sidebar', 'dada');
