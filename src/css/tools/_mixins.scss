@@ -177,8 +177,8 @@
   .pB#{$val}-f {padding-bottom: #{$val}px!important;}
   .pR#{$val}-f {padding-right: #{$val}px!important;}
   .pL#{$val}-f {padding-left: #{$val}px!important;}
-  .pTB#{$val}-f {padding-top: #{$val}px; padding-bottom: #{$val}px!important;}
-  .pLR#{$val}-f {padding-left: #{$val}px; padding-right: #{$val}px!important;}
+  .pTB#{$val}-f {padding-top: #{$val}px!important;; padding-bottom: #{$val}px!important;}
+  .pLR#{$val}-f {padding-left: #{$val}px!important;; padding-right: #{$val}px!important;}
 
   .ltr .pRa#{$val}-f {padding-right: #{$val}px!important;}
   .rtl .pRa#{$val}-f {padding-left: #{$val}px!important;}
@@ -206,8 +206,8 @@
   .mB#{$val}-f {margin-bottom: #{$val}px!important;}
   .mR#{$val}-f {margin-right: #{$val}px!important;}
   .mL#{$val}-f {margin-left: #{$val}px!important;}
-  .mTB#{$val}-f {margin-top: #{$val}px; margin-bottom: #{$val}px!important;}
-  .mLR#{$val}-f {margin-left: #{$val}px; margin-right: #{$val}px!important;}
+  .mTB#{$val}-f {margin-top: #{$val}px!important;; margin-bottom: #{$val}px!important;}
+  .mLR#{$val}-f {margin-left: #{$val}px!important;; margin-right: #{$val}px!important;}
 
   .ltr .mRa#{$val}-f {margin-right: #{$val}px!important;}
   .rtl .mRa#{$val}-f {margin-left: #{$val}px!important;}
