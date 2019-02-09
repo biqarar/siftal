@@ -114,6 +114,17 @@ body.enter.bg15{background-image:url('../images/bg/15.jpg')}
 	line-height:50px;
 }
 
+.enter .agreement{
+	background-color: rgba(0, 0, 0, 0.1);
+	font-size: 1.15rem;
+	padding: 0 1em;
+	color: #ddd;
+}
+.enter .agreement a{
+	color: #fff;
+	font-weight: 700;
+}
+
 .enter form #email, .enter form #emailNew{font-size:0.8em;}
 
 /* change style of autocomplete*/
