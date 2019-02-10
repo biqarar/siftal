@@ -2082,7 +2082,8 @@ progress.xl, meter.xl {
   table-layout: fixed; }
 
 .tbl1 thead {
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  display: table-row-group; }
 
 .tbl1 thead.repeat {
   display: table-header-group; }
