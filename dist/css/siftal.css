@@ -2065,11 +2065,13 @@ progress.xl, meter.xl {
   width: 100%;
   max-width: 100%;
   position: relative;
-  -fs-table-paginate: paginate;
   overflow: hidden;
   line-height: 1.4;
   margin-bottom: 1em;
   border-collapse: collapse; }
+
+.tbl1 .repeatHead {
+  -fs-table-paginate: paginate; }
 
 .rtl .tbl1 {
   line-height: 2; }
@@ -2085,7 +2087,7 @@ progress.xl, meter.xl {
   font-size: 1.2em;
   display: table-row-group; }
 
-.tbl1 thead.repeat {
+.tbl1.repeatHead thead {
   display: table-header-group; }
 
 .tbl1 th {
