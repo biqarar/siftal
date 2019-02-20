@@ -700,6 +700,11 @@ ul.list li a {
   user-select: none;
   cursor: default; }
 
+.selectable {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  user-select: text; }
+
 .visible {
   visibility: visible;
   opacity: 1;
@@ -20352,11 +20357,6 @@ body.siftal .full {
 body.siftal .full .middle {
   width: 100%;
   max-height: 100%; }
-
-body.siftal .cbox table {
-  -webkit-user-select: text;
-  -moz-user-select: text;
-  user-select: text; }
 
 .siftal form #mobile {
   direction: ltr; }

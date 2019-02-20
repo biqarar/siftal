@@ -29,6 +29,11 @@ ul.list li a {padding:0.3em 0.5em;}
 	user-select:none;
 	cursor:default;
 }
+.selectable{
+	-webkit-user-select: text;
+	-moz-user-select: text;
+	user-select: text;
+}
 
 .visible{visibility:visible;opacity:1;-webkit-transition:opacity .5s linear;-o-transition:opacity .5s linear;-moz-transition:opacity .5s linear;transition:opacity .5s linear}
 .hidden{visibility:hidden;opacity:0;-webkit-transition:visibility 0 0.5s,opacity .5s linear;-o-transition:visibility 0 0.5s,opacity .5s linear;-moz-transition:visibility 0 0.5s,opacity .5s linear;transition:visibility 0s 0.5s,opacity .5s linear}
