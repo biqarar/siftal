@@ -6,7 +6,7 @@
 function watchScroll()
 {
   // watch simple links
-  $('a[href*="#"]:not([href="#"])').on("click", function()
+  $('a[href*="#"]:not([href="#"])').on("click", function(_e)
   {
     var $this = $(this);
     if(
@@ -148,6 +148,11 @@ function scrollSmoothTo(_target, _hashtag, _timing, _arg)
   }
 
   var page = $("html, body");
+  if($('body').hasClass('siftal'))
+  {
+    page = $("html");
+  }
+
   // add event to page to allow to stop scroll
   page.on("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove", function()
   {
@@ -161,8 +166,20 @@ function scrollSmoothTo(_target, _hashtag, _timing, _arg)
   {
     if(_hashtag)
     {
-      window.location.hash = _hashtag;
+      if(window.location.hash !== _hashtag)
+      {
+        window.location.hash = _hashtag;
+        if($('body').hasClass('siftal'))
+        {
+          page.stop();
+          page.animate(
+          {
+            scrollTop: targetOffset
+          }, _timing/2);
+        }
+      }
     }
+
     // remove events form page
     page.off("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove");
   });
