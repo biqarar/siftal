@@ -166,16 +166,19 @@ function scrollSmoothTo(_target, _hashtag, _timing, _arg)
   {
     if(_hashtag)
     {
-      if(window.location.hash !== _hashtag)
+      if($('body').hasClass('siftal'))
       {
-        window.location.hash = _hashtag;
-        if($('body').hasClass('siftal'))
+        // do not set hashtag of url in siftal because of jumping
+        if(window.location.hash)
         {
-          page.stop();
-          page.animate(
-          {
-            scrollTop: targetOffset
-          }, _timing/2);
+          window.location.hash = '';
+        }
+      }
+      else
+      {
+        if(window.location.hash !== _hashtag)
+        {
+          window.location.hash = _hashtag;
         }
       }
     }
