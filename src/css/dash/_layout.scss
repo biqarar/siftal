@@ -119,6 +119,16 @@ body.siftal .full .middle{width:100%;max-height:100%;}
 .siftal[data-in="su"] .pagination a:link:hover{color:#eee;background-color:#333}
 
 
+// for api
+.siftal[data-in="api"] body{background-color:#eee;}
+.siftal[data-in="api"] pre{background-color:#333;color:#eee;padding:1em;user-select:text;margin-bottom:1em;}
+.siftal[data-in="api"] code{background-color:rgba(0,0,0,0.4);color:#fff;padding:0 0.5em;}
+.siftal[data-in="api"] .msg.url{direction:ltr;font-family:monospace, sans-serif;}
+.siftal[data-in="api"] .msg.url span{user-select:text;}
+.siftal[data-in="api"] .cbox ol{margin:0 2em;}
+.siftal[data-in="api"] .cbox ol li{padding:0.5em 0 0;}
+
+
 // openable table for notification
 .tbl1.openable th.type, .tbl1.openable td.type{width:60px;text-align:center;}
 .tbl1.openable th.subject, .tbl1.openable td.subject{width:70%;}
