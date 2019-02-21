@@ -15,7 +15,7 @@ function cloner()
 
 
   // on body scroll used in siftal
-  $(window).on("scroll", function()
+  $(window).on("scroll load", function()
   {
     var myScroll = $("html").scrollTop() || $("body").scrollTop();
     $.each($('.cloner'), function(index, val)

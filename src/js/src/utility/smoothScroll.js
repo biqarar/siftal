@@ -105,7 +105,14 @@ function scrollSmoothTo(_target, _hashtag, _timing, _arg)
   }
   else
   {
-    targetOffset = _target.offset().top - 10;
+    if($('body').hasClass('siftal'))
+    {
+      targetOffset = _target.offset().top - 60;
+    }
+    else
+    {
+      targetOffset = _target.offset().top - 10;
+    }
   }
   // if target is near top of page, scroll to top
   if(targetOffset<100 || _arg === 'top')
