@@ -21246,12 +21246,12 @@ body.siftal .full .middle {
   background-color: #eadc2c; }
 
 .payTicketDetail {
-  background-color: #fff;
   color: #555;
   font-size: 1.2em;
-  margin: 0 auto;
-  padding: 1em;
-  border-radius: 0.5rem; }
+  margin: 0 auto; }
+
+.payTicketDetail .msg {
+  background-color: #fff; }
 
 @media all and (min-width: 1400px) {
   .cn {

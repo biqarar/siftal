@@ -242,11 +242,11 @@ $payTicketBgWarning: #eadc2c;
 
 
 .payTicketDetail{
-	background-color:#fff;
 	color: #555;
 	font-size: 1.2em;
 	margin: 0 auto;
-	padding: 1em;
-	border-radius:0.5rem;
+}
+.payTicketDetail .msg{
+  background-color: #fff;
 }
 
