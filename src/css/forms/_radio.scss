@@ -117,14 +117,15 @@
 
 
 // radio gateway
-.radioGateway{padding:0.5em;position:relative;cursor:pointer;display:inline-flex;}
+.radioGateway{margin:0.5em;position:relative;cursor:pointer;display:inline-flex;}
 .radioGateway input{padding:0;margin:0;position:absolute;z-index:-1;width:0;height:0;opacity:0}
-.radioGateway label{padding:1px;position:relative;cursor:pointer;border:2px solid #efefef;transition:0.3s;background-color:rgba(0,0,0,0.1);width:70px;height:70px;border-radius:0.25rem;}
+.radioGateway label{padding:1px;position:relative;cursor:pointer;border:2px solid #f8f8f8;transition:0.3s;background-color:#f8f8f8;width:70px;height:70px;border-radius:0.25rem;}
 .radioGateway img{width:100%;height:auto;}
-.radioGateway input:checked+label{border-color:#37aaa7;background-color:rgba(240,240,240,0.5);box-shadow: inset 0px 0px 30px 0px #4090d0}
-.radioGateway input:hover+label{opacity:0.8;border-color:#ccc;}
-.radioGateway input:focus+label{border-color:#00a0f0;}
-.radioGateway input:active+label{transform: translateY(5px);}
+.radioGateway input:checked+label{border-color:#1f8fff;background-color:#fff;}
+.radioGateway input:hover+label{opacity:0.8;border-color:#1f8fff;}
+.radioGateway input:focus+label{background-color:#fff;}
+.radioGateway input+label:after{font-family:"siftal", "tahoma" !important;content:"\e022";width:20px;height:20px;line-height:20px;font-size:10px;text-align:center;background-color:#1f8fff;color:#fff;position:absolute;top:-7px;right:-7px;border-radius:50%;-webkit-transform: scale(0);-moz-transform: scale(0);-ms-transform: scale(0);-o-transform: scale(0);transform: scale(0);-webkit-transition: all .25s cubic-bezier(.2,1,.2,1);-moz-transition: all .25s cubic-bezier(.2,1,.2,1);-o-transition: all .25s cubic-bezier(.2,1,.2,1);transition: all .25s cubic-bezier(.2,1,.2,1)}
+.radioGateway input:checked+label:after{-webkit-transform:scale(1);-moz-transform: scale(1);-ms-transform: scale(1);-o-transform: scale(1);transform: scale(1);}
 
 
 
