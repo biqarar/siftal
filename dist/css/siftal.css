@@ -21051,7 +21051,7 @@ body.siftal .full .middle {
   margin: 1em auto;
   color: #777; }
 
-.payTicket .topBox .priceBox {
+.payTicket .topBox .payPriceBox {
   background: #d7dbde;
   text-align: left;
   padding: 0 1rem;
@@ -21138,7 +21138,7 @@ body.siftal .full .middle {
 .payTicket.active {
   color: #1f8fff; }
 
-.payTicket.active .topBox .priceBox {
+.payTicket.active .topBox .payPriceBox {
   background: #c5e2ff; }
 
 .payTicket.active .breakLine {
@@ -21154,7 +21154,7 @@ body.siftal .full .middle {
 .payTicket.positive {
   color: #2c662d; }
 
-.payTicket.positive .topBox .priceBox {
+.payTicket.positive .topBox .payPriceBox {
   background: #9dd026; }
 
 .payTicket.positive .breakLine {
@@ -21170,7 +21170,7 @@ body.siftal .full .middle {
 .payTicket.negative {
   color: #9f3a38; }
 
-.payTicket.negative .topBox .priceBox {
+.payTicket.negative .topBox .payPriceBox {
   background: #fff6f6; }
 
 .payTicket.negative .breakLine {
@@ -21186,7 +21186,7 @@ body.siftal .full .middle {
 .payTicket.warning {
   color: #573a08; }
 
-.payTicket.warning .topBox .priceBox {
+.payTicket.warning .topBox .payPriceBox {
   background: #eadc2c; }
 
 .payTicket.warning .breakLine {

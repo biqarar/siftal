@@ -52,7 +52,7 @@ $payTicketBgWarning: #eadc2c;
 }
 
 
-.payTicket .topBox .priceBox{
+.payTicket .topBox .payPriceBox{
   	background: $payTicketBg;
 	text-align: left;
 	padding:0 1rem;
@@ -145,7 +145,7 @@ $payTicketBgWarning: #eadc2c;
 .payTicket.active{
   color: #1f8fff;
 }
-.payTicket.active .topBox .priceBox{
+.payTicket.active .topBox .payPriceBox{
   	background: $payTicketBgActive;
 }
 .payTicket.active .breakLine {
@@ -163,7 +163,7 @@ $payTicketBgWarning: #eadc2c;
 .payTicket.positive{
   color: #2c662d;
 }
-.payTicket.positive .topBox .priceBox{
+.payTicket.positive .topBox .payPriceBox{
   	background: $payTicketBgPositive;
 }
 .payTicket.positive .breakLine {
@@ -181,7 +181,7 @@ $payTicketBgWarning: #eadc2c;
 .payTicket.negative{
   color: #9f3a38;
 }
-.payTicket.negative .topBox .priceBox{
+.payTicket.negative .topBox .payPriceBox{
   	background: $payTicketBgNegative;
 }
 .payTicket.negative .breakLine {
@@ -199,7 +199,7 @@ $payTicketBgWarning: #eadc2c;
 .payTicket.warning{
   color: #573a08;
 }
-.payTicket.warning .topBox .priceBox{
+.payTicket.warning .topBox .payPriceBox{
   	background: $payTicketBgWarning;
 }
 .payTicket.warning .breakLine {
