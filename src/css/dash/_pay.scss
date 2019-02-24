@@ -37,6 +37,7 @@
 
 $payTicketBg: #d7dbde;
 $payTicketBgActive: #c5e2ff;
+$payTicketBgActiveHover: #b0d8ff;
 $payTicketBgPositive: #9dd026;
 $payTicketBgNegative: #fff6f6;
 $payTicketBgWarning: #eadc2c;
@@ -149,17 +150,35 @@ $payTicketBgWarning: #eadc2c;
 }
 .payTicket.active .topBox .payPriceBox{
   	background: $payTicketBgActive;
+    transition:0.3s;
 }
 .payTicket.active .breakLine {
   background-color:$payTicketBgActive;
+  transition:0.3s;
 }
 .payTicket.active .breakLine:before, .payTicket.active .breakLine:after {
   border-top-color: $payTicketBgActive;
   border-right-color: $payTicketBgActive;
+  transition:0.3s;
 }
 .payTicket.active .status{
   background-color:$payTicketBgActive;
+  transition:0.3s;
 }
+.payTicket.active:hover .topBox .payPriceBox{
+    background: $payTicketBgActiveHover;
+}
+.payTicket.active:hover .breakLine {
+  background-color:$payTicketBgActiveHover;
+}
+.payTicket.active:hover .breakLine:before, .payTicket.active:hover .breakLine:after {
+  border-top-color: $payTicketBgActiveHover;
+  border-right-color: $payTicketBgActiveHover;
+}
+.payTicket.active:hover .status{
+  background-color:$payTicketBgActiveHover;
+}
+
 
 // positive
 .payTicket.positive{

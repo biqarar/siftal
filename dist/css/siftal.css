@@ -21141,17 +21141,34 @@ body.siftal .full .middle {
   color: #1f8fff; }
 
 .payTicket.active .topBox .payPriceBox {
-  background: #c5e2ff; }
+  background: #c5e2ff;
+  transition: 0.3s; }
 
 .payTicket.active .breakLine {
-  background-color: #c5e2ff; }
+  background-color: #c5e2ff;
+  transition: 0.3s; }
 
 .payTicket.active .breakLine:before, .payTicket.active .breakLine:after {
   border-top-color: #c5e2ff;
-  border-right-color: #c5e2ff; }
+  border-right-color: #c5e2ff;
+  transition: 0.3s; }
 
 .payTicket.active .status {
-  background-color: #c5e2ff; }
+  background-color: #c5e2ff;
+  transition: 0.3s; }
+
+.payTicket.active:hover .topBox .payPriceBox {
+  background: #b0d8ff; }
+
+.payTicket.active:hover .breakLine {
+  background-color: #b0d8ff; }
+
+.payTicket.active:hover .breakLine:before, .payTicket.active:hover .breakLine:after {
+  border-top-color: #b0d8ff;
+  border-right-color: #b0d8ff; }
+
+.payTicket.active:hover .status {
+  background-color: #b0d8ff; }
 
 .payTicket.positive {
   color: #2c662d; }
