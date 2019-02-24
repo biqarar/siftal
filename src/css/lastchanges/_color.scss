@@ -169,7 +169,6 @@
 // light btn
 .light{
 	background-color: #f6f8fa;
-	color: #111;
 }
 .light.outline{
 	background-color: transparent;
@@ -178,11 +177,11 @@
 }
 .light:hover{
 	background-color: #e2e6ea;
-	color: #111;
+	color: #333!important;
 }
 .light:focus{
 	background-color: #d0d6e0;
-	color: #111;
+	color: #111!important;
 }
 .light:active, .light.active{
 	background-color: #c0d0e0;
