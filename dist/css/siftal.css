@@ -17080,7 +17080,7 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
   right: 23px; }
 
 .radioGateway {
-  margin: 0.5em;
+  margin: 5px;
   position: relative;
   cursor: pointer;
   display: inline-flex; }
@@ -17095,14 +17095,13 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
   opacity: 0; }
 
 .radioGateway label {
-  padding: 1px;
   position: relative;
   cursor: pointer;
   border: 2px solid #f8f8f8;
   transition: 0.3s;
   background-color: #f8f8f8;
-  width: 70px;
-  height: 70px;
+  width: 68px;
+  height: 68px;
   border-radius: 0.25rem; }
 
 .radioGateway img {
@@ -17132,7 +17131,6 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
   color: #fff;
   position: absolute;
   top: -7px;
-  right: -7px;
   border-radius: 50%;
   -webkit-transform: scale(0);
   -moz-transform: scale(0);
@@ -17143,6 +17141,12 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
   -moz-transition: all 0.25s cubic-bezier(0.2, 1, 0.2, 1);
   -o-transition: all 0.25s cubic-bezier(0.2, 1, 0.2, 1);
   transition: all 0.25s cubic-bezier(0.2, 1, 0.2, 1); }
+
+.ltr .radioGateway input + label:after {
+  left: -7px; }
+
+.rtl .radioGateway input + label:after {
+  right: -7px; }
 
 .radioGateway input:checked + label:after {
   -webkit-transform: scale(1);
@@ -21080,7 +21084,7 @@ body.siftal .full .middle {
 
 .payTicket .topBox .payPriceBox {
   background: #d7dbde;
-  text-align: left;
+  text-align: center;
   padding: 0 1rem;
   height: 120px;
   overflow: hidden;
