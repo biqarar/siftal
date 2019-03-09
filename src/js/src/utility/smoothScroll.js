@@ -146,9 +146,9 @@ function scrollSmoothTo(_target, _hashtag, _timing, _arg)
     // calc timing with size of scroll
     _timing  = Math.round(diff/2);
     // if timing is very short, replace with 0.2s
-    if(_timing<100)
+    if(_timing < 300)
     {
-      _timing = 100;
+      _timing = 300;
     }
     else if(_timing>1500)
     {
