@@ -105,13 +105,22 @@ function scrollSmoothTo(_target, _hashtag, _timing, _arg)
   }
   else
   {
+    if(!_target)
+    {
+      return false;
+    }
+    if(_target && _target.offset())
+    {
+      targetOffset = _target.offset().top;
+    }
+
     if($('body').hasClass('siftal'))
     {
-      targetOffset = _target.offset().top - 60;
+      targetOffset -= 60;
     }
     else
     {
-      targetOffset = _target.offset().top - 10;
+      targetOffset -= 10;
     }
   }
   // if target is near top of page, scroll to top
