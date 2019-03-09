@@ -19191,6 +19191,15 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
 .floatN {
   float: none; }
 
+.floatR-f {
+  float: right !important; }
+
+.floatL-f {
+  float: left !important; }
+
+.floatN-f {
+  float: none !important; }
+
 .ltr .floatRa {
   float: right; }
 
@@ -19202,6 +19211,18 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
 
 .rtl .floatLa {
   float: right; }
+
+.ltr .floatRa-f {
+  float: right !important; }
+
+.rtl .floatRa-f {
+  float: left !important; }
+
+.ltr .floatLa-f {
+  float: left !important; }
+
+.rtl .floatLa-f {
+  float: right !important; }
 
 .fs05 {
   font-size: 0.5em; }

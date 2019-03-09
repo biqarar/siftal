@@ -37,10 +37,19 @@
 .floatL{float:left}
 .floatN{float:none}
 
+.floatR-f{float:right!important}
+.floatL-f{float:left!important}
+.floatN-f{float:none!important}
+
 .ltr .floatRa{float:right}
 .rtl .floatRa{float:left}
 .ltr .floatLa{float:left}
 .rtl .floatLa{float:right}
+
+.ltr .floatRa-f{float:right!important}
+.rtl .floatRa-f{float:left!important}
+.ltr .floatLa-f{float:left!important}
+.rtl .floatLa-f{float:right!important}
 
 
 // include all font sizes
