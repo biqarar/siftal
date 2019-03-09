@@ -8,8 +8,29 @@ function dataCopy()
     var targetEl = $($this.attr('data-copy'));
     if(targetEl.length)
     {
-      targetEl.attr('disabled', null);
-      targetEl.select();
+      // targetEl.attr('disabled', null);
+
+      if (navigator.userAgent.match(/ipad|ipod|iphone/i))
+      {
+        var el = targetEl.get(0);
+        var editable = el.contentEditable;
+        var readOnly = el.readOnly;
+        el.contentEditable = true;
+        el.readOnly = false;
+        var range = document.createRange();
+        range.selectNodeContents(el);
+        var sel = window.getSelection();
+        sel.removeAllRanges();
+        sel.addRange(range);
+        el.setSelectionRange(0, 999999);
+        el.contentEditable = editable;
+        el.readOnly = readOnly;
+      }
+      else
+      {
+        targetEl.select();
+      }
+
       try
       {
         // copy to clipboard
