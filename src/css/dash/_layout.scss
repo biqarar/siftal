@@ -135,7 +135,7 @@ body.siftal .full .middle{width:100%;max-height:100%;}
 // openable table for notification
 .tbl1.openable th.type, .tbl1.openable td.type{width:60px;text-align:center;}
 .tbl1.openable th.subject, .tbl1.openable td.subject{width:70%;}
-.tbl1.openable th.date, .tbl1.openable td.date{width:150px;}
+.tbl1.openable th.date, .tbl1.openable td.date{max-width:150px;}
 .tbl1.openable th.via, .tbl1.openable td.via{width:75px;}
 .tbl1.openable td.type i{background-color:#eee;padding:5px;border-radius:50%;width: 40px;height: 40px;line-height: 32px;font-size: 1.2em;display: block;margin:0 auto;}
 
