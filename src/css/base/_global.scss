@@ -1,3 +1,10 @@
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
 
 #ermileBadge{padding:10px 1.5em;background-color:#24292e;color:#eee;transition:0.3s;height:70px;user-select:none}
 #ermileBadge:hover{background-color:#044f6f;}

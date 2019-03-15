@@ -615,6 +615,12 @@ address {
   display: block;
   clear: both; }
 
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important; }
+
 #ermileBadge {
   padding: 10px 1.5em;
   background-color: #24292e;
