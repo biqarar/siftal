@@ -93,6 +93,7 @@ var myModuleFiles =
 
 
 	'src/main.js',
+	'src/load.js',
 	'src/pushState.js',
 ];
 
