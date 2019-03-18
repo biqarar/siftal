@@ -10,14 +10,7 @@
 	-webkit-touch-callout:none;
 	cursor:default;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
-	// disable user select
-	-webkit-user-select: none;
-	-moz-user-select:none;
-	user-select:none;
-
-	// add overflow start bug of scroll on mobiles like iphone!
-	// overflow-x:hidden;
-	// overflow-y:auto;
+	@include user-select(none);
 }
 
 // main
@@ -32,7 +25,7 @@
 .siftal #main:hover:before{background-color:rgba(0,0,0,0.5);}
 .siftal #main:hover:after{color:#eee;}
 // sidebar
-.siftal #sidebar{overflow:hidden;overflow-y:auto;width:250px;height:100%;position:relative;background-color:#302b2b;user-select:none;position:fixed;top:0;bottom:0;z-index:10; -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; -ms-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; transition: all 0.2s ease-out; transition: all 200ms cubic-bezier(.694, .0482, .335, 1);transition-property:right,left;transform: translateX(0)}
+.siftal #sidebar{overflow:hidden;overflow-y:auto;width:250px;height:100%;position:relative;background-color:#302b2b;@include user-select(none);position:fixed;top:0;bottom:0;z-index:10; -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; -ms-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; transition: all 0.2s ease-out; transition: all 200ms cubic-bezier(.694, .0482, .335, 1);transition-property:right,left;transform: translateX(0)}
 .siftal.ltr #sidebar{left:0}
 .siftal.rtl #sidebar{right:0}
 
@@ -124,10 +117,10 @@ body.siftal .full .middle{width:100%;max-height:100%;}
 
 // for api
 .siftal[data-in="api"] body{background-color:#eee;}
-.siftal[data-in="api"] pre{background-color:#333;color:#eee;padding:1em;user-select:text;margin-bottom:1em;}
+.siftal[data-in="api"] pre{background-color:#333;color:#eee;padding:1em;margin-bottom:1em;@include user-select(text);}
 .siftal[data-in="api"] code{background-color:rgba(0,0,0,0.4);color:#fff;padding:0 0.5em;}
 .siftal[data-in="api"] .msg.url{direction:ltr;font-family:monospace, sans-serif;}
-.siftal[data-in="api"] .msg.url span{user-select:text;}
+.siftal[data-in="api"] .msg.url span{@include user-select(text);}
 .siftal[data-in="api"] .cbox ol{margin:0 2em;}
 .siftal[data-in="api"] .cbox ol li{padding:0.5em 0 0;}
 

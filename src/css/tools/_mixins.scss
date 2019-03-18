@@ -274,6 +274,19 @@
   filter: alpha(opacity=$opacity-ie); //IE8
 }
 
+@mixin user-select($val) {
+@if $val == none
+{
+  -webkit-touch-callout:$val;
+  -khtml-user-select:$val;
+  -ms-user-select:$val;
+  cursor:default;
+}
+  -webkit-user-select:$val;
+  -moz-user-select:$val;
+  user-select:$val;
+}
+
 
 
 
