@@ -20749,7 +20749,7 @@ body.siftal .full .middle {
   max-height: 50px; }
 
 .siftal .dashHead .hm div:before {
-  content: "\e00f";
+  content: "\e20c";
   font-family: "siftal","tahoma" !important;
   position: absolute;
   top: 0;
@@ -20758,7 +20758,7 @@ body.siftal .full .middle {
   left: 0;
   line-height: 50px;
   text-align: center;
-  font-size: 2em; }
+  font-size: 1.5em; }
 
 .siftal .dashHead .hm a:hover, .siftal .dashHead .hm div:hover {
   color: #555;
@@ -20882,7 +20882,7 @@ body.siftal .full .middle {
 
 .siftal #sidebar figure .avatar:after {
   font-family: "siftal";
-  content: "\e05f";
+  content: "\e20c";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -20893,7 +20893,7 @@ body.siftal .full .middle {
   font-size: 2em;
   border-radius: 50%;
   color: #fff;
-  opacity: 0;
+  opacity: 0.3;
   transition: 0.3s;
   margin: 5px; }
 
@@ -20918,6 +20918,7 @@ body.siftal .full .middle {
   border-color: transparent #fff; }
 
 .siftal #sidebar figure:hover .avatar:after {
+  content: "\e05f";
   background-color: rgba(0, 0, 0, 0.3);
   opacity: 1; }
 
