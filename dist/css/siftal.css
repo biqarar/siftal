@@ -20713,7 +20713,9 @@ body.siftal .full .middle {
 .siftal .dashHead h1 img {
   height: 50px;
   width: 50px;
-  padding: 5px; }
+  max-width: 50px;
+  padding: 5px;
+  overflow: hidden; }
 
 .siftal .dashHead h1 span {
   padding: 0 0.5em;
@@ -20745,6 +20747,18 @@ body.siftal .full .middle {
   transition-property: color, background-color;
   color: #888;
   max-height: 50px; }
+
+.siftal .dashHead .hm div:before {
+  content: "\e00f";
+  font-family: "siftal","tahoma" !important;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  line-height: 50px;
+  text-align: center;
+  font-size: 2em; }
 
 .siftal .dashHead .hm a:hover, .siftal .dashHead .hm div:hover {
   color: #555;
@@ -20810,6 +20824,7 @@ body.siftal .full .middle {
   width: 40px;
   max-width: 40px;
   border-radius: 50%;
+  overflow: hidden;
   margin: 5px; }
 
 .siftal .dashHead .notification[data-new]:after {
