@@ -177,4 +177,22 @@ body.siftal .full .middle{width:100%;max-height:100%;}
 }
 
 
+// editor
+.ck.ck-content.ck-editor__editable{
+	min-height: 200px;
+}
+.ck.ck-link-form{
+	direction: ltr;
+}
+// rtl
+.rtl .ck.ck-content.ck-editor__editable{
+	direction: rtl;
+}
+.rtl .ck.ck-button .ck-button__label, a.ck.ck-button .ck-button__label{
+	font-family: IRANSans, tahoma;
+}
+.rtl .ck.ck-tooltip .ck-tooltip__text{
+	font-family: IRANSans, tahoma;
+}
+
 
