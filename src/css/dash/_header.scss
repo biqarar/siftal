@@ -38,7 +38,7 @@
 .siftal.ltr .dashHead .right{margin-left:auto;}
 .siftal.rtl .dashHead .right{margin-right:auto;}
 
-.siftal .dashHead .profileShow img{height:40px;width:40px;max-width:40px;border-radius:50%;overflow:hidden;margin:5px;}
+.siftal .dashHead .profileShow img{height:40px;width:40px;max-width:40px;border-radius:50%;overflow:hidden;margin:5px;position:relative}
 
 
 .siftal .dashHead .notification[data-new]:after{content: "\2a";font-family:"siftal","tahoma" !important;position:absolute;top: 10px;right: 10px;color: #f02020;font-size: 1.1em;animation:pulseNotificationHeart 0.7s infinite ease-in-out;}
