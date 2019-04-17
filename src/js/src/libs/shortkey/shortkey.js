@@ -68,24 +68,32 @@ function shortkey_corridor(_e, _self, _key)
     }
   }
 
+
   if(elShortkey.length == 1)
   {
-    if(elShortkey.attr('data-shortkey-prevent') !== undefined)
+    // check if in input or textarea return false;
+    if($focused && ($focused.is('input') || $focused.is('textarea') || $focused.is('select') || $focused.hasClass('medium-editor-element')) && (String(_key) > 48 || String(_key) < 90 ))
     {
-      // prevent default
-      _e.preventDefault();
-    }
-    // this shortkey has called function
-    if(shortkeyCallFunc(elShortkey, _e))
-    {
-      // if yes prevent default changes
-      _e.preventDefault();
+      // do nothing
     }
     else
     {
-      shortkeyDo(elShortkey);
+      if(elShortkey.attr('data-shortkey-prevent') !== undefined)
+      {
+        // prevent default
+        _e.preventDefault();
+      }
+      // this shortkey has called function
+      if(shortkeyCallFunc(elShortkey, _e))
+      {
+        // if yes prevent default changes
+        _e.preventDefault();
+      }
+      else
+      {
+        shortkeyDo(elShortkey);
+      }
     }
-
   }
   else if(mytxt === '112')
   {
