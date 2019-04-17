@@ -22,7 +22,7 @@
 /* header flex */
 .siftal .dashHead i{padding:0;cursor:pointer;transition-duration:0.3s;transition-property:color, background-color;display:block;height:100%;width:50px;color:#888;line-height:45px;}
 .siftal .dashHead i:before{font-size:1.5em;vertical-align:-webkit-baseline-middle!important;}
-.siftal .dashHead .hm a, .siftal .dashHead .hm div{position:relative;transition-duration:0.3s;transition-property:color, background-color;color:#888;max-height:50px;}
+.siftal .dashHead .hm a, .siftal .dashHead .hm div{position:relative;transition-duration:0.3s;transition-property:color, background-color;color:#888;max-height:50px;outline:none;cursor:pointer;}
 .siftal .dashHead .hm div:before{content: "\e20c";font-family:"siftal","tahoma" !important;position:absolute;top:0;bottom:0;right:0;left:0;line-height:50px;text-align:center;font-size:1.5em;}
 .siftal .dashHead .hm a:hover, .siftal .dashHead .hm div:hover{color:#555;background-color:rgba(0,0,0,0.1);}
 .siftal .dashHead .hm a:focus, .siftal .dashHead .hm div:focus{color:#000;background-color:rgba(0,0,0,0.2);}

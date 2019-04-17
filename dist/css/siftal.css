@@ -20871,7 +20871,9 @@ body.siftal .full .middle {
   transition-duration: 0.3s;
   transition-property: color, background-color;
   color: #888;
-  max-height: 50px; }
+  max-height: 50px;
+  outline: none;
+  cursor: pointer; }
 
 .siftal .dashHead .hm div:before {
   content: "\e20c";
