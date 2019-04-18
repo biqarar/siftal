@@ -389,7 +389,8 @@ pre {
   display: block;
   direction: ltr;
   font-family: monospace, sans-serif;
-  font-size: 1em; }
+  font-size: 1em;
+  overflow: auto; }
 
 kbd {
   margin: 0;
