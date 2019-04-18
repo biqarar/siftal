@@ -20648,7 +20648,9 @@ body.siftal .full .middle {
   margin-bottom: 1em;
   -webkit-user-select: text;
   -moz-user-select: text;
-  user-select: text; }
+  user-select: text;
+  max-height: 500px;
+  overflow-y: auto; }
 
 .siftal[data-in="api"] code {
   background-color: rgba(0, 0, 0, 0.4);
