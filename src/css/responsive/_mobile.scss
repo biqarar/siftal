@@ -80,6 +80,21 @@
   .siftal .tbox p{
     display:none;
   }
+  .siftal .tbox i{
+    display: none;
+  }
+  .ltr .tbox.pictogram{
+    padding-right:1em;
+  }
+  .rtl .tbox.pictogram{
+    padding-left: 1em;
+  }
+  .tbox.pictogram > span[class^="sf-"]{
+    display: none;
+  }
+  .siftal .tbox h2{
+    font-size: 1.2em;
+  }
 
   // tables
   // .tbl.responsive{

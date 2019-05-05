@@ -22583,6 +22583,21 @@ body.siftal .full .middle {
   .siftal .tbox p {
     display: none; }
 
+  .siftal .tbox i {
+    display: none; }
+
+  .ltr .tbox.pictogram {
+    padding-right: 1em; }
+
+  .rtl .tbox.pictogram {
+    padding-left: 1em; }
+
+  .tbox.pictogram > span[class^="sf-"] {
+    display: none; }
+
+  .siftal .tbox h2 {
+    font-size: 1.2em; }
+
   .tbl td.collapsing.sauto, .tbl th.collapsing.sauto {
     white-space: initial; }
 
