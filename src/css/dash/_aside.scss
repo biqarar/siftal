@@ -1,7 +1,7 @@
 
 /* sidebar */
 .siftal #sidebar .scr{overflow:hidden;overflow-y:auto;height:80%;height:calc(100% - 70px);}
-.siftal #sidebar figure{padding:4em 0;text-align:center;color:#ddd}
+.siftal #sidebar figure{padding:2em 0;text-align:center;color:#ddd}
 .siftal #sidebar figure .avatar{position:relative;width:100px;margin:1em auto;display:block;height:100px;}
 .siftal #sidebar figure .avatar:before{position:absolute;top:0;right:0;bottom:0;left:0;content:'';transition:.3s;border:2px solid transparent;border-color:transparent #888;border-radius:50%}
 .siftal #sidebar figure .avatar:after{font-family:"siftal";content:"\e20c";position:absolute;top:0;bottom:0;right:0;left:0;text-align:center;line-height:90px;font-size:2em;border-radius:50%;color:#fff;opacity:0.3;transition:0.3s;margin:5px;}
