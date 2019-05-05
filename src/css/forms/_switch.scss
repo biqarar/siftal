@@ -12,8 +12,8 @@
   cursor: pointer;
   height: 36px;
   width: 80px;
-  background: #eee;
-  border-radius: 15px;
+  background: #efefef;
+  border-radius: 20px;
   transition: .2s;
   border:1px solid transparent;
   overflow: hidden;
@@ -23,10 +23,10 @@
   display: inline-block;
 }
 .switch1 label:first-of-type:hover{
-  border-color:rgba(0, 0, 0, 0.2);
+  border-color:rgba(0, 0, 0, 0.1);
 }
 .switch1 input:focus + label:first-of-type{
-  border-color:rgba(128, 192, 208, 0.9)
+  border-color:rgba(76, 175, 80, 0.9)
 }
 
 // extra text for detail
@@ -69,12 +69,10 @@
 
 // checked status
 .switch1 input:checked + label:first-of-type{
-  background:#33414e;
-  background:#34A7C1;
-  background-color: #4090d0;
+  background-color: #40d060;
 }
 .switch1 input:focus:checked + label:first-of-type{
-  background-color:#105090;
+  background-color:#40c060;
 }
 .switch1 input:checked + label:first-of-type:before {
   content: "ON";
