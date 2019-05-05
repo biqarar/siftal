@@ -9,7 +9,7 @@
   },
   "homepage": "https://siftal.ir",
   "dependencies": {
-    "jquery": "2.1.1",
+    "jquery": ">=3.4.0",
     "dash": "Ermile/dash"
   }
 }
