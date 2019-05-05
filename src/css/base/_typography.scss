@@ -53,7 +53,9 @@ a:focus{
 a:active{
 	outline:0;
 }
-
+span:focus{
+  outline: none;
+}
 
 ::-webkit-selection {
   background-color: #cce0ff;

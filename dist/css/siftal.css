@@ -808,6 +808,9 @@ a:focus {
 a:active {
   outline: 0; }
 
+span:focus {
+  outline: none; }
+
 ::-webkit-selection {
   background-color: #cce0ff;
   color: rgba(0, 0, 0, 0.87); }
@@ -2851,6 +2854,9 @@ a.dcard:hover {
   z-index: 2;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg); }
+
+.dcard img {
+  width: 100%; }
 
 .ltr .f .c:first-child .dcard {
   margin-left: 0; }
