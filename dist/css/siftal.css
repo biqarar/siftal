@@ -21122,7 +21122,12 @@ body.siftal .full .middle {
 
 .siftal #sidebar ul > li.title {
   background-color: #333;
-  padding: 0 1em; }
+  transition: 0.3s;
+  padding: 0.5em 1em;
+  margin-top: 0.7em; }
+
+.siftal #sidebar ul > li.title:hover {
+  background-color: #000; }
 
 .siftal #sidebar ul > li.detail {
   background-color: #333;
