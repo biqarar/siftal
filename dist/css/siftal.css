@@ -16367,6 +16367,7 @@ span.input {
 
 .input .addon {
   padding: 5px 1em;
+  line-height: 24px;
   text-align: center;
   border-radius: 0.25rem;
   white-space: nowrap;
