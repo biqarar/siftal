@@ -81,6 +81,8 @@ $(document).ready(function()
   // run cloner
   cloner();
   pingiRunner();
+  // try to register service worker
+  registerServiceWorker();
 
   if($('body').hasClass('siftal'))
   {
