@@ -7,19 +7,19 @@ function registerServiceWorker()
 			navigator.serviceWorker.register('/serviceWorker').then(function(_reg)
 			{
 				// Registration was successful
-				console.log('Service worker registered.', _reg);
+				logy('Service worker registered.', _reg);
 			}, function(_err)
 			{
 				// registration failed :(
-				console.log('ServiceWorker registration failed: ', _err);
+				logy('ServiceWorker registration failed: ', _err);
 			}).catch(function(_err)
 			{
-				console.log(_err);
+				logy(_err);
 			});
 		});
 	}
 	else
 	{
-		console.log('service worker is not supported');
+		logy('service worker is not supported');
 	}
 }
