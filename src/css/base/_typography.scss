@@ -11,6 +11,7 @@ h1,h2,h3,h4,h5,h6{
   line-height:1.3;
   margin-bottom:0.3em;
   color:inherit;
+  outline: none;
 
 }
 h1{font-size:2.2em;}
@@ -52,6 +53,12 @@ a:focus{
 }
 a:active{
 	outline:0;
+}
+div{
+  outline: none;
+}
+span{
+  outline: none;
 }
 span:focus{
   outline: none;
