@@ -89,6 +89,7 @@ var myModuleFiles =
 	'src/utility/inputRequirement.js',
 	'src/utility/navigateChecker.js',
 	'src/utility/catchBeforeUnload.js',
+	'src/utility/serviceWorker.js',
 
 
 
