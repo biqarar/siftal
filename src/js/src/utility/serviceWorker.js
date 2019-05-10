@@ -4,7 +4,7 @@ function registerServiceWorker()
 	{
 		window.addEventListener('load', () =>
 		{
-			navigator.serviceWorker.register('/serviceWorker.js').then(function(_reg)
+			navigator.serviceWorker.register('/serviceWorker').then(function(_reg)
 			{
 				// Registration was successful
 				console.log('Service worker registered.', _reg);
