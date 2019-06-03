@@ -80,6 +80,19 @@ a.dcard:hover{
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
+
+.dcard[data-kerkere-status="open"]{border-color:$blue;}
+.dcard[data-kerkere-status="open"]:before{
+	position: absolute;
+	display: block;
+	border-top: 15px solid $blue;
+	border-left: 15px solid transparent;
+	right: 0;
+	content: "";
+	top: 0;
+	z-index: 1;
+}
+
 .dcard img{width: 100%;}
 
 
