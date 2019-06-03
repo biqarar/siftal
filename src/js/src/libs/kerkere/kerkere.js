@@ -27,16 +27,22 @@ function kerkere(_this)
       // show status if needed
       var myStatusEl = '[data-kerkere-look="'+ myTarget +'"]';
 
-      // if want icon
-      if(_this.attr('data-kerkere-icon') !== undefined)
+      if($target.is(":visible"))
       {
-        if($target.is(":visible"))
+        _this.attr('data-kerkere-status', 'close');
+        // if want icon
+        if(_this.attr('data-kerkere-icon') !== undefined)
         {
           // on next this will closed
           _this.attr('data-kerkere-icon', 'close');
           $(myStatusEl).attr('data-kerkere-status', 'close');
         }
-        else
+      }
+      else
+      {
+        _this.attr('data-kerkere-status', 'open');
+        // if want icon
+        if(_this.attr('data-kerkere-icon') !== undefined)
         {
           // on next this will open
           _this.attr('data-kerkere-icon', 'open');
@@ -52,6 +58,8 @@ function kerkere(_this)
     {
       //Hide the other panels
       $('[data-kerkere-content]').not($target).slideUp('fast');
+      // set status of all kerkere to close
+      $('[data-kerkere]').not(_this).attr('data-kerkere-status', 'close');
       // change icon of all other
       $('[data-kerkere][data-kerkere-icon]').not(_this).attr('data-kerkere-icon', 'close');
     }
