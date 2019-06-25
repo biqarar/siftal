@@ -2,6 +2,7 @@
   "name": "Siftal",
   "version": "4.2.0",
   "description": "CSS Framework, not bad ;)",
+  "author": "Javad Evazzadeh <J.Evazzadeh@gmail.com>",
   "license": "MIT",
   "repository": "github:Ermile/siftal",
   "bugs": {
