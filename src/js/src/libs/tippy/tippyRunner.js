@@ -4,6 +4,8 @@ function runTippy()
 {
   if($('html').attr('data-app') === undefined)
   {
+    tippy.hideAll({ duration: 0 });
+
     // removeTippy();
     myTippy = tippy('[title]',
     {
@@ -11,9 +13,13 @@ function runTippy()
       animation: 'scale',
       content(reference)
       {
-        const title = reference.getAttribute('title')
-        reference.removeAttribute('title')
-        return title
+        var title = reference.getAttribute('title');
+        reference.removeAttribute('title');
+        if(!title)
+        {
+          title = null;
+        }
+        return title;
       },
       // dynamicTitle: true,
     });
