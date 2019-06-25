@@ -1,17 +1,32 @@
 {
-  "name": "Siftal",
+  "name": "siftal",
   "version": "4.2.0",
   "description": "CSS Framework, not bad ;)",
   "author": "Javad Evazzadeh <J.Evazzadeh@gmail.com>",
   "license": "MIT",
-  "repository": "github:Ermile/siftal",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ermile/siftal.git"
+  },
   "bugs": {
     "url": "https://github.com/Ermile/siftal/issues"
   },
   "homepage": "https://siftal.ir",
   "dependencies": {
-    "dash": "Ermile/dash",
+    "dash": "github:Ermile/dash",
     "express": "^4.17.1",
     "jquery": ">=3.4.0"
-  }
+  },
+  "main": "index.html",
+  "directories": {
+    "example": "examples"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "siftal",
+    "ermile"
+  ]
 }
