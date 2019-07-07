@@ -4946,7 +4946,7 @@ iframe.gMap {
 .seoPreview a:visited h3 {
   color: #609; }
 
-.seoPreview:hover h3 {
+.seoPreview a:hover h3 {
   text-decoration: underline; }
 
 .seoPreview cite {
@@ -4960,9 +4960,9 @@ iframe.gMap {
   text-overflow: ellipsis;
   white-space: nowrap; }
 
-.seoPreview p {
+.seoPreview .desc {
+  display: block;
   max-width: 640px;
-  margin: 0;
   font-size: 1.3rem;
   line-height: 2rem;
   overflow: hidden;
@@ -4970,7 +4970,19 @@ iframe.gMap {
   text-align: left;
   padding-right: 100px; }
 
-.rtl .seoPreview p {
+.seoPreview .desc p {
+  display: inline;
+  margin: 0;
+  color: #545454; }
+
+.rtl .seoPreview .desc p {
+  direction: rtl; }
+
+.seoPreview .desc time {
+  color: #777;
+  display: inline-block; }
+
+.rtl .seoPreview .desc time {
   direction: rtl; }
 
 [class^="sf-"] {
