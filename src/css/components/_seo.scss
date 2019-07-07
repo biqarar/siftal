@@ -1,13 +1,11 @@
 .seoPreview{
   direction: ltr;
   position: relative;
+  margin-bottom: 1em;
 }
 .seoPreview img{
-  position: absolute;
-  content: "";
-  bottom: 0;
-  right: 0;
   width: 100px;
+  margin: 10px 0;
   filter:grayscale(100%);
   transition: 0.3s;
 }
@@ -64,7 +62,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: left;
-  padding-right: 100px;
 }
 .seoPreview .desc p{
   display: inline;

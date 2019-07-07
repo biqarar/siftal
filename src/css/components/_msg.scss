@@ -31,6 +31,9 @@
 .msg:empty{
   display:none
 }
+.msg.minimal{
+  padding: 1em 0.5em;
+}
 .msg.special{
   opacity: 1;
   border-radius:1rem;

@@ -1368,6 +1368,9 @@ span:focus {
 .msg:empty {
   display: none; }
 
+.msg.minimal {
+  padding: 1em 0.5em; }
+
 .msg.special {
   opacity: 1;
   border-radius: 1rem;
@@ -2640,6 +2643,9 @@ progress.xl, meter.xl {
   position: relative;
   transition-duration: 0.3s;
   transition-property: opacity, background-color, box-shadow, border; }
+
+.cbox.minimal {
+  padding: 1em 0.5em; }
 
 .cbox .simple {
   border-bottom-color: transparent; }
@@ -4905,14 +4911,12 @@ iframe.gMap {
     border-right-color: #e8eded !important; } }
 .seoPreview {
   direction: ltr;
-  position: relative; }
+  position: relative;
+  margin-bottom: 1em; }
 
 .seoPreview img {
-  position: absolute;
-  content: "";
-  bottom: 0;
-  right: 0;
   width: 100px;
+  margin: 10px 0;
   filter: grayscale(100%);
   transition: 0.3s; }
 
@@ -4967,8 +4971,7 @@ iframe.gMap {
   line-height: 2rem;
   overflow: hidden;
   text-overflow: ellipsis;
-  text-align: left;
-  padding-right: 100px; }
+  text-align: left; }
 
 .seoPreview .desc p {
   display: inline;
