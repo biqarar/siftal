@@ -4903,6 +4903,76 @@ iframe.gMap {
     right: 100% !important;
     border-color: transparent !important;
     border-right-color: #e8eded !important; } }
+.seoPreview {
+  direction: ltr;
+  position: relative; }
+
+.seoPreview img {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  filter: grayscale(100%);
+  transition: 0.3s; }
+
+.seoPreview:hover img {
+  filter: none;
+  opacity: 1; }
+
+.seoPreview a {
+  font-weight: 400;
+  cursor: pointer;
+  display: block;
+  max-width: 640px; }
+
+.seoPreview h3 {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin: 0;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left; }
+
+.rtl .seoPreview h3 {
+  direction: rtl; }
+
+.seoPreview a h3 {
+  color: #1a0dab; }
+
+.seoPreview a:visited h3 {
+  color: #609; }
+
+.seoPreview:hover h3 {
+  text-decoration: underline; }
+
+.seoPreview cite {
+  margin: 0;
+  font-size: 1.3rem;
+  font-style: normal;
+  line-height: 2rem;
+  color: #006621;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.seoPreview p {
+  max-width: 640px;
+  margin: 0;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+  padding-right: 100px; }
+
+.rtl .seoPreview p {
+  direction: rtl; }
+
 [class^="sf-"] {
   margin: 0;
   min-width: 1.2em;
