@@ -2751,6 +2751,34 @@ progress.xl, meter.xl {
   padding: 1em 1.5em;
   margin: 1em; }
 
+.pbox {
+  border-bottom: 2px dotted #eee;
+  position: relative; }
+
+.pbox header {
+  padding: 1rem 1.5rem;
+  font-weight: 700;
+  color: #222;
+  border: none;
+  box-shadow: none;
+  transition: 0.3s;
+  background-color: #fff;
+  border-right: 2px solid transparent;
+  border-left: 2px solid transparent; }
+
+.pbox header:hover {
+  background-color: #fefefe; }
+
+.pbox header[data-kerkere-status="open"] {
+  border-right-color: #ccc;
+  border-left-color: #ccc; }
+
+.pbox .body {
+  background-color: #fff;
+  border-right: 2px solid #ccc;
+  border-left: 2px solid #ccc;
+  padding: 5px; }
+
 .dcard {
   font-size: 1.2em;
   margin: 0 5px 10px;
