@@ -94,6 +94,6 @@ body:not(.tippy-touch) .tippy-popper[x-placement=right] .tippy-tooltip[data-anim
 body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-animatefill][data-state=visible] .tippy-content{-webkit-clip-path:ellipse(135% 100% at 100% 50%);clip-path:ellipse(135% 100% at 100% 50%)}
 body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-animatefill][data-state=hidden] .tippy-content{-webkit-clip-path:ellipse(25% 100% at 100% 50%);clip-path:ellipse(25% 100% at 100% 50%)}
 
-@media (max-width:360px) {
+@media (max-width:480px) {
 .tippy-popper{max-width:96%;max-width:calc(100% - 20px)}
 }

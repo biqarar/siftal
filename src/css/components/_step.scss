@@ -230,7 +230,7 @@
     display: block
 }
 
-@media only screen and (max-width: 767px) {
+@media (max-width: 767px) {
     .steps:not(.unstackable) {
         display:-webkit-inline-box;
         display: -ms-inline-flexbox;
@@ -341,7 +341,7 @@
     background: #fff
 }
 
-@media only screen and (max-width: 991px) {
+@media (max-width: 991px) {
     .ui[class*="tablet stackable"].steps {
         display:-webkit-inline-box;
         display: -ms-inline-flexbox;

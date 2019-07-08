@@ -435,7 +435,7 @@
 
 
 
-@media only screen and (max-device-width: 480px) {
+@media (max-device-width: 480px) {
   .datepicker-container.pwt-mobile-view {
     position: fixed;
     width: 100vw;
