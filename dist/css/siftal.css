@@ -16853,8 +16853,9 @@ input[type="number"]::-webkit-outer-spin-button {
   opacity: 0; }
 
 .switch1 label {
-  padding: 5px 10px;
-  cursor: pointer; }
+  padding: 5px 5px;
+  cursor: pointer;
+  display: inline; }
 
 .switch1 label:first-of-type {
   position: relative;
