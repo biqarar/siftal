@@ -57,7 +57,7 @@ body.enter.bg15{background-image:url('../images/bg/15.jpg')}
 .enter #enter .logo a:focus img{background-color:rgba(0,0,0,0.1);border-radius:50%}
 .enter #enter .logo img{display:block;max-width:100%;height:90px;margin:0 auto;transition:0.3s;overflow:hidden;text-align:center;background-color:rgba(0,0,0,0.05);padding:2px;}
 .enter #enter .logo span{display:none !important}
-.enter #enter h2{font-size:1.3em;font-weight:100;overflow:hidden;margin:1em 0;text-align:center;color:#fff}
+.enter #enter h2{font-size:1.3em;font-weight:100;overflow:hidden;margin:10px 0;text-align:center;color:#fff}
 .enter #enter h2 abbr{cursor:pointer;}
 .enter #enter .text p{font-size:1.2em;line-height:2em;margin-bottom:2em;transition:0.3s;padding:0.5em}
 .enter #enter .text p:hover{background-color:rgba(0,0,0,0.1);}
@@ -104,7 +104,7 @@ body.enter.bg15{background-image:url('../images/bg/15.jpg')}
 /* custom style for some inputs*/
 .enter form #emobile label{
 	font-size:2em;
-	line-height:50px;
+	line-height:40px;
 }
 .enter form #eramz label,
 .enter form #eramzNew label,
@@ -116,8 +116,9 @@ body.enter.bg15{background-image:url('../images/bg/15.jpg')}
 
 .enter .agreement{
 	background-color: rgba(0, 0, 0, 0.1);
-	font-size: 1.15rem;
-	padding: 0 1em;
+	font-size: 1.1rem;
+	line-height: 2rem;
+	padding: 5px 1em;
 	color: #ddd;
 }
 .enter .agreement a{
@@ -188,9 +189,9 @@ body.enter.bg15{background-image:url('../images/bg/15.jpg')}
 }
 
 @media all and (max-width:767px) {
- .enter #enter{min-width:300px;min-height:300px; padding:10px 20px;width:50%;margin-bottom:40px;}
+ .enter #enter{min-width:300px;min-height:300px; padding:10px 20px;width:50%;margin-bottom:42px;}
  .enter #enter .logo{}
- .enter form .flex{margin: 0.5em 0;height:40px;}
+ .enter form .flex{margin: 5px 0;height:40px;}
  .enter .langlist{position:absolute;}
  .enter #eMethods a{height:30px;line-height:30px;}
  .enter form .flex label{line-height: 40px;}

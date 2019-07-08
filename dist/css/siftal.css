@@ -15959,7 +15959,7 @@ body.enter.bg15 {
   font-size: 1.3em;
   font-weight: 100;
   overflow: hidden;
-  margin: 1em 0;
+  margin: 10px 0;
   text-align: center;
   color: #fff; }
 
@@ -16150,7 +16150,7 @@ body.enter.bg15 {
 /* custom style for some inputs*/
 .enter form #emobile label {
   font-size: 2em;
-  line-height: 50px; }
+  line-height: 40px; }
 
 .enter form #eramz label,
 .enter form #eramzNew label,
@@ -16161,8 +16161,9 @@ body.enter.bg15 {
 
 .enter .agreement {
   background-color: rgba(0, 0, 0, 0.1);
-  font-size: 1.15rem;
-  padding: 0 1em;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  padding: 5px 1em;
   color: #ddd; }
 
 .enter .agreement a {
@@ -16395,10 +16396,10 @@ body.enter.bg15 {
     min-height: 300px;
     padding: 10px 20px;
     width: 50%;
-    margin-bottom: 40px; }
+    margin-bottom: 42px; }
 
   .enter form .flex {
-    margin: 0.5em 0;
+    margin: 5px 0;
     height: 40px; }
 
   .enter .langlist {
