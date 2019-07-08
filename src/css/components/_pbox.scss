@@ -1,9 +1,8 @@
 .pbox{
   border-bottom:2px dotted #eee;
   position: relative;
-
+  font-size: 1.1em;
 }
-
 .pbox header{
   padding: 1rem 1.5rem;
   font-weight: 700;
@@ -19,13 +18,13 @@
   background-color: #fefefe;
 }
 .pbox header[data-kerkere-status="open"]{
-  border-right-color:#ccc;
-  border-left-color:#ccc;
+  border-right-color:#27bf27;
+  border-left-color:#27bf27;
 }
-
 .pbox .body{
   background-color: #fff;
-  border-right: 2px solid #ccc;
-  border-left: 2px solid #ccc;
+  border-right: 2px solid #27bf27;
+  border-left: 2px solid #27bf27;
   padding: 5px;
 }
+
