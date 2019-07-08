@@ -6,42 +6,47 @@ function runTippy()
   {
     tippy.hideAll({ duration: 0 });
 
-    // removeTippy();
     myTippy = tippy('[title]',
     {
       arrow: true,
       animation: 'scale',
+      aria: null,
+      touch: false,
       content(reference)
       {
         var title = reference.getAttribute('title');
         reference.removeAttribute('title');
-        if(!title)
-        {
-          title = null;
-        }
+        // save title on data-tippy
+        reference.setAttribute('data-tippy', title);
+        var oldTitle = reference.getAttribute('data-tippy');
+        // if title is not exist use old title
+        // if(!title)
+        // {
+        //   title = oldTitle;
+        // }
+
         return title;
       },
-      // dynamicTitle: true,
     });
   }
 }
 
 
-function removeTippy()
-{
-  var allTippy = document.querySelectorAll('[data-tippy]');
+// function removeTippy()
+// {
+//   var allTippy = document.querySelectorAll('[data-tippy]');
 
-  allTippy.forEach(function(_el)
-  {
-    if(_el._tippy)
-    {
-      _el._tippy.hide();
-    }
-  });
+//   allTippy.forEach(function(_el)
+//   {
+//     if(_el._tippy)
+//     {
+//       _el._tippy.destroy(true);
+//     }
+//   });
 
-  // if(myTippy)
-  // {
-  //  myTippy.destroy();
-  // }
-}
+//   // if(myTippy)
+//   // {
+//   //  myTippy.destroy();
+//   // }
+// }
 

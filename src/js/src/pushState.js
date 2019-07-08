@@ -98,7 +98,6 @@ $(document).ready(function()
 
 function beforePushStateSiftal()
 {
-  removeTippy();
   callFunc('removeAmcharts4');
 
 }
