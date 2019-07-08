@@ -8497,7 +8497,7 @@ li.sortable-placeholder {
   left: auto;
   right: 0; }
 
-@media (min-width: 568px) {
+@media (min-width: 480px) {
   .iziToast-wrapper {
     padding: 10px 15px; }
 
@@ -21657,7 +21657,7 @@ body.siftal .full .middle {
 .payTicketDetail .msg {
   background-color: #fff; }
 
-@media all and (min-width: 1400px) {
+@media (min-width: 1400px) {
   .cn {
     max-width: 1400px;
     min-width: 1024px; }
@@ -22007,7 +22007,7 @@ body.siftal .full .middle {
 
   .siftal[data-clean].rtl #sidebar {
     right: -300px; } }
-@media all and (min-width: 768px) and (max-width: 959px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .cn {
     min-width: 710px;
     max-width: 940px; }
