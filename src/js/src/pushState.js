@@ -6,7 +6,7 @@ function pushStateSiftal(_direct)
   runDataResponse();
   runInputFileFunc();
   responsiveSidebar();
-  setLanguageURL(_direct);
+  // setLanguageURL(_direct);
   runSortable();
   // run clockpickers
   runClockPicker();
