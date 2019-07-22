@@ -21749,6 +21749,70 @@ body.siftal .full .middle {
   height: auto;
   display: block; }
 
+.blogEx .tagBox a {
+  padding: 0.5em 0.5em;
+  margin: 0.5em 0.5em;
+  background-color: #eee;
+  border-radius: 3px;
+  transition: 0.3s;
+  display: inline-block; }
+
+.blogEx .tagBox a:hover {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+.blogEx .tagBox a:focus {
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.blogEx .gallery {
+  text-align: center;
+  margin: 2em 0;
+  clear: both; }
+
+.blogEx .gallery a {
+  display: inline-block;
+  max-width: 275px;
+  width: 45%;
+  margin: 0 2%; }
+
+.blogEx .gallery img {
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  transition: 0.3s; }
+
+.blogEx .gallery img:hover {
+  border-color: #777; }
+
+.blogEx .gallery video {
+  width: 200px;
+  max-width: 45%;
+  margin: 0 auto; }
+
+.blogEx .gallery audio {
+  width: 200px;
+  max-width: 45%;
+  margin: 0 auto; }
+
+.blogEx .gallery2 {
+  text-align: center; }
+
+.blogEx .gallery2 video {
+  width: 500px;
+  max-width: 90%;
+  margin: 1em auto;
+  display: inline-block; }
+
+.blogEx .gallery2 audio {
+  width: 250px;
+  max-width: 90%;
+  margin: 1em auto;
+  display: inline-block; }
+
+.blogEx iframe.gMap {
+  min-height: 300px;
+  max-height: 400px;
+  width: 100%;
+  border: none; }
+
 .blogEx footer {
   color: #899596;
   background-color: rgba(0, 0, 0, 0.05);
