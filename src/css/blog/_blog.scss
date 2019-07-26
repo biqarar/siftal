@@ -1,4 +1,4 @@
-.blogEx{
+.blogEx.example{
 	font-size: 1.7em;
 }
 .minimalW{
@@ -58,7 +58,7 @@
 	margin: 0 auto;
 }
 
-.blogEx article{
+.blogEx .post{
 	margin: 30px 0 50px;
 	padding: 20px 0;
 	overflow: hidden;
@@ -88,12 +88,13 @@
 }
 .blogEx article .thumb{
 	display: block;
-	margin-top: 1rem;
+	margin: 1rem auto;
 }
 .blogEx article img{
 	width: 100%;
 	height: auto;
 	display: block;
+	margin: 0 auto;
 }
 
 .blogEx .tagBox a{padding:0.5em 0.5em;margin:0.5em 0.5em;background-color:#eee;border-radius:3px;transition:0.3s;display:inline-block;}
