@@ -107,7 +107,7 @@
 .blogEx .tagBox a:focus{background-color:rgba(0,0,0,0.2);}
 
 .blogEx .gallery{text-align:center; margin:2em 0;clear: both;}
-.blogEx .gallery a{display: inline-block;max-width:275px;width:45%;margin:0 2%;}
+.blogEx .gallery a{display: inline-block;max-width:220px;width:45%;margin:0 1% 1em;}
 .blogEx .gallery img{margin:0 auto;border:1px solid #ddd;transition:0.3s}
 .blogEx .gallery img:hover{border-color:#777}
 .blogEx .gallery video{width:200px;max-width:45%; margin:0 auto;}
@@ -155,9 +155,9 @@
 
 // box
 .blogEx.box article{
-	max-width: 768px;
+	max-width: 760px;
 	margin: 0 auto;
 	overflow: hidden;
 	background-color: #fff;
-	padding: 1em 2em;
+	padding: 1em 2%;
 }
