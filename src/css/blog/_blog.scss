@@ -64,8 +64,8 @@
 .blogEx.sample article{
 	margin-bottom:3em;
 	padding: 20px 0;
-	overflow: hidden;
 }
+
 .blogEx.sample article a:visited {
     color: #22bb88;
 }
@@ -85,9 +85,11 @@
 .blogEx article .meta time{
 	font-weight: 100;
 }
-.blogEx article p{
+.ltr .blogEx article p{
 	font-weight: 100;
-	margin: 1em 0;
+}
+.blogEx article p{
+	margin: 0 0 1.5em;
 }
 .blogEx article .thumb{
 	display: block;
@@ -149,4 +151,13 @@
 }
 .blogEx footer .langlist a.active{
 	color: #22bb88;
+}
+
+// box
+.blogEx.box article{
+	max-width: 768px;
+	margin: 0 auto;
+	overflow: hidden;
+	background-color: #fff;
+	padding: 1em 2em;
 }
