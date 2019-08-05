@@ -198,6 +198,7 @@ audio,
 video {
   display: inline-block;
   max-width: 100%;
+  outline: none;
 }
 audio:not([controls]) {
   display: none;

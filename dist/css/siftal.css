@@ -415,7 +415,8 @@ kbd:hover {
 audio,
 video {
   display: inline-block;
-  max-width: 100%; }
+  max-width: 100%;
+  outline: none; }
 
 audio:not([controls]) {
   display: none;
@@ -17258,7 +17259,7 @@ html[lang=fa] .switch1.gender input:checked + label:first-of-type:before {
 .radio3 label::after {
   content: '';
   position: absolute;
-  left: 23px;
+  left: 15px;
   top: 16px;
   background-color: #fff;
   width: 2px;

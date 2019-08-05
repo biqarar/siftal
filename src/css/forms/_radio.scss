@@ -102,7 +102,7 @@
 .radio3 input{padding:0;margin:0;position:absolute;z-index:-1;width:0;height:0;opacity:0}
 .radio3 label{display:block;padding:7px 10px;position:relative;cursor:pointer;border:1px solid transparent;transition:0.3s;background-color:#f6f8fa;min-width:50px;height:36px;border-radius:0.25rem;border:1px solid transparent;white-space:nowrap;}
 .radio3 label::before{content:'';margin-right:10px;display:inline-block;vertical-align:middle;width:20px;height:20px;transition:0.3s;border-radius:50%;border:1px solid rgba(0,0,0,0.1);}
-.radio3 label::after{content:'';position:absolute;left:23px;top:16px;background-color:#fff;width:2px;height:2px;box-shadow:2px 0 0 white,4px 0 0 white,4px -2px 0 white,4px -4px 0 white,4px -6px 0 white,4px -8px 0 #fff;-webkit-transform:rotate(45deg);transform:rotate(45deg);opacity:0;transition:0.1s;}
+.radio3 label::after{content:'';position:absolute;left:15px;top:16px;background-color:#fff;width:2px;height:2px;box-shadow:2px 0 0 white,4px 0 0 white,4px -2px 0 white,4px -4px 0 white,4px -6px 0 white,4px -8px 0 #fff;-webkit-transform:rotate(45deg);transform:rotate(45deg);opacity:0;transition:0.1s;}
 .radio3 label:hover::before{border-color:rgba(0, 0, 0, 0.2)}
 .radio3 input:checked+label{border-color: #2080d0;}
 .radio3 input:checked+label::after{opacity:1}
