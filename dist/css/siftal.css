@@ -23040,7 +23040,7 @@ body.siftal .full .middle {
 
   .alert {
     padding: 0.5em; } }
-@media (max-width: 280px) {
+@media screen and (max-width: 280px) {
   html:before {
     font-size: 100vw;
     position: absolute;
