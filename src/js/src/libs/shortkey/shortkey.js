@@ -117,7 +117,7 @@ function shortkeyDo(_elShortkey)
   }
 
   // else do some default event like click or set focus
-  if(_elShortkey.is('a[href], a[href] *, button, input[type=submit]'))
+  if(_elShortkey.is('a[href], a[href] *, button, input[type=submit], [data-link]'))
   {
     var myInputClickable = _elShortkey[0];
     if(myInputClickable)
