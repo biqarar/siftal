@@ -20,7 +20,7 @@
 .siftal .dashHead h1 img{height:50px;width:50px;max-width:50px;padding:5px;overflow: hidden;}
 .siftal .dashHead h1 span{padding:0 0.5em;font-weight:bold;overflow:hidden;white-space: nowrap;text-overflow:ellipsis;max-width:300px;}
 /* header flex */
-.siftal .dashHead i{padding:0;cursor:pointer;transition-duration:0.3s;transition-property:color, background-color;display:block;height:100%;width:50px;color:#888;line-height:45px;}
+.siftal .dashHead i{padding:0;cursor:pointer;transition-duration:0.3s;transition-property:color, background-color;display:block;height:100%;width:40px;color:#888;line-height:45px;}
 .siftal .dashHead i:before{font-size:1.5em;vertical-align:-webkit-baseline-middle!important;}
 .siftal .dashHead .hm a, .siftal .dashHead .hm div{position:relative;transition-duration:0.3s;transition-property:color, background-color;color:#888;max-height:50px;outline:none;cursor:pointer;}
 .siftal .dashHead .hm div:before{content: "\e20c";font-family:"siftal","tahoma" !important;position:absolute;top:0;bottom:0;right:0;left:0;line-height:50px;text-align:center;font-size:1.5em;}
