@@ -23013,6 +23013,9 @@ body.siftal .full .middle {
     border: none !important;
     background-color: transparent !important; }
 
+  .s12 .cbox {
+    padding: 1em 0.5em; }
+
   .breadcrumb {
     padding: 5px 5px;
     height: auto; }
