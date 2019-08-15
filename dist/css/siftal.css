@@ -2797,17 +2797,15 @@ progress.xl, meter.xl {
 .panel .padH {
   padding: 1.5em 2em; }
 
-.panel footer {
+.panel footer a {
+  display: block;
   transition: 0.3s; }
 
-.panel footer:hover {
+.panel footer a:hover {
   background-color: #f5f5f5; }
 
-.img100 {
-  display: block;
-  margin: 0 auto;
-  max-width: 100px;
-  overflow: hidden; }
+.panel footer a:focus {
+  background-color: #eee; }
 
 .dcard {
   font-size: 1.2em;

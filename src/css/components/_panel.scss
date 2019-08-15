@@ -17,8 +17,9 @@
 .panel .padH{
   padding: 1.5em 2em;
 }
-.panel footer{transition: 0.3s}
-.panel footer:hover{background-color: #f5f5f5}
+.panel footer a{display:block;transition: 0.3s}
+.panel footer a:hover{background-color: #f5f5f5}
+.panel footer a:focus{background-color: #eee}
 
 
 
