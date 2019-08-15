@@ -91,6 +91,11 @@
 .rtl .tbl1 tr th:first-of-type, .rtl .tbl1 tr td:first-of-type{
 	padding-right: 3rem;
 }
+
+.tbl1 tr th{
+	width: 200px;
+}
+
 // fix align center
 .tbl1.txtC th, .tbl1.txtC td {
 	text-align: center;
@@ -195,10 +200,10 @@
 .tbl1.v4 tr {
 	border-bottom: 1px solid #f2f2f2;
 }
-.ltr .tbl1.v4 tr th:first-of-type, .ltr .tbl1.v4 tr td:first-of-type{
+.ltr .tbl1.v4 tr td:first-of-type{
 	padding-left: 1rem;
 }
-.rtl .tbl1.v4 tr th:first-of-type, .rtl .tbl1.v4 tr td:first-of-type{
+.rtl .tbl1.v4 tr td:first-of-type{
 	padding-right: 1rem;
 }
 .ltr .tbl1.v4 th.collapsing, .ltr .tbl1.v4 td.collapsing{
