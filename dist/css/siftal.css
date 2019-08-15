@@ -2797,14 +2797,14 @@ progress.xl, meter.xl {
 .panel .padH {
   padding: 1.5em 2em; }
 
-.panel footer a {
+.panel a.special {
   display: block;
   transition: 0.3s; }
 
-.panel footer a:hover {
+.panel a.special:hover {
   background-color: #f5f5f5; }
 
-.panel footer a:focus {
+.panel a.special:focus {
   background-color: #eee; }
 
 .dcard {
@@ -20060,6 +20060,18 @@ body .we500 {
   display: block;
   margin: 0 auto;
   max-width: 100px;
+  overflow: hidden; }
+
+.box200 {
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+  overflow: hidden; }
+
+.box300 {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
   overflow: hidden; }
 
 [data-confirm] {

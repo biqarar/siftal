@@ -7,12 +7,10 @@
 .rounded{@include border-radius(10rem)}
 
 
-.box100{
-  display: block;
-  margin: 0 auto;
-  max-width: 100px;
-  overflow: hidden;
-}
+.box100{display:block;margin:0 auto;max-width:100px;overflow:hidden;}
+.box200{display:block;margin:0 auto;max-width:200px;overflow:hidden;}
+.box300{display:block;margin:0 auto;max-width:300px;overflow:hidden;}
+
 
 [data-confirm]{cursor:pointer}
 
