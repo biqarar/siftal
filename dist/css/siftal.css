@@ -4633,11 +4633,11 @@ body.errorPage.s50 {
   width: 48px;
   height: 48px; }
 
-.device48[data-device='0'] {
+.device48[data-device='mobile'] {
   background: no-repeat url("../images/account/devices48.png") 0 -441px;
   background-size: 48px 783px; }
 
-.device48[data-device='1'] {
+.device48[data-device='android'] {
   background: no-repeat url("../images/account/devices48.png") 0 -294px;
   background-size: 48px 783px; }
 
@@ -4649,31 +4649,23 @@ body.errorPage.s50 {
   background: no-repeat url("../images/account/devices48.png") 0 -147px;
   background-size: 48px 783px; }
 
-.device48[data-device='4'] {
+.device48[data-device='linux'] {
   background: no-repeat url("../images/account/devices48.png") 0 -539px;
   background-size: 48px 783px; }
 
-.device48[data-device='5'] {
+.device48[data-device='mac'] {
   background: no-repeat url("../images/account/devices48.png") 0 -343px;
   background-size: 48px 783px; }
 
-.device48[data-device='6'] {
+.device48[data-device='chromebook'] {
   background: no-repeat url("../images/account/devices48.png") 0 -49px;
   background-size: 48px 783px; }
 
-.device48[data-device='7'] {
-  background: no-repeat url("../images/account/devices48.png") 0 -490px;
-  background-size: 48px 783px; }
-
-.device48[data-device='8'] {
-  background: no-repeat url("../images/account/devices48.png") 0 -490px;
-  background-size: 48px 783px; }
-
-.device48[data-device='9'] {
+.device48[data-device='androidtablet'] {
   background: no-repeat url("../images/account/devices48.png") 0 -98px;
   background-size: 48px 783px; }
 
-.device48[data-device='10'] {
+.device48[data-device='ipad'] {
   background: no-repeat url("../images/account/devices48.png") 0 -245px;
   background-size: 48px 783px; }
 
@@ -4681,11 +4673,11 @@ body.errorPage.s50 {
   width: 72px;
   height: 72px; }
 
-.device72[data-device='0'] {
+.device72[data-device='mobile'] {
   background: no-repeat url("../images/account/devices72.png") 0 -657px;
   background-size: 72px 1167px; }
 
-.device72[data-device='1'] {
+.device72[data-device='android'] {
   background: no-repeat url("../images/account/devices72.png") 0 -438px;
   background-size: 72px 1167px; }
 
@@ -4697,31 +4689,23 @@ body.errorPage.s50 {
   background: no-repeat url("../images/account/devices72.png") 0 -219px;
   background-size: 72px 1167px; }
 
-.device72[data-device='4'] {
+.device72[data-device='linux'] {
   background: no-repeat url("../images/account/devices72.png") 0 -803px;
   background-size: 72px 1167px; }
 
-.device72[data-device='5'] {
+.device72[data-device='mac'] {
   background: no-repeat url("../images/account/devices72.png") 0 -511px;
   background-size: 72px 1167px; }
 
-.device72[data-device='6'] {
+.device72[data-device='chromebook'] {
   background: no-repeat url("../images/account/devices72.png") 0 -73px;
   background-size: 72px 1167px; }
 
-.device72[data-device='7'] {
-  background: no-repeat url("../images/account/devices72.png") 0 -730px;
-  background-size: 72px 1167px; }
-
-.device72[data-device='8'] {
-  background: no-repeat url("../images/account/devices72.png") 0 -730px;
-  background-size: 72px 1167px; }
-
-.device72[data-device='9'] {
+.device72[data-device='androidtablet'] {
   background: no-repeat url("../images/account/devices72.png") 0 -146px;
   background-size: 72px 1167px; }
 
-.device72[data-device='10'] {
+.device72[data-device='ipad'] {
   background: no-repeat url("../images/account/devices72.png") 0 -365px;
   background-size: 72px 1167px; }
 
