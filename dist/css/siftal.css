@@ -20156,6 +20156,12 @@ body .we500 {
   -ms-border-radius: 10rem;
   border-radius: 10rem; }
 
+.box50 {
+  display: block;
+  margin: 0 auto;
+  max-width: 50px;
+  overflow: hidden; }
+
 .box100 {
   display: block;
   margin: 0 auto;
@@ -20172,6 +20178,48 @@ body .we500 {
   display: block;
   margin: 0 auto;
   max-width: 300px;
+  overflow: hidden; }
+
+.box400 {
+  display: block;
+  margin: 0 auto;
+  max-width: 400px;
+  overflow: hidden; }
+
+.box500 {
+  display: block;
+  margin: 0 auto;
+  max-width: 500px;
+  overflow: hidden; }
+
+.box600 {
+  display: block;
+  margin: 0 auto;
+  max-width: 600px;
+  overflow: hidden; }
+
+.box700 {
+  display: block;
+  margin: 0 auto;
+  max-width: 700px;
+  overflow: hidden; }
+
+.box800 {
+  display: block;
+  margin: 0 auto;
+  max-width: 800px;
+  overflow: hidden; }
+
+.box900 {
+  display: block;
+  margin: 0 auto;
+  max-width: 900px;
+  overflow: hidden; }
+
+.box1000 {
+  display: block;
+  margin: 0 auto;
+  max-width: 1000px;
   overflow: hidden; }
 
 [data-confirm] {
