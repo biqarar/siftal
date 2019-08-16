@@ -4630,82 +4630,100 @@ body.errorPage.s50 {
   z-index: 0; }
 
 .device48 {
-  background-repeat: no-repeat;
-  background-size: 48px 783px;
   width: 48px;
   height: 48px; }
 
 .device48[data-device='0'] {
-  background: url("../images/account/devices48.png") 0 -441px; }
+  background: no-repeat url("../images/account/devices48.png") 0 -441px;
+  background-size: 48px 783px; }
 
 .device48[data-device='1'] {
-  background: url("../images/account/devices48.png") 0 -294px; }
+  background: no-repeat url("../images/account/devices48.png") 0 -294px;
+  background-size: 48px 783px; }
 
 .device48[data-device='iphone'] {
-  background: url("../images/account/devices48.png") 0 -735px; }
+  background: no-repeat url("../images/account/devices48.png") 0 -735px;
+  background-size: 48px 783px; }
 
 .device48[data-device='windows'] {
-  background: url("../images/account/devices48.png") 0 -147px; }
+  background: no-repeat url("../images/account/devices48.png") 0 -147px;
+  background-size: 48px 783px; }
 
 .device48[data-device='4'] {
-  background: url("../images/account/devices48.png") 0 -539px; }
+  background: no-repeat url("../images/account/devices48.png") 0 -539px;
+  background-size: 48px 783px; }
 
 .device48[data-device='5'] {
-  background: url("../images/account/devices48.png") 0 -343px; }
+  background: no-repeat url("../images/account/devices48.png") 0 -343px;
+  background-size: 48px 783px; }
 
 .device48[data-device='6'] {
-  background: url("../images/account/devices48.png") 0 -49px; }
+  background: no-repeat url("../images/account/devices48.png") 0 -49px;
+  background-size: 48px 783px; }
 
 .device48[data-device='7'] {
-  background: url("../images/account/devices48.png") 0 -490px; }
+  background: no-repeat url("../images/account/devices48.png") 0 -490px;
+  background-size: 48px 783px; }
 
 .device48[data-device='8'] {
-  background: url("../images/account/devices48.png") 0 -490px; }
+  background: no-repeat url("../images/account/devices48.png") 0 -490px;
+  background-size: 48px 783px; }
 
 .device48[data-device='9'] {
-  background: url("../images/account/devices48.png") 0 -98px; }
+  background: no-repeat url("../images/account/devices48.png") 0 -98px;
+  background-size: 48px 783px; }
 
 .device48[data-device='10'] {
-  background: url("../images/account/devices48.png") 0 -245px; }
+  background: no-repeat url("../images/account/devices48.png") 0 -245px;
+  background-size: 48px 783px; }
 
 .device72 {
-  background-repeat: no-repeat;
-  background-size: 72px 1167px;
   width: 72px;
   height: 72px; }
 
-.device72[data-device-type='0'] {
-  background: url("../images/account/devices72.png") 0 -657px; }
+.device72[data-device='0'] {
+  background: no-repeat url("../images/account/devices72.png") 0 -657px;
+  background-size: 72px 1167px; }
 
-.device72[data-device-type='1'] {
-  background: url("../images/account/devices72.png") 0 -438px; }
+.device72[data-device='1'] {
+  background: no-repeat url("../images/account/devices72.png") 0 -438px;
+  background-size: 72px 1167px; }
 
-.device72[data-device-type='iphone'] {
-  background: url("../images/account/devices72.png") 0 -1095px; }
+.device72[data-device='iphone'] {
+  background: no-repeat url("../images/account/devices72.png") 0 -1095px;
+  background-size: 72px 1167px; }
 
-.device72[data-device-type='windows'] {
-  background: url("../images/account/devices72.png") 0 -219px; }
+.device72[data-device='windows'] {
+  background: no-repeat url("../images/account/devices72.png") 0 -219px;
+  background-size: 72px 1167px; }
 
-.device72[data-device-type='4'] {
-  background: url("../images/account/devices72.png") 0 -803px; }
+.device72[data-device='4'] {
+  background: no-repeat url("../images/account/devices72.png") 0 -803px;
+  background-size: 72px 1167px; }
 
-.device72[data-device-type='5'] {
-  background: url("../images/account/devices72.png") 0 -511px; }
+.device72[data-device='5'] {
+  background: no-repeat url("../images/account/devices72.png") 0 -511px;
+  background-size: 72px 1167px; }
 
-.device72[data-device-type='6'] {
-  background: url("../images/account/devices72.png") 0 -73px; }
+.device72[data-device='6'] {
+  background: no-repeat url("../images/account/devices72.png") 0 -73px;
+  background-size: 72px 1167px; }
 
-.device72[data-device-type='7'] {
-  background: url("../images/account/devices72.png") 0 -730px; }
+.device72[data-device='7'] {
+  background: no-repeat url("../images/account/devices72.png") 0 -730px;
+  background-size: 72px 1167px; }
 
-.device72[data-device-type='8'] {
-  background: url("../images/account/devices72.png") 0 -730px; }
+.device72[data-device='8'] {
+  background: no-repeat url("../images/account/devices72.png") 0 -730px;
+  background-size: 72px 1167px; }
 
-.device72[data-device-type='9'] {
-  background: url("../images/account/devices72.png") 0 -146px; }
+.device72[data-device='9'] {
+  background: no-repeat url("../images/account/devices72.png") 0 -146px;
+  background-size: 72px 1167px; }
 
-.device72[data-device-type='10'] {
-  background: url("../images/account/devices72.png") 0 -365px; }
+.device72[data-device='10'] {
+  background: no-repeat url("../images/account/devices72.png") 0 -365px;
+  background-size: 72px 1167px; }
 
 .scr::-webkit-scrollbar {
   width: 10px;
