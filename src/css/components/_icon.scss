@@ -4,6 +4,8 @@
 [class^="sf-"].vlbottom:before{vertical-align:bottom;}
 [class^="sf-"].vltop:before{vertical-align:top;}
 
+[class^="sf-"].style1{background-color:#eee;padding:5px;border-radius:50%;width: 40px;height: 40px;line-height: 32px;font-size: 1.2em;display: block;margin:0 auto;}
+[class^="sf-"].style2{width:30px;height:30px;line-height:30px;background-color:#eee;border-radius:30%;display:inline-block}
 
 @-webkit-keyframes spiny {
 		from {
