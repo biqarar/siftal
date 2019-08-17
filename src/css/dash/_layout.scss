@@ -15,7 +15,7 @@
 }
 
 // main
-.siftal #main{min-height:100%; -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; -ms-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; transition: all 0.2s ease-out; transition: all 300ms cubic-bezier(.694, .0482, .335, 1); }
+.siftal #main{min-height:100%;overflow:hidden; -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; -ms-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; transition: all 0.2s ease-out; transition: all 300ms cubic-bezier(.694, .0482, .335, 1); }
 .siftal.ltr #main{margin-left:250px;}
 .siftal.rtl #main{margin-right:250px;}
 // sidebarShadow
