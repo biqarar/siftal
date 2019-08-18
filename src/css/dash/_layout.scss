@@ -25,10 +25,6 @@
 // sidebarShadow hover
 .siftal #main:before:hover{background-color:rgba(0,0,0,0.2);}
 .siftal #main:hover:after{color:#eee;}
-// sidebar
-.siftal #sidebar{overflow:hidden;overflow-y:auto;width:250px;height:100%;position:relative;background-color:#302b2b;@include user-select(none);position:fixed;top:0;bottom:0;z-index:10; -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; -ms-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; transition: all 0.2s ease-out; transition: all 200ms cubic-bezier(.694, .0482, .335, 1);transition-property:right,left;transform: translateX(0)}
-.siftal.ltr #sidebar{left:0}
-.siftal.rtl #sidebar{right:0}
 
 //----------------------------------- clean mode style
 // main
@@ -245,3 +241,30 @@ body.siftal .full .middle{width:100%;max-height:100%;}
 }
 
 
+
+
+
+// Theme light
+.siftal[data-user="3"]{background: #fff;}
+.siftal[data-user="3"] .dashHead{box-shadow: none;}
+.siftal[data-user="3"] .dashHead.cloner{display: none;}
+.siftal[data-user="3"] .tbox{background-color: #fff;}
+.siftal[data-user="3"] .cbox{border:1px solid #eee;}
+
+.siftal[data-user="3"] #sidebar{background-color:#fff;}
+.siftal[data-user="3"] #sidebar figure{color: #3c4040}
+.siftal[data-user="3"] #sidebar ul > li > a{color: #3c4040}
+.siftal[data-user="3"].ltr #sidebar ul > li > a{-webkit-border-radius: 0 50px 50px 0;border-radius: 0 50px 50px 0;}
+.siftal[data-user="3"].rtl #sidebar ul > li > a{-webkit-border-radius: 50px 0 0 50px;border-radius:50px 0 0 50px;}
+.siftal[data-user="3"] #sidebar ul > li > a.weAreHere{background-color: #e8f0fe;color:#1a73e8;}
+.siftal[data-user="3"] #sidebar ul > li > a:hover{background-color: #f5f5f5;}
+.siftal[data-user="3"] #sidebar ul > li > a:focus{background-color: #e0e0e0;}
+.siftal[data-user="3"] #sidebar ul > li > ul{background-color: #fff;}
+.siftal[data-user="3"] #sidebar ul > li.title{background-color: #fff;color:#3c4040;}
+.siftal[data-user="3"] #sidebar ul > li.title:hover{background-color: #f5f5f5;}
+.siftal[data-user="3"] #sidebar .hr{border-top-color: #dadce0!important}
+.siftal[data-user="3"] #sidebar .activeContent{border-color:#1a73e8;color: #3c4040}
+
+.siftal[data-user="3"] #ermileBadge{background-color:#fff;}
+.siftal[data-user="3"] #ermileBadge h2{color:#555;}
+.siftal[data-user="3"] #ermileBadge h3{color:#555;}

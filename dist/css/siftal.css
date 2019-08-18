@@ -2206,11 +2206,11 @@ progress.xl, meter.xl {
 /*================================================================== [ v1 ]*/
 .tbl1.v1 {
   border-radius: 1rem;
-  box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
-  -o-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15);
-  -ms-box-shadow: 0 0px 3em 0px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 0px 1.5em 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0px 1.5em 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0px 1.5em 0px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 0px 1.5em 0px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0 0px 1.5em 0px rgba(0, 0, 0, 0.15); }
 
 .tbl1.v1 thead {
   color: #fff;
@@ -20761,39 +20761,6 @@ body .we500 {
 .siftal #main:hover:after {
   color: #eee; }
 
-.siftal #sidebar {
-  overflow: hidden;
-  overflow-y: auto;
-  width: 250px;
-  height: 100%;
-  position: relative;
-  background-color: #302b2b;
-  -webkit-touch-callout: none;
-  -khtml-user-select: none;
-  -ms-user-select: none;
-  cursor: default;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  z-index: 10;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -ms-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-  transition: all 200ms cubic-bezier(0.694, 0.0482, 0.335, 1);
-  transition-property: right,left;
-  transform: translateX(0); }
-
-.siftal.ltr #sidebar {
-  left: 0; }
-
-.siftal.rtl #sidebar {
-  right: 0; }
-
 .siftal[data-clean].ltr #main {
   margin-left: 0; }
 
@@ -21118,6 +21085,74 @@ body.siftal .full .middle {
 .rtl .ck.ck-labeled-input .ck-labeled-input__status {
   font-family: IRANSans, tahoma; }
 
+.siftal[data-user="3"] {
+  background: #fff; }
+
+.siftal[data-user="3"] .dashHead {
+  box-shadow: none; }
+
+.siftal[data-user="3"] .dashHead.cloner {
+  display: none; }
+
+.siftal[data-user="3"] .tbox {
+  background-color: #fff; }
+
+.siftal[data-user="3"] .cbox {
+  border: 1px solid #eee; }
+
+.siftal[data-user="3"] #sidebar {
+  background-color: #fff; }
+
+.siftal[data-user="3"] #sidebar figure {
+  color: #3c4040; }
+
+.siftal[data-user="3"] #sidebar ul > li > a {
+  color: #3c4040; }
+
+.siftal[data-user="3"].ltr #sidebar ul > li > a {
+  -webkit-border-radius: 0 50px 50px 0;
+  border-radius: 0 50px 50px 0; }
+
+.siftal[data-user="3"].rtl #sidebar ul > li > a {
+  -webkit-border-radius: 50px 0 0 50px;
+  border-radius: 50px 0 0 50px; }
+
+.siftal[data-user="3"] #sidebar ul > li > a.weAreHere {
+  background-color: #e8f0fe;
+  color: #1a73e8; }
+
+.siftal[data-user="3"] #sidebar ul > li > a:hover {
+  background-color: #f5f5f5; }
+
+.siftal[data-user="3"] #sidebar ul > li > a:focus {
+  background-color: #e0e0e0; }
+
+.siftal[data-user="3"] #sidebar ul > li > ul {
+  background-color: #fff; }
+
+.siftal[data-user="3"] #sidebar ul > li.title {
+  background-color: #fff;
+  color: #3c4040; }
+
+.siftal[data-user="3"] #sidebar ul > li.title:hover {
+  background-color: #f5f5f5; }
+
+.siftal[data-user="3"] #sidebar .hr {
+  border-top-color: #dadce0 !important; }
+
+.siftal[data-user="3"] #sidebar .activeContent {
+  border-color: #1a73e8;
+  color: #3c4040; }
+
+.siftal[data-user="3"] #ermileBadge {
+  background-color: #fff; }
+
+.siftal[data-user="3"] #ermileBadge h2 {
+  color: #555; }
+
+.siftal[data-user="3"] #ermileBadge h3 {
+  color: #555; }
+
 /* header */
 .siftal .dashHead {
   height: 50px;
@@ -21311,6 +21346,39 @@ body.siftal .full .middle {
     transform: scale(1.4); }
   100% {
     opacity: .7; } }
+.siftal #sidebar {
+  overflow: hidden;
+  overflow-y: auto;
+  width: 250px;
+  height: 100%;
+  position: relative;
+  background-color: #302b2b;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  transition: all 200ms cubic-bezier(0.694, 0.0482, 0.335, 1);
+  transition-property: right,left;
+  transform: translateX(0); }
+
+.siftal.ltr #sidebar {
+  left: 0; }
+
+.siftal.rtl #sidebar {
+  right: 0; }
+
 /* sidebar */
 .siftal #sidebar .scr {
   overflow: hidden;
@@ -21536,14 +21604,14 @@ body.siftal .full .middle {
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff; }
 
-.siftal.ltr #sidebar .activeContent {
+.siftal #sidebar .activeContent {
   background-color: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  color: #fff; }
+
+.siftal.ltr #sidebar .activeContent {
   border-left: 7px solid #fff; }
 
 .siftal.rtl #sidebar .activeContent {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #fff;
   border-right: 7px solid #fff; }
 
 .siftal.ltr #sidebar #ermileBadge {

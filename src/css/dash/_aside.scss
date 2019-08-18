@@ -1,4 +1,9 @@
 
+// sidebar
+.siftal #sidebar{overflow:hidden;overflow-y:auto;width:250px;height:100%;position:relative;background-color:#302b2b;@include user-select(none);position:fixed;top:0;bottom:0;z-index:10; -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; -ms-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; transition: all 0.2s ease-out; transition: all 200ms cubic-bezier(.694, .0482, .335, 1);transition-property:right,left;transform: translateX(0)}
+.siftal.ltr #sidebar{left:0}
+.siftal.rtl #sidebar{right:0}
+
 /* sidebar */
 .siftal #sidebar .scr{overflow:hidden;overflow-y:auto;height:80%;height:calc(100% - 70px);}
 .siftal #sidebar figure{padding:2em 0;text-align:center;color:#ddd}
@@ -56,8 +61,9 @@
 
 
 .siftal #sidebar ul > li > a.weAreHere{background-color:rgba(0,0,0,0.8);color:#fff}
-.siftal.ltr #sidebar .activeContent{background-color:rgba(255,255,255,0.1);color:#fff;border-left: 7px solid #fff;}
-.siftal.rtl #sidebar .activeContent{background-color:rgba(255,255,255,0.1);color:#fff;border-right: 7px solid #fff;}
+.siftal #sidebar .activeContent{background-color:rgba(255,255,255,0.1);color:#fff;}
+.siftal.ltr #sidebar .activeContent{border-left: 7px solid #fff;}
+.siftal.rtl #sidebar .activeContent{border-right: 7px solid #fff;}
 
 .siftal.ltr #sidebar #ermileBadge{padding-right:0;}
 .siftal.rtl #sidebar #ermileBadge{padding-left:0;}
@@ -87,6 +93,4 @@
 	animation:pulseSlow 0.5s infinite ease-in-out;
 }
 @keyframes pulseSlow { 0%{opacity:.3} 70%{opacity:.5} 100%{opacity:.3}}
-
-
 
