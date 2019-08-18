@@ -98,6 +98,8 @@
     }
     // set content on each request
     $('body').attr('data-in', obj.content);
+    // set theme
+    $('body').attr('data-theme', obj.theme);
     // set subdomain on body
     $('body').attr('data-subdomain', obj.subdomain);
 
