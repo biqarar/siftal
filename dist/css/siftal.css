@@ -20158,6 +20158,24 @@ body .we500 {
   -ms-border-radius: 10rem;
   border-radius: 10rem; }
 
+.radius5px {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
+
+.radius10px {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
+.radius1em {
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  -ms-border-radius: 10em;
+  border-radius: 10em; }
+
 .box50 {
   display: block;
   margin: 0 auto;

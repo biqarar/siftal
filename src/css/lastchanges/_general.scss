@@ -5,6 +5,9 @@
 // border radius
 .circle{@include border-radius(50%)}
 .rounded{@include border-radius(10rem)}
+.radius5px{@include border-radius(5px)}
+.radius10px{@include border-radius(10px)}
+.radius1em{@include border-radius(10em)}
 
 
 .box50{display:block;margin:0 auto;width:50px;overflow:hidden;}
