@@ -21323,6 +21323,7 @@ body.siftal .full .middle {
   height: 50px;
   width: 50px;
   max-width: 50px;
+  min-width: 50px;
   padding: 5px;
   overflow: hidden; }
 
@@ -21331,8 +21332,7 @@ body.siftal .full .middle {
   font-weight: bold;
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
-  max-width: 300px; }
+  text-overflow: ellipsis; }
 
 /* header flex */
 .siftal .dashHead i {
@@ -23229,9 +23229,6 @@ body.siftal .full .middle {
 
   .siftal .dashHead h1 a {
     padding: 0; }
-
-  .siftal .dashHead h1 a span {
-    max-width: 120px; }
 
   .siftal .wrapper {
     padding: 2em 1em; }
