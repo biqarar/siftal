@@ -21001,6 +21001,15 @@ body .we500 {
   border-color: #82e06b;
   box-shadow: 0 0 3px 0px #82e06b; }
 
+.filterBox {
+  background-color: #fff;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-size: 1.2em;
+  padding: 10px;
+  padding-bottom: 10px; }
+
 .siftal #main #content {
   padding: 10px 2% 1em; }
 
