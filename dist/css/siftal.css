@@ -20920,7 +20920,7 @@ body .we500 {
 .tbox.pictogram:hover > span[class^="sf-"] {
   color: #398cd4; }
 
-.tbox2 {
+.titleBox {
   margin: 0;
   min-height: 48px;
   font-size: 1.2em;
@@ -20932,13 +20932,13 @@ body .we500 {
   user-select: none;
   overflow: hidden; }
 
-.tbox2 .equalPad {
+.titleBox .equalPad {
   padding: 5px; }
 
-.tbox2:hover {
+.titleBox:hover {
   opacity: 1; }
 
-.tbox2 h2 {
+.titleBox h2 {
   font-weight: 400;
   font-size: 2.2em;
   line-height: 36px;
@@ -20947,9 +20947,9 @@ body .we500 {
   text-overflow: ellipsis;
   white-space: nowrap;
   max-width: 500px;
-  max-width: 40vw; }
+  max-width: 50vw; }
 
-.tbox2 .actions .btn {
+.titleBox .actions .btn {
   padding-left: 0.5em;
   padding-right: 0.5em; }
 
@@ -20984,7 +20984,8 @@ body .we500 {
   font-family: monospace, sans-serif; }
 
 .searchBox {
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  padding-bottom: 10px; }
 
 .searchBox .input.search input {
   background-color: #f7f7f7; }
