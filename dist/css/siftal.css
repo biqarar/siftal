@@ -4463,6 +4463,14 @@ img.mini {
     width: 210mm;
     height: 147mm; }
 
+  .printArea[data-size='A6'] {
+    width: 105mm;
+    height: 148mm; }
+
+  .printArea[data-size='A6.landscape'] {
+    width: 147mm;
+    height: 105mm; }
+
   .printArea[data-size='letter'] {
     width: 216mm;
     height: 279mm; }
