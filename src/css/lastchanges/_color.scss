@@ -399,6 +399,41 @@
 }
 
 
+
+// light3 btn
+.light3{
+	background-color: #f7f7f7;
+	color: #333;
+	border: 1px solid rgba(0, 0, 0, 0.1)
+}
+.light3.apply, .search.apply .light3{
+	background-color: #e5fbea;
+	border-color: #82e06b;
+	box-shadow: 0 0 3px 0px #82e06b;
+}
+.light3.outline{
+	background-color: transparent;
+	border-color:#f7f7f7;
+	color: #f7f7f7;
+}
+.light3:hover{
+	background-color: #e2e6ea;
+	color: #333!important;
+}
+.light3:focus, .dropdown.active .light3{
+	background-color: #d0d6e0;
+	color: #111!important;
+}
+.light3:active, .light3.active{
+	background-color: #c0d0e0;
+	color: #111;
+}
+.light3 > a{
+	@include links(#111, #111, #111, #111);
+}
+
+
+
 // gradient
 .grShadow{box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1)}
 

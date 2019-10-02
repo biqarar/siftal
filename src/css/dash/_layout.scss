@@ -129,6 +129,7 @@
 
 .tbox2{
   margin: 0 0 10px;
+  min-height: 48px;
   font-size: 1.2em;
   position: relative;
   padding: 5px 1em;
@@ -142,20 +143,28 @@
   user-select:none;
   overflow:hidden;
 }
+.tbox2 .equalPad{padding: 5px;}
 .tbox2:hover{opacity:1;border-color:#fff;}
 .tbox2 h2{font-weight:400;font-size:2.2em;line-height:36px;margin:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:500px;max-width:40vw}
 .tbox2 .actions .btn{padding-left:0.5em;padding-right:0.5em}
 
-.tbox2 .btn.master{font-size:1em;font-weight:100;transition: all 150ms ease-out;background-color:#2080d0;color:#fff;background:linear-gradient(to left, #2080d0, #6b7ae0);}
-.tbox2 .btn.master.back{background-color:#333;background:linear-gradient(to left, #302b2b, #2268a5);padding-left:0.5em;padding-right:0.5em;min-width:36px;}
-.tbox2 .btn.master:hover{box-shadow: 0 0 0 0.2rem #fff, 0 0 0 0.3rem #2080d0;}
-.tbox2 .btn.master:focus{box-shadow: 0 0 0 0.2rem #fff, 0 0 0 0.4rem #6b7ae0;}
-.tbox2 .btn.master:active {box-shadow: 0 0 0 0.2rem #fff, 0 0 0 0.4rem #2080d0;transition-duration: 75ms;}
-.tbox2 .btn.master kbd{font-size:1em;vertical-align:middle;font-family:monospace, sans-serif}
+.btn.master{font-size:1em;font-weight:100;transition: all 150ms ease-out;background-color:#2080d0;color:#fff;background:linear-gradient(to left, #2080d0, #6b7ae0);}
+.btn.master.back{background-color:#333;background:linear-gradient(to left, #302b2b, #2268a5);padding-left:0.5em;padding-right:0.5em;min-width:36px;}
+.btn.master:hover{box-shadow: 0 0 0 0.2rem #fff, 0 0 0 0.3rem #2080d0;}
+.btn.master:focus{box-shadow: 0 0 0 0.2rem #fff, 0 0 0 0.4rem #6b7ae0;}
+.btn.master:active {box-shadow: 0 0 0 0.2rem #fff, 0 0 0 0.4rem #2080d0;transition-duration: 75ms;}
+.btn.master kbd{font-size:1em;vertical-align:middle;font-family:monospace, sans-serif}
 
-
-
-
+.searchBox{font-size: 1.2em;}
+.searchBox .btn{}
+.searchBox .input.search input{background-color:#f7f7f7}
+.searchBox .input.search input:hover{background-color:#e2e6ea}
+.searchBox .input.search input:focus{background-color:#fff}
+.searchBox .input.search.apply input{
+  background-color: #e5fbea;
+  border-color: #82e06b;
+  box-shadow: 0 0 3px 0px #82e06b;
+}
 
 
 // .siftal #main{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:-moz-box;display:flex;flex-direction:column;width:100%;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;overflow:hidden;-webkit-box-flex:1;-ms-flex:1;-webkit-flex:1;-moz-box-flex:1;flex:1}
