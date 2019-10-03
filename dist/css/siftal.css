@@ -20929,8 +20929,7 @@ body .we500 {
   opacity: 0.95;
   color: #444;
   transition: 0.3s;
-  user-select: none;
-  overflow: hidden; }
+  user-select: none; }
 
 .titleBox .equalPad {
   padding: 5px; }
@@ -21001,6 +21000,14 @@ body .we500 {
   border-color: #82e06b;
   box-shadow: 0 0 3px 0px #82e06b; }
 
+.applyFilters {
+  font-size: 1.2em;
+  overflow: hidden; }
+
+.applyFilters .btn {
+  display: inline-block;
+  margin-bottom: 10px; }
+
 .filterBox {
   background-color: #fff;
   border-radius: 0.25rem;
@@ -21008,7 +21015,8 @@ body .we500 {
   overflow: hidden;
   font-size: 1.2em;
   padding: 10px;
-  padding-bottom: 10px; }
+  margin-bottom: 10px;
+  overflow: hidden; }
 
 .siftal #main #content {
   padding: 10px 2% 1em; }
