@@ -13,8 +13,11 @@
 .siftal .dashHead .sidenavHandler{width:50px;text-align:center;font-size:1.2em;cursor:pointer!important;}
 .siftal .dashHead .sidenavHandler:hover{background-color:rgba(0,0,0,0.2)}
 .siftal .dashHead .sidenavHandler i{width:100%;padding:0;}
-.siftal .dashHead h1{margin:0;overflow:hidden;min-width:100px;font-size:1.5em;}
-.siftal .dashHead h1 a{margin:0;padding:0 1em;color:#888;transition-duration:0.3s;transition-property:color, background-color;display:inline-block;height:100%;line-height:50px;color:#888;}
+.siftal .dashHead .logo{transition: 0.3s;padding:0 5px;width:60px;}
+.siftal .dashHead .logo:focus{background-color:rgba(0,0,0,0.15);}
+.siftal .dashHead .logo img{display: block;margin: 0 auto;max-width: 50px;height: 50px;}
+.siftal .dashHead h1{margin:0;overflow:hidden;min-width:100px;font-size:1.5em;height: 50px;}
+.siftal .dashHead h1 a{margin:0;padding:0 1em;color:#333;transition-duration:0.3s;transition-property:color, background-color;display:inline-block;height:50px;line-height:50px;text-overflow:ellipsis;white-space: nowrap;overflow: hidden;max-width: 100%;}
 .siftal .dashHead h1 a:hover{color:#444;background-color:rgba(0,0,0,0.1);}
 .siftal .dashHead h1 a:focus{color:#444;background-color:rgba(0,0,0,0.15);}
 .siftal .dashHead h1 img{height:50px;width:50px;max-width:50px;min-width:50px;padding:5px;overflow: hidden;}
