@@ -47,14 +47,6 @@ git push origin master
 
 
 
-xcopy "%SIFTAL%" "%PROJECTS%\jibres\public_html\static\siftal" /E /H /K /Y
-cd "%PROJECTS%\jibres\"
-git add .
-git commit -m "Automatic update Siftal! 🐝 🍭"
-git push origin master
-
-
-
 xcopy "%SIFTAL%" "%PROJECTS%\khadije\public_html\static\siftal" /E /H /K /Y
 cd "%PROJECTS%\khadije\"
 git add .
