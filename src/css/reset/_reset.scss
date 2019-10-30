@@ -56,7 +56,7 @@ body{
 
 body.rtl{direction:rtl;font-family:$fontNameFa;}
 body.ltr{direction:ltr;font-family:$fontNameEn;}
-
+html[data-jibres] body.rtl{font-family:$fontNameFaJibres;}
 
 *,
 *:before,

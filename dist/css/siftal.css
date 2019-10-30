@@ -300,6 +300,9 @@ body.ltr {
   direction: ltr;
   font-family: LatoLatinWeb, IRANSans, "Segoe UI", Helvetica, sans-serif; }
 
+html[data-jibres] body.rtl {
+  font-family: IRANYekan, "Segoe UI", Helvetica, sans-serif; }
+
 *,
 *:before,
 *:after {
