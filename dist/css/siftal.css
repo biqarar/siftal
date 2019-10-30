@@ -42,7 +42,7 @@ Version       1.0.0
   font-weight: normal;
   src: url("../fonts/IRANSans/5.5/eot/IRANSansWeb.eot");
   src: url("../fonts/IRANSans/5.5/eot/IRANSansWeb.eot?#iefix") format("embedded-opentype"), url("../fonts/IRANSans/5.5/woff2/IRANSansWeb.woff2") format("woff2"), url("../fonts/IRANSans/5.5/woff/IRANSansWeb.woff") format("woff"), url("../fonts/IRANSans/5.5/ttf/IRANSansWeb.ttf") format("truetype"); }
-/* roboto fontface for en text*/
+/* lato fontface for en text*/
 @font-face {
   font-family: 'LatoLatinWebBlack';
   src: url(../fonts/lato/LatoLatin-Black.eot);

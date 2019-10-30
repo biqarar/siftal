@@ -10,9 +10,12 @@ Version       1.0.0
 @import 'tools/variables';
 @import 'tools/mixins';
 
+// add fonts
+@import 'fonts/iransans';
+@import 'fonts/lato';
+@import 'fonts/siftal';
 
 // add fonts
-@import 'base/fonts';
 @import 'reset/reset';
 
 // add base styles
