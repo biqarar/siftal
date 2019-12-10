@@ -95,21 +95,7 @@
 
 سپس یک عنصر `ul` ساخته می‌شود که با اطلاعات `data.messages` پر می‌شود. برای اطلاع از نحوه رندر نوتیفیکشن به فایل`includes/mvc/display.html` مراجعه کنید.
 
-```php
-  <div id="formError" class="error_{{debug.status}} unselectable">
-  {%fo r key, mydebug in debug.messages if mydebug is iterable %}
-   <ul class="{{key}}">
-   {%for key, err in mydebug%}
-    {%if err.title is defined%}
-        <li class="{{err.group}} {{err.redirect}}">{{err.title}}</li>
-    {%else%}
-        <li class="n_{{key}}">{{err}}</li>
-    {%endif%}
-   {%endfor%}
-   </ul>
-   {%endfor%}
-  </div>
-```
+
 
 پس از اتمام پر کردن عناصر رویداد `ajaxify:render:done` جرقه می‌خورد.
 
