@@ -97,7 +97,7 @@
 
 ```php
   <div id="formError" class="error_{{debug.status}} unselectable">
-  {%for key, mydebug in debug.messages if mydebug is iterable %}
+  {%fo r key, mydebug in debug.messages if mydebug is iterable %}
    <ul class="{{key}}">
    {%for key, err in mydebug%}
     {%if err.title is defined%}
