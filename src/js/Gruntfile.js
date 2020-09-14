@@ -58,6 +58,10 @@ var myModuleFiles =
 	'src/libs/semantic-ui/dropdown/dropdownRunner.js',
 
 
+	// cleave
+	'src/libs/cleave/cleave.min.js',
+	'src/libs/cleave/cleaveRunner.js',
+
 
 	// tools
 	'src/tools/navigate.js',
