@@ -18,6 +18,8 @@ function pushStateSiftal(_direct)
   runDatePicker();
   // check here links
   weAreHereChecker();
+  // run cleave
+  cleaveRunner();
   // detect id and try to scroll to it
   scrollSmoothDetector(_direct);
   // run watchScroll func to watch all elements
