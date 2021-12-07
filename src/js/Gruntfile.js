@@ -77,6 +77,7 @@ var myModuleFiles =
 	'src/utility/formTools.js',
 	'src/utility/smileChecker.js',
 	'src/utility/table.js',
+	'src/utility/playAudio.js',
 	'src/utility/noscriptRemover.js',
 
 	'src/utility/clock.js',
