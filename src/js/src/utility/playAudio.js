@@ -1,4 +1,5 @@
 
+var aPlyrFly;
 
 function playAudio(_url, _absolute)
 {
@@ -7,10 +8,21 @@ function playAudio(_url, _absolute)
     _url = urlJibres('cdn') + 'sounds/' + _url;
   }
 
-  var audio = new Audio(_url);
-  audio.play();
+  // pause old audio
+  stopAudio();
+
+  aPlyrFly = new Audio(_url);
+  aPlyrFly.play();
 }
 
+function stopAudio()
+{
+  if(aPlyrFly)
+  {
+    aPlyrFly.pause();
+    aPlyrFly.currentTime = 0;
+  }
+}
 
 //All arguments are optional:
 
