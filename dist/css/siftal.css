@@ -4487,8 +4487,7 @@ img.mini {
     margin: 0 auto 1em;
     overflow: visible;
     position: relative;
-    box-sizing: border-box;
-    page-break-after: always; }
+    box-sizing: border-box; }
 
   .printArea[data-size='A3'] {
     width: 297mm;
@@ -4545,7 +4544,8 @@ img.mini {
   .printArea[data-height='auto'] {
     height: auto; } }
 .printArea {
-  -webkit-print-color-adjust: exact; }
+  -webkit-print-color-adjust: exact;
+  page-break-after: always; }
 
 .ltr .printArea .tbl1 tr th:first-of-type, .ltr .printArea .tbl1 tr td:first-of-type {
   padding-left: 1rem; }

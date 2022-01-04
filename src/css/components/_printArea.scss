@@ -1,7 +1,7 @@
 
 /* print preview style on screen*/
 @media screen{
-  .printArea{background: #fff;box-shadow: 0 0.5mm 2mm rgba(0,0,0,.3);margin:0 auto 1em;overflow: visible;position: relative;box-sizing: border-box;page-break-after: always;}
+  .printArea{background: #fff;box-shadow: 0 0.5mm 2mm rgba(0,0,0,.3);margin:0 auto 1em;overflow: visible;position: relative;box-sizing: border-box;}
 
   .printArea[data-size='A3']               { width: 297mm; height: 419mm }
   .printArea[data-size='A3.landscape']     { width: 420mm; height: 296mm }
@@ -23,7 +23,9 @@
 // print all printArea with color
 .printArea{
 	-webkit-print-color-adjust: exact;
+  page-break-after: always;
 }
+
 
 
 .ltr .printArea .tbl1 tr th:first-of-type, .ltr .printArea .tbl1 tr td:first-of-type{
