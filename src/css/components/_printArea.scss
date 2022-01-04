@@ -15,7 +15,8 @@
   .printArea[data-size='letter.landscape'] { width: 280mm; height: 215mm }
   .printArea[data-size='legal']            { width: 216mm; height: 356mm }
   .printArea[data-size='legal.landscape']  { width: 357mm; height: 215mm }
-  .printArea[data-size='receipt8']         { width: 84mm;  padding:18mm 4mm 1mm }
+  // .printArea[data-size='receipt8']         { width: 84mm;  padding:18mm 4mm 1mm }
+  .printArea[data-size='receipt8']         { width: 79mm;  padding:10mm 3.5mm 5mm; }
 
   .printArea[data-height='auto']{height: auto;}
 }
@@ -25,6 +26,9 @@
 	-webkit-print-color-adjust: exact;
   page-break-after: always;
 }
+.pageBreak{page-break-after: always;}
+.pageBreakBefore{page-break-before: always;}
+.keepTogether{page-break-inside: avoid;}
 
 
 
