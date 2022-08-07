@@ -83,8 +83,8 @@ function initTagDetector()
 	var myDetector     = $('.tagDetector');
 	myDetector.each(function(_el)
 	{
-		var myTags = getTagLists(myDetector);
 		var $Detector = $(this);
+		var myTags = getTagLists($Detector);
 		// add each tag exist as html element
 		// for each elemetn add as new element
 		$.each(myTags, function( _key, _val )
